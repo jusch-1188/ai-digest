@@ -48,7 +48,7 @@
     "url": "https://docs.anthropic.com"
   },
   {
-    "section": "semafor",
+    "section": "industry",
     "headline": "EU AI Act Compliance Deadline Looms for General-Purpose Models",
     "summary": "The European Union's AI Act enforcement clock is ticking: general-purpose AI model providers face their first compliance deadline in August 2026. Companies with models exceeding 10²³ FLOPs of training compute must register with the EU AI Office and submit safety evaluations. Several US labs have yet to file.",
     "source": "Semafor",
@@ -56,7 +56,7 @@
     "url": "https://semafor.com"
   },
   {
-    "section": "semafor",
+    "section": "industry",
     "headline": "China's Kimi AI Assistant Crosses 100M Monthly Active Users",
     "summary": "Moonshot AI's Kimi chatbot has surpassed 100 million monthly active users, making it the fastest-growing AI assistant in China. The product competes directly with Baidu's ERNIE Bot and ByteDance's Doubao, and Moonshot has announced a $1B enterprise sales push for Q3 2026.",
     "source": "Semafor",
