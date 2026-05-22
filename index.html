@@ -375,6 +375,20 @@
     <button class="pill"        data-period="week">This week</button>
     <button class="pill"        data-period="month">This month</button>
   </div>
+
+  <div class="filter-divider"></div>
+
+  <!-- Model filter -->
+  <div class="filter-group model-group" role="group" aria-label="Filter by model">
+    <button class="pill active" data-model="all">All models</button>
+    <button class="pill" data-model="gpt">GPT</button>
+    <button class="pill" data-model="claude">Claude</button>
+    <button class="pill" data-model="gemini">Gemini</button>
+    <button class="pill" data-model="llama">Llama</button>
+    <button class="pill" data-model="deepseek">DeepSeek</button>
+    <button class="pill" data-model="grok">Grok</button>
+    <button class="pill" data-model="mistral">Mistral</button>
+  </div>
 </div>
 
 <!-- ═══════ RESULT BAR ═══════ -->
@@ -392,9 +406,21 @@ const state = {
   section: 'all',
   period: 'today',
   search: '',
+  model: 'all',
   allCards: [],        // cards from current date file
   multiDayCards: [],   // cards from multiple days (week/month)
   loading: false,
+};
+
+// Keywords matched against headline + summary + foryou (case-insensitive)
+const MODEL_KEYWORDS = {
+  gpt:      ['chatgpt', 'gpt-4', 'gpt-5', 'gpt4', 'gpt5', 'o1', 'o3', 'o4', 'openai'],
+  claude:   ['claude', 'sonnet', 'haiku', 'opus', 'anthropic'],
+  gemini:   ['gemini', 'bard', 'google deepmind'],
+  llama:    ['llama', 'meta ai', 'meta llama'],
+  deepseek: ['deepseek', 'deep seek'],
+  grok:     ['grok', 'xai', 'x.ai'],
+  mistral:  ['mistral', 'devstral', 'mixtral', 'codestral'],
 };
 
 // Cache: date string → array of cards
@@ -473,12 +499,25 @@ async function loadCurrentView() {
 // ═══════════════════════════════════════════════════════════
 //  Filtering
 // ═══════════════════════════════════════════════════════════
+function cardText(c) {
+  return [c.headline, c.summary, c.foryou].filter(Boolean).join(' ').toLowerCase();
+}
+
 function applyFilters(cards) {
   let out = cards;
 
   // Section
   if (state.section !== 'all') {
     out = out.filter(c => c.section === state.section);
+  }
+
+  // Model keyword filter
+  if (state.model !== 'all') {
+    const keywords = MODEL_KEYWORDS[state.model] || [];
+    out = out.filter(c => {
+      const text = cardText(c);
+      return keywords.some(kw => text.includes(kw.toLowerCase()));
+    });
   }
 
   // Search
@@ -662,6 +701,18 @@ document.querySelectorAll('.filter-group.period .pill').forEach(btn => {
     // Date nav only relevant for Today
     document.querySelector('.date-nav').style.opacity = state.period === 'today' ? '1' : '.35';
     loadCurrentView();
+  });
+});
+
+// ═══════════════════════════════════════════════════════════
+//  Model filter
+// ═══════════════════════════════════════════════════════════
+document.querySelectorAll('.model-group .pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.model-group .pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.model = btn.dataset.model;
+    renderGrid();
   });
 });
 
