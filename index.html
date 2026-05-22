@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Digest</title>
+<meta name="description" content="Your personal daily AI news digest">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#2563eb">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@3.9.0/dist/tabler-icons.min.css">
+<style>
+  /* ── Reset & base ───────────────────────────────── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; -webkit-text-size-adjust: 100%; }
+
+  /* ── Design tokens ──────────────────────────────── */
+  :root {
+    --blue:     #2563eb; --blue-bg:   #eff6ff; --blue-bd:   rgba(37,99,235,0.22);
+    --amber:    #b45309; --amber-bg:  #fffbeb; --amber-bd:  rgba(180,83,9,0.22);
+    --red:      #b91c1c; --red-bg:    #fef2f2; --red-bd:    rgba(185,28,28,0.22);
+    --green:    #15803d; --green-bg:  #f0fdf4; --green-bd:  rgba(21,128,61,0.22);
+
+    --bg:       #f8fafc;
+    --surface:  #ffffff;
+    --border:   #e2e8f0;
+    --text:     #0f172a;
+    --muted:    #64748b;
+    --subtle:   #94a3b8;
+
+    --radius:   12px;
+    --shadow:   0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+    --shadow-hover: 0 4px 12px rgba(0,0,0,.10);
+
+    --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: "SF Mono", "Fira Code", "Cascadia Code", monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --blue:    #60a5fa; --blue-bg:  rgba(37,99,235,0.15); --blue-bd:  rgba(96,165,250,0.30);
+      --amber:   #fbbf24; --amber-bg: rgba(180,83,9,0.15);  --amber-bd: rgba(251,191,36,0.30);
+      --red:     #f87171; --red-bg:   rgba(185,28,28,0.15); --red-bd:   rgba(248,113,113,0.30);
+      --green:   #4ade80; --green-bg: rgba(21,128,61,0.15); --green-bd: rgba(74,222,128,0.30);
+
+      --bg:      #0f172a;
+      --surface: #1e293b;
+      --border:  #334155;
+      --text:    #f1f5f9;
+      --muted:   #94a3b8;
+      --subtle:  #475569;
+    }
+  }
+
+  /* ── Layout ─────────────────────────────────────── */
+  body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding-bottom: 4rem;
+  }
+
+  /* ── Header / nav ───────────────────────────────── */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 1rem;
+    box-shadow: var(--shadow);
+  }
+  .header-inner {
+    max-width: 860px; margin: 0 auto;
+    display: flex; align-items: center; gap: .75rem;
+    height: 56px;
+  }
+  .logo {
+    display: flex; align-items: center; gap: .5rem;
+    font-weight: 700; font-size: 1.05rem; color: var(--text);
+    text-decoration: none; white-space: nowrap;
+  }
+  .logo .logo-icon { color: var(--blue); font-size: 1.3rem; }
+  .header-spacer { flex: 1; }
+
+  /* date nav */
+  .date-nav {
+    display: flex; align-items: center; gap: .25rem;
+  }
+  .date-btn {
+    background: none; border: none; cursor: pointer;
+    color: var(--muted); padding: .35rem; border-radius: 6px;
+    display: flex; align-items: center; font-size: 1rem;
+    transition: background .15s, color .15s;
+  }
+  .date-btn:hover { background: var(--border); color: var(--text); }
+  .date-btn:disabled { opacity: .3; cursor: default; }
+  .date-label {
+    font-size: .82rem; font-weight: 600; color: var(--text);
+    min-width: 90px; text-align: center; cursor: pointer;
+    padding: .3rem .5rem; border-radius: 6px;
+    transition: background .15s;
+  }
+  .date-label:hover { background: var(--border); }
+
+  /* ── Toolbar ────────────────────────────────────── */
+  .toolbar {
+    max-width: 860px; margin: 0 auto;
+    padding: 1rem 1rem .5rem;
+    display: flex; flex-wrap: wrap; gap: .6rem; align-items: center;
+  }
+
+  /* search */
+  .search-wrap {
+    position: relative; flex: 1; min-width: 180px;
+  }
+  .search-wrap .ti {
+    position: absolute; left: .7rem; top: 50%; transform: translateY(-50%);
+    color: var(--subtle); font-size: 1rem; pointer-events: none;
+  }
+  #searchInput {
+    width: 100%; padding: .5rem .75rem .5rem 2.1rem;
+    border: 1px solid var(--border); border-radius: 8px;
+    background: var(--surface); color: var(--text);
+    font-family: var(--font); font-size: .9rem;
+    outline: none; transition: border-color .15s, box-shadow .15s;
+  }
+  #searchInput:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(37,99,235,.12);
+  }
+  #searchInput::placeholder { color: var(--subtle); }
+
+  /* filter pills */
+  .filter-group {
+    display: flex; gap: .3rem; flex-wrap: wrap;
+  }
+  .pill {
+    border: 1px solid var(--border); background: var(--surface);
+    color: var(--muted); cursor: pointer;
+    padding: .35rem .75rem; border-radius: 99px;
+    font-size: .82rem; font-weight: 500;
+    transition: all .15s; white-space: nowrap;
+    user-select: none;
+  }
+  .pill:hover { border-color: var(--blue); color: var(--blue); }
+  .pill.active {
+    background: var(--blue); border-color: var(--blue);
+    color: #fff; font-weight: 600;
+  }
+  /* Section-specific active colours */
+  .pill.active.sec-models  { background: var(--blue);  border-color: var(--blue); }
+  .pill.active.sec-industry{ background: var(--amber); border-color: var(--amber); }
+  .pill.active.sec-semafor { background: var(--red);   border-color: var(--red); }
+  .pill.active.sec-tips    { background: var(--green); border-color: var(--green); }
+
+  /* period pills active — always blue */
+  .filter-group.period .pill.active { background: var(--blue); border-color: var(--blue); }
+
+  .filter-divider {
+    width: 1px; height: 28px; background: var(--border);
+    margin: 0 .1rem; flex-shrink: 0; align-self: center;
+  }
+
+  /* ── Result count ───────────────────────────────── */
+  .result-bar {
+    max-width: 860px; margin: 0 auto;
+    padding: .25rem 1rem .6rem;
+    font-size: .8rem; color: var(--muted);
+    display: flex; align-items: center; gap: .5rem;
+  }
+
+  /* ── Cards grid ─────────────────────────────────── */
+  #cardGrid {
+    max-width: 860px; margin: 0 auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ── Card ────────────────────────────────────────── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex; overflow: hidden;
+    transition: box-shadow .2s, transform .2s;
+  }
+  .card:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+  }
+
+  /* accent strip */
+  .card-accent { width: 4px; flex-shrink: 0; }
+  .ca-m { background: var(--blue); }
+  .ca-i { background: var(--amber); }
+  .ca-s { background: var(--red); }
+  .ca-t { background: var(--green); }
+
+  .card-body {
+    flex: 1; padding: 1rem;
+    display: flex; flex-direction: column; gap: .55rem;
+  }
+
+  /* section badge */
+  .card-badge {
+    display: inline-flex; align-items: center; gap: .3rem;
+    font-size: .72rem; font-weight: 600; letter-spacing: .03em;
+    text-transform: uppercase; padding: .2rem .5rem;
+    border-radius: 4px; align-self: flex-start;
+  }
+  .badge-m { color: var(--blue);  background: var(--blue-bg); }
+  .badge-i { color: var(--amber); background: var(--amber-bg); }
+  .badge-s { color: var(--red);   background: var(--red-bg); }
+  .badge-t { color: var(--green); background: var(--green-bg); }
+
+  .card-headline {
+    font-size: 1rem; font-weight: 700; line-height: 1.35;
+    color: var(--text);
+  }
+  .card-summary {
+    font-size: .88rem; line-height: 1.55; color: var(--muted);
+  }
+
+  /* for you */
+  .card-foryou {
+    display: flex; gap: .45rem; align-items: flex-start;
+    background: var(--blue-bg); border: 1px solid var(--blue-bd);
+    border-radius: 8px; padding: .55rem .7rem;
+    font-size: .84rem; line-height: 1.5; color: var(--text);
+  }
+  .ca-t + .card-body .card-foryou {
+    background: var(--green-bg); border-color: var(--green-bd);
+  }
+  .foryou-label {
+    font-size: .72rem; font-weight: 700; letter-spacing: .04em;
+    text-transform: uppercase; color: var(--blue);
+    white-space: nowrap; margin-top: .1rem;
+  }
+  .ca-t + .card-body .foryou-label { color: var(--green); }
+
+  /* specs */
+  details.specs {
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: .84rem; overflow: hidden;
+  }
+  details.specs summary {
+    display: flex; align-items: center; gap: .4rem;
+    padding: .5rem .7rem; cursor: pointer; list-style: none;
+    color: var(--muted); user-select: none;
+    transition: background .15s;
+  }
+  details.specs summary::-webkit-details-marker { display: none; }
+  details.specs summary:hover { background: var(--border); }
+  details.specs summary .ti-chevron-down {
+    margin-left: auto; transition: transform .2s;
+  }
+  details.specs[open] summary .ti-chevron-down { transform: rotate(180deg); }
+
+  .specs-grid { padding: .5rem .7rem .65rem; display: grid; gap: .3rem; }
+  .spec-row {
+    display: flex; justify-content: space-between; gap: 1rem;
+    font-size: .82rem; padding: .2rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .spec-row:last-child { border-bottom: none; }
+  .spec-label { color: var(--muted); }
+  .spec-value { font-weight: 600; color: var(--text); text-align: right; }
+  .spec-value em { font-style: normal; color: var(--blue); }
+
+  /* footer */
+  .card-footer {
+    display: flex; align-items: center; justify-content: space-between;
+    margin-top: auto; padding-top: .4rem;
+    border-top: 1px solid var(--border);
+  }
+  .src-tag {
+    font-size: .76rem; color: var(--subtle);
+  }
+  .card-link {
+    display: inline-flex; align-items: center; gap: .3rem;
+    font-size: .8rem; font-weight: 600; color: var(--blue);
+    text-decoration: none; padding: .3rem .6rem;
+    border-radius: 6px; transition: background .15s;
+  }
+  .card-link:hover { background: var(--blue-bg); }
+
+  /* ── Empty / loading states ─────────────────────── */
+  .state-msg {
+    grid-column: 1 / -1;
+    text-align: center; padding: 4rem 1rem;
+    color: var(--muted);
+  }
+  .state-msg .ti { font-size: 2.5rem; display: block; margin-bottom: .75rem; color: var(--subtle); }
+  .state-msg strong { display: block; font-size: 1.05rem; margin-bottom: .35rem; color: var(--text); }
+  .state-msg p { font-size: .9rem; }
+
+  /* loading spinner */
+  .spinner {
+    width: 36px; height: 36px; margin: 0 auto 1rem;
+    border: 3px solid var(--border);
+    border-top-color: var(--blue);
+    border-radius: 50%;
+    animation: spin .7s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ── Highlight matches ──────────────────────────── */
+  mark {
+    background: rgba(37,99,235,.18);
+    color: inherit; border-radius: 2px;
+    padding: 0 .1em;
+  }
+  @media (prefers-color-scheme: dark) {
+    mark { background: rgba(96,165,250,.25); }
+  }
+
+  /* ── Responsive ─────────────────────────────────── */
+  @media (max-width: 600px) {
+    #cardGrid { grid-template-columns: 1fr; }
+    .header-inner { gap: .5rem; }
+    .logo span { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══════ HEADER ═══════ -->
+<header>
+  <div class="header-inner">
+    <a class="logo" href="#">
+      <i class="ti ti-brain logo-icon"></i>
+      <span>AI Digest</span>
+    </a>
+    <div class="header-spacer"></div>
+    <nav class="date-nav">
+      <button class="date-btn" id="prevDay" title="Previous day" aria-label="Previous day">
+        <i class="ti ti-chevron-left"></i>
+      </button>
+      <span class="date-label" id="dateLabel" title="Click for today"></span>
+      <button class="date-btn" id="nextDay" title="Next day" aria-label="Next day">
+        <i class="ti ti-chevron-right"></i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════ TOOLBAR ═══════ -->
+<div class="toolbar">
+  <!-- Search -->
+  <div class="search-wrap">
+    <i class="ti ti-search"></i>
+    <input type="search" id="searchInput" placeholder="Search headlines, summaries…" autocomplete="off">
+  </div>
+
+  <div class="filter-divider"></div>
+
+  <!-- Section filter -->
+  <div class="filter-group section-group" role="group" aria-label="Filter by section">
+    <button class="pill active sec-all"      data-section="all">All</button>
+    <button class="pill sec-models"          data-section="models">Models</button>
+    <button class="pill sec-industry"        data-section="industry">Industry</button>
+    <button class="pill sec-semafor"         data-section="semafor">Semafor</button>
+    <button class="pill sec-tips"            data-section="tips">Tips</button>
+  </div>
+
+  <div class="filter-divider"></div>
+
+  <!-- Period filter -->
+  <div class="filter-group period" role="group" aria-label="Filter by period">
+    <button class="pill active" data-period="today">Today</button>
+    <button class="pill"        data-period="week">This week</button>
+    <button class="pill"        data-period="month">This month</button>
+  </div>
+</div>
+
+<!-- ═══════ RESULT BAR ═══════ -->
+<div class="result-bar" id="resultBar"></div>
+
+<!-- ═══════ CARD GRID ═══════ -->
+<main id="cardGrid" aria-live="polite"></main>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+//  State
+// ═══════════════════════════════════════════════════════════
+const state = {
+  currentDate: todayStr(),
+  section: 'all',
+  period: 'today',
+  search: '',
+  allCards: [],        // cards from current date file
+  multiDayCards: [],   // cards from multiple days (week/month)
+  loading: false,
+};
+
+// Cache: date string → array of cards
+const dataCache = {};
+
+// ═══════════════════════════════════════════════════════════
+//  Helpers
+// ═══════════════════════════════════════════════════════════
+function todayStr() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function fmtDate(str) {
+  // "2026-05-22" → "Fri, May 22"
+  const d = new Date(str + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+}
+
+function addDays(dateStr, n) {
+  const d = new Date(dateStr + 'T00:00:00');
+  d.setDate(d.getDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+// Dates in [start, end] inclusive
+function dateRange(start, end) {
+  const dates = [];
+  let cur = start;
+  while (cur <= end) { dates.push(cur); cur = addDays(cur, 1); }
+  return dates;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Data fetching
+// ═══════════════════════════════════════════════════════════
+async function fetchDay(dateStr) {
+  if (dataCache[dateStr]) return dataCache[dateStr];
+  try {
+    const res = await fetch(`/data/${dateStr}.json`);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const cards = await res.json();
+    dataCache[dateStr] = cards;
+    return cards;
+  } catch {
+    dataCache[dateStr] = [];
+    return [];
+  }
+}
+
+async function loadCurrentView() {
+  state.loading = true;
+  renderGrid();   // show spinner
+
+  let cards = [];
+  const today = todayStr();
+
+  if (state.period === 'today') {
+    cards = await fetchDay(state.currentDate);
+  } else if (state.period === 'week') {
+    const start = addDays(today, -6);
+    const dates = dateRange(start, today);
+    const results = await Promise.all(dates.map(fetchDay));
+    cards = results.flat();
+  } else if (state.period === 'month') {
+    const start = addDays(today, -29);
+    const dates = dateRange(start, today);
+    const results = await Promise.all(dates.map(fetchDay));
+    cards = results.flat();
+  }
+
+  state.allCards = cards;
+  state.loading = false;
+  renderGrid();
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Filtering
+// ═══════════════════════════════════════════════════════════
+function applyFilters(cards) {
+  let out = cards;
+
+  // Section
+  if (state.section !== 'all') {
+    out = out.filter(c => c.section === state.section);
+  }
+
+  // Search
+  const q = state.search.trim().toLowerCase();
+  if (q) {
+    out = out.filter(c =>
+      (c.headline || '').toLowerCase().includes(q) ||
+      (c.summary  || '').toLowerCase().includes(q) ||
+      (c.foryou   || '').toLowerCase().includes(q)
+    );
+  }
+
+  return out;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Highlighting
+// ═══════════════════════════════════════════════════════════
+function hl(text) {
+  if (!text) return '';
+  const q = state.search.trim();
+  if (!q) return esc(text);
+  const re = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  return esc(text).replace(re, '<mark>$1</mark>');
+}
+
+function esc(s) {
+  return String(s)
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;');
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Card rendering
+// ═══════════════════════════════════════════════════════════
+const SECTION_META = {
+  models:   { label: 'Models',   accentClass: 'ca-m', badgeClass: 'badge-m', icon: 'ti-cpu' },
+  industry: { label: 'Industry', accentClass: 'ca-i', badgeClass: 'badge-i', icon: 'ti-building' },
+  semafor:  { label: 'Semafor',  accentClass: 'ca-s', badgeClass: 'badge-s', icon: 'ti-news' },
+  tips:     { label: 'Tips',     accentClass: 'ca-t', badgeClass: 'badge-t', icon: 'ti-bulb' },
+};
+
+function renderCard(c) {
+  const meta = SECTION_META[c.section] || SECTION_META['industry'];
+  const showForyou = (c.section === 'models' || c.section === 'tips') && c.foryou;
+  const showSpecs  = c.section === 'models' && c.specs && c.specs.length > 0;
+
+  const foryouHtml = showForyou ? `
+    <div class="card-foryou">
+      <span class="foryou-label">For you</span>
+      <span>${hl(c.foryou)}</span>
+    </div>` : '';
+
+  const specsHtml = showSpecs ? `
+    <details class="specs">
+      <summary><i class="ti ti-table"></i>&nbsp;Specs&nbsp;<i class="ti ti-chevron-down"></i></summary>
+      <div class="specs-grid">
+        ${c.specs.map(s => `
+          <div class="spec-row">
+            <span class="spec-label">${esc(s.label)}</span>
+            <span class="spec-value"><em>${esc(s.value)}</em></span>
+          </div>`).join('')}
+      </div>
+    </details>` : '';
+
+  // Date display (use card's own date if present, else current nav date)
+  const cardDate = c.date ? fmtDate(c.date) : fmtDate(state.currentDate);
+
+  return `
+    <article class="card">
+      <div class="card-accent ${meta.accentClass}"></div>
+      <div class="card-body">
+        <span class="card-badge ${meta.badgeClass}">
+          <i class="ti ${meta.icon}"></i>${meta.label}
+        </span>
+        <h2 class="card-headline">${hl(c.headline)}</h2>
+        <p class="card-summary">${hl(c.summary)}</p>
+        ${foryouHtml}
+        ${specsHtml}
+        <div class="card-footer">
+          <span class="src-tag">${esc(c.source || '')} · ${cardDate}</span>
+          ${c.url ? `<a href="${esc(c.url)}" class="card-link" target="_blank" rel="noopener">
+            Read <i class="ti ti-external-link"></i></a>` : ''}
+        </div>
+      </div>
+    </article>`;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Render everything
+// ═══════════════════════════════════════════════════════════
+function renderGrid() {
+  const grid = document.getElementById('cardGrid');
+  const bar  = document.getElementById('resultBar');
+
+  if (state.loading) {
+    grid.innerHTML = `<div class="state-msg"><div class="spinner"></div><p>Loading…</p></div>`;
+    bar.textContent = '';
+    return;
+  }
+
+  const filtered = applyFilters(state.allCards);
+
+  if (state.allCards.length === 0) {
+    grid.innerHTML = `
+      <div class="state-msg">
+        <i class="ti ti-calendar-off"></i>
+        <strong>No data for ${fmtDate(state.currentDate)}</strong>
+        <p>Try a different date or check back later.</p>
+      </div>`;
+    bar.textContent = '';
+    return;
+  }
+
+  if (filtered.length === 0) {
+    grid.innerHTML = `
+      <div class="state-msg">
+        <i class="ti ti-search-off"></i>
+        <strong>No results</strong>
+        <p>Try adjusting your search or filters.</p>
+      </div>`;
+    bar.innerHTML = '';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(renderCard).join('');
+  bar.textContent = `${filtered.length} ${filtered.length === 1 ? 'story' : 'stories'}${state.search ? ` matching "${state.search}"` : ''}`;
+}
+
+// ═══════════════════════════════════════════════════════════
+//  Date nav
+// ═══════════════════════════════════════════════════════════
+function updateDateUI() {
+  const lbl  = document.getElementById('dateLabel');
+  const prev = document.getElementById('prevDay');
+  const next = document.getElementById('nextDay');
+
+  const today = todayStr();
+  lbl.textContent = state.currentDate === today ? 'Today' : fmtDate(state.currentDate);
+  next.disabled = state.currentDate >= today;
+}
+
+document.getElementById('prevDay').addEventListener('click', () => {
+  state.currentDate = addDays(state.currentDate, -1);
+  updateDateUI();
+  if (state.period === 'today') loadCurrentView();
+});
+document.getElementById('nextDay').addEventListener('click', () => {
+  if (state.currentDate < todayStr()) {
+    state.currentDate = addDays(state.currentDate, 1);
+    updateDateUI();
+    if (state.period === 'today') loadCurrentView();
+  }
+});
+document.getElementById('dateLabel').addEventListener('click', () => {
+  state.currentDate = todayStr();
+  updateDateUI();
+  if (state.period === 'today') loadCurrentView();
+});
+
+// ═══════════════════════════════════════════════════════════
+//  Section filter
+// ═══════════════════════════════════════════════════════════
+document.querySelectorAll('.section-group .pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.section-group .pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.section = btn.dataset.section;
+    renderGrid();
+  });
+});
+
+// ═══════════════════════════════════════════════════════════
+//  Period filter
+// ═══════════════════════════════════════════════════════════
+document.querySelectorAll('.filter-group.period .pill').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-group.period .pill').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    state.period = btn.dataset.period;
+    // Date nav only relevant for Today
+    document.querySelector('.date-nav').style.opacity = state.period === 'today' ? '1' : '.35';
+    loadCurrentView();
+  });
+});
+
+// ═══════════════════════════════════════════════════════════
+//  Search
+// ═══════════════════════════════════════════════════════════
+let searchTimer;
+document.getElementById('searchInput').addEventListener('input', e => {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => {
+    state.search = e.target.value;
+    renderGrid();
+  }, 200);
+});
+
+// ═══════════════════════════════════════════════════════════
+//  Init
+// ═══════════════════════════════════════════════════════════
+updateDateUI();
+loadCurrentView();
+
+// Register service worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').catch(() => {});
+}
+</script>
+</body>
+</html>
