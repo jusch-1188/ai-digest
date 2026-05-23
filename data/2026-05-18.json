@@ -1,0 +1,119 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemini App Rolls Out Selectable Thinking Levels",
+    "summary": "Google began rolling out a 'Thinking level' option inside the Gemini app, letting users choose between Fast, Standard, and Extended reasoning modes when using Gemini 3.1 Pro. Extended mode enables deeper chain-of-thought processing at higher compute cost, while Fast prioritises speed and low latency.",
+    "foryou": "A per-request thinking budget knob is exactly what agentic pipelines need — use Fast for cheap tool-dispatch steps and Extended only for the planning/reasoning node, cutting your per-run cost significantly.",
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Thinking level selector"
+      },
+      {
+        "label": "Modes",
+        "value": "Fast / Standard / Extended"
+      },
+      {
+        "label": "Available in",
+        "value": "Gemini app (rolling out)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://9to5google.com/2026/05/17/gemini-app-thinking-level/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's Codex to Gain Computer Use Across Desktop Devices",
+    "summary": "OpenAI confirmed that Codex will soon be able to control other desktop devices via its Computer Use capability, extending it beyond browser environments. The move positions Codex as a cross-device agentic coding assistant able to interact with local IDEs, terminals, and other applications.",
+    "foryou": "Codex with cross-device Computer Use means your code-review and test-run loops can be fully autonomous — it can open your local test runner, read the output, and push a fix without any human handoff.",
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Computer Use (desktop expansion)"
+      },
+      {
+        "label": "Scope",
+        "value": "Cross-device: IDEs, terminals, apps"
+      },
+      {
+        "label": "Status",
+        "value": "Coming soon"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://www.testingcatalog.com/openai-will-let-codex-control-other-desktop-devices-via-computer-use/"
+  },
+  {
+    "section": "models",
+    "headline": "ChatGPT Launches Personal Finance Features",
+    "summary": "OpenAI rolled out a personal finance capability in ChatGPT, allowing users to connect financial accounts and get AI-driven analysis of spending, savings, and investments. The feature brings ChatGPT into direct competition with Mint-style personal finance apps and robo-advisors.",
+    "foryou": "As ChatGPT ingests real financial data, it becomes a serious competitor in the personal finance agent space — and a preview of the kind of tool-connected, account-aware assistants that will dominate consumer AI.",
+    "specs": [
+      {
+        "label": "Feature",
+        "value": "Account-connected finance analysis"
+      },
+      {
+        "label": "Competitors",
+        "value": "Mint, Copilot, robo-advisors"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-18"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek-V4-Flash Makes LLM Activation Steering Relevant Again",
+    "summary": "Engineer Sean Goedecke argues that DeepSeek-V4-Flash's architecture makes steering vectors — a technique for directly modifying model behaviour by adding activations during inference — practically useful again after years of limited applicability. The post includes working examples of steering personality and refusal behaviour.",
+    "foryou": "If you want fine-grained runtime control over model behaviour without re-training, steering vectors on DeepSeek-V4-Flash are now worth adding to your evaluation toolkit.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "DeepSeek-V4-Flash"
+      },
+      {
+        "label": "Technique",
+        "value": "Activation steering vectors"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://www.seangoedecke.com/steering-vectors/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Quietly Acquired Voice-Cloning Startup Weights.gg and Folded the Team",
+    "summary": "OpenAI acquired Weights.gg, a voice-cloning startup, without a public announcement and absorbed its team into internal projects. The acquisition signals OpenAI's continued push into voice and audio AI capabilities beyond the text-to-speech features already in ChatGPT.",
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://www.implicator.ai/openai-quietly-bought-voice-cloning-startup-weights-gg-then-folded-the-team/"
+  },
+  {
+    "section": "industry",
+    "headline": "Runway Pivots From Filmmakers to Competing With Google on AI",
+    "summary": "TechCrunch profiles Runway's strategic shift: the company that pioneered AI video generation for creative professionals is now targeting enterprise and developer markets, positioning itself as a direct competitor to Google's Veo and other foundation video model providers.",
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/"
+  },
+  {
+    "section": "tips",
+    "headline": "The 62.5-Minute Rule for Claude's Prompt Cache",
+    "summary": "A developer's deep-dive reveals that Claude's server-side prompt cache expires after exactly 62.5 minutes of inactivity — not the round 60 or 90 minutes most assume. Structuring your system-prompt refresh cadence to stay inside this window can cut repeated token costs by up to 90% on long-running agentic sessions.",
+    "foryou": "If your scheduled tasks or always-on agents call Claude more than once per hour, keep the cache alive by pinging within 62 minutes — one cheap 'ping' call saves you re-billing a 10k-token system prompt every time.",
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://skids.dev/blog/anthropic-cache-tokenomics/"
+  },
+  {
+    "section": "tips",
+    "headline": "How Claude Code Works in Large Codebases: Best Practices from Anthropic",
+    "summary": "Anthropic published an official guide on using Claude Code effectively in large repositories, covering memory file organisation, parallel sub-agent delegation, and how to scope context to avoid hitting limits. The guide is based on how Anthropic's own teams use it in production.",
+    "foryou": "The memory file and CLAUDE.md patterns described here are the fastest path to making Claude Code useful in a real project — skip the trial and error and read the org's own playbook.",
+    "source": "TLDR AI",
+    "date": "2026-05-18",
+    "url": "https://claude.com/blog/how-claude-code-works-in-large-codebases-best-practices-and-where-to-start"
+  }
+]
