@@ -1,0 +1,102 @@
+[
+  {
+    "section": "models",
+    "headline": "Google Releases Gemini 3.5 Flash — Built for Agentic Workflows",
+    "summary": "Google introduced Gemini 3.5 Flash, a new model in the Gemini 3.5 family focused on agentic workflows, coding, and long-horizon task execution. It features a 1M-token context window and is priced at roughly one-third the cost of comparable frontier models, targeting cost-sensitive production applications.",
+    "foryou": "Gemini 3.5 Flash's agentic specialisation plus 1M context at one-third the frontier price is the strongest value-for-money option for multi-step pipelines right now — benchmark it against Claude Haiku before your next model selection decision.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Focus",
+        "value": "Agentic workflows, coding, long-horizon tasks"
+      },
+      {
+        "label": "Relative price",
+        "value": "~1/3 of comparable frontier models"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/"
+  },
+  {
+    "section": "models",
+    "headline": "AllenAI Releases OlmoEarth v1.1: More Efficient Open Model Family",
+    "summary": "The Allen Institute for AI released OlmoEarth v1.1, an updated family of open-weight language models with improved compute efficiency and reasoning performance over the v1.0 generation. The models are fully open — weights, training data, and code all publicly available.",
+    "foryou": "Fully open weights plus training data means you can fine-tune or distil OlmoEarth v1.1 for your specific domain without licensing restrictions — a useful baseline for self-hosted enterprise deployments.",
+    "specs": [
+      {
+        "label": "License",
+        "value": "Fully open (weights + data + code)"
+      },
+      {
+        "label": "Improvement",
+        "value": "Efficiency over v1.0"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://huggingface.co/blog/allenai/olmoearth-v1-1"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Launches Guaranteed Capacity Program for Enterprise Customers",
+    "summary": "OpenAI announced a Guaranteed Capacity offering that lets enterprise customers reserve a fixed allocation of inference compute months in advance, avoiding the rate-limiting and availability issues that have plagued large deployments. Pricing is at a premium over on-demand rates.",
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://www.cnbc.com/2026/05/19/openai-announces-new-guaranteed-capacity-offering-for-customers-to-secure-compute.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Andrej Karpathy Joins Anthropic as Researcher",
+    "summary": "Andrej Karpathy, co-founder of OpenAI and former Director of AI at Tesla, has joined Anthropic as a researcher. Karpathy is one of the most respected AI educators in the field, known for his deep-learning course and advocacy for interpretability. His hire is a major talent acquisition for Anthropic.",
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://links.tldrnewsletter.com/xjaD0w"
+  },
+  {
+    "section": "industry",
+    "headline": "Figure AI's Helix-02 Humanoid Robot Livestream Raises Remote Operation Questions",
+    "summary": "A viral livestream of Figure AI's Helix-02 humanoid robots autonomously sorting packages on a conveyor belt attracted millions of viewers — but also growing scepticism from robotics researchers who question whether the demos are truly autonomous or involve significant remote human guidance.",
+    "source": "Semafor",
+    "date": "2026-05-20",
+    "url": "https://semafor.com/s/dar8DNDmVt"
+  },
+  {
+    "section": "industry",
+    "headline": "Snap Terminates $400M Perplexity AI Partnership Before Wide Rollout",
+    "summary": "Snap confirmed it has ended its previously announced $400 million partnership with Perplexity AI before the product reached a broad rollout. No detailed explanation was given. The breakdown is a significant setback for Perplexity's strategy to embed its search AI into major consumer platforms.",
+    "source": "Web",
+    "date": "2026-05-20",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-may-20-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Class of 2026 Graduates Boo AI Speakers at Commencement Ceremonies",
+    "summary": "A wave of US college graduation ceremonies saw students audibly booing speakers who promoted AI or downplayed its impact on the job market. The backlash reflects widening anxiety among new graduates who face an entry-level job market that has contracted sharply in AI-exposed roles since 2024.",
+    "source": "Semafor",
+    "date": "2026-05-20",
+    "url": "https://semafor.com/s/ymFfTAfudM"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code: The Unreasonable Effectiveness of Generating HTML",
+    "summary": "Anthropic published a guide on how their internal teams use Claude Code to generate pure HTML prototypes as a first step for UI work, skipping build-system complexity. The post shows that Claude Code's ability to write complete, self-contained HTML files enables rapid design iteration that feeds back into React or production code.",
+    "foryou": "Starting with HTML generation before React dramatically shortens your design-to-test loop — Claude Code can render a functional UI mockup in a single file with no dependencies, letting you validate layout and logic before touching your component tree.",
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://claude.com/blog/using-claude-code-the-unreasonable-effectiveness-of-html"
+  },
+  {
+    "section": "tips",
+    "headline": "Warp Launches Single Pane of Glass for Multi-Harness Cloud Agent Orchestration",
+    "summary": "Warp released a cloud agent orchestration view that lets developers monitor, compare, and control agent runs across AWS, GCP, and Azure simultaneously. The tool is designed for teams running the same agent pipeline across multiple cloud providers for redundancy or cost arbitrage.",
+    "foryou": "If you're already running agents on more than one cloud, Warp's multi-harness view makes cross-provider debugging and cost comparison practical instead of painful — worth evaluating if you're spending time grepping logs across consoles.",
+    "source": "TLDR AI",
+    "date": "2026-05-20",
+    "url": "https://www.warp.dev/blog/multi-harness-cloud-agent-orchestration"
+  }
+]
