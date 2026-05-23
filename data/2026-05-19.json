@@ -1,0 +1,128 @@
+[
+  {
+    "section": "models",
+    "headline": "Qwen3.7 Preview Debuts on LMSYS Arena, Ranks Top-15 Overall",
+    "summary": "Alibaba's Qwen3.7 Max Preview landed at 13th overall in the LMSYS Text Arena leaderboard on its first day of public testing, with the smaller Plus Preview ranking 16th. The models compete in agentic and vision benchmarks, signalling Alibaba's intent to place Qwen firmly in the frontier tier.",
+    "foryou": "A top-15 Arena rank on debut means Qwen3.7 is worth a side-by-side eval against your current default model — especially for coding tasks where it reportedly outperforms GPT-4o on SWE-Bench.",
+    "specs": [
+      {
+        "label": "Max Preview rank",
+        "value": "#13 Text Arena"
+      },
+      {
+        "label": "Plus Preview rank",
+        "value": "#16 Text Arena"
+      },
+      {
+        "label": "Status",
+        "value": "Preview (Arena testing)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://qwen.ai/blog?id=qwen3.7"
+  },
+  {
+    "section": "models",
+    "headline": "Cursor Releases Composer 2.5 With Improved Multi-File Context",
+    "summary": "Cursor shipped Composer 2.5, which adds smarter multi-file context tracking, better diff previews, and lower per-request token usage on large refactors. The update also improves handling of long-running edit sessions that span dozens of files.",
+    "foryou": "Multi-file refactors that used to blow your context limit now stay coherent longer — worth upgrading immediately if you run Cursor on services with 10k+ LOC.",
+    "specs": [
+      {
+        "label": "Key improvement",
+        "value": "Multi-file context tracking"
+      },
+      {
+        "label": "Token efficiency",
+        "value": "Reduced spend on large refactors"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://cursor.com/blog/composer-2-5"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA Ships Vera — Its First CPU Designed Specifically for AI Agents",
+    "summary": "NVIDIA has started delivering its Vera CPU to top AI labs, positioning it as the first processor designed from the ground up for agent workloads. Vera prioritises low-latency memory bandwidth and communication throughput over raw compute, addressing the bottlenecks that appear when running thousands of concurrent agent threads.",
+    "foryou": "Vera's architecture is a signal that the compute stack is reshaping itself around agents — if you're building infrastructure for high-concurrency agent deployments, the hardware roadmap now has you in mind.",
+    "specs": [
+      {
+        "label": "Purpose",
+        "value": "Agent-first CPU"
+      },
+      {
+        "label": "Key advantage",
+        "value": "Memory bandwidth & communication throughput"
+      },
+      {
+        "label": "Status",
+        "value": "Shipping to top AI labs"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://blogs.nvidia.com/blog/vera-cpu-delivery/"
+  },
+  {
+    "section": "models",
+    "headline": "Google I/O 2026: Gemini Spark Unveiled as Always-On Autonomous Agent",
+    "summary": "Google announced Gemini Spark at I/O 2026 — a persistent AI agent that runs on Google Cloud VMs 24/7, even when your device is off. It manages Gmail, Drive, Calendar, and third-party apps like Uber and OpenTable, and lets users authorize payments and spin up custom sub-agents. It is rolling out to Google AI Ultra subscribers in the US first.",
+    "foryou": "A persistent cloud-side agent with payment authorization and sub-agent spawning is Google's answer to fully autonomous personal AI — the architecture is worth studying even if you build on a different stack.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "Gemini 3.5"
+      },
+      {
+        "label": "Runtime",
+        "value": "Google Cloud VM (24/7)"
+      },
+      {
+        "label": "Availability",
+        "value": "Google AI Ultra (US first)"
+      },
+      {
+        "label": "Sub-agents",
+        "value": "Supported"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://techcrunch.com/2026/05/19/google-introduces-gemini-spark-a-24-7-agentic-assistant-with-gmail-integration/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Acquires Stainless, the SDK Generation Startup",
+    "summary": "Anthropic acquired Stainless, a startup that automates SDK generation from OpenAPI specs and is widely used by AI companies to ship client libraries. The acquisition gives Anthropic direct ownership of the tooling many developers use to integrate with its API, and is likely to accelerate the release and quality of official Anthropic SDKs.",
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://www.anthropic.com/news/anthropic-acquires-stainless"
+  },
+  {
+    "section": "industry",
+    "headline": "Federal Jury Dismisses All of Musk's Claims Against OpenAI",
+    "summary": "A federal jury unanimously rejected all claims in Elon Musk's 2024 lawsuit against OpenAI and Sam Altman, ruling they were time-barred by the statute of limitations. Judge Gonzalez Rogers adopted the verdict immediately. Musk announced he would appeal.",
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://www.npr.org/2026/05/18/nx-s1-5822366/musk-altman-openai-jury-verdict-claims-dismissed"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent Evaluation: A Detailed Funnel-Based Guide",
+    "summary": "Cameron Wolfe's in-depth guide proposes structuring LLM agent evals as a funnel: rough LLM-as-judge first, then deterministic code checks, then expensive human review — only escalating when lower tiers pass. The post covers task decomposition, tool-use verification, and multi-turn consistency testing.",
+    "foryou": "The funnel approach cuts eval compute costs by 60-80% for multi-step agent pipelines — start with a cheap judge call and only run expensive checks on ambiguous cases.",
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://cameronrwolfe.substack.com/p/agent-evals"
+  },
+  {
+    "section": "tips",
+    "headline": "What Political Censorship Looks Like Inside a Model's Weights",
+    "summary": "A researcher reverse-engineered Qwen's internal representations and found identifiable weight-level signatures corresponding to politically sensitive topics that trigger suppression. The post maps out which layers activate for censored content and shows that the suppression persists even after fine-tuning on uncensored data.",
+    "foryou": "If you fine-tune on Qwen for a politically neutral task, be aware the censorship circuitry is baked into the base weights — test your fine-tuned model on your own red-team prompts before deployment.",
+    "source": "TLDR AI",
+    "date": "2026-05-19",
+    "url": "https://vas-blog.pages.dev/qwen-censorship/"
+  }
+]
