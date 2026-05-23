@@ -1,0 +1,138 @@
+[
+  {
+    "section": "models",
+    "headline": "Stability AI Releases Stable Audio 3.0 With Open-Weight Models",
+    "summary": "Stability AI released the Stable Audio 3.0 family, including open-weight variants capable of generating music and sound effects up to six minutes long from text prompts. The models are designed for artistic experimentation and support both music composition and foley-style audio generation.",
+    "foryou": "Open-weight, runs locally, no licensing restrictions — plug Stable Audio 3.0 into your content generation pipeline for royalty-free background music and sound effects at zero marginal API cost.",
+    "specs": [
+      {
+        "label": "Max duration",
+        "value": "6+ minutes"
+      },
+      {
+        "label": "Outputs",
+        "value": "Music + sound effects"
+      },
+      {
+        "label": "License",
+        "value": "Open-weight variants available"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models"
+  },
+  {
+    "section": "models",
+    "headline": "Google Releases Agent Executor: Open-Source Distributed Agent Runtime",
+    "summary": "Google open-sourced Agent Executor, a runtime standard for reliable long-running agent workflow execution. Key features include durable execution (agents survive process restarts), secure sandboxed isolation per step, and automatic connection recovery. It is deployable on Google Cloud and designed to integrate with existing LangChain/LangGraph workflows.",
+    "foryou": "Durable execution means your agent pipeline can resume from the last successful step after a crash without replaying from scratch — this alone could remove the most painful failure mode in production agentic systems.",
+    "specs": [
+      {
+        "label": "License",
+        "value": "Open source"
+      },
+      {
+        "label": "Key features",
+        "value": "Durable execution, secure isolation, connection recovery"
+      },
+      {
+        "label": "Deployment",
+        "value": "Google Cloud"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/"
+  },
+  {
+    "section": "models",
+    "headline": "ByteDance Releases Lance: 3B Multimodal Model for Generation and Editing",
+    "summary": "ByteDance released Lance, a 3B-parameter multimodal model trained from scratch that handles image understanding, video understanding, image generation, and image editing within a single architecture. It is designed as a unified alternative to routing between separate specialist models for each modality.",
+    "foryou": "A single 3B model covering four visual tasks means you can replace four separate API calls with one — significant cost and latency reduction if your pipeline touches both vision and generation.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "3B"
+      },
+      {
+        "label": "Capabilities",
+        "value": "Image + video understanding, image generation, image editing"
+      },
+      {
+        "label": "Training",
+        "value": "From scratch (no pretrained backbone)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://github.com/bytedance/Lance"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Signs $45 Billion Compute Deal With SpaceX Over Three Years",
+    "summary": "Anthropic has agreed to pay SpaceX nearly $45 billion over three years for compute resources — $1.25 billion per month until May 2029, with 90-day exit clauses for either party. The deal dwarfs any previous cloud compute contract and signals the extraordinary scale of compute Anthropic needs to train and run its frontier models.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://links.tldrnewsletter.com/q5YG3r"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Prepares for IPO as Early as September 2026",
+    "summary": "OpenAI is reportedly working toward a public offering as early as September 2026, following the dismissal of Musk's lawsuit and growing investor appetite. The company has brought in bankers and is evaluating whether to list as a public benefit corporation or restructure as a standard Delaware C-corp first.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's Q2 Revenue Projected at $10.9B — First Profitable Quarter",
+    "summary": "Internal projections shared with Anthropic investors show Q2 2026 revenue more than doubling to $10.9 billion, driven by explosive enterprise adoption of Claude. The quarter is expected to mark Anthropic's first profitable period. The numbers were disclosed as part of an ongoing funding round.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://links.tldrnewsletter.com/7MJLkE"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump AI Executive Order Cancelled After Lobbying by Musk, Zuckerberg, and Sacks",
+    "summary": "President Trump pulled an executive order that would have required AI labs to share frontier models with the US government 90 days before public launch. The order was killed after Musk, Zuckerberg, and former White House adviser David Sacks lobbied against it, arguing it would slow the US lead over China. Semafor first reported the reversal.",
+    "source": "Semafor",
+    "date": "2026-05-21",
+    "url": "https://semafor.com/s/vlwnio3gWk"
+  },
+  {
+    "section": "industry",
+    "headline": "Alibaba Unveils Zhenwu M890 AI Chip Optimised for Agent Workloads",
+    "summary": "Alibaba unveiled its Zhenwu M890, a new AI accelerator chip designed specifically for the heavy memory bandwidth and inter-chip communication demands of large-scale agent deployments. The chip is Alibaba's latest push to reduce dependence on NVIDIA hardware for its cloud AI infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://ca.finance.yahoo.com/news/alibaba-unveils-ai-chip-push-050035417.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Building Agents From First Principles — Without Frameworks",
+    "summary": "Anish Mishra's post strips away LangChain, AutoGPT, and similar abstractions to show that every agent system reduces to the same five-component loop: prompt → model → action → environment → reward. He builds a working text-to-diagram agent in pure Python to make the point concrete.",
+    "foryou": "Before adding another framework to your agent stack, read this — it's the clearest argument for understanding the loop before abstracting it, and it will make your debugging dramatically easier.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://links.tldrnewsletter.com/Gb5Zoo"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Adds llms.txt Compliance Check to Chrome Lighthouse",
+    "summary": "Google added an llms.txt audit to Chrome's Lighthouse tool under a new 'Agentic Browsing' category, making it easy for developers to check whether their sites are correctly configured for AI agent indexing. The check validates the file format and flag missing structured data that agents use for navigation.",
+    "foryou": "llms.txt is quietly becoming a first-class signal for how AI agents discover and interact with your site — add and validate it now via Lighthouse before it starts affecting agent-driven traffic.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://searchengineland.com/google-llms-txt-chrome-lighthouse-478246"
+  },
+  {
+    "section": "tips",
+    "headline": "Spotify: LLM Evals Are a Funnel, Not a Fork",
+    "summary": "Spotify's ML engineering team published lessons from pairing LLM offline evals with online A/B experiments. The core insight: evals and experiments should feed each other in a continuous loop — evals reveal what to test online, and online results expose gaps in evals. The post includes their metric-selection framework and failure taxonomy.",
+    "foryou": "The funnel framing turns evals from a gate into a flywheel — each A/B result makes your evals smarter for the next iteration. Adopt this if you're running both offline and online evaluation for any production LLM feature.",
+    "source": "TLDR AI",
+    "date": "2026-05-21",
+    "url": "https://engineering.atspotify.com/2026/5/better-experiments-with-llm-evals-a-funnel-not-a-fork"
+  }
+]
