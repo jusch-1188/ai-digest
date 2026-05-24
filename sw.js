@@ -15,6 +15,14 @@
 const SHELL_CACHE = 'ai-digest-shell-v4';
 const DATA_CACHE  = 'ai-digest-data-v4';
 
+function todayStr() {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 // ── Helper: clone synchronously then put in cache ────────────
 function putInCache(cacheName, request, response) {
   if (!response || !response.ok) return;
@@ -66,7 +74,7 @@ self.addEventListener('fetch', event => {
   // ── 2. Daily data files ──────────────────────────────────────
   if (url.pathname.startsWith('/data/') && url.pathname.endsWith('.json')) {
     const m      = url.pathname.match(/\/data\/(\d{4}-\d{2}-\d{2})\.json$/);
-    const isPast = m && m[1] < new Date().toISOString().slice(0, 10);
+    const isPast = m && m[1] < todayStr();
 
     if (isPast) {
       // Historical files are immutable — serve from cache forever once fetched
