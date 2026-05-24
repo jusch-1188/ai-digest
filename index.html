@@ -385,7 +385,8 @@
 
   <!-- Period filter -->
   <div class="filter-group period" role="group" aria-label="Filter by period">
-    <button class="pill active" data-period="today">Today</button>
+    <button class="pill active" data-period="all">All</button>
+    <button class="pill"        data-period="today">Today</button>
     <button class="pill"        data-period="week">This week</button>
     <button class="pill"        data-period="month">This month</button>
   </div>
@@ -418,11 +419,10 @@
 const state = {
   currentDate: todayStr(),
   section: 'all',
-  period: 'today',
+  period: 'all',
   search: '',
   model: 'all',
-  allCards: [],        // cards from current date file
-  multiDayCards: [],   // cards from multiple days (week/month)
+  allCards: [],
   loading: false,
 };
 
@@ -471,43 +471,58 @@ function dateRange(start, end) {
 //  Data fetching
 // ═══════════════════════════════════════════════════════════
 async function fetchDay(dateStr) {
-  if (dataCache[dateStr]) return dataCache[dateStr];
+  // Use `in` not truthiness — empty array [] is falsy, causing infinite re-fetches
+  if (dateStr in dataCache) return dataCache[dateStr];
   try {
-    const res = await fetch(`/data/${dateStr}.json`);
+    const ctrl = new AbortController();
+    const tid  = setTimeout(() => ctrl.abort(), 6000); // 6s timeout per file
+    const res  = await fetch(`/data/${dateStr}.json`, { signal: ctrl.signal });
+    clearTimeout(tid);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const cards = await res.json();
     dataCache[dateStr] = cards;
     return cards;
   } catch {
-    dataCache[dateStr] = [];
+    dataCache[dateStr] = []; // cache misses too, so we never re-fetch 404s
     return [];
   }
 }
 
+// Incremented on every load; stale async completions compare and bail out
+let _loadId = 0;
+
 async function loadCurrentView() {
+  const myId = ++_loadId;
   state.loading = true;
-  renderGrid();   // show spinner
+  renderGrid();
 
   let cards = [];
-  const today = todayStr();
-
-  if (state.period === 'today') {
-    cards = await fetchDay(state.currentDate);
-  } else if (state.period === 'week') {
-    const start = addDays(today, -6);
-    const dates = dateRange(start, today);
-    const results = await Promise.all(dates.map(fetchDay));
-    cards = results.flat();
-  } else if (state.period === 'month') {
-    const start = addDays(today, -29);
-    const dates = dateRange(start, today);
-    const results = await Promise.all(dates.map(fetchDay));
-    cards = results.flat();
+  try {
+    const today = todayStr();
+    if (state.period === 'today') {
+      cards = await fetchDay(state.currentDate);
+    } else if (state.period === 'all' || state.period === 'week') {
+      // All = last 7 days (all data we typically have)
+      const start = addDays(today, -6);
+      const dates = dateRange(start, today);
+      const results = await Promise.all(dates.map(fetchDay));
+      cards = results.flat();
+    } else if (state.period === 'month') {
+      const start = addDays(today, -29);
+      const dates = dateRange(start, today);
+      const results = await Promise.all(dates.map(fetchDay));
+      cards = results.flat();
+    }
+  } catch {
+    cards = [];
+  } finally {
+    // Only update state if this is still the latest load request
+    if (myId === _loadId) {
+      state.allCards = cards;
+      state.loading  = false;
+      renderGrid();
+    }
   }
-
-  state.allCards = cards;
-  state.loading = false;
-  renderGrid();
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -726,8 +741,9 @@ document.querySelectorAll('.filter-group.period .pill').forEach(btn => {
     document.querySelectorAll('.filter-group.period .pill').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     state.period = btn.dataset.period;
-    // Date nav only relevant for Today
+    // Date nav arrow only relevant when browsing day-by-day
     document.querySelector('.date-nav').style.opacity = state.period === 'today' ? '1' : '.35';
+    document.querySelector('.date-nav').style.pointerEvents = state.period === 'today' ? '' : 'none';
     loadCurrentView();
   });
 });
@@ -759,6 +775,9 @@ document.getElementById('searchInput').addEventListener('input', e => {
 // ═══════════════════════════════════════════════════════════
 //  Init
 // ═══════════════════════════════════════════════════════════
+// Date nav is only interactive in "Today" mode
+document.querySelector('.date-nav').style.opacity = '0.35';
+document.querySelector('.date-nav').style.pointerEvents = 'none';
 updateDateUI();
 loadCurrentView();
 
