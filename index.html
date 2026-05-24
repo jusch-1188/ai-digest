@@ -440,6 +440,10 @@ const MODEL_KEYWORDS = {
 // Cache: date string → array of cards
 const dataCache = {};
 
+// Manifest: dates that have data files (loaded once from /data/index.json)
+// null = not yet fetched; [] = failed or empty
+let availableDates = null;
+
 // ═══════════════════════════════════════════════════════════
 //  Helpers
 // ═══════════════════════════════════════════════════════════
@@ -468,14 +472,29 @@ function dateRange(start, end) {
 }
 
 // ═══════════════════════════════════════════════════════════
+//  Manifest
+// ═══════════════════════════════════════════════════════════
+async function loadIndex() {
+  if (availableDates !== null) return availableDates;
+  try {
+    const res = await fetch('/data/index.json');
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const idx = await res.json();
+    availableDates = Array.isArray(idx.dates) ? idx.dates : [];
+  } catch {
+    availableDates = []; // graceful degradation — fall back to trying all dates
+  }
+  return availableDates;
+}
+
+// ═══════════════════════════════════════════════════════════
 //  Data fetching
 // ═══════════════════════════════════════════════════════════
 async function fetchDay(dateStr) {
-  // Use `in` not truthiness — empty array [] is falsy, causing infinite re-fetches
   if (dateStr in dataCache) return dataCache[dateStr];
   try {
     const ctrl = new AbortController();
-    const tid  = setTimeout(() => ctrl.abort(), 6000); // 6s timeout per file
+    const tid  = setTimeout(() => ctrl.abort(), 6000);
     const res  = await fetch(`/data/${dateStr}.json`, { signal: ctrl.signal });
     clearTimeout(tid);
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -483,7 +502,7 @@ async function fetchDay(dateStr) {
     dataCache[dateStr] = cards;
     return cards;
   } catch {
-    dataCache[dateStr] = []; // cache misses too, so we never re-fetch 404s
+    dataCache[dateStr] = [];
     return [];
   }
 }
@@ -498,25 +517,33 @@ async function loadCurrentView() {
 
   let cards = [];
   try {
-    const today = todayStr();
+    const today  = todayStr();
+    const index  = await loadIndex();
+
+    // Build the candidate date range for the selected period
+    let wantDates;
     if (state.period === 'today') {
-      cards = await fetchDay(state.currentDate);
+      wantDates = [state.currentDate];
     } else if (state.period === 'all' || state.period === 'week') {
-      // All = last 7 days (all data we typically have)
-      const start = addDays(today, -6);
-      const dates = dateRange(start, today);
-      const results = await Promise.all(dates.map(fetchDay));
-      cards = results.flat();
+      wantDates = dateRange(addDays(today, -6), today);
     } else if (state.period === 'month') {
-      const start = addDays(today, -29);
-      const dates = dateRange(start, today);
-      const results = await Promise.all(dates.map(fetchDay));
-      cards = results.flat();
+      wantDates = dateRange(addDays(today, -29), today);
+    } else {
+      wantDates = [];
     }
+
+    // Filter to only dates confirmed in the manifest.
+    // Exception: 'today' always tries even if not yet in the index
+    // (the daily job may have just run but index not re-fetched yet).
+    const toFetch = state.period === 'today'
+      ? wantDates
+      : wantDates.filter(d => index.includes(d));
+
+    const results = await Promise.all(toFetch.map(fetchDay));
+    cards = results.flat();
   } catch {
     cards = [];
   } finally {
-    // Only update state if this is still the latest load request
     if (myId === _loadId) {
       state.allCards = cards;
       state.loading  = false;
