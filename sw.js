@@ -1,9 +1,8 @@
-// AI Digest — Service Worker
-// Caches: shell (index.html, assets) + last 7 days of data files
-// Strategy: cache-first for data, network-first for shell
+// AI Digest — Service Worker v2
+// Fix: clone response IMMEDIATELY before any async operations
 
-const SHELL_CACHE  = 'ai-digest-shell-v1';
-const DATA_CACHE   = 'ai-digest-data-v1';
+const SHELL_CACHE  = 'ai-digest-shell-v2';   // bumped — clears old bad cache
+const DATA_CACHE   = 'ai-digest-data-v2';    // bumped — clears old bad cache
 const SHELL_URLS   = ['/', '/index.html', '/manifest.json'];
 const DATA_DAYS    = 7;
 
@@ -31,7 +30,8 @@ function last7Days() {
 // ── Install ──────────────────────────────────────────────────
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open(SHELL_CACHE).then(cache => cache.addAll(SHELL_URLS))
+    caches.open(SHELL_CACHE)
+      .then(cache => cache.addAll(SHELL_URLS))
       .then(() => self.skipWaiting())
   );
 });
@@ -44,16 +44,17 @@ self.addEventListener('activate', event => {
       .then(keys => Promise.all(
         keys.filter(k => !validCaches.includes(k)).map(k => caches.delete(k))
       ))
-      .then(() => {
-        // Pre-cache last 7 days of data in background
-        caches.open(DATA_CACHE).then(cache => {
-          last7Days().forEach(url => {
-            fetch(url).then(res => { if (res.ok) cache.put(url, res); }).catch(() => {});
-          });
-        });
-        return self.clients.claim();
-      })
+      .then(() => self.clients.claim())
   );
+  // Pre-cache last 7 days of data in background (after activation)
+  // Use clone() so cache.put doesn't consume the only copy
+  caches.open(DATA_CACHE).then(cache => {
+    last7Days().forEach(url => {
+      fetch(url).then(res => {
+        if (res.ok) cache.put(url, res.clone());  // clone before put
+      }).catch(() => {});
+    });
+  });
 });
 
 // ── Fetch ─────────────────────────────────────────────────────
@@ -68,7 +69,9 @@ self.addEventListener('fetch', event => {
         if (cached) return cached;
         try {
           const res = await fetch(event.request);
-          if (res.ok) cache.put(event.request, res.clone());
+          if (res.ok) {
+            cache.put(event.request, res.clone()); // clone BEFORE returning res
+          }
           return res;
         } catch {
           return new Response('[]', { headers: { 'Content-Type': 'application/json' } });
@@ -83,7 +86,8 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       fetch(event.request)
         .then(res => {
-          caches.open(SHELL_CACHE).then(cache => cache.put(event.request, res.clone()));
+          const clone = res.clone(); // clone IMMEDIATELY, synchronously, before any await
+          caches.open(SHELL_CACHE).then(cache => cache.put(event.request, clone));
           return res;
         })
         .catch(() => caches.match(event.request))
@@ -98,10 +102,11 @@ self.addEventListener('fetch', event => {
         if (cached) return cached;
         return fetch(event.request).then(res => {
           if (res.ok) {
-            caches.open(SHELL_CACHE).then(c => c.put(event.request, res.clone()));
+            const clone = res.clone(); // clone IMMEDIATELY before returning res
+            caches.open(SHELL_CACHE).then(c => c.put(event.request, clone));
           }
           return res;
-        }).catch(() => cached || new Response('', { status: 503 }));
+        }).catch(() => new Response('', { status: 503 }));
       })
     );
   }
