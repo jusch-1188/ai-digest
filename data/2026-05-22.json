@@ -1,25 +1,29 @@
 [
   {
     "section": "models",
-    "headline": "Qwen3.7 Full Release: Alibaba's Agent-Optimised Frontier Model",
-    "summary": "Alibaba released Qwen3.7-Max as a proprietary agent-first model, posting top scores on Terminal-Bench 2.0-Terminus, SWE-Pro, SciCode, and MCP-Mark. It performs consistently across Claude Code, OpenClaw, Qwen Code, and custom agent harnesses, targeting developers who need a capable model across diverse tooling environments.",
-    "foryou": "Top scores on MCP-Mark and SWE-Pro make this the strongest challenger to Claude Sonnet for tool-heavy agentic coding — run a head-to-head on your benchmark suite before your next model contract renewal.",
+    "headline": "Alibaba Releases Qwen3.7-Max: Proprietary Agent Model Tops Terminal-Bench 2.0 and SWE-Pro",
+    "summary": "Alibaba released Qwen3.7-Max as a proprietary agent-foundation model, achieving top scores on Terminal-Bench 2.0-Terminus, SWE-Pro, SciCode, MCP-Mark, GPQA Diamond, HMMT Feb 2026, and IMOAnswerBench. Designed as a foundation for autonomous agentic workflows requiring multi-step tool use and reasoning.",
+    "foryou": "Top SWE-Pro and Terminal-Bench scores put Qwen3.7-Max in direct competition with frontier coding agents — worth benchmarking against your current model on your specific agentic tasks.",
     "specs": [
       {
-        "label": "SWE-Pro",
-        "value": "Top ranking"
+        "label": "Type",
+        "value": "Proprietary agent-foundation model"
       },
       {
         "label": "Terminal-Bench 2.0",
-        "value": "Top score"
+        "value": "#1"
       },
       {
-        "label": "MCP-Mark",
-        "value": "Top score"
+        "label": "SWE-Pro",
+        "value": "#1"
       },
       {
-        "label": "Category",
-        "value": "Agent-optimised proprietary model"
+        "label": "GPQA Diamond",
+        "value": "Top tier"
+      },
+      {
+        "label": "Maker",
+        "value": "Alibaba"
       }
     ],
     "source": "TLDR AI",
@@ -27,77 +31,132 @@
     "url": "https://qwen.ai/blog?id=qwen3.7"
   },
   {
+    "section": "models",
+    "headline": "Goodfire: Sparse Autoencoders Can Represent Curved Neural Manifolds via Shattering and Dilution",
+    "summary": "Goodfire research shows SAEs can capture non-linear curved manifolds in neural networks through three mechanisms: shattering, compact capture, and dilution — with each feature representing only part of a manifold. This provides richer geometric representation than previously understood, with implications for mechanistic interpretability and steering vectors.",
+    "foryou": "Better SAE geometry theory means more reliable mechanistic interpretability tools — directly relevant if you're using SAEs for model steering, circuit analysis, or behavioral editing.",
+    "specs": [
+      {
+        "label": "Technique",
+        "value": "Sparse autoencoders (SAEs)"
+      },
+      {
+        "label": "Contribution",
+        "value": "Curved manifold representation via shattering + dilution"
+      },
+      {
+        "label": "Field",
+        "value": "Mechanistic interpretability"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-22",
+    "url": "https://www.goodfire.ai/research/can-saes-capture-neural-geometry"
+  },
+  {
     "section": "industry",
-    "headline": "Anthropic and Microsoft in Talks for Maia AI Chip Supply Deal",
-    "summary": "Microsoft is in discussions to supply its Maia 200 AI accelerator chips to Anthropic, which is facing compute constraints despite existing partnerships with Amazon and Google. A $5 billion Microsoft investment reportedly underpins the deal. Maia's 30% improved performance over comparable alternatives makes it attractive for Anthropic's inference workloads.",
+    "headline": "Cursor Hits $3B ARR; SpaceX Locks In Right to Acquire It for $60B, 30 Days After June 12 IPO",
+    "summary": "Cursor's annualized revenue reached $3B in late April (from $2B in February, $1B in November 2025) with 3,000+ enterprise customers at $100K+/year and a $6B+ projection for end of 2026. SpaceX preempted Cursor's $2B funding round (a16z/Thrive/Nvidia at $50B valuation) with a binding $60B acquisition agreement exercisable within 30 days of SpaceX's expected June 12 IPO listing. A $10B cash breakup fee applies if SpaceX exits.",
+    "source": "TLDR AI",
+    "date": "2026-05-22",
+    "url": "https://finance.yahoo.com/markets/article/spacex-strikes-60-billion-deal-for-the-right-to-buy-ai-coding-startup-cursor-143350832.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Chinese Regulators Order Manus to Unwind Meta Acquisition; Founders Seek $1B Buyback",
+    "summary": "Chinese regulators ordered Manus to unwind its acquisition by Meta, and the company's founders are seeking approximately $1 billion to reclaim full operational control. The move signals sustained regulatory pressure on cross-border AI acquisitions involving Chinese AI companies and US tech giants.",
+    "source": "TLDR AI",
+    "date": "2026-05-22"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic in Talks to Use Microsoft's Maia 200 Chip — A Potential Fourth Silicon Supplier",
+    "summary": "Anthropic is in talks with Microsoft to use its custom Maia 200 chip (TSMC 3nm, 216GB HBM3e memory, 10+ petaflops FP4, ~30% improved tokens-per-dollar vs. current fleet silicon) following Microsoft's $5B November 2025 investment. No deal signed; chip not yet generally available on Azure. Would make Microsoft Anthropic's fourth chip supplier alongside Google TPUs, AWS Trainium2, and Nvidia.",
     "source": "TLDR AI",
     "date": "2026-05-22",
     "url": "https://www.cnbc.com/2026/05/21/anthropic-microsoft-maia-200-ai-chip.html"
   },
   {
     "section": "industry",
-    "headline": "Cursor Hits $3 Billion Annual Revenue Run Rate",
-    "summary": "Cursor's annualised revenue reached $3 billion in late April 2026, with over 3,000 enterprise customers paying at least $100,000 each annually. The growth makes Cursor one of the fastest-growing software startups ever. SpaceX holds rights to acquire the company as part of a previously disclosed strategic arrangement.",
-    "source": "TLDR AI",
-    "date": "2026-05-22",
-    "url": "https://links.tldrnewsletter.com/TgMrfv"
-  },
-  {
-    "section": "industry",
-    "headline": "OpenAI Reports $5.7 Billion in Q1 2026 Revenue",
-    "summary": "OpenAI's Q1 2026 revenue came in at $5.7 billion, surpassing Anthropic's Q1 figure. Strong enterprise ChatGPT adoption and API revenue from third-party applications drove the result. The number was reported ahead of the company's anticipated IPO process.",
+    "headline": "OpenAI Q1 2026 Revenue Hit $5.7B, Surpassing Anthropic",
+    "summary": "OpenAI's Q1 2026 revenue reached $5.7 billion, outpacing Anthropic despite Anthropic's explosive growth trajectory. Both companies are approaching IPO windows with rapidly expanding revenue but high structural costs, as compute constraints push Anthropic to diversify chip suppliers further.",
     "source": "TLDR AI",
     "date": "2026-05-22",
     "url": "https://sherwood.news/tech/report-openais-q1-revenue-was-5-7-billion-beating-anthropic/"
   },
   {
     "section": "industry",
-    "headline": "Microsoft Cancels Claude Code Enterprise Licenses, Moves Developers to Copilot CLI",
-    "summary": "Microsoft has cancelled its enterprise Claude Code licences and is redirecting internal developers to GitHub Copilot CLI. The move is widely interpreted as cost-driven — Microsoft pays Anthropic for Claude access while also investing $5 billion in the company — and signals that Copilot CLI is being positioned as the Microsoft-endorsed coding agent.",
+    "headline": "Microsoft Cancels Claude Code Developer Licenses, Redirects Users to GitHub Copilot CLI",
+    "summary": "Microsoft is cancelling Claude Code developer licenses and pushing affected developers to GitHub Copilot CLI — a move widely attributed to financial motives following its $5B Anthropic investment, consolidating developer tooling spend within Microsoft's own AI ecosystem rather than funding a competing interface.",
     "source": "TLDR AI",
     "date": "2026-05-22",
     "url": "https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives"
   },
   {
     "section": "industry",
-    "headline": "Manus Raising $1 Billion to Buy Back Its Business From Meta After Chinese Regulator Veto",
-    "summary": "China's regulators ordered Manus to unwind its acquisition by Meta, forcing the founders to raise capital to buy back the operation. They are in active fundraising discussions and may contribute personal funds. The case is an unusual example of a post-close acquisition reversal driven by geopolitical regulation.",
+    "headline": "Anthropic's New Consulting Venture Makes First Acquisition: Fractional AI",
+    "summary": "Anthropic's new consulting arm has acquired Fractional AI as its operational centerpiece, marking the venture's first M&A move. The play signals Anthropic's push into enterprise services to complement its model API business and compete with OpenAI's deployment advisory services.",
     "source": "TLDR AI",
     "date": "2026-05-22",
-    "url": "https://links.tldrnewsletter.com/qttqkT"
+    "url": "https://finance.yahoo.com/sectors/technology/articles/anthropic-consulting-venture-makes-first-120000326.html"
   },
   {
     "section": "industry",
-    "headline": "AI-Written Short Story Wins Granta Literary Prize, Raises Detection Questions",
-    "summary": "A short story by Jamir Nazir called 'The Serpent in the Grove', published in Granta, won a literary prize before AI-detection software flagged it as likely machine-generated. The judges called the prose 'evocative' but the pattern of imagery — lists of three, unusual metaphors — matched known LLM writing signatures. The incident reignited debate about AI detection reliability.",
+    "headline": "US Commits $2B to Quantum Computing — But Excludes Google, Microsoft, and IonQ",
+    "summary": "The Trump administration announced $2B in quantum computing investments across nine companies (letters of intent, not finalized deals), notably excluding Google, Microsoft, and IonQ. IBM predicts its first fault-tolerant scalable quantum system by 2029. Analysts warn exclusion could create a 'comparative disadvantage' for omitted firms in future government contracts.",
     "source": "Semafor",
     "date": "2026-05-22",
-    "url": "https://semafor.com/s/U9XxMx0wq9"
+    "url": "https://semafor.com/s/btse906cCR"
   },
   {
     "section": "industry",
-    "headline": "Apple Plans to Let iOS 27 Users Choose Between Gemini, Claude, and ChatGPT",
-    "summary": "Apple is building an 'Extensions' framework for iOS 27 that will allow users to swap the underlying AI model powering Siri and Apple Intelligence tasks. Internal testing with Google and Anthropic models is underway. The feature is expected to be previewed at WWDC 2026 and ship in fall.",
-    "source": "Web",
+    "headline": "Trump AI Executive Order Shelved After Musk, Zuckerberg, and Sacks Lobby White House",
+    "summary": "The Trump administration halted a proposed executive order that would have created a voluntary 90-day pre-release model-sharing program with the government. Elon Musk, Mark Zuckerberg, and former adviser David Sacks successfully killed it by appealing to accelerationist factions within the White House. No official AI licensing regime was created.",
+    "source": "Semafor",
     "date": "2026-05-22",
-    "url": "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/"
+    "url": "https://semafor.com/s/vlwnio3gWk"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Screening Drives Job Application Acceptance Rate to 0.2% at Deel — Below Harvard",
+    "summary": "Payroll company Deel received 1.3 million applications in 2025, hiring only 2,900 people (0.2% acceptance) after AI-assisted initial screening — a rate lower than Harvard's. Deel expects applications to nearly double in 2026. Its own economist advises against using AI from the job-seeker side, recommending targeted networking instead.",
+    "source": "Semafor",
+    "date": "2026-05-22",
+    "url": "https://semafor.com/s/ezf5bjJSuI"
+  },
+  {
+    "section": "industry",
+    "headline": "Stellantis Partners with Wayve to Bring Camera-Only Self-Driving to Jeep, Fiat, and Dodge",
+    "summary": "Stellantis announced a partnership with UK startup Wayve to integrate its camera-based autonomous driving system (no HD maps required) into Jeep, Fiat, Dodge, and other brands. Initial deployments require driver supervision; more advanced features follow as regulations evolve. Stellantis also announced an EV manufacturing partnership with China's Dongfeng this week.",
+    "source": "Semafor",
+    "date": "2026-05-22",
+    "url": "https://semafor.com/s/9NSI2cvein"
   },
   {
     "section": "tips",
-    "headline": "Lessons Learned From Building Cloud Agents at Scale — Cursor's Playbook",
-    "summary": "Cursor's engineering team shared six hard-won lessons from building cloud-based coding agents, including: use durable execution runtimes, isolate each agent run in its own dev environment, design for self-healing infrastructure, and separate agent state from conversation state cleanly. The post is unusually candid about failure modes in production.",
-    "foryou": "The separation of agent state from conversation state is the single insight most teams get wrong — it prevents runaway context accumulation and makes agent runs resumable, both of which you will need at scale.",
+    "headline": "Cursor's Cloud Agent Lessons: Durable Execution, Isolated Envs, Agent/Conversation State Separation",
+    "summary": "Cursor's engineering blog covers practical lessons from running thousands of concurrent cloud agents: durable execution prevents work loss on crashes, isolated dev environments contain blast radius, self-healing infrastructure handles transient failures, and separating agent state from conversation state is critical for long-running tasks. Based on real production experience.",
+    "foryou": "Agent state / conversation state separation is the most common footgun in production agent systems — reading this before your next agentic pipeline design will save significant debugging time.",
     "source": "TLDR AI",
     "date": "2026-05-22",
     "url": "https://cursor.com/blog/cloud-agent-lessons"
   },
   {
     "section": "tips",
-    "headline": "AI's Falling Prices Are a Software Story, Not a Hardware One",
-    "summary": "An analysis argues that the dramatic decline in AI inference costs is driven primarily by algorithmic improvements — better quantisation, attention optimisations, and speculative decoding — rather than chip improvements. This means the deflationary trend will continue regardless of whether hardware advances stall.",
-    "foryou": "If software is driving cost declines, then frontier model prices will keep falling even if chip shortages persist — a direct argument for delaying any long-term compute commitments and staying on pay-as-you-go inference.",
+    "headline": "AI's Plummeting Prices Are a Software Story: Local Open-Weight Models Challenge Frontier APIs",
+    "summary": "An analysis argues that rapid AI inference cost declines are driven primarily by software optimization (quantization, speculative decoding, batching) rather than hardware. Local open-weight models on commodity hardware are increasingly competitive with frontier APIs for many production tasks, challenging the ROI of paying premium inference costs.",
+    "foryou": "If you're paying premium API rates for inference-heavy workloads, the margin for running capable open-weight models on your own hardware may now be positive — worth a cost-benchmark pass before your next billing cycle.",
     "source": "TLDR AI",
     "date": "2026-05-22",
     "url": "https://weightythoughts.com/p/ais-plummeting-prices-are-a-software"
+  },
+  {
+    "section": "tips",
+    "headline": "State of AI 2026: AI's Measured Impact on Developer Work and Skill Demand",
+    "summary": "The State of AI 2026 annual report analyzes how AI tools are reshaping developer workflows, productivity metrics, and skill demand across engineering teams. Includes benchmarks of AI adoption rates and forecasts for AI integration over the next two years.",
+    "foryou": "Useful calibration for where your team sits relative to industry AI adoption — the productivity and skill demand data are worth scanning before any headcount or tooling decisions.",
+    "source": "TLDR AI",
+    "date": "2026-05-22",
+    "url": "https://2026.stateofai.dev/en-US"
   }
 ]
