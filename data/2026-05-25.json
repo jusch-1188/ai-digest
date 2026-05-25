@@ -1,0 +1,129 @@
+[
+  {
+    "section": "models",
+    "headline": "Google I/O 2026: Gemini 3.5 Flash GA — Outperforms Previous Pro on Agents; Gemini Omni Launches",
+    "summary": "Google released Gemini 3.5 Flash (generally available) at I/O 2026, beating Gemini 3.1 Pro on agentic benchmarks (Terminal-Bench 2.1: 76.2%, MCP Atlas: 83.6%), available via Antigravity, AI Studio, and Android Studio. Gemini Omni is a new multimodal series accepting image/audio/video/text and outputting video grounded in real-world knowledge. Gemini 3.5 Pro is in testing with release expected next month.",
+    "foryou": "Flash outperforming the previous Pro on agentic benchmarks at lower cost is a significant shift — re-benchmark your current model routing logic now; Flash likely captures most of your Claude/GPT-5.5 use cases at meaningfully lower cost.",
+    "specs": [
+      {
+        "label": "Terminal-Bench 2.1 (Flash)",
+        "value": "76.2%"
+      },
+      {
+        "label": "MCP Atlas (Flash)",
+        "value": "83.6%"
+      },
+      {
+        "label": "Availability",
+        "value": "GA — Antigravity, AI Studio, Android Studio"
+      },
+      {
+        "label": "Modalities (Omni)",
+        "value": "Image/audio/video/text in, video out"
+      },
+      {
+        "label": "Next release",
+        "value": "Gemini 3.5 Pro (next month)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/google-io-2026-all-our-announcements/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Claude Mythos Preview: 10,000+ Critical Bugs Found Across 50 Partner Organizations",
+    "summary": "Anthropic's Project Glasswing published results from ~50 partner organizations deploying Claude Mythos Preview in defensive security workflows: over 10,000 high/critical-severity vulnerabilities identified in widely-used software. General release is conditioned on stronger safeguards — not expected before late 2026 or 2027. Claude Security, using Opus 4.7 for code scanning + fix generation, launched in public beta May 22 for Enterprise customers.",
+    "foryou": "Mythos Preview's bug-finding rate is a wake-up call for any deployed software — enrolling in the Glasswing enterprise program before general release gives you a meaningful security advantage that disappears once it's available to everyone.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "Claude Mythos Preview"
+      },
+      {
+        "label": "Critical/high bugs found",
+        "value": "10,000+"
+      },
+      {
+        "label": "Partner orgs",
+        "value": "~50"
+      },
+      {
+        "label": "General release ETA",
+        "value": "Late 2026–2027"
+      },
+      {
+        "label": "Enterprise beta now",
+        "value": "Claude Security (Opus 4.7)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://www.techtimes.com/articles/317076/20260524/anthropic-moves-closer-public-claude-mythos-release-10000-critical-bugs-found-first.htm"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.5 Instant Is Now the Default ChatGPT Model as OpenAI Ramps Toward September IPO",
+    "summary": "OpenAI made GPT-5.5 Instant the default model for all ChatGPT users, replacing GPT-5.5 which launched April 23. The move reflects confidence in GPT-5.5 Instant's cost-quality tradeoff ahead of OpenAI's planned September IPO. Amazon is reportedly in talks to invest $10B, and Novo Nordisk announced a strategic AI partnership covering drug discovery, clinical trials, and manufacturing.",
+    "foryou": "Default model shifts at this scale represent OpenAI's cost-quality confidence signal — re-run your API benchmarks against GPT-5.5 Instant to update your routing logic before it affects your production baseline.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "GPT-5.5 Instant"
+      },
+      {
+        "label": "Status",
+        "value": "Default ChatGPT model (May 2026)"
+      },
+      {
+        "label": "Previous default release",
+        "value": "GPT-5.5 (April 23, 2026)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://llm-stats.com/llm-updates"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Confidentially Files S-1, Targets $852B–$1T Valuation in September IPO",
+    "summary": "OpenAI filed its S-1 confidentially with the SEC on May 22, targeting a September 2026 listing at $852B–$1T valuation. Revenue grew from $6B in 2024 to $25B annualized by February 2026, but the company projects a $14B loss in 2026 — losing $1.22 per dollar of revenue in Q1. Profitability not expected until ~2030. CFO Sarah Friar has expressed reservations about timing.",
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://fortune.com/2026/05/22/openai-ipo-filing-1-trillion-may-finally-answer-these-big-questions/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's Multi-Supplier Compute Strategy: Google $40B + Broadcom Multi-GW Deal on Top of SpaceX $45B",
+    "summary": "Google announced an investment of up to $40B in Anthropic (cash + compute, April 24) while a separate Broadcom partnership adds custom silicon capacity at multiple-gigawatt scale. Combined with the SpaceX $45B deal and Microsoft Maia talks, Anthropic has built the most diversified compute supply chain of any AI lab — no single vendor dependency.",
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Federal AI Spending Surges 966% to $7.2B Obligated in FY2026; GSA Proposes First AI Clause",
+    "summary": "Federal AI obligations reached $7.2B in FY2026 (up 966% from 2024) with potential awards totaling $91.8B (up 1,912%). The GSA proposed GSAR clause 552.239-7001 covering government data ownership, prohibitions on using government data to train AI, and disclosure obligations. Multiple states also enacted broad AI governance statutes with enforcement beginning in 2026.",
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://www.brookings.edu/articles/where-does-federal-ai-spending-stand-in-2026/"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic Introduces 'Dreaming': AI Agents Autonomously Review Prior Sessions to Self-Improve",
+    "summary": "Anthropic's 'dreaming' technique allows AI agents to review their own behavior between sessions, identify patterns, and self-improve — targeting long-running coding, finance, and legal workflows. Unlike standard RLHF, dreaming runs autonomously without human rating labels, using the agent's own trajectory as the improvement signal.",
+    "foryou": "Session-to-session self-improvement without human labels is a step-change for any long-running autonomous agent — directly applicable to coding agents or data pipeline agents you're already running in production.",
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://imfounder.com/science-tech/ai/ai-updates-may-2026/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cloudflare + Stripe Enable AI Agents to Open Accounts, Buy Domains, and Deploy Apps Autonomously",
+    "summary": "Cloudflare and Stripe introduced a standardized protocol allowing AI agents to create accounts, purchase domains, and deploy applications without human intervention — covering standardized identity, authorization, and payment flows. Compatible with any AI framework and live on Cloudflare Workers.",
+    "foryou": "Autonomous agent transactions are now infrastructure-layer supported — prototyping a buy-and-deploy pipeline is feasible today, and the range of fully-automatable workflows just expanded dramatically.",
+    "source": "Web",
+    "date": "2026-05-25",
+    "url": "https://www.marketingprofs.com/opinions/2026/54786/ai-update-may-15-2026-ai-news-and-views-from-the-past-week"
+  }
+]
