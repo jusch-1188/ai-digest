@@ -1,0 +1,63 @@
+[
+  {
+    "section": "models",
+    "headline": "xAI Launches Grok 4.3 with Higher Intelligence at Lower Cost",
+    "summary": "xAI released Grok 4.3, a reasoning model that scores higher on the Intelligence Index than Grok 4.20 while costing around 20% less to run. It excels at instruction following and agentic customer support tasks, achieving perfect scores on hallucinations and general knowledge benchmarks. Pricing is $1.25/1M input and $2.50/1M output tokens.",
+    "foryou": "At those prices and with strong agentic scores, Grok 4.3 is worth benchmarking as a cheaper backbone for customer-facing agent pipelines.",
+    "specs": [
+      {"label": "Input price", "value": "$1.25 / 1M tokens"},
+      {"label": "Output price", "value": "$2.50 / 1M tokens"},
+      {"label": "Context", "value": "1M tokens"},
+      {"label": "Intelligence Index", "value": "53 (vs 36 median peer)"},
+      {"label": "Modalities", "value": "Text + image in, text out"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-01",
+    "url": "https://venturebeat.com/technology/xai-launches-grok-4-3-at-an-aggressively-low-price-and-a-new-fast-powerful-voice-cloning-suite"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Security Enters Public Beta Powered by Opus 4.7",
+    "summary": "Anthropic launched Claude Security in public beta for Enterprise customers, using Opus 4.7 to identify and patch software vulnerabilities. The tool integrates with partners like Microsoft Security and Palo Alto Networks, enabling continuous code scanning without custom API integration. Hundreds of organizations gave feedback during the private beta to refine its capabilities.",
+    "foryou": "If you're building security tooling on top of Claude, the public beta API surface is now open — worth reviewing the integration patterns Palo Alto and Microsoft used.",
+    "specs": [
+      {"label": "Model", "value": "Claude Opus 4.7"},
+      {"label": "Access", "value": "Claude Enterprise (public beta)"},
+      {"label": "Use case", "value": "Vulnerability identification & patching"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-01",
+    "url": "https://claude.com/blog/claude-security-public-beta"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Approaches $900B Valuation Round on $40B Revenue Run Rate",
+    "summary": "Anthropic moved to close a roughly $50B funding round that could value the company at $900B or higher, driven by strong investor demand. The company's annual revenue run rate is nearing $40B. The round follows a period of rapid enterprise adoption and continued model improvements.",
+    "source": "TLDR AI",
+    "date": "2026-05-01",
+    "url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cursor Acquired by xAI for $60B After Founders Reject $100B Path",
+    "summary": "Cursor's founders sold to xAI for $60 billion, deciding not to pursue the path to $100B valuation independently. The deal gives xAI a consumer application surface ahead of the SpaceX IPO, while Cursor gains compute access and a non-competing model lab. Replit's CEO, in a separate interview, said he would not sell and noted 300% net revenue retention.",
+    "source": "TLDR AI",
+    "date": "2026-05-01"
+  },
+  {
+    "section": "industry",
+    "headline": "Boston Dynamics C-Suite Exodus as Company Pushes Toward IPO and Mass Production",
+    "summary": "Multiple top executives at Boston Dynamics have departed in recent months, including its CEO, COO, CSO, and CTO Aaron Saunders (who moved to Google DeepMind). Former employees told Semafor the board pushed leaders out over concerns about the company's narrowing competitive lead. Boston Dynamics is building roughly four Atlas humanoid robots per month as it prepares to scale for Hyundai.",
+    "source": "Semafor",
+    "date": "2026-05-01"
+  },
+  {
+    "section": "tips",
+    "headline": "KV Cache Locality: The Hidden Variable in LLM Serving Cost",
+    "summary": "KV cache locality is a multiplier on existing hardware — the same GPUs handling the same traffic can produce measurably different throughput based on which GPU gets which request. 'Balanced' routing and 'efficient' routing are not the same thing when each request carries thousands of potentially cached tokens. The article covers how to measure recomputation cost and what changes when load balancers understand token locality.",
+    "foryou": "If you're running multi-tenant LLM serving, auditing your load balancer's token locality awareness could cut costs without adding hardware.",
+    "source": "TLDR AI",
+    "date": "2026-05-01",
+    "url": "https://ranvier.systems/2026/04/30/kv-cache-locality-the-hidden-variable-in-your-llm-serving-cost.html"
+  }
+]
