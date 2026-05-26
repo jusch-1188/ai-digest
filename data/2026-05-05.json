@@ -1,0 +1,62 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Working on 'Orbit' — a Proactive Briefing and Insights Assistant",
+    "summary": "Orbit is an upcoming Anthropic product described as a briefing and insights system integrated into Claude and Claude Code. It produces personalized briefings with actionable insights drawn from connected work tools. Its formal unveiling may happen at the Code with Claude conference on May 6 or roll out quietly.",
+    "foryou": "Orbit's work-tool connectivity model is a preview of what proactive context injection looks like at the product layer — worth watching for the underlying API patterns it exposes.",
+    "specs": [
+      {"label": "Type", "value": "Proactive assistant / briefings"},
+      {"label": "Integration", "value": "Claude + Claude Code"},
+      {"label": "Expected reveal", "value": "Code with Claude, May 6"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-05",
+    "url": "https://www.testingcatalog.com/anthropic-is-working-on-orbit-its-upcoming-proactive-assistant/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini API Now Supports Webhooks for Long-Running Jobs",
+    "summary": "The Gemini API added event-driven Webhooks, eliminating the need for polling on long-running inference jobs. The push-based notification system is available immediately for all developers. This reduces latency and infrastructure overhead for async agent workflows that chain multiple generation steps.",
+    "foryou": "Swapping polling loops for Gemini Webhooks in your agentic pipelines is a straightforward win — lower latency and fewer wasted compute cycles on checking job status.",
+    "specs": [
+      {"label": "Feature", "value": "Event-driven Webhooks"},
+      {"label": "Availability", "value": "All Gemini API developers"},
+      {"label": "Benefit", "value": "Eliminates polling for async jobs"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-05",
+    "url": "https://links.tldrnewsletter.com/tOhER8"
+  },
+  {
+    "section": "industry",
+    "headline": "Y Combinator's 0.6% OpenAI Stake Worth Over $5 Billion",
+    "summary": "OpenAI was originally seeded by YC Research, an offshoot of Y Combinator, in 2016 when Sam Altman was running YC. That seed translates to roughly 0.6% ownership today, valued at over $5B at OpenAI's current valuation. The detail resurfaced as OpenAI's valuation continues to climb.",
+    "source": "TLDR AI",
+    "date": "2026-05-05",
+    "url": "https://daringfireball.net/2026/05/y_combinators_stake_in_openai"
+  },
+  {
+    "section": "industry",
+    "headline": "White House Considers Pre-Release Vetting of Frontier AI Models",
+    "summary": "The White House is exploring a process to vet advanced AI models before they are publicly released, focusing on national security and safety risks. Microsoft, Google, and xAI have separately agreed to let the Commerce Department's AI safety office test models before launch. The moves signal growing government appetite for pre-deployment oversight of frontier AI.",
+    "source": "TLDR AI",
+    "date": "2026-05-05"
+  },
+  {
+    "section": "tips",
+    "headline": "Model-Harness-Fit: Frontier Labs Bake Tool Schemas Into Model Weights",
+    "summary": "Analysis of Codex CLI, Claude Code, and GitHub Copilot CLI shows that labs post-train models against specific harnesses, embedding tool names, citation tags, and prompt structures into the weights. Terminal-Bench 2.0 data shows Claude Opus 4.6 scored 79.8% with ForgeCode versus 75.3% with Capy — same model, different harness. Cursor jumped from 'Top 30 to Top 5' by changing only the harness.",
+    "foryou": "When evaluating models for your agent stack, test them inside the harness you'll actually use — raw benchmark scores on a different harness can be misleading by 4+ percentage points.",
+    "source": "TLDR AI",
+    "date": "2026-05-05"
+  },
+  {
+    "section": "tips",
+    "headline": "Inside Vercel's Deepsec: Agent-Driven Security for Large Codebases",
+    "summary": "Deepsec is an agentic security scanner that runs locally or in parallel cloud sandboxes to find complex, multi-file vulnerabilities that static analysis misses. It uses an agent loop to trace data flows across the codebase. The tool is available now from Vercel.",
+    "foryou": "Deepsec's parallel sandbox approach for security scans is a pattern you can adapt when building your own code-review agents — spawning isolated sandboxes per file cluster and merging findings.",
+    "source": "TLDR AI",
+    "date": "2026-05-05",
+    "url": "https://vercel.com/blog/introducing-deepsec-find-and-fix-vulnerabilities-in-your-code-base"
+  }
+]
