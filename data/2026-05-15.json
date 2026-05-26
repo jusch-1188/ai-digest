@@ -1,0 +1,103 @@
+[
+  {
+    "section": "models",
+    "headline": "xAI Launches Grok Build: Terminal-Based Coding Agent with Subagents and Worktree Integration",
+    "summary": "xAI released Grok Build in early beta for SuperGrok Heavy subscribers ($300/month), a coding agent that runs from the terminal supporting AGENTS.md, plugins, hooks, skills, and MCP servers out of the box. It supports parallel subagents in separate worktrees and a headless mode for scripted automations. Grok Build enters a three-way race against Claude Code and OpenAI's Codex CLI.",
+    "foryou": "Grok Build's native MCP server support and worktree-scoped subagents make it a strong candidate to evaluate alongside Claude Code for parallel multi-repo agent tasks.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Early beta"
+      },
+      {
+        "label": "Access",
+        "value": "SuperGrok Heavy subscribers ($300/mo)"
+      },
+      {
+        "label": "Features",
+        "value": "Subagents, worktree integration, MCP, headless mode"
+      },
+      {
+        "label": "Supports",
+        "value": "AGENTS.md, plugins, hooks, skills"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-15",
+    "url": "https://www.androidheadlines.com/2026/05/xai-grok-build-agentic-ai-coding-tool-launch-beta.html"
+  },
+  {
+    "section": "models",
+    "headline": "Cursor Announces Cloud Agent Development Environments for Parallel Autonomous Coding",
+    "summary": "Cursor detailed a new system for cloud-based development environments tailored specifically for autonomous coding agents. The system supports multi-repo setups, environment configuration as code, automated setup workflows, and governance controls for managing fleets of parallel agents.",
+    "foryou": "Cursor's Cloud Agent DEVs are the missing infrastructure piece for running large-scale parallel agent fleets — worth piloting if you're orchestrating more than a few concurrent agents.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Cloud-based agent dev environments"
+      },
+      {
+        "label": "Features",
+        "value": "Multi-repo, config as code, governance controls"
+      },
+      {
+        "label": "Use case",
+        "value": "Fleet management for parallel coding agents"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceXAI Losing Senior Talent to Meta and Thinking Machines Lab Post-Merger",
+    "summary": "SpaceXAI is reportedly bleeding top staff in coding, world models, and Grok voice teams since the xAI-SpaceX integration. Rivals Meta and Thinking Machines Lab are actively recruiting former xAI employees. Elon Musk's extreme-work culture and desires to cash out equity are cited as primary drivers of departures.",
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Quietly Evaluating Inception as OpenAI Replacement After Amended Exclusivity Deal",
+    "summary": "Microsoft amended its exclusive license to OpenAI models in late April, freeing OpenAI to sell on any cloud and removing the AGI clause. Despite retaining a ~27% stake in OpenAI worth ~$135 billion through 2032, Microsoft is reportedly evaluating Inception — a diffusion-based language model startup — as a hedge. The dual-track strategy signals Microsoft hedging against OpenAI dependency.",
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Explored Legal Action Against Apple Over Insufficient ChatGPT Integration",
+    "summary": "Bloomberg reported that OpenAI explored legal options against Apple due to dissatisfaction with how shallowly ChatGPT was integrated into Apple's ecosystem and limited subscriber growth from the partnership. The tension reflects broader friction between OpenAI's distribution ambitions and Apple's platform control.",
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic 2028 Scenario Report: US AI Lead Depends on Compute Controls and Distillation Restrictions",
+    "summary": "Anthropic published a report outlining two 2028 scenarios for global AI leadership: one where the US retains its compute advantage and shapes AI governance norms, and one where China closes the gap through policy inaction. Closing loopholes on compute access and restricting distillation attacks are identified as the most critical levers for maintaining US leadership.",
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "industry",
+    "headline": "California Proposes 7.25% Sales Tax on Downloaded Software, Targeting Tech Revenue",
+    "summary": "California Governor Gavin Newsom proposed extending the state sales tax to downloaded software at 7.25%, framing it as parity with physical software purchases. Critics at frontier AI labs say the tax would significantly increase cloud and SaaS costs. The proposal signals a growing fiscal pressure on tech companies in California.",
+    "source": "Semafor",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "tips",
+    "headline": "Codex Gets Hooks and Programmatic Tokens for CI/CD Automation and Scoped Agent Credentials",
+    "summary": "OpenAI added hooks and programmatic access tokens to Codex, enabling scripts that run at key points in the Codex task loop and scoped credentials for Business and Enterprise teams. This makes Codex directly automatable from CI/CD pipelines without manual dashboard intervention.",
+    "foryou": "Codex hooks + programmatic tokens unlock true CI/CD-native agent automation — pair with your existing GitHub Actions or similar pipeline for continuous autonomous code improvement.",
+    "source": "TLDR AI",
+    "date": "2026-05-15"
+  },
+  {
+    "section": "tips",
+    "headline": "Raindrop Workshop: Give Claude Code Trace Reading, Eval Writing, and Self-Healing Loops",
+    "summary": "Raindrop Workshop is an open-source tool giving Claude Code the ability to read production traces, write evals against codebases, and fix what's broken through a self-healing eval loop. It provides livestreamed traces, local replay, and is compatible with TypeScript, Python, Go, and Rust. Compatible with most popular SDKs, providers, and coding agents.",
+    "foryou": "Raindrop Workshop is a direct force-multiplier for Claude Code-based agent development — integrate it to get production-trace-driven evals without building the scaffolding yourself.",
+    "source": "TLDR AI",
+    "date": "2026-05-15",
+    "url": "https://github.com/raindrop-workshop/raindrop"
+  }
+]
