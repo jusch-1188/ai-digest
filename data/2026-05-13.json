@@ -1,0 +1,106 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Opus 4.7 Fast Mode Now in Research Preview on API and Major Coding Tools",
+    "summary": "Anthropic released Fast mode for Claude Opus 4.7 in research preview, available in the API, Claude Code, and on Cursor, Emergent, Factory, v0, Warp, and Windsurf. Fast mode is currently opt-in but will eventually become the default. A waitlist is available for early access.",
+    "foryou": "If you're using Opus 4.7 in Claude Code or Cursor, join the Fast mode waitlist now — lower latency on Opus 4.7 could meaningfully speed up your agent loops.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Research preview (opt-in)"
+      },
+      {
+        "label": "Platforms",
+        "value": "API, Claude Code, Cursor, Emergent, Factory, v0, Warp, Windsurf"
+      },
+      {
+        "label": "Default timeline",
+        "value": "Eventually becomes default"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Deploys Muse Spark Across AI Services, Adds Voice Mode and Glasses Support",
+    "summary": "Meta's Muse Spark foundational model is now powering Meta AI across the company's product lineup, enabling faster voice responses, smarter shopping assistance, and real-time visual recognition through device cameras. Initial rollout targets US and Canada users. The model powers both Meta AI in apps and Meta Glasses.",
+    "foryou": "Muse Spark's real-time visual recognition via camera is a differentiator to watch — on-device multimodal could define the next wave of ambient computing assistants.",
+    "specs": [
+      {
+        "label": "Launch region",
+        "value": "US and Canada"
+      },
+      {
+        "label": "Capabilities",
+        "value": "Voice, visual recognition, shopping assistance"
+      },
+      {
+        "label": "Platforms",
+        "value": "Meta AI apps, Meta Glasses"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen-Image-2.0 Released: Improved Typography, Photorealism, and Long-Text Rendering",
+    "summary": "The Qwen team released Qwen-Image-2.0, their latest multimodal image generation and editing model, showing significant improvements in typography rendering, instruction following, photorealism, and long-text generation. The technical report covers both generation and editing task benchmarks.",
+    "foryou": "Qwen-Image-2.0's improved long-text rendering makes it worth evaluating for diagram-generation or code-visualization tasks alongside other image-gen models.",
+    "specs": [
+      {
+        "label": "Report length",
+        "value": "57 pages"
+      },
+      {
+        "label": "Improvements",
+        "value": "Typography, photorealism, instruction following, long-text"
+      },
+      {
+        "label": "Tasks",
+        "value": "Image generation and editing"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "industry",
+    "headline": "Google and SpaceX Discuss Orbital Data Centers to Expand AI Compute Infrastructure",
+    "summary": "Google and SpaceX reportedly held discussions about orbital data centers as part of broader efforts to expand AI compute infrastructure beyond Earth-based facilities. The talks are part of a wider industry push to secure energy and compute resources for growing AI workloads.",
+    "source": "TLDR AI",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "industry",
+    "headline": "Jensen Huang Joined Trump's Beijing Trip Amid Nvidia Chip Diplomacy Tensions",
+    "summary": "Nvidia CEO Jensen Huang joined President Trump's trip to China after initially being left off the manifest due to political sensitivities around chip sales. China has greenlit Nvidia H200 purchases but is not buying them, preferring to build domestic alternatives via Huawei. AI remains a politically divisive topic in the US as job displacement fears grow.",
+    "source": "Semafor",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "industry",
+    "headline": "Data Centers Opposed by 70% of Americans Across Party Lines — Gallup Survey",
+    "summary": "A Gallup survey found 7 in 10 Americans oppose building data centers in their communities, with opposition strong across ideological lines and especially sharp among Democrats (56% strongly oppose). Half of opponents cite energy and water usage; 22% raise quality-of-life concerns. Tech companies are scrambling to make data centers more community-friendly as political backlash grows.",
+    "source": "Semafor",
+    "date": "2026-05-13"
+  },
+  {
+    "section": "tips",
+    "headline": "Cactus Needle: 26M Parameter Distilled Model That Runs at 6,000 Tokens/sec on Mac",
+    "summary": "Cactus Needle is a 26M parameter Simple Attention Network distilled from Gemini 3.1, fully open-weight, running at 6,000 tokens/sec prefill and 1,200 tokens/sec decode speed on consumer hardware. It can be fine-tuned locally on Mac or PC and is designed for consumer devices like phones, watches, and glasses.",
+    "foryou": "Cactus Needle is an immediately usable baseline for on-device AI experiments — 26M params fine-tuned locally is within reach for rapid personal-project iteration.",
+    "source": "TLDR AI",
+    "date": "2026-05-13",
+    "url": "https://github.com/cactus-compute/cactus-needle"
+  },
+  {
+    "section": "tips",
+    "headline": "Truly Serverless GPU Inference: How Modal Cut Cold-Start Time from Kiloseconds to Tens of Seconds",
+    "summary": "Modal achieved truly serverless GPU inference by reducing server replica spin-up times from multiple kiloseconds to tens of seconds, making serverless economically viable for variable AI inference workloads. The article details infrastructure patterns for fast GPU autoscaling. Inference workloads are more variable than training and are a natural serverless fit if cold starts are manageable.",
+    "foryou": "If you're running inference workloads with unpredictable traffic, Modal's cold-start approach is the current benchmark to match before choosing cloud provider.",
+    "source": "TLDR AI",
+    "date": "2026-05-13"
+  }
+]
