@@ -1,0 +1,75 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Codex Now Runs Directly in Chrome, Works Across Tabs in Background",
+    "summary": "OpenAI Codex launched a Chrome extension on macOS and Windows that operates in parallel across browser tabs without taking over the window. It writes code to navigate structured pages and complex data flows rather than using vision-based clicking. The implementation handles repetitive browser work like scraping, form automation, and structured data navigation.",
+    "foryou": "Codex in Chrome's 'code-writes-navigation' approach is architecturally cleaner than vision agents — for browser automation tasks, it's worth benchmarking against your current computer-use setup.",
+    "specs": [
+      {"label": "Platform", "value": "Chrome on macOS + Windows"},
+      {"label": "Approach", "value": "Code-written navigation (not vision clicks)"},
+      {"label": "Concurrency", "value": "Parallel across multiple tabs"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-08"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Releases Realtime Audio Model Suite: Reasoning, Translation, Transcription",
+    "summary": "OpenAI released three new real-time audio models via API: GPT-Realtime-2 for conversational reasoning, GPT-Realtime-Translate for live multilingual translation, and GPT-Realtime-Whisper for streaming transcription. The models use a redesigned WebRTC architecture with a split relay and transceiver model for low-latency global delivery.",
+    "foryou": "GPT-Realtime-Translate opening up as an API is notable — if you're building multilingual voice interfaces, this is now a viable drop-in rather than a roll-your-own pipeline.",
+    "specs": [
+      {"label": "Models", "value": "GPT-Realtime-2, GPT-Realtime-Translate, GPT-Realtime-Whisper"},
+      {"label": "Transport", "value": "WebRTC (redesigned relay + transceiver)"},
+      {"label": "Use cases", "value": "Reasoning voice, live translation, streaming transcription"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-08"
+  },
+  {
+    "section": "models",
+    "headline": "AlphaEvolve Upgraded to Help Explain Physics and Scientific Discovery",
+    "summary": "Google DeepMind upgraded AlphaEvolve — its Gemini-powered coding agent for algorithm design — with new capabilities to help model and explain physical phenomena. The agent can now assist scientists and businesses across multiple fields beyond mathematics and computer science. DeepMind published details on the areas where AlphaEvolve has had the most significant real-world impact.",
+    "foryou": "AlphaEvolve's open-ended algorithm search approach is worth studying for any task where you need to discover optimization strategies rather than implement known ones.",
+    "specs": [
+      {"label": "Powered by", "value": "Gemini"},
+      {"label": "New domain", "value": "Physics / natural world modeling"},
+      {"label": "Capability", "value": "Algorithm design + scientific discovery"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-08",
+    "url": "https://deepmind.google/blog/alphaevolve-impact/"
+  },
+  {
+    "section": "industry",
+    "headline": "Tokens as Currency: The xAI–Anthropic Compute Deal Signals AI's New Economy",
+    "summary": "Semafor's technology editor frames the Anthropic-SpaceX compute deal as evidence that AI tokens are becoming an economic unit of exchange. xAI built Colossus quickly but fell behind in harness engineering, while Anthropic underestimated its own compute needs. Products like Codex, Claude Cowork, and OpenClaw drove token consumption far beyond projections, creating a genuine compute market.",
+    "source": "Semafor",
+    "date": "2026-05-08"
+  },
+  {
+    "section": "industry",
+    "headline": "Notes from Inside China's AI Labs: Infrastructure, Scale, and Strategy",
+    "summary": "A detailed report from inside Chinese AI labs reveals the scale of infrastructure buildout and the strategic logic behind models like DeepSeek. Chinese labs are building toward compute self-sufficiency while their open-weights releases simultaneously expand global influence. The piece highlights how export controls have accelerated rather than deterred domestic AI investment.",
+    "source": "TLDR AI",
+    "date": "2026-05-08",
+    "url": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs"
+  },
+  {
+    "section": "tips",
+    "headline": "GitHub Cut Token Costs in Agentic Workflows via Systematic Prompt Optimization",
+    "summary": "GitHub documented how it reduced token usage in its agentic CI/CD workflows after costs began accumulating out of view from automatically triggered AI jobs. The team instrumented token consumption per workflow step, identified redundant context injection, and applied targeted optimizations. The post covers the measurement framework and the types of changes that yielded the largest savings.",
+    "foryou": "The instrumenting-before-optimizing approach GitHub used is the right order of operations — if you have always-on agent workflows, adding per-step token logging is the first step before cutting costs.",
+    "source": "TLDR AI",
+    "date": "2026-05-08",
+    "url": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic's Natural Language Autoencoders: New Interpretability Research",
+    "summary": "Anthropic published research on natural language autoencoders, a technique for understanding what information is encoded in LLM activations by mapping them to human-readable descriptions. The approach extends sparse autoencoder interpretability work and gives builders a new way to probe what a model is 'thinking' at any layer. The research is available on Anthropic's site.",
+    "foryou": "For builders doing fine-tuning or alignment work, natural language autoencoders offer a more intuitive window into what your model learned than raw feature visualization.",
+    "source": "TLDR AI",
+    "date": "2026-05-08",
+    "url": "https://www.anthropic.com/research/natural-language-autoencoders"
+  }
+]
