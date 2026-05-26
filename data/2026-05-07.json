@@ -1,0 +1,75 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Boosts Claude Limits via SpaceX Deal: 220,000 NVIDIA GPUs",
+    "summary": "Anthropic raised usage limits for Claude by striking a compute partnership with SpaceX, gaining access to over 220,000 NVIDIA GPUs. The deal follows earlier compute agreements with Amazon, Google, Broadcom, Microsoft, NVIDIA, and Fluidstack. Anthropic also announced international infrastructure expansion to meet compliance needs for enterprise customers in regulated industries.",
+    "foryou": "Higher Claude rate limits directly benefit high-throughput agent pipelines — check if your tier's limits have been updated and whether you can drop in-app throttling logic.",
+    "specs": [
+      {"label": "New GPUs", "value": "220,000+ NVIDIA (via SpaceX/Colossus)"},
+      {"label": "Impact", "value": "Higher usage limits across Claude tiers"},
+      {"label": "Expansion", "value": "International data residency planned"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-07",
+    "url": "https://www.anthropic.com/news/higher-limits-spacex"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Managed Agents: Dreaming, Outcomes, and Multiagent Orchestration",
+    "summary": "Claude launched self-improving Managed Agents with three new capabilities: dreaming (agents analyze past sessions to find improvement patterns), outcomes (agents self-correct against predefined success criteria), and multiagent orchestration (agents delegate tasks to specialized subagents). Companies including Harvey, Netflix, Spiral by Every, and Wisedocs are already using the orchestration layer.",
+    "foryou": "The outcomes feature is the most immediately useful — wiring rubric-based self-correction into your Claude agents could eliminate a manual review pass for repetitive structured tasks.",
+    "specs": [
+      {"label": "New features", "value": "Dreaming, outcomes, multiagent orchestration"},
+      {"label": "Early adopters", "value": "Harvey, Netflix, Spiral, Wisedocs"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-07",
+    "url": "https://claude.com/blog/new-in-claude-managed-agents"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek Valued at $50B in Government-Backed Funding Round",
+    "summary": "DeepSeek is in talks to raise several billion dollars from China's National AI Industry Investment Fund at a $50B valuation. The government-backed fund has approximately $8.8B in capital and positions DeepSeek as a strategic hedge against US export controls. The move reflects China's broader plan to develop top-tier homegrown AI across multiple domains.",
+    "foryou": "A well-capitalized DeepSeek with government backing means continued open-weights releases at aggressive prices — worth including V4 models in your cost-performance benchmarks.",
+    "specs": [
+      {"label": "Valuation", "value": "$50B"},
+      {"label": "Investor", "value": "China National AI Industry Investment Fund"},
+      {"label": "Fund size", "value": "$8.8B"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-07"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Signs AI Licensing Deal with Private Equity Firms Blackstone and KKR",
+    "summary": "Google is pursuing a licensing strategy with major PE firms rather than building a direct AI consultancy, positioning its models as infrastructure that other companies build services on. The Blackstone/KKR deal is structured as a licensing agreement, not a services contract. Analysts view this as a potentially smarter play that scales without the headcount constraints of a consultancy model.",
+    "source": "TLDR AI",
+    "date": "2026-05-07",
+    "url": "https://thenextweb.com/news/google-blackstone-kkr-omnibus-ai-licensing-private-equity"
+  },
+  {
+    "section": "industry",
+    "headline": "Moonshot AI (Kimi) Raises at $20B Valuation in Meituan-Led Round",
+    "summary": "Kimi chatbot maker Moonshot AI closed a Meituan-led funding round valuing the company at $20 billion. The round signals continued strong investor appetite for Chinese AI labs despite US export control pressure. Moonshot's Kimi model has been a standout in Chinese consumer AI adoption.",
+    "source": "TLDR AI",
+    "date": "2026-05-07",
+    "url": "https://finance.yahoo.com/sectors/technology/articles/kimi-chatbot-maker-moonshot-ai-032926690.html"
+  },
+  {
+    "section": "tips",
+    "headline": "TokenSpeed: High-Throughput LLM Inference Engine for Agentic Workloads",
+    "summary": "TokenSpeed is a compiler-backed LLM inference engine optimized for agentic workloads that delivers faster throughput than TensorRT-LLM on coding agent benchmarks. It uses a high-performance scheduler and the TokenSpeed MLA optimization to boost NVIDIA Blackwell performance. Developed with NVIDIA DevTech, it significantly reduces latency in typical agentic task loops.",
+    "foryou": "If your agent stack runs on Blackwell GPUs and you're hitting throughput ceilings with TensorRT-LLM, TokenSpeed's compiler-backed approach is worth evaluating.",
+    "source": "TLDR AI",
+    "date": "2026-05-07",
+    "url": "https://lightseek.org/blog/lightseek-tokenspeed.html"
+  },
+  {
+    "section": "tips",
+    "headline": "ChatGPT for Google Sheets and OpenAI Privacy Filter: New AI Builder Tools",
+    "summary": "Two new tools emerged this week targeting AI builders: ChatGPT for Google Sheets lets you build and update spreadsheets using natural language, and OpenAI Privacy Filter strips private data from text before it's passed to models. Both are positioned as productivity layers for teams working with sensitive or structured data.",
+    "foryou": "The Privacy Filter is the more interesting tool for builders — it addresses a real compliance gap when sending user-generated content to third-party LLM APIs.",
+    "source": "The Summary AI",
+    "date": "2026-05-07"
+  }
+]
