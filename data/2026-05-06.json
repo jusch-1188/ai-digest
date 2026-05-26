@@ -1,0 +1,67 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Releases GPT-5.5 Instant as Default ChatGPT Model",
+    "summary": "OpenAI released GPT-5.5 Instant as the new default model in ChatGPT, featuring improved factual accuracy, reduced hallucinations, and stronger personalization based on user context. The model launched with a 2x price increase over GPT-5.4, though its tendency to generate fewer completion tokens on longer prompts makes the actual cost increase 49–92% in practice.",
+    "foryou": "Before migrating production workloads to GPT-5.5, run your prompt suite through both models — the per-token price hike is real even if generation length shrinks.",
+    "specs": [
+      {"label": "Price vs GPT-5.4", "value": "~2x list, ~49-92% effective increase"},
+      {"label": "Key improvements", "value": "Factual accuracy, hallucinations, personalization"},
+      {"label": "Position", "value": "Default ChatGPT model"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-06"
+  },
+  {
+    "section": "models",
+    "headline": "Subquadratic Debuts 12-Million-Token Context Window, Eyes 50M",
+    "summary": "Subquadratic launched a new AI model with a 12-million-token context window that outperforms GPT-5.5 on retrieval benchmarks. The company claims to have solved the quadratic attention scaling problem, which normally makes very long contexts prohibitively expensive. A 50-million-token context window model is planned for the near future.",
+    "foryou": "A retrieval-beating 12M-token model changes the calculus on when to use RAG vs. just stuffing context — worth testing your document-heavy use cases against it.",
+    "specs": [
+      {"label": "Context window", "value": "12M tokens"},
+      {"label": "Upcoming", "value": "50M token window"},
+      {"label": "vs GPT-5.5", "value": "Higher retrieval benchmark scores"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-06",
+    "url": "https://thenewstack.io/subquadratic-12-million-context-window/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemma 4 Gets Up to 3x Speedup via Multi-Token Prediction Drafters",
+    "summary": "Google released Multi-Token Prediction drafters for Gemma 4 that deliver up to a 3x inference speedup without degrading output quality or reasoning. The approach uses speculative decoding to predict multiple future tokens in parallel, then verifies them with the main model. The drafters are available now for developers using Gemma 4.",
+    "foryou": "If you're self-hosting Gemma 4, dropping in the MTP drafters is a near-free latency win — speculative decoding verification adds minimal overhead at this scale.",
+    "specs": [
+      {"label": "Speedup", "value": "Up to 3x"},
+      {"label": "Quality impact", "value": "None"},
+      {"label": "Technique", "value": "Multi-token prediction / speculative decoding"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-06",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/multi-token-prediction-gemma-4/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Plans iOS 27 with Choose-Your-Own-AI-Model Architecture",
+    "summary": "Apple is exploring a multi-model AI approach for iOS 27, letting users select from different AI providers powering on-device and cloud features. The strategy would turn the OS into a marketplace for AI providers rather than locking users into one model. The move reflects Apple's response to rapidly evolving model quality across the industry.",
+    "source": "TLDR AI",
+    "date": "2026-05-06",
+    "url": "https://techcrunch.com/2026/05/05/apple-plans-to-make-ios-27-a-choose-your-own-adventure-of-ai-models/"
+  },
+  {
+    "section": "industry",
+    "headline": "Enterprise AI is Losing to Shadow IT: Semafor Analysis",
+    "summary": "Semafor's technology editor argues that corporate AI adoption efforts are doomed by the same dynamic that killed enterprise IT before — workers already use their own AI tools, and the gap between a well-funded internal tool and a vibe-coded weekend project is now essentially closed. The prescription is building gateways and secure plug-in surfaces for employee-built apps rather than walled gardens.",
+    "source": "Semafor",
+    "date": "2026-05-06"
+  },
+  {
+    "section": "tips",
+    "headline": "Gemini API File Search Now Supports Multimodal RAG with Page-Level Citations",
+    "summary": "The Gemini API File Search tool now handles text and visual data natively, with custom metadata filtering and page-level citations built in. Developers can build verifiable RAG systems that cite specific pages without building custom extraction pipelines. The feature is available now for all Gemini API users.",
+    "foryou": "The page-level citation feature is the key unlock here — it makes document Q&A systems auditable without bolting on a separate citation layer in your application code.",
+    "source": "TLDR AI",
+    "date": "2026-05-06",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanded-gemini-api-file-search-multimodal-rag/"
+  }
+]
