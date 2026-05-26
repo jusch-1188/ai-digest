@@ -1,0 +1,64 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Red-Teams 'Jupiter-v1-p' Ahead of Code with Claude Conference",
+    "summary": "Anthropic appears to have started a fresh red-teaming round on an internal model called Jupiter-v1-p. The Code with Claude developer conference is scheduled for San Francisco on May 6, suggesting the model may be hardened for an announcement at the event. Red-teaming includes jailbreak probes and constitutional classifier stress tests per Anthropic's responsible scaling policy.",
+    "foryou": "Watch the May 6 Code with Claude livestream closely — a Jupiter release would likely shift tool-use and agentic capabilities available in the API.",
+    "specs": [
+      {"label": "Codename", "value": "Jupiter-v1-p"},
+      {"label": "Status", "value": "Red-teaming / pre-launch"},
+      {"label": "Expected reveal", "value": "Code with Claude, May 6"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-04",
+    "url": "https://www.testingcatalog.com/anthropic-tests-jupiter-v1-p-before-potential-launch-on-may-6/"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek-V4-Pro: 1.6 Trillion Parameter Open-Weights Model at Frontier Prices",
+    "summary": "DeepSeek's V4-Pro and V4-Flash are one-million-token Mixture of Experts models. V4-Pro has 1.6 trillion total parameters with 49 billion active — making it the largest open-weights model yet. V4-Flash has 284 billion total with 13 billion active. Both are priced well below comparable closed models.",
+    "foryou": "V4-Pro being open-weights at this scale is significant — it's now feasible to self-host a frontier-class MoE model if you have the hardware.",
+    "specs": [
+      {"label": "V4-Pro total params", "value": "1.6T"},
+      {"label": "V4-Pro active params", "value": "49B"},
+      {"label": "Context", "value": "1M tokens"},
+      {"label": "Weights", "value": "Open"},
+      {"label": "Architecture", "value": "MoE"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-04",
+    "url": "https://simonwillison.net/2026/Apr/24/deepseek-v4/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Nears $1.5B Joint Venture with Wall Street; OpenAI Eyes $10B Enterprise Venture",
+    "summary": "Both Anthropic and OpenAI announced separate enterprise AI joint ventures backed by major financial firms. Anthropic's JV is valued at $1.5B while OpenAI's is targeting a $10B valuation. The moves signal a shift toward dedicated enterprise deployment structures separate from the core model labs.",
+    "source": "TLDR AI",
+    "date": "2026-05-04"
+  },
+  {
+    "section": "industry",
+    "headline": "Pentagon Strikes AI Deals with Top Labs for Classified Work",
+    "summary": "Top AI companies reached agreements with the Pentagon for classified AI projects, representing a significant expansion of government AI adoption. The deals cover a range of defense and intelligence applications. Anthropic was notably among the companies involved despite previously holding back from certain government contracts.",
+    "source": "TLDR AI",
+    "date": "2026-05-04"
+  },
+  {
+    "section": "tips",
+    "headline": "How Perplexity Designs, Refines, and Maintains Agent Skills at Scale",
+    "summary": "Perplexity uses modular Agent Skills to power its frontier agent products, with detailed design principles shaped by real queries and evaluations. Skill development requires understanding which skills are necessary, keeping them efficient, and iterating continuously across multiple models. Each skill introduces a 'cost' in the reasoning chain, so simplicity and precision are prioritized over comprehensiveness.",
+    "foryou": "Perplexity's skill-testing methodology — scoring output quality across multiple models before shipping — is a concrete framework you can adapt for your own agent evals.",
+    "source": "TLDR AI",
+    "date": "2026-05-04",
+    "url": "https://research.perplexity.ai/articles/designing-refining-and-maintaining-agent-skills-at-perplexity"
+  },
+  {
+    "section": "tips",
+    "headline": "AutoRound: Fast, Accurate LLM Quantization at Ultra-Low Bit Widths",
+    "summary": "AutoRound is an open-source quantization toolkit for LLMs and vision-language models that achieves high accuracy at ultra-low bit widths with minimal tuning. It works with Transformers, vLLM, and SGLang, and can quantize a 7B model in under 10 minutes on a single GPU. The approach maintains model quality that competing quantization methods struggle to preserve at the same compression levels.",
+    "foryou": "If you're self-hosting models and want to cut memory footprint without sacrificing much quality, AutoRound is worth a benchmark against GPTQ or AWQ.",
+    "source": "TLDR AI",
+    "date": "2026-05-04",
+    "url": "https://github.com/intel/auto-round"
+  }
+]
