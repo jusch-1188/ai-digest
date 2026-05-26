@@ -9,8 +9,7 @@
 <meta name="theme-color" content="#2563eb">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<!-- Tabler icons injected by app.js to avoid render-blocking and CSP issues -->
-<link rel="stylesheet" href="/app.8c3089eb.css">
+<link rel="stylesheet" href="/app.9700d1be.css">
 </head>
 <body>
 
@@ -21,70 +20,102 @@
       <i class="ti ti-brain logo-icon"></i>
       <span>AI Digest</span>
     </a>
-    <div class="header-spacer"></div>
-    <nav class="date-nav">
-      <button class="date-btn" id="prevDay" title="Previous day" aria-label="Previous day">
-        <i class="ti ti-chevron-left"></i>
-      </button>
-      <span class="date-label" id="dateLabel" title="Click for today"></span>
-      <button class="date-btn" id="nextDay" title="Next day" aria-label="Next day">
-        <i class="ti ti-chevron-right"></i>
-      </button>
-    </nav>
+    <div class="header-search">
+      <i class="ti ti-search"></i>
+      <input type="search" id="searchInput" placeholder="Search headlines, summaries…" autocomplete="off">
+    </div>
+    <button class="filter-toggle" id="filterToggle" aria-label="Open filters">
+      <i class="ti ti-adjustments-horizontal"></i>
+      <span class="filter-badge hidden" id="filterBadge"></span>
+    </button>
   </div>
 </header>
 
-<!-- ═══════ TOOLBAR ═══════ -->
-<div class="toolbar">
-  <!-- Search -->
-  <div class="search-wrap">
-    <i class="ti ti-search"></i>
-    <input type="search" id="searchInput" placeholder="Search headlines, summaries…" autocomplete="off">
+<!-- ═══════ LAYOUT ═══════ -->
+<div class="layout">
+
+  <!-- ── Sidebar ── -->
+  <aside class="sidebar" id="sidebar">
+    <!-- Mobile header (close button) -->
+    <div class="sidebar-head">
+      <span class="sidebar-title">Filters</span>
+      <button class="sidebar-close" id="sidebarClose" aria-label="Close filters">
+        <i class="ti ti-x"></i>
+      </button>
+    </div>
+
+    <div class="sidebar-inner">
+
+      <!-- TIME -->
+      <div class="filter-section">
+        <div class="filter-label">Time</div>
+        <div class="filter-group period" role="group" aria-label="Filter by time">
+          <button class="pill active" data-period="all">All time</button>
+          <button class="pill" data-period="this-month">This Month</button>
+          <button class="pill" data-period="last-week">Last Week</button>
+          <button class="pill" data-period="this-week">This Week</button>
+          <button class="pill" data-period="today">Today</button>
+        </div>
+        <!-- Date nav — shown only when period = today -->
+        <nav class="date-nav hidden" id="dateNav">
+          <button class="date-btn" id="prevDay" title="Previous day" aria-label="Previous day">
+            <i class="ti ti-chevron-left"></i>
+          </button>
+          <span class="date-label" id="dateLabel" title="Jump to today"></span>
+          <button class="date-btn" id="nextDay" title="Next day" aria-label="Next day">
+            <i class="ti ti-chevron-right"></i>
+          </button>
+        </nav>
+      </div>
+
+      <!-- SECTION -->
+      <div class="filter-section">
+        <div class="filter-label">Section</div>
+        <div class="filter-group section-group" role="group" aria-label="Filter by section">
+          <button class="pill active sec-all"  data-section="all">All</button>
+          <button class="pill sec-models"      data-section="models">Models</button>
+          <button class="pill sec-industry"    data-section="industry">Industry</button>
+          <button class="pill sec-tips"        data-section="tips">Tips</button>
+        </div>
+      </div>
+
+      <!-- MODEL -->
+      <div class="filter-section">
+        <div class="filter-label">Model</div>
+        <div class="filter-group model-group" role="group" aria-label="Filter by model">
+          <button class="pill active" data-model="all">All models</button>
+          <button class="pill" data-model="gpt">GPT</button>
+          <button class="pill" data-model="claude">Claude</button>
+          <button class="pill" data-model="gemini">Gemini</button>
+          <button class="pill" data-model="llama">Llama</button>
+          <button class="pill" data-model="deepseek">DeepSeek</button>
+          <button class="pill" data-model="grok">Grok</button>
+          <button class="pill" data-model="mistral">Mistral</button>
+        </div>
+      </div>
+
+      <!-- READ STATE -->
+      <div class="filter-section read-footer">
+        <button class="clear-read-btn" id="clearReadBtn" title="Clear read history">
+          <i class="ti ti-checks"></i>
+          <span id="readCountLabel">0 read</span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- Mobile overlay -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ── Main content ── -->
+  <div class="main-content">
+    <div class="result-bar" id="resultBar"></div>
+    <main id="cardGrid" aria-live="polite"></main>
   </div>
 
-  <div class="filter-divider"></div>
+</div><!-- .layout -->
 
-  <!-- Section filter -->
-  <div class="filter-group section-group" role="group" aria-label="Filter by section">
-    <button class="pill active sec-all"      data-section="all">All</button>
-    <button class="pill sec-models"          data-section="models">Models</button>
-    <button class="pill sec-industry"        data-section="industry">Industry</button>
-    <button class="pill sec-tips"            data-section="tips">Tips</button>
-  </div>
-
-  <div class="filter-divider"></div>
-
-  <!-- Period filter -->
-  <div class="filter-group period" role="group" aria-label="Filter by period">
-    <button class="pill active" data-period="all">All</button>
-    <button class="pill"        data-period="this-month">This Month</button>
-    <button class="pill"        data-period="last-week">Last Week</button>
-    <button class="pill"        data-period="this-week">This Week</button>
-    <button class="pill"        data-period="yesterday">Yesterday</button>
-    <button class="pill"        data-period="today">Today</button>
-  </div>
-
-  <div class="filter-divider"></div>
-
-  <!-- Model filter -->
-  <div class="filter-group model-group" role="group" aria-label="Filter by model">
-    <button class="pill active" data-model="all">All models</button>
-    <button class="pill" data-model="gpt">GPT</button>
-    <button class="pill" data-model="claude">Claude</button>
-    <button class="pill" data-model="gemini">Gemini</button>
-    <button class="pill" data-model="llama">Llama</button>
-    <button class="pill" data-model="deepseek">DeepSeek</button>
-    <button class="pill" data-model="grok">Grok</button>
-    <button class="pill" data-model="mistral">Mistral</button>
-  </div>
-</div>
-
-<!-- ═══════ RESULT BAR ═══════ -->
-<div class="result-bar" id="resultBar"></div>
-
-<!-- ═══════ CARD GRID ═══════ -->
-<main id="cardGrid" aria-live="polite"></main>
-
-<script src="/app.355a465a.js"></script>
+<script src="/app.afac88ef.js"></script>
 </body>
 </html>
