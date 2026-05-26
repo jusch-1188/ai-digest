@@ -1,0 +1,80 @@
+[
+  {
+    "section": "models",
+    "headline": "Thinking Machines Lab Launches Interaction Models for Real-Time Human-AI Collaboration",
+    "summary": "Mira Murati's Thinking Machines Lab released a research preview of 'interaction models' trained from scratch with multi-stream architecture for real-time audio, video, and text collaboration. Unlike turn-based voice models, these models interrupt and add context mid-conversation, as a human would. The $2B-backed startup positions these models as a differentiated alternative to OpenAI and Anthropic voice offerings.",
+    "foryou": "Watch the research preview for API access patterns — real-time multi-stream architecture could be directly applicable to AI-assisted pair-programming or live code-review tools.",
+    "specs": [
+      {
+        "label": "Modalities",
+        "value": "Audio, video, text (simultaneous)"
+      },
+      {
+        "label": "Architecture",
+        "value": "Multi-stream, trained from scratch"
+      },
+      {
+        "label": "Status",
+        "value": "Research preview"
+      },
+      {
+        "label": "Backing",
+        "value": "$2B venture funding"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-12"
+  },
+  {
+    "section": "models",
+    "headline": "Google Gemini Omni Video Model Surfaces Ahead of I/O, Integrates Editing in Chat",
+    "summary": "Google's Gemini Omni video model leaked ahead of its I/O debut, showing video remixing and editing capabilities directly in chat — including watermark removal and object swapping. Early feedback notes strong editing but lower raw cinematic quality than ByteDance's Seedance 2. It may launch in Flash and Pro tiers as part of a unified multimodal Gemini strategy.",
+    "foryou": "Gemini Omni's in-chat video editing API could enable powerful media-pipeline automations — worth tracking the Flash-tier pricing once it officially launches.",
+    "specs": [
+      {
+        "label": "Modalities",
+        "value": "Video generation + editing"
+      },
+      {
+        "label": "Status",
+        "value": "Pre-release / leaked preview"
+      },
+      {
+        "label": "Planned tiers",
+        "value": "Flash and Pro"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-12"
+  },
+  {
+    "section": "industry",
+    "headline": "Elon Musk Announces xAI Will Dissolve Into SpaceX as 'SpaceXAI' Division",
+    "summary": "Elon Musk announced that xAI will integrate into SpaceX as a new 'SpaceXAI' division, handling Grok and X under the SpaceX brand. The restructuring streamlines vertical integration across AI and space operations. SpaceXAI is reportedly already losing senior talent to Meta and Thinking Machines Lab as a result.",
+    "source": "TLDR AI",
+    "date": "2026-05-12"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Job Displacement Hits College Class of 2026 Hard, Tech Hiring Down 100K This Year",
+    "summary": "Tech companies have cut 100,000 jobs in 2026, with Cloudflare eliminating a fifth of staff after shifting tasks to AI agents. Computer science, business, and data analytics graduates face the toughest job market in a decade. Economists attribute the slowdown to a mix of post-COVID hiring normalization and accelerating AI adoption.",
+    "source": "Semafor",
+    "date": "2026-05-12"
+  },
+  {
+    "section": "tips",
+    "headline": "Build Self-Repairing Agent Loops: Iterative Review-Repair-Validate with Structured Feedback",
+    "summary": "OpenAI shared a Codex workflow where agents iteratively review, repair, and validate their own outputs using structured feedback loops, significantly improving reliability on complex coding tasks. The approach avoids brittle one-shot generation by building in self-correction at each stage. This is now a published pattern in OpenAI's engineering docs.",
+    "foryou": "Implement a review-repair-validate loop in your Claude Code or Codex agents to catch regressions and improve output quality without human-in-the-loop on every step.",
+    "source": "TLDR AI",
+    "date": "2026-05-12"
+  },
+  {
+    "section": "tips",
+    "headline": "Auto-Improving Agent Loops with 5 Claude Code Prompts",
+    "summary": "An engineer published a system (Agno-based) that runs a full agent development lifecycle through five Claude Code prompts: scaffold, harden, add capabilities, fix eval failures, and reconcile drift between docs/code/config. An Improve loop derives 8-12 probes from agent instructions, runs them against the live container via cURL, judges PASS/FAIL, and iterates up to five rounds automatically.",
+    "foryou": "This five-prompt scaffold-to-eval pattern is directly adoptable for Claude Code agent projects — run it on your next build to catch spec drift before it compounds.",
+    "source": "TLDR AI",
+    "date": "2026-05-12"
+  }
+]
