@@ -1,0 +1,77 @@
+[
+  {
+    "section": "models",
+    "headline": "DeepSeek V4 Pro Benchmarked: 77/100 on FlowGraph at $2.25, Between Opus 4.7 and Kimi K2.6",
+    "summary": "DeepSeek V4 Pro scored 77/100 on the FlowGraph specification benchmark for $2.25, landing in performance between Claude Opus 4.7 and Kimi K2.6. The model offers a strong price-to-performance ratio for complex reasoning tasks. DeepSeek V4 Flash is also available for lighter workloads.",
+    "foryou": "At $2.25/FlowGraph run, DeepSeek V4 Pro is worth including in your model-routing strategy for cost-sensitive complex tasks where Opus 4.7 is overkill.",
+    "specs": [
+      {
+        "label": "FlowGraph score",
+        "value": "77/100"
+      },
+      {
+        "label": "Cost",
+        "value": "$2.25 per benchmark run"
+      },
+      {
+        "label": "Comparison",
+        "value": "Between Claude Opus 4.7 and Kimi K2.6"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Launches Claude for Small Business with QuickBooks, PayPal, HubSpot Integrations",
+    "summary": "Anthropic launched Claude for Small Business, a package of connectors and workflows embedding Claude into tools like QuickBooks, PayPal, HubSpot, Google Workspace, and Microsoft 365. The product is aimed at SMBs that want Claude's capabilities without custom API integration work.",
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  },
+  {
+    "section": "industry",
+    "headline": "Cerebras Raises $5.55B in Largest US IPO of 2026, Valued at ~$100B",
+    "summary": "AI chipmaker Cerebras raised $5.55 billion in its Nasdaq IPO at a valuation near $100 billion — the largest US IPO of 2026 so far. The offering was 20x oversubscribed and minted two billionaires among its founders. Cerebras' WSE-3 chip has 44GB on-chip SRAM at 21 PB/s memory bandwidth, optimized for low-latency inference.",
+    "source": "TLDR AI",
+    "date": "2026-05-14",
+    "url": "https://www.cnbc.com/2026/05/14/cerebras-ipo-mints-two-billionaires-sets-stage-for-potential-ai-wave.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Surpasses OpenAI in Business Adoption, Quadrupling Enterprise Users in One Year",
+    "summary": "Anthropic passed OpenAI in business adoption metrics for April 2026 — the first time it has taken the lead. Anthropic quadrupled enterprise adoption over the past year while OpenAI grew just 0.3%. The data suggests that the pace of AI development is overriding traditional vendor stickiness in enterprise procurement.",
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  },
+  {
+    "section": "industry",
+    "headline": "Recursive Superintelligence Raises $650M+ at $4B Valuation to Build Self-Improving AI",
+    "summary": "Recursive Superintelligence secured more than $650 million at a valuation exceeding $4 billion to develop AI systems that improve themselves with minimal human involvement. Its seven co-founders come from leading AI labs and specialize in long-horizon goal-directed systems. The current technology is still far from fully human-free self-improvement.",
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic CFO: Revenue Grew from $250M to $30B Run Rate in Two Years",
+    "summary": "Krishna Rao, Anthropic's CFO, revealed that run-rate revenue grew from roughly $250M when he joined two years ago to $30 billion today. He has helped raise approximately $75 billion and oversees compute procurement and allocation. In an interview, Rao discussed compute pricing dynamics, Mythos, biotech applications, and how Anthropic's finance team uses Claude internally.",
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  },
+  {
+    "section": "tips",
+    "headline": "Cline Releases Open-Source Agent Runtime SDK with Checkpoints, MCPs, and Subagents",
+    "summary": "Cline released @cline/sdk, an open-source framework for building agentic applications with a plugin architecture supporting checkpoints, web fetch, MCPs, cron jobs, subagents, and more. The SDK can run agents from CI/CD pipelines, create end-to-end automations, or embed agents directly inside products.",
+    "foryou": "The @cline/sdk is immediately useful for building production-grade agents — the checkpoint and subagent support fills a real gap in current agentic frameworks.",
+    "source": "TLDR AI",
+    "date": "2026-05-14",
+    "url": "https://github.com/cline/sdk"
+  },
+  {
+    "section": "tips",
+    "headline": "PyTorch 2.12: Faster CUDA Eigendecomposition, Unified Graph Capture API, MX Quantization Export",
+    "summary": "PyTorch 2.12 shipped faster CUDA eigendecomposition, a unified graph capture API, MX quantization export support, and fused Adagrad optimizers. These infrastructure updates improve both training and inference efficiency at scale.",
+    "foryou": "If you're using PyTorch for model training or quantized inference, upgrading to 2.12 gives you MX quantization export — useful for deploying to edge or mixed-precision pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-05-14"
+  }
+]
