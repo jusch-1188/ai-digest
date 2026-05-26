@@ -210,5 +210,23 @@
     "source": "TLDR AI",
     "date": "2026-05-26",
     "url": "https://www.sh-reya.com/blog/ai-qual-analysis/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Antigravity 2.0: multi-agent desktop and CLI with parallel subagent spawning and cron scheduling",
+    "summary": "Launched at Google I/O 2026, Antigravity 2.0 ships a desktop app, a new Go-based CLI, and an SDK for building custom agents. The core capability is dynamic subagent orchestration: the main agent spawns specialized subagents on the fly to handle focused subtasks in parallel without polluting its own context window. Cron-style scheduling lets agents run in the background automatically. The entire platform runs on Gemini 3.5 Flash, which was itself co-developed using Antigravity.",
+    "foryou": "Antigravity 2.0 is a direct structural competitor to Claude Code — the parallel subagent spawning and cron scheduling mirror what you are already building with Cowork, worth benchmarking its context-isolation approach.",
+    "source": "The Summary AI",
+    "date": "2026-05-26",
+    "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool-at-io-2026/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude for Legal: 20+ MCP connectors and 12 practice-area plugins for end-to-end legal workflows",
+    "summary": "Anthropic released a full vertical stack for legal teams: 20+ MCP connectors covering Ironclad, DocuSign, iManage, Relativity, Everlaw, and others; 12 practice-area plugins for contract review, M&A diligence, e-discovery, and regulatory monitoring; and Microsoft 365 integration that carries context across Word, Outlook, Excel, and PowerPoint. Each plugin is bootstrapped via a cold-start interview that writes a CLAUDE.md practice profile, which every subsequent skill reads from.",
+    "foryou": "The CLAUDE.md practice-profile pattern — a cold-start interview that writes a persistent context file every skill reads from — is a reusable architecture pattern worth borrowing for your own multi-skill agentic pipelines.",
+    "source": "The Summary AI",
+    "date": "2026-05-26",
+    "url": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html"
   }
 ]
