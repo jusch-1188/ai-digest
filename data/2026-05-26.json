@@ -1,0 +1,214 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Mythos 1 surfaces in Claude Code and Claude Security ahead of broader release",
+    "summary": "Anthropic is quietly moving Mythos 1 (tagged claude-mythos-1-preview) toward broader availability. The model appeared briefly inside Claude Code and Claude Security before vanishing, and is already active in vulnerability discovery programs on AWS and Google Cloud. Through Project Glasswing, Anthropic and partners identified 10,000+ critical/high-severity vulnerabilities. Claude Opus 4.8 is separately rumored to be in development.",
+    "foryou": "Mythos 1 coming to Claude Code means you will soon have a model tuned for security-aware agentic workflows — worth watching its exploit-detection primitives for integration into your pipelines.",
+    "specs": [
+      {
+        "label": "Tag",
+        "value": "claude-mythos-1-preview"
+      },
+      {
+        "label": "Bugs found (Project Glasswing)",
+        "value": "10,000+ critical/high-severity"
+      },
+      {
+        "label": "Benchmarks",
+        "value": "Top on ExploitBench + ExploitGym"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://www.testingcatalog.com/anthropic-prepares-mythos-1-for-claude-code-and-claude-security/"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek makes 75% V4 Pro price cut permanent, widening gap against Western frontier models",
+    "summary": "DeepSeek permanently cut V4 Pro prices by 75%, a promotion originally set to expire at month end. Pricing now sits well below OpenAI GPT-5, Anthropic Claude Opus 4.7, and Google Gemini 3.5 Flash. The gap is widest against frontier reasoning models that enterprise customers use for demanding workloads, effectively locking in a new floor for the AI price war.",
+    "foryou": "If you run inference-heavy agentic pipelines, DeepSeek V4 Pro is now a permanent cost-floor reference point worth benchmarking against your current stack.",
+    "specs": [
+      {
+        "label": "Price cut",
+        "value": "75% permanent"
+      },
+      {
+        "label": "vs GPT-5 / Opus 4.7 / Flash",
+        "value": "Significantly cheaper"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://thenextweb.com/news/deepseek-v4-pro-75-percent-price-cut-permanent"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.5 Flash (Low): 45% fewer output tokens than Medium, outperforms High on SWE tasks",
+    "summary": "Google released Gemini 3.5 Flash (Low), a new inference tier that generates roughly 45% fewer tokens than Flash Medium while outperforming Flash High on SWE (software engineering) benchmarks. It joins Flash Medium and High as a third option in the Flash family, providing a sharper cost-performance tradeoff for code-heavy workloads.",
+    "foryou": "For agentic pipelines where output token cost is a bottleneck, Flash Low is worth benchmarking immediately. Fewer tokens plus higher SWE performance is a rare combination.",
+    "specs": [
+      {
+        "label": "vs Flash Medium output tokens",
+        "value": "~45% fewer"
+      },
+      {
+        "label": "SWE vs Flash High",
+        "value": "Outperforms"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.1 Pro: 2M-token context window, multimodal, $2/$12 per 1M tokens",
+    "summary": "Gemini 3.1 Pro offers a 2 million token context window with native multimodal support across text, image, audio, and video. Pricing is $2/1M input and $12/1M output up to 200k tokens, doubling past that threshold. Cache storage runs $4.50/1M tokens/hour. Released February 2026, it represents the current context-window frontier among commercially available models.",
+    "foryou": "A 2M context window means you can pass an entire codebase or a week of agent traces in a single prompt. Genuinely useful for audit, debugging, and retrospective agentic analysis.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "2M tokens"
+      },
+      {
+        "label": "Input (<200k tokens)",
+        "value": "$2 / 1M"
+      },
+      {
+        "label": "Output (<200k tokens)",
+        "value": "$12 / 1M"
+      },
+      {
+        "label": "Input (>200k tokens)",
+        "value": "$4 / 1M"
+      },
+      {
+        "label": "Cache storage",
+        "value": "$4.50 / 1M tokens / hr"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-05-26",
+    "url": "https://openrouter.ai/google/gemini-3-1-pro-preview"
+  },
+  {
+    "section": "models",
+    "headline": "Lance: 3B-parameter multimodal model for image and video generation and editing, trained on 128 A100s",
+    "summary": "Lance is a lightweight unified multimodal model supporting image and video understanding, generation, and editing. With just 3B active parameters, it delivers competitive results across image generation, editing, and video generation benchmarks. Trained entirely from scratch on a 128-A100-GPU budget, it signals strong accessibility for research teams without frontier-scale compute.",
+    "foryou": "A capable image and video gen/edit model at 3B params signals that multimodal capability is rapidly democratizing. Worth tracking for lightweight agentic pipelines that need vision outputs.",
+    "specs": [
+      {
+        "label": "Active parameters",
+        "value": "3B"
+      },
+      {
+        "label": "Modalities",
+        "value": "Image + video (understand, generate, edit)"
+      },
+      {
+        "label": "Training budget",
+        "value": "128 A100 GPUs"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX rents xAI Colossus data centers to Anthropic for $15B/yr as neocloud commitments hit $130B+ in May",
+    "summary": "SpaceX acquired xAI and is now renting the two Colossus data centers to Anthropic for $15 billion per year, nearly doubling SpaceX total annual revenue in a single deal. The broader AI infrastructure buildout is estimated at $7.5 trillion over 4.5 years (~5% of US GDP). May 2026 alone saw over $130B in neocloud commitments: CoreWeave backlog reached ~$100B, and Nebius secured a $27B Meta contract. Goldman Sachs projects AI infra spend will grow from $765B in 2026 to $1.6T by 2031.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://cloudedjudgement.substack.com/p/clouded-judgement-52226-the-neocloud"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic on track for $10.9B Q2 revenue and $559M profit ahead of October IPO",
+    "summary": "Anthropic is growing faster than Zoom at peak pandemic pace. Q2 revenue is on track for $10.9B, more than double Q1 4.8B. Claude Code alone accounts for $2.5B in revenue. Compute efficiency improved sharply: 71 cents of compute per revenue dollar in Q1 fell to 56 cents in Q2. The company expects $559M in profit and is targeting an October IPO.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://contraryresearch.substack.com/p/anthropics-march-to-profitability"
+  },
+  {
+    "section": "industry",
+    "headline": "David Sacks kills Trump AI Executive Order on China competitiveness grounds",
+    "summary": "David Sacks warned President Trump on a call that the long-awaited executive order on AI dangers risked imposing mandatory regulations that would slow the industry in its race with Chinese competitors. Trump, sharing concerns about ceding ground to China, postponed signing and told reporters he would not sign the order. The incident highlights Sacks influence over US AI policy and marks a win for those opposed to stronger guardrails.",
+    "source": "TLDR AI",
+    "date": "2026-05-26"
+  },
+  {
+    "section": "industry",
+    "headline": "Google declares AI search the biggest change in 25 years, launches persistent information agents",
+    "summary": "Google announced a complete reimagination of search powered by AI, calling it the most significant change in its history. New information agents allow users to set persistent queries that proactively surface updates, such as tracking apartment listings or market movements with specific parameters. The move signals a shift from search-as-lookup to search-as-ongoing-assistant.",
+    "source": "Web",
+    "date": "2026-05-26",
+    "url": "https://time.com/article/2026/05/20/google-search-ai-internet/"
+  },
+  {
+    "section": "industry",
+    "headline": "US government pushes mandatory pre-release AI testing; Microsoft and xAI agree to regulator early access",
+    "summary": "The US government is aggressively pushing for pre-release access to frontier AI models before public deployment. Microsoft and xAI have reportedly agreed to provide regulators with early model access for testing. The move marks a significant shift in regulatory posture and may shape how model releases are globally sequenced going forward.",
+    "source": "Web",
+    "date": "2026-05-26"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic expands compute partnership with Google and Broadcom for multiple gigawatts of next-gen capacity",
+    "summary": "Anthropic deepened its partnerships with Google and Broadcom to secure multiple gigawatts of next-generation compute capacity. The expansion comes alongside Google 40B investment in Anthropic and signals that Anthropic is locking in infrastructure for model training and inference at unprecedented scale.",
+    "source": "Web",
+    "date": "2026-05-26",
+    "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+  },
+  {
+    "section": "tips",
+    "headline": "MCP 2026-07-28 Release Candidate: stateless protocol, OAuth-aligned, breaking changes ahead",
+    "summary": "The largest MCP spec revision since launch removes the Mcp-Session-Id header and protocol-level sessions, making MCP stateless at the protocol layer. Any request can now land on any server instance with no sticky routing or shared session stores required. Apps needing state can use explicit handles passed as ordinary tool arguments. OAuth/OIDC alignment, a formal deprecation policy, and an extensions framework are also included. Final spec ships July 28; Tier 1 SDKs have a 10-week window to ship support.",
+    "foryou": "If you run MCP servers in production, this is a breaking change. Plan migration now: sticky routing and shared session stores are going away at the protocol layer.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI macro-eval framework: analyze populations of agent traces, not isolated failures",
+    "summary": "OpenAI published a cookbook outlining a macro-evaluation workflow for agentic systems that analyzes patterns across entire populations of traces rather than debugging individual failures. The approach surfaces systemic failure modes that only emerge at scale and provides a structured methodology for validating complex multi-agent pipelines end-to-end.",
+    "foryou": "Population-level trace analysis is the right framework for diagnosing systemic agent failures. Worth adapting this methodology to your own agentic pipelines before they hit production at scale.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://developers.openai.com/cookbook/examples/partners/macro_evals_for_agentic_systems/macro_evals_for_agentic_systems"
+  },
+  {
+    "section": "tips",
+    "headline": "Reasonix: DeepSeek-native terminal coding agent built for prefix-cache stability and low long-session costs",
+    "summary": "Reasonix is a coding agent for the terminal engineered around DeepSeek prefix-cache architecture. Designed to run persistently without breaking context, it keeps token costs low across extended sessions. Targets developers who want a cheap, always-on coding assistant embedded in their workflow without dashboard overhead.",
+    "foryou": "If you want a cheap persistent coding agent in your terminal, Reasonix prefix-cache optimization means long sessions stay affordable. Worth testing against your current Claude Code workflow.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://esengine.github.io/DeepSeek-Reasonix/"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic Memory Files: structured notes across topic/project/context documents coming to Claude",
+    "summary": "Anthropic is planning a Claude memory update called Memory Files, which distributes stored notes across multiple structured documents organized by topic, project, or context rather than a flat memory blob. This enables more targeted retrieval and cleaner separation of concerns across long-running projects and multi-session workflows.",
+    "foryou": "Memory Files could meaningfully extend Claude usefulness across multi-session agentic projects. Worth designing your workflows now to take advantage of topic-scoped memory structures when it ships.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://www.testingcatalog.com/anthropic-plans-claude-memory-update-with-new-memory-files/"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity open-sources Bumblebee: read-only security scanner targeting AI tool configs on developer machines",
+    "summary": "Perplexity open-sourced Bumblebee, a read-only security scanner for developer machines that identifies risky packages, browser extensions, and AI tool configurations that may introduce security exposures. Being read-only, it provides a safe audit pass without modifying anything on the machine.",
+    "foryou": "A security scanner specifically aware of AI tool configurations is a useful addition to any dev environment hardening checklist, especially as agentic tooling proliferates on developer machines.",
+    "source": "TLDR AI",
+    "date": "2026-05-26"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent-Assisted Qualitative Analysis: AI handles the mechanical parts fast, but currently lacks taste",
+    "summary": "A long-form exploration of agent-assisted qualitative analysis finds that AI agents can execute the mechanical parts of reading large unstructured corpora and extracting recurring patterns at speed, but currently lack the taste to judge what is genuinely interesting or important. The post proposes experimental setups for measuring exactly where the human judgment boundary sits.",
+    "foryou": "The fast-but-no-taste framing is a useful lens for deciding where to insert human review checkpoints in your own agentic pipelines that process qualitative or unstructured data.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://www.sh-reya.com/blog/ai-qual-analysis/"
+  }
+]
