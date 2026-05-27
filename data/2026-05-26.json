@@ -113,6 +113,126 @@
     "date": "2026-05-26"
   },
   {
+    "section": "models",
+    "headline": "xAI Launches Grok Build CLI in Beta: Agentic Coding Agent with Plan Mode and Parallel Subagents",
+    "summary": "Grok Build, xAI's new coding agent and CLI, has launched in beta for SuperGrok and X Premium Plus subscribers. It supports complex coding projects through a plan-review-before-action loop, headless mode for automation, and up to 8 parallel subagents. The CLI offers a 2M token context window; the API (grok-build-0.1) provides 256K tokens at $1/$2 per 1M input/output tokens.",
+    "foryou": "Grok Build's headless mode and parallel subagent model makes it a direct competitor to Claude Code for agentic pipelines—worth benchmarking on repo-scale tasks, especially given the $1/1M input pricing.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "grok-build-0.1"
+      },
+      {
+        "label": "Context (CLI)",
+        "value": "2M tokens"
+      },
+      {
+        "label": "Context (API)",
+        "value": "256K tokens"
+      },
+      {
+        "label": "Price (input)",
+        "value": "$1.00 / 1M tokens"
+      },
+      {
+        "label": "Price (output)",
+        "value": "$2.00 / 1M tokens"
+      },
+      {
+        "label": "Parallel agents",
+        "value": "Up to 8"
+      },
+      {
+        "label": "Access",
+        "value": "SuperGrok / X Premium Plus ($99/mo intro)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://x.ai/news/grok-build-cli"
+  },
+  {
+    "section": "models",
+    "headline": "Google DeepMind's AlphaProof Nexus Solves 9 Open Erdős Problems for a Few Hundred Dollars Each",
+    "summary": "AlphaProof Nexus, a system pairing LLMs with the Lean formal proof assistant, autonomously cracked 9 out of 353 open Erdős problems and proved 44 OEIS conjectures—including questions unanswered for decades—at an inference cost of just a few hundred dollars per problem. It uses agentic proof-checking loops: the LLM proposes a proof, Lean verifies every logical step, and the system iterates until it passes or gives up. Results were published in an arXiv preprint (2605.22763v1) on May 21, 2026.",
+    "foryou": "AlphaProof Nexus is the clearest live demo of LLM+formal-verifier loops producing real scientific value—the architecture pattern (generate, formally verify, retry) is directly applicable to code correctness and specification checking in agentic pipelines.",
+    "specs": [
+      {
+        "label": "Problems solved",
+        "value": "9/353 open Erdős + 44 OEIS conjectures"
+      },
+      {
+        "label": "Inference cost",
+        "value": "~$100s per problem"
+      },
+      {
+        "label": "Verifier",
+        "value": "Lean proof assistant"
+      },
+      {
+        "label": "Paper",
+        "value": "arXiv 2605.22763v1"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://the-decoder.com/google-deepminds-alphaproof-nexus-solves-decades-old-math-problems-for-a-few-hundred-dollars/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.5 Flash: Best at Its Speed Tier but Not Competitive with Frontier Outside Latency-Sensitive Workloads",
+    "summary": "Zvi's analysis judges Gemini 3.5 Flash the best model at its speed point, outscoring Gemini 3.1 Pro on Terminal-Bench and MCP Atlas while running 4x faster. However, it is unconvincing against Opus 4.7 or GPT-5.5 for demanding tasks outside latency-sensitive agentic workflows. Google positions it as a daily driver for agents and coding.",
+    "foryou": "Flash 3.5 earns its place as the cheap routing layer in multi-model pipelines—delegate fast pattern-matching and tool-dispatch steps to it, escalate complex reasoning to Opus 4.7 or GPT-5.5.",
+    "specs": [
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "76.2%"
+      },
+      {
+        "label": "Speed vs 3.1 Pro",
+        "value": "4× faster"
+      },
+      {
+        "label": "Context",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Price (input/output)",
+        "value": "$1.50 / $9 per 1M"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://thezvi.wordpress.com/2026/05/22/gemini-3-5-flash-looks-good-for-how-fast-it-is/"
+  },
+  {
+    "section": "models",
+    "headline": "BenchBench: A Benchmark That Tests Whether Models Can Design Benchmarks — Only GPT-5.2 Passed",
+    "summary": "BenchBench evaluates whether a model can create a benchmark that other models find genuinely hard to solve. It tests creativity and self-awareness, not just problem-solving. In initial results, GPT-5.2 was the only model to pass; every other evaluated model—including Opus 4.6 and GPT-5.5—failed to produce a benchmark that meaningfully challenged peers.",
+    "foryou": "BenchBench exposes a blind spot: strong models are not good meta-reasoners about task difficulty, which matters if you're using LLMs to auto-generate eval suites for your own pipelines.",
+    "specs": [
+      {
+        "label": "Only passer",
+        "value": "GPT-5.2"
+      },
+      {
+        "label": "Failed models",
+        "value": "Opus 4.6, GPT-5.5, others"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://www.strangeloopcanon.com/p/introducing-benchbench"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Leaked: Focused on Multi-Step Reasoning, Agentic Workflows, and Frontend Generation, Due June",
+    "summary": "Leaked details suggest GPT-5.6 is heavily focused on stronger multi-step reasoning, improved agentic workflow handling, and enhanced frontend code generation capabilities. No official confirmation or pricing has been released; the model appears targeted at June 2026.",
+    "foryou": "If the agentic workflow improvements are real, GPT-5.6 could shift the cost-performance calculus for orchestration-heavy pipelines—worth monitoring before committing to long-term API contracts.",
+    "source": "TLDR AI",
+    "date": "2026-05-26"
+  },
+  {
     "section": "industry",
     "headline": "SpaceX rents xAI Colossus data centers to Anthropic for $15B/yr as neocloud commitments hit $130B+ in May",
     "summary": "SpaceX acquired xAI and is now renting the two Colossus data centers to Anthropic for $15 billion per year, nearly doubling SpaceX total annual revenue in a single deal. The broader AI infrastructure buildout is estimated at $7.5 trillion over 4.5 years (~5% of US GDP). May 2026 alone saw over $130B in neocloud commitments: CoreWeave backlog reached ~$100B, and Nebius secured a $27B Meta contract. Goldman Sachs projects AI infra spend will grow from $765B in 2026 to $1.6T by 2031.",
@@ -157,6 +277,30 @@
     "source": "Web",
     "date": "2026-05-26",
     "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Hardware Market Is Becoming a Stack of Memory Problems, Not a Compute Race",
+    "summary": "A CategoryVC analysis argues the AI hardware market has shifted: the primary bottleneck is no longer raw compute but memory bandwidth and capacity at every layer of the stack. Hardware changes slowly while software and model architectures can adapt quickly, meaning hardware vendors that don't architect for shifting memory bottlenecks will find their products obsolete ahead of schedule.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://www.categoryvc.com/writing/where-the-ai-hardware-market-is"
+  },
+  {
+    "section": "industry",
+    "headline": "Pope Leo XIV's AI Encyclical: Environmental Costs, Algorithmic Harm, and Power Concentration",
+    "summary": "Pope Leo XIV released a formal document on the ethics of AI integration in modern society, touching on the technology's environmental footprint, risks of algorithmic decision-making that affects people's lives without accountability, and how AI disproportionately amplifies power for those who already have resources. The document is notable for its accessible writing style and applicability beyond Catholic audiences.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://simonwillison.net/2026/May/25/encyclical-on-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek's $10 Trillion Grand Strategy: Reshape China's AI Hardware Ecosystem, Target $1T Valuation",
+    "summary": "An in-depth analysis of DeepSeek founder Liang Wenfeng's long-term ambitions reveals a goal far beyond building a model company: enable a $10 trillion Chinese AI hardware ecosystem and achieve a $1 trillion valuation within it. DeepSeek's open-source releases, aggressive price cuts, and architecture innovations are calculated to redraw global inference cost curves and position the company as the foundational layer of China's AI buildout.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://eu.36kr.com/en/p/3823859036672386"
   },
   {
     "section": "tips",
@@ -228,5 +372,23 @@
     "source": "The Summary AI",
     "date": "2026-05-26",
     "url": "https://www.lawnext.com/2026/05/anthropic-goes-all-in-on-legal-releasing-more-than-20-connectors-and-12-practice-area-plugins-for-claude.html"
+  },
+  {
+    "section": "tips",
+    "headline": "On-Policy Distillation: Close the Train-Inference Distribution Gap with One Line of Code",
+    "summary": "On-policy distillation trains a student model on trajectories sampled from its own policy rather than a fixed dataset, while a teacher provides token-level KL-based supervision. This closes the train-inference distribution mismatch that off-policy methods suffer. Reverse-KL emerges as the default loss for mode-seeking smaller students, and the technique can be implemented as a one-line swap of the regularizer on top of any RL stack like Tinker.",
+    "foryou": "If you're training smaller task-specific models on top of frontier outputs, on-policy distillation is the upgrade over static SFT—it makes the student behave correctly at inference time rather than just matching training distribution.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://paperswithcode.co/methods/on-policy-distillation"
+  },
+  {
+    "section": "tips",
+    "headline": "Models.dev: Open API for Model Specs and Pricing Across All Major Providers",
+    "summary": "Models.dev is a GitHub-hosted resource that consolidates technical specifications and pricing data for models across all major providers, accessible programmatically via an API. It serves as a single lookup layer for context windows, pricing tiers, and capability specs without manually scraping individual provider documentation.",
+    "foryou": "Drop models.dev into your tooling to auto-populate model selection logic in agentic pipelines—no more hardcoding context limits or pricing per model update.",
+    "source": "TLDR AI",
+    "date": "2026-05-26",
+    "url": "https://github.com/anomalyco/models.dev"
   }
 ]
