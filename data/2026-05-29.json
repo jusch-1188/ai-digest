@@ -1,0 +1,216 @@
+[
+  {
+    "section": "models",
+    "headline": "ElevenLabs Music v2: Genre-Switching Mid-Track AI Music Generation",
+    "summary": "ElevenLabs released Music v2, a music-generation model that can shift between genres (e.g. opera to heavy metal) mid-track without losing coherence. New inpainting lets you regenerate any section in isolation, and section-by-section stitching lets composers build songs piece by piece. API pricing was cut up to 50%, and the model is trained exclusively on licensed data cleared for commercial use.",
+    "foryou": "Direct API integration at half the old cost means you can now embed royalty-free, genre-flexible music generation into product workflows or video pipelines without licensing risk.",
+    "specs": [
+      {
+        "label": "API price cut",
+        "value": "Up to 50% (ElevenAPI), 40% (ElevenCreative)"
+      },
+      {
+        "label": "Key capability",
+        "value": "Mid-track genre switching, inpainting, section stitching"
+      },
+      {
+        "label": "Training data",
+        "value": "Licensed only, cleared for commercial use"
+      },
+      {
+        "label": "Multilingual",
+        "value": "Yes"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://elevenlabs.io/blog/introducing-music-v2"
+  },
+  {
+    "section": "models",
+    "headline": "Biohub Releases ESMC: Open World Model of Protein Biology",
+    "summary": "Chan Zuckerberg Biohub released a trio of open models for protein biology: ESMC (language model that has internalized fundamental properties governing protein biology), ESMFold2 (a design engine that turns ESMC sequence representations into atomically-resolved 3D structures), and ESM Atlas (ESMC representations navigable across 6.8B protein sequences and 1.1B predicted structures). All three are freely available to the global scientific community.",
+    "foryou": "Open-weight protein foundation models mean you can build agentic drug-discovery or bioassay pipelines without licensing a proprietary model — a rare case where frontier biology research is immediately programmable.",
+    "specs": [
+      {
+        "label": "Sequence corpus",
+        "value": "6.8 billion protein sequences"
+      },
+      {
+        "label": "Structure corpus",
+        "value": "1.1 billion predicted structures"
+      },
+      {
+        "label": "License",
+        "value": "Open / free to researchers"
+      },
+      {
+        "label": "Key models",
+        "value": "ESMC, ESMFold2, ESM Atlas"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://biohub.org/news/world-model-of-protein-biology/"
+  },
+  {
+    "section": "models",
+    "headline": "Callstack Releases Apex: Specialized Fast Model for React Native",
+    "summary": "Callstack launched Apex, a React Native-specific coding model trained to analyze architecture decisions, fix framework-specific bugs, and reason about mobile constraints. While it doesn't beat frontier models on general coding benchmarks, it achieves a substantially better performance-to-cost ratio in its domain. Currently in private beta with selected teams.",
+    "foryou": "If you have React Native in your stack or agent pipelines that generate mobile UI, Apex offers a cheaper specialized inference path — worth tracking as it moves to GA.",
+    "specs": [
+      {
+        "label": "Domain",
+        "value": "React Native coding"
+      },
+      {
+        "label": "Availability",
+        "value": "Private beta"
+      },
+      {
+        "label": "Strength",
+        "value": "Performance-to-cost ratio within React Native domain"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://www.callstack.com/blog/introducing-apex-a-fast-specialized-model-for-react-native"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic to Expand Claude Voice Mode to 18 New Languages",
+    "summary": "Anthropic is rolling out a major multilingual upgrade to Claude's mobile voice mode: 18 new languages including German, Portuguese, Chinese, Japanese, Russian, and Ukrainian. Features include on-the-fly language switching mid-conversation, 1–2 new voice personas per language, a redesigned UI, and a new push-to-talk mode. As of early 2026 Voice Mode was English-only.",
+    "foryou": "Push-to-talk and language switching are architecturally relevant: multilingual voice agents get significantly easier to build when the model handles language detection automatically.",
+    "specs": [
+      {
+        "label": "New languages",
+        "value": "18"
+      },
+      {
+        "label": "Language switching",
+        "value": "On-the-fly, mid-conversation"
+      },
+      {
+        "label": "Voices",
+        "value": "1–2 per new language (English retains 5)"
+      },
+      {
+        "label": "New feature",
+        "value": "Push-to-talk mode"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://www.testingcatalog.com/anthropic-plans-expanding-claude-voice-mode-to-more-languages/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cognition Raises $1B at $26B Valuation to Expand Devin AI Engineer",
+    "summary": "AI coding startup Cognition raised over $1B in Series D funding at a $26B valuation — more than doubling from its $10.2B valuation just eight months prior. The round was co-led by Lux Capital, General Catalyst, and 8VC. Cognition reports $492M in annualized revenue run rate and counts Mercedes-Benz, NASA, Goldman Sachs, and Santander as enterprise customers. Its flagship product Devin now writes 90% of Cognition's own code.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Pledges $150B Annual Investment in Taiwan as US AI Manufacturing Hub Stalls",
+    "summary": "Nvidia CEO Jensen Huang announced plans to invest $150 billion per year in Taiwan — up from $10–15B annually five years ago — cementing Taiwan as Nvidia's primary AI manufacturing hub. Huang cited proximity to TSMC and advanced packaging technology not yet available at TSMC's US facilities. A new Nvidia Taiwan HQ called 'Constellation' will break ground this year and be operational by 2030 with ~4,000 employees.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://arstechnica.com/tech-policy/2026/05/nvidia-ceo-wants-taiwan-to-be-center-of-ai-revolution-not-us/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic and OpenAI Have Found Product-Market Fit — Powered by Coding Agents",
+    "summary": "Simon Willison argues both companies have found PMF via coding and general-purpose agent products, evidenced by aggressive API pricing. Enterprise coding agent seats cost $200+/month/user vs. $10–20 for consumer subscriptions — a 10–20x revenue multiple. Coding agents dramatically amplify per-seat spend as teams scale usage. This pricing aggression signals confidence that demand elasticity has flipped in their favor.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything"
+  },
+  {
+    "section": "industry",
+    "headline": "Google DeepMind's Hassabis Predicts AGI by 2029–2030",
+    "summary": "DeepMind CEO Demis Hassabis, speaking at Google I/O 2026, said humanity is in the 'foothills of the singularity' and narrowed his AGI estimate to 2029–2030 — an acceleration from his earlier 2030–2035 range. He described current AI agents as a 'practice run' for significantly more powerful AI and said he chose provocative language intentionally to prompt governments and economists to prepare now.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://sherwood.news/tech/google-deepminds-hassabis-agi-is-3-to-4-years-away/"
+  },
+  {
+    "section": "industry",
+    "headline": "YouTube to Automatically Label AI-Generated Video Content",
+    "summary": "YouTube announced it will automatically apply labels to videos with significant photorealistic AI-generated content, reducing reliance on creator self-disclosure. The policy shift follows widespread non-compliance with voluntary disclosure requirements and mirrors similar efforts at Instagram and TikTok. Creators retain control over non-AI-generated content labeling.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://blog.youtube/news-and-events/improving-ai-labels-viewers-creators/"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-Google DeepMind and Apple Researchers Launch Trajectory to Fix AI Feedback Loops",
+    "summary": "Trajectory, a Palo Alto startup founded by ex-Google DeepMind and Apple researchers (including Andrew Dai, who led Gemini pre-training for 14 years), raised ~$15M to build what it calls the 'missing layer' of AI infrastructure: reliable feedback and evaluation for continual post-training. Its platform extracts signal from product usage to continuously fine-tune deployed agents, applying the rapid iteration cycles of vibe-coding to post-training at scale.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://cryptobriefing.com/trajectory-ai-startup-google-apple-researchers/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Secure MCP Tunnel: Connect Private MCP Servers Without Opening Firewalls",
+    "summary": "OpenAI released Secure MCP Tunnel, which lets teams keep MCP servers on private networks while ChatGPT, Codex, and the Responses API reach them through outbound-only HTTPS — no inbound firewall ports, no public MCP endpoint. The tunnel-client binary long-polls for queued work, forwards JSON-RPC requests locally, and returns responses through the same tunnel. The same tunnel-backed server can power ChatGPT connectors, Codex sessions, and Responses API tool calls simultaneously.",
+    "foryou": "This removes the main blocker for enterprise MCP adoption: you can now wire internal databases, CRMs, or code systems into OpenAI agents without infrastructure changes or security review for public exposure.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://developers.openai.com/api/docs/guides/secure-mcp-tunnels"
+  },
+  {
+    "section": "tips",
+    "headline": "Delta Weight Sync in TRL Cuts RL Training Bandwidth from GBs to MBs",
+    "summary": "A new Hugging Face TRL technique called Delta Weight Sync transmits only changed model parameters between RL steps instead of full checkpoints — reducing data transfer from gigabytes to megabytes during async reinforcement learning. A Hub 'bucket' manages high-frequency object storage, decoupling the trainer and inference engine so they don't need direct communication. This enables large-model async RL at scale without expensive network infrastructure.",
+    "foryou": "If you're running async RL or RLHF on large models, this is a drop-in bandwidth optimization that directly reduces compute costs and allows faster iteration cycles.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://huggingface.co/blog/delta-weight-sync"
+  },
+  {
+    "section": "tips",
+    "headline": "How to Build Self-Improving Agents with OpenAI Codex (Tax Agent Case Study)",
+    "summary": "OpenAI published a detailed case study of Codex used to build self-improving tax agents at Thrive Holdings. The approach: deploy an agent, instrument its failures in production, then use Codex to automatically generate fixes and expand its capability set — turning the slow manual feedback loop into an automated improvement cycle. The resulting agent can prepare increasingly complex tax returns without human intervention on each iteration.",
+    "foryou": "The self-improvement loop pattern — instrument → detect failures → auto-patch via Codex → redeploy — is directly applicable to any agentic pipeline with measurable output quality.",
+    "source": "TLDR AI",
+    "date": "2026-05-29"
+  },
+  {
+    "section": "tips",
+    "headline": "Ramp Found ~100 Security Issues in 6 Days Using AI Models — With Zero Human Reviewers",
+    "summary": "Ramp ran ~10,000 Inspect coding-agent sessions against its own backend over 8 hours with a minimal 'find security issues' prompt, then patched approximately 100 high-severity issues in a 6-day window with no human security reviewers in the loop. The finding: publicly available frontier models are now capable enough to surface real production vulnerabilities at scale when given access to a real codebase.",
+    "foryou": "This is a direct template for a low-cost security audit: point a coding agent at your backend, iterate on the prompt, and triage the output — far cheaper than a penetration testing engagement.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://builders.ramp.com/post/100-vulnerabilities-patched-with-0-humans"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA LocateAnything: Parallel Bounding-Box Decoding for Faster Vision Grounding",
+    "summary": "NVIDIA Research released LocateAnything, a vision-language grounding framework that decodes bounding boxes in parallel rather than token-by-token. The approach significantly speeds up object localization in visual agent tasks and grounding-intensive pipelines. It's positioned as a research framework for teams building multimodal agents that need real-time spatial reasoning.",
+    "foryou": "Parallel bounding-box decoding is directly useful for computer-use agents and visual grounding pipelines — drop-in speed improvement for any system that needs to locate UI elements or objects in images.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://research.nvidia.com/labs/lpr/locate-anything/"
+  },
+  {
+    "section": "tips",
+    "headline": "LiteParse v2.0: Local OSS PDF Parser with Spatial Bounding Boxes",
+    "summary": "LiteParse v2.0 is an open-source PDF parsing tool that extracts text with spatial bounding boxes, generates screenshots, and supports multiple output formats — all running locally with no cloud dependencies or proprietary LLM features. It's positioned as a lightweight alternative to cloud-based PDF parsers for teams that need high-quality text extraction with layout awareness.",
+    "foryou": "For agentic pipelines that ingest PDFs (contracts, invoices, research papers), LiteParse gives you spatial layout data alongside text — critical for any task where table structure or column position matters.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://threadreaderapp.com/thread/2059675872408260816.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Gemini for Business Adds Shareable Projects for Team Collaboration",
+    "summary": "Google expanded Gemini for Business with shareable Projects — multi-surface collaborative workspaces where team members can share context, instructions, and conversation history across Gemini sessions. Projects allow teams to maintain a shared AI context without each member rebuilding prompt scaffolding from scratch.",
+    "foryou": "Shared Projects effectively give teams a persistent, collaborative system prompt layer — useful for standardizing how your team interacts with Gemini agents across different workflows.",
+    "source": "TLDR AI",
+    "date": "2026-05-29",
+    "url": "https://www.testingcatalog.com/google-expands-gemini-for-business-with-shareable-projects/"
+  }
+]
