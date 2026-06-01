@@ -1,0 +1,238 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Opus 4.8 Released with Benchmark Gains, Effort Controls, and Dynamic Workflows",
+    "summary": "Anthropic released Claude Opus 4.8 on May 28, featuring meaningful benchmark improvements over Opus 4.7: SWE-bench Verified rises to 88.6% (from 87.6%), SWE-bench Pro to 69.2% (from 64.3%), and GPQA Diamond to 93.6%. The release adds adjustable effort controls, mid-task system messages on the Messages API, and an optional 2.5x Fast mode at the same price. Pricing remains $5/1M input and $25/1M output tokens with a 1M-token context window.",
+    "foryou": "The mid-task system message support and dynamic workflows are the features that matter most for agentic pipelines — you can now steer running agents and fan out to parallel subagents without rebuilding your orchestration layer.",
+    "specs": [
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Max output", "value": "128K tokens" },
+      { "label": "Cost (input)", "value": "$5 / 1M tokens" },
+      { "label": "Cost (output)", "value": "$25 / 1M tokens" },
+      { "label": "Fast mode", "value": "2.5x speed, same price" },
+      { "label": "SWE-bench Verified", "value": "88.6%" },
+      { "label": "SWE-bench Pro", "value": "69.2%" },
+      { "label": "GPQA Diamond", "value": "93.6%" }
+    ],
+    "source": "TLDR AI (also: The Summary AI)",
+    "date": "2026-06-01",
+    "url": "https://www.anthropic.com/news/claude-opus-4-8"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek Makes V4-Pro's 75% Price Cut Permanent — 34x Cheaper than GPT-5.5",
+    "summary": "DeepSeek has made its temporary 75% discount on V4-Pro permanent, locking in pricing at $0.435/1M input and $0.87/1M output tokens — a 34x savings on output versus GPT-5.5's $30/1M. Despite the dramatic price gap, V4-Pro scores 80.6% on SWE-bench Verified (vs GPT-5.5's 82.1%) and outperforms GPT-5.5 on LiveCodeBench (93.5% vs 91.8%) and AIME 2025 math (92.7% vs 89.4%). The discount, initially set to expire May 31, is now the standard rate.",
+    "foryou": "If your agentic workloads can tolerate a ~2 percentage point SWE-bench gap, switching inference to DeepSeek V4-Pro cuts your API costs by 97% versus GPT-5.5 — a no-brainer for high-volume pipelines.",
+    "specs": [
+      { "label": "Cost (input)", "value": "$0.435 / 1M tokens" },
+      { "label": "Cost (output)", "value": "$0.87 / 1M tokens" },
+      { "label": "vs GPT-5.5 output", "value": "34x cheaper" },
+      { "label": "SWE-bench Verified", "value": "80.6%" },
+      { "label": "LiveCodeBench", "value": "93.5%" },
+      { "label": "AIME 2025", "value": "92.7%" }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-06-01",
+    "url": "https://the-decoder.com/deepseek-makes-its-75-percent-discount-permanent-pricing-output-tokens-at-least-34x-below-gpt-5-5/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Launches MAI-Image-2.5, Debuting at #3 on Text-to-Image Arena",
+    "summary": "Microsoft's MAI Superintelligence Team released MAI-Image-2.5 on May 26, immediately entering the top 3 on Arena's text-to-image leaderboard with a score of 1,254 — a +72 point jump over MAI-Image-2. The model delivers major improvements in text rendering, stylized illustration, and commercial imagery. Two variants are planned: a high-quality version and a faster MAI-Image-2.5e, with image editing via uploads also supported.",
+    "foryou": "A top-3 image model from Microsoft with editing support means your agent pipelines now have a credible non-OpenAI option for visual generation tasks — particularly useful if you're already in the Azure/Foundry ecosystem.",
+    "specs": [
+      { "label": "Arena rank", "value": "#3 (score 1,254)" },
+      { "label": "vs MAI-Image-2", "value": "+72 Arena points" },
+      { "label": "Variants", "value": "Standard + MAI-Image-2.5e (fast)" },
+      { "label": "Image editing", "value": "Yes (upload support)" }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-06-01",
+    "url": "https://microsoft.ai/news/mai-image-2-5-launches-at-no-3-on-arena-ai/"
+  },
+  {
+    "section": "models",
+    "headline": "MiniMax Teases M3 with Sparse Attention Yielding 15.6x Long-Context Speed",
+    "summary": "MiniMax published an in-depth technical report on its M2 series and previewed the upcoming M3 model, which uses a new sparse attention mechanism delivering up to 15.6x faster decode speed at long contexts. The improvement would make ultra-long-context AI agent deployment economically viable for the first time. MiniMax claims M3's architecture solves the cost wall that has kept agents with very long context windows from production deployment.",
+    "foryou": "15.6x faster long-context decode directly attacks one of the biggest latency and cost bottlenecks in agentic pipelines — watch M3's release closely as a potential drop-in replacement for tasks requiring 128K+ context.",
+    "specs": [
+      { "label": "Long-context speedup", "value": "15.6x (decode)" },
+      { "label": "Mechanism", "value": "Novel sparse attention" },
+      { "label": "Status", "value": "Teaser / upcoming" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://venturebeat.com/technology/minimax-teases-upcoming-m3-model-with-new-sparse-attention-mechanism-and-15-6x-response-speed-boost"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA γ-World: Generative Multi-Agent World Model with Real-Time Rollouts",
+    "summary": "NVIDIA's γ-World (Gamma-World) is a generative world model supporting independently controllable, permutation-symmetric agents with real-time rollouts and zero-shot generalization — tested from two-player to four-player settings without retraining. The architecture uses permutation symmetry to handle variable numbers of agents, enabling generalization to unseen multi-agent configurations out of the box.",
+    "foryou": "γ-World is a research proof-of-concept for scalable multi-agent simulations — useful for anyone thinking about evaluation environments or synthetic data generation for multi-agent RL pipelines.",
+    "specs": [
+      { "label": "Agent support", "value": "Variable (permutation-symmetric)" },
+      { "label": "Zero-shot generalization", "value": "2→4 player settings" },
+      { "label": "Inference", "value": "Real-time rollouts" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://research.nvidia.com/labs/sil/projects/gamma-world/"
+  },
+  {
+    "section": "models",
+    "headline": "Biohub Releases ESMFold2: Open Protein World Model Covering 1 Billion Structures",
+    "summary": "Biohub released ESMFold2, a fully open-source (MIT license) protein structure prediction and design system that eclipses the AlphaFold database with over one billion predicted protein structures. The release bundles three components: ESMC (evolutionary-scale protein language model), ESMFold2 (atomic-resolution structure prediction), and ESM Atlas (a browsable billion-protein database). No commercial use restrictions apply.",
+    "foryou": "ESMFold2's MIT license and 1B-protein atlas make it a serious drop-in for biotech agent pipelines doing protein structure lookups or de novo design — AlphaFold's data moat just got a major open-source challenger.",
+    "specs": [
+      { "label": "License", "value": "MIT (commercial OK)" },
+      { "label": "Protein structures", "value": "1B+ predicted" },
+      { "label": "vs AlphaFold DB", "value": "+800M entries" },
+      { "label": "Components", "value": "ESMC, ESMFold2, ESM Atlas" }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-06-01",
+    "url": "https://biohub.org/news/world-model-of-protein-biology/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Raises $65B Series H at $965B Valuation",
+    "summary": "Anthropic closed a $65 billion Series H round at a $965 billion post-money valuation, citing strong enterprise adoption and $47 billion in annualized revenue run rate. The funding will expand compute capacity, research, and product development. Investor Matt Jacobson of Iqonic Capital, who has led multiple Anthropic rounds, described the dynamic as 'capitalism will find a way' — noting that each supply bottleneck (compute, chips, energy) is getting solved sequentially.",
+    "source": "TLDR AI (also: Semafor, The Summary AI)",
+    "date": "2026-06-01",
+    "url": "https://www.anthropic.com/news/series-h"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's SpaceX Compute Deal Is a 180-Day Lease, Not Three Years — Musk Contradicts S-1",
+    "summary": "SpaceX signed a compute deal with Anthropic worth billions per month, but the actual agreement is a 180-day lease with a 90-day mutual cancellation clause — not the three-year commitment described in SpaceX's S-1 filing. Elon Musk publicly downplayed the deal, saying SpaceX hasn't committed compute for years, which directly contradicts the S-1 language. SpaceX reportedly requested the short-term structure so it can reclaim capacity if needed.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://techcrunch.com/2026/05/28/how-long-is-anthropics-lease-with-spacex-opinions-vary/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cisco CEO: Anthropic's Mythos Will Transform Cybersecurity Despite Near-Term Disruption",
+    "summary": "Cisco CEO Chuck Robbins told Semafor's CEO Signal show that Anthropic's Mythos model — which has identified 23,000+ potential vulnerabilities across open-source projects — will ultimately help defenders find and close vulnerabilities faster, even if the transition is messy. Robbins launched internal 'AI universities' and a board-level AI boot camp to prepare. Mythos currently has limited access, available only to a handful of major companies including Apple, Amazon, and JPMorgan.",
+    "source": "Semafor",
+    "date": "2026-06-01",
+    "url": "https://semafor.com/s/4DXBFUJ7Ua"
+  },
+  {
+    "section": "industry",
+    "headline": "ByteDance Is Designing Its Own AI Chips to Escape Processor Wait Times",
+    "summary": "ByteDance has approached external partners to co-design a new chip optimized for its AI infrastructure, frustrated by months-long processor procurement delays. The move follows a broader trend of AI hyperscalers — including Microsoft, Meta, and now ByteDance — pursuing custom silicon to reduce dependency on Nvidia and AMD supply chains.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://www.pcgamer.com/hardware/processors/bytedance-has-had-enough-of-waiting-months-for-processors-so-its-going-to-make-them-itself/"
+  },
+  {
+    "section": "industry",
+    "headline": "Mistral Exploring Custom Chip Design as It Expands European Data Centers",
+    "summary": "Mistral AI CEO Arthur Mensch announced the company is exploring designing its own chips to reduce deployment costs and gain infrastructure independence. The move is part of a broader push to expand Mistral's European data center footprint. Mistral joins a growing list of AI labs — including ByteDance and xAI — pursuing custom silicon strategies.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://www.cnbc.com/2026/05/28/mistral-arthur-mensch-design-chips-ai-data-centers.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Publishes Frontier Governance Framework Aligning with EU AI Act and California Law",
+    "summary": "OpenAI released a Frontier Governance Framework on May 28 describing how its safety practices align with the EU AI Act's Code of Practice for GPAI and California's Transparency in Frontier AI Act. The document covers risk management across cyber offense, CBRN, harmful manipulation, and loss-of-control scenarios, and details model reporting procedures, incident response workflows, and external expert input mechanisms. It complements but does not replace OpenAI's internal Preparedness Framework.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://openai.com/index/openai-frontier-governance-framework/"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Plans to Rent Out Data Center Capacity and Build Enterprise AI, Copying Competitors",
+    "summary": "Meta CEO Mark Zuckerberg announced plans to rent out excess data center compute — mirroring Elon Musk's move to lease xAI compute to Anthropic. Meta is also building an enterprise AI business with forward-deployed engineers, following OpenAI and Anthropic's playbook. Semafor notes that Meta's copycat strategy in social media worked because it had incumbent advantages; those advantages don't exist in enterprise AI.",
+    "source": "Semafor",
+    "date": "2026-06-01",
+    "url": "https://semafor.com/s/eqfKX5IP1x"
+  },
+  {
+    "section": "industry",
+    "headline": "YouTube Now Auto-Labels Photorealistic AI-Generated Videos Using C2PA Metadata",
+    "summary": "YouTube rolled out automatic AI content labeling in May 2026, applying labels to photorealistic AI-generated or AI-altered videos even if creators don't self-disclose. The system reads C2PA metadata and SynthID watermarks. Labels appear prominently below the video player on long-form content and overlaid directly on Shorts. For content with C2PA metadata confirming full AI generation, labels are permanent and cannot be removed.",
+    "source": "The Summary AI",
+    "date": "2026-06-01",
+    "url": "https://techcrunch.com/2026/05/27/youtube-will-now-automatically-label-ai-videos/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Developing Dedicated AI Coding Model to Compete in Crowded Coding Arena",
+    "summary": "Microsoft is building a new in-house AI model specifically targeting the coding use case, according to reports, as it seeks to strengthen its position against Anthropic, Google, and OpenAI in AI-assisted development. The effort runs alongside Microsoft's existing partnerships and Copilot product. No timeline or benchmark details have been disclosed.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://sherwood.news/tech/report-microsoft-tries-to-get-back-in-the-ai-coding-game-with-new-model/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft AI Chief: Distilled Open-Source Models Are a Dead End for General-Purpose AI",
+    "summary": "Mustafa Suleyman told Semafor that companies relying on distillation — training models on synthetic data from frontier labs like Anthropic and OpenAI — are 'stuffing their model full of somebody else's knowledge' and will eventually fall behind on general-purpose tasks. Microsoft is building its own models with 'zero distillation.' Suleyman argues the gap between frontier labs and open-source distilled alternatives is larger than commonly assumed, and cheap distilled models haven't taken over as predicted.",
+    "source": "Semafor",
+    "date": "2026-06-01"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code Dynamic Workflows: Parallel Subagents Rewrote Bun's 750K Lines in 11 Days",
+    "summary": "Anthropic launched dynamic workflows in Claude Code, enabling tasks to be broken into subtasks with agents running in parallel until results converge. Developer Jarred Sumner used this to rewrite the Bun runtime from Zig to Rust — 750,000 lines of Rust, 99.8% test suite pass rate, completed in 11 days. Dynamic workflows are now available in Claude Code with Claude Opus 4.8 as the underlying model.",
+    "foryou": "This is the most concrete demonstration of what agentic parallelism unlocks in practice — if you haven't restructured your Claude Code workflows to use subagent fan-out, the Bun rewrite is the benchmark to beat.",
+    "source": "TLDR AI (also: The Summary AI)",
+    "date": "2026-06-01",
+    "url": "https://claude.com/blog/introducing-dynamic-workflows-in-claude-code"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent Judge: A Framework for Long-Context Production Agent Evaluations",
+    "summary": "Judgment Labs published Agent Judge, an evaluation framework addressing three core failures of standard LLM judges on production agents: inability to navigate long trajectories, failure to verify stateful actions against real systems, and static rubrics that can't update on real feedback. Agent Judge handles Search, Verification, and Adaptation — with tests showing it outperforms traditional LLM judges in accuracy and consistency, particularly in challenging long-context scenarios.",
+    "foryou": "If your evals are falling apart on long agentic runs, Agent Judge's Search + Verification + Adaptation framework is the most rigorous approach published so far — worth integrating into your eval harness.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://www.judgmentlabs.ai/blogs/agent-judge-solving-long-context-evaluations"
+  },
+  {
+    "section": "tips",
+    "headline": "Open Models Are 4–6 Months Behind Closed Frontier Models — and the Gap Is Growing",
+    "summary": "A LessWrong analysis finds open models are currently 4–6 months behind frontier closed models on public benchmarks, with the smallest gap having occurred around the release of DeepSeek R1. The gap has been widening since. While open models aren't hopelessly behind, the analysis suggests the catch-up narrative has slowed — closed labs are moving faster again.",
+    "foryou": "For agent builders choosing between open and closed models: the 4–6 month lag matters most on reasoning-heavy tasks where frontier gains compound quickly — build with that depreciation curve in mind.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://www.lesswrong.com/posts/rJcCrXyEsJKmmDpWG/how-far-behind-are-open-models"
+  },
+  {
+    "section": "tips",
+    "headline": "Sakana's DiffusionBlocks Slashes Training Memory by Factor of B Using Block-Wise Backprop",
+    "summary": "Sakana AI (ICLR 2026) proposed DiffusionBlocks, a framework that converts residual networks into independently trainable blocks by treating the forward pass as a diffusion denoising process. Training memory is reduced by a factor equal to the number of blocks, breaking the requirement to hold all activations in memory. Validated across five architectures including ViT, DiT, and autoregressive transformers, with performance competitive with end-to-end backprop.",
+    "foryou": "DiffusionBlocks directly attacks the GPU memory wall for fine-tuning large models — if you're hitting OOM on fine-tuning runs, this framework could be a meaningful unlock at modest implementation cost.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://www.marktechpost.com/2026/05/27/sakana-ai-proposes-diffusionblocks-a-block-wise-training-framework-that-converts-residual-networks-into-independently-trainable-denoising-modules/"
+  },
+  {
+    "section": "tips",
+    "headline": "Mistral Vibe Now Runs Remote Cloud Agents Powered by Mistral Medium 3.5",
+    "summary": "Mistral rebranded Le Chat as Vibe and launched remote coding agents that run in the cloud — not locally — with session state, task history, and approvals persisting when you hand off a local session to the cloud. The default model is now Mistral Medium 3.5 (128B dense, 77.6% SWE-bench Verified). Pricing: Free tier available; Pro at €14.99/month; Team at €24.99/user/month.",
+    "foryou": "Cloud-persistent agent sessions with teleport-from-local is the workflow feature that matters here — if you're running long agentic jobs you can't babysit, Vibe's remote execution is worth benchmarking against Claude Code.",
+    "source": "The Summary AI",
+    "date": "2026-06-01",
+    "url": "https://mistral.ai/news/vibe-remote-agents-mistral-medium-3-5/"
+  },
+  {
+    "section": "tips",
+    "headline": "GitHub Copilot Switches to Usage-Based AI Credits Billing Starting June 1",
+    "summary": "All GitHub Copilot plans transitioned to usage-based billing on June 1, 2026, replacing request-based Premium Request Units with GitHub AI Credits (1 credit = $0.01). Each plan includes a monthly credit allotment equal to its dollar price (e.g., Pro at $39/month includes $39 in credits). Code completions and next edit suggestions remain unlimited and are not billed in credits. Additional credits can be purchased when the monthly allotment runs out.",
+    "foryou": "Review your team's Copilot usage mix now — if heavy users are relying on expensive models for code completions, the metered billing could spike costs significantly versus the flat-rate model.",
+    "source": "Web",
+    "date": "2026-06-01",
+    "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Developer Habits Report: Context-Driven Coding Improves Diffs and Reduces Costs",
+    "summary": "Cursor's first Developer Habits Report finds that models are increasingly utilizing more codebase context to understand the problem before writing code — and this is actually reducing costs, since input and cache-read tokens are far cheaper than output tokens. The context-driven approach improves code calibration and diff survival rates, with developers who feed broader context seeing higher-quality code that survives review without edits.",
+    "foryou": "The takeaway for agent builders: front-loading context retrieval (RAG, grep, file reads) before generation is both higher quality and cheaper — build your agents to read more before they write.",
+    "source": "TLDR AI",
+    "date": "2026-06-01",
+    "url": "https://cursor.com/insights"
+  }
+]
