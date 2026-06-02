@@ -1,0 +1,183 @@
+[
+  {
+    "section": "models",
+    "headline": "MiniMax M3: Open-Weight Frontier Model with 1M Context and Multimodal Coding",
+    "summary": "MiniMax launched M3 on June 1, an open-weights model that hits frontier-level performance on coding and agentic benchmarks (59.0% on SWE-Bench Pro, beating GPT-5.5 and Gemini 3.1 Pro). It supports image and video input, desktop computer operation, and ultra-long 1M token context windows. Its new MSA attention architecture delivers 9× faster prefill and 15× faster decoding vs the prior generation at 1M context. Open weights and a technical report are due on Hugging Face within ~10 days.",
+    "foryou": "The first open-weight model combining frontier coding, 1M context, and native multimodality—worth benchmarking against Claude/GPT for your agentic pipelines the moment weights drop.",
+    "specs": [
+      { "label": "SWE-Bench Pro", "value": "59.0%" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Prefill speedup", "value": "9× vs prior gen at 1M ctx" },
+      { "label": "Decoding speedup", "value": "15× vs prior gen" },
+      { "label": "Modalities", "value": "Text, image, video input; desktop use" },
+      { "label": "Weights", "value": "Open (Hugging Face, ~10 days)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://www.scmp.com/tech/tech-trends/article/3355529/minimax-debuts-ai-model-built-long-and-complex-coding-tasks"
+  },
+  {
+    "section": "models",
+    "headline": "xAI Releases Grok Build 0.1 to Developers via Public API Beta",
+    "summary": "xAI's grok-build-0.1, its fastest coding model, is now in public API beta after previously being limited to paying CLI subscribers. The model is purpose-built for agentic coding tasks—web development, debugging, and multi-step MCP workflows. It accepts text and image inputs, outputs text, and integrates with platforms like Cursor and OpenClaw.",
+    "foryou": "At $1/$2 per 1M tokens in/out and 100+ tokens/sec, this is a cost-effective option to evaluate for your agentic coding pipelines alongside Claude and GPT-based alternatives.",
+    "specs": [
+      { "label": "Context window", "value": "256,000 tokens" },
+      { "label": "Speed", "value": "100+ tokens/sec" },
+      { "label": "Cost (input)", "value": "$1 / 1M tokens" },
+      { "label": "Cost (output)", "value": "$2 / 1M tokens" },
+      { "label": "Modalities", "value": "Text + image input, text output" },
+      { "label": "Access", "value": "xAI API public beta" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://x.ai/news/grok-build-0-1"
+  },
+  {
+    "section": "models",
+    "headline": "PrismML Releases Bonsai Image 4B: Sub-1GB Diffusion Models for iPhone",
+    "summary": "PrismML released Bonsai Image 4B, a family of 1-bit and ternary compressed diffusion models that run image generation directly on local hardware including iPhones. The 1-bit variant compresses a 4B-parameter diffusion transformer to 0.93 GB (8.3× reduction) while retaining ~95% image quality. On iPhone 17 Pro Max it generates a 512×512 image in ~9.4 seconds. Both variants are released open-weights under Apache 2.0.",
+    "foryou": "If you're building mobile or edge AI applications that need image generation without cloud calls, Bonsai sets a new baseline for on-device diffusion quality-to-size tradeoffs.",
+    "specs": [
+      { "label": "1-bit size", "value": "0.93 GB (8.3× compression)" },
+      { "label": "Ternary size", "value": "1.21 GB (6.4× compression)" },
+      { "label": "Quality retention", "value": "~95% vs full precision" },
+      { "label": "iPhone 17 Pro Max", "value": "512×512 in ~9.4s" },
+      { "label": "License", "value": "Apache 2.0, open weights" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://prismml.com/news/bonsai-image-4b"
+  },
+  {
+    "section": "models",
+    "headline": "Nvidia Unveils N1X (RTX Spark) ARM Laptop Chip at Computex 2026",
+    "summary": "Nvidia CEO Jensen Huang unveiled the RTX Spark superchip (N1X) at Computex 2026, marking Nvidia's entry into the PC processor market. Built alongside Microsoft and MediaTek on TSMC 3nm, it pairs 20 ARM cores with a Blackwell GPU equivalent to an RTX 5070 (6,144 CUDA cores) and 128 GB of unified memory. Launch partners include Microsoft, Dell, HP, ASUS, Lenovo, and MSI, with devices shipping in fall 2026. Intel fell 6% and AMD dropped 5% on the news.",
+    "foryou": "128 GB unified memory and a dedicated Blackwell GPU in a laptop chip is a step-change for running large local models—watch this for future on-device inference benchmarks.",
+    "specs": [
+      { "label": "CPU cores", "value": "20 ARM (10× Cortex-X925 + 10× Cortex-A725)" },
+      { "label": "GPU", "value": "Blackwell 6,144 CUDA cores (RTX 5070 tier)" },
+      { "label": "Unified memory", "value": "128 GB" },
+      { "label": "Process node", "value": "TSMC 3nm" },
+      { "label": "Availability", "value": "Fall 2026" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-06-02",
+    "url": "https://www.cnbc.com/2026/05/31/nvidias-new-chip-to-power-fresh-line-of-windows-laptops-by-dell-hp.html"
+  },
+  {
+    "section": "models",
+    "headline": "Nvidia Vera Rubin Enters Full Production; OpenAI, Anthropic, SpaceX Are First Customers",
+    "summary": "Nvidia's Vera Rubin AI datacenter platform has entered full production, with first systems shipping to early adopters including OpenAI, Anthropic, and SpaceX in fall 2026. Jensen Huang confirmed the ramp at Computex 2026 and outlined a three-generation roadmap: Vera Rubin (now), a Vera Rubin Spark with LPDDR6, then Rosa Feynman.",
+    "foryou": "Anthropic running on Vera Rubin likely means meaningfully faster and cheaper Claude inference in H2 2026—worth monitoring for cost-sensitive pipeline planning.",
+    "specs": [
+      { "label": "Status", "value": "Full production" },
+      { "label": "First systems ship", "value": "Fall 2026" },
+      { "label": "Early customers", "value": "OpenAI, Anthropic, SpaceX" },
+      { "label": "Next gen", "value": "Vera Rubin Spark (LPDDR6), then Rosa Feynman" }
+    ],
+    "source": "Web",
+    "date": "2026-06-02",
+    "url": "https://www.tomshardware.com/pc-components/cpus/nvidia-unveils-dgx-sparrk-roadmap-for-laptops-and-desktop-pcs-at-computex-2026-three-generations-outlined-rubin-followed-by-rosa-feynman"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Opus 4.8 System Card Analysis: Incremental Gains, Lags Behind Mythos",
+    "summary": "Claude Opus 4.8, released six weeks after Opus 4.7, ships with a 244-page system card. Zvi Mowshowitz's deep-dive finds the capability improvements incremental rather than step-change, and notes it still falls well short of Anthropic's internal Mythos benchmark frontier. The rapid release cadence (six weeks) signals Anthropic is shipping iteratively rather than waiting for large capability jumps.",
+    "foryou": "If you're deciding whether to upgrade pipeline calls to Opus 4.8, the short answer is: incremental improvements, probably not worth migration friction yet—wait for Mythos-tier releases.",
+    "specs": [
+      { "label": "System card", "value": "244 pages" },
+      { "label": "Release cadence", "value": "6 weeks after Opus 4.7" },
+      { "label": "vs Mythos", "value": "Capabilities still well behind" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://thezvi.wordpress.com/2026/05/29/claude-opus-4-8-the-system-card/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Debuts Unified Copilot Super App at Build 2026",
+    "summary": "Microsoft is launching a unified Copilot super app at Build 2026 (today, June 2) combining GitHub Copilot, Cowork, and Scout—an always-on agentic AI—into a single interface. Leaked screenshots show tabs for each product, with Teams integration hinting Scout may run remote tasks. The project, led by newly appointed Copilot head Jacob Andreou, targets full rollout by end of summer. The move aims to fix fragmented adoption across Microsoft's sprawling Copilot portfolio.",
+    "source": "TLDR AI (also: Fortune)",
+    "date": "2026-06-02",
+    "url": "https://fortune.com/2026/05/29/microsoft-working-on-super-app/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenRouter Raises $113M Series B at $1.3B Valuation, Led by Google's CapitalG",
+    "summary": "OpenRouter, the AI model routing API serving 8M+ developers across 400+ models, closed a $113M Series B led by CapitalG (Google's growth fund). The round included NVentures, ServiceNow Ventures, MongoDB Ventures, Databricks Ventures, and Snowflake Ventures. Weekly token volume has grown from 5 trillion to 25 trillion tokens over the past six months, putting OpenRouter on pace for over a quadrillion tokens this year. The valuation more than doubled from ~$547M a year ago.",
+    "source": "Web",
+    "date": "2026-06-02",
+    "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-DeepMind Researchers Raise $50M to Build AI for Scientific Discovery",
+    "summary": "London-based Inherent AI emerged from stealth with a $50M seed co-led by Index Ventures and Radical Ventures, alongside NVentures, Metaplanet, and others. Its Faraday platform pairs human researchers with self-improving AI agents designed to identify which scientific questions are worth asking in the first place. The founding team includes ex-DeepMind researchers Tantum Collins and Edward Hughes, and the company is structured as a public benefit corporation.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://thenextweb.com/news/inherent-ai-50-million-seed-deepmind-faraday-science"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI and Anthropic Hit $25B and $19B Annualized Revenue Respectively",
+    "summary": "OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing potentially as soon as late 2026. Anthropic is close behind at approximately $19 billion in annualized revenue. The two companies now dominate enterprise AI spend and are pulling decisively ahead of other frontier labs.",
+    "source": "Web",
+    "date": "2026-06-02",
+    "url": "https://aifundingtracker.com/ai-startup-funding-news-today/"
+  },
+  {
+    "section": "tips",
+    "headline": "Agentic RL Done Right: Never Re-Tokenize Sampled Tokens",
+    "summary": "A key source of drift in LLM reinforcement learning is re-tokenizing decoded tokens rather than operating on the originally sampled token IDs. The solution is to buffer sampled tokens and never re-encode them, which requires a prefix-preserving chat template—a property most modern templates satisfy. This keeps gradients accurate and prevents loss computation errors in long agentic RL loops.",
+    "foryou": "If you're fine-tuning or training agentic models with RL, this single architectural discipline eliminates a subtle but compounding source of training instability.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://qgallouedec-tito.hf.space/"
+  },
+  {
+    "section": "tips",
+    "headline": "The Agent Bottleneck Is Permissions, Not Model Performance",
+    "summary": "Enterprise AI agents are stalling not because models aren't capable, but because fine-grained permission systems haven't caught up. Workday's approach—using its system of record as the governance layer, with Gemini integration scoped to each user's permissions—shows how regulated sectors (HR, finance) can run agentic workflows without giving models more access than humans have. Agent accuracy matters more than speed when decisions have real-world consequences.",
+    "foryou": "When designing agentic systems, build permission scoping into your architecture from day one—retroactively constraining agent access in production is far harder than starting with least-privilege.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://venturebeat.com/orchestration/the-ai-agent-bottleneck-isnt-model-performance-its-permissions"
+  },
+  {
+    "section": "tips",
+    "headline": "Cognition on Verifying Agentic Development at Scale: Parallel Devins with Proof of Work",
+    "summary": "Cognition's Ido Pesok shares that more Devin sessions are now triggered asynchronously than interactively, making pre-merge verification non-negotiable. The key architectural breakthrough: running 10–20 Devins in parallel, each with its own isolated dev server, letting the agent return not just code but verifiable proof-of-work artifacts (run logs, annotated recordings). Approved test runs have more than doubled in recent months.",
+    "foryou": "Parallel isolated dev servers per agent instance is the architecture pattern to adopt if you want async agents you can trust to merge without human review.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://cognition.ai/blog/testing-development"
+  },
+  {
+    "section": "tips",
+    "headline": "pi-dynamic-workflows: Fan Out Work Across Subagents with a Single JS Script",
+    "summary": "pi-dynamic-workflows is a Pi extension that lets an assistant write a lightweight JavaScript script to fan out tasks across many isolated subagents in parallel, then synthesize results. Each subagent can read files, run shell commands, and call structured outputs. The pattern is particularly effective for codebase audits, multi-perspective reviews, large refactors, and research tasks that benefit from parallelism.",
+    "foryou": "A low-boilerplate way to implement map-reduce agent patterns—worth dropping into your toolkit if you're building Pi-based orchestration.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://github.com/Michaelliv/pi-dynamic-workflows"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Publishes Shared Playbook for Trustworthy Third-Party AI Evaluations",
+    "summary": "OpenAI released a detailed guide on May 28 for conducting credible third-party evaluations of frontier models like GPT-5.5. The core insight is that harness design—the configuration of tools, prompts, and environments—dominates measured performance more than the model itself. GPT-5.5's cybersecurity benchmark scores improved substantially when the harness used context 'compaction.' Reports should clearly distinguish capability elicitation, safeguard robustness, and comparative claims.",
+    "foryou": "If you're benchmarking or procuring frontier models for your pipelines, this playbook is the clearest framework yet for designing evaluations that won't mislead you.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://openai.com/index/trustworthy-third-party-evaluations-foundations/"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA MCG Toolkit Automates AI Model Card Documentation",
+    "summary": "NVIDIA's Model Card Generator (MCG) Toolkit automates the creation of comprehensive model cards in Model Card++ format, covering training data, intended use, performance metrics, and limitations. The process that previously took days of manual documentation work can now be completed in minutes by running the toolkit against a model's training metadata and evaluation outputs.",
+    "foryou": "If you're shipping internal or external AI models and need compliance-grade documentation, MCG eliminates the biggest time sink in the process.",
+    "source": "TLDR AI",
+    "date": "2026-06-02",
+    "url": "https://developer.nvidia.com/blog/how-to-automate-ai-model-documentation-with-the-nvidia-mcg-toolkit/"
+  }
+]
