@@ -1,0 +1,229 @@
+[
+  {
+    "section": "models",
+    "headline": "NVIDIA Launches Nemotron 3 Ultra: Top US Open-Weights Model",
+    "summary": "Nemotron 3 Ultra is a 550B-parameter MoE model (55B active) built on a hybrid Mamba-Transformer architecture. It scores 48 on the Artificial Analysis Intelligence Index — well ahead of the next-best US open model (Gemma 4 31B at 39) but behind Chinese frontier models like Kimi K2.6 (54). The model serves 300+ tokens/sec on DeepInfra and supports a 1M-token context window. Available on Hugging Face, ModelScope, OpenRouter, and as an NVIDIA NIM microservice.",
+    "foryou": "The fastest open model with a 1M context window and 300+ tok/s throughput is a drop-in upgrade for high-throughput agentic pipelines that currently rely on smaller open models.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "550B total / 55B active"
+      },
+      {
+        "label": "Architecture",
+        "value": "Hybrid Mamba-Transformer MoE"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "48 (Artificial Analysis)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Throughput",
+        "value": "300+ tok/s (DeepInfra)"
+      },
+      {
+        "label": "Quantization",
+        "value": "NVFP4"
+      },
+      {
+        "label": "License",
+        "value": "Open weights"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA Cosmos 3: Open Foundation Model for Physical AI",
+    "summary": "Cosmos 3 is NVIDIA's first fully open omnimodel for physical AI, using a mixture-of-transformers pairing a reasoning transformer with an expert generation transformer. It generates across text, image, video, ambient sound, and action trajectories. Two variants ship now: Cosmos 3 Nano (16B: 8B reasoner + 8B generator, runs on RTX PRO 6000) and Cosmos 3 Super (64B: 32B + 32B, for Hopper/Blackwell GPUs). Cosmos 3 Edge for real-time inference is coming soon. It tops the TAR leaderboard among open models for vision understanding.",
+    "foryou": "If you're building robotics, autonomous vehicle, or physical simulation pipelines, Cosmos 3 is the first open foundation to generate coherent action trajectories alongside video — dramatically reducing synthetic data costs.",
+    "specs": [
+      {
+        "label": "Nano size",
+        "value": "16B (8B + 8B)"
+      },
+      {
+        "label": "Super size",
+        "value": "64B (32B + 32B)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, video, sound, action"
+      },
+      {
+        "label": "Architecture",
+        "value": "Mixture-of-Transformers"
+      },
+      {
+        "label": "License",
+        "value": "Open"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen3.7-Plus: Multimodal Agent Model with 1M Token Context",
+    "summary": "Alibaba's Qwen3.7-Plus adds vision to the Qwen3.7-Max text flagship, creating a multimodal agent that unifies GUI and CLI interactions in a single loop. It supports a 1M-token context window shared across text and visual tokens (~1,280 tokens per 1080p frame). The model can chain visual observations, code execution, and tool calls in one agentic session and is now available via Alibaba Cloud Model Studio.",
+    "foryou": "Qwen3.7-Plus enables screenshot-to-action agentic loops without swapping models — directly relevant for building computer-use agents or visual debugging workflows.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens (text + vision)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text + vision"
+      },
+      {
+        "label": "Agent loop",
+        "value": "GUI + CLI in single loop"
+      },
+      {
+        "label": "Availability",
+        "value": "Alibaba Cloud Model Studio"
+      },
+      {
+        "label": "Status",
+        "value": "Preview"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://qwen.ai/blog?id=qwen3.7-plus"
+  },
+  {
+    "section": "models",
+    "headline": "JetBrains Open-Sources Mellum 2: 12B MoE Coding Model",
+    "summary": "Mellum 2 is a 12B-parameter MoE model (2.5B active, 64 experts, 8 active per token) designed for fast specialized tasks in multi-model AI pipelines. Trained on ~10.6T tokens through a three-phase code-heavy curriculum, it extends to a 128K context window via YaRN. Six variants ship under Apache 2.0: Base, Instruct, and Thinking (plus SFT counterparts). Positioned as a 'focal model' for high-frequency sub-tasks within larger agentic systems.",
+    "foryou": "Mellum 2's 2.5B active-param efficiency and 128K context make it an ideal fast sub-agent for routing, classification, or code completion within your larger agentic pipelines — Apache 2.0 means no usage restrictions.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "12B total / 2.5B active"
+      },
+      {
+        "label": "Experts",
+        "value": "64 total / 8 active per token"
+      },
+      {
+        "label": "Context window",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Training data",
+        "value": "~10.6T tokens"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Variants",
+        "value": "Base, Instruct, Thinking (+ SFT)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://arxiv.org/abs/2605.31268"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Opus 4.8 Sets New Record on ARC-AGI-3",
+    "summary": "Anthropic's Claude Opus 4.8 tripled GPT-5.5's score on the ARC-AGI-3 benchmark, establishing a new record among frontier models. This follows Opus 4.8's May 28 release, which already showed major gains on SWE-bench Pro (69.2% vs 64.3% for Opus 4.7). The ARC-AGI-3 result adds to growing evidence that Opus 4.8 represents a meaningful capability leap for reasoning and abstraction tasks.",
+    "foryou": "If your agentic pipelines have hard reasoning bottlenecks, Opus 4.8's ARC-AGI-3 jump is a signal worth testing — particularly for tasks involving novel problem structure rather than pattern recall.",
+    "specs": [
+      {
+        "label": "ARC-AGI-3",
+        "value": "3× GPT-5.5's score (record)"
+      },
+      {
+        "label": "SWE-bench Pro",
+        "value": "69.2%"
+      },
+      {
+        "label": "Release date",
+        "value": "2026-05-28"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://benchlm.ai/models/claude-opus-4-8"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Files Confidential Draft S-1 with SEC for IPO",
+    "summary": "Anthropic submitted a confidential draft S-1 registration statement to the SEC on June 1, 2026, initiating the formal IPO process. No share count or price range has been set. The filing follows a $65B Series H that put the company's valuation at $965B, with an annualized revenue run-rate recently crossing $47B driven by enterprise Claude adoption for coding and agentic workflows.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://www.anthropic.com/news/confidential-draft-s1-sec"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI GPT-5.5, GPT-5.4, and Codex Now GA on Amazon Bedrock",
+    "summary": "OpenAI's frontier models (GPT-5.5, GPT-5.4) and Codex reached general availability on Amazon Bedrock on June 1, 2026, one month after the limited preview. Pricing matches OpenAI first-party rates and usage counts toward AWS commitments. Codex is accessible via the Codex App, CLI, and VS Code / JetBrains / Xcode integrations. The models run on Bedrock's next-gen inference engine through the Responses API, giving enterprises access within existing AWS security and billing workflows.",
+    "source": "TLDR AI (also: AWS Blog)",
+    "date": "2026-06-03",
+    "url": "https://aws.amazon.com/blogs/machine-learning/openai-models-and-codex-on-amazon-bedrock-are-now-generally-available/"
+  },
+  {
+    "section": "industry",
+    "headline": "Alphabet Raises $80B in Stock Sales to Fund AI Infrastructure",
+    "summary": "Alphabet plans to raise $80B through stock sales: $10B from Berkshire Hathaway, $30B in an underwritten offering, and $40B via an at-the-market program starting Q3 2026. Goldman Sachs, JPMorgan, and Morgan Stanley are joint book-runners. The raise is driven by unprecedented customer demand for AI compute capacity.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://www.cnbc.com/2026/06/01/alphabet-to-raise-80-billion-from-stock-sales-to-fund-ai-buildout.html"
+  },
+  {
+    "section": "industry",
+    "headline": "US Closes Loophole Allowing China-Headquartered Firms to Buy Nvidia Chips via Foreign Subsidiaries",
+    "summary": "The US Commerce Department issued guidance requiring export licenses for advanced chips sold to any entity headquartered in China, regardless of where the purchasing subsidiary is physically located. The action targets future sales only — existing hardware is unaffected. It does not restrict servicing of advanced compute equipment already shipped.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://thenextweb.com/news/us-nvidia-amd-china-subsidiary-chip-curbs"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity Introduces Search as Code (SaC) for AI Agents",
+    "summary": "Perplexity's Search as Code architecture lets AI models generate Python that directly orchestrates the search stack — bypassing function-calling loops entirely. Models compose search primitives (BM25, dense retrieval, reranking) on demand in a sandboxed executor. SaC is now the default in Perplexity Computer and available in the Perplexity Agent API. It outperformed competitors on WANDR and complex multi-hop benchmarks.",
+    "foryou": "SaC replaces brittle multi-turn function-call loops with a single code-execution step — if you're building research agents on Perplexity's API, switching to SaC should cut latency and reduce failure modes significantly.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://research.perplexity.ai/articles/rethinking-search-as-code-generation"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Bedrock Cookbook: Production Workflows with Responses API",
+    "summary": "OpenAI published a cookbook walking through production patterns for GPT models on Amazon Bedrock using the Responses API. It covers structured outputs, tool calling, file inputs, multi-turn state management, prompt caching, and operational best practices. Useful reference for teams migrating existing OpenAI workflows into AWS-managed infrastructure.",
+    "foryou": "If you're consolidating AI spend under AWS commitments, this cookbook is the practical starting point for porting Responses API pipelines to Bedrock without rearchitecting.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://developers.openai.com/cookbook/examples/partners/aws/openai_models_with_amazon_bedrock"
+  },
+  {
+    "section": "tips",
+    "headline": "Mistral Releases Search Toolkit: Unified Open-Source RAG Framework",
+    "summary": "Mistral's Search Toolkit (public preview) is an open-source framework unifying data ingestion, retrieval (BM25, dense, hybrid), and evaluation (recall, precision, MRR, NDCG) under a single adapter interface. It runs on cloud, on-premises, or edge deployments. The toolkit has been battle-tested in financial services, manufacturing, and media — with one example processing multi-source audio pipelines for fake-news detection in 15 seconds end-to-end.",
+    "foryou": "If you maintain separate ingestion, retrieval, and eval stacks, Search Toolkit's unified interface is worth evaluating — it removes the glue code and lets you swap retrieval strategies without rewiring pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://mistral.ai/news/search-toolkit/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Expands Teams Plan: More Usage, New Premium Seat Tier",
+    "summary": "Cursor is restructuring Teams pricing with two separate usage pools per seat (Cursor models vs. third-party API), significantly higher limits at no cost change for the standard $40/seat, and a new Premium seat offering 5× the included usage for power users. Spend controls for admins are also added. Effective immediately for new customers; renewing customers get the new structure from July 1, 2026.",
+    "foryou": "The separate usage pools prevent heavy third-party API users from eating into your Cursor model budget — worth reviewing your team's usage split before the July renewal.",
+    "source": "TLDR AI",
+    "date": "2026-06-03",
+    "url": "https://cursor.com/blog/teams-pricing-june-2026"
+  }
+]
