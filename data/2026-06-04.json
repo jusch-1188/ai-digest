@@ -1,0 +1,177 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Expands Codex with 6 Business Plugins and Interactive Sites",
+    "summary": "OpenAI released six role-specific plugins for Codex covering sales, data analytics, creative production, product design, equity investing, and investment banking — aggregating 62 popular business apps (Salesforce, Figma, Snowflake) and 110 automated skills out of the box. A new Sites feature (now in preview) lets Codex agents build, deploy, and host interactive websites, dashboards, and internal tools at a shareable URL. An Annotations feature enables targeting specific document sections for in-place refinement. Codex now has 5M+ weekly active users, up 6x since February, with knowledge workers growing 3x faster than other segments.",
+    "foryou": "Direct plugin SDK access to 62 business apps means your agents can trigger Salesforce/Figma/Snowflake actions without custom connectors — finally a credible path to non-dev agentic workflows.",
+    "specs": [
+      { "label": "Weekly active users", "value": "5M+ (6x since Feb)" },
+      { "label": "Business apps integrated", "value": "62 across 6 plugins" },
+      { "label": "Automated skills", "value": "110 out of box" },
+      { "label": "Sites hosting", "value": "OpenAI-hosted, shareable URL" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Debuts 7 MAI Models Including Its First Reasoning Model at Build 2026",
+    "summary": "Microsoft's AI Superintelligence Team released seven new in-house models at Build 2026, led by MAI-Thinking-1, its first reasoning model. The models use 'Frontier Tuning' — a reinforcement learning approach that adapts model weights to specific workflows, letting developers tune weights for their own use cases. Microsoft also announced a collaboration with Mayo Clinic to build an advanced healthcare AI model, initially deploying within Mayo before wider distribution through Azure Foundry.",
+    "foryou": "Frontier Tuning offers RL-based weight customization for specific workflows — a potentially stronger customization lever than prompt engineering alone, worth watching for specialized agent tasks.",
+    "specs": [
+      { "label": "Models released", "value": "7 (MAI family)" },
+      { "label": "Lead model", "value": "MAI-Thinking-1 (first reasoning model)" },
+      { "label": "Training approach", "value": "Frontier Tuning (RL-based)" },
+      { "label": "Healthcare partner", "value": "Mayo Clinic via Azure Foundry" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/"
+  },
+  {
+    "section": "models",
+    "headline": "MiniMax M3 Launches: First Open-Weight Model with 1M-Token Context and Frontier Coding",
+    "summary": "MiniMax released M3, claiming it's the first open-weight model to combine frontier coding performance, native multimodal inputs (text, image, video), and a 1M-token context window. The model uses MiniMax Sparse Attention (MSA), delivering ~15.6x faster decoding and ~9.7x faster prefill at 1M context vs. M2. The API is live with a launch promo price of $0.30/$1.20 per million tokens; model weights and a technical report are due on Hugging Face within ~10 days of the June 1 launch. Company-reported benchmarks show it outperforming GPT-5.5 on SWE-Bench Pro — pending independent verification.",
+    "foryou": "If the weights hold up, this is your best open-weight option for long-horizon coding agents: 1M context, native multimodal, and $0.30 input per million tokens during promo.",
+    "specs": [
+      { "label": "Context window", "value": "1M tokens (API min 512K)" },
+      { "label": "API pricing (promo)", "value": "$0.30 input / $1.20 output per 1M" },
+      { "label": "Architecture", "value": "MiniMax Sparse Attention (MSA)" },
+      { "label": "Modalities", "value": "Text, image, video" },
+      { "label": "Weights release", "value": "~Jun 11 on Hugging Face" },
+      { "label": "SWE-Bench Pro", "value": "Outperforms GPT-5.5 (company-reported)" },
+      { "label": "Decoding speed", "value": "15.6x faster at 1M ctx vs M2" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://venturebeat.com/technology/minimax-m3-debuts-eclipsing-gpt-5-5-and-gemini-3-1-pro-on-key-benchmark-performance-for-just-5-10-of-the-cost"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic's Mythos Cybersecurity Model Expands to 150 Organizations in 15+ Countries",
+    "summary": "Anthropic expanded Project Glasswing — its controlled access program for Claude Mythos — to 150 additional partner organizations across 15+ countries, adding new sectors including power, water, healthcare, communications, and hardware. Mythos is a frontier model capable of finding and exploiting software vulnerabilities at levels surpassing all but the most elite human researchers; partners have already discovered 10,000+ high or critical severity security flaws. Anthropic is committing up to $100M in usage credits and $4M in donations to open-source security organizations. The EU's ENISA cybersecurity agency also received access.",
+    "foryou": "Project Glasswing is the access path to Mythos for security automation pipelines — apply now via anthropic.com/glasswing before the next cohort closes.",
+    "specs": [
+      { "label": "Partners", "value": "150+ across 15 countries (new cohort)" },
+      { "label": "Flaws found to date", "value": "10,000+ high/critical severity" },
+      { "label": "Usage credits committed", "value": "Up to $100M" },
+      { "label": "Open-source donations", "value": "$4M" }
+    ],
+    "source": "TLDR AI (also: CNBC, Bloomberg)",
+    "date": "2026-06-04",
+    "url": "https://www.cnbc.com/2026/06/02/anthropic-mythos-ai-project-glasswing.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Files for IPO at ~$965B Valuation as Enterprise AI Spending Backlash Builds",
+    "summary": "Anthropic filed a confidential S-1 with the SEC on June 1, 2026, targeting one of the largest AI listings ever at a ~$965B valuation following a $65B Series H. The timing is complicated by growing enterprise sticker shock: a Bain survey of 1,000 companies found 40% reporting AI cost savings below 10%, and at least one CFO accidentally spent $500M on Claude in a single month. Sam Altman acknowledged enterprise AI cost concerns as 'the most fair criticism of AI so far.' Anthropic surpassed OpenAI in business clients in April per Ramp data, making enterprise revenue its greatest strength — and its greatest IPO risk.",
+    "source": "TLDR AI (also: Axios, CNN, NBC)",
+    "date": "2026-06-04",
+    "url": "https://www.axios.com/2026/06/02/anthropic-ipo-ai-sticker-shock-spending-usage"
+  },
+  {
+    "section": "industry",
+    "headline": "JPMorgan: Some Employees Spend More on AI Tokens Than Their Salary",
+    "summary": "JPMorgan's Payments division chief data and analytics officer Zachery Anderson told Semafor that some employees are 'spending more on tokens than their salary.' The bank is monitoring usage but hasn't implemented companywide rationing. The dynamic reflects a broader enterprise shift: frontier model harnesses now outperform cheaper alternatives on complex tasks, but the performance premium comes at significant cost. Banks are now weighing whether AI token spend should be reserved for a subset of analysts — similar to how expensive financial models already are.",
+    "source": "Semafor",
+    "date": "2026-06-04",
+    "url": "https://semafor.com/s/5uFQXXLELY"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Pushes State Regulation Strategy as Trump Signs AI Advance-Notice Executive Order",
+    "summary": "OpenAI CEO Sam Altman met with Senate Minority Leader Schumer, House Speaker Johnson, and others on Capitol Hill as OpenAI advances a state-level regulatory strategy designed to create a de facto national AI framework ahead of federal action. President Trump signed an executive order requiring AI companies to give 30 days' advance notice before releasing powerful new models. Policymakers are increasingly focused on 'recursive self-improvement' risks after Anthropic's Mythos sent shockwaves through Congress; Altman also plans to attend the G7 this month.",
+    "source": "Semafor",
+    "date": "2026-06-04",
+    "url": "https://semafor.com/s/gsjK5xhA94"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Launches Scout: OpenClaw-Powered Autonomous Work Agent for Enterprises",
+    "summary": "Microsoft launched Scout, an always-on agentic assistant built on the open-source OpenClaw framework, integrated into Teams, Outlook, OneDrive, and SharePoint. Scout can autonomously schedule meetings across personal and work calendars, file expenses, order food, and perform multi-step device actions — with a policy conformance system that generates audit trails for every action. It's rolling out via Microsoft's Frontier program to GitHub Copilot subscribers ($19–$39/seat/month) with user-controlled action pre-approval. Nvidia is also building a hardened version of OpenClaw to address security vulnerabilities.",
+    "source": "Semafor (also: TechCrunch)",
+    "date": "2026-06-04",
+    "url": "https://techcrunch.com/2026/06/02/microsoft-launches-scout-an-openclaw-inspired-personal-assistant/"
+  },
+  {
+    "section": "industry",
+    "headline": "GitHub Agentic Coding Traffic Grew 1,400% in 2026, Breaking Its Infrastructure",
+    "summary": "GitHub COO Kyle Daigle told Latent Space that coding agent activity on the platform has grown 1,400% this year, pushing infrastructure designed for human-speed development past its limits. Daigle discussed how AI is changing GitHub's internal workflows, why the agent-first era is breaking GitHub in new ways, and the company's strategic response — including rethinking core platform primitives built for humans moving at human speed.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://www.latent.space/p/github"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity Debuts Autonomous Local-Cloud AI Routing — A Template for Privacy-Aware Pipelines",
+    "summary": "Perplexity unveiled a hybrid local-cloud inference orchestrator at Computex 2026 that autonomously decides in real time which AI subtasks run on-device (for sensitive or simple workloads) and which escalate to frontier cloud models (for complex reasoning). Demoed on Intel Core Ultra Series 3 alongside Intel CEO Lip-Bu Tan, it's the first system to automate local-vs-cloud routing rather than requiring users to toggle manually. The feature comes to Perplexity Computer for Windows in July.",
+    "foryou": "The local model as 'traffic cop' pattern — routing sensitive subtasks on-device and escalating complex reasoning to the cloud — is directly applicable to building privacy-aware enterprise agentic pipelines.",
+    "source": "Semafor (also: VentureBeat)",
+    "date": "2026-06-04",
+    "url": "https://venturebeat.com/technology/perplexity-ai-unveils-hybrid-local-cloud-inference-system-at-computex-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel: Rate Limits Alone Won't Stop AI Inference Theft — Here's What Does",
+    "summary": "Vercel detailed how attackers exploit exposed AI API endpoints to resell stolen inference at scale, and why traditional rate limits are insufficient to stop sophisticated resellers. Their solution uses BotID analysis to verify every AI request at the edge, reducing abuse without throttling legitimate traffic. The post includes concrete implementation guidance for teams running public-facing AI inference endpoints.",
+    "foryou": "If you expose inference endpoints publicly — even behind auth — BotID-style request verification is now non-negotiable; rate limits alone are trivially bypassed by distributed resellers.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://vercel.com/blog/protecting-against-token-theft"
+  },
+  {
+    "section": "tips",
+    "headline": "Mem0 Survey: 57–71% Cross-User Memory Contamination Found Across Major Agent Harnesses",
+    "summary": "Mem0 surveyed memory implementations across Claude Code, Codex, Copilot, OpenClaw, Hermes, Bedrock AgentCore, Windsurf, and Devin, finding the same systemic failures everywhere: bounded local storage, primarily keyword-based retrieval, harness scoping, weak staleness handling, and 57–71% cross-user memory contamination rates. The report provides an architectural framework for robust agent memory design covering cross-session identity, temporal abstraction, and staleness handling.",
+    "foryou": "Cross-user contamination at 57–71% means your multi-tenant agent almost certainly leaks context between users — audit your memory layer against this report before shipping to production.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "Wall Attention: Open-Source Mechanism That Improves Long-Context Reasoning",
+    "summary": "Tilde Research released Wall Attention, an open-source attention mechanism that improves long-context reasoning by organizing information around persistent 'wall' memory tokens rather than computing full-sequence attention. The approach reduces compute overhead while maintaining performance on long-context tasks. The GitHub repo includes code and a technical write-up.",
+    "foryou": "A potentially drop-in attention upgrade for agents operating over 100K+ tokens — worth benchmarking if you're hitting quality degradation in long-context retrieval tasks.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://github.com/tilde-research/wall-attention-release"
+  },
+  {
+    "section": "tips",
+    "headline": "a16z: Visual AI Is Shifting from Pixels to Editable Code — What It Means for Design Pipelines",
+    "summary": "Visual AI is transitioning from generating final pixel outputs to producing source code (HTML/CSS, Blender scripts) for editable artifacts, transforming workflows in design and 3D modeling by enabling continuous iteration and feedback. Code-native generation creates structured, modifiable representations that allow precise post-generation edits, feedback loops, and consistent 3D structures. The shift promises adaptive, interactive digital artifacts rather than static images — with major implications for AI-generated UI and 3D asset pipelines.",
+    "foryou": "If you're building design or 3D generation pipelines, switching your output target from images to code unlocks full iterability — a step change for agent-generated UI and interactive asset workflows.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://a16z.com/the-next-frontier-of-visual-ai-is-code/"
+  },
+  {
+    "section": "tips",
+    "headline": "Open and Closed Models Are on Different Exponentials — And Open Will Catch Up",
+    "summary": "An analysis argues that open models are not yet competitive with closed frontier models on out-of-distribution tasks — but the gap will close. The open ecosystem will be far more diverse than the closed lab oligopoly, and its cumulative market value will likely exceed OpenAI and Anthropic's combined. For now, frontier model harnesses work best on frontier models, justifying token spend for fast-moving companies; older, slower companies may not see the same ROI.",
+    "foryou": "Don't standardize your agent stack on open models yet if OOD performance matters — but architect for easy model swapping; the open-closed parity window is coming and you want to be ready.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://www.interconnects.ai/p/open-and-closed-models-are-on-different"
+  },
+  {
+    "section": "tips",
+    "headline": "Memory Is Purpose: Why Agent Memory Should Be Role-Aware, Not Just a Flat Store",
+    "summary": "Sentra CEO Ashwin Gopinath argues that memory is not a sidecar to AI intelligence but the foundational layer that determines what reality the reasoning engine operates on. The 'boulder problem' illustrates how the same artifact becomes entirely different memory depending on organizational role (sales, legal, engineering, CEO) — meaning freezing memory ontology at ingestion traps a system inside a prematurely rigid frame. The piece challenges the common architecture of building memory as a flat persistence layer indexed at ingestion time.",
+    "foryou": "Directly actionable for your harnesses: memory should be purpose-driven and role-aware, not a flat vector store — rethink your ingestion and retrieval design accordingly.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://nanothoughts.substack.com/p/memory-is-state-not-a-service"
+  },
+  {
+    "section": "tips",
+    "headline": "TinyFish Bigset: Convert Text Prompts into Live Structured Datasets",
+    "summary": "TinyFish released Bigset, an open-source system that converts natural language prompts into structured datasets sourced from the live web — handling crawling, structuring, and formatting automatically. It's designed for teams that repeatedly pull structured web data without writing custom scrapers, and supports ongoing dataset refresh as web content changes.",
+    "foryou": "Useful for bootstrapping eval datasets or automated training data pipelines from live web sources without building and maintaining a custom scraper.",
+    "source": "TLDR AI",
+    "date": "2026-06-04",
+    "url": "https://www.testingcatalog.com/tinyfish-bigset-turns-text-prompts-into-live-datasets-from-web/"
+  }
+]
