@@ -1,0 +1,258 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemma 4 12B: Multimodal AI That Runs on a 16 GB Laptop",
+    "summary": "Google DeepMind released Gemma 4 12B on June 3, a 12-billion-parameter open multimodal model that processes text, images, video, and native audio in a single encoder-free decoder-only transformer. It runs on a 16 GB laptop with a 256K context window, supports 140+ languages, and is the first mid-sized Gemma to natively ingest audio. Performance nearly matches the 26B model on benchmarks (77.2% MMLU Pro, 78.8% GPQA Diamond), and it ships under an Apache 2.0 license for free commercial use.",
+    "foryou": "Drop-in local multimodal inference for your pipelines—16 GB VRAM is now enough to run a capable image+audio model commercially without API costs.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "12B"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, video, audio"
+      },
+      {
+        "label": "MMLU Pro",
+        "value": "77.2%"
+      },
+      {
+        "label": "GPQA Diamond",
+        "value": "78.8%"
+      },
+      {
+        "label": "VRAM requirement",
+        "value": "16 GB"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-05",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
+  },
+  {
+    "section": "models",
+    "headline": "Ideogram 4.0: Open-Weight 9.3B Text-to-Image with Native 2K and JSON Prompting",
+    "summary": "Ideogram released Ideogram 4.0, a 9.3B parameter Diffusion Transformer trained from scratch on structured JSON captions rather than plain text. It generates native 2K resolution images with alpha channel support, best-in-class multilingual text rendering, and precise element layout via bounding-box and hex color conditioning. It ranks #1 among open-weight models on DesignArena, though commercial deployment requires a separate paid license beyond the non-commercial weights agreement.",
+    "foryou": "The JSON prompting interface is a qualitative jump for automated image generation pipelines—you can specify exact bounding boxes and color palettes programmatically without prompt engineering guesswork.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "9.3B"
+      },
+      {
+        "label": "Architecture",
+        "value": "Diffusion Transformer (single-stream DiT, 34 layers)"
+      },
+      {
+        "label": "Output resolution",
+        "value": "Native 2K"
+      },
+      {
+        "label": "Text encoder",
+        "value": "Qwen3-VL-8B-Instruct"
+      },
+      {
+        "label": "License",
+        "value": "Non-commercial (paid license required for commercial use)"
+      },
+      {
+        "label": "DesignArena rank",
+        "value": "#1 open-weight"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://github.com/ideogram-oss/ideogram4"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft MAI-Code-1-Flash: 137B MoE Coding Model at Haiku-Class Pricing",
+    "summary": "Microsoft unveiled MAI-Code-1-Flash at Build 2026, a 137B parameter sparse Mixture-of-Experts model with only 5B active parameters and a 256K token context window. It achieves 51.2% on SWE-Bench Pro, outperforming Claude Haiku 4.5 across all four core coding benchmarks Microsoft tested. It's rolling out to ~10% of GitHub Copilot users at $0.75/M input and $4.50/M output tokens.",
+    "foryou": "Serious coding-agent performance at Haiku-level pricing means your agentic code-gen pipelines can run faster and cheaper without sacrificing SWE-bench scores.",
+    "specs": [
+      {
+        "label": "Total parameters",
+        "value": "137B"
+      },
+      {
+        "label": "Active parameters (MoE)",
+        "value": "5B"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "SWE-Bench Pro",
+        "value": "51.2%"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$0.75 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$4.50 / 1M tokens"
+      },
+      {
+        "label": "Availability",
+        "value": "Rolling out to ~10% of Copilot users"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-05",
+    "url": "https://microsoft.ai/news/introducingmai-code-1-flash/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Muse Spark API Still Has No Release Date for Developers",
+    "summary": "Meta has delayed the developer API for its newest AI model, Muse Spark, multiple times—originally targeting April, then May, now with no concrete June date. The model is reportedly competitive with OpenAI and Anthropic's flagship offerings but has not been independently evaluated. The ongoing delay raises questions about Meta's ability to monetize its massive frontier AI investments.",
+    "foryou": "Muse Spark remains unavailable for production pipelines; until Meta ships the API, the competitive claims can't be verified—plan your model selection around what's shipping.",
+    "specs": [
+      {
+        "label": "API status",
+        "value": "Delayed — no release date set"
+      },
+      {
+        "label": "Reported positioning",
+        "value": "Competitive with OpenAI and Anthropic flagship models"
+      },
+      {
+        "label": "External evaluation",
+        "value": "None yet"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://www.investing.com/news/stock-market-news/meta-delays-release-of-new-ai-model-to-devs-wsj-4725672"
+  },
+  {
+    "section": "models",
+    "headline": "Google Proposes 'Sleep' Paradigm for Continual Learning in LLMs",
+    "summary": "Google researchers published a paper introducing a 'Sleep' training paradigm that consolidates short-term in-context knowledge into long-term model parameters via distillation and replay, mirroring biological memory consolidation during sleep. A companion 'Dreaming' stage uses reinforcement learning to generate synthetic curricula for ongoing self-improvement. The approach directly targets catastrophic forgetting, the key barrier to continuously deployed agents that adapt over time.",
+    "foryou": "If this scales, it could enable lightweight continual fine-tuning of deployed agents without full retraining—a direct unlock for personalized, adaptive agentic systems.",
+    "specs": [
+      {
+        "label": "Technique",
+        "value": "Distillation + replay (Sleep) + RL synthetic curricula (Dreaming)"
+      },
+      {
+        "label": "Target problem",
+        "value": "Catastrophic forgetting in continual learning"
+      },
+      {
+        "label": "arXiv",
+        "value": "2606.03979"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://arxiv.org/abs/2606.03979"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Raises $7 Billion in First-Ever Funding Round",
+    "summary": "DeepSeek is set to raise approximately 50 billion yuan (~$7 billion) in its maiden funding round, with founder Liang Wenfeng personally committing 20 billion yuan. Fewer than 10 outside investors will participate, and the round is expected to close within weeks. DeepSeek has made no statements about IPO plans.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://www.cnbc.com/2026/06/03/deepseek-slated-to-draw-7-billion-in-maiden-fundraising-sources-say.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Files Confidentially for IPO, Expands Claude Partner Network",
+    "summary": "Anthropic confidentially filed for an IPO with the SEC on June 1, putting it on track for a public listing this fall at a valuation near $1 trillion. Simultaneously, the company announced two Claude Partner Network updates: a new Services Track for consultants and a Claude Partner Hub. Over 40,000 firms have applied and 10,000+ consultants have earned Claude certification since the program launched in March.",
+    "source": "Web (also: TLDR AI)",
+    "date": "2026-06-05",
+    "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Leads Funding Round for Opal Electronics AI Hardware",
+    "summary": "OpenAI is leading a funding round for Opal Electronics, known for webcams, to develop a new product line of AI-native devices for creative work. The investment extends OpenAI's hardware push beyond its own ambient computing project, signaling a broader strategy of seeding specialized AI peripheral devices.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://www.testingcatalog.com/openai-makes-its-next-hardware-move-with-opal-electronics/"
+  },
+  {
+    "section": "industry",
+    "headline": "Morgan Stanley Opens Wealth Management Platforms to AI Agents",
+    "summary": "Morgan Stanley will allow AI agents from thousands of corporations to access its wealth management platforms, including ShareWorks and Equity Edge. The move opens a major financial services distribution channel to automated agentic workflows, representing one of the largest institutional steps toward AI agent-native finance infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://www.cnbc.com/2026/06/03/ai-agents-morgan-stanley-wealth-management-funnel.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Launches Business Agent for WhatsApp, Messenger, and Instagram",
+    "summary": "Meta introduced Meta Business Agent, an AI tool that enables businesses to automate customer interactions across WhatsApp, Messenger, and Instagram. The tool targets SMBs looking to handle customer service and commerce workflows at scale across Meta's messaging properties.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://about.fb.com/news/2026/06/meta-business-agent/"
+  },
+  {
+    "section": "industry",
+    "headline": "Inside Meta's AI Catch-Up: Muse Spark Delays and Internal Tensions",
+    "summary": "Ars Technica profiles Meta's broad effort to close the gap with OpenAI and Anthropic, covering Alexandr Wang's evolving role, the repeated Muse Spark API delays, and internal strategic tensions. Despite massive compute investment, Meta has yet to build meaningful developer mindshare compared to its competitors.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://arstechnica.com/ai/2026/06/inside-metas-attempts-to-play-catch-up-with-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cohere and Aleph Alpha to Merge into Sovereign Enterprise AI Provider",
+    "summary": "Cohere and Aleph Alpha announced a merger to form a Germany- and Canada-anchored enterprise AI company focused on sovereign, regulated-industry deployments. Schwarz Group (parent of Lidl and Kaufland) is committing €500 million (~$600M) in structured financing as lead investor for Cohere's upcoming Series E. The combined entity targets government and enterprise customers requiring strict data-residency guarantees.",
+    "source": "Web",
+    "date": "2026-06-05"
+  },
+  {
+    "section": "industry",
+    "headline": "Nebius Acquires Inference Optimization Startup Eigen AI for $643M",
+    "summary": "Nasdaq-listed cloud infrastructure company Nebius (NBIS) agreed to acquire Eigen AI, a model inference and optimization startup, for approximately $643 million in cash and stock. The deal extends Nebius's GPU cloud play with specialized inference efficiency capabilities and is expected to close in coming weeks.",
+    "source": "Web",
+    "date": "2026-06-05"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Pushes 'Intelligence Per Dollar' as New AI Benchmark Metric",
+    "summary": "Microsoft is adding 'average token usage' to model release cards, reframing competition from raw benchmark scores to the cost of achieving a specific business outcome—like tokens consumed per resolved support case. Analyst Tom Tunguz notes this shift forces companies to compete on efficiency and better aligns model pricing with measurable value delivered.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://tomtunguz.com/tokens-per-result/"
+  },
+  {
+    "section": "tips",
+    "headline": "How Anthropic's Claude Code Team Runs an AI-Native Engineering Org",
+    "summary": "The Claude Code team published a detailed write-up on restructuring engineering for AI-native development: eliminating sprint planning in favor of just-in-time tasking, shifting code reviews to focus exclusively on areas requiring human judgment, and dogfooding Claude Code throughout. The piece covers maintaining a flat team structure and continuously auditing processes for AI-assisted efficiency gains.",
+    "foryou": "The JIT planning model and automated code review scaffolding are directly replicable for any agentic engineering team—worth reading as a process template, not just inspiration.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://claude.com/blog/running-an-ai-native-engineering-org"
+  },
+  {
+    "section": "tips",
+    "headline": "A Developer Spent $1,500 Testing Whether LLMs Can Autonomously Hack an App",
+    "summary": "A developer built a vulnerable book review app and ran 10 autonomous trials each across multiple frontier models to benchmark exploit discovery. GPT-5.5 led with 7/10 successful runs, DeepSeek-V4-Pro followed at 3/10, and Claude Sonnet 4.6 solved it 2/10 times with 5 runs hitting budget limits. Most models failed due to security guardrails blocking exploitation attempts entirely.",
+    "foryou": "GPT-5.5's 70% autonomous success rate sets the current baseline for security automation—and Claude Sonnet 4.6's budget-cap failure mode is a practical consideration for long-running red-team pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://kasra.blog/blog/i-spent-1500-seeing-if-llms-could-hack-my-app/"
+  },
+  {
+    "section": "tips",
+    "headline": "Fei-Fei Li Proposes a Functional Taxonomy of World Models",
+    "summary": "In a Substack essay, Fei-Fei Li argues that 'world model' is the most overloaded term in AI and maps a functional taxonomy spanning computer vision, robotics, reinforcement learning, and generative AI. She distinguishes between language models' command of conceptual space and the spatial-temporal substrate required for true physical world modeling, offering a principled framework for thinking about where current LLMs fall short.",
+    "foryou": "Useful conceptual scaffold for scoping which components of your agentic pipelines actually require world-model capabilities vs. what language reasoning already covers adequately.",
+    "source": "TLDR AI",
+    "date": "2026-06-05",
+    "url": "https://drfeifei.substack.com/p/a-functional-taxonomy-of-world-models"
+  }
+]
