@@ -1,0 +1,323 @@
+[
+  {
+    "section": "models",
+    "headline": "ChatGPT Dreaming V3 Overhauls Memory With Background Synthesis",
+    "summary": "OpenAI launched Dreaming V3 on June 4, 2026 — its most significant memory upgrade since ChatGPT launched. The new architecture runs a background synthesis pass after each conversation, automatically cataloguing preferences, ongoing projects, and time-sensitive context rather than waiting for users to explicitly ask ChatGPT to remember things. The system is ~5x more compute-efficient than the prior saved-memories system, enabling free-tier rollout. Plus and Pro users get double the memory storage as a differentiator. Privacy researchers have flagged that 96% of memories in a sampled dataset were created unilaterally by the system, a transparency concern under EU AI Act rules taking effect in August 2026.",
+    "foryou": "Dreaming V3's background profiling is a strong signal for how production memory systems should work in agentic pipelines — invest in post-session synthesis loops, not just real-time context injection.",
+    "specs": [
+      {
+        "label": "Rollout",
+        "value": "Plus/Pro US (June 4); Free/Go within weeks"
+      },
+      {
+        "label": "Memory compute efficiency",
+        "value": "~5x improvement over prior system"
+      },
+      {
+        "label": "Storage",
+        "value": "2x for Plus/Pro vs free tier"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://openai.com/index/chatgpt-memory-dreaming/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Sonnet 4.8 Leak: npm Source Map Points to Mid-June Release",
+    "summary": "A source map accidentally shipped in @anthropic-ai/claude-code npm package v2.1.88 on March 31, 2026 contained three strings: sonnet-4-8, opus-4-7, and mythos. Opus 4.7 subsequently shipped exactly as leaked on April 16 — giving the Sonnet 4.8 and Mythos strings high credibility. No model card, API ID, or Anthropic announcement exists as of June 7. Anthropic has never skipped a minor version (going 4.6 → 4.8 without a 4.7 Sonnet would be unprecedented), reinforcing developer community expectation of a mid-June drop. If it ships at $3/MTok input or lower, it could meaningfully shift economics for production agentic workloads.",
+    "foryou": "High-confidence rumour worth architecting for: plan branching logic that can swap in Sonnet 4.8 immediately on release, especially if it lands at Haiku-tier pricing — it would reset the tier economics for your pipelines.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Leaked (unconfirmed, high credibility)"
+      },
+      {
+        "label": "Expected release",
+        "value": "Mid-June 2026"
+      },
+      {
+        "label": "Expected pricing (speculative)",
+        "value": "$1–$3 / MTok input"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Build 2026: Seven MAI Models Unveiled, Most Not Powered by OpenAI",
+    "summary": "Beyond the previously covered MAI-Code-1-Flash, Microsoft at Build 2026 (June 2–3) unveiled six additional proprietary models: MAI-Thinking-1 (reasoning flagship), MAI-Image-2.5 (image gen, ranked above Gemini 3 Pro in Arena leaderboard at 1403), MAI-Transcribe-1.5 (SOTA across 43 languages, 5x faster than rivals), MAI-Voice-2 (speech, now in Copilot/Teams/GitHub/Dynamics), and two additional reasoning-specialized Azure AI Foundry models. All are built in-house — not by OpenAI. Satya Nadella is explicitly positioning Copilot as a model-agnostic platform ahead of OpenAI's own IPO.",
+    "foryou": "MAI-Transcribe-1.5 beating OpenAI and Gemini on transcription at 5x speed is immediately useful — evaluate it for any pipeline running audio-to-text preprocessing.",
+    "specs": [
+      {
+        "label": "MAI-Image-2.5 Arena rank",
+        "value": "1403 (above Gemini 3 Pro)"
+      },
+      {
+        "label": "MAI-Transcribe-1.5 language coverage",
+        "value": "43 languages, 5x faster than rivals"
+      },
+      {
+        "label": "Deployment",
+        "value": "Azure AI Foundry, Copilot, Teams, GitHub, Dynamics"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Leaks Suggest 20–30% Token Efficiency Jump and Stronger Agentic Reasoning",
+    "summary": "Internal OpenAI benchmark leaks attributed to testers circulated this week, consistent with a June 2026 release window for GPT-5.6. The headline improvements: 20–30% reduction in tokens needed for equivalent outputs, enhanced reasoning accuracy for multi-step agentic workflows, and expanded multimodal capabilities. GPT-5.6 is being positioned as an efficiency and agentic upgrade rather than a raw capability jump — the goal appears to be making GPT-5.5-level reasoning available at GPT-4o-class pricing. If confirmed, it would directly compete with the anticipated Claude Sonnet 4.8 for production agentic workloads.",
+    "foryou": "Both GPT-5.6 and Sonnet 4.8 targeting mid-June means the next two weeks could materially shift your build-vs-buy calculus on compute-heavy pipeline steps — watch pricing announcements closely.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Leaked (unconfirmed)"
+      },
+      {
+        "label": "Expected token efficiency",
+        "value": "20–30% fewer tokens vs GPT-5.5"
+      },
+      {
+        "label": "Target pricing",
+        "value": "GPT-4o-class (estimated)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.geeky-gadgets.com/gpt-5-6-leaks-microsoft-build-2026/"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen 3.7 Max Matches Claude Opus 4.7 on Agentic Benchmarks at Half the Price",
+    "summary": "Alibaba's Qwen 3.7 Max is scoring within striking distance of Claude Opus 4.7 on the Artificial Analysis Intelligence Index for reasoning tasks — at approximately $1.50/$6 per million input/output tokens, versus Claude Sonnet 4.6 at $3/$15. MiniMax M2.7 goes further at $0.30/$1.20 per million tokens. A Salesforce case study published this week demonstrated a 231-day migration completed in 13 days using Claude Code, illustrating the ROI story for enterprise AI — and the reason Chinese open-weight models competing on price are a genuine threat to Anthropic's enterprise margins.",
+    "foryou": "If you're running high-volume agentic loops, the cost differential between Qwen 3.7 Max and Claude Sonnet 4.6 is now large enough to justify a benchmark comparison — run your own eval before the next billing cycle.",
+    "specs": [
+      {
+        "label": "Pricing (input/output)",
+        "value": "~$1.50 / $6 per MTok"
+      },
+      {
+        "label": "Benchmark position",
+        "value": "Near Claude Opus 4.7 on AI Analysis Intelligence Index"
+      },
+      {
+        "label": "License",
+        "value": "Closed-weight"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.5 Pro Confirmed for June — Google's Answer to Claude Opus 4.8",
+    "summary": "Sundar Pichai confirmed at Google I/O 2026 (May 19) that Gemini 3.5 Pro would drop 'next month' — June 2026 — with no specific date set. As of June 7, the release has not yet shipped. The Pro tier is positioned to close the reasoning gap that Gemini 3.5 Flash introduced when it prioritised speed over accuracy. Gemini 3.5 Flash is already in production at $1.50/$9.00 per million tokens; the Pro tier is expected at 2–5x Flash pricing. It would be Google's most direct competition to Claude Opus 4.8 and GPT-5.5 on reasoning-heavy enterprise tasks.",
+    "foryou": "Gemini 3.5 Pro's imminent release makes this a good week to set up a comparative benchmark against Claude Opus 4.8 on your own workloads — Google is likely to undercut on price.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Confirmed for June 2026 (not yet released)"
+      },
+      {
+        "label": "Expected pricing",
+        "value": "$3–$7.50 / MTok input (2–5x Flash pricing)"
+      },
+      {
+        "label": "Flash reference pricing",
+        "value": "$1.50 input / $9.00 output per MTok"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://llm-stats.com/llm-updates"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-Rosalind Updated: 31% Fewer Tokens on Genomics, New Lab Protocol Support",
+    "summary": "OpenAI released an updated GPT-Rosalind on June 4, 2026, combining GPT-5.5's agentic coding and tool-use with stronger intelligence in medicinal chemistry, genomics, proteomics, spatial transcriptomics, and applied genetics. On GeneBench, the updated model uses 31% fewer tokens than GPT-5.5 while achieving higher accuracy (21.6% vs 20.4%). On the new LabWorkBench evaluation for real wet lab protocols, it shows significant improvement on linking perturbations to experimental outcomes. New capabilities include evidence-retrieval plugins and expanded bioinformatics workflow support.",
+    "foryou": "If any of your pipelines touch biology or drug discovery workflows, GPT-Rosalind's 31% token efficiency on genomics tasks is worth evaluating — it also has direct plugin support for bioinformatics tools.",
+    "specs": [
+      {
+        "label": "GeneBench accuracy",
+        "value": "21.6% (vs 20.4% GPT-5.5)"
+      },
+      {
+        "label": "GeneBench token reduction",
+        "value": "31% fewer tokens vs GPT-5.5"
+      },
+      {
+        "label": "MedChemBench accuracy",
+        "value": "27.5% (vs 25.1% GPT-5.5)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Genomics, proteomics, spatial transcriptomics, medicinal chemistry"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://openai.com/index/gpt-rosalind/"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.5-Cyber Rolls Out to EU Vetted Cybersecurity Teams",
+    "summary": "OpenAI granted the European Union access to GPT-5.5-Cyber — a variation of its flagship model designed for cybersecurity applications — in limited preview to vetted EU cybersecurity teams, businesses, governments, and institutions including the EU AI Office. The move is a direct competitive differentiator: Anthropic has not yet granted EU access to Claude Mythos Preview (used in Project Glasswing), giving OpenAI a tangible first-mover advantage in European government and enterprise security contracts. OpenAI has spent the past year building government relationships through its OpenAI for Countries initiative.",
+    "foryou": "If you're selling AI security tooling into EU government markets, track GPT-5.5-Cyber's vetted-access program — it signals the procurement pathway and the compliance expectations you'd need to meet.",
+    "specs": [
+      {
+        "label": "Access",
+        "value": "Limited preview — vetted EU cybersecurity teams, businesses, EU AI Office"
+      },
+      {
+        "label": "Base model",
+        "value": "GPT-5.5 (cybersecurity specialisation)"
+      },
+      {
+        "label": "Competitor",
+        "value": "Anthropic Mythos Preview (Glasswing program, not yet EU-available)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-6-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Great American AI Act: 269-Page Bipartisan Bill Would Freeze State AI Laws for Three Years",
+    "summary": "Representatives Jay Obernolte (R-CA) and Lori Trahan (D-MA) released a 269-page discussion draft of the Great American Artificial Intelligence Act on June 4, 2026 — the most comprehensive federal AI framework ever put forward by Congress. Its headline provision: a three-year preemption of state AI development laws, including California's AI bills and Colorado's AI Act (set to take effect June 30). Companies with over $500M in annual revenue would be required to publish Frontier AI Frameworks, report critical safety incidents to the federal government, and support a $100M/year Center for AI Standards and Innovation. Labor unions including the AFL-CIO rejected it immediately; tech industry groups praised it. The bill is a discussion draft, not a formally introduced bill.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://obernolte.house.gov/media/press-releases/obernolte-trahan-release-discussion-draft-great-american-ai-act"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Issues 'Brake Pedal' Warning as AI Nears Self-Improvement Threshold",
+    "summary": "Anthropic issued a rare public warning this week that its AI systems are advancing so rapidly they may soon be capable of self-improvement without human oversight. The concern is structural: current safety evaluation frameworks were designed for models that improve between training runs and hold capabilities stable in deployment. Self-improving models that can update their own weights during deployment invalidate release-time safety assessments. Anthropic joined OpenAI in urging Congress to develop technical safeguards that can slow or halt an AI system improving itself faster than humans can monitor. Both companies are simultaneously asking for regulatory guardrails while pitching near-trillion-dollar IPO valuations.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Grok for Government: xAI Secures 18-Month Federal AI Contract at $0.42 Per Agency",
+    "summary": "xAI secured a sweeping federal government AI contract with the US General Services Administration (GSA) — making Grok 4 and Grok 4 Fast available to all federal agencies for $0.42 per agency for 18 months through March 2027, the longest-running AI contract the US government has signed to date. The deal includes a dedicated xAI engineering team to help agencies deploy Grok and agency training programs. Higher-security access is available at additional pricing. Grok joins Meta, OpenAI, Google, and Anthropic in the growing list of AI providers with major US government contracts — the GSA's OneGov initiative is moving at an unprecedented procurement pace.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://tech.yahoo.com/ai/gemini/articles/elon-musks-grok-ai-used-202629636.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI IPO: Goldman Sachs and Morgan Stanley Finalising Confidential S-1 for September Target",
+    "summary": "OpenAI is working with Goldman Sachs and Morgan Stanley as lead underwriters on a confidential IPO filing, targeting a public offering as early as September 2026. Currently valued at approximately $730B–$850B in private markets, OpenAI has grown revenue from ~$2B annualised in 2023 to over $20B by end-2025 against a negative 122% operating margin in Q1 2026. ChatGPT has ~900M weekly active users. The company has raised approximately $180B in aggregate. SpaceX (which includes xAI) is expected to trade first on June 12 under SPCX; all three AI IPOs (SpaceX, OpenAI, Anthropic) are targeting ~$1 trillion valuations in a window that Goldman Sachs projects could yield $160B in total 2026 IPO proceeds.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump and Sanders Both Now Want Government Equity Stakes in AI Companies",
+    "summary": "On June 6, President Trump told reporters the US government should take equity stakes in AI companies like OpenAI, Anthropic, and xAI — 'You make them a partnership in this revolution. It would be a beautiful thing.' This came days after Bernie Sanders published a NYT op-ed calling for 50% public ownership of leading AI companies. The convergence is remarkable: the country's most prominent democratic socialist and its leading populist are describing the same policy using different language. OpenAI CEO Sam Altman has privately discussed government equity participation with senior Trump administration officials, signalling he views a smaller version of the concept as a possible political hedge ahead of the IPO.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://fortune.com/2026/06/05/trump-partnership-openai-anthropic-xai-nationalization-bernie-sanders-altman/"
+  },
+  {
+    "section": "industry",
+    "headline": "Sanders Introduces AI Sovereign Wealth Fund Act: 50% Stock Tax on OpenAI, Anthropic, and xAI",
+    "summary": "Senator Bernie Sanders introduced the American AI Sovereign Wealth Fund Act in early June 2026, proposing a one-time 50% tax on frontier AI companies — paid in stock, not cash — targeting specifically OpenAI, Anthropic, and xAI (not Google or Meta). The collected shares would be placed into a federal sovereign wealth fund giving the public voting rights on AI company boards and eventual dividend distributions. Sanders' argument: these companies trained on publicly created content without compensation, so the public should participate in the resulting wealth. Anthropic confidentially filed for its IPO on the same day Sanders' op-ed went live at a $965B valuation — a timing collision that will shape the political environment for AI IPOs.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://gizmodo.com/bernie-sanders-continues-to-be-only-democrat-willing-to-govern-on-ai-proposes-public-ownership-2000765960"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX IPO Roadshow Week 1: Pricing June 11, Nasdaq Trading Starts June 12 as SPCX",
+    "summary": "SpaceX's investor roadshow completed its first full week of institutional meetings across New York, Boston, and San Francisco. Pricing is scheduled for June 11 and trading opens on Nasdaq under SPCX on June 12. The company is targeting up to $75B in proceeds at a ~$1.75T valuation — which would be the largest IPO in recorded history, surpassing Saudi Aramco's 2019 listing. The S-1 disclosed $18.7B in 2025 consolidated revenue (post xAI merger), with Starlink generating $11.4B revenue and $4.4B operating income, while xAI consumed ~$14B in cash against $3.2B revenue. A notable 30% of the float is going to retail investors via Robinhood, Fidelity, and Schwab.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.fastcompany.com/91553827/look-biggest-ai-players-barreling-towards-huge-wall-street-debuts"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple WWDC 2026: Tim Cook's Final Keynote to Feature Gemini-Powered Siri and Multi-Model Extensions",
+    "summary": "Apple WWDC 2026 opens June 8, 2026 — Tim Cook's final keynote before handing the CEO role to hardware chief John Ternus on September 1. The centrepiece: a completely rebuilt Siri running on a custom 1.2-trillion-parameter Google Gemini model, licensed at ~$1 billion per year. Apple is also introducing an Extensions system letting users choose between ChatGPT, Gemini, or Anthropic's Claude for Apple Intelligence features — each with a distinct voice so users know which model answered. This ends OpenAI's exclusivity inside the iPhone established in iOS 18. iOS 27, macOS 27, and AI-powered Photos editing tools are also expected.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://techcabal.com/2026/06/06/apple-wwdc-2026-what-to-expect/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Glasswing Expands to Power, Water, Healthcare, and Communications Infrastructure",
+    "summary": "Anthropic's Project Glasswing — its classified-adjacent cybersecurity program using Claude Mythos Preview — expanded its partner network on June 2, 2026, adding power grids, water systems, healthcare networks, communications infrastructure, and hardware manufacturers. The combined codebases of new partners support systems affecting more than 100 million people. Separately, Anthropic connected Claude to 28 security and compliance platforms through its Claude Compliance API in late May, including CrowdStrike, Palo Alto Networks, Okta, and Zscaler. First-month Glasswing results reported on May 22: Mythos found 23,019 vulnerabilities across 1,000+ open-source projects, with 90.6% confirmed real on independent sampling.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.anthropic.com/news"
+  },
+  {
+    "section": "industry",
+    "headline": "Arizona Public Service Proposes 45% Electricity-Rate Increase Targeting AI Data Centers",
+    "summary": "Arizona Public Service, the state's largest electricity utility, proposed a 45% electricity-rate increase specifically for data centers, citing the need to ensure AI infrastructure operators 'are paying their fair share' of grid expansion costs. Arizona, Texas, and Virginia have all faced grid stress events tied to accelerating data center construction in 2025–2026. This proposal would be among the largest utility-rate increases targeting a single industry sector in US history and is expected to be replicated by other state utilities. The development directly affects the economics of every AI model running on cloud infrastructure — and contextualises Anthropic's $15B/year compute bill to SpaceX as a bet on supply independence.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.wsj.com/articles/arizona-utility-ai-data-center-rate-increase"
+  },
+  {
+    "section": "industry",
+    "headline": "Colorado AI Act Takes Effect June 30 as Federal Bill Tries to Preempt It",
+    "summary": "Colorado's Consumer Protections for Artificial Intelligence Act — the first comprehensive state AI law in the US — is scheduled to take effect June 30, 2026, just 23 days away. It requires developers and deployers of high-risk AI systems to protect Colorado residents from algorithmic discrimination in employment, education, financial services, healthcare, housing, and legal services. The Great American AI Act discussion draft (dropped June 4) includes a three-year preemption provision that would freeze Colorado's law before it applies — but the federal bill is far from passed. Enterprises serving Colorado residents currently need compliance frameworks regardless of what Congress does.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://rollcall.com/2026/06/04/bipartisan-ai-draft-proposes-three-year-preemption-of-state-laws/"
+  },
+  {
+    "section": "tips",
+    "headline": "Grok Build: xAI Launches Terminal Coding Agent to Challenge Claude Code",
+    "summary": "xAI launched Grok Build in early beta for SuperGrok Heavy subscribers — a terminal-based coding agent offering planning, clean diffs, parallel subagents, worktree support, headless mode, and ACP (Agent Communication Protocol) for complex software engineering workflows. Install: `curl -fsSL https://x.ai/cli/install.sh | bash`. The AI coding agent market now has five credible players: Claude Code (Anthropic), Codex (OpenAI), GitHub Copilot (Microsoft), Gemini Code (Google), and Grok Build (xAI). Grok Build is notably unique in being backed by a company that also owns the social network, a federal government AI contract, and a large compute cluster (Colossus).",
+    "foryou": "Worth spinning up in your toolchain immediately for a benchmark comparison — Grok Build's parallel subagents and ACP support could compete on complex multi-file refactors where Claude Code has historically led.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://releasebot.io/updates/xai"
+  },
+  {
+    "section": "tips",
+    "headline": "Grok Web Connectors Now Support SharePoint, Outlook, Google Workspace, and Custom MCP Servers",
+    "summary": "xAI launched Connectors in Grok Web — deep integrations bringing SharePoint, Outlook, OneDrive, Google Workspace, Notion, GitHub, and Linear into the Grok chat interface. Critically, it also supports bring-your-own MCP (Model Context Protocol) servers, making tools already built for Claude or Cursor usable in Grok Web with minimal adaptation. This MCP compatibility positions Grok Web on the same integration path as Claude Desktop and Cursor, dramatically lowering the switching cost for enterprise users who want to evaluate Grok without migrating their connector stack.",
+    "foryou": "If you have MCP servers already running for Claude, testing them in Grok Web is now essentially free — use this week to build a cross-model eval across your existing connector workflows.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://releasebot.io/updates/xai"
+  },
+  {
+    "section": "tips",
+    "headline": "Codex for Every Role: OpenAI Expands Coding Agent to Product, Legal, Ops, and Data Teams",
+    "summary": "OpenAI announced 'Codex for every role, tool, and workflow' on June 3, 2026 — extending Codex beyond developers to product managers writing and testing specs, lawyers drafting and reviewing documents, data analysts writing and executing queries, and operations teams automating cross-system tasks. New platform additions include Sites (Codex-generated internal web apps), Annotations (AI comments embedded in existing workflows), and plugins for Salesforce, Jira, and Notion. Both OpenAI and Anthropic are now explicitly positioning their coding agents as general enterprise automation platforms, competing for an addressable market roughly 10x larger than AI-assisted software development alone.",
+    "foryou": "The Salesforce and Jira plugins are the most immediately useful for non-developer automation — prototype a Codex workflow for one repetitive ops task this week to establish a baseline before the Anthropic equivalent ships.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "ChatGPT Lockdown Mode: Restrict Agentic Web Access for Corporate Security Compliance",
+    "summary": "OpenAI released ChatGPT Lockdown Mode alongside Dreaming V3 — a security feature that restricts network-enabled capabilities when active, including live web browsing, deep research mode, agent mode, file downloads, and some web-derived image support. Personal users enable it from Settings > Security; workspace admins can configure it via role-based controls. The use case is enterprise IT: teams that need ChatGPT's core reasoning capabilities without the risk of data leakage through agentic browsing. Lockdown Mode converts ChatGPT from a tool security teams block at the network level to one they can govern with granular controls.",
+    "foryou": "If you're deploying ChatGPT in any enterprise environment with data residency concerns, Lockdown Mode is the governance primitive you were missing — build your IT approval playbook around it now before your company's security team blocks API access.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://openai.com/index/chatgpt-memory-dreaming/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Frontier Models and Codex Now Available on AWS Alongside Claude",
+    "summary": "OpenAI announced on June 2, 2026 that GPT-5.5, Codex, and the OpenAI API are now available on Amazon Web Services — the same cloud infrastructure through which enterprises already access Claude via Amazon Bedrock. For the majority of Fortune 500 enterprises, this means both Anthropic and OpenAI frontier models are available through a single cloud console and billing relationship. AWS becomes a critical intermediary between AI labs and enterprise budgets, creating the same price transparency that helped commoditise cloud infrastructure itself — value is likely to accrue to orchestration layers, not raw model providers.",
+    "foryou": "You can now run A/B evals between Claude and GPT-5.5 within a single AWS infrastructure account, eliminating the operational friction of maintaining separate API keys and billing — useful for real workload benchmarking.",
+    "source": "Web",
+    "date": "2026-06-07",
+    "url": "https://www.cnbc.com/2026/06/01/microsoft-and-google-take-on-anthropic-and-openai-in-ai-coding-models.html"
+  }
+]
