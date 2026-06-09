@@ -1,0 +1,138 @@
+[
+  {
+    "section": "models",
+    "headline": "Google Releases Gemma 4 QAT: 72% VRAM Reduction for Mobile and Laptop",
+    "summary": "Google DeepMind released Quantization-Aware Training (QAT) checkpoints for the full Gemma 4 family, cutting VRAM requirements by ~72% while preserving quality near BF16 at 4-bit (Q4_0). The smallest model, E2B, now runs under 1GB, making frontier-class reasoning viable on phones and browsers. QAT simulates quantization during training so the model stays accurate even after compression — a step beyond post-training quantization.",
+    "foryou": "If you're running on-device inference or edge pipelines, Gemma 4 QAT dramatically lowers the hardware bar — the E2B model now fits in a browser tab.",
+    "specs": [
+      {
+        "label": "Memory reduction",
+        "value": "~72%"
+      },
+      {
+        "label": "Quantization",
+        "value": "4-bit Q4_0 (QAT)"
+      },
+      {
+        "label": "E2B model RAM",
+        "value": "<1 GB"
+      },
+      {
+        "label": "Available sizes",
+        "value": "E2B, E4B, 12B, 26B-A4B, 31B"
+      },
+      {
+        "label": "Release date",
+        "value": "June 5, 2026"
+      },
+      {
+        "label": "License",
+        "value": "Gemma license (open weights)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-09",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Files Confidential S-1 IPO — $852B Valuation, Timing Open",
+    "summary": "OpenAI confirmed it submitted a confidential S-1 to the SEC on June 8, 2026, following Anthropic's June 1 filing. Goldman Sachs, Morgan Stanley, and JPMorgan are leading the offering. The company was last valued at $852B post-money, generates $2B/month in revenue, and has not set a share price, exchange, or timeline. OpenAI loses roughly $1.22 for every dollar it earns, and noted an IPO may be delayed because some strategic moves are 'easier as a private company.'",
+    "source": "Web (TechCrunch, Fortune)",
+    "date": "2026-06-09",
+    "url": "https://techcrunch.com/2026/06/08/following-anthropic-openai-files-confidentially-for-ipo/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple WWDC 2026: Gemini-Powered Siri Launches; Claude Becomes iPhone AI Option",
+    "summary": "At his final keynote, Tim Cook unveiled iOS 27 with a redesigned Siri powered by Google Gemini models via Private Cloud Compute. A new AI Extensions system lets users pick Claude or Gemini as their default assistant — the first time Claude has been a native iPhone option. iOS 27 ships to devices as far back as iPhone 11. Cook confirmed he steps down September 1, handing off to John Ternus.",
+    "source": "Web (TechCrunch, MacRumors)",
+    "date": "2026-06-09",
+    "url": "https://techcrunch.com/2026/06/08/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Signs $30B SpaceX Deal for 110,000 NVIDIA GPUs to Meet Gemini Demand",
+    "summary": "Google will pay SpaceX $920M/month from October 2026 through June 2029 for access to ~110,000 NVIDIA GPUs as bridge capacity for surging Gemini Enterprise demand while Google builds out its own infrastructure. The contract is worth ~$30B over its lifetime. If SpaceX fails to deliver the committed GPU count by September 30, 2026, Google may terminate or accept a proportional reduction.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-06-09",
+    "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Embeds Engineers at NSA to Deploy Mythos for Offensive Cyber Operations",
+    "summary": "Anthropic placed ~6 engineers inside the NSA to help operationalize Mythos, its frontier cybersecurity model capable of identifying and exploiting zero-day vulnerabilities in major OSes for under $2,000 in under 24 hours. The NSA arrangement exists via an explicit carve-out from a broader government ban on Anthropic's models — the same ban Anthropic is currently suing the Pentagon over. The paradox: Anthropic is fighting the Pentagon in court while deploying its most dangerous model inside the NSA.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-06-09",
+    "url": "https://techcrunch.com/2026/06/05/nsa-said-to-be-readying-anthropics-mythos-for-use-in-cyber-operations/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Government in Talks to Take an Equity Stake in OpenAI",
+    "summary": "The Trump administration and OpenAI discussed a possible government stake via donated equity, tied to a broader 'Public Wealth Fund' concept that would let citizens share in AI-driven economic gains. The proposal remained informal and no deal was finalized, but it signals direct government interest in ownership of the most-valued AI lab.",
+    "source": "TLDR AI (also: CNBC)",
+    "date": "2026-06-09",
+    "url": "https://www.cnbc.com/2026/06/05/trump-open-ai-altman-stake.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Scout Rolls Out to M365 Frontier Users as Always-On Autopilot Agent",
+    "summary": "Microsoft Scout is the first agent in a new 'Autopilots' category — it runs persistently with its own Entra identity, joins Teams chats and Outlook threads autonomously, and executes multi-step workflows across M365 and Windows. It supports both OpenAI and Anthropic models. Currently gated behind Frontier enrollment and admin opt-in; broader preview targets late June with GA in October 2026.",
+    "source": "TLDR AI (also: Microsoft)",
+    "date": "2026-06-09",
+    "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/02/introducing-microsoft-scout-your-always-on-personal-agent/"
+  },
+  {
+    "section": "industry",
+    "headline": "Analysis: Anthropic and OpenAI May Spend $1,000+ for Every $100 in Subscription Revenue",
+    "summary": "A detailed economic analysis argues that AI labs are heavily subsidizing subscriptions — serious agentic use cases that require reasoning loops and thinking modes via API are not economically viable at current prices. The post estimates Anthropic and OpenAI may be spending over $1,000 for every $100 a user pays via subscriptions. Costs are expected to rise, not fall, as compute-intensive use cases (loops, long context, tool use) dominate growth.",
+    "source": "TLDR AI",
+    "date": "2026-06-09",
+    "url": "https://ea.rna.nl/2026/06/07/anthropic-openai-may-be-spending-more-than-1000-for-every-100-you-pay-them/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Lockdown Mode: Severs the Exfiltration Stage of Prompt Injection Attacks",
+    "summary": "OpenAI's new Lockdown Mode doesn't stop prompt injections from entering context — it cuts the outbound exfiltration path that makes them dangerous. When enabled, it disables live web browsing, agent mode, deep research, Canvas networking, live connectors, and file downloads while keeping core chat functional. Rolled out to personal and self-serve Business accounts June 4; org admins can enforce it via policy. Useful for workflows that ingest untrusted documents or run with elevated data access.",
+    "foryou": "If your agents process uploaded docs, emails, or web content alongside sensitive system data, Lockdown Mode is an easy layer-one control worth defaulting on for non-browsing sessions.",
+    "source": "TLDR AI (also: OpenAI)",
+    "date": "2026-06-09",
+    "url": "https://openai.com/index/introducing-lockdown-mode-and-elevated-risk-labels-in-chatgpt/"
+  },
+  {
+    "section": "tips",
+    "headline": "LangSmith Sandboxes Now GA: Give Your Agent a Hardware-Isolated MicroVM",
+    "summary": "LangSmith Sandboxes are now generally available, providing AI agents with hardware-virtualized microVMs that are kernel-isolated from production infrastructure and from each other. Each sandbox gets a filesystem, shell, package manager, persistent state, and network boundary — everything an agent needs to write, run, debug, and iterate code without compromising your systems. Pairs with Managed Deep Agents and SmithDB for a full prod-grade agent stack on LangChain.",
+    "foryou": "If you're running code-executing agents today with subprocess or containers, migrating to LangSmith Sandboxes gets you kernel-level isolation and persistent agent state with minimal plumbing.",
+    "source": "TLDR AI (also: LangChain)",
+    "date": "2026-06-09",
+    "url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer"
+  },
+  {
+    "section": "tips",
+    "headline": "Amazon Bedrock's Redesigned Console Unifies Anthropic + OpenAI APIs with Project Workflows",
+    "summary": "Bedrock's new console is built around a single 'bedrock-mantle' endpoint that speaks both Anthropic Messages API and OpenAI Chat Completions API — no SDK swap required. The interface adds side-by-side model comparison across the full catalog (Claude, GPT, and open-weight models), project-based organization, and auto-filled code snippets with model ID and endpoint pre-populated. First-class support for Claude Code, Cursor, Codex, Cline, and OpenCode as coding-agent clients.",
+    "foryou": "If you're evaluating models against each other for a new pipeline, Bedrock's new console eliminates the configuration overhead of testing across providers — one key, one endpoint, side-by-side evals.",
+    "source": "TLDR AI (also: AWS)",
+    "date": "2026-06-09",
+    "url": "https://aws.amazon.com/blogs/aws/try-the-new-console-experience-in-amazon-bedrock-optimized-for-anthropic-and-openai-compatible-apis/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Design Mode Update: Point, Draw, Multi-Select, or Narrate UI Edits Into Code",
+    "summary": "Cursor 3.7 expands Design Mode with three new interaction patterns: multi-select click (select two elements and ask the agent to sync them), voice narration (queue changes by mic while the agent is still running), and area drawing (circle or box a region so the agent knows which section of the viewport to target). The annotation sits over a frozen frame of the running product, so complex animated pages are no longer a barrier.",
+    "foryou": "For vibe-coding or rapid UI iteration on live apps, the multi-select + voice combo eliminates back-and-forth prompting for comparative component edits.",
+    "source": "TLDR AI (also: Cursor)",
+    "date": "2026-06-09",
+    "url": "https://cursor.com/blog/design-mode"
+  },
+  {
+    "section": "tips",
+    "headline": "Making Claude a Chemist: Matches ChemDraw on NMR Prediction, Reverse-Engineers Structures",
+    "summary": "Anthropic published a research paper showing Claude (Opus 4.7) accurately predicts ¹H and ¹³C NMR chemical shifts at accuracy on par with — and sometimes above — ChemDraw and MestReNova. Beyond prediction, Claude proposes chemical structures given spectral data (reverse engineering), a task normally requiring specialized software and expertise. The paper demonstrates consistent results across repeated runs, suggesting reliability for wet-lab integration.",
+    "foryou": "If your agentic pipelines touch chemistry, materials science, or drug discovery, Claude can now replace a specialized NMR tool call — consolidating workflows into a single model.",
+    "source": "TLDR AI",
+    "date": "2026-06-09",
+    "url": "https://www.anthropic.com/research/making-claude-a-chemist"
+  }
+]
