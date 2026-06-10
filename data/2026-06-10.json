@@ -1,0 +1,176 @@
+[
+  {
+    "section": "models",
+    "headline": "Xiaomi MiMo-V2.5-Pro-UltraSpeed Hits 1,000 Tokens/sec on Commodity GPUs",
+    "summary": "Xiaomi and inference partner TileRT achieved 1,000+ tokens per second on a 1-trillion-parameter MoE model using a standard 8-GPU commodity node — no custom silicon required. The speed comes from FP4 quantization on expert layers and DFlash speculative decoding, which proposes a full token block in one pass instead of one at a time. A limited API trial runs June 9–23 at 3× the standard MiMo rate for roughly 10× the output speed. The underlying model weights are open-sourced.",
+    "foryou": "If you're running agentic pipelines where latency is the ceiling, this changes the math — 1,000 tok/s on commodity hardware means real-time tool-call loops without custom infra.",
+    "specs": [
+      {
+        "label": "Speed",
+        "value": "1,000+ tokens/sec"
+      },
+      {
+        "label": "Parameters",
+        "value": "1 trillion (MoE)"
+      },
+      {
+        "label": "Quantization",
+        "value": "FP4 (expert layers)"
+      },
+      {
+        "label": "Hardware",
+        "value": "Standard 8-GPU commodity node"
+      },
+      {
+        "label": "API trial pricing",
+        "value": "3× standard MiMo rate"
+      },
+      {
+        "label": "API trial window",
+        "value": "June 9–23, 2026"
+      },
+      {
+        "label": "License",
+        "value": "Open-source weights"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://decrypt.co/370449/xiaomi-mimo-ultraspeed-ai-model-faster-chatgpt-claude"
+  },
+  {
+    "section": "models",
+    "headline": "Apple Debuts Siri AI at WWDC 2026, Powered by Google Gemini",
+    "summary": "Apple announced a major Siri overhaul branded 'Siri AI' at WWDC 2026, replacing the previous Apple Intelligence assistant with a more conversational system built on Google Gemini and enhanced on-device Foundation Models. Siri AI gains system-wide on-screen awareness — it can read content from any app and take multi-step actions like creating calendar events from a text message and simultaneously notifying a contact. A new standalone Siri app will appear on iPhone, iPad, and Mac. Crucially, Apple's new multi-AI Extensions system also makes Claude available as a first-party iPhone option for the first time.",
+    "foryou": "Claude is now a native iPhone option via Extensions — worth testing whether your Claude-based tools get an adoption bump from users who can now invoke Claude directly through Siri.",
+    "specs": [
+      {
+        "label": "Underlying model",
+        "value": "Google Gemini"
+      },
+      {
+        "label": "Supported devices",
+        "value": "iPhone Air, iPhone 17 Pro/Max, iPad M4+, Mac M3+"
+      },
+      {
+        "label": "Memory requirement",
+        "value": "12 GB unified memory"
+      },
+      {
+        "label": "Initial language",
+        "value": "English (US beta, fall 2026)"
+      },
+      {
+        "label": "EU availability",
+        "value": "Delayed (privacy regulation review"
+      },
+      {
+        "label": "Third-party AI",
+        "value": "Claude, Gemini via Extensions"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://arstechnica.com/apple/2026/06/say-hi-to-siri-ai-apple-announces-new-more-conversational-voice-assistant/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Confidentially Files S-1 with SEC, Targeting Fall 2026 IPO",
+    "summary": "OpenAI submitted a confidential draft S-1 to the SEC on June 8, 2026, one week after rival Anthropic filed its own confidential S-1. Goldman Sachs and Morgan Stanley are leading the offering, with a potential window between September and November 2026. The company, last valued at $852 billion in a March 2026 funding round, preemptively announced the filing rather than letting it leak, noting it 'hasn't committed to a timeline' because some planned moves are easier as a private company.",
+    "source": "TLDR AI (also: Fortune, OpenAI)",
+    "date": "2026-06-10",
+    "url": "https://fortune.com/2026/06/09/openai-files-confidential-s-1-sec-ipo/"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI Restructures Grok Training Team, Installs Starlink Engineer as Lead",
+    "summary": "Elon Musk's xAI brought in Jack Garabedian, a SpaceX/Starlink engineer since 2021, to head the team that trains the Grok chatbot, displacing Diego Pasini who had led the team for about 18 months. The move is part of a broader SpaceX management takeover of xAI spanning policy, operations, and engineering — timed ahead of SpaceX's upcoming IPO. Garabedian previously deployed Starlink during the Russia–Ukraine conflict and helped integrate Grok into Starlink customer support.",
+    "source": "TLDR AI (also: Bloomberg)",
+    "date": "2026-06-10",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-09/musk-s-xai-taps-starlink-staffer-to-run-grok-training-team"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI Rents GPU Capacity to Anthropic and Google, Resembling a Datacenter REIT",
+    "summary": "xAI struck agreements to rent its surplus GPU capacity to both Anthropic and Google — rivals in the frontier model race — generating significant revenue flowing back to SpaceX ahead of its IPO. Both agreements include 90-day cancellation clauses after an initial lock-in period. If the deals run 18 months, xAI would fully recoup all capital expenditure on its GPU infrastructure while still having hundreds of megawatts of capacity available, prompting analysts to characterise xAI as more of a datacenter REIT than a frontier AI lab.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://martinalderson.com/posts/xais-new-rental-business/"
+  },
+  {
+    "section": "industry",
+    "headline": "Perplexity CEO Confirms 2028 IPO Timeline, Independent of Anthropic and OpenAI",
+    "summary": "Perplexity CEO Aravind Srinivas told CNBC the company is targeting a 2028 IPO regardless of how the market receives the Anthropic and OpenAI listings expected later in 2026. Srinivas said the 2028 plan was already in place before the current AI IPO wave and remains unchanged. The announcement comes as OpenAI, Anthropic, and SpaceX filed for public markets within days of each other.",
+    "source": "TLDR AI (also: CNBC)",
+    "date": "2026-06-10",
+    "url": "https://www.cnbc.com/2026/06/09/perplexity-ipo-2028-as-anthropic-openai-prepare-listings.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Launches Economic Research Exchange for External AI Impact Studies",
+    "summary": "OpenAI introduced a program connecting external academics and researchers studying AI's economic effects — on workers, firms, institutions, and the broader economy — with OpenAI data and resources. The exchange is positioned as part of OpenAI's broader effort to document and distribute the economic benefits of AI amid ongoing public debate about displacement and productivity impacts.",
+    "source": "TLDR AI",
+    "date": "2026-06-10"
+  },
+  {
+    "section": "industry",
+    "headline": "Altman and Pachocki Outline OpenAI's Three-Goal Roadmap Post-Restructuring",
+    "summary": "Sam Altman and Jakub Pachocki published a blog framing OpenAI's current priorities as: building an automated AI researcher, accelerating the global economy with widely shared gains, and giving every person on Earth access to a personal AGI. They describe OpenAI as entering a 'third phase' where the central question shifts from capability to abundance — making advanced AI affordable, safe, and accessible enough for every individual and organization. The post reflects the company's public-benefit corporation restructuring completed earlier this year.",
+    "source": "TLDR AI",
+    "date": "2026-06-10"
+  },
+  {
+    "section": "tips",
+    "headline": "FrontierCode Benchmark Reveals Models Can't Yet Write Mergeable Production Code",
+    "summary": "Cognition released FrontierCode, a coding benchmark built with open-source maintainers that measures whether AI-generated code is actually mergeable into production — not just unit-test passing. Criteria span behavioral correctness, regression safety, scope discipline, cleanliness, and test quality. On the hardest 50-task Diamond tier, Claude Opus 4.8 leads at just 13.4%, GPT-5.5 scores 6.3%, and Gemini 3.1 Pro scores 4.7%, suggesting all frontier models still fall significantly short of what human maintainers would accept.",
+    "foryou": "If you're using AI coding agents in production pipelines, FrontierCode is the most honest signal currently available — 13.4% on Diamond means human review of mergeability is non-negotiable for now.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://cognition.ai/blog/frontier-code"
+  },
+  {
+    "section": "tips",
+    "headline": "Your Agent Harness Should Repair Itself — Not Wait for Engineers",
+    "summary": "A detailed post by Avi Chawla argues that most agent observability tools stop at generating a trace and leave the debugging loop entirely to humans — meaning every model upgrade forces engineers to manually walk traces, form theories, write patches, and hope nothing regresses. The proposed solution is a self-repairing harness: trace → automated diagnosis → proposed fix → verified patch → auto-added as a regression test. Platforms like Opik are implementing this loop natively, with each production failure becoming a new test case rather than a one-off incident.",
+    "foryou": "If you maintain agentic pipelines, designing a harness that closes the trace → fix → regression-test loop automatically is the highest-leverage engineering investment you can make right now.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://blog.dailydoseofds.com/p/your-agent-harness-should-repair"
+  },
+  {
+    "section": "tips",
+    "headline": "The Model Is No Longer the Bottleneck — Your Workflow Is",
+    "summary": "A widely-cited post argues that as frontier model capability plateaus at 'good enough' for most tasks, the real constraint has moved to the systems built around models: prompt management, tool orchestration, error handling, context strategies, and evaluation loops. Teams that optimise model choice are leaving compounding gains on the table relative to teams investing in workflow infrastructure. The post surveys the most impactful workflow improvements — structured outputs, retrieval augmentation, multi-step planning, and harness reliability.",
+    "foryou": "The ROI calculus has flipped: spending a day improving your pipeline architecture now outweighs spending a day model-shopping — worth internalizing before your next sprint planning.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://www.k-dense.ai/blog/the-model-is-no-longer-the-bottleneck"
+  },
+  {
+    "section": "tips",
+    "headline": "AI Agents Reduce Knowledge Work Time by 87% and Cost by 94% vs Traditional Search",
+    "summary": "Research from Perplexity quantifies the productivity uplift of autonomous AI agents on knowledge work tasks: an 87% reduction in completion time and 94% cost reduction compared to traditional search plus human execution. The paper emphasises that the gains come specifically from autonomous multi-step execution — not just better retrieval — shifting the user's job to goal-setting and oversight rather than research and synthesis. Complex cross-disciplinary tasks that previously required specialist expertise become accessible.",
+    "foryou": "This is the empirical case for delegating research-heavy pipeline steps to autonomous agents rather than RAG-only retrieval — useful framing when justifying agent infrastructure costs to stakeholders.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://research.perplexity.ai/articles/how-ai-agents-reshape-knowledge-work"
+  },
+  {
+    "section": "tips",
+    "headline": "AI Increases PR Throughput ~10–15%, But Bottlenecks Remain Elsewhere",
+    "summary": "New research from DX (formerly LinearB) finds that AI coding tools have raised pull request throughput by roughly 10–15% for adopting teams, with a median closer to 8%. The study notes that coding itself is only a fraction of developer work — review cycles, planning, testing, and coordination still limit overall velocity, meaning the effective org-level productivity gain is much smaller than the raw coding speed improvement suggests. The finding challenges narratives of 10× developer productivity.",
+    "foryou": "Before pitching AI coding tools as a force multiplier to your team, this data is worth having handy: the real gains come from also automating review, test generation, and planning — not just code completion.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://newsletter.getdx.com/p/the-current-impact-of-ai-on-engineering"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Cookbook: AI-Assisted Database Schema Change Workflow",
+    "summary": "OpenAI published a detailed cookbook demonstrating an AI-assisted workflow for database change requests using SchemaFlow, covering: structured request parsing, impact analysis, SQL generation, guardrails, artifact creation, and evals. The example uses a retail loyalty-tier schema but the architecture — parse intent → analyse impact → generate SQL → verify with evals → produce artifact — generalises to any structured data change workflow in enterprise settings.",
+    "foryou": "If you're building internal tooling that touches database schemas or structured data transforms, this cookbook gives you a battle-tested agentic workflow pattern you can adapt directly.",
+    "source": "TLDR AI",
+    "date": "2026-06-10",
+    "url": "https://developers.openai.com/cookbook/examples/partners/schemaflow_design_guide/schemaflow_cookbook"
+  }
+]
