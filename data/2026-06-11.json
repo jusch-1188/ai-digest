@@ -1,0 +1,349 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Launches Claude Fable 5 as Its First Generally Available Mythos-Class Model",
+    "summary": "Anthropic released Claude Fable 5 as the publicly accessible version of its restricted Mythos 5 system. The model ranks #1 across major coding, reasoning, and agentic benchmarks, including SWE-Bench Pro at 80.3% vs GPT-5.5's 58.6%. It comes with built-in guardrails that redirect cybersecurity and biology queries to Claude Opus 4.8. Stripe used it to complete a 50M-line Ruby migration in a single day—work previously estimated at over two months for a full engineering team.",
+    "foryou": "This is your new default coding and agentic workhorse—pair its 1M token context and 90% prompt-cache discount with complex multi-file refactor workflows to see the biggest gains.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$50 / 1M tokens"
+      },
+      {
+        "label": "Prompt cache discount",
+        "value": "90% on cached input"
+      },
+      {
+        "label": "SWE-Bench Pro",
+        "value": "80.3% (GPT-5.5: 58.6%)"
+      },
+      {
+        "label": "Subscription access",
+        "value": "Free on Pro/Max/Team/Enterprise through June 22"
+      },
+      {
+        "label": "Availability",
+        "value": "API, Bedrock, Vertex AI, Foundry, GitHub Copilot"
+      }
+    ],
+    "source": "TLDR AI (also: The Summary AI, Semafor)",
+    "date": "2026-06-11",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5"
+  },
+  {
+    "section": "models",
+    "headline": "Google Launches Gemini 3.5 Live Translate for Real-Time Speech Translation Across 70+ Languages",
+    "summary": "Gemini 3.5 Live Translate is a speech-to-speech model that translates continuously while a speaker is talking—without the stop-and-wait rhythm of traditional turn-based translation tools. It supports 70+ languages and 2,000+ language pair combinations in Google Meet, preserves tone and natural pacing, and carries a SynthID watermark on all translated audio. Rolling out now to Google Translate on Android and iOS, with broader Meet availability later.",
+    "foryou": "Integrate the Gemini Live API into voice-first agentic pipelines where multilingual handoffs currently break flow—particularly useful for customer-facing agents serving global markets.",
+    "specs": [
+      {
+        "label": "Languages",
+        "value": "70+"
+      },
+      {
+        "label": "Language pairs (Meet)",
+        "value": "2,000+"
+      },
+      {
+        "label": "Watermark",
+        "value": "SynthID on all translated audio"
+      },
+      {
+        "label": "Rollout",
+        "value": "Google Translate (Android/iOS) now; Meet broader rollout later"
+      },
+      {
+        "label": "API access",
+        "value": "Gemini Live API"
+      }
+    ],
+    "source": "TLDR AI (also: The Summary AI)",
+    "date": "2026-06-11",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-live-3-5-translate/"
+  },
+  {
+    "section": "models",
+    "headline": "MiniMax Releases M3: Open-Weight Model with 1M Token Context and Sparse Attention Architecture",
+    "summary": "MiniMax M3 launched June 1 with a 1,048,576-token context window, native multimodality (text, image, audio), and frontier-level coding in a single open-weight model. Its proprietary MiniMax Sparse Attention (MSA) architecture cuts per-token compute at 1M context to one-twentieth of the prior generation, with 9× faster prefill and 15× faster decoding (~100 tokens/sec output—roughly 3× faster than Claude Opus). Weights are available on Hugging Face.",
+    "foryou": "A credible open-weight option for long-context RAG and full-codebase analysis pipelines where you need million-token pass-throughs without paying frontier API rates.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1,048,576 tokens (1M)"
+      },
+      {
+        "label": "Max output",
+        "value": "512K tokens"
+      },
+      {
+        "label": "Speed",
+        "value": "~100 tokens/sec output (3× faster than Opus)"
+      },
+      {
+        "label": "Architecture",
+        "value": "MiniMax Sparse Attention (MSA) MoE"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, audio"
+      },
+      {
+        "label": "Release date",
+        "value": "June 1, 2026"
+      },
+      {
+        "label": "Weights",
+        "value": "Open (Hugging Face)"
+      }
+    ],
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://www.minimax.io/blog/minimax-m3"
+  },
+  {
+    "section": "models",
+    "headline": "Cohere Open-Sources North Mini Code: 30B MoE Agentic Coding Model Under Apache 2.0",
+    "summary": "North Mini Code is a 30B-parameter mixture-of-experts model with only 3B active parameters, built for agentic software engineering tasks including sub-agent orchestration, architecture mapping, code review, and terminal work. It runs on a single H100 GPU at FP8 with a 256K-token context window and ~199 tokens/sec on the API. On the Artificial Analysis Coding Index, it outperforms models up to 120B parameters and achieves 2.8× higher throughput than Devstral Small 2.",
+    "foryou": "Deploy this as a self-hosted coding sub-agent on H100 infrastructure—Apache 2.0 means zero licensing risk for sovereign or air-gapped enterprise environments.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "30B total / 3B active"
+      },
+      {
+        "label": "Architecture",
+        "value": "MoE (128 experts, 8 active per token)"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "64K tokens"
+      },
+      {
+        "label": "Speed (API)",
+        "value": "~199 tokens/sec"
+      },
+      {
+        "label": "Hardware",
+        "value": "Single H100 (FP8)"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Release date",
+        "value": "June 9, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://cohere.com/blog/north-mini-code"
+  },
+  {
+    "section": "models",
+    "headline": "Google Releases Gemma 4 12B: First Encoder-Free Multimodal Model That Runs Locally on a Laptop",
+    "summary": "Google DeepMind's Gemma 4 12B is a 12B-parameter open model that natively handles text, images, audio, and video—the first medium-sized encoder-free multimodal architecture. It processes audio by directly slicing 16kHz audio into 40ms frames without a separate encoder. The model runs on consumer GPUs (16GB VRAM) at ~21 tokens/sec via llama.cpp and on MacBook Pro via MLX. Apache 2.0 licensed, 256K token context, 140+ languages.",
+    "foryou": "Run multimodal analysis pipelines entirely on-device or on small GPU servers—ideal for privacy-sensitive workflows where sending audio or video to a cloud API is not acceptable.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "12B"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, audio, video"
+      },
+      {
+        "label": "Languages",
+        "value": "140+"
+      },
+      {
+        "label": "Hardware",
+        "value": "16GB VRAM laptop"
+      },
+      {
+        "label": "Speed",
+        "value": "~21 tokens/sec (RTX 4060, llama.cpp)"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Release date",
+        "value": "June 3, 2026"
+      }
+    ],
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12b/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Replaces ChatGPT Memory Lists with Self-Updating User Profiles via Dreaming V3",
+    "summary": "OpenAI rolled out Dreaming V3 on June 4, replacing manually curated memory lists with a background synthesis process that reads across years of past conversations and auto-updates context without user prompting. Memories now rewrite themselves as facts change—\"you're going to Singapore in July\" becomes \"you went to Singapore in July 2026\" after the trip ends. Users get a memory summary page to review what ChatGPT knows about them. Available to Plus and Pro US users first.",
+    "foryou": "This self-updating semantic memory pattern is directly applicable to long-lived agent architectures—study OpenAI's implementation as a reference design for persistent user-context systems in LangMem or Letta.",
+    "specs": [
+      {
+        "label": "Rollout",
+        "value": "Plus and Pro (US) first; Free and international to follow"
+      },
+      {
+        "label": "Memory type",
+        "value": "Background synthesis across all past conversations"
+      },
+      {
+        "label": "User control",
+        "value": "Memory summary page + opt-out"
+      },
+      {
+        "label": "Release date",
+        "value": "June 4, 2026"
+      }
+    ],
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://www.techtimes.com/articles/317840/20260605/chatgpt-memory-dreaming-update-openai-rewrites-personalization-engine-limits-audit-trail.htm"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Backstops Anthropic's $35B Chip-Lease Financing from Apollo and Blackstone",
+    "summary": "Apollo Global Management and Blackstone finalized a $35 billion private credit package to fund TPU chip leases at five Anthropic data centers. Google acts as payment backstop if Anthropic defaults; Broadcom provides residual-value guarantees on the $31B senior tranche. The deal is structured as $6B A1 notes, $25B A2 notes, and $4.5B B notes, supporting Anthropic's 1GW+ compute expansion starting mid-2026. Combined with equity rounds, Anthropic mobilized $100 billion in capital in 2026 alone.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-06-11",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-09/google-s-backstops-underpin-35-billion-chip-deal-for-anthropic"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's Fable 5 Draws Backlash Over Hidden Safeguards, Data Retention, and High Pricing",
+    "summary": "Anthropic's Fable 5 launch drew pushback on three fronts: pricing is double OpenAI's most powerful model; Anthropic now retains enterprise chat data for 30 days for safety monitoring; and undisclosed interventions silently degrade effectiveness for certain use cases—including when competitor labs use Claude to develop models—via prompt modification and steering. Anthropic acknowledges the safeguards, saying they affect an estimated 0.03% of developers, but without visibility, the supply chain risk to businesses is real: you cannot tell when you're hitting them.",
+    "source": "Semafor (also: TLDR AI)",
+    "date": "2026-06-11",
+    "url": "https://www.semafor.com/article/06/10/2026/anthropics-mythos-faces-backlash"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX, OpenAI, and Anthropic Are All Racing to Public Markets Simultaneously",
+    "summary": "SpaceX is running a $75B IPO roadshow targeting June 12 listing at a $1.77T valuation; Fidelity opened it to retail investors with as little as $2,000. Anthropic filed its confidential S-1 on June 1 at a reported $965B valuation. OpenAI filed confidentially on June 8 at $852B, targeting September 2026. If all three list, combined valuation exceeds $3.6T—the largest IPO window in US history. Analysts are watching whether concentrated retail demand could create crowding effects in other market bets.",
+    "source": "Semafor (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://semafor.com/s/p27ItW8ahO"
+  },
+  {
+    "section": "industry",
+    "headline": "Bain: 20–30% of Operating Expenses Will Shift to AI Agents Within 3–4 Years",
+    "summary": "A Bain & Company report synthesizing C-suite views projects AI agent spending will hit 20–30% of total operating expenses within three to four years. Separately, a 6,000-person survey of digital workers in the US, UK, and Australia found workers save 11 hours per week with AI—but only 13% say it has meaningfully improved organizational performance. The sharpest finding: more than half of high-performing AI users use unapproved tools or authorized tools in unapproved ways, with over a third hiding AI assistance from managers.",
+    "source": "Semafor",
+    "date": "2026-06-11"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Rebuilds Siri on Google Gemini in $1B/Year Partnership Announced at WWDC 2026",
+    "summary": "Apple unveiled a new Siri backed by a custom 1.2-trillion-parameter Gemini model at WWDC 2026. The architecture uses three-tier routing: simple tasks run on Apple's on-device models, moderate tasks go to Apple's Private Cloud Compute, and heavy reasoning routes to Google Cloud on Nvidia Blackwell B200 GPUs. New capabilities include multi-year personal history search across emails, photos, and notes, plus system-wide task execution. Requires iPhone 17 Pro or M3 Mac; not available in the EU or China on iOS/iPadOS. Rolling out this fall.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://mlq.ai/news/apple-rebuilds-siri-on-google-gemini-models-and-nvidia-blackwell-gpus-in-landmark-wwdc-partnership/"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Grabs 17% of Gateway Token Volume While Anthropic Holds 65% of Spend",
+    "summary": "Vercel's AI Gateway Production Index for May 2026 shows DeepSeek V4 Flash surged from under 1% to 17% of token volume in a single month, driven by pricing of $0.14/$0.28 per million tokens—20–50× cheaper than comparable Anthropic models. Yet Anthropic's share of actual spend grew from 61% to 65%, holding 70–80% of high-stakes workloads including coding agents, back-office agents, and app generation. The market is segmenting hard: DeepSeek owns cost-sensitive bulk processing, Anthropic owns quality-critical production.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://vercel.com/blog/ai-gateway-production-index-june-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Space Data Centers Could Be Cost-Competitive with Terrestrial by Early 2030s",
+    "summary": "SemiAnalysis modeling shows orbital compute currently costs ~4× terrestrial due to launch costs, but the gap could narrow to 30% within five years and reach parity by ~2040. The case accelerates if ground-level data center construction faces permitting bottlenecks, energy shortages, and chip supply shortfalls—Elon Musk's explicit bet. New York startup Icarus Robotics is already developing remotely controlled robots for ISS maintenance that could be repurposed for orbital data center upkeep.",
+    "source": "Semafor",
+    "date": "2026-06-11",
+    "url": "https://www.semafor.com/article/06/10/2026/the-case-for-data-centers-in-space"
+  },
+  {
+    "section": "industry",
+    "headline": "Cheaper AI Models Can Match Frontier Performance When the Surrounding System Is Designed Correctly",
+    "summary": "A TechCrunch analysis finds that for most tasks, smaller or cheaper models match frontier-tier output when the surrounding system—prompting strategy, routing, and context management—is well-designed. This is accelerating enterprise pressure to move away from exclusive reliance on the most expensive frontier models. Perplexity and open-source model makers are betting on mixed-model architectures that match model tier to task requirements rather than defaulting to the strongest available model for every call.",
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://techcrunch.com/2026/06/09/can-tech-companies-learn-to-love-cheaper-models/"
+  },
+  {
+    "section": "tips",
+    "headline": "Prompts and Context Windows Are Real Update Mechanisms—Treat Them as Optimization Targets",
+    "summary": "Yoon Ho Lee's post argues that prompts, retrieved context, memory, and agent harnesses are functionally equivalent to model weight updates: they are sample-efficient learning mechanisms applied at runtime rather than training time. Framing text optimization this way opens 'update-time compute' as a distinct axis for capability improvement separate from both pre-training and fine-tuning. The post recommends applying structured optimization—hill-climbing, LLM-as-judge feedback loops—to prompts with the same rigor used for hyperparameter search.",
+    "foryou": "Redefine your system prompt and RAG retriever as learnable, improvable components: run LLM-as-judge feedback loops over them as you would over hyperparameters to systematically push performance without touching model weights.",
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://yoonholee.com/blog/2026/we-should-take-text-optimization-more-seriously/"
+  },
+  {
+    "section": "tips",
+    "headline": "Single-Scalar Benchmark Scores Are Becoming Meaningless as Test-Time Compute Scales",
+    "summary": "Noam Brown's ICLR 2026 paper argues that LLM capability is now a function of test-time compute budget, not just model weights—meaning benchmarks that don't control for tokens, cost, or latency are systematically misleading. GPT-5.5 looks only marginally better than GPT-5.4 at max compute on cyber evals, but dramatically stronger once the x-axis is normalized by compute budget. The empirical performance plateau is very far out, and stronger models push it further, so single-scalar scores will only become less informative each release.",
+    "foryou": "When evaluating models for your agentic pipelines, always benchmark at your actual token/latency budget—not at max compute—to get a realistic signal for what production performance will actually look like.",
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://iclr.cc/virtual/2026/10022110"
+  },
+  {
+    "section": "tips",
+    "headline": "The AI Engineering Loop Is Now Fully Automatable—But Automating It Too Early Produces Agent Slop",
+    "summary": "Langfuse's analysis argues the AI engineering loop (prompting → evaluation → iteration) can technically be fully automated today, and every analytics and evals startup is undergoing a one-time upgrade into a continual-learning platform. But handing over the whole loop produces agent slop because automated systems optimize against imperfect evals that miss the nuance only the developer holds. The key constraint: human judgment about what constitutes correct behavior cannot yet be fully encoded in automated evals.",
+    "foryou": "Build your evals with high specificity before automating iteration—the feedback loop breaks when evals are too coarse, so invest in eval quality first and automation second.",
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://langfuse.com/blog/2026-06-09-ai-is-eating-ai-engineering"
+  },
+  {
+    "section": "tips",
+    "headline": "Move Long-Horizon Research Pipelines Off In-Context Memory and Into Scripted Coordination",
+    "summary": "Evo ported its six-step autoresearch orchestrator onto Anthropic's dynamic workflow system in Claude Code, replacing in-context coordination with deterministic JavaScript that subagents execute from fresh, scoped context. The shift solves long-horizon instruction adherence by separating roles: the model handles judgment, the code handles coordination—phases, fan-out width, stopping rules, gates, and CLI calls are all scripted. The method becomes the code rather than a prompt, eliminating drift across long pipelines.",
+    "foryou": "Apply this pattern to your multi-step research or coding pipelines: extract all coordination logic into scripted orchestration and reserve model calls strictly for judgment-heavy steps to eliminate long-horizon drift.",
+    "source": "TLDR AI",
+    "date": "2026-06-11"
+  },
+  {
+    "section": "tips",
+    "headline": "FlashMemory Retains Only 10–15% of DeepSeek-V4 KV-Cache On-Device Without Accuracy Loss",
+    "summary": "FlashMemory is an open-source retrieval system for DeepSeek-V4's CSA architecture that predicts which KV-cache chunks future tokens will attend to, keeping only the most relevant 10–15% on GPU memory at any time. The retriever reportedly preserves or improves downstream performance while dramatically cutting VRAM pressure for long-context inference. Code and weights are available on GitHub.",
+    "foryou": "If you're running DeepSeek-V4 inference at scale on long-context workloads, FlashMemory can substantially reduce GPU memory requirements—worth benchmarking against your current KV-cache eviction strategy.",
+    "source": "TLDR AI",
+    "date": "2026-06-11",
+    "url": "https://github.com/libertywing/FlashMemory-Deepseek-V4"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Extends Codex with Six Role-Specific Plugins for Analytics, Sales, Design, and Banking",
+    "summary": "OpenAI released six Codex plugins targeting non-developer workflows: data analytics (Snowflake, Databricks Genie, Tableau integrations), sales (Salesforce, HubSpot, Clay), product design (prototype from URL), investment banking (pitch decks, comparable analysis), creative production, and equity investing. Non-developers now represent 20% of all Codex users and are growing 3× faster than developers. Each plugin bundles integrations, instructions, and context to approximate a specific professional job function.",
+    "foryou": "The data analytics plugin automates the 'explain why this metric changed' workflow that stakeholders routinely request—use it to auto-generate metric-explanation reports and free yourself for higher-order pipeline work.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-06-11",
+    "url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+  },
+  {
+    "section": "tips",
+    "headline": "Ideogram 4.0 Drops as Open-Weight 9.3B Diffusion Model for Native 2K Design-Ready Images",
+    "summary": "Ideogram 4.0 is a 9.3B-parameter Diffusion Transformer trained from scratch on structured JSON captions with per-element styling, bounding boxes, and color specifications—not plain text prompts. It generates native 2K images without an upscaling step and ranked #1 among all open-weight models on DesignArena at launch (9th overall). Released June 3, 2026. Weights are downloadable and fine-tunable; commercial deployments use a scale-based license.",
+    "foryou": "Use Ideogram 4.0 for batch generation of 2K design assets, UI mockup illustrations, and brand visuals in local pipelines—the JSON-structured prompting approach enables precise, reproducible output at no API cost.",
+    "source": "The Summary AI",
+    "date": "2026-06-11",
+    "url": "https://the-decoder.com/ideogram-4-0-drops-as-an-open-weight-model-with-native-2k-resolution-and-improved-text-rendering/"
+  }
+]
