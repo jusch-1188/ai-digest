@@ -1,0 +1,134 @@
+[
+  {
+    "section": "models",
+    "headline": "DiffusionGemma: Google's 26B MoE model generates text 4x faster",
+    "summary": "Google released DiffusionGemma, an open-weights 26B Mixture-of-Experts text diffusion model that generates text blocks simultaneously rather than token-by-token. It achieves over 700 tokens/sec on an RTX 5090 and over 1,000 tokens/sec on an H100 — a 4x speed improvement over standard Gemma 4. The tradeoff is measurably lower quality: MMLU Pro drops from 82.6% to 77.6%, and Codeforces ELO from 1718 to 1429.",
+    "foryou": "If you're running latency-sensitive agentic loops where output quality is 'good enough,' DiffusionGemma's 4x speed at local inference scale could meaningfully cut pipeline round-trip times.",
+    "specs": [
+      { "label": "Architecture", "value": "26B MoE, 4B active params" },
+      { "label": "Context window", "value": "256K tokens" },
+      { "label": "Speed (RTX 5090)", "value": "700+ tokens/sec" },
+      { "label": "Speed (H100)", "value": "1,000+ tokens/sec" },
+      { "label": "MMLU Pro", "value": "77.6% (vs 82.6% Gemma 4)" },
+      { "label": "Codeforces ELO", "value": "1429 (vs 1718 Gemma 4)" },
+      { "label": "License", "value": "Open weights" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/diffusion-gemma-faster-text-generation/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Managed Agents add cron schedules and credential vaults",
+    "summary": "Anthropic shipped two major additions to Claude Managed Agents in public beta: scheduled deployments (agents run on cron schedules, with pause/resume/trigger-on-demand controls) and Vault environment variables (secrets never touch the model's context — they're injected at the network boundary only on allowlisted domains). Self-hosted sandboxes are also now in public beta, letting you route tool execution to your own infrastructure while Anthropic handles the agent loop.",
+    "foryou": "Vault credentials plus self-hosted sandboxes together make Managed Agents viable for production pipelines that touch sensitive APIs — the two blockers for enterprise agentic deployment just got resolved in one release.",
+    "specs": [
+      { "label": "Scheduling", "value": "Cron-based, public beta" },
+      { "label": "Secret injection", "value": "Network boundary, never in context" },
+      { "label": "Sandbox options", "value": "Cloudflare, Daytona, Modal, Vercel, self-hosted" },
+      { "label": "Pricing", "value": "Included in existing Claude Platform usage" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://claude.com/blog/building-with-claude-managed-agents"
+  },
+  {
+    "section": "industry",
+    "headline": "Dario Amodei calls for FAA-style AI regulation and cybersecurity mandates",
+    "summary": "In a 28-minute essay, Anthropic CEO Dario Amodei argues AI is advancing far faster than policy can keep up, creating windows of vulnerability in cybersecurity and labor markets. He proposes an FAA-like federal body for AI with mandatory pre-deployment testing, stronger security standards, and biomedical regulatory reform to let AI accelerate drug development. He also argues for macroeconomic adjustments — including tax policy — to handle AI-driven productivity growth and calls for ensuring global AI development aligns with democratic values.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://darioamodei.com/post/policy-on-the-ai-exponential"
+  },
+  {
+    "section": "industry",
+    "headline": "White House issues executive order on AI innovation and national security",
+    "summary": "The Trump administration signed an executive order titled 'Promoting Advanced Artificial Intelligence Innovation and Security,' establishing a voluntary framework for frontier model developers to give the government early access for security review. It also creates an AI cybersecurity clearinghouse to identify and remediate software vulnerabilities at scale and directs the DOJ to prioritize prosecution of AI-enabled cyberattacks. Key agency deliverables are due in 30–60 days.",
+    "source": "Web",
+    "date": "2026-06-12",
+    "url": "https://www.whitehouse.gov/presidential-actions/2026/06/promoting-advanced-artificial-intelligence-innovation-and-security/"
+  },
+  {
+    "section": "industry",
+    "headline": "EU orders Meta to open WhatsApp to rival AI chatbots for free",
+    "summary": "The European Commission ruled that Meta violated the EU's Digital Markets Act by blocking third-party AI assistants from the WhatsApp Business API — a policy Meta put in place in October 2025. Meta is required to allow competing chatbots to use WhatsApp without charge and plans to appeal, calling the decision regulatory overreach. The ruling could reshape how AI assistants compete on dominant messaging platforms across Europe.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://www.engadget.com/2191213/eu-orders-meta-to-stop-blocking-rival-ai-chatbots-on-whatsapp/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI nears 10 GW Ohio data center lease backed by Nvidia",
+    "summary": "OpenAI is in advanced talks to lease a 10-gigawatt data center campus on the former Portsmouth Gaseous Diffusion Plant in Ohio, with Nvidia acting as financial guarantor. The 20-year lease could exceed $500 billion in total value, with Nvidia committing a letter of intent to invest up to $100 billion in OpenAI as each gigawatt of Nvidia Vera Rubin GPUs comes online. First gigawatt deployment is targeted for H2 2026.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-06-12",
+    "url": "https://www.theinformation.com/articles/openai-talks-lease-10-gigawatt-ohio-data-center-backing-nvidia"
+  },
+  {
+    "section": "industry",
+    "headline": "Moonshot AI seeks $30B valuation in third funding round in six months",
+    "summary": "Beijing-based Moonshot AI (maker of the Kimi chatbot) is raising up to $2 billion at a $30 billion valuation — its third major financing round since December 2025, when it was valued at just $4 billion. The company just closed a $2 billion round at $20 billion led by Meituan. The 7x valuation jump in six months reflects China's intensifying AI arms race, with Kimi competing directly against OpenAI and Anthropic on benchmark tasks.",
+    "source": "Web",
+    "date": "2026-06-12",
+    "url": "https://www.bloomberg.com/news/articles/2026-06-08/china-s-moonshot-ai-seeks-30-billion-value-in-new-funding-talks"
+  },
+  {
+    "section": "industry",
+    "headline": "Palantir CEO: enterprises are 'unhappy' with frontier AI labs burning tokens",
+    "summary": "Palantir CEO Alex Karp told CNBC that enterprise customers are frustrated with how frontier AI labs are operating, accusing them of optimizing for token consumption over genuine business value. Rising inference costs are triggering alarm among large businesses, and Karp sees this as a structural opening for companies like Palantir that bundle AI into outcome-focused deployments rather than selling raw model access.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://www.cnbc.com/2026/06/10/palantir-karp-enterprise-ai.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic study: AI accelerates N-day exploit development, expanding the patch-gap threat",
+    "summary": "A new study from Anthropic's red team finds that AI can automate the reverse-engineering of security patches to reconstruct exploits — a process that previously required slow, specialized human work. N-day vulnerabilities (patched bugs, not yet applied everywhere) are more dangerous than zero-days because patches themselves are a roadmap. The study concludes that anyone in the patch-deployment gap now faces a substantially larger threat surface than before AI-assisted exploitation.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://red.anthropic.com/2026/n-days/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's Fable 5 system prompt leaked (~120,000 characters)",
+    "summary": "The full system prompt for Anthropic's Fable 5 model was publicly leaked, totaling approximately 120,000 characters. The leak reveals the depth and complexity of Anthropic's internal instruction set for the model and has drawn attention from security researchers and prompt engineers analyzing its architecture.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://x.com/elder_plinius/status/2064478648057610422"
+  },
+  {
+    "section": "industry",
+    "headline": "The new AI moat: owning the full feedback loop, not just the model",
+    "summary": "An analysis argues that the model, harness, workflow, and evaluation loop are no longer separable stack layers but co-design surfaces that compound together. Defensibility in the AI era comes from owning the full feedback loop — training signal, eval, and tooling — rather than renting frontier capability that can be restricted, repriced, or reclaimed by the supplying lab. Companies that treat models as interchangeable inputs are structurally exposed.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://x.com/sahar__zadeh/status/2064759511253176398"
+  },
+  {
+    "section": "tips",
+    "headline": "Skip LLM generation entirely: classify from hidden states with tiny probes",
+    "summary": "A technique described by Jamie on j11y.io shows you can grab the LLM's hidden state at the last prompt token, pass it through a tiny multilayer perceptron, and get classification outputs without running the full generation loop. The key insight is that the answer often already exists in the model's representation before a single output token is generated. This produces a frozen model that can act as any classifier expressible in English.",
+    "foryou": "For routing decisions and intent classification inside agentic pipelines, this approach could eliminate the latency and cost of generation entirely — swap a generation call for a probe forward pass.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://blog.j11y.io/2026-06-10_hidden-state-probes/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor's BugBot is now 3x faster, 22% cheaper, finds 10% more bugs",
+    "summary": "Cursor shipped an updated BugBot that runs over 3x faster, costs 22% less per review, and surfaces 10% more bugs. Most code review runs now complete in under three minutes. The shorter feedback loop makes it practical to run on every PR rather than selectively, which is where automated review catches the most regressions.",
+    "foryou": "If you're using Cursor in any CI pipeline or agentic code-generation workflow, enabling BugBot on every PR is now a no-brainer cost/quality trade-off.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://cursor.com/blog/bugbot-updates-june-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "Using OpenAI Codex to write and test black hole simulation algorithms",
+    "summary": "Astrophysicist Chi-kwan Chan published a case study on using OpenAI's Codex agent to iteratively refine and validate algorithms for simulating plasma and particle behavior around black holes. The workflow — prompt → generate → test → iterate — shows how agentic coding assistants are being applied to compute-heavy scientific code where correctness is verifiable and the domain is highly specialized.",
+    "foryou": "A useful concrete example of the agentic coding loop applied to verification-heavy numerical code — the pattern (prompt → generate → test with ground truth → iterate) is directly transferable to any domain where you have a test oracle.",
+    "source": "TLDR AI",
+    "date": "2026-06-12",
+    "url": "https://openai.com/index/using-codex-to-simulate-black-holes/"
+  }
+]
