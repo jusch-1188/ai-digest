@@ -1,0 +1,178 @@
+[
+  {
+    "section": "models",
+    "headline": "GLM-5.2 Launches with 1M-Token Context and MIT License",
+    "summary": "Z.ai (Zhipu AI) shipped GLM-5.2 on June 14, 2026, immediately available to all GLM Coding Plan tiers. The model is built on the same 744B Mixture-of-Experts architecture as GLM-5 but adds a usable 1M-token context window (131K max output tokens), two thinking-effort levels, and strong long-horizon task performance. Benchmark scores weren't published at launch, though Z.ai claims BridgeBench Reasoning #1 at 42.8. API, chatbot services, and MIT-licensed open weights are planned for the following week.",
+    "foryou": "The MIT open weights dropping next week make GLM-5.2 a strong candidate to self-host in your agentic pipelines—especially for long-context tasks where 1M tokens makes the difference.",
+    "specs": [
+      { "label": "Parameters", "value": "744B MoE" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Max output", "value": "131,072 tokens" },
+      { "label": "License", "value": "MIT (weights next week)" },
+      { "label": "Access", "value": "GLM Coding Plan (all tiers); API + chatbot coming" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://www.marktechpost.com/2026/06/14/z-ai-launches-glm-5-2-with-a-usable-1m-token-context-two-thinking-effort-levels-and-no-benchmarks-at-launch/"
+  },
+  {
+    "section": "models",
+    "headline": "Kimi K2.7 Code: 1T-Parameter MoE Model Cuts Reasoning Tokens 30%",
+    "summary": "Moonshot AI released Kimi K2.7 Code on June 12, 2026 on Hugging Face. The open-weight model uses a 1-trillion-parameter MoE architecture (32B active, 384 experts) with a 256K context window and Modified MIT license. It reports +21.8% on Moonshot's own Kimi Code Bench v2 over K2.6, +31.5% on MLS Bench Lite, and roughly 30% lower reasoning-token consumption. Caution: all benchmark numbers are from Moonshot's proprietary suites, with no independent SWE-bench Verified or Terminal-Bench scores yet. It scores 62.0 on Kimi Code Bench v2 vs GPT-5.5's 69.0.",
+    "foryou": "If you're cost-optimizing long agentic coding runs, the 30% token reduction is the real story—deploy via Kimi Code CLI for best results while waiting for independent evals.",
+    "specs": [
+      { "label": "Parameters", "value": "1T total / 32B active (384 experts)" },
+      { "label": "Context window", "value": "256K tokens" },
+      { "label": "License", "value": "Modified MIT" },
+      { "label": "Kimi Code Bench v2", "value": "62.0 (vs GPT-5.5: 69.0)" },
+      { "label": "Token efficiency", "value": "~30% fewer reasoning tokens vs K2.6" },
+      { "label": "API", "value": "OpenAI/Anthropic compatible via Moonshot" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://www.marktechpost.com/2026/06/12/moonshot-ai-releases-kimi-k2-7-code-a-coding-model-reporting-21-8-on-kimi-code-bench-v2-over-k2-6/"
+  },
+  {
+    "section": "models",
+    "headline": "MiniMax Sparse Attention: 30x Less Compute at 1M Tokens",
+    "summary": "MiniMax published the MSA (MiniMax Sparse Attention) paper and GitHub repo, describing the architecture powering their M3 model (released June 1). MSA replaces full attention with a two-stage process: a lightweight index branch selects relevant KV-cache blocks, then the main layer processes only those. On a 229.9B MoE model (9.8B active, 256 fine-grained experts), MSA matched standard GQA quality while cutting attention compute ~30x at 1M tokens, achieving 9.7x faster prefill and 15.6x faster decode. M3 is the first open-weight model combining frontier coding, 1M context, and native multimodal capability.",
+    "foryou": "MSA is the architectural trick you'll want to watch for long-context agent memory—if you run pipelines with large rolling context, this 30x compute reduction changes the economics fundamentally.",
+    "specs": [
+      { "label": "Model", "value": "MiniMax M3 (229.9B MoE, 9.8B active)" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Attention compute reduction", "value": "~30x at 1M tokens vs GQA" },
+      { "label": "Prefill speedup", "value": "9.7x" },
+      { "label": "Decode speedup", "value": "15.6x" },
+      { "label": "Modalities", "value": "Text, image, video (native)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://arxiv.org/abs/2606.13392"
+  },
+  {
+    "section": "models",
+    "headline": "OpenRouter Fusion Achieves Fable-Level Performance at Half the Cost",
+    "summary": "OpenRouter launched Fusion on June 13, a composite API that queries 3–5 models in parallel and fuses their outputs through a synthesis layer. On an internal test of 100 research tasks, Fusion outperformed GPT-5.5 and Claude Opus 4.8. The Budget preset claims Claude Fable 5-level intelligence at roughly half the price—users pay the cumulative cost of the underlying completions. Quality and Budget presets are available, and the Fusion layer itself handles model selection and synthesis automatically.",
+    "foryou": "For agentic pipelines where you need top-tier reasoning but can't justify Fable 5 pricing, Fusion's Budget preset is worth benchmarking against your actual task distribution before committing.",
+    "specs": [
+      { "label": "Models fused", "value": "3–5 (auto-selected)" },
+      { "label": "Presets", "value": "Quality, Budget" },
+      { "label": "Claimed performance", "value": "Fable 5-level on Budget preset" },
+      { "label": "Pricing", "value": "~0.5x Fable 5 (sum of underlying completions)" },
+      { "label": "API", "value": "OpenRouter standard API, drop-in compatible" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://openrouter.ai/blog/announcements/fusion-beats-frontier/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Government Forces Anthropic to Suspend Fable 5 and Mythos 5 Globally",
+    "summary": "The Commerce Department issued a legally binding export-control directive on June 12, requiring Anthropic to bar all foreign nationals—including its own employees—from accessing Fable 5 and Mythos 5. The ban followed Amazon CEO Andy Jassy raising jailbreak concerns with Treasury Secretary Scott Bessent: Amazon researchers had prompted Fable 5 into producing cyberattack-useful information. Anthropic complied with a universal shutdown across AWS Bedrock, Google Cloud, Microsoft Foundry, Snowflake, and direct APIs at 5:21 PM ET. Anthropic disputes the severity of the jailbreak, calling it narrow and no worse than public models. The episode puts Amazon in the position of having triggered a government crackdown on its own largest AI investment. (also: Fortune, CNBC)",
+    "source": "TLDR AI (also: TechCrunch, Fortune)",
+    "date": "2026-06-16",
+    "url": "https://www.anthropic.com/news/fable-mythos-access"
+  },
+  {
+    "section": "industry",
+    "headline": "NVIDIA Blackwell Leads First Agentic AI Infrastructure Benchmark",
+    "summary": "Artificial Analysis released AgentPerf, the industry's first benchmark measuring agentic AI infrastructure performance. The benchmark replays real coding-agent trajectories and measures concurrent agent throughput under production SLAs. NVIDIA's GB300 NVL72 (Blackwell Ultra) delivered 20x more agents per megawatt than NVIDIA's own Hopper H200 system, and outperformed AMD MI355X on performance per watt. The lead metric—Agents per Megawatt—is designed to reflect the power-constrained reality of large-scale AI deployment.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://blogs.nvidia.com/blog/nvidia-blackwell-agentperf-artificial-analysis/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Built Third-Party AI Framework for Siri but Pulled It from WWDC 2026",
+    "summary": "iOS 27 beta contains a fully built Siri Extensions system that would let users set Claude, ChatGPT, or Gemini as their default AI assistant via a dedicated Settings panel and App Store section. Despite being code-complete, Apple declined to announce the feature at WWDC 2026. Possible reasons include avoiding overshadowing the Siri overhaul Apple did announce, potential litigation threats from OpenAI over losing its exclusive status, complications with the EU's Digital Markets Act, and complex messaging around Apple's existing Gemini integration. The feature may still ship with iOS 27 later this fall.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://thenextweb.com/news/apple-siri-extensions-third-party-ai-missing-wwdc"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Building \"Skills Marketplace\" Inside Gemini Enterprise",
+    "summary": "Google is integrating Gemini Enterprise products under a new Skills Marketplace tab aimed at helping business teams build dashboards and reporting tools without engineering delays. The marketplace includes a Skills Management UI, a Skills Builder for creating custom skills, and the Marketplace itself with Google-optimized pre-built skills. The feature targets enterprise teams seeking to automate workflows without custom software development cycles.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://www.testingcatalog.com/google-is-working-on-skills-marketplace-for-gemini-business/"
+  },
+  {
+    "section": "industry",
+    "headline": "Satya Nadella: Every Company Must Build Both Human Capital and Token Capital",
+    "summary": "Microsoft CEO Satya Nadella published a widely-read essay arguing that frontier AI models alone are not stable without the ecosystems built on top of them. He introduced the concept of \"token capital\"—the AI capabilities an organization develops and owns—as the counterpart to human capital. His core thesis: human knowledge and AI capability must compound together through a learning loop, and companies that delegate tasks without retaining the learning will fall behind. The post attracted over 28 million views on X.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://www.businesstoday.in/technology/news/story/satya-nadella-ai-success-will-hinge-on-ecosystems-not-frontier-models-536791-2026-06-14"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Raises $10B, Founder Pledges AGI Goal and Open-Source Commitment",
+    "summary": "DeepSeek's founder Liang Wenfeng told investors in the ongoing 70 billion yuan ($10B) funding round that the company will prioritize fundamental AI research over commercialization and will keep releasing open-source models under permissive licenses. A separate thread analysis circulating in AI circles argues DeepSeek's consistent open-sourcing of V3, R1, and V4 is a long-term strategy to become foundational AI infrastructure rather than compete on consumer products—making their weights the de facto backbone of the global developer ecosystem.",
+    "source": "TLDR AI / Web",
+    "date": "2026-06-16",
+    "url": "https://www.bloomberg.com/news/articles/2026-05-22/deepseek-founder-declares-agi-goal-as-10-billion-round-advances"
+  },
+  {
+    "section": "industry",
+    "headline": "Distributed Networks of Small Models Are Outpacing Frontier AI on Speed, Cost, and Accuracy",
+    "summary": "Andrew Trask argues in a detailed analysis that networks of smaller, specialized AI models are now outperforming every frontier AI system on the combined metrics of speed, accuracy, and cost. He draws a parallel to the 1960s mainframe error—when everyone assumed computing would remain centralized—and contends that today's centralized frontier model companies will permanently cede the capability frontier to distributed model networks. The piece argues the winning moat is the environment and training signal, not raw scale.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://andrewtrask.substack.com/p/breaking-todays-frontier-ai-companies"
+  },
+  {
+    "section": "tips",
+    "headline": "Napkin Math for Inference Cost at Scale",
+    "summary": "A detailed guide showing how to calculate the dollar price-per-user for any LLM product using four inputs: GPU hardware specs, context length, active parameter count, and product-specific factors. The post shows the surprising result that model architecture details matter little unless the architecture is fundamentally different (e.g. diffusion models). Walking through the math reveals why inference optimizations—KV-cache, speculative decoding, quantization—make the difference between profitable and unprofitable SaaS AI products.",
+    "foryou": "Run this math for your own pipeline before your next model upgrade—you'll immediately see which optimization lever (context length, quantization, batching) gives you the most margin headroom.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://injuly.in/blog/napkin-inference-cost/index.html"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI vs Anthropic: Two Opposing Bets on Agent Context Management",
+    "summary": "A useful comparative analysis of how OpenAI and Anthropic have diverged on context management for long-running agents. OpenAI uses compaction—compressing the full thread and retaining only relevant information in one continuous context—prioritizing coherence. Anthropic splits context across sub-agents, where each executes a sub-problem in its own window and passes back only a summary. The Anthropic approach risks duplicate work and information loss between agents but parallelizes better; the OpenAI approach risks coherence loss at compression boundaries.",
+    "foryou": "If you're designing multi-agent pipelines, this framing clarifies the core architectural trade-off: choose compaction for coherence-sensitive sequential tasks, sub-agent isolation for parallelizable work with well-defined interfaces.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://calv.info/the-oracle-and-the-firm"
+  },
+  {
+    "section": "tips",
+    "headline": "Open Knowledge Format: A Portable Standard for LLM-Readable Knowledge",
+    "summary": "Google Cloud announced the Open Knowledge Format (OKF), an open specification formalizing the \"LLM-wiki\" pattern into a portable, vendor-neutral format. OKF represents the metadata, context, and curated knowledge that modern AI systems need, using familiar patterns without new runtimes, complex compression, or required SDKs. It is designed to be agent-friendly and human-readable, with the goal of making organizational knowledge interoperable across AI providers.",
+    "foryou": "If you're building RAG or knowledge-grounding systems, OKF could become the standard format for packaging your knowledge bases—worth adopting early before your pipeline locks into a proprietary format.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing/"
+  },
+  {
+    "section": "tips",
+    "headline": "olmo-eval: Iterative Evaluation Workbench for the Model Development Loop",
+    "summary": "AllenAI released olmo-eval, an evaluation workbench designed for iterative LLM development rather than one-off public benchmarking. It streamlines adding new benchmarks, supports agentic and multi-turn evaluations, and enables checkpoint-to-checkpoint comparison within a model's development history. Unlike Harbor (which targets public leaderboard reporting), olmo-eval minimizes resource use and is optimized for the fast iteration cycles needed during model development.",
+    "foryou": "If you're fine-tuning or running model development loops, olmo-eval's checkpoint diffing and agentic eval support is exactly what's missing from most eval frameworks—worth integrating into your CI/CD pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://huggingface.co/blog/allenai/olmo-eval"
+  },
+  {
+    "section": "tips",
+    "headline": "Ramp's Private SWE-Bench: Evaluating Coding Models in Production Codebases",
+    "summary": "Ramp published its own private coding benchmark built from real engineering tasks in Ramp's production financial software codebase. The benchmark derives from tasks that their background coding agent Inspect actually shipped to production, giving contamination-free, real-world measurements of how models handle domain-specific engineering. Ramp's motivation: public benchmarks saturate quickly and leak into training data. Their benchmark correlates with how well models handle the actual work Ramp engineers delegate.",
+    "foryou": "The methodology here is directly replicable—build your own private benchmark from your production codebase's actual engineering tickets to get a contamination-free read on which models work for your specific domain.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://labs.ramp.com/swebench"
+  },
+  {
+    "section": "tips",
+    "headline": "Cognition's $10M Guarantee Reveals How to Measure AI Engineering Output",
+    "summary": "Cognition (maker of Devin) published its AI Productivity Guarantee methodology: they measure completed Devin sessions, estimate how long a human engineer would have taken for the same task (calibrated against 126 engineers across 8 enterprise customers), convert to dollar value at a standard global rate, and issue free usage credits to cover any shortfall up to $10M per enterprise customer. The estimator is designed to be conservative. The framework also reveals a practical way any team can instrument and measure AI vs human engineering throughput.",
+    "foryou": "The measurement framework here is worth adopting even if you're not using Devin—use session completion + human-time estimation to build your own ROI case for AI coding agents with your finance team.",
+    "source": "TLDR AI",
+    "date": "2026-06-16",
+    "url": "https://cognition.ai/blog/ai-guarantee"
+  }
+]
