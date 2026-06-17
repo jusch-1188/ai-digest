@@ -1,0 +1,175 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Fable 5: Anthropic's Most Capable Public Model Hits 88% on Terminal-Bench",
+    "summary": "Released June 9, Claude Fable 5 is Anthropic's strongest generally available model, sharing the same underlying weights as the restricted Mythos 5. Key specs: 1M token context window, 128K output tokens per response, adaptive thinking always on, and a January 2026 knowledge cutoff. It leads agentic coding benchmarks with SWE-Bench Pro 80.3%, Terminal-Bench 2.1 88.0%, and FrontierCode Diamond 29.3%. Cybersecurity-adjacent requests fall back to Claude Opus 4.8 as a production safeguard.",
+    "foryou": "Fable 5 is the strongest agentic coding model available to builders right now—its Terminal-Bench 88% and 1M context window make it the default pick for long-horizon code agents, though access is currently disrupted by the US export control order (see Industry).",
+    "specs": [
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Max output", "value": "128K tokens" },
+      { "label": "SWE-Bench Pro", "value": "80.3%" },
+      { "label": "Terminal-Bench 2.1", "value": "88.0%" },
+      { "label": "FrontierCode Diamond", "value": "29.3%" },
+      { "label": "Knowledge cutoff", "value": "January 2026" },
+      { "label": "Thinking", "value": "Adaptive, always-on" }
+    ],
+    "source": "Web",
+    "date": "2026-06-17",
+    "url": "https://www.vellum.ai/blog/claude-fable-5-and-mythos-5-benchmarks-explained"
+  },
+  {
+    "section": "models",
+    "headline": "Sakana Marlin: Autonomous Research Agent Runs 8 Hours, Outputs 100-Page Reports",
+    "summary": "Sakana AI launched Marlin, an autonomous deep research agent that accepts a research topic and runs unattended for up to 8 hours, producing reports up to 100 pages with structured slide decks. Built on AB-MCTS (spotlighted at NeurIPS 2025) and the AI Scientist framework, Marlin was beta-tested with ~300 professionals from finance and consulting. Pricing is 100 credits per run or ¥150,000/month (~$1,000), targeting strategy and C-suite workflows.",
+    "foryou": "For long-horizon research tasks—competitive intelligence, market analysis, technical deep dives—Marlin's unattended 8-hour runs could replace analyst days; benchmark it against your current RAG + summarization pipelines.",
+    "specs": [
+      { "label": "Max task duration", "value": "8 hours" },
+      { "label": "Output", "value": "Up to 100-page report + slides" },
+      { "label": "Pricing (pay-per-use)", "value": "100 credits/run" },
+      { "label": "Pricing (monthly)", "value": "¥150,000/mo (~$1,000)" },
+      { "label": "Reasoning method", "value": "AB-MCTS (NeurIPS 2025)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://sakana.ai/marlin-release/#English"
+  },
+  {
+    "section": "models",
+    "headline": "DFlash + SGLang Spec V2: Next-Generation Speculative Decoding Delivers Substantial Throughput Gains",
+    "summary": "LMSYS published benchmarks for DFlash combined with SGLang's Spec V2 speculative decoding engine, showing substantial throughput gains over both baseline inference and native multi-token prediction (MTP) speculation. The approach pairs a fast draft model with DFlash attention kernels and the Spec V2 scheduler to achieve higher token generation rates at equivalent or lower latency, making it directly applicable to high-volume production inference workloads.",
+    "foryou": "If you run SGLang in production, Spec V2 with DFlash is worth benchmarking immediately—throughput gains at the same latency translate directly to lower per-token cost on your existing infrastructure.",
+    "specs": [
+      { "label": "Method", "value": "DFlash + SGLang Spec V2" },
+      { "label": "Baseline comparison", "value": "Beats baseline inference + native MTP" },
+      { "label": "Published by", "value": "LMSYS.org" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2/"
+  },
+  {
+    "section": "models",
+    "headline": "Google DeepMind Publishes 60-Page Roadmap: Four Pathways from AGI to ASI",
+    "summary": "A 14-person DeepMind team led by co-founder Shane Legg and AIXI inventor Marcus Hutter published \"From AGI to ASI\" (arXiv 2606.12683), a 60-page technical roadmap examining how AI could transition from human-level AGI to superintelligence. The four non-mutually-exclusive pathways are: scaling AGI, AI paradigm shifts, recursive self-improvement, and ASI emerging from large-scale multi-agent collectives. The paper identifies concrete bottlenecks and open research questions along each path.",
+    "foryou": "The multi-agent collective pathway maps directly to what you're building in agentic pipelines—this paper provides the research vocabulary and bottleneck framing for where those systems are headed.",
+    "specs": [
+      { "label": "Paper length", "value": "60 pages" },
+      { "label": "Lead authors", "value": "Shane Legg, Marcus Hutter + 14 researchers" },
+      { "label": "Pathways identified", "value": "4 (scaling, paradigm shifts, recursive improvement, multi-agent)" },
+      { "label": "arXiv ID", "value": "2606.12683" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://arxiv.org/abs/2606.12683"
+  },
+  {
+    "section": "industry",
+    "headline": "US Export Control Forces Anthropic to Suspend Fable 5 and Mythos 5 for All Customers Worldwide",
+    "summary": "On June 12, the Trump administration invoked national security authorities to bar all foreign nationals—whether inside or outside the US, including foreign national Anthropic employees—from accessing Claude Fable 5 and the restricted Mythos 5. The directive, received at 5:21 PM ET, followed reports of a jailbreak enabling sophisticated cyberattack generation. To comply, Anthropic shut off both models for every customer globally. As of June 16, dozens of prominent cybersecurity practitioners signed an open letter urging the government to reverse course, arguing the ban strips defenders of a critical tool while doing nothing to slow attackers, who can access equivalent capabilities elsewhere.",
+    "source": "Web (also: TLDR AI)",
+    "date": "2026-06-17",
+    "url": "https://www.anthropic.com/news/fable-mythos-access"
+  },
+  {
+    "section": "industry",
+    "headline": "Factory 2.0: Coding Agents Evolve Into Full-Stack Software Factories",
+    "summary": "Factory announced the transition from individual coding agents to end-to-end software factories: interconnected, agent-native systems that handle everything from bug triage and customer feedback through build, test, review, security, deployment, and monitoring in a continuous loop. A coordinator agent decomposes work and dispatches to specialized droids—code, review, docs, test, and knowledge—with explicit role boundaries rather than one generalist agent. NVIDIA, EY, Adobe, Palo Alto Networks, Adyen, Blackstone, Wipro, and Comarch are already running the platform in production.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://factory.ai/news/software-factory"
+  },
+  {
+    "section": "industry",
+    "headline": "Facebook Launches AI Mode: Conversational Search Over Public Posts, Reels, and Marketplace",
+    "summary": "Meta transformed Facebook's search bar into a conversational AI interface that mines public Group discussions, Reels, and Marketplace data to answer questions in natural language. The feature is rolling out to US users and is tied to Meta's expanding subscription tiers. Critics have flagged data privacy concerns and the accuracy risks of summarizing crowd-sourced information, particularly for local and health-related queries.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://www.androidheadlines.com/2026/06/facebook-ai-mode-search-engine-public-posts.html"
+  },
+  {
+    "section": "industry",
+    "headline": "AWS WAF Now Lets Publishers Set Per-Request Pricing for AI Bot Traffic",
+    "summary": "Amazon Web Services added AI traffic monetization to AWS WAF, allowing content owners to configure per-request pricing by content path, bot category, or verification tier—without modifying origin infrastructure or writing application code. Publishers can now formally charge AI crawlers for access rather than simply blocking them, formalizing a revenue model that has been informal or combative across the industry.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/"
+  },
+  {
+    "section": "industry",
+    "headline": "Sovereign AI Is a Supply Chain Problem, Not a Model Problem",
+    "summary": "A 20-minute analysis argues that sovereignty in AI is not about which model a country uses, but about how much of the full supply chain—training compute, data pipelines, inference infrastructure, validation tooling, and security—can be secured within allied nations. Countries that depend on foreign hardware, APIs, or training data face a structural vulnerability regardless of which frontier models they can access. The piece draws parallels to semiconductor and energy supply chain politics.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://www.bullbear.ninja/board/12"
+  },
+  {
+    "section": "tips",
+    "headline": "Agentic Code Review: Why Code Review Is Now the Most Leveraged Engineering Skill",
+    "summary": "Addy Osmani argues that AI coding agents have shifted the hard problem in engineering from writing code to deciding whether to trust it. The data is stark: Faros AI's 22,000-developer study found code churn up 861%, per-developer defect rate up from 9% to 54%, review duration up 441%, and zero-review merges up 31%. GitClear shows 4x raw output for roughly 12% delivered-value gain—the entire gap is the review problem. Osmani proposes agentic review pipelines: spec-compliance agents, architecture-consistency checkers, and trace-based error judges running in CI.",
+    "foryou": "If you're shipping AI-assisted or agentic code, your defect rate is almost certainly higher than you think—implement automated review agents and track code churn before trusting velocity numbers.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://addyosmani.com/blog/agentic-code-review/"
+  },
+  {
+    "section": "tips",
+    "headline": "Build a 100x Cheaper LLM Trace Judge Using Fine-Tuned Qwen-3.5-35B",
+    "summary": "Fireworks and LangChain built a \"perceived error\" judge by fine-tuning Qwen-3.5-35B on chat-langchain production traces, teaching it to detect the errors users actually flag rather than abstract correctness. The resulting judge matches or exceeds frontier model performance on that data at roughly 1/100th the cost. The key insight: a judge fine-tuned on your specific error distribution outperforms a general frontier model used as-is.",
+    "foryou": "This is the exact playbook for your agentic evals: collect your production failure traces, fine-tune a 35B-class judge, and run it in LangSmith—you'll get better error detection than GPT-4o as judge at a fraction of the cost.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://www.langchain.com/blog/building-a-100x-cheaper-trace-judge-with-fireworks"
+  },
+  {
+    "section": "tips",
+    "headline": "Own Your Intelligence: The Strategic Risk of Building on Closed AI APIs",
+    "summary": "Fireworks CEO Lin Qiao uses the Mythos shutdown as a case study for the open-model argument—reframing it from cost to control. Companies like Ramp, Cursor, and Harvey proved that a fine-tuned open model can match frontier quality at a fraction of the cost. The deeper point: any product whose core intelligence runs on a closed API is one policy decision away from having to start over, as every Fable/Mythos customer discovered in 72 hours.",
+    "foryou": "Audit which of your critical production pipelines depend on closed API access—the Mythos ban is the clearest operational proof that those dependencies are existential risks, not just cost concerns.",
+    "source": "TLDR AI",
+    "date": "2026-06-17"
+  },
+  {
+    "section": "tips",
+    "headline": "When to Post-Train Your Own Model Instead of Relying on Frontier APIs",
+    "summary": "General frontier models are the right tool for 0-to-1 prototypes and workflow discovery. But for a company's power-law use cases—where proprietary data lives and where cost, latency, and reliability constraints are hard—a frontier model's single fixed tradeoff becomes a liability. The argument: the handful of tasks critical to a company's margin and product are exactly where differentiated training data and tuned behavior pay off most, and where post-training on open weights now makes economic sense.",
+    "foryou": "Identify the 2-3 pipeline steps that drive the most product value and carry the hardest constraints—those are your post-training candidates, not your entire stack.",
+    "source": "TLDR AI",
+    "date": "2026-06-17"
+  },
+  {
+    "section": "tips",
+    "headline": "Mastering Codex Mobile: How to Run Agentic Engineering Work From Your Phone",
+    "summary": "OpenAI's Codex Mobile (available on iOS and Android for all ChatGPT plans including free) lets developers start multi-hour coding tasks, direct running agents, review diffs, and approve or redirect work from anywhere—while the agent continues on a dev machine or managed environment. Over 5M people use Codex weekly; non-developers are growing 3x faster than developers. The workflow unlocks async task delegation: start a long-running job before a meeting, check progress at lunch, approve before EOD.",
+    "foryou": "If you're already using Codex or Claude Code in your engineering workflow, the mobile interface unlocks genuine async delegation—start complex refactors or research tasks from your phone and steer them mid-run without needing to be at a terminal.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://openai.com/index/codex-for-every-role-tool-workflow/"
+  },
+  {
+    "section": "tips",
+    "headline": "DocLang: An AI-Friendly Document Format to Replace PDFs and Word Docs in Enterprise RAG",
+    "summary": "DocLang is a proposed document format designed to make enterprise files natively parseable by AI systems, replacing the implicit structure of PDFs and Word documents with explicit semantic markup. The argument is that most enterprise RAG failures are preprocessing failures—documents with implicit headers, merged cells, inline footnotes, and image-embedded data that chunkers can't reliably extract. DocLang externalizes that structure so chunking is deterministic.",
+    "foryou": "If you're building RAG pipelines over enterprise document libraries, DocLang is worth watching—early adoption could significantly reduce your pre-processing pipeline complexity and improve chunk quality.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://www.theregister.com/ai-and-ml/2026/06/16/a-modest-proposal-reformat-everything-to-make-documents-more-palatable-to-ai/5255938"
+  },
+  {
+    "section": "tips",
+    "headline": "GitHub Releases Multilingual Repositories Dataset for Non-English AI Training",
+    "summary": "GitHub published a repository-level metadata dataset identifying public repos with evidence of non-English natural-language content, designed to accelerate multilingual LLM research and development. The dataset provides structured discovery that replaces manual scraping for finding high-quality non-English training sources across hundreds of languages.",
+    "foryou": "If you're training, fine-tuning, or evaluating multilingual models, this dataset gives you a structured, curated starting point that's far more reliable than scraping GitHub directly.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://github.blog/ai-and-ml/llms/accelerating-researchers-and-developers-building-multilingual-ai-with-a-new-open-dataset/"
+  },
+  {
+    "section": "tips",
+    "headline": "A Guide to AI Inference Engineering: Latency, Throughput, Cost, and Quality in Production",
+    "summary": "ByteByteGo published a comprehensive guide to inference engineering—the discipline of running trained AI models in production efficiently. It covers low-level GPU optimization, model serving frameworks (vLLM, SGLang, TensorRT-LLM), batching strategies, quantization tradeoffs, and the cloud infrastructure layer. The guide frames inference as a four-way tradeoff between latency, throughput, cost, and quality that must be tuned per product context.",
+    "foryou": "Use this as a reference map for structuring your inference stack decisions—especially the serving framework comparison and the latency vs. throughput tradeoff section if you're moving from prototype to production.",
+    "source": "TLDR AI",
+    "date": "2026-06-17",
+    "url": "https://blog.bytebytego.com/p/a-guide-to-ai-inference-engineering"
+  }
+]
