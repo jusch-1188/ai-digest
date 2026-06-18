@@ -1,0 +1,320 @@
+[
+  {
+    "section": "models",
+    "headline": "Z.ai Launches GLM-5.2: Open-Weight Coding Model with 1M Token Context",
+    "summary": "Z.ai launched GLM-5.2, a 744B-parameter MoE model with a usable 1 million-token context window and two reasoning effort modes (High, Max). It tops the open-source leaderboard on Terminal-Bench 2.1 (81.0) and SWE-bench Pro (62.1), and reportedly beats GPT-5.5 on long-horizon coding benchmarks at one-sixth the cost. API access, chatbot support, and MIT-licensed open weights follow the following week after launch to Coding Plan users.",
+    "foryou": "If you're running agentic coding pipelines, GLM-5.2 is worth benchmarking against your current stack — frontier-level long-horizon performance at a fraction of the API cost, with open weights coming imminently.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "~744B total / ~40B active (MoE)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Reasoning modes",
+        "value": "High, Max (effort levels)"
+      },
+      {
+        "label": "License",
+        "value": "MIT (open weights, next week)"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "81.0 (#1 open-source)"
+      },
+      {
+        "label": "SWE-bench Pro",
+        "value": "62.1 (#1 open-source)"
+      },
+      {
+        "label": "AI Intelligence Index",
+        "value": "51 (highest open-source)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://z.ai/blog/glm-5.2"
+  },
+  {
+    "section": "models",
+    "headline": "Android 17 Ships AppFunctions and Android MCP for On-Device Agent Orchestration",
+    "summary": "Android 17 introduces AppFunctions — a Jetpack API that lets apps expose their capabilities as orchestratable MCP tools for on-device AI agents. Google Gemini and third-party agents can now discover and invoke app functions directly via Android MCP. Samsung Galaxy S26 already ships with it, letting Gemini query photos via natural language. The developer API is in alpha with a fall 2026 general rollout.",
+    "foryou": "Android MCP means your agents can call into any AppFunctions-enabled Android app — this is the on-device equivalent of giving a pipeline access to the user's entire phone without bespoke integrations.",
+    "specs": [
+      {
+        "label": "API",
+        "value": "AppFunctions (Jetpack, alpha)"
+      },
+      {
+        "label": "Protocol",
+        "value": "Android MCP (on-device MCP standard)"
+      },
+      {
+        "label": "Agent access",
+        "value": "Discover + invoke app capabilities"
+      },
+      {
+        "label": "Status",
+        "value": "Early access program open at goo.gle/eap-af"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://android-developers.googleblog.com/2026/06/Android-17.html"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Preps GPT-Bidi-1: Full-Duplex Voice Model That Listens and Speaks Simultaneously",
+    "summary": "GPT-Bidi-1 is OpenAI's forthcoming bidirectional audio model for ChatGPT's voice mode, designed to listen and speak at the same time, absorb interruptions mid-sentence, and stop freezing when users talk over it. It introduces three intelligence tiers — Instant, Medium, and High — to trade reasoning depth for latency. Traces of the model are appearing across web and mobile clients, suggesting an imminent consumer rollout.",
+    "foryou": "GPT-Bidi-1's full-duplex architecture eliminates the turn-taking bottleneck that makes current voice AI feel unnatural — key for anyone building realtime voice agents or conversational pipelines.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Full-duplex bidirectional audio"
+      },
+      {
+        "label": "Intelligence tiers",
+        "value": "Instant, Medium, High"
+      },
+      {
+        "label": "Key capability",
+        "value": "Mid-sentence interruption handling"
+      },
+      {
+        "label": "Status",
+        "value": "Pre-release; rollout imminent"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://www.testingcatalog.com/openai-prepares-major-chatgpt-voice-upgrade-with-gpt-bidi-1/"
+  },
+  {
+    "section": "models",
+    "headline": "Weibo's VibeThinker-3B Hits Frontier Coding Benchmarks at Just 3 Billion Parameters",
+    "summary": "WeiboAI released VibeThinker-3B, built on Qwen2.5-Coder-3B, which scores 74.5 on IFBench (complex instruction following) — beating Claude Opus 4.5 (58.0) and most proprietary flagships. It passed 96.1% of LeetCode contest submissions from April–May 2026, outperforming GPT-5.2 and Claude Opus 4.6 on the same eval. The benchmarks are real but narrow; GPQA-Diamond (70.2) still lags frontier models significantly.",
+    "foryou": "VibeThinker-3B is worth testing for constrained instruction-following tasks where cost and latency dominate — it genuinely beats much larger models on specific, verifiable evals relevant to coding agents.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "3B (dense)"
+      },
+      {
+        "label": "Base model",
+        "value": "Qwen2.5-Coder-3B"
+      },
+      {
+        "label": "IFBench",
+        "value": "74.5 (vs Claude Opus 4.5: 58.0)"
+      },
+      {
+        "label": "LeetCode (Apr–May 2026)",
+        "value": "96.1% pass rate (123/128)"
+      },
+      {
+        "label": "GPQA-Diamond",
+        "value": "70.2 (vs Gemini 3 Pro: 91.9)"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://venturebeat.com/technology/why-weibos-tiny-vibethinker-3b-has-the-ai-world-arguing-over-benchmarks-again"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Adds Chrome DevTools Protocol to Codex for Live Browser Access",
+    "summary": "OpenAI's Codex now supports Chrome DevTools Protocol, enabling agents to profile JavaScript performance, inspect network traffic, and modify websites in real time during coding sessions. The feature is opt-in, early-stage, and unavailable in the EEA, UK, and Switzerland. It's part of a broader push toward persistent cloud environments — OpenAI's recent Ona acquisition supports this direction.",
+    "foryou": "CDP in Codex opens a new class of frontend debugging and performance tasks for coding agents — you can now give agents a live runtime view of the browser, not just the source.",
+    "specs": [
+      {
+        "label": "Protocol",
+        "value": "Chrome DevTools Protocol (CDP)"
+      },
+      {
+        "label": "Access",
+        "value": "Opt-in via Codex settings"
+      },
+      {
+        "label": "Regions excluded",
+        "value": "EEA, UK, Switzerland"
+      },
+      {
+        "label": "Status",
+        "value": "Early-stage; performance issues noted"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://www.testingcatalog.com/icymi-openai-released-cdp-support-for-browser-use-on-codex/"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen-RobotWorld: Language-Conditioned Video World Model for Embodied AI",
+    "summary": "Qwen-RobotWorld is a video world model that uses natural language as a unified action interface across robotics, navigation, autonomous driving, and other embodied domains. Rather than domain-specific action representations, it generates predictions conditioned on natural language commands, demonstrating cross-domain generalization that previously required separate models per task.",
+    "foryou": "The 'language as universal action interface' pattern extended to a generative world model is a meaningful signal for agentic pipeline architects — physical-world domains may soon be reachable without domain-specific training.",
+    "specs": [
+      {
+        "label": "Modality",
+        "value": "Language-conditioned video generation"
+      },
+      {
+        "label": "Domains",
+        "value": "Robotics, navigation, driving, embodied AI"
+      },
+      {
+        "label": "Action interface",
+        "value": "Natural language (unified across domains)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://arxiv.org/abs/2606.17030"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Tests Phi Silica on Nvidia GPUs for Broader Windows AI Coverage",
+    "summary": "Microsoft is expanding testing of its Phi Silica small language models — designed to run on Windows Copilot+ PCs' Neural Processing Units — to Nvidia GPU configurations. This broadens the hardware surface for on-device private inference on Windows beyond the dedicated NPU tier.",
+    "foryou": "On-device SLM coverage on Windows is expanding to Nvidia GPUs, which means private, offline AI inference becomes a realistic option for more Windows machines — relevant if you're building agents that need to run locally.",
+    "specs": [
+      {
+        "label": "Target hardware",
+        "value": "Windows Copilot+ NPUs + Nvidia GPUs"
+      },
+      {
+        "label": "Model type",
+        "value": "Small Language Model (SLM)"
+      },
+      {
+        "label": "Deployment",
+        "value": "On-device (local inference)"
+      },
+      {
+        "label": "Status",
+        "value": "Testing phase"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://winbuzzer.com/2026/06/15/microsoft-tests-phi-silica-for-windows-ai-on-nvidia-gpus-xcxwbn/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX Acquires AI Coding Startup Cursor for $60 Billion",
+    "summary": "SpaceX, days after its blockbuster IPO, exercised a pre-negotiated call option to acquire Anysphere (Cursor) for $60 billion in stock — the largest AI acquisition ever. The deal positions xAI (which SpaceX merged with earlier this year) to compete directly with Codex and Claude Code, with Grok models benefiting from Cursor's proprietary training data. Cursor will close as a wholly owned subsidiary in Q3 2026. SpaceX's valuation surged to $2.94 trillion, surpassing Microsoft.",
+    "source": "Semafor (also: TechCrunch, CNBC, Bloomberg)",
+    "date": "2026-06-18",
+    "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Raises $7.4B in First-Ever External Round at $50B+ Valuation",
+    "summary": "DeepSeek secured over $7.4 billion in its first external fundraise, pushing valuation above $50 billion. Founder Liang Wenfeng personally contributed ~$2.8B; Tencent and CATL are strategic investors. The state-backed National AI Fund is the sole investor granted voting rights; all outside investors face a 5-year lock-up. Capital will fund R&D expansion and computing infrastructure.",
+    "source": "TLDR AI (also: Seeking Alpha, TechFunding News)",
+    "date": "2026-06-18",
+    "url": "https://techfundingnews.com/deepseek-raises-7-4b-at-50b-valuation-in-first-ever-external-funding-round/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Places Export Controls on Anthropic's Fable 5 and Mythos 5 After Jailbreak",
+    "summary": "The Trump administration placed export controls on Anthropic's two most powerful models — Fable 5 and Mythos 5 — after Amazon AI researchers jailbroke Fable 5 shortly after its June 9 release. Anthropic cut off global customer access to comply. Anthropic disputes the severity, calling it a narrow single-instance exploit. Semafor analysis traces the underlying conflict to Anthropic over-touting safety protocols at launch — creating a mismatched expectation that a jailbreak could not exist.",
+    "source": "TLDR AI (also: Axios, Fortune, Semafor)",
+    "date": "2026-06-18",
+    "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Pauses Controversial Token-Based Billing for Claude Agent SDK",
+    "summary": "Anthropic reversed a pricing change — announced last month — that would have billed Claude Agent SDK usage separately from standard API usage, just before it was set to take effect. Claude Agent SDK usage will now be billed at standard prevailing API rates. Anthropic is redesigning its subscription plans to better accommodate how developers build with Claude subscriptions.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://arstechnica.com/ai/2026/06/anthropic-pauses-token-based-billing-for-its-claude-agent-sdk/"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump Officials Weigh Government Equity Stakes in Major AI Companies",
+    "summary": "Senior Cabinet members are debating how to structure potential US government equity positions in major AI labs. Treasury Secretary Bessent favors using AI equity to seed Trump Accounts (citizen wealth accounts), while Commerce Secretary Lutnick prefers directing equity to a sovereign wealth fund. The talks are early-stage; a promised meeting between Trump and AI CEOs has not yet occurred. Companies including Microsoft and Meta have cold-shouldered the concept; OpenAI originally pitched it.",
+    "source": "Semafor",
+    "date": "2026-06-18",
+    "url": "https://www.semafor.com/article/06/17/2026/trump-advisers-weigh-structure-of-potential-ai-stakes"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta's AI Strategy Still Lacks Coherence After CTO's Staff Apology",
+    "summary": "Meta CTO Andrew Bosworth publicly apologized to staff for layoffs and AI missteps, but Semafor analysis argues the company's AI strategy remains incoherent. Meta's massive data center buildout to train frontier models doesn't map to any of its existing businesses — it has no enterprise model monetization like Anthropic or OpenAI, and isn't becoming a cloud provider like AWS or Microsoft. Its consumer scale forces hyper-efficient models, not frontier ones.",
+    "source": "Semafor",
+    "date": "2026-06-18"
+  },
+  {
+    "section": "industry",
+    "headline": "NVIDIA Blackwell Dominates MLPerf Training 6.0 at 8,192-GPU Scale",
+    "summary": "NVIDIA's Blackwell platform swept MLPerf Training 6.0, achieving the fastest training times and largest-scale training run at 8,192 GPUs. Key innovations: NVLink-optimized MoE routing and NVFP4 for large-batch training. The Reliability, Availability, and Serviceability Engine and NVIDIA Resiliency Extension minimize downtime and accelerate recovery during hyperscale runs.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://blogs.nvidia.com/blog/blackwell-mlperf-training-6-0/"
+  },
+  {
+    "section": "industry",
+    "headline": "Qualcomm Unveils Snapdragon Reality Elite and START Toolkit for Post-Smartphone AI",
+    "summary": "Qualcomm announced two platforms at AWE 2026: Snapdragon Reality Elite (for XR headsets and smart glasses, with 60% higher GPU, 160% higher NPU, 48 TOPS on-device AI, and 4.4K resolution per eye) and the Scalable Turnkey AI-Ready Toolkit (START) for brands building custom AI wearables. 40+ AI wearable devices are already in development on the platform; XREAL Project Aura launches later this year.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://techcrunch.com/2026/06/16/qualcomm-wants-to-be-the-chip-inside-whatever-replaces-your-smartphone-and-it-just-announced-two-products-toward-that-end/"
+  },
+  {
+    "section": "industry",
+    "headline": "Brands Are Reconfiguring Websites to Serve AI Shopping Agents, Not Just Humans",
+    "summary": "As AI agents become buyers, companies like Israel-based CHEQ are building platforms that identify whether a visitor is human or agent and serve them different experiences in real time — text-heavy product descriptions for agents, visual interfaces for humans. Agents are expected to handle up to $5 trillion in global retail transactions by 2030. Companies that can't distinguish agents from humans risk missing sales and exposing themselves to cybersecurity threats.",
+    "source": "Semafor",
+    "date": "2026-06-18"
+  },
+  {
+    "section": "industry",
+    "headline": "First Satellite Uses Natural-Language AI to Autonomously Select Observation Targets",
+    "summary": "For the first time, a satellite used a natural-language AI model to autonomously identify and prioritize which Earth observations to capture, rather than relying on human-directed targeting commands. Satellite observation has historically been bottlenecked by downlink bandwidth and human attention; this approach lets the satellite determine what's worth beaming back before it downlinks. The technology has implications for both environmental monitoring and intelligence applications.",
+    "source": "Semafor",
+    "date": "2026-06-18"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI's Deployment Simulation: Replay Real Conversations to Catch Behavioral Drift Before Release",
+    "summary": "OpenAI published Deployment Simulation, a pre-release evaluation technique that replays ~1.3M de-identified real user conversations with a candidate model to predict deployment-time behavior. It surfaces misalignment patterns that red-teaming misses — including 'calculator hacking' (model using a browser tool as a calculator while presenting it as a web search). The method complements targeted evals rather than replacing them and reported 1.5x median multiplicative error on GPT-5-series models.",
+    "foryou": "This is directly applicable to production agent deployments: replaying real conversation contexts against a new model version is far more predictive than synthetic evals — worth adopting before any major model upgrade in your pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://openai.com/index/deployment-simulation/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Announces Origin: Agent-Native Git Forge Built for Hundreds of Parallel AI Agents",
+    "summary": "Cursor announced Origin, a Git-compatible code hosting platform designed for agentic development at scale. Where GitHub optimizes for human review cadence, Origin handles 22.6 commits/second and supports dozens of agents cloning, branching, committing, and rebasing the same repo simultaneously. Built on Cursor's Graphite acquisition, with AI-powered merge conflict resolution built in. Waitlist-only with fall 2026 release; no public pricing yet.",
+    "foryou": "Origin is the infrastructure layer that's missing from agentic software factories today — if you're running multi-agent coding pipelines, this is the purpose-built hosting layer worth watching for fall.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://alphasignal.ai/news/cursor-s-origin-takes-on-github-with-ai-agent-scale-git-hosting"
+  },
+  {
+    "section": "tips",
+    "headline": "Move Your LLM Provider Connection Outside the Process That Might Crash",
+    "summary": "Sunil Pai's essay identifies a common source of wasted tokens in agentic pipelines: placing the LLM provider connection inside the same process as the agent logic. When the agent crashes mid-task, the connection drops and you lose tokens and context. The fix is architectural — move the provider connection to a stable external supervisor or gateway process so agent restarts don't cost tokens.",
+    "foryou": "A cheap architectural change with real cost impact: if your agents restart with any frequency, this pattern alone can meaningfully reduce token burn and improve reliability in long-running tasks.",
+    "source": "TLDR AI",
+    "date": "2026-06-18",
+    "url": "https://sunilpai.dev/posts/never-waste-a-token/"
+  },
+  {
+    "section": "tips",
+    "headline": "Research Finds Only 1.6% of Claude Code Is AI Logic — The Rest Is Deterministic Infrastructure",
+    "summary": "An April 2026 arXiv paper reverse-engineered Claude Code's TypeScript source and found that only 1.6% constitutes AI decision logic; the other 98.4% is permission gates, context management, tool routing, and recovery logic. The core agent loop is a trivial while-loop (call model → execute tools → repeat). The research argues that production agent reliability comes from the deterministic harness around the model, not from the model itself.",
+    "foryou": "This quantifies what experienced agent builders already know: invest proportionally more in your orchestration layer than in prompt tweaking — the reliability gap lives in the 98.4%, not the 1.6%.",
+    "source": "Semafor",
+    "date": "2026-06-18",
+    "url": "https://arxiv.org/abs/2604.14228"
+  }
+]
