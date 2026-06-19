@@ -1,0 +1,215 @@
+[
+  {
+    "section": "models",
+    "headline": "Cursor announces 1.5T-parameter coding model trained on 100K GPUs",
+    "summary": "At its inaugural Compile conference in San Francisco, Cursor (Anysphere) unveiled a proprietary 1.5 trillion-parameter coding model trained from scratch on over 100,000 GPUs. It does not rely on any existing base model, giving Cursor full control over behavior. The model is described as delivering intelligence beyond coding tasks and will release in coming weeks. The announcement coincided with SpaceX agreeing to acquire Anysphere for $60 billion in an all-stock deal.",
+    "foryou": "A purpose-built 1.5T model optimized for code, trained without dependence on third-party foundations, signals a new tier of coding AI — watch closely for agent-mode performance when it ships.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "1.5T+"
+      },
+      {
+        "label": "Training compute",
+        "value": "100,000+ GPUs"
+      },
+      {
+        "label": "Status",
+        "value": "Releasing in coming weeks"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://runtimewire.com/article/cursor-1-5t-model-100000-gpus-compile"
+  },
+  {
+    "section": "models",
+    "headline": "Mistral teases new sparse flagship model, early access opening July 2026",
+    "summary": "Mistral CEO Arthur Mensch announced a new flagship model arriving this summer — the start of a new family of 'fat but sparse' models. An early access program will open in July for key partners in research, government, and industry. No architecture details or benchmarks have been shared yet.",
+    "foryou": "If Mistral's sparse architecture delivers frontier capability at lower cost, it could be a strong candidate for cost-efficient agentic pipelines — worth tracking the July EA closely.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Sparse (MoE-style)"
+      },
+      {
+        "label": "Early access",
+        "value": "July 2026"
+      },
+      {
+        "label": "Status",
+        "value": "Announced, not yet released"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://digg.com/tech/5oyrb6pf"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI releases LifeSciBench: 750-task expert-graded life science benchmark",
+    "summary": "OpenAI published LifeSciBench, a 750-task evaluation developed with 173 PhD-level scientists from biotech and pharma. Unlike MCQ benchmarks, tasks are free-response graded by expert-written rubrics (19,020 criteria total) across seven workflows including evidence analysis, experimental design, and scientific communication. The strongest model (OpenAI's GPT-Rosalind) scored only 36.1%. Tasks require interpreting genomic sequence files, chemical structures, and experimental figures.",
+    "foryou": "Real rubric-based evaluation over artifact-heavy tasks sets a new quality bar for science benchmarks — if you're building domain-specific pipelines, LifeSciBench is now the reference for life-science AI capability.",
+    "specs": [
+      {
+        "label": "Tasks",
+        "value": "750 expert-authored"
+      },
+      {
+        "label": "Expert contributors",
+        "value": "173 PhD scientists"
+      },
+      {
+        "label": "Best model score",
+        "value": "36.1% (GPT-Rosalind)"
+      },
+      {
+        "label": "Rubric criteria",
+        "value": "19,020 total"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://openai.com/index/introducing-life-sci-bench/"
+  },
+  {
+    "section": "models",
+    "headline": "ChatGPT market share drops below 50% for first time; Claude surges to 10%",
+    "summary": "ChatGPT's share of the global AI assistant market fell to 46% by May 2026, down from near-monopoly levels, according to Sensor Tower's State of AI 2026 report. Google Gemini now holds 28%, while Claude reached 10% globally and nearly 14% in the US — a roughly fourfold increase since December 2025. Users are increasingly willing to switch between assistants based on task.",
+    "foryou": "Claude's US share nearly tripling in five months is a signal that developer-trust is translating to mainstream adoption — relevant context for pitching Claude-powered products to broader audiences.",
+    "specs": [
+      {
+        "label": "ChatGPT share (May 2026)",
+        "value": "46%"
+      },
+      {
+        "label": "Google Gemini share",
+        "value": "28%"
+      },
+      {
+        "label": "Claude share (global)",
+        "value": "10%"
+      },
+      {
+        "label": "Claude share (US)",
+        "value": "~14%"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://techcrunch.com/2026/06/16/chatgpts-market-share-slips-below-50-for-first-time/"
+  },
+  {
+    "section": "models",
+    "headline": "ChatGPT improves scheduled tasks and retires Pulse feature",
+    "summary": "OpenAI launched an improved task-scheduling feature for ChatGPT, accessible via a new dedicated Scheduled page. The update brings faster, more reliable recurring task execution. The feature is available to Go, Plus, Pro, Business, and Enterprise subscribers. Separately, the Pulse feature has been retired.",
+    "foryou": "Better scheduled tasks in ChatGPT means it becomes a more credible competitor to custom agentic pipelines for basic automation — understand what it can now do before building a bespoke alternative.",
+    "specs": [
+      {
+        "label": "Availability",
+        "value": "Go, Plus, Pro, Business, Enterprise"
+      },
+      {
+        "label": "Access point",
+        "value": "New 'Scheduled' page"
+      },
+      {
+        "label": "Retired",
+        "value": "Pulse feature"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19"
+  },
+  {
+    "section": "models",
+    "headline": "MolmoMotion: Language-guided 3D motion forecasting from Allen AI",
+    "summary": "Allen AI released MolmoMotion, a model that predicts future 3D point trajectories in videos using language instructions and initial object positions, outperforming prior methods. The release includes MolmoMotion-1M, a dataset of 3D trajectories from 1.16 million videos, plus an accuracy benchmark. The work is published on HuggingFace.",
+    "foryou": "Language-guided 3D motion prediction opens the door to more intuitive robot/agent control in 3D environments — bookmark this if you're building agents that need to reason about physical-world dynamics.",
+    "specs": [
+      {
+        "label": "Dataset",
+        "value": "MolmoMotion-1M (1.16M videos)"
+      },
+      {
+        "label": "Task",
+        "value": "3D point trajectory prediction from language"
+      },
+      {
+        "label": "License",
+        "value": "Open (HuggingFace)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://huggingface.co/blog/allenai/molmomotion"
+  },
+  {
+    "section": "industry",
+    "headline": "Noam Shazeer leaves Google to join OpenAI as Lead for AI Architecture Research",
+    "summary": "Noam Shazeer, VP of Engineering and Gemini co-lead at Google DeepMind, announced he is leaving to join OpenAI, where he will lead AI Architecture Research overseeing the fundamental design of advanced AI models. Shazeer co-authored the landmark 2017 'Attention Is All You Need' paper. OpenAI CEO Sam Altman called the partnership '10 years in the making.' The move ends Shazeer's second stint at Google, which bought him back from Character.AI for $2.7 billion in 2024.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://www.benzinga.com/markets/tech/26/06/53269428/google-gemini-co-lead-noam-shazeer-joins-openai-sam-altman-says-its-10-years-in-the-making"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX acquires Cursor's parent Anysphere for $60B in all-stock deal",
+    "summary": "SpaceX entered an agreement to acquire Anysphere, the company behind the AI coding assistant Cursor, for $60 billion in an all-stock deal. The announcement was made the same day Cursor unveiled its 1.5T-parameter proprietary model and the Origin code-hosting platform at the Compile conference. Origin, a GitHub-rival designed for the agentic era, is expected to launch in fall 2026.",
+    "source": "Web",
+    "date": "2026-06-19",
+    "url": "https://www.bankinfosecurity.com/spacex-bets-big-on-ai-coding-60b-cursor-deal-a-32002"
+  },
+  {
+    "section": "industry",
+    "headline": "Vercel launches Connect: runtime credential exchange for AI agents",
+    "summary": "Vercel launched Connect in public beta, replacing long-lived provider tokens with runtime credential exchange. It issues short-lived, task-scoped credentials for agents at execution time, significantly reducing the risk of persistent token exposure. Announced at Vercel Ship in London alongside the eve agent framework.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://vercel.com/blog/introducing-vercel-connect"
+  },
+  {
+    "section": "industry",
+    "headline": "VITURE launches Helix AI safety glasses built on NVIDIA XR AI at AWE 2026",
+    "summary": "VITURE unveiled Helix, the first AI safety eyewear platform built on NVIDIA's XR AI at the Augmented World Expo 2026. Helix streams wearers' first-person perspective to a multimodal AI in real time for AI-assisted coaching, compliance, and provenance capture — targeting industrial, scientific, and clinical workflows. NVIDIA XR AI entered public beta on June 17.",
+    "source": "Web",
+    "date": "2026-06-19",
+    "url": "https://www.prnewswire.com/news-releases/viture-unveils-helix-the-first-ai-safety-glasses-built-on-nvidias-xr-ai-solution-at-awe-2026-302802005.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel eve: open-source agent framework with durable execution built in",
+    "summary": "Vercel released eve in public beta — an open-source, TypeScript-native agent framework where every agent is a directory of files that compiles to a durable, production-ready service on Vercel Functions. An eve agent consists of instructions.md (system prompt), TypeScript files for tools, and Markdown skill files. Six production capabilities are built in by default: durable execution, sandboxed compute, human approvals, multi-platform channels, OpenTelemetry tracing, and evals. Vercel describes it as 'Next.js for agents.' Licensed Apache-2.0.",
+    "foryou": "Eve collapses the gap between agent prototype and production deployment — if you're building durable agentic pipelines in TypeScript, this is the framework to evaluate before rolling your own infra.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://vercel.com/blog/introducing-eve"
+  },
+  {
+    "section": "tips",
+    "headline": "Replit is now a native connector in Claude for design-to-code workflows",
+    "summary": "Replit is now available directly inside Claude as an official connector, enabling seamless handoff from Claude Design (natural language UI building) to Replit for development and deployment. The integration eliminates copy-pasting and context switching. Claude's connector list now includes Adobe, Base44, Canva, Gamma, Lovable, Miro, Replit, Vercel, and Wix.",
+    "foryou": "If you use Claude for prototyping and Replit for deployment, this native handoff is a genuine workflow accelerator — try designing a UI in Claude then pushing it directly to Replit.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://replit.com/blog/replit-claude"
+  },
+  {
+    "section": "tips",
+    "headline": "Are LLMs overthinking? Study finds higher reasoning effort isn't always better for security triage",
+    "summary": "A study tested 26 Claude 4.6/4.7 and GPT-5.4/5.5 configurations with varying context window sizes and reasoning effort levels on security vulnerability triage. Surprisingly, higher reasoning effort and even later model versions were not always superior for finding security issues — performance was highly context- and task-dependent. Earlier work found Opus 4.6, GPT 5.4, Gemini 3.1-pro-preview, DeepSeek R1-0528, and Qwen 3.6-plus all struggled to find certain vulnerabilities without very strong hints.",
+    "foryou": "Before defaulting to max reasoning effort in security-focused agents, benchmark your specific tasks — the compute cost may not translate to better results, and you may get better ROI with targeted context over brute-force thinking.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://parsiya.net/blog/llm-thonking/"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA XR AI: open-source SDK for building AI agents on AR glasses",
+    "summary": "NVIDIA XR AI is now in public beta, offering developers an open-source library for building multimodal AI agents for AR glasses, XR headsets, and edge devices. Agents can see what the user sees, understand spoken or typed intent, call enterprise tools, and respond within the same XR session — all backed by GPU-accelerated AI services running in cloud, data center, or at the edge. The framework targets field service, industrial ops, healthcare, and training workflows.",
+    "foryou": "If you're exploring embodied or wearable AI agents, NVIDIA's XR AI SDK is the foundation layer worth experimenting with — especially given enterprise deployment patterns emerging in industrial contexts.",
+    "source": "TLDR AI",
+    "date": "2026-06-19",
+    "url": "https://developer.nvidia.com/blog/building-ai-agents-for-ar-glasses-and-xr-devices-with-nvidia-xr-ai/"
+  }
+]
