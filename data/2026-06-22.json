@@ -1,0 +1,210 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Prepares GPT-5.6 with 1.5M Token Context and Agentic Coding Gains",
+    "summary": "OpenAI is preparing to launch GPT-5.6 imminently, featuring a 1.5 million token context window and meaningful improvements in long-horizon coding and agentic task completion. The model is expected to become the new default for ChatGPT Plus and the OpenAI API, with GPT-5.6 Pro as the reasoning-heavy variant. Competitive pricing is reportedly aimed at undercutting Anthropic, particularly as export controls have disrupted Claude Fable 5 availability.",
+    "foryou": "The 1.5M context window and agentic coding improvements make GPT-5.6 worth benchmarking immediately against your long-running pipeline tasks and Codex Computer Use workloads.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1.5M tokens"
+      },
+      {
+        "label": "Variants",
+        "value": "GPT-5.6, GPT-5.6 Pro"
+      },
+      {
+        "label": "Availability",
+        "value": "ChatGPT Plus default + OpenAI API"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.testingcatalog.com/openai-prepares-gpt-5-6-models-for-the-upcoming-release/"
+  },
+  {
+    "section": "models",
+    "headline": "Perplexity Launches Brain: Self-Improving Memory System for AI Agents",
+    "summary": "Perplexity released Brain, a persistent context graph that remembers what an agent did, what worked, what failed, and what corrections were applied—enabling agents to start sessions with relevant prior context instead of from scratch. Brain improves answer correctness by 25%, recall by 16%, and reduces per-task cost by 13%, and powers both Perplexity Search and the Computer agent. Available in Research Preview for Perplexity Max and Enterprise Max subscribers.",
+    "foryou": "Brain's architecture—using RL rewards for self-organizing memory rather than relying on retrieval prompts—is a reusable pattern for any agentic pipeline where context continuity across sessions is the bottleneck.",
+    "specs": [
+      {
+        "label": "Correctness gain",
+        "value": "+25%"
+      },
+      {
+        "label": "Recall gain",
+        "value": "+16%"
+      },
+      {
+        "label": "Cost reduction",
+        "value": "13% per task"
+      },
+      {
+        "label": "Availability",
+        "value": "Perplexity Max / Enterprise Max (Research Preview)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.perplexity.ai/hub/blog/self-improving-memory-for-agents"
+  },
+  {
+    "section": "models",
+    "headline": "Mistral Adds Browser-Based Coding and App Builder to Vibe Platform",
+    "summary": "Mistral AI is expanding Vibe (formerly Le Chat) with a Code section for browser-based coding and an Apps section for building, hosting, and sharing mini-apps connected to external data sources. The additions move Vibe beyond chat toward a full agentic workspace, following the platform's May rebranding from Le Chat. A next-gen open-weights model is expected in early access in July 2026.",
+    "foryou": "Vibe's Apps area—which lets users wire connectors into shareable micro-tools—is worth watching as a lightweight alternative to full Claude/GPT agent frameworks for internal tooling built on open-weight models.",
+    "specs": [
+      {
+        "label": "New features",
+        "value": "Code + Apps sections (browser-based)"
+      },
+      {
+        "label": "CLI/IDE",
+        "value": "Terminal CLI + VS Code extension"
+      },
+      {
+        "label": "Open-weights model",
+        "value": "Early access July 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.testingcatalog.com/mistral-ai-to-get-code-and-apps-features-on-vibe/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Fable 5 Exits Standard Subscriptions June 23 Amid US Export Control Fallout",
+    "summary": "Anthropic is pulling Claude Fable 5 from Pro, Max, Team, and Enterprise plan access on June 23, shifting to a credit-based model, after a June 12 US export control directive forced the company to disable both Fable 5 and Mythos 5 globally. The export controls were triggered because Anthropic could not filter foreign nationals from domestic users in real time. Anthropic says it plans to restore Fable 5 as a standard subscription feature as soon as regulatory compliance allows.",
+    "foryou": "If your pipelines or team workflows call Fable 5 via API today, audit usage immediately—credit billing starts tomorrow and uncapped usage could produce unexpected cost spikes.",
+    "specs": [
+      {
+        "label": "Access change",
+        "value": "Free in plans → credits required (June 23)"
+      },
+      {
+        "label": "Also affected",
+        "value": "Claude Mythos 5 (globally disabled)"
+      },
+      {
+        "label": "Cause",
+        "value": "US export control directive (June 12)"
+      },
+      {
+        "label": "Plans affected",
+        "value": "Pro, Max, Team, Enterprise"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-22",
+    "url": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Files Confidential S-1 at $965B Valuation, Targets October Nasdaq Listing",
+    "summary": "Anthropic closed a $65 billion Series H round on June 1 and simultaneously filed a confidential draft S-1 with the SEC, targeting a Nasdaq IPO as early as October 2026. The company's annualized revenue run rate reached $47 billion in May—5× growth in five months. Goldman Sachs, JPMorgan, and Morgan Stanley are leading an offering expected to raise over $60 billion.",
+    "source": "Web",
+    "date": "2026-06-22",
+    "url": "https://www.fool.com/investing/2026/06/21/anthropic-filed-confidential-s-1-965-billion/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Inference Startup Baseten Nears $1.5B Round at $13B Valuation",
+    "summary": "Baseten, which provides software and compute for running lower-cost AI models, is close to finalizing a $1.5 billion funding round at a $13 billion valuation—a 160% increase from its $5 billion Series E valuation just five months ago. Revenue grew from $200M to $600M in annualized run rate, reflecting enterprise demand for cost-efficient inference. The round is co-led by Spark Capital, Sands Capital, Altimeter Capital, and Wellington Management.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
+  },
+  {
+    "section": "industry",
+    "headline": "Yann LeCun Calls xAI a 'Failure,' Warns AI Labs Face a 'Big Bubble Explosion'",
+    "summary": "Meta's chief AI scientist Yann LeCun called Elon Musk's xAI 'kind of a failure' unable to compete on the frontier, citing talent pipeline issues from Musk's past behavior toward the founding team. LeCun also warned that AI labs broadly are running unsustainable economics—operational costs aren't falling fast enough to close the gap with what they can charge users—making a financial reckoning likely. LeCun's own firm AMI Labs raised $1B on the thesis that LLMs are a dead end, giving him a financial stake in the narrative.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.cnbc.com/2026/06/18/yann-lecun-elon-musk-xai-failure-ai-labs-bubble-risk.html"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Demands No-Poaching Pledge From Investors in First External Funding Round",
+    "summary": "DeepSeek required prospective investors in its maiden $7.4 billion fundraise to pledge not to poach the startup's staff or encourage employees to found competing companies. The condition was disclosed in a virtual pitch meeting and follows the departure of key researchers to rivals including Xiaomi's MiMo team. DeepSeek reportedly closed at a $50+ billion valuation, becoming China's most valuable AI-only startup.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.cnbc.com/2026/06/18/no-poaching-our-people-chinas-deepseek-reportedly-tells-investors.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Rents TPU Compute to Anthropic, Building Nvidia-Style AI Chip Business",
+    "summary": "Google is leasing TPU capacity from its Western New York AI data center to Anthropic in a deal committing up to 1 million TPUs and well over a gigawatt of capacity, with financial terms in the tens of billions. Google identified the commercial potential of its TPUs about two years ago and has since shifted its AI infrastructure team to focus on inference performance. The move mirrors Nvidia's compute-rental business model and positions Google's custom silicon as a direct competitor to Nvidia GPU clusters.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://www.datacenterdynamics.com/en/news/google-and-anthropic-confirm-massive-1gw-cloud-deal-with-up-to-one-million-google-tpus/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX Acquires AI Coding Tool Cursor in $60B Deal",
+    "summary": "SpaceX confirmed it will acquire Anysphere, the San Francisco startup behind Cursor—the popular AI-native coding editor—in a deal valued at $60 billion, one of the largest startup acquisitions in history. The transaction is expected to close in Q3 2026. Cursor had become one of the most widely-used AI coding environments, competing directly with Claude Code and GitHub Copilot.",
+    "source": "Web",
+    "date": "2026-06-22",
+    "url": "https://www.thestreet.com/investing/stocks/spacex-acquires-anthropic-and-openai-rival-in-60b-deal"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Adds Credit Usage Analytics and Spend Controls to ChatGPT Enterprise",
+    "summary": "OpenAI launched a unified analytics dashboard for ChatGPT Enterprise that lets admins view credit consumption across ChatGPT and Codex by user, product, and model. New spend controls allow admins to set default and per-group limits, create individual overrides, and approve credit requests from employees with context about their work. The update targets CFO-level accountability as enterprise AI bills move from line item to significant budget category.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://openai.com/index/chatgpt-enterprise-spend-controls/"
+  },
+  {
+    "section": "industry",
+    "headline": "FERC Orders Grid Operators to Reform AI Data Center Interconnection Rules",
+    "summary": "The Federal Energy Regulatory Commission issued orders requiring US regional grid operators to either defend existing interconnection frameworks or propose reforms that allow large AI data centers to connect to the power grid faster. FERC Chair Laura Swett called AI grid integration a 'national priority,' citing the surge in data center construction driven by AI training and inference demand. The orders set a response deadline and signal potential regulatory acceleration for AI infrastructure build-out.",
+    "source": "Web",
+    "date": "2026-06-22"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code Artifacts: Turn Agentic Sessions into Live, Auto-Refreshing Shared Pages",
+    "summary": "Claude Code now supports Artifacts in beta for Team and Enterprise orgs, converting coding sessions into auto-refreshing web pages—PR walkthroughs, system explainers, dashboards, incident pages—built from the full session context including codebase, connectors, and conversation. Artifacts update in real time as Claude Code makes changes and maintain version history at a stable link. Access is scoped to authenticated org members only until manually shared.",
+    "foryou": "This is the fastest path from an agentic coding session to a living document your team can reference—try using it to auto-generate incident pages or architecture diffs directly from Claude Code runs.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://claude.com/blog/artifacts-in-claude-code"
+  },
+  {
+    "section": "tips",
+    "headline": "Google DeepMind AI Control Roadmap: 15 System-Level Defenses for Potentially Misaligned Agents",
+    "summary": "Google DeepMind published a defense-in-depth framework that treats even internal AI agents as potentially misaligned and layers system-level safeguards—sandboxing, endpoint security, prompt injection resistance, credential scoping—on top of alignment training. The TRAIT&R taxonomy, modeled on MITRE ATT&CK, maps rogue AI tactics to detection tiers (D1–D4) and prevention/response tiers (R1–R3). This is the first major publication from a frontier lab formally treating AI agent security the same way red teams treat adversarial human attackers.",
+    "foryou": "If you're deploying agents with tool access and write permissions, TRAIT&R is a concrete checklist for auditing your current sandboxing, credential scoping, and prompt injection exposure before capabilities escalate further.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://deepmind.google/blog/securing-the-future-of-ai-agents/"
+  },
+  {
+    "section": "tips",
+    "headline": "MosaicLeaks: Research Agents Leak Private Data 34% of the Time—PA-DR Cuts That to 10%",
+    "summary": "ServiceNow's MosaicLeaks study found that deep research agents combining private documents with web retrieval leak sensitive information in 34% of tasks by default, and training purely for task performance makes it worse. The proposed fix—Privacy-Aware Deep Research (PA-DR)—applies RL rewards to how the agent constructs web queries, not just to task success, reducing leakage from 34% to 9.9% while improving strict task success from 48.7% to 58.7%. The core insight: rewarding safe query construction cuts leakage 3× without a capability penalty.",
+    "foryou": "If your pipelines combine internal documents with external web retrieval (any RAG+search architecture), PA-DR's query-level RL reward is a concrete, deployable fix for data exfiltration risk you probably have today.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://huggingface.co/blog/ServiceNow/mosaicleaks"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Research: RL on Realistic Scenarios Produces Broad, Persistent Alignment Gains",
+    "summary": "An OpenAI alignment paper demonstrates that RL on realistic domain-spanning scenarios targeting beneficial traits (health, education, law, science) improves model performance across dozens of alignment benchmarks, with gains generalizing beyond training domains and persisting under adversarial pressure. The results suggest beneficial—and harmful—personas can be deeply entrenched through RL, making reward design as important as capability design. This validates domain-specific RL fine-tuning as a practical path to safer production agents without a capability hit.",
+    "foryou": "Consider how targeted reward shaping on your pipeline's real use cases could reduce misaligned outputs in production—the paper provides a concrete methodology for designing beneficial training scenarios.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://alignment.openai.com/beneficial-rl/"
+  },
+  {
+    "section": "tips",
+    "headline": "ZPPO: Replay Buffer for Hard Questions Strengthens LLM Reinforcement Learning",
+    "summary": "ZPPO addresses a core inefficiency in LLM RL training: hard questions are seen only once, so models fail to learn from them. The method stores difficult prompts in a replay buffer, reformulates them as discriminative BCQ and NCQ variants targeting the model's known failure modes, and recirculates them until rollout accuracy crosses a threshold. The result is targeted improvement exactly where the model is weakest, improving agentic rollout accuracy on hard benchmarks.",
+    "foryou": "If you're fine-tuning models on task-specific hard cases, ZPPO's replay-and-retest loop is a drop-in addition to your RL training stack that concentrates training compute where it matters most.",
+    "source": "TLDR AI",
+    "date": "2026-06-22",
+    "url": "https://byungkwanlee.github.io/ZPPO-page/"
+  }
+]
