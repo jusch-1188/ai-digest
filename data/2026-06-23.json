@@ -1,0 +1,237 @@
+[
+  {
+    "section": "models",
+    "headline": "Sakana AI Launches Fugu: Multi-Agent Orchestration as a Single API",
+    "summary": "Sakana AI released Fugu and Fugu Ultra, a multi-agent system that presents a single OpenAI-compatible API endpoint while internally routing tasks across a pool of specialized expert models. Fugu decides whether to handle requests directly or delegate to a coordinated team, managing model selection, delegation, verification, and synthesis transparently. Fugu Ultra benchmarks shoulder-to-shoulder with Anthropic's Fable 5 and Mythos 5 — the very models currently offline due to US export controls — making it a timely frontier alternative.",
+    "foryou": "Drop-in replacement for Fable 5 calls in your pipelines: same OpenAI-compatible API, frontier-level performance, and no export-control risk since it's not US-restricted.",
+    "specs": [
+      {
+        "label": "API compatibility",
+        "value": "OpenAI-compatible"
+      },
+      {
+        "label": "Variants",
+        "value": "Fugu (latency-optimized) + Fugu Ultra (quality-optimized)"
+      },
+      {
+        "label": "Availability",
+        "value": "Live via API today"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://sakana.ai/fugu/"
+  },
+  {
+    "section": "models",
+    "headline": "Inception Labs' Mercury 2: 1,000 tok/s Diffusion Reasoning Model Beats DiffusionGemma",
+    "summary": "Mercury 2 is a diffusion-based reasoning LLM from Inception Labs that generates over 1,000 tokens per second — roughly 10x faster than Claude Haiku 4.5 Reasoning or GPT-5 Mini. It uses masked-token parallel refinement (diffusion) rather than autoregressive generation, scores 90% on AIME 2026 and 77% on GPQA, and supports tunable reasoning levels, 128K context, native tool use, and JSON schema output. Augment Code reported an 82% latency drop and 90% cost reduction swapping it in for Claude Opus 4.7 on a context-compaction subagent.",
+    "foryou": "At $0.25/$0.75 per 1M tokens and 1,000+ tok/s, Mercury 2 is the obvious swap for high-volume, latency-sensitive subagents in your pipelines where you're currently overpaying for slower frontier models.",
+    "specs": [
+      {
+        "label": "Speed",
+        "value": ">1,000 tokens/sec"
+      },
+      {
+        "label": "Context",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$0.25 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$0.75 / 1M tokens"
+      },
+      {
+        "label": "AIME 2026",
+        "value": "90%"
+      },
+      {
+        "label": "GPQA",
+        "value": "77%"
+      },
+      {
+        "label": "Architecture",
+        "value": "Diffusion LLM (masked parallel refinement)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-2"
+  },
+  {
+    "section": "models",
+    "headline": "Google's DiffusionGemma: Monitorable Despite Novel Architecture, Research Finds",
+    "summary": "A transparency audit of DiffusionGemma — Google DeepMind's open-weights diffusion LLM running at 1,000+ tok/s on a single H100 — found it remains similarly monitorable to standard Gemma 4 despite its non-autoregressive architecture. The study uncovered novel diffusion-specific interpretability phenomena: non-chronological reasoning, token smearing, and intermediate-context reasoning. Researchers separated 'variable transparency' (understanding intermediate states) from 'algorithmic transparency' (reconstructing reasoning paths), with DiffusionGemma performing acceptably on both.",
+    "foryou": "If you're evaluating DiffusionGemma for production pipelines, the safety case is stronger than feared: standard monitoring tooling transfers, though you should expect to adapt interpretability tooling for non-chronological reasoning patterns.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Diffusion LLM (masked tokens, parallel refinement)"
+      },
+      {
+        "label": "Speed",
+        "value": ">1,000 tokens/sec on single H100"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0 (open-weights)"
+      },
+      {
+        "label": "Release",
+        "value": "June 10, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://arxiv.org/abs/2606.20560"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.5 Pro Goes GA: 2M Token Context and Deep Think Reasoning Mode",
+    "summary": "Google DeepMind's Gemini 3.5 Pro is reaching general availability in late June 2026 with a 2-million-token context window — the largest of any production frontier model — alongside a Deep Think extended chain-of-thought reasoning mode. The model accepts text, image, audio, and video natively. It is live now for select enterprise customers on Vertex AI; broad API access and official pricing are imminent. Analysts estimate ~$15/$60 per 1M input/output tokens based on prior Gemini generation ratios.",
+    "foryou": "The 2M context window is a genuine pipeline unlock — entire codebases, multi-day agent memory, or large document corpuses without chunking; worth testing Deep Think on your hardest reasoning evals before pricing drops.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "2M tokens"
+      },
+      {
+        "label": "Reasoning mode",
+        "value": "Deep Think (extended CoT)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, audio, video"
+      },
+      {
+        "label": "Status",
+        "value": "GA late June 2026; Vertex AI enterprise preview now"
+      },
+      {
+        "label": "Est. pricing (input)",
+        "value": "~$15 / 1M tokens (unconfirmed)"
+      },
+      {
+        "label": "Est. pricing (output)",
+        "value": "~$60 / 1M tokens (unconfirmed)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-06-23",
+    "url": "https://dev.to/akaranjkar08/gemini-35-pro-2m-context-deep-think-and-the-post-fable-5-frontier-2p60"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA ENPIRE: AI Coding Agents Autonomously Train Robots on Real Hardware",
+    "summary": "NVIDIA's GEAR lab (with CMU and UC Berkeley) released ENPIRE (Environment, Policy Improvement, Rollout, Evolution), a closed-loop framework where AI coding agents run the full robotics research cycle — resetting physical scenes, executing trials, verifying outcomes, and rewriting code — with no human intervention between iterations. Robots trained via ENPIRE learned to cut zip ties and insert GPUs into motherboard sockets at 99% success rate. NVIDIA plans to open-source the framework.",
+    "foryou": "ENPIRE is the clearest demonstration yet of coding agents closing the real-world sim-to-real loop autonomously — directly relevant if you're building agentic pipelines that interface with physical systems or automated testing environments.",
+    "specs": [
+      {
+        "label": "Modules",
+        "value": "Environment (EN), Policy Improvement (PI), Rollout (R), Evolution (E)"
+      },
+      {
+        "label": "Task success rate",
+        "value": "99% (zip tie cutting, GPU insertion)"
+      },
+      {
+        "label": "Open-source",
+        "value": "Planned"
+      },
+      {
+        "label": "Partners",
+        "value": "CMU, UC Berkeley"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://research.nvidia.com/labs/gear/enpire/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Bans Anthropic's Fable 5 and Mythos 5: Models Remain Offline After 10+ Days",
+    "summary": "The Trump Administration issued an export control directive on June 12, 2026 ordering Anthropic to suspend all access to Claude Fable 5 and Mythos 5 for any foreign national — including Anthropic's own foreign-national employees. The government cited a potential jailbreak of Fable 5's cybersecurity safeguards; Anthropic disputes the characterization, saying the 'jailbreak' amounted to asking the model to 'fix this code.' Both models remain offline as of June 22. The ban is complicating Anthropic's planned IPO, with the company valued at $965 billion.",
+    "source": "TLDR AI (also: Fortune, CNBC, Al Jazeera)",
+    "date": "2026-06-23",
+    "url": "https://fortune.com/2026/06/13/anthropic-disables-fable-mythos-export-controls-national-security-threat/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nobel Laureate John Jumper Leaves DeepMind for Anthropic After Nine Years",
+    "summary": "John Jumper, Nobel Prize-winning co-lead of the AlphaFold team at DeepMind, is departing to join Anthropic. Jumper spent nine years at DeepMind and was awarded the Nobel Prize for predicting protein structures via AlphaFold. His departure follows reported struggles at Google DeepMind to sell coding tools to enterprises.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX Signs $6.3B Compute Deal with Reflection AI for Colossus 2 Data Center",
+    "summary": "Reflection AI, an open-source AI startup founded by former Google DeepMind researchers, will pay SpaceX $150 million per month from July 2026 through 2029 for access to NVIDIA GB300 chips at the Colossus 2 data center near Memphis, Tennessee. SpaceX has now signed over $80 billion in committed compute revenue across deals with Anthropic, Google, and Cursor, positioning Colossus as a major commercial AI infrastructure platform.",
+    "source": "Web",
+    "date": "2026-06-23",
+    "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/"
+  },
+  {
+    "section": "industry",
+    "headline": "Arcade Raises $60M Series A to Become Secure Action Layer for Production AI Agents",
+    "summary": "Arcade.dev closed a $60M Series A led by SYN Ventures (with Morgan Stanley and Wipro) to scale its authorization and governance platform for production AI agents. Arcade's platform lets agents inherit only the permissions held by the end user for a specific action, maintains a full audit trail, and offers over 8,000 MCP tools built for agent workflows. The company authored the MCP authorization spec adopted by Anthropic and already has enterprise production deployments including a major US bank and LangChain.",
+    "source": "Web",
+    "date": "2026-06-23",
+    "url": "https://www.businesswire.com/news/home/20260615229631/en/Arcade-Raises-$60M-to-Become-the-Secure-Action-Layer-Behind-Every-Production-AI-Agent"
+  },
+  {
+    "section": "industry",
+    "headline": "SAP Acquires Prior Labs to Build European Frontier AI Lab for Tabular Data",
+    "summary": "SAP agreed to acquire Prior Labs, pioneer of Tabular Foundation Models (TabPFN), with a commitment to invest over €1 billion over four years. Prior Labs will operate as an independent unit within SAP, building models purpose-built for structured business data — an area where LLMs still struggle. The lab's TabPFN series, published in Nature, set state-of-the-art results on tabular benchmarks across hundreds of academic studies. The deal is expected to close Q2/Q3 2026.",
+    "source": "Web",
+    "date": "2026-06-23",
+    "url": "https://news.sap.com/2026/05/sap-to-acquire-prior-labs-establish-frontier-ai-lab-europe/"
+  },
+  {
+    "section": "industry",
+    "headline": "Europe 2031 Doomsday Scenario Rattles EU Policymakers on AI Investment Gap",
+    "summary": "A speculative scenario called 'Europe 2031,' authored by Brussels-based thinktankers, depicts a world where Europe's underinvestment in AI data centers leaves it economically stranded as the US and China dominate. The scenario — featuring a wobbling Euro, populist surge, and businesses shredded by cyberattacks — was read by European Parliament members and discussed in UK-German official meetings last week. It is explicitly intended to shock European institutions into treating AI infrastructure as strategic priority.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://www.theguardian.com/technology/2026/jun/20/europe-sleepwalking-ai-disaster-us-china"
+  },
+  {
+    "section": "tips",
+    "headline": "Loop Engineering: Design the System That Prompts Your Agent, Not Just the Prompts",
+    "summary": "Addy Osmani (Google Chrome engineering lead) published a widely-shared framework called 'loop engineering' — the practice of designing the automated system that prompts AI coding agents on a schedule or trigger, rather than manually initiating each task. The framework defines four loop types: heartbeat (continuous short-interval), cron (scheduled), hook (event-triggered like CI failure or PR push), and goal loops (iterate until a success condition is met). The piece builds on ideas from Boris Cherny (Anthropic) and Peter Steinberger, and reportedly crossed 6.5M views in days.",
+    "foryou": "This is the mental model upgrade for running agentic pipelines at scale: instead of prompting Claude Code for each task, you wire goal loops with measurable stop conditions and let the agent run while you sleep.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://addyosmani.com/blog/loop-engineering/"
+  },
+  {
+    "section": "tips",
+    "headline": "Morph LLM: 3x Coding Speedup via Drafter Trained on Code Output, Not the Internet",
+    "summary": "Morph LLM published research on optimizing open coding models with three compounding techniques: (1) a speculative decoding drafter trained on coding output (not general internet text) achieving 3.07x speedup; (2) Autoresearch, an automated kernel tuner for affordable GPUs (NVIDIA, AMD) reaching 162 tok/s on consumer hardware; (3) PCIe interconnect replacing expensive NVLink via custom kernels sharing caches over TCP, cutting time-to-first-token by 84%. All three stack.",
+    "foryou": "If you're self-hosting coding models, Morph's drafter approach is the highest-ROI optimization: training your speculative decoding drafter on your actual code corpus rather than internet text is low-effort and high-yield.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://www.morphllm.com/blog/codegen-inference-research"
+  },
+  {
+    "section": "tips",
+    "headline": "Agentic Resource Discovery (ARD): Tech Giants Propose Protocol for Agent-to-Resource Negotiation",
+    "summary": "Google, Microsoft, and Cisco are co-developing the Agentic Resource Discovery (ARD) protocol — a standard for AI agents to discover, negotiate access to, and consume computing and data resources dynamically. ARD addresses a growing bottleneck in multi-agent systems where agents must locate and authenticate against heterogeneous resources at runtime without hardcoded configurations.",
+    "foryou": "Worth tracking if you're building multi-agent systems that need to provision resources dynamically — ARD could become the missing auth/discovery layer between agent orchestrators and enterprise resource pools.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://www.infoworld.com/article/4187305/solving-an-ard-problem-in-ai-agentic-resource-discovery.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Minimal Downside to Switching Agentic Pipelines to Open Models, Post-Export Controls",
+    "summary": "A developer analysis argues that new safety guardrails on recent open models — combined with the practical risk now demonstrated by US export controls shutting down Fable 5 and Mythos 5 — make running open models on private infrastructure far more attractive than before. The post examines cost, capability parity, and control tradeoffs, concluding the balance has shifted significantly against cloud-only frontier model dependency.",
+    "foryou": "The Fable 5/Mythos 5 shutdown is Exhibit A for why your critical agentic pipelines need an open-model fallback — this piece gives you the argument and framework to justify the migration internally.",
+    "source": "TLDR AI",
+    "date": "2026-06-23",
+    "url": "https://www.marble.onl/posts/cancel_claude.html"
+  }
+]
