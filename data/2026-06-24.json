@@ -1,0 +1,147 @@
+[
+  {
+    "section": "models",
+    "headline": "GLM-5.2: Z.ai's Open-Weight 753B Model Beats GPT-5.5 on Coding at 1/6 the Cost",
+    "summary": "Z.ai released GLM-5.2, a 753B parameter open-weight Mixture-of-Experts model under the MIT license with a 1M-token context window. It scores 62.1 on SWE-bench Pro and 81.0 on Terminal-Bench 2.1, beating GPT-5.5 on long-horizon coding benchmarks at roughly one-sixth the cost. It also posts 99.2 on AIME 2026 and 91.2 on GPQA Diamond, ranking #1 on the open-weight Artificial Analysis Intelligence Index v4.1.",
+    "foryou": "The strongest open-weight coding model is now MIT-licensed and self-hostable—run your agent eval suite against it immediately if you're looking to cut frontier API costs.",
+    "specs": [
+      { "label": "Parameters", "value": "753B (MoE)" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "License", "value": "MIT" },
+      { "label": "SWE-bench Pro", "value": "62.1" },
+      { "label": "Terminal-Bench 2.1", "value": "81.0" },
+      { "label": "AIME 2026", "value": "99.2" },
+      { "label": "GPQA Diamond", "value": "91.2" },
+      { "label": "Cost vs GPT-5.5", "value": "~1/6th" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba HappyHorse 1.1 Rises to #2 in Global AI Video Rankings with Native Audio",
+    "summary": "Alibaba released HappyHorse 1.1, which climbed to #2 in global AI video rankings as Sora and ByteDance's Seedance fell away. Version 1.1 adds native audio generation, multilingual lip-sync, and support for up to nine reference images—capabilities neither Seedance 2.0, Sora, nor Kling offer in a single pipeline. It supports text-to-video, image-to-video, and subject-to-video at 720P/1080P with 3–15 second clips, and is live on Alibaba Cloud Model Studio with a 40% launch discount.",
+    "foryou": "HappyHorse 1.1's native audio + multi-reference pipeline is enterprise-API-ready now—worth evaluating if you're building video generation agents or multimodal content workflows.",
+    "specs": [
+      { "label": "Global rank", "value": "#2" },
+      { "label": "Output resolution", "value": "720P / 1080P" },
+      { "label": "Duration", "value": "3–15 seconds" },
+      { "label": "Reference images", "value": "Up to 9" },
+      { "label": "Launch discount", "value": "40% (first 2 weeks)" },
+      { "label": "Availability", "value": "Alibaba Cloud Model Studio" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://venturebeat.com/technology/alibabas-ai-video-model-rises-to-no-2-in-global-rankings-as-openais-sora-and-bytedances-seedance-fall-away"
+  },
+  {
+    "section": "models",
+    "headline": "Moebius: 0.22B Open-Source Inpainting Model Matches 11.9B FLUX.1-Fill-Dev at 15x Speed",
+    "summary": "Researchers from HUST and VIVO AI Lab released Moebius (ECCV 2026), a 0.22B parameter image inpainting model that matches or surpasses FLUX.1-Fill-Dev (11.9B) through architecture optimization and knowledge distillation. It achieves >15x total inference speedup with 26ms latency per step on a single GPU. Weights and code are available under an open commercial license on GitHub and HuggingFace.",
+    "foryou": "Swap Moebius in for FLUX.1-Fill anywhere you're doing inpainting or object removal—equivalent quality at under 2% of the parameter count and 15x faster means dramatically lower GPU costs per inference.",
+    "specs": [
+      { "label": "Parameters", "value": "0.22B" },
+      { "label": "vs FLUX.1-Fill-Dev", "value": "11.9B" },
+      { "label": "Speedup", "value": ">15x" },
+      { "label": "Latency", "value": "26ms/step (single GPU)" },
+      { "label": "License", "value": "Open commercial" },
+      { "label": "Venue", "value": "ECCV 2026" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://hustvl.github.io/Moebius/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Launches GPT-5.5-Cyber and Daybreak Defensive Cyber Platform",
+    "summary": "OpenAI released GPT-5.5-Cyber in limited access, alongside the Daybreak Cyber Partner Program, an updated Codex Security plugin, and Patch the Planet—an open-source security initiative. Rather than broad API access, GPT-5.5-Cyber will be embedded into existing security products via certified partners under a Trusted Access for Cyber model.",
+    "foryou": "GPT-5.5-Cyber won't be accessible via the standard API—if you're building security tooling, the Daybreak partner program is the route; otherwise, it's closed to most builders for now.",
+    "specs": [
+      { "label": "Model", "value": "GPT-5.5-Cyber" },
+      { "label": "Access", "value": "Limited (partner only)" },
+      { "label": "Distribution", "value": "Daybreak Partner Program" },
+      { "label": "Open source", "value": "Patch the Planet initiative" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://www.testingcatalog.com/openai-launches-new-security-tools-and-updates-gpt-5-5-cyber/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX Signs $6.3B Compute Deal with Reflection AI for Colossus 2 Data Center",
+    "summary": "SpaceX signed a deal worth up to $6.3 billion with Reflection AI—an open-source AI startup—for access to its Colossus 2 supercomputer near Memphis, Tennessee. Reflection will pay $150 million per month starting July 1, 2026 through 2029 for Nvidia GB300 access. This adds Reflection to SpaceX's commercial compute roster alongside Anthropic ($1.25B/month) and Google ($920M/month), cementing Colossus 2 as a major third-party AI compute platform.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://www.cnbc.com/2026/06/22/spacex-ai-colossus-data-center-reflection.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Gemini Co-Lead Noam Shazeer Leaves Google for OpenAI—Two Years After $2.7B Buyback",
+    "summary": "Noam Shazeer, VP of Engineering at Google and co-lead of its Gemini AI models, announced on June 18 he is joining OpenAI. Google paid $2.7 billion to bring Shazeer back from CharacterAI in August 2024—he lasted less than two years. Shazeer is co-author of the 2017 'Attention Is All You Need' paper that introduced the Transformer architecture underlying all modern LLMs.",
+    "source": "Web",
+    "date": "2026-06-24",
+    "url": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic to Require Government ID Verification for Some Claude Users Starting July 8",
+    "summary": "Anthropic updated its privacy policy to allow mandatory identity verification—including government-issued photo ID, live selfie, and facial geometry scan—for a subset of Claude Free, Pro, and Max users beginning July 8, 2026. The company uses Persona Identities as its verification provider. No specific triggers for checks have been published, no data retention period is specified, and refusal may result in account suspension. API and Enterprise customers are not affected.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://techcrunch.com/2026/06/22/anthropic-says-claude-may-want-to-see-your-id/"
+  },
+  {
+    "section": "industry",
+    "headline": "Tencent Tests Xiaowei AI Assistant Inside WeChat for 1.4 Billion Monthly Active Users",
+    "summary": "Tencent has begun small-scale testing of Xiaowei, a native AI assistant embedded in WeChat/Weixin, which has over 1.4 billion monthly active users. Users interact via text or voice to complete tasks across WeChat mini-apps; the system draws on Tencent's own WeLM language model and routes some queries to DeepSeek. Full public rollout is targeted for Q3 2026.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://www.cnbc.com/2026/06/22/tencent-ai-assistant-wechat-china.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code's Extended Thinking Output Is a Summary—Not the Actual Reasoning",
+    "summary": "Claude Code's 'Extended Thinking' feature returns a model-generated summary of the reasoning process, not the actual encrypted reasoning tokens. Anthropic holds the decryption key; the full thinking trace is only available under enterprise agreements. The standard API returns a summary while the underlying reasoning remains opaque to all other users.",
+    "foryou": "If you're building eval or transparency tooling on Claude Code thinking output, you're auditing a summary—not ground-truth reasoning—which materially changes what trust signals you can extract from it.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://patrickmccanna.net/the-text-in-claude-codes-extended-thinking-output-is-not-authentic/"
+  },
+  {
+    "section": "tips",
+    "headline": "Codex-Maxxing: OpenAI's Guide to Using Codex as a Persistent Workspace",
+    "summary": "Jason Liu's whitepaper for OpenAI outlines strategies for using Codex as a persistent workspace across long-running projects. Key techniques include breaking ambitious goals into verifiable steps, maintaining continuity across workstreams, managing task decomposition, and determining when to delegate execution versus apply human oversight to prevent context degradation.",
+    "foryou": "Apply the task decomposition and context handoff framework from this guide to any multi-session Codex agent setup—it's the closest thing to a production playbook for long-horizon agentic work.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://openai.com/index/codex-maxxing-long-running-work/"
+  },
+  {
+    "section": "tips",
+    "headline": "Knowledge Agents: Smaller Models with Structured Data Beat Frontier LLMs on Specialized Tasks",
+    "summary": "After Anthropic pulled Mythos, one practitioner built 'knowledge agents'—smaller models like Qwen 3 27B augmented with structured, embedded domain knowledge and multi-pass search. The methodology involves embedding and structuring proprietary data, then running multiple retrieval passes before inference. Results show specialist performance matching or exceeding larger frontier models on targeted queries and proprietary data tasks.",
+    "foryou": "This multi-pass retrieval architecture is a drop-in improvement for any RAG pipeline currently making expensive frontier calls—run your proprietary dataset through this approach before defaulting to GPT-5.5.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://weightythoughts.com/p/knowledge-agents-beat-frontier-models"
+  },
+  {
+    "section": "tips",
+    "headline": "Loop Engineering: Designing AI Agent Loops That Run Themselves",
+    "summary": "Loop engineering shifts AI development from manually prompting agents to designing autonomous systems that decide what to work on, execute tasks, verify outcomes, and improve over time. The core challenges are defining reliable stopping conditions (goal primitives with testable termination), preventing context rot in long-lived loops via subagents or compaction, building agent-friendly tools, and creating verification mechanisms that independently judge success without human intervention.",
+    "foryou": "For any autonomous multi-turn pipeline, immediately adopt the stopping condition framework: define desired end state + evidence required + hard ceiling on turns or budget before writing a single tool.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://bdtechtalks.com/2026/06/22/ai-loop-engineering/"
+  },
+  {
+    "section": "tips",
+    "headline": "Model Size Scaling 2023–2031: Feasible Parameters Forecast to Hit 1.4 Quadrillion",
+    "summary": "A detailed analysis on LessWrong examines constraints on AI model scaling between 2023 and 2031—specifically how target inference token speed limits total parameter count and how pretraining compute availability shapes viable model sizes per year. The estimates project feasible total parameters reaching 1.4 quadrillion by 2031, assuming continued infrastructure expansion and given multiple explicit assumptions the author documents throughout.",
+    "foryou": "Useful for infrastructure planning and model selection bets over 3–5 year horizons—the forecast implies 5+ more generations of model size expansion ahead, each with meaningfully lower inference costs than the previous.",
+    "source": "TLDR AI",
+    "date": "2026-06-24",
+    "url": "https://www.lesswrong.com/posts/yLHiQGCPdvzL9fBn3/model-size-scaling-in-2023-2031"
+  }
+]
