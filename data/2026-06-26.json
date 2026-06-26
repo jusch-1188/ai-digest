@@ -1,0 +1,230 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI and Broadcom unveil Jalapeño, their first custom LLM inference chip",
+    "summary": "OpenAI and Broadcom unveiled Jalapeño, a blank-slate reticle-sized ASIC designed specifically for LLM inference rather than adapted from prior AI workloads. The chip reached tape-out in just nine months—accelerated by OpenAI's own models—and is slated for deployment in gigawatt-scale data centers beginning in late 2026. Broadcom CEO Hock Tan said the chip will enable deployment of gigawatt-scale facilities with Microsoft and other partners. A detailed technical performance report is expected in the coming months.",
+    "foryou": "If you're building agentic inference pipelines, Jalapeño signals a coming shift toward OpenAI-controlled, performance-per-watt-optimized inference that could reshape API pricing and throughput SLAs.",
+    "specs": [
+      {
+        "label": "Design time",
+        "value": "9 months (AI-assisted)"
+      },
+      {
+        "label": "Architecture",
+        "value": "Reticle-sized custom ASIC"
+      },
+      {
+        "label": "Target deployment",
+        "value": "Gigawatt-scale data centers, late 2026"
+      },
+      {
+        "label": "Optimization target",
+        "value": "Performance per watt for LLM inference"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
+  },
+  {
+    "section": "models",
+    "headline": "Google adds native computer use to Gemini 3.5 Flash at $1.50/M tokens",
+    "summary": "Google launched native computer-use capabilities inside Gemini 3.5 Flash, its speed-and-cost-optimized model, moving this capability out of a standalone model and into the mainstream Flash release. The model processes continuous screenshots to execute clicks, scrolls, and typing across browsers, mobile, and desktop environments. On OSWorld-Verified it scores 78.4 versus GPT-5.5's 78.7, but at roughly one-sixth the cost. It's available now via the Gemini API and Gemini Enterprise Agent Platform.",
+    "foryou": "At $1.50/M input and 78.4 OSWorld, Gemini 3.5 Flash is now the most cost-efficient option for computer-use agents—worth benchmarking against Claude's computer use on your specific workflows.",
+    "specs": [
+      {
+        "label": "OSWorld-Verified",
+        "value": "78.4"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$1.50 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$9.00 / 1M tokens"
+      },
+      {
+        "label": "Access",
+        "value": "Gemini API + Gemini Enterprise Agent Platform"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-computer-use-gemini-3-5-flash/"
+  },
+  {
+    "section": "models",
+    "headline": "GLM-5.2: Zhipu AI's 744B MoE open model matches GPT-5.5 at one-sixth the cost",
+    "summary": "Zhipu AI released GLM-5.2, a Mixture-of-Experts model with 744B total parameters and roughly 40B active per token, released under an MIT license with no regional limits. It features a 1-million-token context window and is specifically optimized for coding, reasoning, and long-horizon agentic workflows. Independent benchmarks show it matching or beating GPT-5.5 on several long-horizon coding tasks at approximately one-sixth the cost. Weights are available on Hugging Face under zai-org/GLM-5.2 and on ModelScope.",
+    "foryou": "MIT-licensed, self-hostable, and GPT-5.5-competitive on coding benchmarks—GLM-5.2 is worth evaluating as a drop-in for long-context agentic coding tasks where you want to cut inference costs.",
+    "specs": [
+      {
+        "label": "Total parameters",
+        "value": "744B (MoE)"
+      },
+      {
+        "label": "Active parameters",
+        "value": "~40B per token"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "License",
+        "value": "MIT (commercial, self-hostable)"
+      },
+      {
+        "label": "Relative cost vs GPT-5.5",
+        "value": "~1/6"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://www.interconnects.ai/p/glm-52-is-the-step-change-for-open"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI updates GPT-5.5 Instant with improved context and instruction following",
+    "summary": "OpenAI released an updated GPT-5.5 Instant model focused on conversational quality improvements rather than benchmark gains. The new version better identifies underlying goals, carries context across multi-turn conversations, addresses multiple points in complex questions, and adapts tone for practical tasks like planning, research, and shopping. The rollout began June 24 for paid users and the following day for free tiers.",
+    "foryou": "Better instruction following and multi-point handling in GPT-5.5 Instant translates directly to fewer clarifying loops in agentic pipelines—worth re-testing your prompt templates against the new model.",
+    "specs": [
+      {
+        "label": "Update type",
+        "value": "Conversational quality (not benchmarks)"
+      },
+      {
+        "label": "Key improvements",
+        "value": "Context carry, instruction following, multi-point answers"
+      },
+      {
+        "label": "Rollout",
+        "value": "June 24 (paid), June 25 (free)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://openai.com/index/gpt-5-5-instant/"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba releases Qwen-AgentWorld: language world models trained on 10M+ agent trajectories",
+    "summary": "Alibaba's Qwen team released Qwen-AgentWorld, a family of language world models trained from scratch on over 10 million real environment interaction trajectories across seven domains: MCP, Search, Terminal, SWE, Web, OS, and Android. Rather than adapting a general-purpose LLM post hoc, environment modeling is the training objective from continual pre-training through RL. On AgentWorldBench, the 397B-A17B top model outperforms GPT-5.4, Claude Opus 4.8, and Gemini 3.1 Pro on simulation quality. Both models and the benchmark are available on Hugging Face and ModelScope.",
+    "foryou": "Qwen-AgentWorld lets you run agent training loops against a simulated environment instead of live APIs—significant for cutting iteration cost when building and testing agentic pipelines.",
+    "specs": [
+      {
+        "label": "Top model",
+        "value": "Qwen-AgentWorld-397B-A17B"
+      },
+      {
+        "label": "Training trajectories",
+        "value": "10M+ real environment interactions"
+      },
+      {
+        "label": "Domains",
+        "value": "7 (MCP, Search, Terminal, SWE, Web, OS, Android)"
+      },
+      {
+        "label": "Benchmark",
+        "value": "AgentWorldBench — beats GPT-5.4, Claude Opus 4.8, Gemini 3.1 Pro"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://qwen.ai/blog?id=qwen-agentworld"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Fable 5 reportedly reappears on Amazon Bedrock after export-control pause",
+    "summary": "Claude Fable 5, which went unavailable on Amazon Bedrock on June 12 due to US government export control directives, is reportedly reappearing on the platform. String changes in Claude Code v2.2.190 hint at preparations for the return. Fable 5 is Anthropic's most capable model, designed for multi-day autonomous tasks including planning, sub-agent delegation, and self-verification, with a 1M-token context window.",
+    "foryou": "If your agentic pipelines target Amazon Bedrock, watch for Fable 5 re-availability—its 1M context and autonomous multi-step execution make it the strongest option for long-running tasks.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output tokens",
+        "value": "128K"
+      },
+      {
+        "label": "Knowledge cutoff",
+        "value": "January 2026"
+      },
+      {
+        "label": "Status",
+        "value": "Reportedly returning to Bedrock (was paused June 12 for export controls)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/claude-fable-5-aws/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic accuses Alibaba of running the largest known distillation attack on Claude",
+    "summary": "Anthropic sent a letter to the US Senate Banking Committee accusing entities affiliated with Alibaba and its Qwen lab of conducting 28.8 million API exchanges using thousands of fraudulent accounts between April 22 and June 5, 2026—the largest known distillation attack on Anthropic to date. The goal was allegedly to use Claude's outputs to train cheaper Alibaba models via knowledge distillation, violating Anthropic's terms of service. Anthropic called for coordinated government and industry action to combat illicit distillation.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://www.cnbc.com/2026/06/24/anthropic-alibaba-distillation-campaign.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Gemini researchers Jonas Adler and Alexander Pritzel leave for Anthropic",
+    "summary": "Bloomberg reported that Jonas Adler and Alexander Pritzel, both researchers on the Gemini team, departed Google for Anthropic, extending a wave of high-profile AI talent defections. Recent departures also include transformer co-inventor Noam Shazeer and DeepMind director John Jumper. The trend reflects intense competition for top AI researchers across frontier labs.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon leads the data center power race through 2030; Google is closing fast",
+    "summary": "Amazon holds the incumbency advantage in AI infrastructure, having built data centers for two decades and leading the US solar development pipeline with 13.6 GW under construction. Amazon projected $200B in 2026 CapEx versus Google's $175–185B. However, Google's cloud division is adding capacity at the fastest rate among hyperscalers, with a $20B deal with Intersect Power for co-located clean energy and data center parks. Analysts expect Google to significantly close the gap with Amazon by 2030, as combined hyperscaler investment approaches $630B annually.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://cryptobriefing.com/amazon-google-ai-data-center-capacity-renewables/"
+  },
+  {
+    "section": "industry",
+    "headline": "Mirendil raises $200M seed at $1B valuation to build AI that accelerates AI research",
+    "summary": "Mirendil, founded by Anthropic veterans including Behnam Neyshabur, Harsh Mehta, and Shayan Salehian (plus researchers from xAI, Google DeepMind, and OpenAI), raised $200 million in seed funding at a $1 billion valuation. The round was co-led by a16z and Kleiner Perkins, with Nvidia as a strategic investor. The company's goal is to build AI systems that automate and accelerate AI research itself—aiming to democratize frontier research capabilities beyond a handful of well-funded labs.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://www.unite.ai/former-anthropic-researchers-launch-mirendil-at-1-billion-valuation-with-200-m-seed-round/"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon sues Perplexity over Comet browser masquerading as Chrome to bypass agent detection",
+    "summary": "Amazon filed suit against Perplexity, alleging that its Comet agentic browser violates Amazon Store's Conditions of Use by identifying itself as Chrome rather than disclosing it is an AI agent. Amazon argues this constitutes deceptive automation; Perplexity contends that browser user-agent strings are a matter of user choice and that agentic browsing is simply another form of user-controlled web access, akin to how users have historically customized client rendering. The case raises foundational questions about AI agent disclosure obligations on the open web.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://educatedguesswork.org/posts/notes-amazon-perplexity/"
+  },
+  {
+    "section": "industry",
+    "headline": "Perplexity launches Computer for Counsel, an AI legal agent inside Microsoft 365",
+    "summary": "Perplexity launched Computer for Counsel, an agentic legal operations product that integrates into Microsoft 365 (Word, SharePoint, Outlook, Teams) to automate research, document gathering, contract triage, regulatory monitoring, and intake processing. It uses 20+ frontier models and connects to legal databases including Midpage (full-coverage US case law) and Deel's compliance data. The product is available on Perplexity Enterprise and Max plans.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://www.perplexity.ai/hub/blog/introducing-computer-for-counsel"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA NeMo AutoModel cuts MoE fine-tuning GPU memory 32% and boosts throughput 3.7x",
+    "summary": "NVIDIA released NeMo AutoModel on Hugging Face, adding Expert Parallelism and DeepEP fused all-to-all dispatch kernels on top of Transformers v5 for MoE architectures like Qwen3, DeepSeek V3, and Mixtral. The integration requires just a single import-line change versus native Transformers v5 and delivers 3.4–3.7x higher training throughput alongside 29–32% lower peak GPU memory. It supports over 20 model families including Qwen2/3 MoE, DeepSeek V2/V3, and OLMoE.",
+    "foryou": "If you're fine-tuning any MoE model (DeepSeek, Qwen3, Mixtral), swapping in NeMo AutoModel with a single import change is a near-zero-cost path to 3x+ throughput—test this before scaling up GPU time.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://huggingface.co/blog/nvidia/accelerating-fine-tuning-nvidia-nemo-automodel"
+  },
+  {
+    "section": "tips",
+    "headline": "Orca: open-source Agent Development Environment for orchestrating parallel coding agent fleets",
+    "summary": "Orca is an open-source Agent Development Environment (ADE) from Stably AI designed to manage and orchestrate fleets of parallel coding agents simultaneously. It provides a unified interface for spawning, monitoring, and coordinating multiple coding agents working in parallel across a codebase, addressing the coordination overhead that typically limits parallel agent workflows.",
+    "foryou": "If you're running multi-agent coding pipelines, Orca gives you a purpose-built orchestration layer worth evaluating before rolling your own agent-fleet management logic.",
+    "source": "TLDR AI",
+    "date": "2026-06-26",
+    "url": "https://github.com/stablyai/orca"
+  }
+]
