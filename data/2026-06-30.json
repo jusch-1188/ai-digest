@@ -1,0 +1,190 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Launches GPT-5.6 Preview: Sol, Terra, and Luna",
+    "summary": "OpenAI introduced GPT-5.6 Preview, a three-tier family of models: Sol (flagship), Terra (balanced, 2x cheaper than GPT-5.5), and Luna (fast/affordable). Sol Ultra achieves 91.9% on Terminal-Bench 2.1, surpassing Claude Mythos 5, and uses parallel subagents for complex multi-step tasks. The release is currently limited to ~20 trusted partner organizations pending broader rollout, with government notification required customer by customer.",
+    "foryou": "Sol Ultra's parallel subagent execution is directly relevant to your agentic pipelines — it's the first OpenAI model built around multi-agent decomposition as a first-class feature, not a bolted-on afterthought.",
+    "specs": [
+      {
+        "label": "Sol pricing (input/output)",
+        "value": "$5 / $30 per 1M tokens"
+      },
+      {
+        "label": "Terra pricing (input/output)",
+        "value": "$2.50 / $15 per 1M tokens"
+      },
+      {
+        "label": "Luna pricing (input/output)",
+        "value": "$1 / $6 per 1M tokens"
+      },
+      {
+        "label": "Terminal-Bench 2.1 (Sol Ultra)",
+        "value": "91.9%"
+      },
+      {
+        "label": "Availability",
+        "value": "Limited preview (~20 orgs); GA in coming weeks"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+  },
+  {
+    "section": "models",
+    "headline": "Grok 4.5 Enters Private Beta at SpaceX and Tesla",
+    "summary": "xAI's Grok 4.5, built on a 1.5-trillion-parameter V9 foundation model, entered private beta testing at SpaceX and Tesla. The model was trained with Cursor developer workflow data and early internal evaluations are reportedly near or above Claude Opus. No third-party benchmark access has been granted. xAI also disclosed plans to release entirely new foundation models every month through end of 2026.",
+    "foryou": "The monthly release cadence from xAI raises real pressure to continuously evaluate new models in your pipelines; the Cursor training data means Grok 4.5 may punch above its weight specifically on agentic coding tasks.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "1.5T (V9 foundation model)"
+      },
+      {
+        "label": "Training data addition",
+        "value": "Cursor developer workflow data"
+      },
+      {
+        "label": "Self-reported benchmark",
+        "value": "Near or above Claude Opus"
+      },
+      {
+        "label": "Availability",
+        "value": "Private beta (SpaceX, Tesla only)"
+      },
+      {
+        "label": "Release cadence",
+        "value": "New foundation models monthly through end of 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://cryptobriefing.com/grok-4-5-private-beta-spacex-tesla/"
+  },
+  {
+    "section": "models",
+    "headline": "Google Accelerates Gemini Nano on Pixel with Frozen Multi-Token Prediction",
+    "summary": "Google published research on retrofitting Multi-Token Prediction (MTP) onto frozen Gemini Nano v3 models for mobile deployment without retraining. The new architecture decouples inference efficiency gains from the original training weights, enabling meaningful speedups on Pixel devices under extreme memory and compute constraints. The approach is designed for edge environments where full fine-tuning is not feasible.",
+    "foryou": "If you ever need to deploy smaller Claude or Gemini variants at the edge, this frozen MTP retrofit pattern is worth studying — it suggests you can get multi-token inference gains without expensive retraining cycles.",
+    "specs": [
+      {
+        "label": "Base model",
+        "value": "Gemini Nano v3 (frozen weights)"
+      },
+      {
+        "label": "Technique",
+        "value": "Frozen Multi-Token Prediction (MTP) retrofit"
+      },
+      {
+        "label": "Target platform",
+        "value": "Pixel mobile devices"
+      },
+      {
+        "label": "Retraining required",
+        "value": "No"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://research.google/blog/accelerating-gemini-nano-models-on-pixel-with-frozen-multi-token-prediction/"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen Image Agent: Agentic Text-to-Image Generation with Planning and Memory",
+    "summary": "Alibaba's Qwen team released Qwen-Image-Agent, which improves text-to-image generation by adding planning, reasoning, web search, memory, and user feedback loops to fill in missing context from vague prompts. The paper also introduces IA-Bench, a new benchmark testing agentic image generation across planning, reasoning, search, and memory dimensions.",
+    "foryou": "The IA-Bench taxonomy (planning, reasoning, search, memory) maps directly to how you'd evaluate any agentic pipeline — it's worth borrowing as an evaluation framework for non-image agents too.",
+    "specs": [
+      {
+        "label": "Capabilities",
+        "value": "Planning, reasoning, search, memory, feedback"
+      },
+      {
+        "label": "New benchmark",
+        "value": "IA-Bench (agentic image generation)"
+      },
+      {
+        "label": "Model family",
+        "value": "Qwen"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://arxiv.org/abs/2606.26907"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Confidentially Files for IPO at ~$965B Valuation",
+    "summary": "Anthropic filed a confidential S-1 with the SEC on June 1, targeting an October 2026 Nasdaq listing. The company's most recent Series H-1 round valued it at approximately $965 billion — above OpenAI's $852 billion March 2026 valuation. Anthropic's revenue run rate reached $47 billion annually. Goldman Sachs, JPMorgan, and Morgan Stanley are leading an offering expected to raise over $60 billion.",
+    "source": "Web",
+    "date": "2026-06-30",
+    "url": "https://fortune.com/2026/06/01/anthropic-confidentially-files-ipo-965-billion-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Caps Meta's Gemini Compute Access, Delaying Internal AI Projects",
+    "summary": "Google informed Meta around March 2026 that it could not fulfill the full Gemini compute capacity Meta had sought to purchase. The shortfall forced Meta to delay internal AI projects across coding, advertising tools, and content moderation, and instructed employees to use AI tokens more efficiently. Google separately agreed to pay SpaceX $920M/month for ~110,000 Nvidia GPUs to bridge its own Gemini Enterprise capacity shortfall.",
+    "source": "TLDR AI (also: CNBC, Forbes)",
+    "date": "2026-06-30",
+    "url": "https://www.cnbc.com/2026/06/28/google-limits-metas-use-of-its-gemini-ai-models-ft-reports.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Vision Pro Exec Paul Meade Reportedly Joins OpenAI Hardware Team",
+    "summary": "Paul Meade, a key executive behind the Apple Vision Pro, reportedly left Apple to join OpenAI's hardware team. The move signals continued OpenAI investment in physical/hardware product development, following the company's broader push into non-software AI products.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://techcrunch.com/2026/06/27/apple-vision-pro-exec-is-reportedly-leaving-for-openai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Economic Index: AI Now Handles 50%+ of Tasks for Half of Claude Users",
+    "summary": "Anthropic's June 2026 Economic Index surveyed ~9,700 Claude users and found that roughly half report AI can already handle 50% or more of their work tasks, with 4% saying Claude could perform their entire job today. Higher-wage occupations consume up to 2.5x more tokens. Paradoxically, workers whose jobs are more automated by AI report more optimism about their employment prospects, not less. 33% expect junior colleagues have a >60% chance of losing their jobs.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://www.anthropic.com/research/economic-index-june-2026-report"
+  },
+  {
+    "section": "industry",
+    "headline": "Top Google AI Researchers Exodus Continues — Adler, Pritzel, Shazeer, Jumper All Departing",
+    "summary": "A significant wave of senior AI talent is leaving Google: Jonas Adler and Alexander Pritzel (key Gemini contributors) are joining Anthropic; Noam Shazeer (Transformer co-inventor) is joining OpenAI; and John Jumper (DeepMind director, Nobel Prize) is also heading to Anthropic. The departures follow a reported pattern of Google struggling to retain top talent amid rapid scaling by rivals.",
+    "source": "Web",
+    "date": "2026-06-30",
+    "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code Is Shifting the Engineering Bottleneck from Code to Product Judgment",
+    "summary": "A VentureBeat analysis finds that AI coding agents have so dramatically increased raw engineering output that the constraint is no longer writing code — it's deciding what to build. Engineers who combine technical fundamentals with product thinking, customer insight, and code review skills are becoming disproportionately valuable. Companies that deployed Claude Code report 3x effective engineering output per head, creating a new demand for 'product-technical' hybrids.",
+    "foryou": "As someone running agentic pipelines, this is a direct signal: your edge is no longer in writing code faster but in designing the right system architecture and evaluation criteria — invest in that judgment layer.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://venturebeat.com/ai/claude-code-turned-every-engineer-into-three-now-companies-need-more-product-thinkers/"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta Research: Reward Models Overreact to Equally Good Responses — Causing RL Reward Hacking",
+    "summary": "Meta published a paper showing reward models can be overly sensitive, assigning meaningfully different scores to responses of equivalent quality, which causes reinforcement learning to optimize toward reward hacking rather than true capability. They propose measuring both discriminative ability and specificity, then using Monte Carlo dropout to cluster rewards into safer discrete signals rather than continuous scores.",
+    "foryou": "If you're tuning any RL loop or using reward models to evaluate agent outputs, this paper is essential — discrete clustered reward signals may substantially reduce reward hacking in your pipelines without requiring new model training.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://arxiv.org/abs/2606.21795"
+  },
+  {
+    "section": "tips",
+    "headline": "Agents as Webs of Beliefs: A New Framework for Agent Architecture",
+    "summary": "A LessWrong paper proposes modeling intelligent agents as interconnected webs of beliefs, where beliefs, goals, and actions emerge from the same underlying structure rather than being treated as separate modules. The framework argues that reasoning, planning, and decision-making arise from maintaining locally consistent belief networks, offering an alternative to the modular planner-executor-memory architectures common in current agent frameworks.",
+    "foryou": "This belief-web framing gives you a principled way to think about agent consistency failures — when your agent contradicts itself mid-task, it's a belief network inconsistency problem, not a prompt engineering problem.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://www.lesswrong.com/posts/M39Z2CvyfaxZdaxR4/agents-as-webs-of-beliefs"
+  },
+  {
+    "section": "tips",
+    "headline": "Scaling Laws Suggest Lean (Formal Math Language) Will Eventually Beat Python for AI-Written Code",
+    "summary": "A 17-minute analysis by Gwern argues that while Lean (the formal proof programming language) has a worse baseline constant than Python on existing codebases, its scaling components are superior — meaning AI-written Lean code improves faster with more compute than Python does. If true, this implies future AI systems will preferentially write formally verifiable code, and large-scale Lean rewrites of critical infrastructure may become economically justified.",
+    "foryou": "Speculative but high-signal: if AI coding agents eventually default to Lean for anything requiring correctness guarantees, building familiarity with formal verification now could be a significant differentiator for agent pipeline reliability.",
+    "source": "TLDR AI",
+    "date": "2026-06-30",
+    "url": "https://gwern.net/lean-scaling"
+  }
+]
