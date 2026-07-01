@@ -1,0 +1,222 @@
+[
+  {
+    "section": "models",
+    "headline": "Cognition's Devin Fusion cuts LLM costs 35% via dynamic model routing while matching frontier performance",
+    "summary": "Devin Fusion is a multi-model harness from Cognition that dynamically routes tasks between frontier and cost-effective models, achieving a 35% expense reduction on the FrontierCode benchmark while maintaining top-tier accuracy. The system uses dual-agent architecture—a main agent plus a 'sidekick' that handles routing decisions and avoids costly cache misses. With Fable 5 integration, costs drop by 41%, and the system is designed to compound savings as cheaper capable models enter the market.",
+    "foryou": "Devin Fusion's routing pattern shows the concrete playbook for cutting 35–41% of model costs in agentic pipelines by intelligently delegating subtasks to cheaper models without rewriting your agent logic.",
+    "specs": [
+      {
+        "label": "Cost reduction",
+        "value": "35% on FrontierCode"
+      },
+      {
+        "label": "With Fable 5",
+        "value": "41% cost reduction"
+      },
+      {
+        "label": "Architecture",
+        "value": "Dual-agent (main + sidekick)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://cognition.com/blog/devin-fusion"
+  },
+  {
+    "section": "models",
+    "headline": "Sakana Fugu launches with 93.2 LiveCodeBench, beating Claude Fable 5 as US export ban opened a market vacuum",
+    "summary": "Sakana AI released Fugu on June 22—the day Anthropic's Fable 5 pricing window expired following a US government export control order—as an orchestrator-first model that routes requests to a pool of specialist agents. Fugu Ultra scored 93.2 on LiveCodeBench versus Claude Fable 5's 89.8, with standard Fugu at 92.9. The system is grounded in ICLR 2026 papers on learned model orchestration (TRINITY and Conductor). Pricing starts at $5 per million input tokens.",
+    "foryou": "Fugu Ultra is a credible drop-in for codegen-heavy pipelines disrupted by the Fable 5 ban—competitive benchmark scores at $5/M input tokens with an orchestrator architecture that maps cleanly to multi-step agent workflows.",
+    "specs": [
+      {
+        "label": "LiveCodeBench (Ultra)",
+        "value": "93.2"
+      },
+      {
+        "label": "LiveCodeBench (Standard)",
+        "value": "92.9"
+      },
+      {
+        "label": "vs. Claude Fable 5",
+        "value": "89.8"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$5 / 1M tokens"
+      },
+      {
+        "label": "Architecture",
+        "value": "Orchestrator + specialist agent pool"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://sakana.ai/fugu/"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek open-sources DSpark, speeding up LLM inference by up to 85% via speculative decoding",
+    "summary": "DSpark is an open-source inference acceleration framework from DeepSeek that runs a lightweight scout model ahead of the main LLM to speculatively predict likely output tokens. The main model then verifies rather than generating from scratch, yielding up to 85% faster responses without altering model outputs. When speculation quality is weak, DSpark skips verification cycles to avoid overhead. The technique requires no retraining and applies to any existing model.",
+    "foryou": "Plug DSpark into your inference layer for up to 85% lower generation latency—compounding gains matter especially in multi-step agentic loops where you're waiting on sequential model calls.",
+    "specs": [
+      {
+        "label": "Speed improvement",
+        "value": "Up to 85%"
+      },
+      {
+        "label": "Approach",
+        "value": "Speculative decoding"
+      },
+      {
+        "label": "Retraining required",
+        "value": "No"
+      },
+      {
+        "label": "License",
+        "value": "Open source"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://venturebeat.com/orchestration/deepseek-open-sources-dspark-a-new-framework-to-speed-up-llm-inference-by-up-to-85"
+  },
+  {
+    "section": "models",
+    "headline": "Google makes Gemini's personalized AI image generation free for all eligible US users",
+    "summary": "Google has opened its Nano Banana-powered personalized image generation feature to all eligible US Gemini users at no cost. The model generates images based on each user's inferred visual preferences—learned from connected apps via the opt-in Personal Intelligence profile—without requiring explicit style prompting. Google also announced upcoming features: a Daily Brief, revamped interface, Gemini Omni video model access, and a personal AI agent called Gemini Spark.",
+    "foryou": "Watch the Personal Intelligence API closely—if Google opens preference-aware image generation to developers, it could eliminate the prompt engineering overhead currently required for personalized image workflows in production.",
+    "specs": [
+      {
+        "label": "Engine",
+        "value": "Nano Banana"
+      },
+      {
+        "label": "Availability",
+        "value": "Free, eligible US users"
+      },
+      {
+        "label": "Personalization",
+        "value": "Opt-in Personal Intelligence profile"
+      },
+      {
+        "label": "Upcoming",
+        "value": "Daily Brief, Gemini Omni, Gemini Spark"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/"
+  },
+  {
+    "section": "models",
+    "headline": "AllenAI's DiScoFormer estimates probability density and score in a single pass, outperforming KDE by 37x",
+    "summary": "DiScoFormer is a cross-attention transformer from AllenAI that jointly estimates probability density and score functions from any dataset without retraining per distribution. It outperforms classical kernel density estimation (KDE) by 37x on density error and 6.5x on score error in 100-dimensional spaces, adapting to new distributions on the fly via cross-attention. The approach benefits generative modeling, Bayesian inference, and uncertainty quantification downstream tasks.",
+    "foryou": "If you're building agents that need probabilistic reasoning or uncertainty estimates over high-dimensional data, DiScoFormer's single-pass adaptation removes the expensive per-dataset retraining step that makes KDE-based approaches impractical at agent scale.",
+    "specs": [
+      {
+        "label": "Density error vs KDE",
+        "value": "37x reduction (100-dim)"
+      },
+      {
+        "label": "Score error vs KDE",
+        "value": "6.5x reduction"
+      },
+      {
+        "label": "Architecture",
+        "value": "Cross-attention transformer"
+      },
+      {
+        "label": "Publisher",
+        "value": "AllenAI / HuggingFace"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://huggingface.co/blog/allenai/discoformer"
+  },
+  {
+    "section": "industry",
+    "headline": "US government bans Anthropic's Fable 5 and Mythos 5, forcing the first government-ordered takedown of frontier AI models",
+    "summary": "On June 12, the US government issued an export control directive requiring Anthropic to suspend all access to Claude Fable 5 and Mythos 5 by any foreign national—including Anthropic's own employees—just three days after the models launched. Because selective compliance was impossible, Anthropic pulled both models globally. The stated trigger was a discovered jailbreak method; Anthropic publicly disputed the proportionality, arguing the standard would effectively halt all frontier model deployments industry-wide. Access to all other Anthropic models was unaffected.",
+    "source": "Anthropic / TechCrunch",
+    "date": "2026-07-01",
+    "url": "https://www.anthropic.com/news/fable-mythos-access"
+  },
+  {
+    "section": "industry",
+    "headline": "Transformer co-inventor Noam Shazeer leaves Google DeepMind for OpenAI in landmark talent defection",
+    "summary": "Noam Shazeer, VP of Engineering at Google DeepMind and co-lead of Gemini, announced on June 18 he is joining OpenAI—less than two years after Google paid $2.7 billion to license Character.AI's technology and bring him back to DeepMind. Shazeer co-authored the foundational 'Attention Is All You Need' paper. His departure, alongside another senior DeepMind researcher defecting to Anthropic within 48 hours, has raised questions about Google DeepMind's ability to retain top talent and maintain its position in the AI race.",
+    "source": "CNBC",
+    "date": "2026-07-01",
+    "url": "https://www.cnbc.com/2026/06/18/google-gemini-co-lead-noam-shazeer-leaves-for-openai.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Cloud adds SandboxAQ's large quantitative models for drug discovery and materials science",
+    "summary": "Google Cloud is partnering with SandboxAQ to offer its large quantitative models (LQMs)—trained on scientific equations and laboratory data rather than natural language—to enterprise and research customers. The models target drug discovery, materials science, and semiconductor manufacturing. Researchers can combine LQMs with Gemini, using the language model for reasoning and interface while the quantitative model handles the underlying science.",
+    "source": "The Next Web",
+    "date": "2026-07-01",
+    "url": "https://thenextweb.com/news/google-cloud-science-ai-models-sandboxaq"
+  },
+  {
+    "section": "industry",
+    "headline": "Salesforce promotes Anthropic's Claude Tag inside Slack despite competing directly with its own Agentforce platform",
+    "summary": "Salesforce helped launch Claude Tag—an Anthropic-powered AI assistant embedded natively in Slack—creating internal confusion since Slack already has its own Slackbot and Agentforce platform, which itself runs on Claude. Salesforce expects to spend $300 million on Anthropic tokens this year and holds a roughly 1% stake in Anthropic, giving it strong financial incentive to support Claude despite the tension with its own AI product strategy.",
+    "source": "The Next Web",
+    "date": "2026-07-01",
+    "url": "https://thenextweb.com/news/salesforce-employees-anthropic-claude-tag-slack-tension"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor launches iOS app in public beta for remote agent management and on-the-go PR merges",
+    "summary": "Cursor for iOS is now in public beta, letting developers launch, monitor, and control cloud or local coding agents from their iPhone. Live Activities deliver real-time status updates without opening the app. Designed use cases include handling production incidents, resolving customer issues, and merging pull requests remotely. The app integrates with Cursor's existing cloud agent infrastructure.",
+    "foryou": "If you run long-running agentic coding pipelines, Cursor iOS gives you a lightweight control plane in your pocket—start jobs, check progress, and approve PRs without being at your desk.",
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://cursor.com/blog/ios-mobile-app"
+  },
+  {
+    "section": "tips",
+    "headline": "Mistral Workflows brings Temporal-powered durable orchestration to production multi-agent AI pipelines",
+    "summary": "Mistral Workflows is a Python-native orchestration layer built on Temporal's durable execution engine, designed for fault-tolerant, long-running multi-agent AI processes. Developers define workflows combining models, agents, and external connectors, with built-in retries, human-in-the-loop approval checkpoints, and observability. The platform is already running millions of daily executions at enterprises including ASML, CMA-CGM, and La Banque Postale, and workflows can be triggered via Mistral's Le Chat interface.",
+    "foryou": "Mistral Workflows is worth evaluating as an alternative to rolling your own Temporal setup for agentic pipelines—you get retry logic, approval checkpoints, and monitoring without building that infrastructure from scratch.",
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://mistral.ai/news/workflows/"
+  },
+  {
+    "section": "tips",
+    "headline": "Why RL's next frontier is everything that can't be graded automatically",
+    "summary": "Reinforcement learning has delivered clear gains wherever outcomes are objectively verifiable—math, code, formal logic. This analysis argues the next breakthrough requires extending RL to tasks where reward signals are ambiguous or expensive to compute: creative writing, long-horizon reasoning, and open-ended agent behavior. It surveys current approaches including process reward models, constitutional AI, and preference learning, and maps the companies actively working to crack non-verifiable reward.",
+    "foryou": "If you're fine-tuning or evaluating agents on subjective tasks—judgment calls, nuanced planning, multi-step reasoning without a clear right answer—this piece is a practical map of the techniques and their current limitations.",
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://www.tanayj.com/p/rl-beyond-the-verifiable"
+  },
+  {
+    "section": "tips",
+    "headline": "The Economy of Tokens: how AI's disaggregation into modular inference layers is reshaping costs and competition",
+    "summary": "AI is transitioning from closed, vertically-integrated model stacks to a modular ecosystem built on standardized interfaces—Transformer architecture, inference APIs, open weights. Open-source models are now within 0.3 percentage points of proprietary systems on key benchmarks and account for roughly one-third of all inference volume. The essay analyzes per-token billing as the standard unit of AI economic value and maps cost crossover points between SaaS-embedded, API-consumed, and self-hosted deployment models.",
+    "foryou": "Understanding the SaaS vs. API vs. self-hosted crossover points can meaningfully cut your per-workflow cost as volume scales—this is the framework for making that calculation correctly rather than guessing.",
+    "source": "TLDR AI",
+    "date": "2026-07-01"
+  },
+  {
+    "section": "tips",
+    "headline": "RoadmapBench: a new benchmark testing agents on long-horizon, multi-file coding grounded in real version upgrades",
+    "summary": "RoadmapBench evaluates coding agents on 115 long-horizon software development tasks derived from actual version upgrade changelogs across 17 repositories, spanning multiple languages. The median task requires modifying 3,700 lines across 51 files—far beyond what single-file coding evals test. The benchmark specifically tests whether agents can implement new functionality while navigating complex cross-file and cross-language dependencies without breaking existing behavior.",
+    "foryou": "RoadmapBench is the right eval to run when stress-testing a coding agent against production-realistic multi-file repos—single-file benchmarks like HumanEval don't predict the failures you'll see here.",
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://arxiv.org/abs/2605.15846"
+  },
+  {
+    "section": "tips",
+    "headline": "A complete trace of CUDA kernel execution—from source code to warps and back—with intuition for LLM inference",
+    "summary": "This 35-minute technical walkthrough traces a CUDA kernel from high-level source through PTX compilation, SASS machine code, SM scheduling, warp execution, and memory hierarchy, back to the final output. It builds hands-on intuition for warp divergence, memory coalescing, occupancy, and latency hiding—the hardware fundamentals that explain why LLM inference performance is bounded at the GPU level.",
+    "foryou": "Knowing this execution path directly explains the design decisions behind quantization, batching, and KV cache sizing—essential context for evaluating GPU serving providers or understanding why your inference throughput plateaus.",
+    "source": "TLDR AI",
+    "date": "2026-07-01",
+    "url": "https://fergusfinn.com/blog/what-happens-when-you-run-a-gpu-kernel/"
+  }
+]
