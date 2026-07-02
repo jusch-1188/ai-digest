@@ -9,7 +9,10 @@
 <meta name="theme-color" content="#2563eb">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<link rel="stylesheet" href="/app.9700d1be.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/app.df23033e.css">
 </head>
 <body>
 
@@ -17,19 +20,27 @@
 <header>
   <div class="header-inner">
     <a class="logo" href="#">
-      <i class="ti ti-brain logo-icon"></i>
-      <span>AI Digest</span>
+      <span class="logo-mark">AI</span>
+      <span class="logo-word">AI Digest</span>
     </a>
-    <div class="header-search">
+    <div class="header-search" id="headerSearch">
       <i class="ti ti-search"></i>
       <input type="search" id="searchInput" placeholder="Search headlines, summaries…" autocomplete="off">
     </div>
-    <button class="filter-toggle" id="filterToggle" aria-label="Open filters">
-      <i class="ti ti-adjustments-horizontal"></i>
-      <span class="filter-badge hidden" id="filterBadge"></span>
+    <button class="mobile-search-btn" id="mobileSearchBtn" aria-label="Search">
+      <i class="ti ti-search"></i>
     </button>
+    <div class="header-guest">Signed in as guest</div>
   </div>
 </header>
+
+<!-- ═══════ MOBILE SECTION CHIPS ═══════ -->
+<div class="mobile-section-chips" id="mobileChips" role="group" aria-label="Filter by section">
+  <button class="chip active sec-all" data-section="all">All</button>
+  <button class="chip sec-models" data-section="models">Models</button>
+  <button class="chip sec-industry" data-section="industry">Industry</button>
+  <button class="chip sec-tips" data-section="tips">Tips</button>
+</div>
 
 <!-- ═══════ LAYOUT ═══════ -->
 <div class="layout">
@@ -50,32 +61,22 @@
       <div class="filter-section">
         <div class="filter-label">Time</div>
         <div class="filter-group period" role="group" aria-label="Filter by time">
-          <button class="pill active" data-period="all">All time</button>
+          <button class="pill" data-period="all">All time</button>
           <button class="pill" data-period="this-month">This Month</button>
           <button class="pill" data-period="last-week">Last Week</button>
           <button class="pill" data-period="this-week">This Week</button>
           <button class="pill" data-period="today">Today</button>
         </div>
-        <!-- Date nav — shown only when period = today -->
-        <nav class="date-nav hidden" id="dateNav">
-          <button class="date-btn" id="prevDay" title="Previous day" aria-label="Previous day">
-            <i class="ti ti-chevron-left"></i>
-          </button>
-          <span class="date-label" id="dateLabel" title="Jump to today"></span>
-          <button class="date-btn" id="nextDay" title="Next day" aria-label="Next day">
-            <i class="ti ti-chevron-right"></i>
-          </button>
-        </nav>
       </div>
 
-      <!-- SECTION -->
-      <div class="filter-section">
+      <!-- SECTION (hidden on mobile — replaced by the chip row above) -->
+      <div class="filter-section" id="sectionFilterGroup">
         <div class="filter-label">Section</div>
         <div class="filter-group section-group" role="group" aria-label="Filter by section">
-          <button class="pill active sec-all"  data-section="all">All</button>
-          <button class="pill sec-models"      data-section="models">Models</button>
-          <button class="pill sec-industry"    data-section="industry">Industry</button>
-          <button class="pill sec-tips"        data-section="tips">Tips</button>
+          <button class="pill active sec-all" data-section="all"><span>All</span><span class="pill-count" id="cnt-all"></span></button>
+          <button class="pill sec-models" data-section="models"><span>Models</span><span class="pill-count" id="cnt-models"></span></button>
+          <button class="pill sec-industry" data-section="industry"><span>Industry</span><span class="pill-count" id="cnt-industry"></span></button>
+          <button class="pill sec-tips" data-section="tips"><span>Tips</span><span class="pill-count" id="cnt-tips"></span></button>
         </div>
       </div>
 
@@ -97,9 +98,9 @@
 
       <!-- READ STATE -->
       <div class="filter-section read-footer">
-        <button class="clear-read-btn" id="clearReadBtn" title="Clear read history">
-          <i class="ti ti-checks"></i>
+        <button class="read-pill" id="clearReadBtn" title="Clear read history">
           <span id="readCountLabel">0 read</span>
+          <span class="clear-label">Clear</span>
         </button>
       </div>
 
@@ -111,12 +112,31 @@
 
   <!-- ── Main content ── -->
   <div class="main-content">
-    <div class="result-bar" id="resultBar"></div>
+    <div class="date-row">
+      <div class="date-row-left">
+        <button class="date-btn" id="prevDay" title="Previous day" aria-label="Previous day">
+          <i class="ti ti-chevron-left"></i>
+        </button>
+        <span class="date-heading" id="dateLabel" title="Jump to today"></span>
+        <span class="date-count" id="dateCount"></span>
+        <button class="date-btn" id="nextDay" title="Next day" aria-label="Next day">
+          <i class="ti ti-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
     <main id="cardGrid" aria-live="polite"></main>
   </div>
 
 </div><!-- .layout -->
 
-<script src="/app.687c9a68.js"></script>
+<!-- ═══════ MOBILE FLOATING FILTER BUTTON ═══════ -->
+<button class="mobile-fab" id="mobileFab" aria-label="Open filters">
+  <i class="ti ti-adjustments-horizontal"></i>
+  <span class="fab-badge hidden" id="fabBadge"></span>
+</button>
+
+<script src="/app.042cc4b0.js"></script>
 </body>
 </html>
