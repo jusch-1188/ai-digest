@@ -1,0 +1,209 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Sonnet 5 Released as New Default Model",
+    "summary": "Anthropic launched Claude Sonnet 5, a lower-cost mid-tier model with stronger agentic performance in planning, tool use, coding, and knowledge work. Benchmarks show it approaching Opus 4.8: 63.2% on SWE-bench coding vs. Opus 4.8's 69.2%, and 81.2% on OSWorld computer use. It becomes the default model for Free and Pro plans with a 1M token context window, 128K output limit, and introductory pricing of $2/$10 per million tokens (input/output) through August 31.",
+    "foryou": "At $2/1M input during the promo window and near-Opus coding scores, Sonnet 5 is the new default for agentic pipeline builds — run it against your harness before defaulting to Opus 4.8.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$2/1M until Aug 31, then $3/1M"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$10/1M until Aug 31, then $15/1M"
+      },
+      {
+        "label": "SWE-bench coding",
+        "value": "63.2% (vs. Opus 4.8: 69.2%)"
+      },
+      {
+        "label": "OSWorld (computer use)",
+        "value": "81.2% (vs. Opus 4.8: 83.4%)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5"
+  },
+  {
+    "section": "models",
+    "headline": "Google Launches Nano Banana 2 Lite Image Model and Gemini Omni Flash for Video",
+    "summary": "Google released Nano Banana 2 Lite (formally Gemini 3.1 Flash Lite), its fastest and most cost-efficient image generation model, capable of generating images in ~4 seconds at $0.034 per 1,000 images. Alongside it, Gemini Omni Flash entered public preview for video generation and conversational video editing. Both models are available through Google AI Studio, the Gemini API, and are rolling out to Search, the Gemini app, NotebookLM, Google Photos, and Google Ads.",
+    "foryou": "At $0.034 per 1K images and 4-second generation times, Nano Banana 2 Lite is the new benchmark for high-volume image generation pipelines — compare it against Flux Schnell for your throughput requirements.",
+    "specs": [
+      {
+        "label": "Image gen cost",
+        "value": "$0.034 / 1,000 images"
+      },
+      {
+        "label": "Generation time",
+        "value": "~4 seconds"
+      },
+      {
+        "label": "Availability",
+        "value": "AI Studio, Gemini API, public preview"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni-flash-nano-banana-2-lite/"
+  },
+  {
+    "section": "models",
+    "headline": "Meituan Open-Sources LongCat-2.0: 1.6T Parameter Agentic Coding Model",
+    "summary": "Meituan launched LongCat-2.0, a 1.6 trillion-parameter MoE model trained entirely on Chinese domestic chips — the first trillion-parameter model to complete full training on a 50,000-card domestic cluster. It activates ~48B parameters per token, supports a 1M-token context window, and was previously deployed as 'Owl Alpha' on OpenRouter where it ranked top 3 by daily call volume. SWE-bench Pro score is 59.5%, slightly ahead of GPT-5.5's 58.6%. Released under MIT license.",
+    "foryou": "MIT-licensed, top-3 OpenRouter model by volume, with 1M context and near-frontier SWE-bench scores — add it to your agent evaluation suite as a fully open alternative to closed frontier models.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "1.6T total, ~48B active/token"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "SWE-bench Pro",
+        "value": "59.5% (GPT-5.5: 58.6%)"
+      },
+      {
+        "label": "Terminal-Bench",
+        "value": "70.8%"
+      },
+      {
+        "label": "Training compute",
+        "value": "50K domestic Chinese chips, no Nvidia/AMD"
+      },
+      {
+        "label": "License",
+        "value": "MIT (open source)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://venturebeat.com/technology/meituan-open-sources-longcat-2-0-the-1-6t-near-frontier-agentic-coding-model-thats-been-leading-openrouter-trained-entirely-on-chinese-chips"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Launches Claude Science: AI Workbench for Scientists",
+    "summary": "Anthropic released Claude Science in beta, a desktop app for macOS and Linux integrating 60+ pre-configured scientific tools and connectors for genomics, single-cell biology, proteomics, structural biology, and cheminformatics. A coordinating agent can spawn specialist sub-agents and natively renders 3D protein structures, genome browser tracks, and chemical structures. Available to Pro, Max, Team, and Enterprise users; Anthropic is offering up to $30K in compute credits for select research projects through July 15.",
+    "foryou": "The coordinator-spawns-specialist-agents architecture (with 60+ domain-specific connectors) is a direct blueprint for building vertical agentic products — worth dissecting the design even outside bioscience.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://www.anthropic.com/news/claude-science-ai-workbench"
+  },
+  {
+    "section": "industry",
+    "headline": "U.S. Lifts Export Controls on Claude Fable 5 and Mythos 5 After 19-Day Shutdown",
+    "summary": "The Department of Commerce lifted the export ban on Anthropic's two most powerful models, Fable 5 and Mythos 5, which had been offline since June 12 after a reported jailbreak triggered a national security directive. Global access to Fable 5 resumes July 2; Mythos 5 access for select U.S. organizations was restored June 26. Anthropic pledged deeper government collaboration including early model access and dedicated staff working alongside government evaluators.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-07-02",
+    "url": "https://www.cnbc.com/2026/06/30/anthropic-says-trump-admin-has-lifted-export-controls-on-claude-fable-5-and-mythos-5.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Building 'Meta Compute' Cloud Business to Sell Excess AI Capacity",
+    "summary": "Meta is developing a two-track cloud business to sell excess AI compute capacity and hosted model APIs to competitors, internally called 'Meta Compute.' Led by infrastructure chief Santosh Janardhan and Meta Superintelligence Labs head Daniel Gross, the plan offers both raw compute (competing with CoreWeave-style neoclouds) and model API access (competing with AWS Bedrock). Meta's stock jumped ~10% on the news. No pricing or timeline has been confirmed.",
+    "source": "Semafor (also: TechCrunch)",
+    "date": "2026-07-02",
+    "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/"
+  },
+  {
+    "section": "industry",
+    "headline": "Etched Hits $5B Valuation with $1B in AI Inference Chip Contracts",
+    "summary": "Nvidia rival Etched secured a $5B post-money valuation after a $500M funding round led by Stripes (with participation from Peter Thiel and Ribbit Capital), backed by $1B in forward contracts for its 'Sohu' inference ASICs. Sohu is engineered solely for transformer inference — not training — claiming superior speed and power efficiency vs. general-purpose GPUs. First rack shipments are expected in summer 2026.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
+  },
+  {
+    "section": "industry",
+    "headline": "California Signs Half-Price Anthropic Deal for All State Agencies, Launches AI Job Tracker",
+    "summary": "Governor Newsom announced California state and local government workers will get Claude access at a 50% discount with free workforce training and embedded Anthropic engineers. Simultaneously, California launched the first state-level AI job-loss tracker to monitor displacement. The dual move mirrors a growing political pattern: officials adopting AI tools while managing voter anxiety about job losses.",
+    "source": "Semafor (also: TechCrunch)",
+    "date": "2026-07-02",
+    "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Starts Internal AI Drug Discovery Program for Neglected Diseases",
+    "summary": "Anthropic launched an internal drug discovery program using AI to develop tools targeting neglected diseases that traditional biopharma ignores. The effort is tied to the Claude Science launch and puts Anthropic alongside Google DeepMind (AlphaFold), Microsoft, and Nvidia in applying frontier AI to biomedical R&D.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon's Emissions Surge for Second Year Running as AI Data Centers Drive Carbon Spike",
+    "summary": "Amazon's global greenhouse gas emissions rose from 69.5M metric tons in 2024 to over 80M in 2025, with carbon intensity climbing to 113g per dollar of revenue — its first operational efficiency reversal since tracking began in 2019. The driver is AI data center expansion. Amazon still targets carbon neutrality by 2040 but its sustainability head conceded the path 'won't be linear.'",
+    "source": "Semafor",
+    "date": "2026-07-02"
+  },
+  {
+    "section": "industry",
+    "headline": "Europe Has One Frontier AI Firm and Should Build Anyway, Analysis Argues",
+    "summary": "A Semafor analysis from a 'Europe 2031' research project found Europe has just one near-frontier AI company (Mistral) and a fraction of US compute investment. The author flags a contradiction in industry rhetoric: leading AI developers cite existential risk as marketing while continuing to build. The conclusion is that genuine safety concern shouldn't prevent Europe from developing a sovereign AI industry.",
+    "source": "Semafor",
+    "date": "2026-07-02"
+  },
+  {
+    "section": "industry",
+    "headline": "Apptronik Opens 'Robot Park': Two-Football-Field Humanoid Training Warehouse",
+    "summary": "Humanoid maker Apptronik opened 'Robot Park' in Austin — a factory-scale warehouse where hundreds of humanoids simultaneously practice manufacturing tasks like packaging, sorting, and shelf movement. The facility is ~20x larger than the company's previous testing site and is designed to amass real-world training data at scale for manufacturing customers.",
+    "source": "Semafor",
+    "date": "2026-07-02"
+  },
+  {
+    "section": "tips",
+    "headline": "Miles: PyTorch-Native Framework for Large-Scale LLM RL Post-Training",
+    "summary": "PyTorch released Miles, an open-source framework for frontier-scale LLM reinforcement learning post-training. The core trainer is composable and kept deliberately small so research teams can customize it while still supporting the scale required for frontier RL runs. Designed to make large-scale RLHF/RLAIF easier to build, reproduce, and operate.",
+    "foryou": "If you're running RLHF or RLAIF on custom models for your pipelines, Miles is now the PyTorch-native reference stack — worth replacing ad-hoc RL training glue with it.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://pytorch.org/blog/miles-a-pytorch-native-stack-for-large-scale-llm-rl-post-training/"
+  },
+  {
+    "section": "tips",
+    "headline": "Pipeline Decoding: Eliminating GPU Idle Time Between Token Generations",
+    "summary": "Moondream's engineering blog explains 'GPU bubbles' — idle GPU cycles that occur while waiting for the CPU between token generations — and introduces 'pipeline decoding,' which starts GPU work on the next token while the CPU finishes the current one. The technique eliminates GPU idle time and meaningfully improves throughput without model changes.",
+    "foryou": "If you self-host or run local inference and care about throughput, pipeline decoding is a low-effort optimization applicable to any transformer model — no architecture changes required.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://moondream.ai/blog/popping-the-gpu-bubble"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code Fingerprints Custom API Routers — What Builders Using Proxies Should Know",
+    "summary": "A technical blog post documents how Claude Code embeds routing metadata in model context using punctuation patterns to detect unofficial API routing, in a way the author describes as 'almost crossing the line into spyware.' Builders using custom Claude API proxies or routers — for cost savings, load balancing, or model switching — should assume their routing topology is visible to the model.",
+    "foryou": "If you're running a custom Claude API proxy or unofficial router, this fingerprinting mechanism changes your privacy assumptions — audit your architecture before assuming any opacity.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://www.vincentschmalbach.com/claude-code-china-router-fingerprint/"
+  },
+  {
+    "section": "tips",
+    "headline": "Prover-Verifier Multi-Agent Workflow Solves Open Mathematics Problems",
+    "summary": "OpenAI researchers used a cross-provider prover-verifier architecture — GPT-5.5 Pro as the solver and Claude Opus 4.7 as the independent verifier — to tackle open problems across multiple mathematical domains. The system resolved a set of previously unsolved questions with surprisingly strong results, showing that adversarial cross-model checking outperforms single-model approaches on hard reasoning tasks.",
+    "foryou": "The cross-provider solver-verifier pattern (one model proposes, a different model challenges) is a directly applicable template for any agentic pipeline that needs robust verification of complex reasoning outputs.",
+    "source": "TLDR AI",
+    "date": "2026-07-02"
+  },
+  {
+    "section": "tips",
+    "headline": "Thinking Machines Builds AI Designed for Continuous Human Collaboration Mid-Task",
+    "summary": "Thinking Machines is an AI lab whose models treat interactivity as a first-class property — rather than running autonomously to completion, models are designed to clarify, request feedback, and redirect mid-task. Their research argues that real-world work benefits from continuous human-AI collaboration rather than set-and-forget agentic loops. A limited research preview is coming soon.",
+    "foryou": "If your agentic pipelines suffer from long runs that diverge from intent, the mid-task human-in-the-loop paradigm Thinking Machines is formalizing is the architectural counter-argument worth prototyping.",
+    "source": "TLDR AI",
+    "date": "2026-07-02",
+    "url": "https://blog.bytebytego.com/p/inside-thinking-machines-interaction"
+  }
+]
