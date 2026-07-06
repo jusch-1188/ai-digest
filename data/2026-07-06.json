@@ -1,0 +1,161 @@
+[
+  {
+    "section": "models",
+    "headline": "Meta Watermelon Claims GPT-5.5 Benchmark Parity",
+    "summary": "Meta's superintelligence chief Alexandr Wang told employees on July 2 that the in-training Watermelon model has matched OpenAI's GPT-5.5 on closely watched benchmarks including MMLU, HumanEval, and coding evals. Watermelon is the successor to Muse Spark (codenamed Avocado) and uses an order of magnitude more compute. No timeline was given and no independent benchmarks have been published — the claim is internal and unverified.",
+    "foryou": "If Meta ships Watermelon open-weight, frontier-tier coding and reasoning capabilities become freely accessible — plan for that distribution shift when choosing your model stack.",
+    "specs": [
+      { "label": "Status", "value": "In training (as of July 2026)" },
+      { "label": "Compute", "value": "~10× more than Muse Spark" },
+      { "label": "Benchmarks", "value": "Internal parity with GPT-5.5 (unverified)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://letsdatascience.com/news/metas-watermelon-matches-gpt-55-benchmarks-76a9460e"
+  },
+  {
+    "section": "models",
+    "headline": "Laguna XS 2.1: Poolside's 33B MoE Coding Model Open-Weights",
+    "summary": "Poolside released Laguna XS 2.1 on July 2, a 33B-parameter Mixture-of-Experts model (3B activated per token) that raises SWE-bench Multilingual by 5.4 points to 63.1%. It ships with a 262K-token context window and is available via OpenRouter, Poolside's API, and for local inference via Ollama, llama.cpp, vLLM, or SGLang. Licensed under OpenMDW-1.1, it enables fully permissive commercial use and redistribution.",
+    "foryou": "At $0.10/$0.20 per 1M in/out tokens and SGLang-compatible, this slots cleanly into agentic coding pipelines as a cost-efficient frontier alternative — worth benchmarking against your current coding agent setup.",
+    "specs": [
+      { "label": "Parameters", "value": "33B total / 3B active (MoE)" },
+      { "label": "SWE-bench Multilingual", "value": "63.1% (+5.4 pts)" },
+      { "label": "Context window", "value": "262K tokens" },
+      { "label": "Cost (input/output)", "value": "$0.10 / $0.20 per 1M tokens" },
+      { "label": "License", "value": "OpenMDW-1.1 (fully permissive)" },
+      { "label": "Local inference", "value": "Ollama, llama.cpp, vLLM, SGLang" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://poolside.ai/blog/introducing-laguna-xs-2-1"
+  },
+  {
+    "section": "models",
+    "headline": "Seed 2.0 Model Card: ByteDance's Frontier Multimodal Stack",
+    "summary": "ByteDance published the Seed 2.0 model card (arXiv 2607.00248), detailing the model family powering Doubao — China's top AI app with 155M weekly active users. The flagship Pro variant scores 98.3 on AIME 2025 and a 3020 Codeforces rating. The family covers long-tail knowledge, complex instruction following, visual understanding, and agentic search, and is evaluated on an evaluation-driven approach built around real-world complexity.",
+    "foryou": "Seed 2.0 Pro's Codeforces 3020 and top-tier multimodal scores mean ByteDance's API is now a credible alternative for reasoning-heavy agentic tasks — especially if cost or China data-residency is relevant.",
+    "specs": [
+      { "label": "AIME 2025", "value": "98.3" },
+      { "label": "Codeforces rating", "value": "3020" },
+      { "label": "VideoMME", "value": "89.5" },
+      { "label": "Variants", "value": "Pro, Lite, Mini, Code" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://arxiv.org/abs/2607.00248"
+  },
+  {
+    "section": "models",
+    "headline": "Grok 4.5 Enters Private Beta at SpaceX and Tesla",
+    "summary": "xAI's Grok 4.5, based on the 1.5-trillion-parameter V9 foundation model, began private beta testing inside SpaceX and Tesla on June 28. The model received supplemental training on Cursor coding data. Early internal evaluations reportedly place it near or above Claude Opus. xAI plans to release completely new models trained from scratch monthly through the end of 2026; no public benchmarks or system card have been released yet.",
+    "foryou": "Monthly scratch-trained model releases from xAI signals an arms-race cadence — monitor Grok's public API availability closely for agentic coding benchmarks once it ships.",
+    "specs": [
+      { "label": "Foundation model", "value": "V9 (1.5T parameters)" },
+      { "label": "Status", "value": "Private beta (SpaceX, Tesla)" },
+      { "label": "Fine-tune data", "value": "Cursor coding sessions" },
+      { "label": "Release cadence", "value": "Monthly new models planned" }
+    ],
+    "source": "Web",
+    "date": "2026-07-06",
+    "url": "https://letsdatascience.com/news/musk-says-grok-45-enters-private-beta-at-spacex-tesla-1840769e"
+  },
+  {
+    "section": "models",
+    "headline": "Residual Context Diffusion Boosts Diffusion LLM Accuracy",
+    "summary": "Apple ML researchers introduced Residual Context Diffusion (RCD), a module that recycles computation from discarded tokens in block-wise diffusion language models. Standard dLLMs use a remasking mechanism that drops low-confidence tokens each decoding step; RCD converts those discarded representations into contextual residuals and injects them back in the next denoising pass. The method consistently improves frontier dLLMs across a wide range of benchmarks with minimal extra compute overhead.",
+    "foryou": "RCD is an architectural technique, not a product — but if dLLMs become viable for production inference, this efficiency gain could make them competitive with autoregressive models for certain agentic tasks.",
+    "specs": [
+      { "label": "Method", "value": "Residual Context Diffusion (RCD)" },
+      { "label": "Overhead", "value": "Minimal extra compute" },
+      { "label": "Applies to", "value": "Block-wise diffusion LLMs" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://machinelearning.apple.com/research/residual-context-diffusion"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic in Talks with Samsung for Custom AI Chip Partnership",
+    "summary": "Anthropic held discussions with Samsung about co-developing a custom AI chip to diversify its compute supply chain beyond Nvidia, Google TPUs, and Amazon Trainium. The company emphasized that chips from Google, Amazon, and Nvidia remain central to its hardware strategy — Samsung talks are exploratory. The move mirrors OpenAI's Jalapeño chip effort and Amazon's continued Trainium buildout.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Proposes 5% U.S. Government Equity Stake",
+    "summary": "OpenAI pitched giving the Trump administration a 5% stake in the company — worth roughly $42.6B at its $852B valuation — modeled on an Alaska Permanent Fund-style investment vehicle. The proposal calls for all major U.S. AI labs to cede equivalent stakes. It's being floated ahead of OpenAI's planned September 2026 IPO and alongside White House talks on voluntary frontier model release standards. Governance scholars have flagged the conflict-of-interest risk of a regulator holding equity in companies it oversees.",
+    "source": "Web",
+    "date": "2026-07-06",
+    "url": "https://www.cnbc.com/2026/07/02/openai-proposes-us-government-own-5percent-stake-to-address-political-blowback.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Unveils Jalapeño: First Custom AI Inference Chip",
+    "summary": "OpenAI and Broadcom unveiled Jalapeño, OpenAI's first custom ASIC — a reticle-sized inference processor developed in nine months. Deployment is slated for late 2026. The chip was designed to reduce inference costs at scale and was developed with assistance from OpenAI's own models. It reflects a broader industry shift: Google, Apple, Amazon, Meta, and xAI are all pushing custom silicon to reduce Nvidia dependency and own their inference cost structure.",
+    "source": "Web",
+    "date": "2026-07-06",
+    "url": "https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Overtakes OpenAI in Revenue; On Track for $47B ARR",
+    "summary": "Anthropic has overtaken OpenAI in self-reported revenue and in May said it was on track to reach $47 billion annualized revenue, with profitability projected for 2029 — a year ahead of OpenAI's own guidance. Claude Sonnet 5 launched July 1 at $2/M input tokens, approaching Opus 4.8 performance, and Fable 5 returned to global availability the same day. Anthropic also launched Claude Science, a research workbench with 60+ preconfigured tools targeting drug discovery and hard scientific problems.",
+    "source": "Web",
+    "date": "2026-07-06",
+    "url": "https://fortune.com/2026/07/02/sam-altman-new-world-order-ai-openai-google-anthropic/"
+  },
+  {
+    "section": "industry",
+    "headline": "UN AI Governance Week: Global Dialogue + ITU Summit Open",
+    "summary": "The UN Global Dialogue on AI Governance runs July 6-7 in Geneva, followed by the ITU AI for Good Global Summit July 7-10 and the UN AI for Good Global Commission's inaugural meeting July 8. These convene alongside active U.S. White House talks on voluntary frontier model release standards — a rare moment of simultaneous multilateral and U.S. unilateral governance momentum.",
+    "source": "Web",
+    "date": "2026-07-06"
+  },
+  {
+    "section": "tips",
+    "headline": "Devin Security Swarm: Agentic MapReduce for Whole-Codebase Vulnerability Scanning",
+    "summary": "Cognition launched Devin Security Swarm on July 1, built on a new Agentic MapReduce architecture. A planner agent writes deterministic selectors for each repo (routing rules, auth boundaries, deserialization sinks); files that match nothing are dropped without any model inference. Matches are batched into bounded shards and fanned out to parallel child agents. On a benchmark of 50 real-world CVEs across 14 languages, it found 36 — more than any AI scanner tested — at 30% lower cost per finding than the next most accurate tool.",
+    "foryou": "The Agentic MapReduce pattern (deterministic filter → parallel bounded agents → reduce) is directly portable to any large-codebase reasoning task — consider it as an architectural template for your own agentic pipelines beyond security.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://cognition.com/blog/introducing-devin-security-swarm"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent-Assisted SGLang Development: SKILL.md Files, Benchmark Contracts, Review Loops",
+    "summary": "The SGLang team published a detailed breakdown of how they use agent workflows in production engineering: repeatable procedures are codified as SKILL.md files (machine-readable task descriptions), benchmark contracts define measurable pass/fail criteria so agents self-evaluate, and review loops give human engineers a structured handoff point. The post frames agent value around procedural knowledge that can be versioned, tested, and audited.",
+    "foryou": "The SKILL.md-as-runbook pattern is directly actionable for your own agentic pipelines — encoding institutional knowledge as structured, executable files makes agent behavior reproducible and auditable.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://www.lmsys.org/blog/2026-07-02-agent-assisted-sglang-development"
+  },
+  {
+    "section": "tips",
+    "headline": "Autoresearch Loop with Claude: When Constrained Optimization Works",
+    "summary": "A researcher ran a multi-week autoresearch project using Claude in a closed loop over a well-constrained optimization problem. Key finding: the auto-research style works best when the metric is robust, measurable, and known upfront — gradient optimization problems with clear success criteria. When the problem requires open-ended exploration or judgment about what to measure, the loop degrades quickly. The post is an honest account of real failure modes alongside wins.",
+    "foryou": "Before spinning up an autoresearch loop, define your optimization target explicitly and verify it's machine-measurable — this is the decisive variable for whether the loop adds value or just burns tokens.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/"
+  },
+  {
+    "section": "tips",
+    "headline": "CursorBench 3.1: Evaluating Agents on Ambiguous Multi-File Tasks",
+    "summary": "Cursor released CursorBench 3.1, a benchmark that evaluates coding agents on ambiguous, multi-file tasks drawn from real Cursor sessions. Unlike synthetic benchmarks with clean problem statements, CursorBench exposes agents to underspecified requests that require clarification, context-gathering, and judgment — reflecting actual developer workflows. The benchmark is designed for apples-to-apples comparison of agents on tasks humans actually delegate.",
+    "foryou": "Run your coding agents against CursorBench 3.1 before committing to a model for agentic coding — synthetic benchmarks consistently overestimate real-world performance on ambiguous tasks.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://cursor.com/evals"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Enterprise Gains Model-Level Entitlements and Spend Alerts",
+    "summary": "Anthropic added richer admin controls to Claude Enterprise: per-model entitlements let admins grant or restrict specific Claude models to specific teams, usage analytics break down consumption by model and user, and spend alerts notify admins when thresholds are crossed. The update is designed to give organizations meaningful cost visibility and governance over Claude usage at scale.",
+    "foryou": "If you're running Claude Enterprise across multiple teams, model-level entitlements let you gate expensive models (Opus) to power users and route lighter work to Haiku — a straightforward way to control costs without restricting access.",
+    "source": "TLDR AI",
+    "date": "2026-07-06",
+    "url": "https://claude.com/blog/giving-admins-more-visibility-and-control-over-claude-usage-and-spend"
+  }
+]
