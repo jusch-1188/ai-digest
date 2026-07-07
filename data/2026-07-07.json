@@ -1,0 +1,293 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Sonnet 5 Is Now the Default for All Free and Pro Users",
+    "summary": "Anthropic released Claude Sonnet 5 on July 1, making it the default model across all Free and Pro Claude plans. It delivers performance close to Opus 4.8 on most tasks at a significantly lower price, with a 1M-token context window and no long-context surcharge. Introductory pricing of $2/$10 per million tokens runs through August 31, 2026, rising to $3/$15 afterward. Benchmark highlights include SWE-Bench Verified 85.2%, Terminal-Bench 2.1 80.4%, and OSWorld-Verified 81.2%.",
+    "foryou": "At $2/$10 with 1M context and SWE-Bench 85.2%, Sonnet 5 is the best cost-performance swap-in for Sonnet 4.6-based agentic pipelines — upgrade now before the August pricing step-up.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Cost (input, promo)",
+        "value": "$2/Mtok through Aug 31"
+      },
+      {
+        "label": "Cost (output, promo)",
+        "value": "$10/Mtok through Aug 31"
+      },
+      {
+        "label": "SWE-Bench Verified",
+        "value": "85.2%"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "80.4%"
+      },
+      {
+        "label": "OSWorld-Verified",
+        "value": "81.2%"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-07-07",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5"
+  },
+  {
+    "section": "models",
+    "headline": "Fable 5 Moves to Metered Usage Credits Starting Today",
+    "summary": "As of July 7, Anthropic ends the included Fable 5 access tier (up to 50% of weekly usage limits on paid plans) and switches to metered usage credits at $10/$50 per million tokens input/output. The existing 90% prompt-cache discount is preserved. Heavy Claude Code and agentic pipeline users who relied on the flat-rate inclusion will see costs increase significantly depending on token volume.",
+    "foryou": "Audit your Fable 5 usage patterns today and decide where to reroute work to Sonnet 5 ($2/$10) or Opus 4.8 ($5/$25) — the pricing cliff is real and hits Claude Code heavy-users hardest.",
+    "specs": [
+      {
+        "label": "Cost (input)",
+        "value": "$10/Mtok"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$50/Mtok"
+      },
+      {
+        "label": "Cache hit discount",
+        "value": "90%"
+      },
+      {
+        "label": "Effective date",
+        "value": "July 7, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-07-07",
+    "url": "https://www.digitalapplied.com/blog/claude-fable-5-usage-credits-july-7-pricing-guide-2026"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Previews GPT-5.6 in Three Tiers: Sol, Terra, and Luna",
+    "summary": "OpenAI shipped GPT-5.6 to roughly 20 trusted partner organizations on June 26 at the US government's request, with broad public access expected mid-July once a White House voluntary standards review completes. The model comes in three tiers: Sol (new SOTA on Terminal-Bench 2.1, up to 750 tokens/sec on Cerebras), Terra (GPT-5.5-level performance at 2x lower cost), and Luna (fastest and cheapest). New features include a reasoning-effort control slider and an 'ultra' mode for complex tasks.",
+    "foryou": "Sol's Terminal-Bench 2.1 leadership makes it the model to benchmark your agentic coding harness against when public access opens — set a reminder for mid-July and run it against your eval suite immediately.",
+    "specs": [
+      {
+        "label": "Tiers",
+        "value": "Sol / Terra / Luna"
+      },
+      {
+        "label": "Sol speed",
+        "value": "Up to 750 tok/s on Cerebras"
+      },
+      {
+        "label": "Status",
+        "value": "Limited preview (~20 partners)"
+      },
+      {
+        "label": "Public access ETA",
+        "value": "Mid-July 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+  },
+  {
+    "section": "models",
+    "headline": "ByteDance Set to Launch Seedance 2.5 with 3-Minute AI Video Output",
+    "summary": "ByteDance is launching Seedance 2.5 on July 9 across Dreamina, CapCut, and partner platforms. The model natively generates 30-second single-segment clips — 2-4x longer than Runway Gen-4.5, Veo 3.1, or Sora 2 — with multi-segment output extending to 3 minutes. It features a unified joint audio-video generation system and supports up to 50 multimodal reference inputs for character, lighting, and motion consistency. No independent benchmark verification exists yet.",
+    "foryou": "The 50-reference-input architecture is the standout feature for product teams — if you're building brand-specific or character-consistent video pipelines, Seedance 2.5 is worth evaluating immediately on July 9.",
+    "specs": [
+      {
+        "label": "Native clip length",
+        "value": "30 seconds"
+      },
+      {
+        "label": "Max output length",
+        "value": "180 seconds (3 min)"
+      },
+      {
+        "label": "Reference inputs",
+        "value": "Up to 50 multimodal"
+      },
+      {
+        "label": "Launch date",
+        "value": "July 9, 2026"
+      },
+      {
+        "label": "Availability",
+        "value": "Dreamina, CapCut, partner platforms"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://www.testingcatalog.com/bytedance-set-to-launch-seedance-2-5-with-3-minute-ai-video-output/"
+  },
+  {
+    "section": "models",
+    "headline": "Z.ai's GLM-5.2 Beats GPT-5.5 on Coding Benchmarks at One-Sixth the Cost",
+    "summary": "Z.ai (formerly Zhipu AI) released GLM-5.2, a 753B open-weights model that outperforms GPT-5.5 on SWE-Bench Pro (62.1 vs 58.6) and MCP-Atlas tool-use (77.0 vs 75.3), nearly matching Claude Opus 4.8 across those evaluations. Priced at ~$1.40/$4.40 per million tokens via OpenRouter — roughly one-sixth of GPT-5.5's $5/$30 — it runs on Huawei silicon and is available on 20+ coding environments. It now ranks above Anthropic's models on OpenRouter and sits fifth on the Artificial Analysis intelligence leaderboard.",
+    "foryou": "GLM-5.2 is now the strongest open-weight candidate for cost-optimized agentic coding — benchmark it against your eval suite and add it to your model routing logic as a primary or fallback option.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "753B"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "SWE-Bench Pro",
+        "value": "62.1 (GPT-5.5: 58.6)"
+      },
+      {
+        "label": "MCP-Atlas",
+        "value": "77.0 (GPT-5.5: 75.3)"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "~$1.40/Mtok"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "~$4.40/Mtok"
+      },
+      {
+        "label": "License",
+        "value": "Open-weights"
+      },
+      {
+        "label": "Hardware",
+        "value": "Huawei silicon"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-07-07",
+    "url": "https://venturebeat.com/technology/z-ais-open-weights-glm-5-2-beats-gpt-5-5-on-multiple-long-horizon-coding-benchmarks-for-1-6th-the-cost"
+  },
+  {
+    "section": "models",
+    "headline": "Mistral Open-Sources Leanstral 1.5: 119B Formal Verification Model for Lean 4",
+    "summary": "Mistral AI released Leanstral 1.5 on July 2, a 119B-parameter MoE model (6.5B active) built for Lean 4 automated theorem proving and code verification. It's Apache 2.0-licensed, free during the Labs beta, and claims 587/672 PutnamBench problems solved and 5 previously unknown GitHub bugs found. Training uses a three-stage pipeline — mid-training, SFT, and RL with CISPO — including a multiturn RL environment where the model submits proofs to a Lean compiler and refines based on feedback.",
+    "foryou": "First free open-weight model worth evaluating for proof-assisted code correctness — if you're building agents that need formal verification or high-assurance code generation, start here.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "119B (6.5B active)"
+      },
+      {
+        "label": "Architecture",
+        "value": "Mixture of Experts"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Price",
+        "value": "$0 (Labs beta)"
+      },
+      {
+        "label": "PutnamBench",
+        "value": "587 / 672 problems"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://docs.mistral.ai/models/model-cards/leanstral-1-5"
+  },
+  {
+    "section": "industry",
+    "headline": "Alibaba Bans Claude Code Over Hidden User-Identification Code",
+    "summary": "Alibaba will prohibit employee use of Claude Code starting July 10, classifying it as high-risk software after developers reverse-engineered it and found hidden code identifying Chinese users via time zones, proxy servers, and AI lab infrastructure fingerprints. Anthropic confirmed the feature — active since March — was designed to combat a large-scale distillation attack: entities linked to Alibaba used ~25,000 fraudulent accounts to run 28.8 million exchanges with Claude models over six weeks. Employees are being redirected to Alibaba's internal Qoder tool.",
+    "source": "TLDR AI (also: TechCrunch, SCMP)",
+    "date": "2026-07-07",
+    "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/"
+  },
+  {
+    "section": "industry",
+    "headline": "Fable 5 Restored to Global Users After US Lifts Export Controls",
+    "summary": "The US Department of Commerce lifted export controls on Claude Fable 5 and Mythos 5 on June 30, reversing restrictions imposed June 12 that had blocked foreign nationals from accessing the models. Access was restored globally on July 1 across Claude.ai, the Claude API, Claude Code, and Cowork. The reversal followed the introduction of new safeguards — including new cybersecurity and biology query routing to Opus 4.8 and updated usage limits.",
+    "source": "Web",
+    "date": "2026-07-07",
+    "url": "https://www.searchenginejournal.com/anthropics-claude-fable-5-is-back-with-new-usage-limits-and-safeguards/581231/"
+  },
+  {
+    "section": "industry",
+    "headline": "California Signs First-of-Its-Kind Deal Giving All State Agencies Access to Claude",
+    "summary": "Governor Gavin Newsom signed a deal with Anthropic providing all California state agencies, cities, and counties access to Claude at a 50% discount, representing the largest government deployment of Claude to date. The agreement marks a significant shift toward institutionalized AI adoption in public services and sets a template other states are expected to follow.",
+    "source": "Web",
+    "date": "2026-07-07"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Cuts 8,000 Jobs and Reassigns 7,000 Employees to AI Teams",
+    "summary": "Meta began implementing layoffs of approximately 8,000 employees — about 10% of its total workforce — as part of a broad AI-focused restructuring. An additional 7,000 employees were reassigned to AI-focused teams. The move consolidates Meta's organizational resources around AI development across its products, infrastructure, and research functions.",
+    "source": "Web",
+    "date": "2026-07-07"
+  },
+  {
+    "section": "industry",
+    "headline": "White House in Advanced Talks to Finalize Voluntary AI Standards for Frontier Model Releases",
+    "summary": "The Financial Times reported on July 2 that the White House is close to finalizing a voluntary standards framework governing frontier model releases, with an announcement expected the week of July 7. The framework will define conditions for broad GPT-5.6 distribution. If adopted, it would be the first formal US government mechanism for coordinating AI safety standards with industry before public model releases.",
+    "source": "Web",
+    "date": "2026-07-07"
+  },
+  {
+    "section": "tips",
+    "headline": "Own the Loop: A Practitioner's Field Guide to Agent Harnesses",
+    "summary": "As coding models commoditize, the real differentiator is the harness — the deterministic control loop that wraps the model and manages tools, permissions, context, and model routing. The guide maps harnesses on two axes: capability (model fit + ecosystem depth) and freedom (vendor portability). Vendor-native harnesses like Claude Code and Codex offer the best performance today; open-source alternatives like OpenCode, OpenHands, Goose, and Pi offer the durable advantage of model-agnostic portability as model quality converges.",
+    "foryou": "The central decision for your pipeline: own a portable harness now and accept slightly lower performance, or ride a vendor harness and plan for migration when models converge — this guide gives you the framework to decide.",
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://arize.com/blog/own-the-loop-field-guide-agent-harnesses/"
+  },
+  {
+    "section": "tips",
+    "headline": "Use Claude to Surface Project Unknowns Before They Become Expensive",
+    "summary": "A practical guide argues that the gap between plan and reality is unknowns — the things you don't know you don't know. When Claude runs an agentic task and hits an unknown, it guesses; more complex tasks compound more unknowns. The recommended practice is an explicit 'unknown discovery' pass at project start using Claude in an exploratory mode, before any real implementation begins, to surface assumptions and ambiguities cheaply.",
+    "foryou": "Add an 'enumerate your unknowns' prompt step at the top of every complex agent task — a 2-minute exploration pass prevents expensive mid-task corrections and improves task completion rates.",
+    "source": "TLDR AI",
+    "date": "2026-07-07"
+  },
+  {
+    "section": "tips",
+    "headline": "Let Fable Use Its Own Judgment Rather Than Dictating Behavior",
+    "summary": "Simon Willison documents that prescriptive instructions to Fable — such as 'always write tests after each function' or 'use model X for smaller tasks' — produce worse outcomes than delegation. Telling Fable to 'use your own judgment when deciding to write tests and when choosing other models for smaller tasks' improves results and simplifies system prompts by removing the overhead of managing model selection and process rules inline.",
+    "foryou": "Strip prescriptive test and model-selection instructions from your Claude Code / Fable system prompts and replace them with judgment delegation — simpler prompts, better outcomes.",
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://simonwillison.net/2026/Jul/3/judgement/"
+  },
+  {
+    "section": "tips",
+    "headline": "A Hardware Guide for Running Frontier-Level LLMs Locally",
+    "summary": "A detailed open-source guide covers hardware selection, Docker configurations, and speech-to-text setup for local LLM inference. At a $2,000 budget you can run Qwen plus capable STT; at $40,000 you can run near-Opus-level models. The guide includes ready-to-run Docker container configs and compares hardware options across price tiers, making it a practical reference for teams evaluating local inference.",
+    "foryou": "If any part of your pipeline could benefit from local inference — for latency, cost, or data-privacy reasons — this is the hardware reference to anchor your build-vs-buy decision.",
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://github.com/jamesob/local-llm"
+  },
+  {
+    "section": "tips",
+    "headline": "How AI Distillation Evolved from Model Compression to a Core Post-Training Technique",
+    "summary": "What started as a model-compression technique in 2006 — training a small 'student' model on outputs from a large 'teacher' model — has become the foundational post-training method behind DeepSeek, Qwen, GLM, and most capable open-weight models. Today it sits at the center of both open model development and ongoing IP disputes over whether training on proprietary model outputs constitutes unauthorized copying. The Alibaba-Anthropic distillation dispute is the most prominent recent example.",
+    "foryou": "Understanding distillation mechanics is now table stakes for teams evaluating open-weight Chinese models — you need to assess what base models' capabilities were distilled in, and what legal or compliance exposure that creates for your use case.",
+    "source": "TLDR AI",
+    "date": "2026-07-07"
+  },
+  {
+    "section": "tips",
+    "headline": "Closing the Verification Loop: How Agents Can Self-Verify Their Own Work",
+    "summary": "Agents have made building cheap, but the cost has shifted to verifying whether things actually work. The 'verification loop' is the distance between a claim an agent makes and its proof. Most teams still close this loop with humans, but agentic systems are starting to outpace human verification bandwidth. The post discusses persona strategies and skill-based approaches — like /ce-dogfood in the Compound Engineering plugin — that give agents 'eyes' to check their own output.",
+    "foryou": "If your agent pipeline doesn't have an automated self-verification step, it's accumulating unverified claims — build a verification skill or persona into your harness to close this loop before scale makes it critical.",
+    "source": "TLDR AI",
+    "date": "2026-07-07",
+    "url": "https://thinkroom.kieranklaassen.com/d/njrS5TJhis"
+  }
+]
