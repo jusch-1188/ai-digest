@@ -1,0 +1,186 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Discovers \"J-Space\": Internal Reasoning Patterns in Claude",
+    "summary": "Anthropic's new research paper introduces 'J-space,' internal neural patterns in Claude that emerge during training without explicit design. J-space enables Claude to internally reason, modulate thoughts, and solve multi-step problems, distinguishing deliberate from automatic processing. Researchers say these patterns enable monitoring of internal thoughts for AI misbehavior and provide new insights into the distinction between deliberate and automatic decisions in AI systems.",
+    "foryou": "J-space gives you a concrete mechanistic handle on how Claude distinguishes reasoning from reflex — directly useful for designing probes and monitoring for misbehavior in long-running agentic pipelines.",
+    "specs": [
+      { "label": "Model", "value": "Claude (all versions)" },
+      { "label": "Type", "value": "Interpretability research" },
+      { "label": "Key finding", "value": "Emergent internal reasoning subspace (J-space)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://www.anthropic.com/research/global-workspace"
+  },
+  {
+    "section": "models",
+    "headline": "Tencent Releases Hy3: 295B Open MoE Model, Free on OpenRouter Until July 21",
+    "summary": "Tencent released Hy3, a 295-billion-parameter Mixture-of-Experts model with 21 billion active parameters and 256K context window, licensed under Apache 2.0. The model outperforms similar-sized models and rivals flagship open-source models with 2-5x more parameters, matching GLM-5.2 at half the size while excelling in most tasks outside coding. It's available on Hugging Face and free on OpenRouter until July 21.",
+    "foryou": "A frontier-class open MoE at zero cost through July 21 is worth benchmarking against your current pipeline model — Apache 2.0 means you can fine-tune and self-host without licensing headaches.",
+    "specs": [
+      { "label": "Total parameters", "value": "295B" },
+      { "label": "Active parameters", "value": "21B" },
+      { "label": "Context window", "value": "256K tokens" },
+      { "label": "License", "value": "Apache 2.0" },
+      { "label": "Cost (OpenRouter)", "value": "Free until July 21" },
+      { "label": "Architecture", "value": "Mixture-of-Experts (MoE)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://venturebeat.com/technology/tencents-apache-licensed-hy3-takes-on-glm-5-2-at-half-the-size-and-wins-everywhere-except-coding"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's GPT-5.6 Family (Sol/Terra/Luna) Gated to ~20 Gov Organizations",
+    "summary": "OpenAI previewed the GPT-5.6 family — Sol, Terra, and Luna — in late June but restricted access to roughly 20 government-vetted partner organizations. Sol writes tighter code than Claude Opus 4.8 at approximately half the per-token cost, but benchmark methodology concerns have been raised. Broad public access is expected mid-to-late July 2026.",
+    "foryou": "Sol's coding advantage at half Fable 5's cost makes it worth evaluating the moment API access opens up — queue up your eval suite now so you can move fast when access drops.",
+    "specs": [
+      { "label": "Models", "value": "Sol, Terra, Luna" },
+      { "label": "Current access", "value": "~20 gov orgs only" },
+      { "label": "Broad access ETA", "value": "Mid-to-late July 2026" },
+      { "label": "Sol cost vs Fable 5", "value": "~50% lower per token" }
+    ],
+    "source": "Web",
+    "date": "2026-07-08",
+    "url": "https://explainx.ai/blog/gpt-5-6-release-date-features-benchmarks-2026"
+  },
+  {
+    "section": "models",
+    "headline": "Google's Gemini 3.5 Pro Clears for July General Availability",
+    "summary": "Gemini 3.5 Pro, originally promised at Google I/O in May for a June release, slipped after enterprise testers flagged issues in reasoning and coding performance. Google has now cleared the model for July general availability. The model is expected to be highly competitive in reasoning and multimodal tasks.",
+    "foryou": "Gemini 3.5 Pro's GA is the last major frontier model to land this cycle — update your routing logic and run evals as soon as it drops to see if it edges out your current setup on any key tasks.",
+    "specs": [
+      { "label": "Original release target", "value": "June 2026" },
+      { "label": "Revised ETA", "value": "July 2026 GA" },
+      { "label": "Known issues (fixed)", "value": "Reasoning & coding regressions" }
+    ],
+    "source": "Web",
+    "date": "2026-07-08",
+    "url": "https://llm-stats.com/llm-updates"
+  },
+  {
+    "section": "industry",
+    "headline": "Broadcom and Apple Extend Custom Chip Partnership Through 2031",
+    "summary": "Broadcom and Apple have expanded their ASIC chip development partnership through 2031, covering multiple generations of Apple products. The deal includes dedicated AI server chips (codenamed Baltra) targeting deployment as early as 2027, alongside Wi-Fi, Bluetooth, and radio-frequency chips. Apple accounts for roughly 20% of Broadcom's annual revenue; Broadcom shares rose ~5% on the announcement.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-06/broadcom-expands-work-for-apple-supplying-products-through-2031"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Signs $19B, 20-Year Data Center Lease with TeraWulf",
+    "summary": "Anthropic has executed a 20-year lease with TeraWulf at its Justified Data campus in Hawesville, Kentucky, generating approximately $19 billion in contracted revenue — exceeding TeraWulf's ~$12 billion market cap. The campus will accommodate ~401 MW of critical IT load across multiple phases, with initial capacity online in H2 2027 and full buildout by early 2028. TeraWulf simultaneously sold its 50.1% stake in a Texas data center JV to Fluidstack for ~$530M.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://www.cnbc.com/2026/07/06/anthropic-terawulf-data-center-ai.html"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI Officially Rebrands to SpaceXAI, Completing Merger with SpaceX",
+    "summary": "xAI has rebranded as SpaceXAI, five months after formally merging with SpaceX. The rebrand brings Grok and X under SpaceX's corporate umbrella, tying AI development to Elon Musk's narrative of space infrastructure and AI as inextricably linked. SpaceXAI is developing Starmind, a space-based satellite data center network, with early orbital hardware testing scheduled for late 2027.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://dataconomy.com/2026/07/07/elon-musk-rebrands-merged-xai-and-spacex-as-spacexai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Chinese AI Models Gaining U.S. Enterprise Customers as OpenAI/Anthropic Costs Surge",
+    "summary": "Z.ai's GLM-5.2 and other Chinese frontier models are winning U.S. enterprise customers as token prices for leading American AI labs rise. The inexpensive Chinese models demonstrate competitive capabilities comparable to Anthropic and OpenAI offerings. The trend is intensifying debate over whether China is closing the gap with the U.S. in frontier AI.",
+    "source": "Web",
+    "date": "2026-07-08",
+    "url": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta and Microsoft Announce Thousands of AI-Driven Layoffs",
+    "summary": "Meta began implementing layoffs of approximately 8,000 employees (~10% of its workforce), with an additional 7,000 reassigned to AI-focused teams as part of a broad AI restructuring. Separately, Microsoft eliminated ~4,800 roles (2.1% of global workforce). Both companies explicitly cited AI transformation as a driver of the workforce reductions, continuing a wave of tech industry restructuring.",
+    "source": "Web",
+    "date": "2026-07-08",
+    "url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-Apple Exec's Smart Glasses Firm Even Realities Becomes Unicorn with Tencent Backing",
+    "summary": "Even Realities Technology, founded by former Apple executive Will Wang, reached unicorn status after a $150 million funding round led by Tencent and Meituan. The company is developing AI-powered smart glasses positioned as a direct rival to Meta's Ray-Ban. The raise reflects intensifying competition in AI wearables from Chinese-backed hardware startups.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://www.cnbc.com/2026/07/06/apple-veteran-takes-on-meta-with-1-billion-smart-glasses-maker.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Cloudflare Launches Granular AI Bot Controls, Will Block Training Bots on Ad Pages by Default Sept 15",
+    "summary": "Cloudflare introduced separate controls for three AI crawler categories — Search, Agent, and Training — replacing its previous blanket AI bot block. Starting September 15, 2026, Training and Agent crawlers will be blocked by default on ad-supported pages for all new and free customers, while Search remains allowed. Cloudflare's data shows 36% of all crawler traffic now comes from mixed-use bots that blend Search and Training functions.",
+    "source": "Web",
+    "date": "2026-07-08",
+    "url": "https://blog.cloudflare.com/content-independence-day-ai-options/"
+  },
+  {
+    "section": "tips",
+    "headline": "Continual Learning for Production Agents: Replit's ViBench + Telescope System",
+    "summary": "Most production agents run on closed frontier models where you can't update weights, forcing continual learning at the harness and context level. Replit built ViBench — an offline benchmark pairing PRDs with Playwright + LLM judges — alongside Telescope, which clusters production failure traces using embeddings and DBSCAN to surface emergent failure patterns. The two tools feed a self-improvement loop where agents propose and test their own fixes, forming a three-layer eval system with A/B testing in production.",
+    "foryou": "ViBench + Telescope is the most concrete published blueprint for harness-level agent improvement without touching model weights — directly applicable if you're running agentic pipelines on closed models.",
+    "source": "TLDR AI",
+    "date": "2026-07-08"
+  },
+  {
+    "section": "tips",
+    "headline": "A Stargate for Data: Why Private Datasets Are Becoming the New Compute Moat",
+    "summary": "Data labs are projected to surpass $100B/year in data spend by 2030 as AI training shifts from compute-limited to data-limited regimes. Public internet data is increasingly insufficient, making private high-quality datasets the next strategic scarcity. As leading labs diverge onto exclusive, manually collected corpora, models will increasingly diverge in capability — making proprietary data a durable competitive moat unlike commodity compute.",
+    "foryou": "If your product generates unique user interaction data, you're sitting on a future training asset — locking in data flywheel strategies now could be the competitive moat that matters most by 2028.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://x.com/willdepue/status/2074178395462848800"
+  },
+  {
+    "section": "tips",
+    "headline": "Why Enterprises Are Wrong About Open Source AI: The Decagon Playbook",
+    "summary": "Decagon runs roughly 90% of its workloads on open-source models, using small, heavily fine-tuned models served on Blackwell GPUs with speculative decoding and prompt caching to hit the latency and task-specific performance required for customer service agents. Most enterprise AI deployments are still early-stage and favor frontier models for flexibility; however, as workflows stabilize, production workloads will likely migrate to specialized open-source alternatives. Decagon ships model updates weekly, sometimes daily.",
+    "foryou": "The Decagon pattern — start with frontier models, fine-tune open-source as workflows stabilize — is a clear migration path to cut API costs on your most predictable agentic tasks.",
+    "source": "TLDR AI",
+    "date": "2026-07-08"
+  },
+  {
+    "section": "tips",
+    "headline": "Getting Started with Loops in Claude Code",
+    "summary": "Loops are agents that repeat cycles of work until a stop condition is met, and Claude Code supports several distinct loop primitives. The post categorizes loops by trigger type, stop condition, underlying Claude Code primitive, and appropriate task type. It covers token management strategies to maintain code quality across long-running loops and identifies which loop pattern best fits each category of repeating task.",
+    "foryou": "If you're building any long-running Claude Code agent, this is the reference for choosing the right loop primitive and managing token budget — read it before you design your next agentic workflow.",
+    "source": "TLDR AI",
+    "date": "2026-07-08"
+  },
+  {
+    "section": "tips",
+    "headline": "PACE: Predict Agentic Benchmark Performance at Less Than 1% of the Cost",
+    "summary": "PACE (Proxy for Agentic Capability Evaluation) predicts expensive agentic benchmark scores (SWE-Bench, GAIA) using a small subset of cheap non-agentic evaluation instances. Across 14 models, 4 agentic benchmarks, and 19 non-agentic benchmarks, PACE achieves mean absolute error under 4%, Spearman correlation above 0.80, and ~85% pairwise model-ranking accuracy — all at less than 1% of full evaluation cost. It uses regression over selected non-agentic benchmark instances to predict agentic scores.",
+    "foryou": "PACE lets you screen model candidates against agentic tasks in your pipeline at trivial cost — run it before committing to a full SWE-Bench-style eval when deciding between model versions.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://arxiv.org/abs/2607.02032v1"
+  },
+  {
+    "section": "tips",
+    "headline": "State of CLI Coding Agents, Mid-2026: Claude Code, Codex CLI, and Omp Are Now Peers",
+    "summary": "A deep 37-minute benchmark of Claude Code, Codex CLI, Omp, and OpenCode finds the top three are close enough in result quality that ranking is meaningless — all can read complex repos, plan across files, recover from failures, and produce production-shaped patches. The real differentiators are task clarity, repository hygiene, how well permissions are scoped, and whether the harness exposes the right tool at the right moment. OpenCode trails on quality but compensates with model flexibility.",
+    "foryou": "Your CLI agent choice barely matters — what differentiates 10x engineers right now is harness design, task framing, and how cleanly you scope permissions.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://blog.arcbjorn.com/state-of-cli-coding-agents-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "What the 100x Agentic Engineer Looks Like in the Era of Fable 5 & GPT-5.6",
+    "summary": "With frontier models now capable of reading serious repositories and landing production-shaped patches autonomously, the gap between median and outlier engineers is increasingly about system design rather than individual coding skill. The 100x engineer advantage comes from agentic orchestration: decomposing tasks effectively, managing context windows, chaining tool use, and recovering from failures programmatically rather than manually. This is an extended analysis of the emerging skillset that separates high-leverage AI engineers.",
+    "foryou": "The leverage gap is now almost entirely about agentic system design — if you're not running multi-agent loops with programmatic error recovery, you're underutilizing the current generation of models.",
+    "source": "TLDR AI",
+    "date": "2026-07-08"
+  },
+  {
+    "section": "tips",
+    "headline": "PyTorch Monarch Now Supports AMD GPUs for Elastic Fault-Tolerant Distributed Training",
+    "summary": "PyTorch Monarch, the single-controller distributed training framework, has been extended to AMD GPUs via ROCm. Monarch dynamically recovers from node failures without halting the entire training job — critical at the scale where hardware failures are expected. The post demonstrates fault-tolerant training of large-scale models across hundreds of GPUs, positioning AMD hardware as a viable alternative to Nvidia for large distributed training runs.",
+    "foryou": "If cost or availability is constraining your GPU access, Monarch on ROCm opens up a production-grade fault-tolerant training path on AMD hardware — worth evaluating if Nvidia allocation is a bottleneck.",
+    "source": "TLDR AI",
+    "date": "2026-07-08",
+    "url": "https://pytorch.org/blog/bringing-pytorch-monarch-to-amd-gpus-single-controller-distributed-training-on-rocm/"
+  }
+]
