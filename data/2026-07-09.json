@@ -1,0 +1,259 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI launches GPT-5.6: Sol (flagship), Terra (balanced), Luna (fast/cheap)",
+    "summary": "OpenAI is publicly launching its GPT-5.6 model family today after a limited preview. Sol is the flagship, Terra matches GPT-5.5 performance at 2x lower cost, and Luna is the lowest-cost option. Sol is also launching on Cerebras hardware at up to 750 tokens per second. The staged rollout followed a June executive order requiring federal agencies to benchmark new AI models before wide release.",
+    "foryou": "Three distinct price/performance tiers give you granular cost control for agentic pipelines — route Luna for cheap inference loops and Sol on Cerebras when latency is the bottleneck.",
+    "specs": [
+      {
+        "label": "Sol cost (input/output)",
+        "value": "$5 / $30 per 1M tokens"
+      },
+      {
+        "label": "Terra cost (input/output)",
+        "value": "$2.50 / $15 per 1M tokens"
+      },
+      {
+        "label": "Luna cost (input/output)",
+        "value": "$1 / $6 per 1M tokens"
+      },
+      {
+        "label": "Sol on Cerebras speed",
+        "value": "up to 750 tokens/sec"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+  },
+  {
+    "section": "models",
+    "headline": "SpaceX + Cursor launch Grok 4.5, their first jointly developed AI model",
+    "summary": "SpaceXAI and Cursor launched Grok 4.5, the first joint model since SpaceX acquired Cursor in a $60B deal. The model targets finance, legal, and coding tasks and is positioned as competitive with Anthropic's Opus 4.8 and GPT-5.5. Training ran on SpaceX's Colossus cluster (~1M H100-equivalent GPUs). Developer tests report 30%+ improvement in code generation and reasoning speed.",
+    "foryou": "A third frontier-grade coding model entering the market means leverage for negotiation and a credible Cursor-native alternative if you're already deep in that IDE.",
+    "specs": [
+      {
+        "label": "Training hardware",
+        "value": "Colossus (~1M H100-equiv GPUs)"
+      },
+      {
+        "label": "Target domains",
+        "value": "Finance, legal, coding"
+      },
+      {
+        "label": "Code gen speed improvement",
+        "value": "+30% vs prior Grok"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-08/spacexai-cursor-unveil-grok-ai-model-for-legal-finance-tasks"
+  },
+  {
+    "section": "models",
+    "headline": "Gemma 4 technical report: open-weight multimodal MoE from 2.3B to 31B params",
+    "summary": "Google released the Gemma 4 technical report covering a new family of open-weight models with dense and MoE architectures. The models are natively multimodal (text, images, audio) via an encoder-free design, support a 256K token context window, and include a thinking mode for harder reasoning tasks. Performance is competitive with significantly larger models. Apache 2.0 licensed.",
+    "foryou": "Apache 2.0 + 256K context + thinking mode in a sub-31B model is a strong self-hosted option for long-document agent tasks where you can't send data to closed APIs.",
+    "specs": [
+      {
+        "label": "Parameter range",
+        "value": "2.3B – 31B"
+      },
+      {
+        "label": "Architecture",
+        "value": "Dense + MoE, encoder-free"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, images, audio"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Languages",
+        "value": "140+"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://arxiv.org/abs/2607.02770"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-Realtime-2.1-mini adds reasoning and tool use to OpenAI's voice API",
+    "summary": "OpenAI released GPT-Realtime-2.1-mini, bringing configurable reasoning and reliable tool calling to the mini tier of its Realtime API at the same cost as the previous mini model. Reasoning effort is adjustable from 'low' (default, lower latency) to 'xhigh'. The prior mini model lacked structured reasoning and tool use, making complex voice-agent workflows unreliable.",
+    "foryou": "You can now build voice agents that reason through multi-step tool calls without jumping to the expensive flagship realtime model — a huge gap finally closed for agentic voice UIs.",
+    "specs": [
+      {
+        "label": "Cost (audio)",
+        "value": "~$0.0014 / min (same as prior mini)"
+      },
+      {
+        "label": "Reasoning effort levels",
+        "value": "minimal / low / medium / high / xhigh"
+      },
+      {
+        "label": "New capabilities",
+        "value": "Reasoning + tool use"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://www.marktechpost.com/2026/07/06/openai-gpt-realtime-2-1-mini-reasoning-realtime-api/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta launches Muse Image: agentic in-house image gen across Instagram and WhatsApp",
+    "summary": "Meta unveiled Muse Image, its first image generation model built by Meta Superintelligence Labs. Unlike diffusion-only models, Muse Image operates as an agent — invoking search and coding tools, self-refining outputs, and scaling with test-time compute. It's integrated into Meta AI, Instagram Stories, and WhatsApp. The launch sparked privacy concerns: public Instagram accounts are opted in by default to reference their photos in generations.",
+    "foryou": "The agentic architecture (search + code tools + self-refinement at inference) is the design pattern to watch — this is how next-gen image models will be built.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Agentic (search + code tools + self-refinement)"
+      },
+      {
+        "label": "Availability",
+        "value": "Meta AI, Instagram Stories (US), WhatsApp (limited)"
+      },
+      {
+        "label": "Developer",
+        "value": "Meta Superintelligence Labs"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft quietly swaps OpenAI and Anthropic for its own MAI models in Excel and Outlook",
+    "summary": "Bloomberg reports Microsoft is replacing third-party models with its internally built MAI models for tens of thousands of AI prompts per week in Excel and Outlook. The motivation is cost: Microsoft's AI chief stated the goal is to 'reduce and ultimately eliminate' spending on Anthropic. Microsoft announced seven new MAI models at Build 2026, including one that matches Opus 4.6 coding performance at lower cost. Existing agreements with OpenAI are set to expire soon.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-07-09",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-07/microsoft-replaces-openai-anthropic-with-own-ai-in-some-apps"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek is designing its own inference chip to escape Nvidia and Huawei dependency",
+    "summary": "Reuters reports DeepSeek has been quietly building a proprietary AI inference chip, meeting with chip-design and foundry partners for over a year and hiring silicon engineers. The chip targets inference, not training, where custom silicon can cut cost and power vs. GPUs. The move mirrors OpenAI and Anthropic's vertical integration strategies. US export controls blocking Nvidia's advanced chips and Beijing's push for domestic compute alternatives are the primary drivers.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-07-09",
+    "url": "https://arstechnica.com/ai/2026/07/facing-us-export-controls-chinas-deepseek-plans-to-make-its-own-chips/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic expands Claude Cowork to mobile and web, reveals 90%+ of usage is non-coding",
+    "summary": "Anthropic announced Claude Cowork sessions and files are now accessible across web and mobile, starting with a beta rollout to Max plan users. Long-running tasks and scheduled jobs no longer require a desktop to be online. Anthropic also released usage data showing over 90% of Cowork usage is non-software-development work, with business operations and content creation as the top categories. Doubled usage limits are extended through August 5.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://claude.com/blog/cowork-web-mobile/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cloudflare rolls out pay-per-crawl: websites can now charge AI bots for scraping",
+    "summary": "Cloudflare launched a pay-per-crawl system (currently private beta) that lets website owners charge AI crawlers per page via HTTP 402 responses. Starting September 15, 2026, Cloudflare will block 'mixed-use' crawlers from ad-bearing pages by default. The system separates crawlers into Search, Agent, and Training categories for fine-grained control. Online publishers and retailers — already fighting Google over revenue — now face the same battle with LLMs.",
+    "source": "Semafor",
+    "date": "2026-07-09",
+    "url": "https://blog.cloudflare.com/introducing-pay-per-crawl/"
+  },
+  {
+    "section": "industry",
+    "headline": "China pitches open-source AI as a development tool for the Global South at UN summit",
+    "summary": "Chinese government officials used the UN AI for Good summit in Geneva (July 6-7) to frame open-source AI as an equitable alternative to expensive, restrictive US models. The delegation, joined by officials from Russia, Pakistan, and Global South nations, argued AI benefits shouldn't concentrate in rich countries. The move advances Beijing's strategy to shape international AI governance while positioning itself as the developing world's AI partner.",
+    "source": "Semafor",
+    "date": "2026-07-09",
+    "url": "https://semafor.com/s/03omsF7XLN"
+  },
+  {
+    "section": "industry",
+    "headline": "China accelerates global talent grab: Nobel laureate Omar Yaghi moving to Tsinghua",
+    "summary": "Nobel Prize in Chemistry winner Omar Yaghi (2025) is leaving UC Berkeley for Tsinghua University to lead a new AI research center, the South China Morning Post reports. China is simultaneously exploring ways to disincentivize domestic researchers from publishing in foreign journals, citing IP leak fears. Chinese workers, meanwhile, are logging 72-hour weeks under pressure to match AI advances — reflecting a national anxiety about falling behind.",
+    "source": "Semafor",
+    "date": "2026-07-09",
+    "url": "https://semafor.com/s/NECaq4BOW5"
+  },
+  {
+    "section": "industry",
+    "headline": "CNN confirms Iran school bombing was human error, not AI automation",
+    "summary": "CNN reporting confirms the tragic bombing of an Iranian girls' school by US forces was caused by human targeters who failed to check an updated database flagging the site — not by AI automation, reversing early reports. Semafor had previously reported human error in March. The episode reframes the automation debate: the mistake could have been prevented by AI systems scanning more intelligence sources faster, not by avoiding automation.",
+    "source": "Semafor",
+    "date": "2026-07-09",
+    "url": "https://semafor.com/s/4epfupa5mV"
+  },
+  {
+    "section": "industry",
+    "headline": "Claude Fable 5 free promotional access ends July 12",
+    "summary": "Anthropic's promotional period offering Claude Fable 5 at no extra cost ends July 12. Through July 12, Pro, Max, Team, and Enterprise users can use up to 50% of their weekly subscription limits on Fable 5. After that, Fable 5 access requires usage credits. Users who haven't tried Fable 5 yet have a narrow window before it becomes a paid add-on.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://support.claude.com/en/articles/15424964-claude-fable-5-promotional-access"
+  },
+  {
+    "section": "tips",
+    "headline": "Gemini API managed agents now support background tasks, remote MCP, and credential refresh",
+    "summary": "Google expanded Gemini API's Managed Agents with four key updates: background execution (async via background: true, no held HTTP connections), remote MCP server integration (call any MCP-compatible tool from Google's cloud sandbox), custom function calling alongside MCP tools, and credential refresh for long-running agents. Developers still call a single endpoint; Gemini handles reasoning, code execution, and tool orchestration in an isolated cloud environment.",
+    "foryou": "Remote MCP + background execution turns Gemini Managed Agents into a drop-in async worker that can reach your entire MCP toolchain without tunnels or custom middleware — worth evaluating if you're building multi-day pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api/"
+  },
+  {
+    "section": "tips",
+    "headline": "Microsoft experiment: conventional CLI args outperform JSON payloads for agent tool use",
+    "summary": "Microsoft tested whether replacing CLI argument flags with a single --json payload improved agent performance. The data showed JSON paths generated 7–14x more output tokens than conventional args, with shell escaping (nested quotes across different shells) as the primary culprit. The finding challenges the popular advice to 'just use JSON' for agent-facing CLIs. If your agents use shell tools, standard arg flags are measurably cheaper and more reliable.",
+    "foryou": "Before redesigning your CLI for agents, run your own token benchmark — the 7–14x overhead from JSON escaping can dwarf model inference costs in agentic loops.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://developer.microsoft.com/blog/dont-rewrite-your-cli-for-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Build self-learning agents by combining AG-UI traces with in-browser user corrections",
+    "summary": "CopilotKit outlines a method for agents that improve over time: capture agent traces and in-browser user activity using the AG-UI protocol, then convert these interactions into procedural and episodic memory. Corrections remain scoped by user, team, or application to avoid cross-contamination. The approach captures both AI failures and human fixes, giving agents a structured feedback loop without retraining.",
+    "foryou": "AG-UI as a memory capture layer is a practical path to production self-improvement for your Cowork or agentic workflows — no fine-tuning required.",
+    "source": "TLDR AI",
+    "date": "2026-07-09"
+  },
+  {
+    "section": "tips",
+    "headline": "MiniMax Sparse Attention: how to make 1M-token context windows cheap enough for agents",
+    "summary": "MiniMax published research on their Sparse Attention (MSA) architecture, which holds per-query compute at 2,048 tokens regardless of context length — delivering 9x prefill and 15x decode speedups vs. dense attention at 1M tokens. The key insight: long-horizon agents that accumulate state over hundreds of tool calls can't afford quadratic attention growth; MSA keeps cost flat. MiniMax demonstrated M3 running continuously for 24 hours with ~2,000 tool calls on a single context.",
+    "foryou": "MSA is the architecture to watch if you're designing multi-day agentic pipelines — it breaks the cost curve that makes long-horizon autonomous agents economically unviable.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://arxiv.org/pdf/2606.13392"
+  },
+  {
+    "section": "tips",
+    "headline": "Liquid AI's Antidoom training eliminates repetitive degeneration at inference time",
+    "summary": "Liquid AI published a technique called Final Token Preference Optimization (FTPO) that targets and eliminates repetitive 'doom loops' in model outputs. Rather than penalizing the entire sequence, FTPO selectively identifies the trigger tokens that start a repetitive cycle and corrects specifically at those positions. The result is near-complete elimination of repetitive degeneration with minimal impact on normal generation quality.",
+    "foryou": "If your agents are prone to getting stuck in repetitive output loops, FTPO-trained models (or adapting this technique to your fine-tunes) can fix it at the root rather than patching with stop sequences.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://www.liquid.ai/blog/antidoom"
+  },
+  {
+    "section": "tips",
+    "headline": "Lilian Weng's deep dive: harness engineering is the key leverage point for AI self-improvement",
+    "summary": "Lilian Weng published a comprehensive analysis of 'harness engineering' — the system surrounding a base model that controls how it plans, calls tools, manages context, and evaluates results. She argues this harness layer, not the base model weights, is where recursive self-improvement (RSI) actually happens today. The post covers research on how models can improve their own training pipeline and deployment system to enable better successors.",
+    "foryou": "If you're building orchestration layers for agents, this is a blueprint: the harness is the actual product, and improving it is how you compound capability without waiting for the next model release.",
+    "source": "TLDR AI",
+    "date": "2026-07-09",
+    "url": "https://lilianweng.github.io/posts/2026-07-04-harness/"
+  },
+  {
+    "section": "tips",
+    "headline": "$500 OpenAI bill, zero refund: a cautionary tale about unsupervised agentic spending",
+    "summary": "Semafor's tech editor woke up to find an AI agent (OpenAI Codex) had looped autonomously for days, incurring $500 in charges via uncapped auto-credit top-ups — with no human in the loop and no refund from OpenAI's support. The agent had interpreted an ambitious prompt 'too literally,' entered a review loop over a large dataset, and ran unchecked because of poor connectivity. The incident illustrates real risks of giving agents wallet access and compute without guardrails.",
+    "foryou": "Set hard spending caps on any agent with auto-recharge access, add a dead-man's-switch (token budget alarm) to long-running pipelines, and never assume your provider's support will make you whole.",
+    "source": "Semafor",
+    "date": "2026-07-09",
+    "url": "https://semafor.com/s/SmABxGbxpC"
+  }
+]
