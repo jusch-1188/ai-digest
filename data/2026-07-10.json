@@ -1,0 +1,159 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Launches GPT-Live: Full-Duplex Voice Models That Listen and Speak Simultaneously",
+    "summary": "OpenAI released GPT-Live (GPT-Live-1 and GPT-Live-1 mini), a new generation of full-duplex voice models that continuously process audio input while generating speech output — no turn-taking required. The model makes interaction decisions many times per second (speak, listen, pause, delegate), can signal attention with natural affirmations like \"mhmm\", and offloads complex tasks like web search or deep reasoning to GPT-5.5 in the background. Rolling out globally to ChatGPT users; API access coming soon.",
+    "foryou": "Full-duplex voice as an API primitive unlocks real-time agentic voice pipelines — this is the missing backbone for building voice agents that handle interruptions and delegate to reasoning models on the fly.",
+    "specs": [
+      { "label": "Architecture", "value": "Full-duplex (continuous I/O)" },
+      { "label": "Backend reasoning", "value": "GPT-5.5 delegation" },
+      { "label": "Variants", "value": "GPT-Live-1, GPT-Live-1 mini" },
+      { "label": "Availability", "value": "ChatGPT global rollout; API coming soon" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://openai.com/index/introducing-gpt-live/"
+  },
+  {
+    "section": "models",
+    "headline": "SpaceXAI Releases Grok 4.5: Opus-Class Coding Model with Cursor Integration",
+    "summary": "SpaceXAI launched Grok 4.5 on July 8, its strongest model yet for coding and agentic tasks, trained alongside Cursor after SpaceXAI's acquisition of the AI coding startup. Musk positioned it as \"Opus-class but faster, more token-efficient and lower cost\", and benchmarks support the claim: 62.0% on DeepSWE 1.0 (vs Opus 4.8 at 55.75%) and ranked #4 on the Artificial Analysis Intelligence Index at 54 points, behind Fable 5, Opus 4.8, and GPT-5.5. Available now in Grok Build, Cursor on all plans, and the SpaceXAI console (EU excluded at launch).",
+    "foryou": "At $2/$6 per million tokens with 80 TPS and native Cursor integration, Grok 4.5 is currently the strongest cost-per-task option for agentic coding pipelines — worth benchmarking against your existing setup.",
+    "specs": [
+      { "label": "DeepSWE 1.0", "value": "62.0% (vs Opus 4.8: 55.75%)" },
+      { "label": "SWE Marathon", "value": "29.0% resolution rate" },
+      { "label": "Intelligence Index", "value": "#4 overall (54 pts)" },
+      { "label": "Cost (input)", "value": "$2 / 1M tokens" },
+      { "label": "Cost (output)", "value": "$6 / 1M tokens" },
+      { "label": "Speed", "value": "80 TPS" },
+      { "label": "Availability", "value": "Grok Build, Cursor, SpaceXAI console (no EU)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://x.ai/news/grok-4-5"
+  },
+  {
+    "section": "models",
+    "headline": "Cognition Releases SWE-1.7: Near-Frontier Coding at ~$2/Task on Cerebras",
+    "summary": "Cognition released SWE-1.7, RL post-trained on Kimi K2.7 Code inside the real Devin harness, achieving near-frontier coding scores at a fraction of frontier cost. It scores 42.3% on FrontierCode 1.1 Main, 81.5% on Terminal-Bench 2.1, and 77.8% on SWE-Bench Multilingual — trailing Opus 4.8 by a few points but beating GPT-5.5 on multilingual tasks. Running at 1,000 tokens/sec on Cerebras at roughly $1.97 per task, SWE-1.7 lands on a cost-performance Pareto curve that frontier models don't occupy. Live now in Devin web, desktop, and CLI.",
+    "foryou": "At $1.97/task and 1,000 TPS on Cerebras with near-frontier scores, SWE-1.7 is the sharpest choice for high-volume automated coding pipelines where cost matters more than last-mile quality.",
+    "specs": [
+      { "label": "FrontierCode 1.1 Main", "value": "42.3%" },
+      { "label": "Terminal-Bench 2.1", "value": "81.5%" },
+      { "label": "SWE-Bench Multilingual", "value": "77.8%" },
+      { "label": "Cost", "value": "~$1.97 / task" },
+      { "label": "Speed", "value": "1,000 TPS (Cerebras)" },
+      { "label": "Base model", "value": "Kimi K2.7 Code + RL" },
+      { "label": "Availability", "value": "Devin web, desktop, CLI" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://cognition.com/blog/swe-1-7"
+  },
+  {
+    "section": "models",
+    "headline": "ByteDance Debuts Seedream 5.0 Pro: Multilingual Image Model with Advanced Reasoning",
+    "summary": "ByteDance released Seedream 5.0 Pro, a multimodal image-creation model built for professional production design workflows rather than one-shot consumer outputs. It offers precise iterative edits, 10+ language support including right-to-left layouts and regional accents, and advanced features targeting creators, marketers, product teams, and developers. The model differentiates itself from standard image generators through production-ready tooling and design system integration.",
+    "foryou": "Multilingual image generation with RTL support and iterative editing is a solid fit for image-generation nodes in multilingual or regional content pipelines.",
+    "specs": [
+      { "label": "Languages", "value": "10+ (incl. RTL)" },
+      { "label": "Focus", "value": "Production design workflows" },
+      { "label": "Key features", "value": "Precise edits, multilingual text, iterative refinement" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://www.testingcatalog.com/bytedance-debuts-seedream-5-0-pro-with-advanced-reasoning/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Launches Muse Image Across Instagram, WhatsApp, and Meta AI App",
+    "summary": "Meta launched Muse Image, its first in-house AI image generation model built by Superintelligence Labs under Alexandr Wang. The model handles complex text prompts, multi-photo blending, and iterative edits, and now powers 30+ AI creative effects on Instagram Stories. It's live in the US in the Meta AI app, Instagram, and WhatsApp, with a free tier and paid Meta One subscription for heavier use. Meta also previewed Muse Video, a forthcoming AI video-generation model.",
+    "foryou": "Muse Image's deep Instagram graph integration — including drawing from public tagged photos — creates social-context image capabilities that standalone generators can't replicate, worth watching if you're building social or marketing automation.",
+    "specs": [
+      { "label": "Availability", "value": "US: Meta AI app, Instagram, WhatsApp" },
+      { "label": "Free tier", "value": "Yes" },
+      { "label": "Paid tier", "value": "Meta One subscription" },
+      { "label": "Instagram", "value": "30+ AI creative effects for Stories" },
+      { "label": "Upcoming", "value": "Muse Video (previewed)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://about.fb.com/news/2026/07/introducing-muse-image-meta-ai/"
+  },
+  {
+    "section": "models",
+    "headline": "Mistral Releases Robostral Navigate: 8B Robot Navigation Model with Single RGB Camera",
+    "summary": "Mistral released Robostral Navigate, an 8B model that enables autonomous robot navigation using only a single RGB camera — no lidar, depth sensors, or expensive hardware required. It achieves 76.6% success on the R2R-CE benchmark, outperforming multi-sensor approaches. The model accepts plain-language navigation commands and outputs pointing coordinates or local displacement commands. Trained on ~400K simulated trajectories across 6,000 scenes, it generalizes across wheeled, legged, and flying robots. Currently available to select partners in manufacturing, logistics, delivery, and hospitality.",
+    "foryou": "Single-camera navigation at 8B scale signals that embodied AI is hitting real deployment thresholds — relevant if you're designing agentic systems that bridge digital and physical environments.",
+    "specs": [
+      { "label": "Parameters", "value": "8B" },
+      { "label": "R2R-CE success rate", "value": "76.6%" },
+      { "label": "Training data", "value": "~400K trajectories, 6,000 scenes" },
+      { "label": "Input", "value": "RGB image + natural language command" },
+      { "label": "Robot types", "value": "Wheeled, legged, flying" },
+      { "label": "Access", "value": "Select partners only" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://mistral.ai/news/robostral-navigate/"
+  },
+  {
+    "section": "industry",
+    "headline": "SambaNova Raises $1B at $11B Valuation as Nvidia Chip Challengers Attract Capital",
+    "summary": "SambaNova completed the first close of a $1B Series F round at an $11B post-money valuation, led by General Atlantic with significant backing from T. Rowe Price, Capital Group, Qatar Investment Authority, and BlackRock. The AI inference chip startup will use the capital to expand rack capacity and scale deployments for enterprise, sovereign AI, and neo-cloud customers. JPMorganChase recently selected SambaNova as its on-premises inference-infrastructure partner. The company is strongly considering an IPO in 2027.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://www.cnbc.com/2026/07/08/sambanova-ai-chip-funding-valuation.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Acquires Northslope to Embed Engineers Directly Inside Enterprise Customers",
+    "summary": "OpenAI's Deployment Company agreed to acquire Northslope, an applied AI firm founded by Palantir alumni, adding hundreds of forward-deployed engineers (FDEs) to its ranks. This is the Deployment Company's second acquisition since launching in May with $4B in capital — following Tomoro — and mirrors Palantir's long-standing strategy of embedding engineers directly with customers. The bet: helping enterprises implement AI will be as commercially important as building the underlying models.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://thenextweb.com/news/openai-northslope-acquisition-enterprise-ai-deployment"
+  },
+  {
+    "section": "industry",
+    "headline": "After 8,000 Layoffs, Zuckerberg Admits Meta's AI Push 'Hasn't Really Accelerated' as Expected",
+    "summary": "At an internal Meta town hall on July 2, CEO Mark Zuckerberg told employees that AI agent development over the prior four months \"hasn't really accelerated in the way that we expected\" and that the restructuring has not been as \"clean\" as planned. The context: Meta cut roughly 8,000 employees (~10% of workforce) in a May 2026 restructuring, hitting integrity, cybersecurity, content design, and Reality Labs hardest, while redirecting 7,000 workers to new AI-focused teams. Meta's 2026 capex guidance runs $125–145B — more than double 2025 spending.",
+    "source": "Web",
+    "date": "2026-07-10",
+    "url": "https://247wallst.com/investing/2026/07/07/after-laying-off-8000-employees-zuckerberg-admits-metas-ai-hasnt-really-accelerated-as-expected/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Unveils GRAM: Removable Compartments for Dual-Use AI Knowledge",
+    "summary": "Anthropic published research on GRAM (Gradient-Routed Auxiliary Modules), a training architecture that isolates dual-use knowledge — bioweapons, cybersecurity, nuclear physics — into dedicated removable modules, updated only when training on dual-use data. A single GRAM-trained model provides the safety coverage of multiple separately-filtered models at the cost of training one. In tests on a 5B-parameter model, removing the targeted modules selectively disabled dangerous knowledge without impairing general performance. GRAM has not yet been applied to any Anthropic production model.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://www.anthropic.com/research/off-switch-dual-use"
+  },
+  {
+    "section": "tips",
+    "headline": "You're Not Ambitious Enough With Claude: Use It for Judgment, Not Just Summaries",
+    "summary": "Christine Zhu argues that most users underutilize Claude by defaulting to summarization and routine tasks, when the real leverage is in high-impact judgment work: stress-testing strategy, preparing high-stakes narratives, and delegating complex decisions. She advocates context-engineering over prompt-engineering — onboarding Claude with product decks, roadmaps, and metrics — and moving from one-off prompts to systems (automated skills, workflows, persistent agents). Socratic prompting, where Claude generates clarifying questions before executing, is highlighted as a key technique for surfacing hidden assumptions.",
+    "foryou": "If you're still running isolated one-off prompts for complex tasks, you're leaving most of Claude's value untouched — the move is to build persistent context + systems that run while you focus on irreplaceable work.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://christinezhu.substack.com/p/youre-not-ambitious-enough-with-claude"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Retracts SWE-Bench Pro Recommendation After Audit Finds 30% of Tasks Broken",
+    "summary": "OpenAI audited SWE-Bench Pro, one of the most widely used AI coding benchmarks, and found roughly 30% of its public tasks broken — correct solutions fail due to hidden requirements, contradictory instructions, overly strict tests, or incomplete grading criteria. Human reviewers flagged 34.1% of tasks; automated pipeline flagged 27.4%. OpenAI is formally retracting its prior recommendation and calling on the industry to build new benchmarks created by experienced developers that are hard to game and meaningfully reflect real coding ability.",
+    "foryou": "If you're evaluating coding agents against SWE-Bench Pro, discount scores significantly — benchmark noise now outweighs signal for ~30% of tasks, making inter-model comparisons unreliable for that slice.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://openai.com/index/separating-signal-from-noise-coding-evaluations/"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA Makes the Case for Open and Synthetic Data in Agentic AI Development",
+    "summary": "NVIDIA published a blog post on Hugging Face underscoring why open and synthetic data matters for robust AI agents, highlighting its Nemotron datasets for enhancing reasoning and tool-use capabilities. Open datasets improve agent transparency and reproducibility by letting developers inspect and understand agent behavior during development — a critical factor for debugging long-horizon tasks. The post argues that data quality and traceability are more important bottlenecks than raw model size for agentic systems.",
+    "foryou": "If you're training or fine-tuning agents, the Nemotron datasets are a free, inspectable baseline for reasoning and tool-use that can save significant synthetic-data generation cost.",
+    "source": "TLDR AI",
+    "date": "2026-07-10",
+    "url": "https://huggingface.co/blog/nvidia/open-data-for-agents"
+  }
+]
