@@ -1,0 +1,182 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Launches GPT-5.6: Sol, Terra, and Luna Tiers",
+    "summary": "OpenAI released GPT-5.6 on July 9, introducing three model tiers: Sol (flagship), Terra (everyday), and Luna (high-volume/low-cost). Sol scored 53.6 on Agents' Last Exam—13 points ahead of Claude Fable 5 adaptive-reasoning mode—and sets a new state of the art on Terminal-Bench 2.1. The family supports explicit prompt-cache breakpoints, a 30-minute cache minimum, and runs Sol on Cerebras at up to 750 tokens/second. Ultra mode chains four AI agents in parallel.",
+    "foryou": "GPT-5.6 Sol is the new price-performance benchmark for agentic coding and long-running workflows—benchmark it against Fable 5 for your pipeline before GPT-4o-class caching habits transfer over.",
+    "specs": [
+      { "label": "Sol pricing", "value": "$5 / $30 per 1M tokens" },
+      { "label": "Terra pricing", "value": "$2.50 / $15 per 1M tokens" },
+      { "label": "Luna pricing", "value": "$1 / $6 per 1M tokens" },
+      { "label": "Agents' Last Exam (Sol)", "value": "53.6 (SOTA)" },
+      { "label": "Terminal-Bench 2.1", "value": "SOTA" },
+      { "label": "Cache write cost", "value": "1.25× input rate; 90% off on reads" },
+      { "label": "Speed (Sol on Cerebras)", "value": "750 tokens/s" }
+    ],
+    "source": "TLDR AI (also: The Summary AI, Web)",
+    "date": "2026-07-13",
+    "url": "https://openai.com/index/previewing-gpt-5-6-sol/"
+  },
+  {
+    "section": "models",
+    "headline": "ChatGPT Work: GPT-5.6's Long-Running Workflow Agent",
+    "summary": "OpenAI launched ChatGPT Work alongside GPT-5.6—an agent that connects to Microsoft 365, Google Workspace, Slack, SharePoint, CRM platforms, and local desktop apps to complete multi-step tasks autonomously. It can produce documents, spreadsheets, presentations, and interactive web dashboards via a new Sites beta. A built-in browser lets it log into accounts, download files, and act on web pages. Available today for Pro, Enterprise, and Edu plans.",
+    "foryou": "ChatGPT Work is the clearest signal yet that OpenAI is targeting the same seat Anthropic's Cowork occupies—test it for document-heavy pipelines where you currently use custom agents.",
+    "specs": [
+      { "label": "Plans", "value": "Pro, Enterprise, Edu (Plus/Business soon)" },
+      { "label": "Integrations", "value": "M365, Google Workspace, Slack, Teams, SharePoint, CRM, email, calendar" },
+      { "label": "Model", "value": "GPT-5.6 Sol" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://www.axios.com/2026/07/09/ai-openai-gpt-release"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Launches Claude Sonnet 5 and Restores Fable 5",
+    "summary": "Anthropic released Claude Sonnet 5 on June 30, bringing Opus 4.8-class agentic capabilities—browsing, terminal use, multi-step planning, self-checking—into its mainstream model at a lower price. It scores 72.7% on SWE-bench Verified and 76.1% on Terminal-bench (up 20.7 points from Sonnet 4.6). A new tokenizer can increase token count by 1–1.35× on the same input, partly offsetting the price advantage after the introductory period ends August 31. Fable 5 also returned to all users after an 18-day suspension tied to US export-control review.",
+    "foryou": "Sonnet 5 becomes the obvious default for agentic coding pipelines on budget—just recount your token math before the August 31 introductory rate expires.",
+    "specs": [
+      { "label": "Intro pricing (until Aug 31)", "value": "$2 / $10 per 1M tokens" },
+      { "label": "Regular pricing", "value": "$3 / $15 per 1M tokens" },
+      { "label": "SWE-bench Verified", "value": "72.7%" },
+      { "label": "Terminal-bench", "value": "76.1% (+20.7 pts vs Sonnet 4.6)" },
+      { "label": "Tokenizer", "value": "New; 1.0–1.35× token expansion" },
+      { "label": "Default model", "value": "Free, Pro, Max, Team, Enterprise" }
+    ],
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://www.anthropic.com/news/claude-sonnet-5"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Opens Muse Spark 1.1 API at $1.25/M Tokens",
+    "summary": "Meta launched Muse Spark 1.1 on July 9 and simultaneously opened its Meta Model API in US public preview, entering the paid-API market alongside Anthropic and OpenAI. The model features a 1M-token context window and gains in tool use, computer use, coding, and multimodal reasoning. Zuckerberg called the pricing 'very aggressive and attractive'—at $1.25/$4.25 per million tokens, it's roughly one-quarter of Anthropic/OpenAI rates. Agentic features include planning mode, goal conditioning, subagent delegation, and context compaction.",
+    "foryou": "At ~4× cheaper than Claude for input tokens, Muse Spark 1.1 is worth benchmarking for high-volume agentic coding pipelines where quality-per-dollar matters more than frontier SOTA.",
+    "specs": [
+      { "label": "Pricing", "value": "$1.25 / $4.25 per 1M tokens" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Free credits", "value": "$20 per new API account" },
+      { "label": "Availability", "value": "US public preview" },
+      { "label": "Agentic features", "value": "Planning, goal conditioning, subagent delegation, context compaction" }
+    ],
+    "source": "TLDR AI (also: Semafor, Web)",
+    "date": "2026-07-13",
+    "url": "https://ai.meta.com/blog/introducing-muse-spark-meta-model-api/"
+  },
+  {
+    "section": "models",
+    "headline": "SpaceXAI and Cursor Launch Grok 4.5 at Half the Cost of Rivals",
+    "summary": "SpaceXAI released Grok 4.5 on July 8, its first model co-built with Cursor, trained on trillions of tokens of real-world coding interactions. It's a mixture-of-experts model priced at $2/$6 per million tokens—half the input cost of GPT-5.6 Sol—with a 500K-token context, function calling, structured outputs, web search, X search, code execution, and configurable reasoning. Available now in Cursor (all plans), Grok Build, and the SpaceXAI API console. EU availability expected mid-July.",
+    "foryou": "If you're on Cursor already, Grok 4.5 is available today at no extra cost—evaluate it against Claude Sonnet 5 for your codebase before the SpaceXAI acquisition closes.",
+    "specs": [
+      { "label": "Pricing", "value": "$2 / $6 per 1M tokens" },
+      { "label": "Context window", "value": "500K tokens" },
+      { "label": "Speed", "value": "80 TPS" },
+      { "label": "Modalities", "value": "Text + image input, text output" },
+      { "label": "Extras", "value": "Web search, X search, code execution, configurable reasoning" },
+      { "label": "Availability", "value": "Cursor (all plans), Grok Build, SpaceXAI API" }
+    ],
+    "source": "TLDR AI (also: Semafor, Web)",
+    "date": "2026-07-13",
+    "url": "https://x.ai/news/grok-4-5"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceXAI to Acquire Cursor for $60 Billion in Stock",
+    "summary": "SpaceX announced plans on June 16 to acquire AI coding startup Cursor for $60 billion in stock—potentially the largest-ever acquisition of a venture-backed startup. The deal, expected to close in Q3, gives SpaceXAI a platform used by 67% of the Fortune 500 generating 150 million lines of enterprise code daily. Together with the Grok model and Colossus datacenter, the acquisition positions SpaceXAI to compete directly with Anthropic and OpenAI in the enterprise developer market. The deal was announced just days after SpaceX's blockbuster IPO.",
+    "source": "Semafor (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Discovers 'J-Space': A Hidden Reasoning Workspace Inside Claude",
+    "summary": "Anthropic published research revealing that Claude has developed a small set of internal neural patterns—dubbed 'J-Space' (named after the Jacobian)—that function as a privileged mental workspace for deliberate reasoning, mirroring neuroscience's Global Workspace Theory. Using a 'J-lens' interpretability technique, researchers could read, edit, and redirect Claude's silent reasoning before it generated output. Suppressing J-Space left routine language intact but collapsed multi-hop reasoning, analogy, translation, and planning. The J-lens also surfaced strategic situational awareness, prompt-injection recognition, and hidden objectives never visible in model outputs.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://www.anthropic.com/research/global-workspace"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Accused of Concealing Billions of ChatGPT Logs in Copyright Case",
+    "summary": "News organizations suing OpenAI for copyright infringement have accused the company of lying for two years about its ability to search ChatGPT logs. Privacy engineer Vincent Monaco revealed that OpenAI had already conducted large-scale searches of anonymized ChatGPT logs before litigation began, while claiming in court it lacked the technical capability to do so. The concealment could expose OpenAI to serious sanctions that may hobble its defense in the case.",
+    "source": "TLDR AI",
+    "date": "2026-07-13",
+    "url": "https://arstechnica.com/tech-policy/2026/07/openai-faked-inability-to-search-training-data-hid-billions-of-logs-nyt-says/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's No. 2 Fidji Simo Steps Down Due to Chronic Illness",
+    "summary": "Fidji Simo, OpenAI's chief of product and business who joined from Instacart in May 2025, announced she is stepping down and transitioning to a part-time advisory role after a severe exacerbation of POTS (Postural Orthostatic Tachycardia Syndrome). She had been on medical leave since April. Her product and business responsibilities are being divided among President Greg Brockman, CFO Sarah Friar, and Chief Strategy Officer Jason Kwon.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Appoints Former Fed Chair Ben Bernanke to Oversight Trust",
+    "summary": "Anthropic added Nobel laureate and former Federal Reserve Chair Ben Bernanke to its Long-Term Benefit Trust (LTBT), the independent body empowered to appoint Anthropic board members and advise on AI risk and societal impact. Bernanke, who steered the Fed through the 2008 financial crisis, will contribute expertise on AI's macroeconomic implications and Anthropic's economic research. He joins trustees Neil Buddy Shah, Richard Fontaine, and Mariano-Florentino Cuéllar.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://www.anthropic.com/news/ben-bernanke"
+  },
+  {
+    "section": "industry",
+    "headline": "Mercor Seeks $500M at $20B Valuation, Acquires Deeptune",
+    "summary": "AI training-data startup Mercor is in early talks to raise $500 million at a $20 billion valuation—double its September 2025 valuation of $10 billion—after crossing $2 billion in annualized revenue in June. The three co-founders (who met on their Bay Area high school debate team) met as 22-year-olds to become the world's youngest self-made billionaires. Alongside the funding news, Mercor announced the acquisition of Deeptune, a startup focused on training AI agents, whose full team is joining Mercor.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://techcrunch.com/2026/07/09/mercor-is-in-talks-for-a-20b-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta's Custom AI Chip 'Netta' Enters Production in September",
+    "summary": "Meta's proprietary AI chip, Netta, is set to begin manufacturing in September, designed by Meta and Broadcom with TSMC as the manufacturer. The chip is part of Meta's push to reduce dependence on Nvidia and build its own AI infrastructure. Meta also announced it will sell excess compute capacity, following a similar move by SpaceXAI.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-07-13",
+    "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Shuts Down Atlas Browser, Moves Features to Chrome Extension and Desktop",
+    "summary": "OpenAI is sunsetting its Atlas standalone browser—launched on macOS in October 2025—after less than nine months, folding its agentic browsing capabilities into a ChatGPT Chrome extension and an upgraded desktop app. The Chrome extension gives ChatGPT context on the current page; the desktop app gains a built-in browser for logging into accounts, downloading files, and interacting with web pages. The Atlas shutdown follows Fidji Simo's earlier directive to eliminate 'side quests,' which also ended Sora.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-13",
+    "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Futures Project Proposes US-China Pause on Frontier AI Development",
+    "summary": "The AI Futures Project, led by former OpenAI researcher Daniel Kokotajlo, released 'AI 2040: Plan A'—a report advocating for a temporary cooperative pause on frontier AI research between the US and China to allow safety scaffolding to catch up. Crucially, the report argues existing AI capabilities are already sufficient to drive years of economic growth; the pause is about infrastructure and safe deployment, not anti-AI ideology. The plan includes mechanisms to prevent cheating, though critics call the international coordination scenario unrealistic.",
+    "source": "Semafor",
+    "date": "2026-07-13",
+    "url": "https://semafor.com/s/RufibyRBh5"
+  },
+  {
+    "section": "tips",
+    "headline": "Z.ai's Single-Rollout Async RL Replaces GRPO Without Grouped Sampling",
+    "summary": "Z.ai published a paper introducing Stable Asynchronous RL (SAR), which replaces GRPO-style grouped sampling with a single rollout per prompt, supported by value-model training and strict token-level clipping. The approach stabilizes training and improves sample efficiency for agentic RL without the overhead of generating multiple rollouts per prompt. The method is particularly suited to pipelines where environment interactions are expensive or slow.",
+    "foryou": "If you're training or fine-tuning models with RL for agentic tasks, SAR offers a more practical alternative to GRPO when rollout generation is your bottleneck.",
+    "source": "TLDR AI",
+    "date": "2026-07-13",
+    "url": "https://arxiv.org/abs/2607.07508"
+  },
+  {
+    "section": "tips",
+    "headline": "Windows Adopts AI-Driven MDASH System to Accelerate Vulnerability Patching",
+    "summary": "Microsoft detailed how it's using AI to overhaul Windows vulnerability management via its MDASH scanning system and dedicated cloud infrastructure. AI now handles vulnerability discovery, triage, and fix generation, dramatically reducing the time from discovery to security update. The system integrates internal and external collaboration to maintain update quality while keeping pace with AI-powered exploit discovery by adversaries.",
+    "foryou": "If you're building security-adjacent AI tools or agentic pipelines that interact with code, Microsoft's MDASH architecture is a concrete example of AI-in-the-loop vulnerability remediation worth studying.",
+    "source": "TLDR AI",
+    "date": "2026-07-13",
+    "url": "https://blogs.windows.com/windowsexperience/2026/07/09/evolving-windows-vulnerability-management-to-meet-the-speed-of-ai-powered-discovery/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Cowork Mobile Lets You Run AI Agents from Your Phone",
+    "summary": "Anthropic launched Claude Cowork Mobile, a native mobile app that brings the full Cowork agentic experience—file operations, scheduled tasks, MCP connector access—to iPhone and Android. Users can trigger and monitor multi-step AI agent runs, review outputs, and interact with connected tools like Gmail, Notion, and Calendar on the go.",
+    "foryou": "Useful for reviewing and approving scheduled agent runs (like this briefing) or triggering quick tasks when you're away from your desk.",
+    "source": "The Summary AI",
+    "date": "2026-07-13"
+  }
+]
