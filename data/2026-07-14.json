@@ -1,0 +1,234 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Code Desktop Gets Sandboxed In-App Browser",
+    "summary": "Anthropic shipped a built-in browser pane to Claude Code's desktop app, letting the agent read, click, fill forms, and screenshot any website—docs, designs, and local dev servers included—without leaving the IDE. The browser runs in a sandboxed, isolated profile; per-site permission prompts control what the agent can do, and users choose whether sessions persist. Launch with Cmd/Ctrl+Shift+B.",
+    "foryou": "Your agent can now verify, test, and interact with live URLs mid-task without any extra wiring—eliminates the back-and-forth between Claude Code and your browser entirely.",
+    "specs": [
+      {
+        "label": "Access",
+        "value": "Cmd/Ctrl+Shift+B"
+      },
+      {
+        "label": "Isolation",
+        "value": "Sandboxed, no saved logins or history"
+      },
+      {
+        "label": "Permissions",
+        "value": "Per-site: Allow once / Always / Deny"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://9to5mac.com/2026/07/10/anthropic-highlights-claude-codes-in-app-browser-on-the-desktop/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Extends Claude Fable 5 Access Through July 19—Second Extension",
+    "summary": "Anthropic extended its Fable 5 promotional window a second time, keeping it included for Pro, Max, Team, and select Enterprise plans through July 19 at 11:59 PM PT—covering up to 50% of weekly usage limits. The first window ran July 1–7, was extended to July 12, then extended again. After July 19, Fable 5 shifts to prepaid credits at $10/M input and $50/M output tokens.",
+    "foryou": "Two more weeks to max out Fable 5 on agentic pipelines before it becomes pay-per-use—schedule your heaviest eval and batch runs before July 19.",
+    "specs": [
+      {
+        "label": "Promo deadline",
+        "value": "July 19, 2026 11:59 PM PT"
+      },
+      {
+        "label": "Usage cap",
+        "value": "Up to 50% of weekly limit"
+      },
+      {
+        "label": "Post-promo input",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Post-promo output",
+        "value": "$50 / 1M tokens"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/claude-fable-5-stays-free-for-paid-users-until-july-19-as-anthropic-buys-more-time/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Lifts GPT-5.6 Sol Five-Hour Cap and Resets All Usage",
+    "summary": "OpenAI temporarily removed the five-hour usage restriction on GPT-5.6 Sol for Plus, Pro, and Business plans and reset current usage for all subscribers after the launch triggered traffic roughly twice the company's previous peak—driven by Codex and ChatGPT Work. Weekly caps remain but efficiency improvements mean Sol now burns about 10% less of that weekly budget per task. The 5.6 series (Sol, Terra, Luna) moved from government-gated preview to broad availability on July 9.",
+    "foryou": "The lifted cap is a window to stress-test Sol on your longest agentic runs—particularly worth benchmarking against Fable 5 while both are unconstrained.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1,050,000 tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128,000 tokens"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$5 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$30 / 1M tokens"
+      },
+      {
+        "label": "Knowledge cutoff",
+        "value": "February 2026"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "88.8% (Ultra: 91.9%)"
+      },
+      {
+        "label": "GPQA Diamond",
+        "value": "94.1%"
+      },
+      {
+        "label": "τ²-Bench",
+        "value": "85.1%"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-temporarily-relaxes-gpt-56-sol-usage-limits/"
+  },
+  {
+    "section": "models",
+    "headline": "SpaceXAI Releases Grok 4.5: Opus-Class Performance at $2/M Input",
+    "summary": "SpaceXAI launched Grok 4.5 on July 8, its most capable model yet, trained alongside Cursor and optimized for coding, agentic tasks, and knowledge work. It scores 83.3% on Terminal-Bench 2.1 and 64.7% on SWE-Bench Pro, competitive with Fable 5, at a fraction of the price. Elon Musk described it as 'Opus-class.' SpaceXAI claims twice the token efficiency of competing models.",
+    "foryou": "At $2/M input vs $5+ for Sol or Fable, Grok 4.5 is worth benchmarking on high-volume coding agent pipelines—the cost delta compounds fast at scale.",
+    "specs": [
+      {
+        "label": "Cost (input)",
+        "value": "$2 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$6 / 1M tokens"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "83.3%"
+      },
+      {
+        "label": "SWE-Bench Pro",
+        "value": "64.7%"
+      },
+      {
+        "label": "DeepSWE 1.0",
+        "value": "62.0%"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "#4 overall (Fable 5 leads at #1)"
+      },
+      {
+        "label": "License",
+        "value": "API + Grok Build"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-07-14",
+    "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Sues OpenAI Over Alleged Coordinated Trade Secret Theft",
+    "summary": "Apple filed suit against OpenAI in Northern California federal court, alleging a coordinated campaign to steal confidential hardware secrets to fuel OpenAI's device ambitions. OpenAI Chief Hardware Officer Tang Tan is accused of using Apple project code names in recruiting and coaching departing employees on evading security. An ex-Apple engineer who joined OpenAI in January 2026 failed to return his laptop and downloaded dozens of confidential hardware files, including specs for unreleased products.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/"
+  },
+  {
+    "section": "industry",
+    "headline": "Tencent Leads $2B Buyback of Manus After China Forced Out Meta",
+    "summary": "Tencent is negotiating to become the largest shareholder in agentic AI startup Manus at the same $2 billion valuation Meta had agreed to, after Chinese regulators blocked Meta's acquisition and imposed an exit ban on founder Xiao Hong. ZhenFund and HSG are also participating. Tencent sees overlap with its own agent strategy—including an agent being embedded in WeChat—and Manus most recently reported ~$500M in annual revenue.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-10/tencent-in-talks-to-become-largest-holder-of-manus-ft-reports-mrectviz"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Consolidates Under Greg Brockman as IPO Filing Looms",
+    "summary": "OpenAI president Greg Brockman now oversees ChatGPT, Codex, enterprise, and compute initiatives after Fidji Simo stepped down due to illness. The company is merging its three flagship product lines into a single super-app organization aimed at an 'agentic future.' OpenAI confidentially filed its IPO prospectus in June, targeting a 2027 debut, with a current paper valuation of $852 billion.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.cnbc.com/2026/07/10/openai-power-consolidates-under-co-founder-greg-brockman-ahead-of-ipo.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Safety Chief Johannes Heidecke Departs in Reorganization",
+    "summary": "OpenAI head of safety Johannes Heidecke is leaving after a restructuring folds safety teams under VP of Research and Head of Alignment Mia Glaese, whose role has been expanded. Saachi Jain becomes interim head of safety systems. Heidecke joined in 2021 and took the safety helm when predecessor Lilian Weng left to co-found Thinking Machines Lab. The departure continues a pattern of safety leadership exits at OpenAI.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.engadget.com/2212941/openai-head-of-safety-leaving-company-reorganization/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cursor Secretly Building General-Purpose AI Agent 'Sand' to Compete with Claude Cowork",
+    "summary": "Cursor is developing a general-purpose AI agent internally codenamed 'Sand' that goes beyond coding to handle emails, texts, spreadsheets, and engineering tasks—directly competing with Anthropic's Claude Cowork and OpenAI's ChatGPT Work. Internal rollout began in late June on SpaceXAI compute. Whether Sand reaches market is uncertain: SpaceX's pending $60B acquisition of Cursor could rewrite the entire product roadmap before it ships.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.pymnts.com/news/artificial-intelligence/2026/cursor-prepares-workplace-ai-agent-to-challenge-claude-cowork-and-chatgpt-work/"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Pulls Muse Image Account-Referencing Feature After Auto Opt-In Backlash",
+    "summary": "Meta removed the ability to reference public Instagram accounts in Muse Image AI generation after widespread backlash over the feature's automatic opt-in—which enrolled all public accounts without user knowledge or consent. SAG-AFTRA and talent agency CAA condemned the default. Meta admitted it 'missed the mark' and pulled the feature within days. Muse Image itself remains available on Instagram, WhatsApp, and Meta AI.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.bbc.com/news/articles/c2dy6e8klw0o"
+  },
+  {
+    "section": "industry",
+    "headline": "China Flags Claude Code 'Backdoor'; Alibaba Bans It Company-Wide",
+    "summary": "China's Ministry of Industry and Information Technology warned that Claude Code versions 2.1.91–2.1.196 contain a built-in tracking mechanism that can send sensitive user data to remote servers without consent. Anthropic confirmed the code was added to detect and block illicit model distillation and has since removed it in newer versions. Alibaba banned all employees from using Claude Code as of July 10, directing staff to use its Qoder tool instead.",
+    "source": "Web",
+    "date": "2026-07-14",
+    "url": "https://techcrunch.com/2026/07/04/alibaba-reportedly-bans-employees-from-using-claude-code/"
+  },
+  {
+    "section": "tips",
+    "headline": "LangChain's OpenWiki Brains Gives Agents Proactive Memory from Gmail, Notion, Git, and More",
+    "summary": "LangChain launched OpenWiki Brains, an open-source framework that connects to sources like Gmail, Notion, git repos, Twitter, Hacker News, and web search and turns them into a local Markdown wiki that agents proactively reference as memory—without users manually prompting them to remember things. Two modes: Personal Brain for general cross-source context, Code Brain for codebase documentation. Runs locally on a scheduled cadence with no server required.",
+    "foryou": "Drop this into your agentic stack to give your agents persistent cross-session context from your actual working sources—no more pasting Notion pages or repo READMEs into every prompt.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://www.langchain.com/blog/introducing-openwiki-brains-general-purpose-wiki-memory-for-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Dedicated Memory Supervisor Agent Boosts Long-Horizon Task Success Without Touching the Core Model",
+    "summary": "Researchers improved performance on Terminal-Bench 2.0 and τ²-Bench by adding a lightweight memory agent alongside the action agent that tracks important state and selectively reminds the main agent when critical context risks being lost. The approach is model-agnostic, requires no changes to the underlying model, and composes cleanly with existing pipelines.",
+    "foryou": "A cheap architectural win: wrap your existing action agent with a stateful memory supervisor and watch pass rates improve on multi-step, long-horizon tasks.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://arxiv.org/abs/2607.08716"
+  },
+  {
+    "section": "tips",
+    "headline": "LLM-as-a-Verifier: Route Outputs Through a Second Model as a Cheap Correctness Gate",
+    "summary": "A new general-purpose verification framework uses a second LLM to validate the outputs of a primary model—applicable to code generation, math, reasoning, and structured data extraction. The paper shows it outperforms self-consistency baselines while exploring cost-efficient verifier configurations that minimize token spend without sacrificing accuracy.",
+    "foryou": "Plug an LLM verifier into your agentic pipeline as a final correctness gate—particularly valuable before committing code generation or data extraction outputs where silent failures are costly.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://arxiv.org/abs/2607.05391"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Uses Information Theory to Build Agent Evals That Don't Go Stale",
+    "summary": "Google's Frontier AI team published a framework that modulates evaluation case difficulty using information theory, letting agent evals adapt to model capability rather than relying on fixed test sets that quickly saturate. The approach yields cleaner capability signals at the frontier and is designed to remain useful as models improve over time.",
+    "foryou": "If you're building eval pipelines for production agents, the information-theoretic difficulty calibration here prevents your benchmarks from flatting out—worth adapting for your own eval harness.",
+    "source": "TLDR AI",
+    "date": "2026-07-14",
+    "url": "https://cloud.google.com/blog/products/data-analytics/evaluate-agent-performance/"
+  },
+  {
+    "section": "tips",
+    "headline": "GPT-5.6 Sol Excels at Sustained Multi-Step Work Across Apps and Browsers",
+    "summary": "OpenAI PM Jason Liu argues that Sol is underutilized for long-running agentic workflows spanning apps, browsers, and enterprise data—rather than single-turn completions. Ultra mode adds sub-agents that parallelize complex tasks for faster results. OpenAI's own teams used Sol to configure and supervise Luna model training runs. Efficiency patches also mean Sol now consumes less of its weekly usage cap per task.",
+    "foryou": "If you're routing everything to Fable 5 out of habit, test Sol Ultra on your longest orchestration flows—sub-agent parallelism may outperform a single larger model on compound tasks.",
+    "source": "TLDR AI",
+    "date": "2026-07-14"
+  }
+]
