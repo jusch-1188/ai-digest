@@ -1,0 +1,138 @@
+[
+  {
+    "section": "models",
+    "headline": "Making Fable 5 Cheaper Than Opus: Cognition's Fusion Architecture",
+    "summary": "Cognition replaced Opus 4.8 with Fable 5 in Devin Fusion and their per-task bill dropped — despite Fable 5 costing twice as much per token. The savings come from architecture: Fable's lead model takes 11.5 turns per run versus Opus's 26.5, writes a third of the output tokens, and in 81% of runs never makes a single code edit, delegating everything to a cheaper sidekick. On FrontierCode 1.1, Fable+Sidekick scores 60.7 versus Opus+Sidekick's 54.6, at $1.86 vs $2.04 per run.",
+    "foryou": "If you're running multi-step agentic pipelines, the real cost lever is how often your lead model delegates — smarter orchestration can beat raw per-token price, so evaluate by task cost not token price.",
+    "specs": [
+      { "label": "FrontierCode 1.1 score", "value": "60.7 (Fable) vs 54.6 (Opus)" },
+      { "label": "Cost per run", "value": "$1.86 (Fable+Sidekick) vs $2.04 (Opus)" },
+      { "label": "Lead model turns", "value": "11.5 (Fable) vs 26.5 (Opus)" },
+      { "label": "Output tokens/run", "value": "6.1K (Fable) vs 19.0K (Opus)" },
+      { "label": "Code edit rate", "value": "0% in 81% of Fable-led runs" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://cognition.com/blog/making-fable-cheaper-than-opus"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Sol Is the Current Default for Demanding Knowledge Work",
+    "summary": "Zvi Mowshowitz's detailed analysis crowns GPT-5.6 Sol as the strongest balance of reasoning quality, speed, and cost among current frontier models. Sol excels at long-horizon execution, effective computer use, and sustained agentic workflows. The GPT-5.6 family (Sol, Terra, Luna) reached general availability July 9 and is now ChatGPT's default. Zvi notes task-specific model selection still matters but Sol is the right starting point for most high-stakes work.",
+    "foryou": "For long-running agentic pipelines where you're currently defaulting to Opus or Fable, GPT-5.6 Sol is worth benchmarking — especially for computer use and multi-tool reasoning chains.",
+    "specs": [
+      { "label": "GA date", "value": "July 9, 2026" },
+      { "label": "Family", "value": "Sol (flagship), Terra, Luna" },
+      { "label": "Strengths", "value": "Long-horizon execution, computer use, agentic workflows" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://thezvi.wordpress.com/2026/07/13/better-call-sol-the-workhorse/"
+  },
+  {
+    "section": "models",
+    "headline": "GenCeption: DeepMind Turns Video Gen Models into General-Purpose Vision Systems",
+    "summary": "DeepMind researchers introduced GenCeption, which repurposes a pretrained video generation model as a unified vision system controlled through text instructions — no task-specific fine-tuning required. The approach treats video generation as a general-purpose representation backbone, enabling a single model to handle diverse vision tasks by framing them as video generation problems. This challenges the assumption that specialist vision models are needed for each task type.",
+    "foryou": "This is an architectural signal: pretrained generative models may be repurposable as multi-task backends without fine-tuning, which could reduce the number of specialized models you need to maintain in a production pipeline.",
+    "specs": [
+      { "label": "Architecture", "value": "Pretrained video generation model + text instruction control" },
+      { "label": "Fine-tuning required", "value": "None" },
+      { "label": "Task coverage", "value": "General-purpose vision via text-conditioned generation" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://genception.github.io/"
+  },
+  {
+    "section": "models",
+    "headline": "Sakana AI's Smart Cellular Bricks: Neural Nets for Physical Collective Intelligence",
+    "summary": "Sakana AI extended its collective intelligence research into physical hardware with 'Smart Cellular Bricks' — modular units using local communication and on-device neural networks to classify and reconstruct 3D shapes without any centralized controller. The system achieves high accuracy in shape classification and demonstrates robustness against noise and module failures. Each brick only communicates with its immediate neighbors, yet the collective produces emergent global behavior.",
+    "foryou": "Decentralized neural architectures that work without a central coordinator are a useful conceptual model for building fault-tolerant agentic systems — worth watching as this approach moves toward software agent topologies.",
+    "specs": [
+      { "label": "Architecture", "value": "Decentralized local neural networks on physical modules" },
+      { "label": "Tasks", "value": "3D shape classification & reconstruction" },
+      { "label": "Fault tolerance", "value": "Robust to noise and module failures" },
+      { "label": "Communication", "value": "Local neighbor-only, no central controller" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://sakana.ai/smart-cellular-bricks/"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI's Grok Build CLI Was Secretly Uploading Entire Codebases to Google Cloud",
+    "summary": "A wire-level security analysis published July 12 found that xAI's Grok Build coding CLI packaged and uploaded developers' entire tracked repositories — including Git history, committed secrets, and API keys — to a Google Cloud Storage bucket, at roughly 27,800 times the data volume the coding task actually required. The 'Improve the model' privacy toggle had zero effect; the server continued returning trace_upload_enabled: true regardless. xAI disabled the upload server-side and Elon Musk promised deletion of previously collected data, but no formal security advisory or scope disclosure has been issued.",
+    "source": "TLDR AI (also: TechTimes, CryptoBriefing)",
+    "date": "2026-07-15",
+    "url": "https://gist.github.com/cereblab/dc9a40bc26120f4540e4e09b75ffb547"
+  },
+  {
+    "section": "industry",
+    "headline": "Tom Blomfield (Monzo Founder, YC Partner) Takes Leave to Join Anthropic Compute Team",
+    "summary": "Tom Blomfield — co-founder of Monzo and GoCardless, and a full partner at Y Combinator since 2023 — is taking a leave of absence to join Anthropic as a member of technical staff on the compute team, working alongside co-founder and Chief Compute Officer Tom Brown. Anthropic is managing one of AI's most complex operational challenges: deploying up to 1 million Google TPUs with over 1 GW of capacity coming online in 2026, plus 3.5 GW of next-gen TPU capacity from 2027. The hire reflects Anthropic's 2026 pattern of recruiting marquee founder-operators for non-research roles.",
+    "source": "TLDR AI (also: TechFundingNews, The Next Web)",
+    "date": "2026-07-15",
+    "url": "https://thenextweb.com/news/tom-blomfield-monzo-founder-anthropic-compute"
+  },
+  {
+    "section": "industry",
+    "headline": "Open-Weight Models Hit 29% of AI Gateway Token Volume — at Under 4% of Spend",
+    "summary": "Vercel's July 2026 AI Gateway Production Index reports that open-weight models handled 29% of all token volume in June — up sharply from 11% in April — while accounting for less than 4% of total spending. Chinese open-weight models are driving most of the volume growth. The four major US frontier labs still captured 95% of gateway spend, illustrating a widening split between usage share and dollar share in AI infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://vercel.com/blog/ai-gateway-production-index-july-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Signs $19B, 20-Year Data Center Lease with TeraWulf for Kentucky AI Campus",
+    "summary": "Anthropic has entered a 20-year lease with TeraWulf for a purpose-built AI campus at the Justified Data site in Hawesville, Kentucky, providing approximately $19 billion in contracted revenue over the initial term. The campus will accommodate ~401 MW of critical IT load, with initial capacity in H2 2027 and full ramp by early 2028. The deal was announced July 6 as Anthropic prepares its S-1 for a projected October 2026 IPO.",
+    "source": "Web",
+    "date": "2026-07-15",
+    "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+  },
+  {
+    "section": "tips",
+    "headline": "Prime Intellect Releases verifiers v1: Composable Environment Stack for Agentic RL",
+    "summary": "Prime Intellect's verifiers v1 is a ground-up redesign of its open-source environment stack for agentic reinforcement learning, decomposing environments into three independent parts: a taskset (the data, tools, and scoring), a harness (the program that solves the task), and a runtime. A directed acyclic graph trace format eliminates quadratic data growth that plagued earlier approaches. Crucially, the same TOML config works for both training and evaluation — no code duplication. Harbor (used by Terminal Bench 2) is now a supported taskset format, importable in a handful of config lines.",
+    "foryou": "If you're training or evaluating coding or computer-use agents, verifiers v1 lets you reuse the same environment config for RL training and evals — a real workflow simplification that also enables trajectories longer than your model's native context window.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://www.primeintellect.ai/blog/verifiers-v1"
+  },
+  {
+    "section": "tips",
+    "headline": "How Microsoft Ships Thousands of Production AI Agents",
+    "summary": "Microsoft's engineering blog detailed the infrastructure and practices behind operating AI agents at scale across Foundry and Copilot products. Key patterns: treat retrieval as a sub-agent (not an inline tool call), assign each agent a distinct identity and isolated workspace to avoid state leakage, and use rubric-based evaluations with automated improvement loops rather than manual review. The post explains how these practices combine to make large agent fleets debuggable and governable.",
+    "foryou": "The 'retrieval as sub-agent' pattern and rubric-based automated evals are directly applicable to any agentic system you're running at scale — they shift eval from a bottleneck to a continuous feedback loop.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://blog.bytebytego.com/p/how-microsoft-ships-ai-agents-at"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Open-Sources Mantis Skills: Security Review Harness for AI Coding Agents",
+    "summary": "Google released Mantis Skills, a decoupled, sequential toolkit designed to give coding agents a structured approach to security review. It is explicitly designed to be adapted — not followed rigidly — with Google recommending using AI to iterate on the skills and augmenting the threat model with your own internal documentation, coding standards, and build systems. Risk tolerance should be calibrated to the specific codebase context rather than applied uniformly.",
+    "foryou": "Mantis gives you a ready-made security review scaffold for AI coding agents that you can slot into your CI or code review pipeline and tune to your own codebase's risk profile.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://github.com/google/mantis"
+  },
+  {
+    "section": "tips",
+    "headline": "Long-Horizon Terminal-Bench: Evaluating Agents Across Hundreds of Terminal Interactions",
+    "summary": "Long-Horizon Terminal-Bench (LHTB) is a new benchmark evaluating whether LLM agents can sustain productive work across hundreds of terminal interactions, not just isolated one-shot tasks. Its 46 stateful tasks use hidden verifiers that rebuild and inspect final artifacts rather than trusting the agent's reported progress — closing a common eval loophole where agents claim success without completing the actual work. Compatible with Harbor, so it slots into verifiers v1 configs.",
+    "foryou": "If your agents work in terminal or shell environments, LHTB is the right eval harness — the hidden verifier approach prevents agents from gaming the eval by reporting false completions.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://github.com/zli12321/LHTB"
+  },
+  {
+    "section": "tips",
+    "headline": "Manus Auto-Publish: Build Once, Deploy Continuously to Live URLs",
+    "summary": "Manus introduced Auto-Publish, a feature that automatically deploys successful builds to live URLs without manual intervention. Once a build passes, it ships — removing the deploy step as a human bottleneck in AI-assisted development workflows. The feature is aimed at teams using AI to generate and iterate on apps, where the manual push-to-deploy cycle creates friction.",
+    "foryou": "Auto-Publish is directly applicable if you're using AI to generate or iterate on web artifacts — it closes the loop between generation and live deployment and is worth evaluating for your own CI pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-07-15",
+    "url": "https://manus.im/blog/manus-auto-publish"
+  }
+]
