@@ -1,0 +1,137 @@
+[
+  {
+    "section": "models",
+    "headline": "Bonsai 27B: First 27B-Class Model to Run on a Phone",
+    "summary": "PrismML released Bonsai 27B, a low-bit quantization of Qwen3.6-27B using 1-bit ({-1, +1}) and ternary ({-1, 0, +1}) weights. The 1-bit variant clocks in at 3.9 GB and runs on an iPhone 17 Pro Max at 11 tokens/sec; the ternary variant is 5.9 GB and hits 26 tokens/sec on M5 Pro. Both variants are multimodal with 262K-token context and support speculative decoding. Ternary retains 94.6% of FP16 quality; 1-bit retains 89.5%—with math and coding nearly untouched.",
+    "foryou": "A 27B model at 3.9 GB opens a new class of edge-agent deployments—worth benchmarking for latency-sensitive agentic tasks requiring privacy or offline operation.",
+    "specs": [
+      { "label": "Model size (1-bit)", "value": "3.9 GB" },
+      { "label": "Model size (ternary)", "value": "5.9 GB" },
+      { "label": "Context window", "value": "262K tokens" },
+      { "label": "Quality retention (1-bit)", "value": "89.5% of FP16" },
+      { "label": "Quality retention (ternary)", "value": "94.6% of FP16" },
+      { "label": "Speed (iPhone 17 Pro Max)", "value": "11 tokens/sec (1-bit)" },
+      { "label": "Speed (M5 Pro)", "value": "26 tokens/sec (ternary)" },
+      { "label": "License", "value": "Apache 2.0" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://prismml.com/news/bonsai-27b"
+  },
+  {
+    "section": "models",
+    "headline": "Google Gemma 4 E2B Optimized for Pixel 10's TPU",
+    "summary": "Google announced Gemma 4 E2B for TPU, a ~2.3B effective-parameter model (5.1B including embeddings) that runs natively on the Pixel 10's Tensor G5 TPU. It enables fully offline conversation, image identification, audio transcription, and hands-free device control via Mobile Actions—all with data never leaving the device. Supported on Pixel 10, 10 Pro, 10 Pro XL, and 10 Pro Fold.",
+    "foryou": "On-device models of this caliber could anchor privacy-first agentic pipelines where cloud latency or data sovereignty is a constraint worth solving at the edge.",
+    "specs": [
+      { "label": "Parameters (effective)", "value": "~2.3B (5.1B w/ embeddings)" },
+      { "label": "Target hardware", "value": "Tensor G5 TPU (Pixel 10 series)" },
+      { "label": "Key capabilities", "value": "Offline chat, image ID, audio transcription, Mobile Actions" },
+      { "label": "Privacy", "value": "Fully on-device, no cloud required" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://9to5google.com/2026/07/14/pixel-10-gemma-4/"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Explores $1.5B Raise at $71B Valuation Ahead of IPO",
+    "summary": "DeepSeek is reportedly in talks to raise $1.5 billion at a $71 billion valuation—up from a $50 billion valuation just six weeks ago—ahead of a possible IPO filing as early as late 2026 or early 2027. The startup has begun working with accounting and banking advisers. It had just raised $7 billion in its first-ever outside funding round, and as of June 2026 accounted for nearly 23% of tokens processed through Vercel's enterprise AI gateway.",
+    "source": "TLDR AI (also: Semafor, TechCrunch)",
+    "date": "2026-07-16",
+    "url": "https://techcrunch.com/2026/07/14/deepseek-reportedly-in-talks-to-raise-1-5b-then-ipo/"
+  },
+  {
+    "section": "industry",
+    "headline": "Demis Hassabis Calls for FINRA-Style AI Self-Regulatory Body",
+    "summary": "Google DeepMind CEO Demis Hassabis published an essay proposing a U.S.-led AI standards body modeled on FINRA—a private, industry-funded watchdog under government oversight—to test frontier models before release. Under the plan, labs would share models up to 30 days pre-launch for safety testing covering cyber, biological, and deception capabilities. The proposal received support from competitors at Microsoft and OpenAI, as well as Chamath Palihapitiya. Hassabis wants the body operational before year-end.",
+    "source": "Semafor (also: TLDR AI, Axios, CNBC)",
+    "date": "2026-07-16",
+    "url": "https://techcrunch.com/2026/07/14/deepmind-ceo-calls-for-an-independent-standards-body-to-regulate-frontier-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "New York Imposes Nation's First Statewide Data Center Moratorium",
+    "summary": "Governor Kathy Hochul signed an executive order pausing state environmental permits for new hyperscale data centers (50 MW or more) for up to one year—making New York the first U.S. state to impose such a ban. The order cites threats to ratepayer costs, the energy grid, and communities. Facilities already approved can proceed. President Trump demanded the policy be reversed 'IMMEDIATELY' the following day, while a Siena poll showed 46% of New Yorkers support the moratorium.",
+    "source": "Semafor (also: CNBC, Washington Post)",
+    "date": "2026-07-16",
+    "url": "https://www.cnbc.com/2026/07/14/new-york-ai-data-center-ban.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Elon Musk Quietly Acquires $1B Gas Turbine Company to Power Grok",
+    "summary": "Elon Musk acquired APR Energy, a Jacksonville-based company operating mobile gas and diesel turbines with over 1 GW of generating capacity, for more than $1 billion. The deal—surfaced via an FTC early termination notice dated May 14, 2026—gives xAI direct control over power generation for its Colossus supercomputers. The turbines can reach full power in under 10 minutes, addressing xAI's immediate energy needs but drawing criticism as Musk pivots from his clean-energy persona toward fossil fuels.",
+    "source": "TLDR AI (also: Electrek)",
+    "date": "2026-07-16",
+    "url": "https://electrek.co/2026/07/14/musk-buys-gas-turbine-company-apr-energy-grok/"
+  },
+  {
+    "section": "industry",
+    "headline": "Stripe and Advent Make $53B Bid for PayPal",
+    "summary": "Stripe and private-equity firm Advent International submitted a joint $53 billion bid ($60.50/share, a 28% premium) to acquire PayPal. The deal, backed by ~$50B in committed bank financing, would be the largest fintech acquisition ever—and a rare case of a venture-backed company buying an S&P 500 firm. PayPal has signaled it is 'uninterested' for now, but its board was set to meet around July 20 to discuss the offer. Stripe processes merchant payments while PayPal controls 430 million consumer accounts.",
+    "source": "Semafor (also: CNBC, Axios)",
+    "date": "2026-07-16",
+    "url": "https://www.cnbc.com/2026/07/15/stripe-advent-offer-to-buy-paypal-for-more-than-53-billion-reuters.html"
+  },
+  {
+    "section": "industry",
+    "headline": "US Government Confronts China's Open-Source AI Distillation Problem",
+    "summary": "American AI labs and the White House are grappling with how to prevent Chinese companies from using distillation—systematically querying U.S. frontier models to generate synthetic training data for cheaper rival models. The White House OSTP has accused China of 'deliberate, industrial-scale campaigns' of this practice. Policy options being weighed include designating Chinese models as supply-chain risks, tightening export controls, and using national security framing to push U.S. companies away from Chinese AI. Nvidia is lobbying against stricter export controls, arguing continued access keeps China dependent on U.S. chip infrastructure.",
+    "source": "Semafor",
+    "date": "2026-07-16",
+    "url": "https://www.semafor.com/article/07/15/2026/washington-confronts-chinas-open-source-models"
+  },
+  {
+    "section": "industry",
+    "headline": "Kalshi Launches GPU Compute Forward Curve",
+    "summary": "Prediction market exchange Kalshi launched a compute forward curve on July 14, plotting implied future prices for renting Nvidia B200, H200, and A100 GPUs up to a year out. The curve is derived from existing event contracts on the platform—giving it a head start over CME and ICE, which are building traditional futures requiring additional regulatory approval. Hyperscalers committed $500–600B to compute in 2026 alone, signaling the market size at stake.",
+    "source": "TLDR AI (also: Bloomberg)",
+    "date": "2026-07-16",
+    "url": "https://www.bloomberg.com/news/articles/2026-07-14/kalshi-ramps-up-effort-to-build-markets-for-ai-computing-power"
+  },
+  {
+    "section": "tips",
+    "headline": "Compiling Agent Skills Cut Token Use by 94%",
+    "summary": "Vivek Haldar converted a recurring content-generation workflow from natural-language agent instructions into deterministic code, cutting token usage by 94%. The core insight: LLMs should only handle judgment-heavy steps (e.g., drafting copy, evaluating relevance), while conventional software handles stable, repetitive operations (querying data, checking recent posts). The result is a clear two-layer architecture—compile predictable operations out of the agent loop entirely.",
+    "foryou": "Audit your own agentic pipelines for which steps are genuinely judgment-heavy vs. deterministically codeable—this technique could cut your inference costs by an order of magnitude on recurring workflows.",
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://vivekhaldar.com/articles/compiling-an-ai-agent-skill/"
+  },
+  {
+    "section": "tips",
+    "headline": "WANDR Benchmark: Evaluating Research Agents That Search Wide and Deep",
+    "summary": "Perplexity Research released WANDR (Wide ANd Deep Research), an open benchmark for realistic, challenging data-collection tasks in knowledge work. WANDR specifically measures agents' ability to sustain broad discovery across many sources while maintaining factual accuracy in each record—a dual requirement that most existing benchmarks collapse into a single score. It uses a composable qualification key hierarchy to capture the wide-and-deep structure. The benchmark and evaluation harness are publicly available.",
+    "foryou": "If you're building or evaluating research or data-collection agents, WANDR gives you a principled split between breadth-of-discovery and per-record factual quality—two dimensions that need to be optimized independently.",
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://research.perplexity.ai/articles/wandr-benchmark-evaluating-research-agents-that-must-search-wide-and-deep"
+  },
+  {
+    "section": "tips",
+    "headline": "5 Trends That Defined AI Engineering at World's Fair 2026",
+    "summary": "The AI Engineer World's Fair 2026 highlighted five major trends in production AI: eval harnesses becoming mandatory practice, context window management as a first-class engineering problem, multi-model orchestration replacing single-model pipelines, autonomous system deployment with human-in-the-loop checkpoints, and agent coding going mainstream across software teams. The piece documents how AI engineering has shifted from experimental to production-standard in roughly three years.",
+    "foryou": "A useful calibration checkpoint—if you're not yet running eval harnesses and treating context management as a core engineering discipline, this documents what production-tier practitioners have standardized on.",
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://www.latent.space/p/aiewf26trends"
+  },
+  {
+    "section": "tips",
+    "headline": "The Guide to Software Factories: Beyond Interactive Coding Agents",
+    "summary": "Warp CEO Zach Lloyd argues that cloud software factories—orchestrated AI workflows automating the full SDLC—will replace interactive coding agents as the dominant engineering model. The factory architecture he outlines centers on cloud runtimes, multi-model orchestration, human oversight gates, and continuous evaluation loops. Warp's own product Oz is already used by clients like Rectangle Health, which is now shipping 35K+ lines of code per week with agents writing over 50% of their own codebase.",
+    "foryou": "The interactive coding agent you're using today is a stepping stone—the next evolution is a cloud-native factory with auditable agent pipelines, and it's worth starting to architect toward that now.",
+    "source": "TLDR AI",
+    "date": "2026-07-16",
+    "url": "https://www.latent.space/p/software-factories"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI's Five Practices for Measuring Business Value of AI Agents",
+    "summary": "OpenAI published an enterprise framework for governing and measuring AI investments as organizations shift from chat tools to agentic workflows. The five practices: (1) visibility into who uses what and at what cost, (2) model selection based on cost-per-accepted-outcome rather than per-token price, (3) governance defining which context, tools, and actions agents can access, (4) portfolio funding balancing broad access vs. strategic workflow bets, and (5) capacity planning with focused toolsets and defined stopping conditions to reduce unnecessary loops.",
+    "foryou": "The cost-per-accepted-outcome framing in practice #2 is the right mental model for justifying agentic spend to stakeholders—track resolved cases or merged PRs, not tokens.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-16",
+    "url": "https://openai.com/index/managing-ai-investments-in-agentic-era/"
+  }
+]
