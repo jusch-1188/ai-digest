@@ -1,0 +1,152 @@
+[
+  {
+    "section": "models",
+    "headline": "Thinking Machines Releases Inkling: 975B Open-Weight Multimodal MoE",
+    "summary": "Mira Murati's Thinking Machines Lab released Inkling, its first in-house model trained from scratch. It's a 975B-parameter mixture-of-experts with 41B active parameters, natively multimodal across text, image, audio, and video, trained on 45 trillion tokens with a 1M-token context window. The model is open-weight and explicitly positioned not as the strongest model available but as a fine-tuning starting point — Thinking Machines markets it alongside Tinker, its model customization platform. Uniquely, Inkling flags uncertainty rather than guessing and lets users dial 'thinking effort' up or down for speed/depth tradeoffs.",
+    "foryou": "If you're building agentic pipelines that need a customizable, efficient open-weight base — especially with audio or video inputs — Inkling's tunable reasoning effort and Tinker platform are worth evaluating as a serious Llama/Qwen alternative.",
+    "specs": [
+      { "label": "Architecture", "value": "MoE, 975B total / 41B active" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Modalities", "value": "Text, image, audio, video" },
+      { "label": "Training tokens", "value": "45T" },
+      { "label": "Weights", "value": "Open (downloadable)" },
+      { "label": "Efficiency", "value": "1/3 tokens of Nemotron 3 Ultra at same coding score" }
+    ],
+    "source": "TLDR AI (also: TechCrunch, Bloomberg, MarkTechPost)",
+    "date": "2026-07-17",
+    "url": "https://thinkingmachines.ai/news/introducing-inkling/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Details GPT-Red: AI Red-Teamer That Beat Human Testers 84% to 13%",
+    "summary": "OpenAI published details on GPT-Red, an internal automated red-teaming model trained with self-play reinforcement learning to find prompt injection vulnerabilities. GPT-Red discovered a novel 'fake chain-of-thought' attack — inserting spoofed entries into another model's reasoning trace — that hadn't been seen before. Training GPT-5.6 Sol against GPT-Red's attacks reduced failures on a difficult prompt-injection benchmark sixfold. OpenAI is keeping GPT-Red internal due to its intentionally developed offensive capabilities.",
+    "foryou": "For agentic pipelines where your models call tools or reason over external data, this 'fake chain-of-thought' injection vector is a real threat model to build defenses around — especially if you're using Sol as an orchestrator.",
+    "specs": [
+      { "label": "Technique", "value": "Self-play RL, adversarial red-teaming" },
+      { "label": "Human vs AI", "value": "GPT-Red 84% vs humans 13% on prompt injection" },
+      { "label": "GPT-5.6 improvement", "value": "6x fewer failures on prompt-injection benchmark" },
+      { "label": "Availability", "value": "Internal only" }
+    ],
+    "source": "TLDR AI (also: MIT Technology Review, MarkTechPost)",
+    "date": "2026-07-17",
+    "url": "https://openai.com/index/unlocking-self-improvement-gpt-red/"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Sol Ranks #1 on Design Arena — 18 Places Above Its Predecessor",
+    "summary": "GPT-5.6 Sol has taken the top spot on Design Arena's Web Design Arena benchmark, jumping 18 places above GPT-5.5. Analysis suggests the model actively recognizes and suppresses common AI design anti-patterns while combining strong layout templates with high personalization. This represents a qualitative leap in visual and UX output quality that wasn't achieved by simply scaling — Sol appears to have internalized aesthetic reasoning rather than just generating plausible-looking markup.",
+    "foryou": "If you're using LLMs to generate UI components or prototypes, Sol is now meaningfully better for front-end work than previous models — worth testing specifically for design-heavy agent tasks.",
+    "specs": [
+      { "label": "Benchmark", "value": "Design Arena Web Design Arena — #1" },
+      { "label": "vs GPT-5.5", "value": "+18 places" },
+      { "label": "Key capability", "value": "Anti-pattern suppression + personalization" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://notes.designarena.ai/how-openais-sol-finally-learned-design-taste/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.5 Pro Targets July 17 GA With 2M Context and Deep Think Reasoning",
+    "summary": "Google has been targeting today (July 17) for the general availability of Gemini 3.5 Pro after scrapping and rebuilding the original base model due to structural failures in recursive tool-calling and SVG generation. Rumored specs — from third-party sources, not yet officially confirmed by Google — include a 2M-token context window (double any current frontier model), a Deep Think reasoning layer for multi-step problems, and premium pricing at $15/M input and $60/M output. No official model card or API listing has appeared as of this morning.",
+    "foryou": "A 2M-context model with extended reasoning would be significant for long-context agentic tasks — watch for the official Google announcement today and test deep tool-calling chains specifically, given that was the known failure mode in the scrapped version.",
+    "specs": [
+      { "label": "Context window (rumored)", "value": "2M tokens" },
+      { "label": "Reasoning", "value": "Deep Think mode" },
+      { "label": "Cost input (rumored)", "value": "$15 / 1M tokens" },
+      { "label": "Cost output (rumored)", "value": "$60 / 1M tokens" },
+      { "label": "Status", "value": "GA targeted July 17 — not yet confirmed" }
+    ],
+    "source": "Web (TechTimes, Enterprise DNA, Gate.com)",
+    "date": "2026-07-17",
+    "url": "https://www.techtimes.com/articles/320308/20260713/gemini-35-pro-targets-july-17-after-full-rebuild-every-spec-remains-unconfirmed.htm"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Begins IPO Investor Meetings at $965B Valuation",
+    "summary": "Anthropic is moving toward a potential IPO later this year, with Goldman Sachs, Morgan Stanley, and JPMorgan Chase leading investor roadshow preparations. The company recently closed a $65 billion funding round at a $965 billion valuation — surpassing OpenAI's $852 billion private-market figure. Anthropic is reportedly on track to hit $47B in annualized revenue and projects profitability in 2029, a year ahead of OpenAI's own projections. The IPO would test public market appetite for frontier AI companies ahead of OpenAI's own expected September debut.",
+    "source": "TLDR AI (also: CNBC)",
+    "date": "2026-07-17",
+    "url": "https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html"
+  },
+  {
+    "section": "industry",
+    "headline": "NVIDIA Launches Jetson Thor T3000 and T2000 for Mainstream Edge Robotics",
+    "summary": "NVIDIA introduced two new Blackwell-powered Jetson modules targeting mass-market robotics and edge AI: the T3000 (865 FP4 TFLOPS, 32GB LPDDR5X, 25GbE) and T2000 (400 FP4 TFLOPS), both significantly more compact and power-efficient than the flagship T5000. NVIDIA also released Cosmos 3 Edge, a 4B-parameter world foundation model optimized to run on Thor hardware. The platform already has adoption from Amazon Robotics, Boston Dynamics, FANUC, 1X, and Hitachi.",
+    "source": "TLDR AI (also: NVIDIA Blog, CNX Software)",
+    "date": "2026-07-17",
+    "url": "https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity SPACE: Secure Sandbox Runtime for Long-Running AI Agents",
+    "summary": "Perplexity released SPACE, a sandbox platform for running AI agents securely on sensitive tasks. Each agent session runs inside a Firecracker microVM with per-session credential isolation — secrets are never stored in the sandbox. Sessions can be paused, resumed up to a week later, or forked into parallel branches. SPACE cut median sandbox spin-up time from 185ms to 60ms (3.1x) and P90 from 447ms to 89ms. It supports both cloud and on-premises deployment.",
+    "foryou": "If you're orchestrating long-running agents that handle credentials or sensitive data, SPACE's architecture — ephemeral VMs plus rolling snapshots — is the reference design you should be measuring your own setup against.",
+    "source": "TLDR AI (also: SiliconANGLE, Perplexity Research)",
+    "date": "2026-07-17",
+    "url": "https://www.perplexity.ai/hub/blog/secure-sandboxes-for-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Grok Build: xAI's Open-Source Terminal Coding Agent",
+    "summary": "xAI released Grok Build, an open-source terminal-based coding agent powered by Grok 4.5. It inspects codebases, edits files, runs shell commands, performs web searches, and manages long-running tasks. Grok Build supports interactive use, headless/CI scripting, and IDE integration via the Agent Client Protocol — the same protocol used by tools like Cursor. It's available directly from the xAI console and in the Cursor IDE on all plans.",
+    "foryou": "Worth benchmarking against Claude Code and Codex CLI for your agentic coding workflows — Agent Client Protocol support means it can slot into your existing IDE integrations without friction.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://github.com/xai-org/grok-build"
+  },
+  {
+    "section": "tips",
+    "headline": "Model Routing Is a Systems Optimization Problem, Not Just Model Selection",
+    "summary": "IBM Research published an analysis showing that model routing decisions are far more complex than picking the cheapest model for a task. Caching, workload interaction patterns, and serving infrastructure characteristics often dominate cost and latency — more than base model pricing or task difficulty. Effective routing requires optimizing across the entire system operating point simultaneously, not just selecting the locally optimal model per request.",
+    "foryou": "If you're building multi-model pipelines with cost or latency constraints, this is a useful corrective: your routing logic needs to account for cache hit rates and infrastructure utilization, not just per-token prices.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://huggingface.co/blog/ibm-research/model-routing-is-simple-until-it-isnt"
+  },
+  {
+    "section": "tips",
+    "headline": "First Experimental Evidence of Recursive Self-Improvement in AI Research Agents",
+    "summary": "Researchers published the first experimental evidence of genuine recursive self-improvement: they ran an autoresearch agent on an autoresearch agent for 8 days. The outer loop optimized the inner loop's harness code against benchmark scores across multiple benchmarks. The result beat a hand-tuned baseline that took two years to build, designed a novel search algorithm, reduced prompt size by 16x, and built in reward-hacking defenses. The system operated fully autonomously — no human guidance after initialization.",
+    "foryou": "This is a concrete proof-of-concept that meta-level agent optimization is tractable now, not just theoretically — worth understanding if you're building multi-agent systems where the orchestrator can modify its own prompts or tool configurations.",
+    "source": "TLDR AI (also: arxiv)",
+    "date": "2026-07-17",
+    "url": "https://arxiv.org/html/2607.07663v1"
+  },
+  {
+    "section": "tips",
+    "headline": "ReactBench v1: Eval Framework for Testing Coding Agents on Realistic React Work",
+    "summary": "ReactBench v1 is a new evaluation framework that tests coding agents on realistic React development tasks — not toy problems. It benchmarks how well agents handle real-world component work including state management, prop handling, and integration patterns. It provides a reproducible leaderboard format for comparing agents on front-end coding specifically.",
+    "foryou": "If you're evaluating which coding agent to use for front-end work or building your own, ReactBench gives you a grounded benchmark to measure against rather than relying on general coding leaderboards that may not reflect UI-layer complexity.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://www.reactbench.com/blog"
+  },
+  {
+    "section": "tips",
+    "headline": "The $110/Month Self-Improving Dev Pipeline Using Claude Code",
+    "summary": "A developer built a fully autonomous backlog management loop for $110/month: Claude Code triages new issues, decomposes large ones into sub-tasks, implements changes, runs the test suite, and opens PRs — all without human intervention. The system runs on a schedule, processing the week's backlog continuously. The key design is the triage-decompose-implement-test loop with a self-imposed size limit that prevents runaway PRs.",
+    "foryou": "A practical, immediately replicable template for autonomous coding pipelines — the loop structure and cost profile make this a realistic baseline for your own agentic dev workflow.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://andywidjaja.com/blog/110-pipeline"
+  },
+  {
+    "section": "tips",
+    "headline": "Open Interpreter: Run Coding Agents Locally and Test App Interfaces",
+    "summary": "Open Interpreter is an open-source framework for running coding agents entirely locally, with the ability to test both web and native app interfaces directly. It supports local model execution, removing the need to send code or context to external APIs — useful for proprietary codebases or offline environments. The project is actively maintained and updated for 2026 model capabilities.",
+    "foryou": "If you're working with proprietary codebases or need air-gapped agentic coding, Open Interpreter is the most mature local alternative to cloud coding agents — worth keeping in your toolkit for sensitive work.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://github.com/openinterpreter/openinterpreter"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel AI Gateway Leaderboard Opens Production Traffic Data to Public",
+    "summary": "Vercel opened up its AI Gateway leaderboard data — showing real production traffic rankings across models, AI labs, applications, and providers. Charts are now shareable, giving practitioners a ground-truth view of how AI is actually being used in production rather than relying on benchmark rankings. The leaderboard updates continuously from live routing traffic through Vercel's infrastructure.",
+    "foryou": "Production traffic distribution is the single most honest signal for which models are actually winning in real applications — this is a must-bookmark data source for making informed model selection decisions.",
+    "source": "TLDR AI",
+    "date": "2026-07-17",
+    "url": "https://vercel.com/changelog/open-data-and-shareable-charts-for-ai-gateway-leaderboards"
+  }
+]
