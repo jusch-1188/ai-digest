@@ -1,0 +1,311 @@
+[
+  {
+    "section": "models",
+    "headline": "Qwen3.8-Max Preview: Alibaba's 2.4T Open-Weight Multimodal Model",
+    "summary": "Alibaba previewed Qwen3.8-Max at WAIC in Shanghai—a 2.4-trillion-parameter sparse MoE model supporting text, images, video, and documents with a 1M-token context window. Alibaba claims it is \"second only to Fable 5,\" though no independent benchmarks have been published. The preview is live on Alibaba's Token Plan at 10% of standard pricing; full open weights are coming soon without a confirmed date.",
+    "foryou": "Unconfirmed-but-huge: a 2.4T open-weight multimodal model at fraction-of-Fable-5 pricing would transform your agentic pipeline economics if the benchmarks hold up when weights drop.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "2.4 trillion (MoE)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, images, video, documents"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Preview pricing",
+        "value": "10% of standard via Token Plan"
+      },
+      {
+        "label": "Open weights",
+        "value": "Announced, date TBD"
+      },
+      {
+        "label": "Independent benchmarks",
+        "value": "None published yet"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/"
+  },
+  {
+    "section": "models",
+    "headline": "Kimi K3 Tops Frontend Code Arena, Beats Claude Fable 5",
+    "summary": "Moonshot AI released Kimi K3, a 2.8-trillion-parameter MoE model with native vision and a 1M-token context window. It jumped from 18th to 1st in LM Arena's Frontend Code ranking with an Elo of 1,679, surpassing Claude Fable 5 (1,631) and GPT-5.6 Sol (1,618). Reasoning is always-on by default. Full open weights are due July 27; API pricing starts at $3/M input and $15/M output tokens.",
+    "foryou": "The open weights dropping July 27 make this a direct drop-in for any pipeline where frontend/code generation quality matters—fine-tunable on your own data at Sonnet 5 pricing.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "2.8 trillion (MoE, 16 of 896 experts active)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text + vision"
+      },
+      {
+        "label": "Frontend Code Arena Elo",
+        "value": "1,679 (#1)"
+      },
+      {
+        "label": "Artificial Analysis score",
+        "value": "57 (vs Fable 5 at 60)"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$3 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$15 / 1M tokens"
+      },
+      {
+        "label": "Open weights",
+        "value": "Due July 27, 2026"
+      },
+      {
+        "label": "License",
+        "value": "Open weight (TBC)"
+      }
+    ],
+    "source": "TLDR AI (also: The Summary AI)",
+    "date": "2026-07-20",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/moonshot-releases-2-8-trillion-parameter-kimi-k3"
+  },
+  {
+    "section": "models",
+    "headline": "Thinking Machines Inkling: First Competitive US Open-Weight Model",
+    "summary": "Mira Murati's Thinking Machines Lab released Inkling, a 975-billion-parameter MoE model (41B active parameters) trained on 45 trillion tokens across text, image, audio, and video. It's the strongest US-origin open-weights model by Artificial Analysis Intelligence Index (score: 41), with GDPval-AA Elo of 1,238, beating DeepSeek v4 Flash Max. Available on Hugging Face under Apache 2.0; API pricing is $1.87/M input and $4.68/M output with a 64K context window. Notably, the model flags uncertainty rather than hallucinating.",
+    "foryou": "The first US open-weight model that's genuinely competitive—Apache 2.0 + self-fine-tuning via Tinker means you can customize it on proprietary data without an engineer in the loop.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "975B total (41B active)"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, audio, video"
+      },
+      {
+        "label": "Training tokens",
+        "value": "45 trillion"
+      },
+      {
+        "label": "Context window",
+        "value": "64K tokens"
+      },
+      {
+        "label": "Intelligence Index (AA)",
+        "value": "41"
+      },
+      {
+        "label": "GDPval-AA Elo",
+        "value": "1,238"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$1.87 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$4.68 / 1M tokens"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-07-20",
+    "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI GPT-Live: Full-Duplex Voice That Listens and Speaks Simultaneously",
+    "summary": "OpenAI released GPT-Live on July 8, powering a new ChatGPT Voice that operates full-duplex—making interaction decisions (speak, listen, pause, interrupt, or invoke a tool) multiple times per second rather than waiting for turn ends. GPT-Live-1 scores 84.2% on GPQA vs 45.3% for old Advanced Voice Mode, and 75.2% on BrowseComp vs 0.7% for its predecessor. It can silently delegate hard questions to GPT-5.5 in the background. Available on iOS, Android, and web; API access forthcoming.",
+    "foryou": "Full-duplex voice with background GPT-5.5 delegation is the first voice front-end actually capable of driving your agentic workflows—the 75% BrowseComp jump is the stat that matters.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Full-duplex (parallel listen + speak)"
+      },
+      {
+        "label": "GPQA score",
+        "value": "84.2% (vs 45.3% old AVM)"
+      },
+      {
+        "label": "BrowseComp score",
+        "value": "75.2% (vs 0.7% old AVM)"
+      },
+      {
+        "label": "Background LLM",
+        "value": "GPT-5.5"
+      },
+      {
+        "label": "Platforms",
+        "value": "iOS, Android, web"
+      },
+      {
+        "label": "API",
+        "value": "Coming soon (sign-up available)"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-07-20",
+    "url": "https://openai.com/index/introducing-gpt-live/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Fable 5 Now Included in All Max and Team Premium Plans",
+    "summary": "Starting July 20, Claude Fable 5 is permanently included in Max and Team Premium subscription plans at 50% of weekly usage limits, ending the staged rollout approach driven by unpredictable demand. Pro and Team Standard users retain access via usage credits and receive a one-time $100 credit. Demand for Fable 5 has been challenging to predict, prompting the staged rollout.",
+    "foryou": "If your team is on Max or Team Premium, Fable 5 access is now predictable and budget-stable—time to move production pipelines off Opus 4.8 where you've been rationing.",
+    "specs": [
+      {
+        "label": "Plans included",
+        "value": "Max, Team Premium"
+      },
+      {
+        "label": "Usage limits",
+        "value": "50% of weekly plan limits"
+      },
+      {
+        "label": "Pro/Standard access",
+        "value": "Via usage credits + $100 one-time credit"
+      },
+      {
+        "label": "Effective date",
+        "value": "July 20, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://support.claude.com/en/articles/15424964-claude-fable-5-on-your-plan"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Sends Legal Letters to Dozens of OpenAI Employees Over Trade Secrets",
+    "summary": "Apple has sent legal letters to 40+ former employees who now work at OpenAI, instructing them to preserve documents and communications relevant to Apple's trade secret lawsuit. Apple alleges OpenAI recruited key engineers and gained access to proprietary designs, manufacturing processes, and other trade secrets. More than 400 former Apple employees now work at OpenAI. OpenAI denies the allegations, stating it is unaware of any evidence the complaint has merit.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://www.macrumors.com/2026/07/17/apple-sends-legal-letters-openai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Moonshot AI Plans Hong Kong IPO Within Six Months After Kimi K3 Demand Surge",
+    "summary": "Following Kimi K3's launch and overwhelming demand—which forced Moonshot to pause new subscriptions as GPU capacity was overwhelmed—Moonshot AI is moving toward a Hong Kong Stock Exchange listing within six months. The company is working with Goldman Sachs and CICC. Moonshot is also restructuring its offshore corporate structure to facilitate the listing.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/moonshot-ai-plans-hong-kong-123000193.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Alibaba Open-Sources SAIL AI Chip Software Stack at WAIC, Targeting Nvidia's CUDA Lock-In",
+    "summary": "Alibaba's chip unit T-Head announced at WAIC in Shanghai that it is open-sourcing SAIL, the full software stack for its Zhenwu series AI chips. The move is designed to lower migration barriers for developers locked into Nvidia's CUDA ecosystem—T-Head says programmers can adapt SAIL to mainstream AI frameworks in under seven days. Alibaba has already shipped 560,000 Zhenwu chips to 400+ customers. The move coincides with the Pentagon adding Alibaba to its Chinese military companies blacklist.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://thenextweb.com/news/alibaba-t-head-sail-open-source-nvidia-cuda-alternative"
+  },
+  {
+    "section": "industry",
+    "headline": "General Compute Secures $400M Using Inference Chips as Loan Collateral",
+    "summary": "AI inference cloud startup General Compute has raised $400 million in debt financing using inference-specific chips—not GPUs—as collateral, a first in the AI infrastructure financing space. The deal marks a shift away from GPU-centric thinking in infrastructure finance, signaling that purpose-built inference chips are now recognized as bankable assets by institutional lenders.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/"
+  },
+  {
+    "section": "industry",
+    "headline": "Z.ai Approaching $1B Revenue While Giving Its Best Models Away Free",
+    "summary": "Chinese AI startup Z.ai is approaching $1 billion in annual revenue despite giving its frontier models away for free on its public API. The bulk of its revenue comes from on-premises deployments for state-owned enterprises and financial institutions, plus a fast-growing cloud business. The model demonstrates that enterprise deployment contracts, not API subscriptions, are the dominant revenue path for Chinese AI labs.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://thenextweb.com/news/a-chinese-ai-startup-is-about-to-hit-1bn-in-sales-while-giving-its-best-models-away-for-free"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepMind CEO Proposes Independent AI Model Review Body; Google Researcher Resigns Over Military AI",
+    "summary": "Demis Hassabis called for an independent international body to review frontier AI models, similar to nuclear regulation. The proposal comes amid scrutiny of Google's military agreements: senior Google researcher Alex Turner resigned after unsuccessfully opposing broad government use of Google's models including for autonomous weapons. The tension highlights a growing gap between AI safety rhetoric and commercial/defense deployments.",
+    "source": "The Summary AI (also: TLDR AI)",
+    "date": "2026-07-20",
+    "url": "https://thezvi.substack.com/p/demis-hassabis-on-the-new-coming"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's First Consumer Device: A Portable Screenless AI Speaker",
+    "summary": "OpenAI's first consumer hardware product will be a portable, battery-powered, screenless smart speaker with mechanical movement designed to feel \"alive.\" Developed with Jony Ive's LoveFrom studio and former Apple engineers post the $6.4B io acquisition, the device runs on GPT-Live voice and includes a camera and sensors for environmental awareness. OpenAI plans to unveil it later in 2026 and launch in 2027, though Apple's trade secret lawsuit could affect the timeline.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-07-20",
+    "url": "https://techcrunch.com/2026/07/14/openais-first-hardware-device-is-reportedly-a-screenless-speaker-that-can-move/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Search AI Mode Now Connects to Instacart, Canva, and YouTube Music",
+    "summary": "Google has expanded its Search AI Mode to allow users to link third-party apps and complete real-world tasks without leaving search. Launch partners include Instacart (add groceries to cart), Canva (generate designs), and YouTube Music (create playlists). The rollout began July 16 for US users in English. Google says more app partners are coming to compete directly with ChatGPT's and Claude's action integrations.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-07-20",
+    "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code Now Has a Built-In Sandboxed Browser",
+    "summary": "Claude Code's desktop app (v2.1.202+) ships with a built-in tabbed browser (Cmd+Shift+B on macOS). Claude can read documentation, click through pages, fill forms, and interact with external sites using the same tooling it uses for local dev server previews. The browser runs in an isolated clean profile with no saved logins or history, and safety classifiers review actions on external sites. Browsing session persistence is configurable.",
+    "foryou": "Your Claude Code agents can now autonomously pull library docs, check external APIs, or test deployed pages without a separate browser MCP—meaningfully shortens the agentic scaffolding you need to write.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-07-20",
+    "url": "https://the-decoder.com/claude-code-now-has-a-built-in-browser-that-lets-the-ai-read-click-and-type-on-external-websites/"
+  },
+  {
+    "section": "tips",
+    "headline": "How Netflix Built Its LLM Serving Stack for Production",
+    "summary": "Netflix published an 18-minute engineering deep-dive covering how it deployed LLM inference at production scale inside its existing infrastructure. Topics include: engine selection criteria, model packaging patterns, API design for LLM-specific constraints, deployment strategies across environments, output constraint enforcement, and the real trade-offs that emerged under live workloads. A practical reference for teams moving from prototype to production LLM deployment.",
+    "foryou": "One of the few honest accounts of production LLM infra at scale—steal their output constraint and deployment patterns before reinventing them in your own stack.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c"
+  },
+  {
+    "section": "tips",
+    "headline": "Build a Tiered Model Pipeline to Cut Token Costs Without Sacrificing Quality",
+    "summary": "A 12-minute post walks through a custom deep research pipeline that uses cheap models for information retrieval, accurate models for verification, and deep research models only as a last resort. The author ran this on their own research workflows and found that most tasks never need the expensive tier. The post includes a working pipeline design with concrete model routing logic.",
+    "foryou": "The routing heuristic is immediately implementable in any agentic pipeline—slot cheap models at the discovery layer and reserve your expensive calls for validation, not search.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://quesma.com/blog/custom-deep-research-pipeline/"
+  },
+  {
+    "section": "tips",
+    "headline": "Kimi Code CLI: Open-Source Terminal Agent with MCP Support",
+    "summary": "Moonshot AI released Kimi Code CLI, an open-source terminal-based AI coding agent in the style of Claude Code. It reads and edits code, runs shell commands, searches files, fetches web pages, and routes decisions based on feedback. Works with Kimi models out of the box and is configurable for other compatible API providers. Extensible via agent skills, hooks, sub-agents, and MCPs—making it a credible alternative scaffold for custom agentic workflows.",
+    "foryou": "A fully open-source Claude Code alternative you can fork and customize—especially worth exploring when Kimi K3 weights drop on July 27 for a cheap, self-hosted coding pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://github.com/MoonshotAI/kimi-code"
+  },
+  {
+    "section": "tips",
+    "headline": "When /goal Hurts More Than It Helps: Claude Code vs. Codex on NP-Hard Problems",
+    "summary": "A 6-minute analysis compares Claude Code's and Codex's /goal implementations on an NP-hard combinatorial problem. Claude Code's /goal is a session-scoped Stop hook that can catch early exits but cannot assess whether more solver iterations are worthwhile. Codex's /goal is persisted thread state—it sees files and tools but grades its own work. The key finding: /goal can amplify bad decisions as readily as good ones, making it a risky default for open-ended optimization tasks.",
+    "foryou": "Don't set /goal as a default on agentic loops—it's a confidence amplifier, not a quality gate; use it only when you've already validated the task decomposition.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/"
+  },
+  {
+    "section": "tips",
+    "headline": "Sakana AI's Error Diffusion: Backprop-Free Learning That Obeys Dale's Principle",
+    "summary": "Sakana AI published \"Diffusing Blame,\" a paper introducing Error Diffusion (ED)—a local learning rule that trains neural networks without backpropagation and without violating Dale's Law (neurons are exclusively excitatory or inhibitory, not both). ED uses only presynaptic activity, a postsynaptic activation derivative, and a global error sign per update. Results: 96.7% on MNIST and 61.7% on CIFAR-10 without weight transport. Accepted at ALIFE2026.",
+    "foryou": "Biologically-plausible training rules matter when you're designing edge inference systems with strict power or hardware constraints—ED's weight-transport-free updates could enable on-device continual learning.",
+    "source": "TLDR AI",
+    "date": "2026-07-20",
+    "url": "https://www.marktechpost.com/2026/07/17/sakana-ais-error-diffusion-trains-dale-compliant-dual-stream-networks-reaching-96-7-mnist-and-61-7-cifar-10-without-backpropagation/"
+  }
+]
