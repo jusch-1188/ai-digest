@@ -1,0 +1,207 @@
+[
+  {
+    "section": "models",
+    "headline": "Alibaba Announces Qwen3.8: 2.4 Trillion-Parameter Open-Weight Model",
+    "summary": "Alibaba unveiled Qwen3.8, a 2.4-trillion-parameter sparse Mixture-of-Experts multimodal model — its first flagship above 1 trillion parameters. A preview (qwen3.8-max-preview) is available through Token Plan, Qoder, and QoderWork, with open weights promised 'soon.' Alibaba claims performance second only to Fable 5, but no independent benchmarks, model card, or pricing have been released yet.",
+    "foryou": "The preview API is live now — worth probing for long-context and multimodal tasks before the open weights drop, especially if you're evaluating alternatives to frontier API pricing.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "2.4T (sparse MoE)"
+      },
+      {
+        "label": "Modality",
+        "value": "Multimodal"
+      },
+      {
+        "label": "Context window",
+        "value": "~983K tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "131K tokens"
+      },
+      {
+        "label": "Status",
+        "value": "Preview; open weights pending"
+      },
+      {
+        "label": "Claimed rank",
+        "value": "Second only to Fable 5 (unverified)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://dataconomy.com/2026/07/20/qwen3-8-24t-parameters-alibaba-ai-model-launch/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Fable 5 Joins Max and Team Premium at 50% of Limits Starting July 20",
+    "summary": "Anthropic added Fable 5 to all Max ($110–$220/mo) and Team Premium ($100/mo) plans at 50% of plan limits, making it a permanent subscription perk rather than a credit-burning extra. Pro and Team Standard users keep Fable 5 access via usage credits and receive a one-time $100 credit. The phased rollout reflects Anthropic's ongoing capacity build-out since Fable 5's June 9 launch.",
+    "foryou": "If you're on Max or Team Premium, Fable 5 is now included — no more watching credits drain on heavy agentic runs or long-context tasks.",
+    "specs": [
+      {
+        "label": "Plans included",
+        "value": "Max 5x ($110), Max 20x ($220), Team Premium ($100)"
+      },
+      {
+        "label": "Usage cap",
+        "value": "50% of plan limits"
+      },
+      {
+        "label": "Pro/Standard access",
+        "value": "Credits; one-time $100 credit"
+      },
+      {
+        "label": "Rollout date",
+        "value": "July 20, 2026"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://simonwillison.net/2026/Jul/18/claude-make-fable-5-permanent/"
+  },
+  {
+    "section": "models",
+    "headline": "Kimi K3 Demand Surges: Moonshot Pauses New Subscriptions",
+    "summary": "Moonshot AI's Kimi K3 open-weight model (released July 16, ~2.8 trillion parameters) has driven such strong demand that the company is temporarily pausing new subscriptions to protect existing members' compute access. The launch pushed Moonshot's ARR to $300 million and wiped over $3.3 trillion from global semiconductor market cap — echoing the DeepSeek shock.",
+    "foryou": "K3's open weights and the API remain accessible; the subscription pause only affects new direct consumer sign-ups — your API integrations are unaffected.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "~2.8T"
+      },
+      {
+        "label": "Weights",
+        "value": "Open-weight"
+      },
+      {
+        "label": "Release date",
+        "value": "July 16, 2026"
+      },
+      {
+        "label": "Company ARR",
+        "value": "$300M (post-launch)"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/moonshot-ai-plans-hong-kong-123000193.html"
+  },
+  {
+    "section": "models",
+    "headline": "Google Preparing Skills and Gemini Live for Desktop/Web Rollout",
+    "summary": "Google is testing Gemini Live (real-time voice with screen sharing) on desktop web — currently only available on mobile — and building a Skills Management interface for the Gemini web app. Neither has been officially announced; evidence comes from code found in development builds. A rollout before end of July is plausible but unconfirmed.",
+    "foryou": "Gemini Live on desktop web would finally let you run real-time multimodal sessions without a phone, which matters for context-heavy development workflows.",
+    "specs": [
+      {
+        "label": "Features",
+        "value": "Live voice, screen sharing, Skills panel"
+      },
+      {
+        "label": "Availability",
+        "value": "Desktop web (testing; not launched)"
+      },
+      {
+        "label": "Source",
+        "value": "Code analysis / Trusted Tester builds"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://www.testingcatalog.com/google-preparing-skills-and-gemini-live-for-web-rollout/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple Escalates OpenAI Trade Secret Battle with Legal Preservation Letters",
+    "summary": "Apple sued OpenAI on July 10 alleging trade secret theft by former Apple executives Tang Tan (Chief Hardware Officer) and Chang Liu, who allegedly brought confidential hardware designs, manufacturing processes, and supplier data to OpenAI. Apple has now sent preservation letters to ~40 former employees at OpenAI, instructing them to retain documents. OpenAI denies the allegations.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://www.macrumors.com/2026/07/17/apple-sends-legal-letters-openai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Moonshot AI Plans Hong Kong IPO Within Six Months at ~$30B Valuation",
+    "summary": "Riding the Kimi K3 wave, Moonshot AI is seeking shareholder approval for a Hong Kong Stock Exchange listing targeting early 2027. The company is dismantling its offshore VIE structure to comply with Chinese securities regulator guidance. Backers include Alibaba, Tencent, Meituan, and China Mobile. Valuation target is above $30 billion.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/moonshot-ai-plans-hong-kong-123000193.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Alibaba Open-Sources SAIL AI Chip Software Stack at WAIC, Targets CUDA Lock-In",
+    "summary": "Alibaba's chip unit T-Head open-sourced SAIL, the full software stack for its Zhenwu AI chips, at the World AI Conference in Shanghai. Developers can migrate existing code with limited modifications and adapt SAIL to mainstream AI frameworks in under 7 days. The move lowers barriers away from Nvidia's CUDA ecosystem for the 560,000 Zhenwu chips already deployed across 400+ customers.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://thenextweb.com/news/alibaba-t-head-sail-open-source-nvidia-cuda-alternative"
+  },
+  {
+    "section": "industry",
+    "headline": "Z.ai (Zhipu) Nears $1B ARR While Open-Sourcing Its Best Models",
+    "summary": "Chinese AI company Z.ai (formerly Zhipu AI) is on track to become the first Chinese AI startup to hit $1 billion in annual recurring revenue, growing 15x from ~$100M in January 2026. Revenue is driven by on-premises deployments for state-owned enterprises and a fast-growing cloud business. Its flagship GLM-5.2 (753B params, 1M token context, MIT license) outperforms GPT-5.5 on coding benchmarks at one-sixth the price.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://thenextweb.com/news/a-chinese-ai-startup-is-about-to-hit-1bn-in-sales-while-giving-its-best-models-away-for-free"
+  },
+  {
+    "section": "industry",
+    "headline": "General Compute Raises $400M Debt Deal Backed by Inference Chips — Not Nvidia GPUs",
+    "summary": "AI inference startup General Compute secured a $400M credit facility from Upper90, likely the first loan in AI infrastructure to use non-Nvidia inference chips (SambaNova SN50 ASICs) as collateral. The facility scales from an initial $100M commitment. The deal signals a maturing financing market for inference-specific hardware, which claims 16x faster performance and no water-cooling requirement vs GPU clouds.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-07-21",
+    "url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/"
+  },
+  {
+    "section": "industry",
+    "headline": "Demis Hassabis Under Scrutiny for Google's Military AI Contracts",
+    "summary": "A long analysis examines Demis Hassabis's framework for frontier AI safety against Google's simultaneous military agreements. It covers the resignation of Alex Turner, who left after failing internally to block broad government use of Google's models for autonomous weapons. The piece questions whether DeepMind's stated safety commitments are compatible with Google's defense contracts.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://thezvi.substack.com/p/demis-hassabis-on-the-new-coming"
+  },
+  {
+    "section": "tips",
+    "headline": "How Netflix Built Its In-House LLM Serving Stack",
+    "summary": "Netflix's AI Platform team published a detailed breakdown of how they deployed LLM inference inside their existing production infrastructure — avoiding a separate ML silo. They chose vLLM as the primary engine (replacing TensorRT-LLM) for its flexibility with custom model architectures, integrated with NVIDIA Triton and the Hugging Face ecosystem. The post covers engine selection, model packaging, API design, deployment strategy, output constraints, and production trade-offs.",
+    "foryou": "If you're building or scaling an agentic inference layer, this is a rare production teardown from a company that runs both custom and off-the-shelf models at streaming scale — the decision framework around engine choice and packaging is directly applicable.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://netflixtechblog.com/in-house-llm-serving-at-netflix-a5a8e799ea2c"
+  },
+  {
+    "section": "tips",
+    "headline": "Kimi Code CLI: Open-Source Terminal Coding Agent with MCP and Sub-Agent Support",
+    "summary": "Moonshot AI released Kimi Code CLI (MIT license, TypeScript), a terminal-based coding agent that reads/edits code, runs shell commands, searches files, fetches web pages, and drives sub-agents. It works with Kimi models by default and is configurable for other providers. MCP servers are added conversationally via /mcp-config. The CLI is evolving into the next-generation 'Kimi Code' product; installing it auto-migrates config and sessions.",
+    "foryou": "A solid drop-in alternative or complement to Claude Code for Kimi-model workflows; the MCP compatibility and sub-agent architecture make it worth evaluating if you want model-agnostic agentic pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://github.com/MoonshotAI/kimi-code"
+  },
+  {
+    "section": "tips",
+    "headline": "Token Budget Research: Use Cheap Models to Find, Accurate Models to Verify",
+    "summary": "A 12-minute deep dive from the Quesma engineering blog documents a custom deep-research pipeline built to reduce token spend. The core heuristic: use cheap/fast models for retrieval and initial information gathering, use high-accuracy models only for verification steps, and treat deep research as the last resort. Practical pipeline design patterns and cost data included.",
+    "foryou": "This tiered model approach maps directly to agentic pipeline design — routing subtasks to model tiers by required accuracy is one of the highest-ROI optimizations in production agent systems.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://quesma.com/blog/custom-deep-research-pipeline/"
+  },
+  {
+    "section": "tips",
+    "headline": "Sakana AI's 'Diffusing Blame': Biologically Plausible Learning Without Backprop",
+    "summary": "Sakana AI published research training neural networks that obey Dale's principle (each neuron is purely excitatory or inhibitory) without weight transport — eliminating two key biological implausibilities of standard backpropagation. Their Error Diffusion method uses only local signals (presynaptic activity, postsynaptic derivative, global error sign) and reaches 96.7% on MNIST and 61.7% on CIFAR-10 — first time Error Diffusion has trained convolutional networks.",
+    "foryou": "Mostly foundational research for now, but Dale-compliant networks are a signal that neuromorphic and low-power inference hardware roadmaps (which use similar constraints) are getting tractable learning algorithms.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://arxiv.org/html/2606.31700v1"
+  },
+  {
+    "section": "tips",
+    "headline": "Fable 5 vs. GPT-5.6 Sol on NP-Hard Problems: Does /goal Actually Help?",
+    "summary": "A 6-minute analysis compares how Claude Code's /goal and Codex's /goal differ architecturally: Claude Code implements /goal as a session-scoped Stop hook (can catch early exits but doesn't know if more iterations are worthwhile), while Codex treats it as persisted thread state with self-grading. The conclusion: /goal can amplify bad decisions as much as good ones and shouldn't be a default setting.",
+    "foryou": "If you use /goal in Claude Code sessions, this is worth reading — the Stop hook implementation means it's most useful when you have explicit exit criteria, not as a general quality booster.",
+    "source": "TLDR AI",
+    "date": "2026-07-21",
+    "url": "https://charlesazam.com/blog/fable-5-gpt-5-6-sol-goal/"
+  }
+]
