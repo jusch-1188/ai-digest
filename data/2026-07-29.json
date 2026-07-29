@@ -1,0 +1,229 @@
+[
+  {
+    "section": "models",
+    "headline": "Moonshot Releases Kimi K3 Open Weights: 2.8T MoE, 1M Context",
+    "summary": "Moonshot AI released the full weights and technical report for Kimi K3 on July 26, a day ahead of schedule. The model is a 2.8T-parameter Mixture-of-Experts with 104B active parameters per token, native visual understanding, and a 1,048,576-token context window. It's built on Kimi Delta Attention (KDA), a hybrid linear attention mechanism, and scores 57 on the Artificial Analysis Intelligence Index — the top open-weight result, rivalling GPT-5.6 and Claude Fable 5. Open weights come with a non-commercial caveat for large-scale deployments.",
+    "foryou": "The top-scoring open-weight model is now downloadable — viable for running capable multimodal agentic pipelines on your own infra without API costs or rate limits.",
+    "specs": [
+      {
+        "label": "Total params",
+        "value": "2.8T (MoE)"
+      },
+      {
+        "label": "Active params/token",
+        "value": "104B"
+      },
+      {
+        "label": "Context window",
+        "value": "1,048,576 tokens"
+      },
+      {
+        "label": "Architecture",
+        "value": "KDA hybrid linear attention + MoE"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "57 (top open-weight)"
+      },
+      {
+        "label": "Intelligence/compute",
+        "value": "2.5× vs prior gen"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text + Vision"
+      },
+      {
+        "label": "Weights",
+        "value": "Open (non-commercial caveat)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://venturebeat.com/technology/kimi-k3s-full-weights-are-here-but-theyre-open-with-a-caveat-what-enterprises-should-know"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Launches MAI-Cyber-1-Flash: First In-House Cybersecurity Model",
+    "summary": "Microsoft introduced MAI-Cyber-1-Flash, a sparse MoE model with 137B total and 5B active parameters and a 256K-token context window, purpose-built for finding vulnerabilities in large codebases. Integrated into Microsoft's MDASH multi-agent vulnerability platform alongside GPT-5.4, the combination scores 96% on the CyberGym benchmark — 12 points above Anthropic's best — at 50% of the previous MDASH cost. MAI-Cyber-1-Flash shoulders ~90% of routine security work, freeing GPT-5.4 for only the hardest cases.",
+    "foryou": "A proven model-routing pattern for cost-efficient agentic security pipelines: use a cheap specialist for 90% of triage and route only the hard cases to a frontier model.",
+    "specs": [
+      {
+        "label": "Total params",
+        "value": "137B (sparse MoE)"
+      },
+      {
+        "label": "Active params",
+        "value": "5B"
+      },
+      {
+        "label": "Context window",
+        "value": "256K tokens"
+      },
+      {
+        "label": "CyberGym (MDASH combo)",
+        "value": "96% (+12pp vs Anthropic Mythos)"
+      },
+      {
+        "label": "Cost vs prev MDASH",
+        "value": "50%"
+      },
+      {
+        "label": "Lineage",
+        "value": "MAI-Thinking-1"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://microsoft.ai/news/introducing-mai-cyber-1-flash-inside-mdash/"
+  },
+  {
+    "section": "models",
+    "headline": "Cogent Debuts VR-1: Frontier Cyber Reasoning Model for Enterprise Attack Chains",
+    "summary": "Cogent Security launched VR-1 on July 27, a Mythos-class reasoning model trained specifically for autonomous enterprise intrusion tasks. On IntrusionBench — a new benchmark that starts agents with limited foothold access and scores whether they chain across cloud infra, identity systems, and internal tools — VR-1 achieved more than a 2× lift in pass@3 over the strongest frontier baseline. The model is claimed to prove twice as many enterprise attack paths as leading frontier models at roughly a quarter of the cost.",
+    "foryou": "Specialist cyber-reasoning models are now outperforming frontier generalists at ~25% cost — worth evaluating for any agentic security audit or red-team pipeline you're building.",
+    "specs": [
+      {
+        "label": "Class",
+        "value": "Mythos-class (frontier-competitive)"
+      },
+      {
+        "label": "IntrusionBench (pass@3)",
+        "value": "2× lift vs frontier baseline"
+      },
+      {
+        "label": "Attack paths proven",
+        "value": "2× vs frontier models"
+      },
+      {
+        "label": "Cost vs frontier",
+        "value": "~25%"
+      },
+      {
+        "label": "Specialization",
+        "value": "Enterprise multi-step attack chains"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://www.cogent.com/blog/how-we-built-and-benchmarked-vr-1-our-frontier-cyber-reasoning-model"
+  },
+  {
+    "section": "models",
+    "headline": "Google Launches Gemini Distillation Service: Train gemini-2.5-flash from gemini-3.1-pro",
+    "summary": "Google Cloud's Gemini Enterprise Agent Platform now offers a Distillation Service that lets teams train a smaller gemini-2.5-flash 'student' model using the outputs and internal reasoning traces of gemini-3.1-pro as the teacher. Unlike standard fine-tuning, distillation transfers the teacher's chain-of-thought, not just final answers. Google recommends it for high-volume, latency-sensitive applications and complex reasoning tasks where there's a significant performance gap between available model tiers.",
+    "foryou": "Distilling a frontier reasoning model's thought process into a Flash-tier model is a practical path to production-grade quality at inference costs that make sense for high-volume agentic loops.",
+    "specs": [
+      {
+        "label": "Teacher model",
+        "value": "gemini-3.1-pro"
+      },
+      {
+        "label": "Student model",
+        "value": "gemini-2.5-flash"
+      },
+      {
+        "label": "Transfer",
+        "value": "Final output + raw reasoning traces"
+      },
+      {
+        "label": "Status",
+        "value": "Early access"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/tuning/distillation"
+  },
+  {
+    "section": "models",
+    "headline": "LLaDA2.X: Diffusion Language Models for Text Generation and Agentic Workflows",
+    "summary": "The inclusionAI team released LLaDA2.X, an extended family of diffusion-based language models designed for both text generation and agent workflows. Unlike autoregressive LLMs, diffusion LMs generate by iteratively denoising, offering different latency and parallelism trade-offs. The GitHub release includes model weights and code targeting agentic task environments.",
+    "foryou": "Diffusion LMs are maturing as a viable alternative architecture for agents — worth benchmarking if you need non-autoregressive generation or want parallelisable token production in your pipelines.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Diffusion LM (non-autoregressive)"
+      },
+      {
+        "label": "Use cases",
+        "value": "Text generation + agent workflows"
+      },
+      {
+        "label": "License",
+        "value": "Open (GitHub)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://github.com/inclusionAI/LLaDA2.X"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Clarifies It Never Sought a Ban on Open-Weight Models",
+    "summary": "Under CEO Dario Amodei's byline, Anthropic published a position paper on July 27 stating it has never called for prohibiting open-weight AI. The company called less capable open releases 'a public good' while expressing concern about highly capable downloadable models that are harder to monitor or retract. Instead of a ban, Anthropic advocates tighter chip export controls against China, policy action against industrial-scale distillation, and mandatory pre-release safety testing for all sufficiently capable models — open or closed. Anthropic declined to sign an industry letter backed by Nvidia, Microsoft, Meta, Google, and OpenAI defending open weights.",
+    "source": "TLDR AI (also: TechCrunch, Axios)",
+    "date": "2026-07-29",
+    "url": "https://www.anthropic.com/news/position-open-weights-models"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Invests $5B in Ilya Sutskever's Safe Superintelligence",
+    "summary": "Safe Superintelligence (SSI), the stealth AI lab co-founded by former OpenAI chief scientist Ilya Sutskever, announced a long-term strategic partnership with Nvidia on July 27 that includes a $5 billion investment from Nvidia — one of the chipmaker's largest AI funding deals. The deal gives SSI access to Nvidia's Vera Rubin GPU platform, expected to increase SSI's compute resources 'by an order of magnitude'. The two companies will also collaborate on Nvidia's current and future compute platforms.",
+    "source": "TLDR AI (also: TechCrunch, Bloomberg)",
+    "date": "2026-07-29",
+    "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/"
+  },
+  {
+    "section": "industry",
+    "headline": "Open Secure AI Alliance Launched with 44 Founding Firms Including Nvidia and Microsoft",
+    "summary": "Nvidia, Microsoft, IBM, Hugging Face, Cisco, CrowdStrike, Cloudflare, Salesforce, Palantir, and 35 other firms launched the Open Secure AI Alliance on July 27 to develop open-source tools and standards for AI security. Initial contributions include Nvidia's NOOA agent framework, HPE's zero-trust identity standards, Hugging Face's Safetensors, Microsoft's MDASH harness, and SpaceXAI's Grok Build coding agent. The alliance positions open-source defensive tooling as the policy-preferred alternative to closed AI security systems.",
+    "source": "TLDR AI (also: CNBC)",
+    "date": "2026-07-29",
+    "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI: 43% of Occupation-Specific AI Use Crosses Job Boundaries",
+    "summary": "OpenAI's 'Work at the Frontier' report, published July 27 and based on 800,000 US ChatGPT work messages, found that 43.5% of occupation-specific messages involve tasks traditionally belonging to another profession — a pattern OpenAI calls 'task crossover'. Customer experience workers showed the highest crossover (77%), followed by designers (75%) and HR (69%). OpenAI argues this signals that AI is reshaping how companies should think about job descriptions, team structures, and hiring — not just individual productivity.",
+    "source": "TLDR AI (also: Axios)",
+    "date": "2026-07-29",
+    "url": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work/"
+  },
+  {
+    "section": "tips",
+    "headline": "PorTAL: Train a LoRA Once, Deploy It Across Any Base Model",
+    "summary": "Ramp Labs open-sourced PorTAL (Portable Task Adaptation for LoRA), a framework that learns a base-agnostic task latent once, then generates standard per-layer LoRA weights for any supported frozen base model via a lightweight per-model alignment layer. You train on a source model (e.g. Qwen3-1.7B), then port to new bases (Qwen3-8B, Gemma-3) by retraining only the slim alignment component on limited calibration data — recovering ~94–98% of from-scratch LoRA accuracy. Outputs are standard Hugging Face PEFT adapters.",
+    "foryou": "If you're fine-tuning task adapters for multiple base models in your pipeline, PorTAL halves the training cost while keeping you flexible as better base models ship.",
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://labs.ramp.com/research/portal-portable-task-adaptation/"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA Open-Sources Molt: Lean PyTorch Agentic RL Framework Scaling to 1T MoE",
+    "summary": "NVIDIA NeMo Labs released Molt, a ~9K-line PyTorch-native agentic reinforcement learning framework designed to be compact enough for a researcher — or an AI coding assistant — to read in full. Molt pairs with vLLM over Ray for rollout at 1T-class MoE scale, uses a Gymnasium-aligned ChatAgent interface, and supports custom Python rewards, tool use, multimodal environments, and LLM judges. Performance is statistically comparable to a Megatron-based stack at matched async throughput.",
+    "foryou": "Molt's compact, hackable design makes it the practical choice for building and iterating on custom agentic RL training pipelines without fighting a massive framework.",
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://github.com/NVIDIA-NeMo/labs-molt"
+  },
+  {
+    "section": "tips",
+    "headline": "How Much Can You Actually Delegate to AI Agents? A Four-Level Framework",
+    "summary": "PostHog's engineering newsletter breaks agent delegation into four levels based on two axes: how easy it is to check output, and the consequences of undetected errors. Level 1 is assistant (AI advises, human decides), Level 2 is human-in-the-loop (agent drafts, human reviews before action), Level 3 is delegated (agent acts, human audits periodically), Level 4 is self-driving (agent acts autonomously with only logged oversight). The framework argues that task complexity, not model quality, is the binding constraint on autonomy — and that custom guardrails and domain-specific models can push most tasks up a level.",
+    "foryou": "Map your current agent workflows to this framework to spot where you're under-delegating (wasting human time) and where you're over-delegating (accumulating silent errors in prod).",
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://newsletter.posthog.com/p/agent-autonomy"
+  },
+  {
+    "section": "tips",
+    "headline": "DeepsecBench: An Open Benchmark for Model Performance on Real Vulnerability Finding",
+    "summary": "Vercel published DeepsecBench, a benchmark evaluating how well different models detect security vulnerabilities in real application code. It measures recall, precision, cost, and total time per model, combining recall and precision into a single composite score. The benchmark uses an open-source codebase at a commit state just before a batch of vulnerabilities were fixed, and its construction is kept secret to prevent training contamination. Results are currently publicly available with model-by-model comparisons.",
+    "foryou": "Run your code-review agents against DeepsecBench before deploying them to production — it's the first rigorous, non-gameable benchmark for this class of agentic security task.",
+    "source": "TLDR AI",
+    "date": "2026-07-29",
+    "url": "https://vercel.com/blog/deepsecbench-evaluating-model-performance-in-finding-cybersecurity-vulnerabilities"
+  }
+]
