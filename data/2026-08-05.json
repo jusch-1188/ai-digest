@@ -1,0 +1,398 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Releases GPT-Live-1, a Full-Duplex Voice Model That Listens and Speaks Simultaneously",
+    "summary": "OpenAI launched GPT-Live-1 on July 8, 2026, replacing Advanced Voice Mode with a full-duplex architecture that continuously listens and speaks at the same time — no turn detection, no waiting. The model produces live acknowledgment cues (\"mhmm\", \"got it\") while the user is still talking and delegates deeper reasoning to GPT-5.5 in the background. GPT-Live-1 is the default for Plus and Pro users; GPT-Live-1 mini covers Free users.",
+    "foryou": "If you're building voice-first agentic pipelines, GPT-Live-1's full-duplex architecture and background reasoning delegation is the new baseline to engineer around — stateful inference and dynamic context management are now table stakes.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Full-duplex (continuous listen + speak)"
+      },
+      {
+        "label": "Reasoning backend",
+        "value": "Delegates to GPT-5.5"
+      },
+      {
+        "label": "Availability",
+        "value": "iOS, Android, Web — Plus/Pro/Free"
+      },
+      {
+        "label": "Released",
+        "value": "July 8, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://openai.com/index/introducing-gpt-live/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's Unreleased Astra Model Solves Ten Long-Open Math Problems for ~$2,000",
+    "summary": "OpenAI announced its next model family, Astra, resolved ten long-standing open problems in mathematics — including the first explicit construction of a non-sofic group, open since 1999 — for roughly $2,000 in tokens. Each solution was verified with machine-checkable Lean 4 proofs and published in a 249-page manuscript. Astra itself remains unreleased and must pass a classified U.S. government cybersecurity review before deployment.",
+    "foryou": "Astra's superhuman math capability is a signal that AI R&D tasks with formal verifiability — code correctness, theorem proving, protocol verification — are becoming tractable to automate; plan your agentic evaluation loops accordingly.",
+    "specs": [
+      {
+        "label": "Math problems solved",
+        "value": "10 (open ≥ 10 years each)"
+      },
+      {
+        "label": "Proof format",
+        "value": "Lean 4 (machine-checkable)"
+      },
+      {
+        "label": "Compute cost",
+        "value": "~$2,000 in tokens"
+      },
+      {
+        "label": "Status",
+        "value": "Unreleased — under US gov review"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://thenextweb.com/news/openai-astra-model-ten-math-proofs-non-sofic-groups"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Releases Claude Opus 5: Near-Frontier Intelligence at Half the Price",
+    "summary": "Anthropic released Claude Opus 5 on July 24, 2026, delivering performance close to Claude Fable 5 at $5/$25 per million input/output tokens. It features a 1M-token context window, 128K max output, a new five-level effort control, and a May 2026 knowledge cutoff — the most current of any Claude model. It scores 43% on Frontier-Bench v0.1 (state-of-the-art) and 100% on Needle in a Haystack at full context depth. Opus 5 is the new default model on Claude Max.",
+    "foryou": "At half Fable 5's cost and within 0.5% on CursorBench 3.2, Opus 5 is the obvious upgrade path for cost-sensitive agentic pipelines that currently use Opus 4.x — the 128K output window is especially useful for long-horizon generation tasks.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Cost (standard)",
+        "value": "$5 / $25 per 1M tokens"
+      },
+      {
+        "label": "Cost (fast mode)",
+        "value": "$10 / $50 per 1M tokens"
+      },
+      {
+        "label": "Frontier-Bench v0.1",
+        "value": "43% (state-of-the-art)"
+      },
+      {
+        "label": "Knowledge cutoff",
+        "value": "May 2026"
+      },
+      {
+        "label": "Released",
+        "value": "July 24, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-05",
+    "url": "https://www.anthropic.com/news/claude-opus-5"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Slashes GPT-5.6 Luna Pricing 80% and Terra 20% Three Weeks After Launch",
+    "summary": "On July 30, OpenAI cut GPT-5.6 Luna from $1/$6 to $0.20/$1.20 per million tokens (80% drop) and Terra from $2.50/$15 to $2/$12 (20% drop), just three weeks after the GPT-5.6 family launched on July 9. Flagship Sol stays at $5/$30. The rapid repricing reflects intense competitive pressure from DeepSeek and other low-cost rivals eroding frontier labs' pricing power.",
+    "foryou": "Luna at $0.20/$1.20 is now a credible default for most agentic pipeline steps that don't need Sol-level reasoning — re-evaluate your tier routing logic if you haven't already.",
+    "specs": [
+      {
+        "label": "Luna (input/output)",
+        "value": "$0.20 / $1.20 per 1M tokens (was $1/$6)"
+      },
+      {
+        "label": "Terra (input/output)",
+        "value": "$2 / $12 per 1M tokens (was $2.50/$15)"
+      },
+      {
+        "label": "Sol (input/output)",
+        "value": "$5 / $30 per 1M tokens (unchanged)"
+      },
+      {
+        "label": "Luna price cut",
+        "value": "80%"
+      },
+      {
+        "label": "Effective date",
+        "value": "July 30, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek V4-Flash Is 105× Cheaper Than Claude Fable 5 to Run",
+    "summary": "Artificial Analysis found DeepSeek V4-Flash costs just 3 cents per benchmark test run, versus $3.15 for Claude Fable 5 — the cheapest major AI model by per-task cost, not just sticker price. API pricing is $0.14/$0.28 per million tokens. Intelligence Index score of 50/100 reflects real capability tradeoffs at this price tier.",
+    "foryou": "For high-volume classification, routing, or extraction steps in your pipelines where quality tolerance is moderate, V4-Flash's per-task cost makes it worth a direct eval — 105× cheaper than Fable 5 is hard to ignore.",
+    "specs": [
+      {
+        "label": "Cost (input)",
+        "value": "$0.14 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$0.28 / 1M tokens"
+      },
+      {
+        "label": "Per-test run cost",
+        "value": "$0.03 (vs. $3.15 for Fable 5)"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "50 / 100"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://thenextweb.com/news/deepseek-v4-flash-cheapest-ai-model-to-run"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba Releases Qwen3.8-Max: 2.4-Trillion-Parameter MoE Challenges Frontier Models",
+    "summary": "Alibaba released Qwen3.8-Max on August 2, a 2.4-trillion-parameter mixture-of-experts model with 95 billion parameters active per request. Self-reported benchmarks place it ahead of GPT-5.6 Sol and Fable 5 on PaperBench (93.0 vs. 90.5 and 88.8), and ahead of Opus 4.8 on Terminal-Bench 2.1 — but no independent evaluations exist yet. The model is the largest in the Qwen family to date.",
+    "foryou": "Treat the benchmarks skeptically until Artificial Analysis scores drop, but Qwen3.8-Max is worth watching as a potential cheaper alternative for research-heavy tasks where PaperBench performance matters.",
+    "specs": [
+      {
+        "label": "Parameters (total)",
+        "value": "2.4 trillion (MoE)"
+      },
+      {
+        "label": "Parameters (active)",
+        "value": "95 billion per request"
+      },
+      {
+        "label": "PaperBench",
+        "value": "93.0 (Alibaba self-reported)"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "86.6"
+      },
+      {
+        "label": "SWE-bench Pro",
+        "value": "67.7"
+      },
+      {
+        "label": "Released",
+        "value": "August 2, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-05",
+    "url": "https://www.marktechpost.com/2026/08/03/alibaba-qwen-releases-qwen3-8-max/"
+  },
+  {
+    "section": "models",
+    "headline": "Google Releases Gemini 3.6 Flash as Its New Default: 1M Context, 17% Fewer Output Tokens",
+    "summary": "Google released Gemini 3.6 Flash on July 21, 2026, as its new default Gemini model, with a 1M-token context window, a March 2026 knowledge cutoff, and 17% fewer output tokens than 3.5 Flash on average. Pricing is $1.50/$7.50 per million tokens; the model runs at ~280 tokens/second. The same announcement brought Gemini 3.5 Flash-Lite and 3.5 Flash Cyber.",
+    "foryou": "Gemini 3.6 Flash's higher coding and computer-use benchmark scores at a lower price than 3.5 Flash makes it a drop-in upgrade for Gemini-based agentic workflows — especially if you're doing long-context or tool-use tasks.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Cost (input/output)",
+        "value": "$1.50 / $7.50 per 1M tokens"
+      },
+      {
+        "label": "Speed",
+        "value": "~280 tokens/sec"
+      },
+      {
+        "label": "Output efficiency",
+        "value": "17% fewer tokens than 3.5 Flash"
+      },
+      {
+        "label": "Knowledge cutoff",
+        "value": "March 2026"
+      },
+      {
+        "label": "Released",
+        "value": "July 21, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-05",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/"
+  },
+  {
+    "section": "models",
+    "headline": "MiniMax H3 Is the First Open Model to Top an AI Video Ranking",
+    "summary": "MiniMax released H3 (Hailuo 3.0) weights on July 31 — a 33B-parameter omni-modal model that processes text, images, video, and audio together and generates video with native stereo sound at up to 2K resolution and 15-second clips. Artificial Analysis ranks it first in Video Editing, second in Text-to-Video, and third in Image-to-Video. The community license excludes use in the US, EU, UK, and South Korea.",
+    "foryou": "H3's open weights are a milestone for video generation research — if you're outside the excluded regions, it's the new open-source baseline to benchmark against for multimodal generation pipelines.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "33 billion"
+      },
+      {
+        "label": "Output",
+        "value": "Up to 2K resolution, 15s clips"
+      },
+      {
+        "label": "Audio",
+        "value": "Native stereo"
+      },
+      {
+        "label": "Modalities",
+        "value": "Text, image, video, audio"
+      },
+      {
+        "label": "Video Editing rank",
+        "value": "#1 (Artificial Analysis)"
+      },
+      {
+        "label": "License restriction",
+        "value": "Excludes US, EU, UK, South Korea"
+      },
+      {
+        "label": "Released",
+        "value": "July 31, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://the-decoder.com/chinas-minimax-h3-is-the-first-open-model-to-top-an-ai-video-ranking/"
+  },
+  {
+    "section": "models",
+    "headline": "Mind Lab's Macaron-V1 Demonstrates Continual Learning via Five LoRA Expert Modules",
+    "summary": "Mind Lab built Macaron-V1 by attaching five LoRA expert modules (~1B parameters each) to GLM-5.1, dynamically routing each query to the most suitable expert. Usage data is continually distilled back into dedicated LoRA adapters that update incrementally — enabling ongoing improvement without full retraining. Mind Lab claims Macaron-V1 surpasses GLM-5.2 on its benchmarks.",
+    "foryou": "The LoRA-expert routing + continual distillation pattern is worth studying for agentic systems where specialization by task domain matters — this could be a lighter-weight alternative to full fine-tuning cycles on your own data.",
+    "specs": [
+      {
+        "label": "Base model",
+        "value": "GLM-5.1"
+      },
+      {
+        "label": "Expert modules",
+        "value": "5 × LoRA (~1B params each)"
+      },
+      {
+        "label": "Learning method",
+        "value": "Continual distillation into adapters"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://kr-asia.com/mind-lab-puts-continual-learning-to-the-test-with-macaron-v1"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Sol xhigh Uses 2.25× More Tokens Than GPT-5.5 xhigh in Codex Workflows",
+    "summary": "GPT-5.6 Sol xhigh consumes more than twice the tokens per session as GPT-5.5 xhigh in Codex workflows, effectively halving the value of any token-based quota. It also introduces a new cache-write charge that GPT-5.5 didn't have. Teams running cost-sensitive agentic pipelines budgeted for GPT-5.5 will need to revise their per-task cost models.",
+    "foryou": "If you're using Codex or running Sol xhigh in agentic loops, your existing token budget assumptions are likely off by 2× — recalculate before scaling, and consider whether Luna at $0.20/1M now covers your task profile.",
+    "specs": [
+      {
+        "label": "Token usage vs. GPT-5.5",
+        "value": "2.25× more per session"
+      },
+      {
+        "label": "New charge",
+        "value": "Cache-write (absent in GPT-5.5)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://www.vincentschmalbach.com/gpt-5-6-sol-xhigh-uses-twice-tokens-gpt-5-5"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-OpenAI Exec Fidji Simo Launches ChronicleBio to Cure Chronic Diseases with AI",
+    "summary": "Fidji Simo, who left OpenAI's leadership team after a seven-year battle with POTS (Postural Orthostatic Tachycardia Syndrome), launched ChronicleBio to apply AI to chronic disease research. The startup has already collected 153 terabytes of data from patient blood draws and plans to expand with home blood draws, using the dataset to identify disease markers and improve clinical drug trial success rates.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://finance.yahoo.com/healthcare/articles/exclusive-former-openai-exec-fidji-192343263.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's CEO Says He Worries New Hires Are Joining for the Money, Not the Mission",
+    "summary": "Dario Amodei publicly expressed concern that Anthropic's record compensation — reportedly the highest salaries in AI — is attracting hires motivated by pay over mission. With frontier labs all capable of offering eight-figure packages, mission alignment has become the primary differentiator for retention, but researchers also weigh compute access, autonomy, and influence over what gets built. The public admission is notable for how candidly it frames a structural challenge for mission-driven AI labs.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://thenextweb.com/news/ai-talent-wars-loyalty-money-mission-anthropic"
+  },
+  {
+    "section": "industry",
+    "headline": "White House Meets with OpenAI, Google, and Anthropic on Voluntary AI Cybersecurity Framework",
+    "summary": "The White House hosted AI companies including OpenAI, Google, and Anthropic to discuss a new voluntary framework for evaluating cybersecurity risks in AI models, ordered by President Trump. The framework allows developers to voluntarily share models with the government for risk assessment; the specific evaluation criteria remain classified. This is the first formal structure for pre-deployment government review of AI systems in the US.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://www.cnbc.com/2026/08/03/white-house-ai-companies-voluntary-framework-meeting.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Design Arena Raises $7.9M to Help AI Companies Measure Subjective 'Taste'",
+    "summary": "Design Arena raised $7.9 million to quantify subjective qualities in AI outputs — like whether a generated game feels fun, an interface looks right, or a design resonates aesthetically — using structured human comparison studies at scale. The thesis: as models converge on accuracy and benchmark scores, taste and aesthetics become the next competitive differentiator and current evals have no way to measure them.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Is Building Plugins for Gemini Enterprise as a Platform Play",
+    "summary": "Google is developing plugins for Gemini Enterprise that may function as mini-apps or packaged workflows, following plugin ecosystems built by OpenAI and Cursor. Enterprise plugin infrastructure signals a pivot from Gemini-as-model to Gemini-as-platform, targeting the same workflow automation market that Microsoft Copilot and Salesforce Einstein are competing in.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://www.testingcatalog.com/google-is-working-on-plugins-for-gemini-enterprise/"
+  },
+  {
+    "section": "tips",
+    "headline": "Kiro's Agent Harness: Architectural Pattern for One Agent Protocol Across Multiple Client Surfaces",
+    "summary": "Kiro's blog post explains how they built a lightweight server-side agent harness that owns the full agentic protocol — specs, steering, hooks — behind a strict interface boundary, entirely independently of client surfaces (IDE, CLI, web). Each client only owns the presentation layer; crossing the boundary requires going through the defined protocol. The harness starts quickly, runs alongside codebases, and can evolve without touching any client code.",
+    "foryou": "If you're building an agentic system that needs to surface across multiple clients (API, UI, CLI), the Kiro harness pattern — thin client, fat protocol boundary — is a concrete architecture to study and adapt.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://kiro.dev/blog/one-agent/"
+  },
+  {
+    "section": "tips",
+    "headline": "Microsoft Orchard: Open-Source Kubernetes-Native Framework for Agentic Model Training",
+    "summary": "Microsoft released Orchard, an open-source agentic modeling framework built on a thin Kubernetes-native environment service that exposes generic primitives with no assumptions about harness, trainer, inference backend, or task domain. The same substrate supports trajectory distillation, on-policy RL rollouts, and evaluations — datasets, training recipes, and eval protocols stay portable across harnesses, domains, and projects.",
+    "foryou": "If you're running RL training or trajectory distillation for agentic models, Orchard's substrate-neutral design means you can experiment across backends without re-engineering your data and eval pipelines from scratch.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://github.com/microsoft/Orchard"
+  },
+  {
+    "section": "tips",
+    "headline": "MirrorCode: Epoch AI's Benchmark for Long-Horizon Code Reimplementation Without Source Access",
+    "summary": "Epoch AI's MirrorCode benchmark tasks AI models with reimplementing 25 complete programs — Unix utilities, data serialization tools, bioinformatics software — without access to the original source code, requiring output to match exactly on end-to-end tests. It targets long-horizon coding capability that goes well beyond autocomplete or single-function generation, and provides a concrete public bar for evaluating whether a model can independently reconstruct complex software.",
+    "foryou": "MirrorCode gives you a rigorous public eval for long-horizon autonomous coding — if you're building agentic code-generation systems, this is the benchmark to check your pipeline against before claiming production-readiness.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://epoch.ai/MirrorCode"
+  },
+  {
+    "section": "tips",
+    "headline": "RLSVR: Extending Verifiable RL to Open-Ended Tasks via Proxy Reward Environments",
+    "summary": "RLSVR expands reinforcement learning from verifiable rewards (RLVR) — which requires problems with ground-truth verifiers — to open-ended tasks by constructing proxy environments with automatic reward signals. SpyRL demonstrates the approach through multi-agent self-play, where predetermined roles and voting generate rewards without external judges. This opens RL training to the large class of tasks where correctness is hard to define but game-like proxies can substitute.",
+    "foryou": "If you're trying to apply RL to open-ended agentic tasks (planning, negotiation, instruction-following) where ground-truth verification doesn't exist, RLSVR's proxy environment pattern is the state-of-the-art approach to study.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://github.com/wangqinsi1/RLSVR"
+  },
+  {
+    "section": "tips",
+    "headline": "Fast Gemma: Documented Inference Optimization Recipe for Gemma 4 E4B on a Single A10G",
+    "summary": "VIDRAFT published the full configuration behind its verified state-of-the-art Fast Gemma submission — walking through each software optimization and its measured token-per-second impact on Gemma 4 E4B running on a single NVIDIA A10G. The post provides a concrete, reproducible reference for anyone optimizing inference throughput on efficient or quantized models without multi-GPU setups.",
+    "foryou": "If you're serving Gemma 4 or similar compact models in production and care about inference cost, this is a rare end-to-end documented optimization recipe — worth reading before writing your own tuning scripts.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://huggingface.co/blog/FINAL-Bench/fast-gemma"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Can Now Read, Write, and Act Across Google Workspace via New Marketplace Plugins",
+    "summary": "Cursor released plugins for Google Workspace — covering Docs, Sheets, Gmail, and Drive — available on the Cursor Marketplace. The agent can now read, write, and trigger actions across these surfaces from within the agentic coding workflow, enabling pipelines that generate code and simultaneously update documentation, send notifications, or log results without manual handoffs.",
+    "foryou": "If you're building developer workflows that span code and business tools, Cursor's Google Workspace plugins let you eliminate the manual copy-paste gap between your IDE and your docs/comms stack — worth integrating into any documentation-automation pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-08-05",
+    "url": "https://cursor.com/changelog/google-workspace-plugins"
+  }
+]
