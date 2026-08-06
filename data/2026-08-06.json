@@ -1,0 +1,213 @@
+[
+  {
+    "section": "models",
+    "headline": "Mistral releases Shieldstral: 3B open-weights multimodal safety classifier",
+    "summary": "Shieldstral is a 3B open-weights multimodal safety classifier that accepts plain-language policies at inference time, eliminating the need to retrain for new harm taxonomies. It outperforms classifiers up to 7x its size on HarmBench (99.4%) and VLGuard (97.7%), covering text and image inputs across 12 languages. Built on Ministral-3B with a Pixtral vision encoder, it is trained on 54.1M contrastive pairs and released under Apache 2.0.",
+    "foryou": "Drop Shieldstral into your agentic pipeline as a plug-and-play content guard — define your safety policy in plain English at inference time without ever retraining.",
+    "specs": [
+      {"label": "Parameters", "value": "3B"},
+      {"label": "License", "value": "Apache 2.0"},
+      {"label": "GPU required", "value": "Single 16GB NVIDIA GPU"},
+      {"label": "Benchmark (HarmBench)", "value": "99.4%"},
+      {"label": "Benchmark (VLGuard)", "value": "97.7%"},
+      {"label": "Languages", "value": "12"},
+      {"label": "Training data", "value": "54.1M contrastive pairs"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://mistral.ai/news/shieldstral/"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA releases Alpamayo 2 Super: open 34B VLA model for robotaxis and autonomous vehicles",
+    "summary": "NVIDIA released Alpamayo 2 Super under a commercial OpenMDW-1.1 license — a 34B vision-language-action reasoning model combining a 32B Cosmos 3 Super Reasoner and a 2B Action Expert module. It handles multi-camera video, trajectory planning, scene reasoning, and data labeling for level-4 autonomous vehicles and robotaxis. The model is open for inspection, fine-tuning, and deployment.",
+    "foryou": "Alpamayo 2 Super's open commercial license and VLA architecture make it the practical starting point for any agentic embodied-AI or robotics pipeline.",
+    "specs": [
+      {"label": "Parameters", "value": "34B (32B Cosmos Reasoner + 2B Action Expert)"},
+      {"label": "License", "value": "OpenMDW-1.1 (commercial)"},
+      {"label": "Modalities", "value": "Vision + Language + Action (VLA)"},
+      {"label": "Target use case", "value": "Robotaxis, AVs, delivery robots"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available/"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI LFM2.5-2.6B: on-device agentic model at 220 tok/s with 128K context",
+    "summary": "Liquid AI released LFM2.5-2.6B, a 2.6B-parameter hybrid model built for on-device agentic workloads across phones, laptops, PCs, and robots. It supports a 128K context window, native tool calling, and multi-step task execution with data never leaving the device and zero per-run cost. It reaches 220 tok/s on Apple Silicon and 30 tok/s on smartphones, fitting in under 2.5GB of memory while outperforming models nearly 4x its size on tool-use benchmarks.",
+    "foryou": "The cost floor for running agents just hit zero — LFM2.5-2.6B enables private, free-at-inference agentic loops on edge hardware without cloud round-trips.",
+    "specs": [
+      {"label": "Parameters", "value": "2.6B"},
+      {"label": "Context window", "value": "128K tokens"},
+      {"label": "Speed (Apple Silicon)", "value": "220 tok/s"},
+      {"label": "Speed (smartphone)", "value": "~30 tok/s"},
+      {"label": "Memory footprint", "value": "<2.5 GB"},
+      {"label": "Training tokens", "value": "~34T"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://www.liquid.ai/blog/lfm2-5-2-6b"
+  },
+  {
+    "section": "models",
+    "headline": "DiffusionGemma: Gemma 4 adapted as a discrete diffusion model, reaching 1,500 tok/s on H100",
+    "summary": "DiffusionGemma adapts Gemma 4 into a discrete diffusion architecture that refines 256-token blocks in parallel rather than generating tokens autoregressively, reaching approximately 1,500 output tokens per second on a single NVIDIA H100. The technical report explores design choices and tradeoffs in applying diffusion dynamics to large language models at production scale.",
+    "foryou": "DiffusionGemma's 1,500 tok/s throughput on a single H100 is a signal that non-autoregressive generation is becoming production-viable — worth benchmarking against your latency-critical pipeline stages.",
+    "specs": [
+      {"label": "Architecture", "value": "Discrete diffusion (256-token parallel blocks)"},
+      {"label": "Throughput", "value": "~1,500 tok/s on single H100"},
+      {"label": "Base model", "value": "Gemma 4"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://arxiv.org/abs/2608.00146"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA NemotronLabs VoiceChat 11B: real-time full-duplex speech model with native tool calling",
+    "summary": "NemotronLabs VoiceChat is an 11B end-to-end speech model that handles streaming speech understanding, speech generation, and tool calling within a single architecture — no separate ASR, LLM, and TTS components required. Full-duplex support means the model can listen and speak simultaneously, enabling natural real-time voice agent conversations.",
+    "foryou": "A single model that replaces the three-component voice stack (ASR + LLM + TTS) with built-in tool calling dramatically simplifies voice-agent pipeline architecture.",
+    "specs": [
+      {"label": "Parameters", "value": "11B"},
+      {"label": "Architecture", "value": "End-to-end full-duplex speech"},
+      {"label": "Capabilities", "value": "Streaming understanding + generation + tool calling"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://huggingface.co/nvidia/NVIDIA-NemotronLabs-VoiceChat-11B"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Mythos Preview cracks HAWK post-quantum algorithm and achieves 800x AES speedup, beating 2 years of expert review",
+    "summary": "Anthropic's Claude Mythos Preview discovered a structural vulnerability in HAWK, a NIST post-quantum signature candidate, in 60 hours — effectively halving its key security strength after two years of global expert review missed it. HAWK has since been withdrawn from NIST's standardization process. Mythos also derived a 200–800x speedup for attacks on a weakened seven-round AES-128 cipher, confirming that frontier AI has crossed into meaningful real-world cryptanalysis capability.",
+    "foryou": "Frontier AI doing real cryptanalysis in 60 hours vs. 2 human-years is the clearest signal yet that Mythos-class reasoning gives you a genuine asymmetric advantage in security research and adversarial red-teaming.",
+    "specs": [
+      {"label": "Model tier", "value": "Claude Mythos Preview (restricted access)"},
+      {"label": "HAWK finding", "value": "Halved key security strength; found in 60 hours"},
+      {"label": "AES finding", "value": "200–800x attack speedup on 7-round AES-128"},
+      {"label": "Prior human review", "value": "2 years — missed both findings"}
+    ],
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://www.anthropic.com/research/discovering-cryptographic-weaknesses"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic signs $10B, 6-year cloud compute deal with Volta for Norway data center",
+    "summary": "Anthropic agreed to purchase six years of cloud capacity from Volta, a seven-month-old AI infrastructure startup valued at $2.4B and backed by a16z, Altimeter, and NVIDIA. The deal covers 121–133 megawatts of NVIDIA Vera Rubin capacity at Bitdeer's Tydal campus in Norway, with delivery targeting late 2026 and early 2027. Volta raised $300M across seed and Series A rounds to fund the build-out.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/"
+  },
+  {
+    "section": "industry",
+    "headline": "Demis Hassabis exits as Google DeepMind CEO; Jeff Dean also departs to start new AI company",
+    "summary": "Demis Hassabis stepped down as Google DeepMind CEO, transitioning to a chairman and AGI strategy role while continuing to lead Isomorphic Labs. Koray Kavukcuoglu, previously CTO, takes operational leadership. Jeff Dean, Google's chief scientist for over two decades, is leaving to start a new AI company that Google will invest in. Google stock fell 4% on the news; DeepMind's Gemini models are reportedly six months behind the frontier on coding benchmarks.",
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://www.semafor.com/article/08/05/2026/demis-hassabis-was-shifting-away-from-deepmind-ceo-duties-for-a-year"
+  },
+  {
+    "section": "industry",
+    "headline": "Sapiom raises $35M Series A for AI model routing; cuts one customer's token spend by 10x",
+    "summary": "Sapiom raised a $35M Series A (total funding $50M) to expand its platform that routes AI agent workloads to the lowest-cost models and compute in real time. Unlike pure routing layers, Sapiom operates its own San Jose data center serving open-weight models directly, competing with OpenRouter on both cost and latency. Anthropic is among the backers; the platform has processed 270M transactions and cut one customer's monthly token spend from several million to ~$100K.",
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://www.semafor.com/article/08/05/2026/startup-sapiom-routes-clients-ai-to-lowest-cost-tokens"
+  },
+  {
+    "section": "industry",
+    "headline": "Bending Spoons acquires Airtable for $1.28B — 88% below its 2021 peak valuation",
+    "summary": "Italy-based Bending Spoons agreed to acquire workflow software maker Airtable for $1.28B enterprise value, down from its 2021 peak of $11B, in its first acquisition since its July 2026 Nasdaq IPO. Airtable reported $480M ARR growing over 20% YoY, but AI increasingly lets companies build the custom apps and dashboards that previously required the platform. Before the deal, Airtable spun out its AI agent unit (Hyperagent) as a separate entity.",
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://techcrunch.com/2026/08/04/bending-spoons-to-buy-airtable-for-1-28b/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX hits $18.4B in Q2 AI capex, targets $100B ARR by December",
+    "summary": "SpaceX reported $18.4B in Q2 2026 capital expenditures — up from $2.8B a year earlier — the vast majority directed at AI infrastructure rather than space or connectivity. The company is building terrestrial AI data centers, signing compute deals, and working toward orbital data centers. Markets are now reading SpaceX as an AI company with short-term cash-flow constraints; it is targeting $100B in annualized recurring revenue by year-end, mostly from data center deals.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-08-06",
+    "url": "https://semafor.com/s/qp2ufyxvz3"
+  },
+  {
+    "section": "industry",
+    "headline": "White House evaluates frontier AI models in secret, 30 days before public release",
+    "summary": "The White House disclosed a framework requiring OpenAI and Anthropic to submit their most powerful models for government cybersecurity assessment 30 days before release, but will not publish the evaluation methodology. Critics argue secret evaluations lack the public accountability found in pharmaceutical or vehicle safety testing. The administration's position is that the core value — early awareness of offensive cyber capabilities from frontier models — is precisely the information that should remain classified.",
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://semafor.com/s/pfk6dn0t2h"
+  },
+  {
+    "section": "industry",
+    "headline": "US humanoid robot ban targets China but Beijing's response is muted",
+    "summary": "The US ban on new foreign-made humanoid and quadruped robots primarily targets China, but is framed broadly enough that Beijing's public reaction has been subdued. Unitree Robotics, which derived 13% of 2025 revenue from the US, flagged the restrictions as a material risk ahead of its Shanghai IPO. Unitree spent just 9% of revenue on R&D last year — indicating it still lags on software even as it leads on hardware.",
+    "source": "Semafor",
+    "date": "2026-08-06",
+    "url": "https://semafor.com/s/z2k0uef6pf"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Cloud API Gateway launches unified LLM router: one OpenAI-compatible endpoint for Gemini, Claude, and GPT",
+    "summary": "Google Cloud's API Gateway model routing entered public preview, offering a serverless ingress layer that accepts standard OpenAI-compatible requests and dynamically routes them to Gemini, Claude, or OpenAI's OSS-GPT based on configurable logic. It handles rate limiting, token tracking, and policy enforcement centrally — a managed alternative to client-side proxies like LiteLLM — and integrates natively with the Gemini Enterprise Agent Platform.",
+    "foryou": "Replace your LiteLLM sidecar with Google's managed router for centralized token tracking, policy enforcement, and model-switching across Gemini, Claude, and GPT from a single OpenAI-compatible endpoint.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://developers.googleblog.com/a-unified-api-for-ai-model-routing/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cloudflare Wallets gives AI agents a stable identity and programmable spending controls for MCP and APIs",
+    "summary": "Cloudflare Wallets lets you provision Virtual Wallets for AI agents with spending limits, allow-lists, and maximum transaction caps — enabling agents to autonomously buy API access, MCP tools, and web content without a human credit card. Payments run on the x402 open protocol originated by Coinbase. Handle reservations opened August 4, 2026; the full wallet infrastructure ships over coming months.",
+    "foryou": "For agentic pipelines that need autonomous payment access to MCP tools or APIs, Cloudflare Wallets is the first production-grade identity-plus-payment layer designed specifically for the agent-to-service use case.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://blog.cloudflare.com/wallets/"
+  },
+  {
+    "section": "tips",
+    "headline": "AWS open-sources Kiro Crew: persistent multi-agent orchestrator for 24/7 engineering workflows",
+    "summary": "AWS launched and open-sourced Kiro Crew, a persistent workspace that coordinates multiple AI coding agents across sessions, preserving project memory and context between runs. Originally built internally as MeshClaw (adopted by 39K+ Amazon builders in 6 months), it supports scheduling recurring engineering tasks, monitoring systems, and integrating with Slack and Discord. Agents display real-time tool calls and activity logs from desktop, web dashboard, or CLI.",
+    "foryou": "Kiro Crew's session-persistent architecture solves the context-loss problem that makes long-running autonomous coding agents unreliable — the open-source release makes it immediately usable.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://siliconangle.com/2026/08/04/aws-launches-kiro-crew-autonomous-agentic-orchestrator-24-7-code-development/"
+  },
+  {
+    "section": "tips",
+    "headline": "What Codex actually sends: a 16-character prompt generates 42,980 bytes — only 0.3% is user content",
+    "summary": "A developer proxied OpenAI Codex through a local server to measure exact request payloads. A 16-character user prompt generated a 42,980-byte / ~9,435-token first request — with only 25 tokens (0.3%) from the actual user input. The rest is system instructions, tool definitions, file contents, and compacted history. The post details precisely how Codex loads context, exposes tools, reads files, and manages history compaction.",
+    "foryou": "If you're designing your own agentic coding loop, this is a detailed map of the hidden 99.7% of the request — worth modeling explicitly rather than discovering empirically in production.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://www.0xkato.xyz/what-codex-actually-sends-to-the-model"
+  },
+  {
+    "section": "tips",
+    "headline": "Deep-dive: ChatGPT Work is a merger of six internal OpenAI agent projects — and a preview of where ChatGPT is heading",
+    "summary": "ChatGPT Work, OpenAI's knowledge-work agent product, is an amalgamation of six internal projects: ChatGPT, Codex app, Codex harness, original Codex cloud agent, Atlas, and OpenClaw. The analysis decodes the product's design decisions, the tensions between components, and OpenAI's plan to eventually merge Work and Chat so all users experience the agentic interface. It's a detailed case study in how a major AI lab ships complex agent products incrementally.",
+    "foryou": "OpenAI's compositing approach — shipping agents by layering existing tools rather than rebuilding — is a practical architecture model for your own multi-agent product decisions.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://www.latent.space/p/unpacking-chatgpt-work"
+  },
+  {
+    "section": "tips",
+    "headline": "Computer-use verification: subagents that reproduce bugs, validate specs, and attach screenshots to PRs",
+    "summary": "Computer-use verification integrates cloud-based subagents into coding workflows to independently reproduce bugs, validate implementations against specs, and attach screenshots or screen recordings to pull requests. Embedded into triage, implementation, and review stages, this pattern reduces human review load and enables agents to iteratively self-debug with visual confirmation rather than relying on text-only feedback loops.",
+    "foryou": "Adding a screenshot-capable verification subagent closes the feedback loop between agent output and observable ground truth — the missing piece in most autonomous coding pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-08-06"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor open-sources Mixture-of-Kittens: MoE megakernel optimized for NVL72s GPUs",
+    "summary": "Cursor released Mixture-of-Kittens (MoK), an open-source Mixture-of-Experts megakernel optimized for NVIDIA NVL72s GPUs. It addresses computation and communication bottlenecks that limit MoE inference at scale, delivering significant throughput improvements for models like Cursor's Composer. The kernel is open-source and available as a drop-in for teams running MoE architectures on NVL72s hardware.",
+    "foryou": "If you're running or evaluating MoE models on NVL72s, MoK is the current state-of-the-art kernel — benchmark against it before assuming your existing stack is optimal.",
+    "source": "TLDR AI",
+    "date": "2026-08-06",
+    "url": "https://cursor.com/blog/mixture-of-kittens"
+  }
+]
