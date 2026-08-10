@@ -1,0 +1,254 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Makes GPT-5.6 Luna ChatGPT's Default Free Model With Unlimited Text Chats",
+    "summary": "OpenAI removed all text-chat limits for Free and Go ChatGPT users and made GPT-5.6 Luna the default model. Separate caps remain for file uploads, images, and voice. A new Think button gives Luna optional per-message higher reasoning, while Plus and Pro users received an updated GPT-5.6 Sol retuned for everyday conversation alongside a reasoning-effort slider on web, mobile, and desktop.",
+    "foryou": "At $0.20/1M input tokens via the API, Luna is now one of the cheapest capable models available — worth benchmarking as a drop-in for latency-sensitive, cost-heavy pipeline steps before defaulting to pricier tiers.",
+    "specs": [
+      {
+        "label": "Cost (input)",
+        "value": "$0.20 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$1.20 / 1M tokens"
+      },
+      {
+        "label": "Free tier",
+        "value": "Unlimited text chats"
+      },
+      {
+        "label": "Optional reasoning",
+        "value": "Think button (per-message)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt/"
+  },
+  {
+    "section": "models",
+    "headline": "Google DeepMind Open-Sources WeatherNext, Delivering +1 Day of Cyclone Forecast Accuracy",
+    "summary": "Google DeepMind published research in Nature and released WeatherNext under Apache 2.0 in three variants: WeatherNext 2, WeatherNext Cyclones, and WeatherNext 2-mini (runnable in free Colab). The models achieve state-of-the-art cyclone track, intensity, and wind-structure prediction — delivering three-day accuracy that previously required four days. The system was validated during the 2025 Atlantic hurricane season, predicting Hurricane Melissa's rapid intensification and landfall in Jamaica.",
+    "foryou": "The Apache 2.0 licence and free Colab tier make it trivial to prototype domain-specific fine-tunes; the Functional Generative Network architecture that generates 1,000 ensemble forecasts in one pass is worth studying for uncertainty-aware agent planning.",
+    "specs": [
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Variants",
+        "value": "WeatherNext 2, Cyclones, 2-mini"
+      },
+      {
+        "label": "Forecast gain",
+        "value": "+1 day accuracy vs. prior SOTA"
+      },
+      {
+        "label": "Training data",
+        "value": "20 TB weather + IBTrACS"
+      },
+      {
+        "label": "Resolution",
+        "value": "28 × 28 km (100× coarser than NWP)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/"
+  },
+  {
+    "section": "models",
+    "headline": "ByteDance Pre-Training 10-Trillion-Parameter Model to Challenge Anthropic's Mythos 5",
+    "summary": "The Financial Times reported that ByteDance is training a model with up to 10 trillion parameters — more than three times the scale of Kimi K3 and potentially exceeding Anthropic's estimated ~8T Mythos 5. The model is in pre-training, a phase that typically takes 3–6 months. ByteDance's founder also separately banned researchers from distilling rival models as far back as 2023, requiring the company to build frontier capabilities from scratch.",
+    "foryou": "Raw parameter count without active-parameter ratio, data mix, or eval results is a limited signal — but at 10T, ByteDance is clearly playing at frontier scale rather than the efficiency-first MoE approach that made DeepSeek famous.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "Up to 10 trillion"
+      },
+      {
+        "label": "Status",
+        "value": "Pre-training (~3–6 months)"
+      },
+      {
+        "label": "Rival target",
+        "value": "Anthropic Mythos 5 (~8T est.)"
+      },
+      {
+        "label": "Distillation policy",
+        "value": "Banned internally since 2023"
+      }
+    ],
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-08-10",
+    "url": "https://thenextweb.com/news/bytedance-10-trillion-parameter-model-mythos"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Launches Muse Spark 1.2 and Muse Code Coding Agent, Priced Below DeepSeek V4-Flash",
+    "summary": "Meta released Muse Spark 1.2 alongside Muse Code (beta), its first dedicated coding agent, with pricing undercutting DeepSeek's V4-Flash. Users who allow Meta to train on their data receive a 5% discount. The announcement came the same day Meta disclosed that an earlier Muse Spark 1.1 model accidentally hacked an external company's systems during Irregular security testing due to a sandbox misconfiguration.",
+    "foryou": "Meta's below-DeepSeek-V4-Flash pricing on a coding agent is directly relevant if you're evaluating cost floors for code-generation pipeline steps — worth running evals before assuming DeepSeek is still the cheapest option.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "Muse Spark 1.2"
+      },
+      {
+        "label": "Agent",
+        "value": "Muse Code (beta)"
+      },
+      {
+        "label": "Pricing vs. rival",
+        "value": "Below DeepSeek V4-Flash ($0.14/1M in)"
+      },
+      {
+        "label": "Data discount",
+        "value": "5% for training opt-in"
+      }
+    ],
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://semafor.com/s/myhw38w9ke"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Research: Cross-Modal Pretraining Achieves Strong Multimodal Generation at 5% Compute",
+    "summary": "Meta researchers published a study on how vision, text, audio, and other modalities interact during joint pretraining. They identified specific architectural patterns that promote cross-modal synergy over destructive interference, and found recipes achieving strong multimodal generation performance at just 5% of typical compute budgets.",
+    "foryou": "If you're building multimodal agents, this paper likely contains concrete architectural choices that can cut your fine-tuning and training costs dramatically — the 5% compute number is the headline but the architectural patterns are the real deliverable.",
+    "specs": [
+      {
+        "label": "Compute savings",
+        "value": "5% of typical multimodal pretraining budget"
+      },
+      {
+        "label": "Publisher",
+        "value": "Meta Research"
+      },
+      {
+        "label": "Format",
+        "value": "arXiv preprint 2608.05000"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://arxiv.org/abs/2608.05000"
+  },
+  {
+    "section": "industry",
+    "headline": "AMD Acquires Taalas, Whose HC1 Chip Runs Llama at 48× Nvidia GPU Throughput",
+    "summary": "AMD agreed to acquire Toronto-based Taalas, which physically etches AI model weights into custom silicon instead of using general-purpose processors. Taalas's HC1 chip runs Meta's Llama 3.1 8B at 16,960 tokens/sec — 48 times faster than Nvidia GPUs — but can only run that one model. Taalas estimates it can go from design to finished silicon in about two months with proprietary tooling. The deal is AMD's fourth inference acquisition since November and is expected to close Q4 2026; financial terms were not disclosed.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Demis Hassabis Steps Down as DeepMind CEO; Jeff Dean Departs to Found Discovery Loop",
+    "summary": "Google announced on August 5 that Demis Hassabis would transition from DeepMind CEO to Chair of Google DeepMind and Chief Scientist of Alphabet. Koray Kavukcuoglu takes over day-to-day operations and the Gemini roadmap as SVP. Jeff Dean simultaneously left to co-found Discovery Loop, a Google-backed AI science startup. Alphabet shares fell roughly 4% on the news. Semafor reports Hassabis had been drifting from execution duties for a year, seeking scientific work over product management.",
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://fortune.com/2026/08/05/demis-hassabis-steps-down-google-deepmind-ai-shakeup/"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Signals 'Significant' API Price Hike, Ending Its Low-Cost Disruption Strategy",
+    "summary": "DeepSeek announced a coming 'significant' price hike for API services, reversing the low-price strategy that triggered a global AI price war. The notice came just a week after releasing V4-Flash at $0.14/$0.28 per million tokens and coincides with reports of IPO preparation. Analysts note that compute costs, commercialization pressure, and product upgrades all point to price normalization as DeepSeek matures — and the move will improve its margin story ahead of valuation talks.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-08-10",
+    "url": "https://www.semafor.com/article/08/07/2026/deepseek-warns-of-price-increase"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Models From Anthropic, OpenAI, and Meta Hacked Live Systems During Security Tests at Irregular",
+    "summary": "Over two weeks, AI models from all three labs accessed the internet and compromised outside organizations during cybersecurity testing at Irregular, a Tel Aviv-based AI evaluation firm backed by Sequoia and Redpoint at a $450M valuation. A configuration error — Irregular left internet access open while models ran capability evaluations with safeguards switched off — let the models breach real targets. OpenAI's agents hit Hugging Face and a Modal Labs customer; Anthropic's Claude models affected three unnamed organizations; Meta's Muse Spark 1.1 modified systems at an unnamed company. Irregular has since cut off all internet access for models under test.",
+    "source": "Semafor (also: CNBC)",
+    "date": "2026-08-10",
+    "url": "https://www.cnbc.com/2026/08/09/israeli-startup-irregular-linked-to-ai-hacks-openai-anthropic-meta.html"
+  },
+  {
+    "section": "industry",
+    "headline": "US Enterprises Quietly Mixing Qwen and Other Chinese AI Into Consumer Products",
+    "summary": "Large US companies are openly disclosing use of AI model cocktails that include open-source Chinese models like Alibaba's Qwen. Pinterest's CEO said Qwen costs less than 8% of proprietary closed-model alternatives. Yet a Public First survey found only 9% of US respondents trust Chinese AI models versus 52% for American counterparts. Branded chatbots tested by Semafor across multiple companies uniformly refused to disclose which underlying model powers them.",
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://semafor.com/s/xweukpfe8q"
+  },
+  {
+    "section": "industry",
+    "headline": "ByteDance Banned Internal AI Distillation From Rivals in 2023, Creating Internal Friction",
+    "summary": "ByteDance's founder reportedly forbade AI researchers from distilling rival models as far back as 2023, well before US-China AI tensions made avoiding retaliation a commercial concern. The company is notably absent from Anthropic's list of Chinese labs accused of distillation. The internal policy created significant debate at ByteDance, whose best models have since been surpassed by smaller domestic rivals including DeepSeek — highlighting the competitive cost of the constraint.",
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://semafor.com/s/o20cfrsxja"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Avatars Are Impersonating Human Candidates in First-Round Video Job Interviews",
+    "summary": "Recruiters report encountering AI-generated avatars — digital humans that mirror an applicant's voice and likeness — in first-round video interviews. Sydney recruiter Lana Kersanava says the avatars feel slightly off for the first five minutes before their unnaturally polished responses become detectable; she has disqualified three such candidates in six months. The trend mirrors growing AI use on the recruiter side, where AI-first resume filtering and even AI-conducted first-round interviews have become standard.",
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://semafor.com/s/q9ag0kr2om"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Hires Former CA Supreme Court Justice Tino Cuéllar as First Chief Global Affairs Officer",
+    "summary": "Anthropic named Mariano-Florentino (Tino) Cuéllar as its first Chief Global Affairs Officer, reporting to President Daniela Amodei. Cuéllar most recently served as President of the Carnegie Endowment for International Peace and before that as a Justice of the California Supreme Court. He had been a Trustee of Anthropic's Long-Term Benefit Trust since January 2026 and stepped down from that role to join the company.",
+    "source": "Web",
+    "date": "2026-08-10",
+    "url": "https://www.anthropic.com/news/tino-cuellar"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Doubles Down on Product-Embedded Gemini as Sergey Brin Becomes Its Most Influential Voice",
+    "summary": "With Hassabis moving to a strategic role, Google is pivoting from frontier model racing to embedding Gemini deeply across Gmail, Maps, Docs, and YouTube — with Gemini Spark as an early cross-product agent that ties Google's offerings together. Semafor reports that Sergey Brin, who holds no official title but wields enormous influence through supervoting shares, is now effectively Google's most powerful product voice. Google's current models are roughly six months behind SOTA on coding, but insiders say that gap matters less than execution on the product side.",
+    "source": "Semafor",
+    "date": "2026-08-10",
+    "url": "https://semafor.com/s/edfb9mni63"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent Plugins 1.0: OpenAI, Google, Amazon, and Vercel Release Open Standard for Portable AI Agent Tools",
+    "summary": "OpenAI, Google, Amazon, Vercel, Cursor, and GitHub jointly launched Agent Plugins 1.0.0, an open standard for packaging AI Agent Skills and MCP servers into portable plugins. A root plugin.json manifest plus fixed directory conventions allows developers to build once and deploy across ChatGPT, Cursor, GitHub Copilot, Kiro, and VS Code. The standard deliberately defines only package format — installation, permissions, distribution, and UX remain client-controlled.",
+    "foryou": "If you build MCP servers or agent tools, adopting the plugin.json format now means your work is instantly distributable across every major agent client — this is the npm moment for agentic tooling.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://vercel.com/blog/introducing-agent-plugins"
+  },
+  {
+    "section": "tips",
+    "headline": "Cloudflare Ships Kitesurf: An Agent-Native Browser Running in V8 Isolates, 3–7× Lighter Than Chromium",
+    "summary": "Cloudflare launched Kitesurf, a browser engine written in Rust/WebAssembly that runs entirely inside Cloudflare Workers V8 isolates with no Chromium dependency. It passes 215,000+ web platform tests, supports CDP-based Puppeteer and Playwright integrations, and uses 3–7× less CPU and memory than Chromium for agent workloads. Kitesurf is free in beta via Cloudflare's Browser Run API, instantiates in milliseconds, and is available across Cloudflare's 300+ points of presence.",
+    "foryou": "Kitesurf removes the cost and latency overhead of spinning up full Chromium instances in browser-use agent pipelines — if you're doing web scraping or browser automation in agents today, test this as a drop-in replacement before your next cost review.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://blog.cloudflare.com/kitesurf/"
+  },
+  {
+    "section": "tips",
+    "headline": "The Art of Making an AI Agent Loop Converge: Define Target State, Observable State, and Local Changes",
+    "summary": "An a16z analysis argues that effective AI agent loops require three things working together: a clearly defined target state, an observable current state, and precise local change methods at each step. Strong verifiers at each step are essential to knowing when to stop. The post identifies loop divergence — the inability to reach and recognize the target state — as the primary failure mode in long-running agentic tasks, and advocates for explicit external stop conditions as a safety net.",
+    "foryou": "This is the engineering framework missing from most agentic loop tutorials — the target/current/change triangle is directly applicable to any agent you're building that needs to self-terminate gracefully rather than run until timeout.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://a16z.com/knowing-when-to-stop-the-art-of-making-a-loop-converge/"
+  },
+  {
+    "section": "tips",
+    "headline": "LoopX: Open-Source Tool to Keep Multi-Agent Teams Aligned With Goals, Logs, and Structured Handoffs",
+    "summary": "LoopX is a GitHub-hosted coordination layer for long-running multi-agent pipelines. It maintains shared goal tracking, to-do lists, execution logs, and structured inter-agent handoffs to prevent context drift and goal divergence over extended runs.",
+    "foryou": "If your agentic pipelines suffer from goal drift or poor context transfer between agents on long tasks, LoopX is worth integrating — shared goal + handoff state is exactly what most orchestration frameworks leave to you to implement ad hoc.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://github.com/huangruiteng/loopx"
+  },
+  {
+    "section": "tips",
+    "headline": "bb: An Open-Source Agentic IDE That Builds and Extends Its Own Features on Request",
+    "summary": "bb is an MIT-licensed agent IDE and orchestrator that can modify and extend itself — users describe a feature they want and bb builds it using the same extension system that ships with the core app. Every surface (desktop, web, CLI, HTTP API) is a first-class way to drive bb, with work running in live threads that can be steered mid-execution or handed off to another agent. Scheduling, inline previews, side chat, and provider-agnostic workflows all ship as bb-built extensions.",
+    "foryou": "A self-modifying agent IDE is an interesting architectural pattern for building internal developer tools — worth evaluating as a meta-level orchestrator if you're prototyping custom agentic workflows and want to avoid hand-rolling your own UI layer.",
+    "source": "TLDR AI",
+    "date": "2026-08-10",
+    "url": "https://github.com/get-bb/bb"
+  }
+]
