@@ -1,0 +1,195 @@
+[
+  {
+    "section": "models",
+    "headline": "GPT-5.6-Cyber: OpenAI's First Offense-Grade Cybersecurity Model",
+    "summary": "OpenAI released GPT-5.6-Cyber, a specialized model built for vulnerability research, exploit validation, and exploit-chain construction. It answers 95% of advanced cyber prompts vs 1.5% for standard GPT-5.6 Sol, and already found two previously unknown Chrome V8 zero-days (patched as CVE-2026-15903). Access is gated behind Daybreak Red, OpenAI's applicant-vetted defender tier, with a less-restricted Daybreak Blue tier for defensive security work.",
+    "foryou": "If you're building security-sensitive agentic pipelines, watch the Daybreak Blue access tier closely — it's the first legitimate path to frontier-grade security tooling inside your own stack.",
+    "specs": [
+      {
+        "label": "Base model",
+        "value": "GPT-5.6 Sol"
+      },
+      {
+        "label": "Cyber completion rate",
+        "value": "95.0% (vs 1.5% Sol baseline)"
+      },
+      {
+        "label": "Access",
+        "value": "Daybreak Red (vetted) / Blue (defensive)"
+      },
+      {
+        "label": "Notable result",
+        "value": "2 Chrome V8 zero-days found (CVE-2026-15903)"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://www.securityweek.com/openai-unveils-new-cybersecurity-model-gpt-5-6-cyber/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Advances Riemann Hypothesis Lower Bound from 41.6% to 67.2%",
+    "summary": "Anthropic used an unreleased research version of Claude to improve a century-old mathematical bound: the share of Riemann zeta nontrivial zeros provably satisfying the hypothesis jumped from 41.6% to 67.2%. Claude ran two Claude Code sessions, coordinating 60 subagents over 31M output tokens, testing 650 ideas before the result was validated by two independent mathematicians. This doesn't solve the Riemann Hypothesis and has not passed peer review, but it marks the first time AI has made a novel, confirmed advance on a major unsolved problem in pure mathematics.",
+    "foryou": "The multi-agent architecture here — 60 subagents doing numerical checks in parallel under a coordinating Claude instance — is directly applicable to hard verification tasks in your pipelines where human spot-checks don't scale.",
+    "specs": [
+      {
+        "label": "Previous bound",
+        "value": "41.6% of zeros confirmed"
+      },
+      {
+        "label": "New bound",
+        "value": "67.2% of zeros confirmed"
+      },
+      {
+        "label": "Compute",
+        "value": "31M output tokens, 60 subagents"
+      },
+      {
+        "label": "Validated by",
+        "value": "2 mathematicians + formal verification"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://www.anthropic.com/research/riemann-zeta"
+  },
+  {
+    "section": "models",
+    "headline": "Dyna-2: World-Action Model Trained on 1 Million Hours of Human Video",
+    "summary": "Dyna-2 is a world-action model that uses over one million hours of human video data to establish scaling laws that predictably improve action accuracy on both human and robot tasks. The project demonstrates that scaling data rather than just model size yields consistent, measurable gains in physical-world task completion — a key result for anyone building embodied or computer-use agents.",
+    "foryou": "The predictable scaling laws here are the real story: if you're designing systems where agents control physical or virtual environments, Dyna-2 gives you a framework for estimating how much additional data actually buys you.",
+    "specs": [
+      {
+        "label": "Training data",
+        "value": "1M+ hours of human video"
+      },
+      {
+        "label": "Task types",
+        "value": "Human and robot physical tasks"
+      },
+      {
+        "label": "Key finding",
+        "value": "Predictable scaling laws for action accuracy"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://www.dyna.co/dyna-2"
+  },
+  {
+    "section": "models",
+    "headline": "H3-Metal: Native MiniMax-H3 Video/Audio Inference on Apple Silicon",
+    "summary": "H3-Metal brings the MiniMax H3 model to Apple Silicon with Metal-optimized kernels, supporting prompt-to-video/audio, first/last-frame conditioning, and multi-reference (Ref2VA) generation. It targets M3 Max and M5 Max chips with incremental performance and memory optimization work ongoing.",
+    "foryou": "If you're prototyping multimodal pipelines that generate video or audio, this gives you a local inference path on Mac hardware without cloud egress costs — useful for rapid iteration on agent tasks that produce media outputs.",
+    "specs": [
+      {
+        "label": "Target hardware",
+        "value": "M3 Max, M5 Max"
+      },
+      {
+        "label": "Capabilities",
+        "value": "Text-to-video, first/last-frame, Ref2VA"
+      },
+      {
+        "label": "License",
+        "value": "Open source (GitHub)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://github.com/antirez/h3.c"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Shores Up Investor Confidence Ahead of September IPO",
+    "summary": "Anthropic is holding pre-IPO investor meetings to address concerns about cheaper Chinese AI systems, tensions with the Trump administration, and data-center construction backlash. The company is targeting a public debut in September or early October. Its revenue run rate stands at approximately $47 billion as of May, and its private-market valuation is $965 billion — which would make it one of the largest IPOs in history if achieved.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Partners With Six Wall Street Firms to Mobilize $500B for AI Infrastructure",
+    "summary": "Nvidia signed MOUs with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, and KKR to establish compute financing platforms targeting over $500 billion in third-party capital for hyperscalers, frontier AI labs, and enterprises. The structure lets outside investors fund data centers and power infrastructure without adding to Nvidia's balance sheet. Jensen Huang told CNBC he personally approached only these six firms and none declined.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Completes $7B Employee Tender Offer at $852B Valuation",
+    "summary": "OpenAI has reportedly closed a $7 billion employee tender offer, providing liquidity to its workforce while valuing the company at $852 billion — unchanged from its March fundraising round. The deal reflects the company's strategy to retain talent through equity liquidity events as it approaches potential public markets.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://techcrunch.com/2026/08/10/openai-reportedly-completed-a-7-billion-employee-tender-offer/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Plans to Unveil Maia 300 AI Chip in September",
+    "summary": "Microsoft is reportedly planning to unveil its Maia 300 AI chip in September, as part of its long-running effort to reduce dependence on Nvidia GPUs for training and inference workloads. Maia 300 would be the successor to Maia 100 and represents Microsoft's bid to control more of its AI infrastructure stack.",
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://insideai.news/news/ai-hardware-infrastructure/microsoft-plans-maia-300-ai-chip-unveiling-in-september-report-says/7446/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Testing Lower-Memory Rubin Ultra Configs as HBM Shortage Bites",
+    "summary": "Nvidia has tested at least three lower-memory configurations of its upcoming Rubin Ultra GPU due to HBM memory supply constraints, with designs as low as 192GB stepping back from HBM4 to earlier memory standards. The shortage is forcing Nvidia to manage supply flexibility even for its most advanced hardware.",
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-testing-lower-memory-configs-of-rubin-ultra-as-memory-shortage-bites-back-designs-tested-include-as-little-as-192-gb-and-step-back-to-hbm4"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Lays Out Vision for Democratized Superintelligence via Personal AI Agents",
+    "summary": "Meta published a detailed essay outlining its vision of personal AI agents that enhance individuals rather than centralizing power in institutions. The piece emphasizes invention over automation, privacy-respecting personal intelligence, and economic empowerment through AI-enabled entrepreneurship. Meta explicitly argues against singular centralized AI and positions its open-weight strategy as structural protection against that outcome.",
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://about.fb.com/news/2026/08/the-future-is-for-everyone/"
+  },
+  {
+    "section": "tips",
+    "headline": "Are Agents Really Killing UI? PostHog Argues Hybrid Interfaces Win",
+    "summary": "PostHog's engineering blog argues that agents are not eliminating UI — they're splitting software into two surfaces: one for humans, one for agents. The highest-value screens increasingly handle approval, review, undo, orchestration, and visibility into what agents changed. Products that win will support agent-friendly onboarding, MCP access, and instrumentation alongside human-facing controls.",
+    "foryou": "If you're building or integrating agentic pipelines into products, this is the practical design principle: every workflow needs a 'what did the agent just do' surface for humans, not just a capability surface for agents.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://posthog.com/blog/agents-killing-ui"
+  },
+  {
+    "section": "tips",
+    "headline": "a16z: Agents Now Score 85% on Computer Use — But Break on Complex Workflows",
+    "summary": "A16z's data shows computer-using agents improved from 42% to 85% on OSWorld-Verified over the past year, surpassing the ~72% human baseline. Deployments are working well on repetitive protocol-following tasks (ticket processing, data entry, legacy systems) but still break on complex multi-step workflows where accuracy is hard to verify. One founder noted production viability didn't arrive until Opus 4.6 in February 2026.",
+    "foryou": "The practical boundary here is clear: structure your agent automation around tasks with deterministic success criteria first — verification is your real constraint, not capability.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://a16z.com/can-agents-use-a-computer-yet-weve-got-the-data/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI's 5 Lessons from Rebuilding Finance Around AI",
+    "summary": "OpenAI published five lessons from redesigning its finance function for AI-native workflows: give everyone access then create a reason to use it; redesign workflows around the decision not the task; let finance professionals become builders; pair speed with accountability; and measure value per unit of intelligence. The long-term goals include a zero-day close and continuously updated statistical forecasting, replacing spreadsheet-based models. Tasks now run 2–3x faster.",
+    "foryou": "The 'redesign around the decision, not the task' principle is directly transferable to agentic pipeline design — if your agent is automating a task but a human still makes the same decision, you've automated the wrong thing.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-08-12",
+    "url": "https://openai.com/index/building-an-ai-native-finance-function/"
+  },
+  {
+    "section": "tips",
+    "headline": "Qwen-MM-Plugins: Native Multimodal Plugins for Qwen Agent Harnesses",
+    "summary": "The Qwen team released Qwen-MM-Plugins, a repository of native multimodal plugins for Qwen models. Each plugin adds a specific perceptual capability (image understanding, video, audio) and ships with both a skill definition and an optional MCP server, making it straightforward to wire multimodal capabilities into existing Qwen-based agent harnesses.",
+    "foryou": "If you're running Qwen in any agentic context, this is the fastest path to adding vision or audio without re-architecting your setup — the MCP server option means you can treat each modality as a tool call.",
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://github.com/QwenLM/Qwen-MM-Plugins"
+  },
+  {
+    "section": "tips",
+    "headline": "Attention-Only Transformers: What's Actually Lost When You Remove Feed-Forward Layers",
+    "summary": "A new controlled study removes feed-forward networks (FFNs) entirely from transformer decoders — the layers that hold ~two-thirds of non-embedding parameters and are widely theorized as 'parametric memory.' The experiment directly measures what capability is actually lost vs. what was assumed to be stored there, separating empirical results from interpretability speculation.",
+    "foryou": "If you're building systems that fine-tune or distill models, understanding which capabilities live in FFN vs. attention layers shapes where you can prune or quantize most aggressively without hurting your specific task.",
+    "source": "TLDR AI",
+    "date": "2026-08-12",
+    "url": "https://arxiv.org/abs/2607.18363"
+  }
+]
