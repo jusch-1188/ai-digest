@@ -1,0 +1,269 @@
+[
+  {
+    "section": "models",
+    "headline": "Nvidia Nemotron 3.5 Lightning + NeMo Switchyard Cut Agent Costs by 74%",
+    "summary": "NVIDIA released Nemotron 3.5 Lightning, an open 30B mixture-of-experts model with only 3B active parameters, designed for high-volume agent execution. Paired with NeMo Switchyard — an open-source routing library — it directs each step of an agent workflow to the cheapest capable model. In LangChain testing, Switchyard's escalation router cut costs by 74% by routing just 7% of calls to a frontier model, with only a ~6-point accuracy drop.",
+    "foryou": "Drop Switchyard into your agentic pipelines to slash costs without rewiring your prompts — the escalation router does the work automatically.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "30B MoE (3B active)"
+      },
+      {
+        "label": "SWE-bench Verified",
+        "value": "51.56"
+      },
+      {
+        "label": "GPQA Diamond",
+        "value": "75.44"
+      },
+      {
+        "label": "Speed vs. peers",
+        "value": "4× faster output, 30% faster than Qwen3.6-35B"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$0.05 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$0.20 / 1M tokens"
+      },
+      {
+        "label": "License",
+        "value": "Open weights (HuggingFace)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://venturebeat.com/orchestration/nvidias-switchyard-router-reshuffles-ai-models-mid-task-cutting-task-costs-to-a-third-in-its-own-tests"
+  },
+  {
+    "section": "models",
+    "headline": "MAI-Code-1.1-Flash: Microsoft's Coding Model at 25% of the Cost",
+    "summary": "Microsoft released MAI-Code-1.1-Flash on August 11, the updated successor to its June Build coding model. It delivers 25% greater token efficiency at one quarter of the cost, adds native vision support for image understanding, and shows a 22% improvement on Terminal-Bench 2.1 in GitHub Copilot CLI and a 15% lift on .NET tasks. The model is now live in GitHub Copilot.",
+    "foryou": "If you use GitHub Copilot for CLI or .NET work, MAI-Code-1.1-Flash is a free upgrade that silently cuts credit burn — no config change needed.",
+    "specs": [
+      {
+        "label": "Cost vs. predecessor",
+        "value": "25% of MAI-Code-1-Flash"
+      },
+      {
+        "label": "Token efficiency",
+        "value": "+25%"
+      },
+      {
+        "label": "Terminal-Bench 2.1",
+        "value": "+22%"
+      },
+      {
+        "label": ".NET task improvement",
+        "value": "+15%"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$0.20 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$1.20 / 1M tokens"
+      },
+      {
+        "label": "Vision",
+        "value": "Native image understanding added"
+      },
+      {
+        "label": "Availability",
+        "value": "GitHub Copilot (now)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://microsoft.ai/news/mai-code-1-1-flash-br-better-faster-at-a-quarter-of-the-cost/"
+  },
+  {
+    "section": "models",
+    "headline": "Grok 4.6 Launches at Half the Price of Rival Frontier Models",
+    "summary": "xAI shipped Grok 4.6 on August 12, a 1.5-trillion-parameter model built specifically for long-running agentic tasks requiring sustained execution and self-verification. It scored 1753 Elo on GDPval-AA v2 and a 61 on Artificial Analysis Intelligence Index — level with GPT-5.6 Sol — while costing $2/1M input and $6/1M output, roughly half the price of comparable frontier models. Grok 4.7 (2.1T params) is expected in late August or early September.",
+    "foryou": "At $6/1M output with a 500K context window and agent-optimized architecture, Grok 4.6 is a compelling drop-in for long agentic pipelines where frontier-level reasoning matters but budget does too.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "1.5T"
+      },
+      {
+        "label": "Context window",
+        "value": "500K tokens"
+      },
+      {
+        "label": "GDPval-AA v2 Elo",
+        "value": "1753"
+      },
+      {
+        "label": "Intelligence Index",
+        "value": "61 (vs GPT-5.6 Sol: 61)"
+      },
+      {
+        "label": "CursorBench v3.2",
+        "value": "69.9%"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$2 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$6 / 1M tokens"
+      },
+      {
+        "label": "Knowledge cutoff",
+        "value": "February 1, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-13",
+    "url": "https://aireleasetracker.com/model/xai/grok-4.6"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6-Cyber: OpenAI's Restricted Security Model Finds Zero-Days in Chrome",
+    "summary": "OpenAI released GPT-5.6-Cyber on August 10, a cybersecurity-specific variant of GPT-5.6 Sol trained for zero-day discovery and exploit chain building. Access is gated behind the Daybreak Red program, requiring identity verification, hardware security keys, and legal attestations. OpenAI used the model to find two previously unknown vulnerabilities in V8 (Chrome's JavaScript engine), patched as CVE-2026-15903.",
+    "foryou": "If you're building security tooling or red-team pipelines, apply to Daybreak Red — this is the first frontier model purpose-built for offensive security research.",
+    "specs": [
+      {
+        "label": "Access",
+        "value": "Daybreak Red only (vetted application)"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$12.50 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$75 / 1M tokens"
+      },
+      {
+        "label": "Cyber Completion Rate",
+        "value": "95.0% (vs Sol: 1.5%) — refusal metric"
+      },
+      {
+        "label": "Notable output",
+        "value": "2 zero-days in V8/Chrome (CVE-2026-15903)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-13",
+    "url": "https://www.securityweek.com/openai-unveils-new-cybersecurity-model-gpt-5-6-cyber/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI COO Brad Lightcap Leaves to 'Start Something New'",
+    "summary": "Brad Lightcap, OpenAI's chief operating officer, is leaving to found a new venture, hinting it will advance OpenAI's mission from a different angle. His departure follows a wave of C-suite exits — Fidji Simo, Bill Peebles, and Kevin Weil have also recently left — as OpenAI restructures ahead of its anticipated IPO.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/"
+  },
+  {
+    "section": "industry",
+    "headline": "Gemini Passes 1 Billion Monthly Active Users",
+    "summary": "Google's Gemini app crossed 1 billion monthly active users, becoming the 14th Google product to reach the milestone and the company's fastest-growing product in its 28-year history. ChatGPT hit 1 billion users in June 2026 and still leads overall chatbot share, but Gemini's growth — fueled by Android, Chrome, and Workspace integration — is reportedly accelerating as ChatGPT's plateaus.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+  },
+  {
+    "section": "industry",
+    "headline": "Demis Hassabis Steps Aside at Google DeepMind; Koray Kavukcuoglu Takes Over",
+    "summary": "Koray Kavukcuoglu, a 13-year DeepMind veteran who founded its deep learning team and led breakthroughs like WaveNet and DQN, is taking over as head of Google DeepMind, reporting directly to Sundar Pichai. Demis Hassabis becomes Chair and Chief Scientist at Alphabet, stepping back from day-to-day operations amid low morale, model delays, and talent departures that Fortune described as an 'unraveling'. The move signals Google is prioritizing delivery over research at its most critical AI division.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://www.cnbc.com/2026/08/12/google-deepmind-koray-kavukcuoglu.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Lovable Raises $400M Series C at $13.3B Valuation",
+    "summary": "The Stockholm-based vibe-coding startup Lovable closed a $400M Series C led by Menlo Ventures and the Scaleup Europe Fund (EQT), with backers including Balderton, Tencent, and returning investors Accel and CapitalG. The valuation doubles its $6.6B figure from December 2025. Lovable is on track for a $600M revenue run rate by the end of August — nearly triple the level disclosed eight months ago.",
+    "source": "Web",
+    "date": "2026-08-13",
+    "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
+  },
+  {
+    "section": "industry",
+    "headline": "Manus Resumes as Independent Company After Acquisition Falls Through",
+    "summary": "Manus is resuming operations as an independent company after an acquisition deal did not close. Users will need to back up and restore their data through a migration process the company is facilitating. The details of the failed acquisition and the acquirer remain undisclosed.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://www.geopolitechs.org/p/manus-unaccquired"
+  },
+  {
+    "section": "industry",
+    "headline": "Redwood Research Chief Scientist: Humans Will Automate AI R&D by 2031",
+    "summary": "In a wide-ranging interview with Dwarkesh Patel, Ryan Greenblatt (chief scientist at Redwood Research) argues that recursive self-improvement (RSI) could arrive as early as 2031, when AI systems become capable of automating AI research itself. One plausible outcome: a rapid slingshot to tens of billions of superhuman AI agents, each vastly more capable than human experts across every field. Greenblatt frames this as one of the most under-discussed risk scenarios in current AI safety discourse.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://www.dwarkesh.com/p/ryan-greenblatt"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor Review: Automated PR Pipelines With Human-in-the-Loop",
+    "summary": "Cursor is rolling out 'Cursor Review' (formerly Origin), a platform for managing code reviews alongside AI agents. It adds two new tabs: Codebase, for syncing and managing repos from GitHub, and Review, an automated PR pipeline that surfaces only the decisions that need human judgment. The rollout from closed partner beta could land as early as this week.",
+    "foryou": "If your team runs agentic code generation, Cursor Review lets you delegate the PR triage layer to agents while staying in the loop only when it matters — a direct productivity unlock.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://www.testingcatalog.com/cursor-prepares-to-launch-origin-platform-for-code-reviews/"
+  },
+  {
+    "section": "tips",
+    "headline": "Critical Security: Encrypted Reasoning Traces Can Be Stolen from LLM APIs",
+    "summary": "Researchers from MATS, ELLIS, MPI, and Snyk found that encrypted chain-of-thought blocks returned by Anthropic, OpenAI, and Google APIs can be replayed across sessions and users — and decoded into plaintext by jailbreaking a weaker sibling model. Scanning 6,708 public agent trajectories, they recovered 182 credentials and 367 PII items from sessions developers had already shared publicly. As a mitigation, Anthropic now ties thinking blocks to the originating model; strip them before switching models.",
+    "foryou": "Audit your agent logs now: if you've ever logged or shared raw API responses containing 'thinking' blocks, credentials or PII may have leaked — strip encrypted reasoning before any cross-model reuse.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://stolen-thoughts.com/"
+  },
+  {
+    "section": "tips",
+    "headline": "Grok Bot: Always-On AI Agents With Their Own Cloud Computers",
+    "summary": "xAI launched Grok Bot, a product that gives each AI agent its own cloud computer, persistent memory, and access to the apps and websites a user already uses — no API integrations or workflow setup required. Bots continue running after the user closes their laptop and only surface when a human decision is needed. Access is bundled into SuperGrok Heavy, Cursor Ultra, and Cursor Teams Premium subscriptions, and runs on the new Grok 4.6 model built specifically for long-running agentic work.",
+    "foryou": "Grok Bot is the first packaged 'give it a computer' agent platform that doesn't require you to build the scaffolding — worth evaluating for delegation of multi-step work that crosses apps.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "http://x.ai/news/introducing-grok-bot"
+  },
+  {
+    "section": "tips",
+    "headline": "Raindrop RD-Signal-2: Frontier-Class Binary Classification at Production Cost",
+    "summary": "Raindrop launched Signals 2.0 with the rd-signal-2 model, offering task-specific binary classifiers that match near GPT-5.6 accuracy at a fraction of the price. The model is designed for high-volume production classification where firing a full frontier model per call is cost-prohibitive — ideal for routing, content moderation, relevance scoring, and similar binary decisions in agent pipelines.",
+    "foryou": "If you're calling frontier models for routing or classification steps in a pipeline, rd-signal-2 is the drop-in that eliminates that cost without sacrificing accuracy.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://www.raindrop.ai/blog/signals-2-frontier-classification"
+  },
+  {
+    "section": "tips",
+    "headline": "The Model Picker Is a Dead End: Route by Task, Not by Preference",
+    "summary": "Lovable's engineering team argues that single-model AI products are architecturally flawed. Instead, they align specific models with the tasks they perform best and use a control plane that monitors builds, switches models when performance dips, and incorporates self-trained models when they outperform external ones. The result is model-independence: a product that improves automatically as the model landscape evolves without re-engineering product logic.",
+    "foryou": "If your pipeline hardcodes a single model for all tasks, you're leaving performance and cost savings on the table — this is a clean framework for building model-agnostic orchestration.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://lovable.dev/blog/the-model-picker-is-a-dead-end"
+  },
+  {
+    "section": "tips",
+    "headline": "ChatGPT Desktop and Codex CLI Now Support Importing Agent Settings",
+    "summary": "The ChatGPT desktop app and Codex CLI added the ability to import settings, skills, plugins, and projects from another agent. This enables teams to share configured agent setups without manually recreating them, and supports migrating from one agent environment to another. OpenAI has not published full documentation yet beyond an early-access page.",
+    "foryou": "If you use Codex CLI for agentic coding, the import feature means you can version and share your agent configuration like code — useful for onboarding teammates to a standard setup.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://learn.chatgpt.com/docs/import"
+  },
+  {
+    "section": "tips",
+    "headline": "AI Watermarks Can Be Hidden in Model Weights — Not Just in Output",
+    "summary": "Security researcher Daniel Miessler explores how AI watermarks can be embedded directly into model weights, not just in generated text or images. This approach makes watermarks harder to detect and strip, and has significant implications for provenance tracking and attribution in open-weight models. The technique is distinct from output-level watermarking and is more resilient to post-processing attacks.",
+    "foryou": "If you fine-tune or distribute open-weight models, weight-level watermarking is a threat vector worth understanding — both for detecting unauthorized derivatives of your work and for verifying the provenance of models you adopt.",
+    "source": "TLDR AI",
+    "date": "2026-08-13",
+    "url": "https://danielmiessler.com/blog/where-watermarks-hide-in-text"
+  }
+]
