@@ -1,0 +1,179 @@
+[
+  {
+    "section": "models",
+    "headline": "xAI Releases Grok 4.6 for Long-Running Agent Tasks",
+    "summary": "xAI launched Grok 4.6, built on the same 1.5T V9 foundation as Grok 4.5 but with significantly improved SFT and reinforcement learning tuned specifically for long-running agent tasks. It scores 1753 ELO on the Artificial Analysis Intelligence Index, matching GPT-5.6 Sol, and adds an 'xhigh' reasoning level. Available now in Cursor, Grok Build, and via API with 2× included usage for the first week. A larger Grok 4.7 on a new 2.1T foundation is expected in late August or early September.",
+    "foryou": "Grok 4.6 is now live in Cursor — worth testing on long-horizon coding tasks where it's specifically optimized, especially given the 500K context window.",
+    "specs": [
+      {"label": "Context window", "value": "500K tokens"},
+      {"label": "ELO (AI Index)", "value": "1753 (4th overall)"},
+      {"label": "Pricing (input)", "value": "$2/1M tokens"},
+      {"label": "Pricing (output)", "value": "$6/1M tokens"},
+      {"label": "Reasoning levels", "value": "low / high / xhigh"},
+      {"label": "Architecture", "value": "1.5T V9 (enhanced SFT/RL)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://x.ai/news/grok-4-6"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek V4-Pro-0813 Reaches GA with Dramatic Agentic Coding Benchmark Gains",
+    "summary": "DeepSeek-V4-Pro-0813 moved from preview to general availability on the DeepSeek API, priced at $0.435/M input and $0.87/M output tokens. The model reports major agentic coding improvements versus the April preview: DeepSWE from 12.8 to 62.7, CyberGym from 52.7 to 83.3, and Terminal Bench 2.1 from 72.1 to 87.9. It scores 53 on the Artificial Analysis Intelligence Index. Independent third-party verification of these benchmark claims has not yet been published.",
+    "foryou": "The agentic coding gains are striking on paper — run your own evals before trusting the vendor numbers, but this is worth testing against your pipeline benchmarks.",
+    "specs": [
+      {"label": "Cost (input)", "value": "$0.435/1M tokens"},
+      {"label": "Cost (output)", "value": "$0.87/1M tokens"},
+      {"label": "Intelligence Index", "value": "53 (vendor-reported)"},
+      {"label": "DeepSWE", "value": "62.7 (up from 12.8)"},
+      {"label": "CyberGym", "value": "83.3 (up from 52.7)"},
+      {"label": "Terminal Bench 2.1", "value": "87.9 (up from 72.1)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://wccftech.com/deepseek-prices-its-new-v4-pro-0813-model-at-0-87-per-1-million-output-tokens-as-the-high-flying-chinese-ai-lab-wows-with-its-soaring-token-consumption/"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba Open-Sources Qwen3.8-2.4T — Its First Max-Scale Open-Weight Model",
+    "summary": "Alibaba officially released open weights for Qwen3.8-2.4T-A95B, a 2.4 trillion parameter MoE model with 95B active parameters and a 1M token context window. Built on Qwen3.5's architecture, it introduces advanced coding and long-horizon agentic capabilities with tunable reasoning depth via reasoning_effort settings. It supports SGLang and vLLM deployment and is the first Max-scale Qwen model to have open weights released, ranking 5th in Text Arena and 2nd in Vision Arena.",
+    "foryou": "Open weights at Max-scale with 1M context and vision — strong base for fine-tuning agentic pipelines that need long-context multimodal reasoning without API dependency.",
+    "specs": [
+      {"label": "Total parameters", "value": "2.4T"},
+      {"label": "Active parameters", "value": "95B (MoE)"},
+      {"label": "Context window", "value": "1M tokens"},
+      {"label": "Modalities", "value": "Text + image + video input"},
+      {"label": "Text Arena rank", "value": "#5"},
+      {"label": "Vision Arena rank", "value": "#2"},
+      {"label": "License", "value": "Open weights"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft Launches MAI-Thinking-1: A 35B MoE Reasoning Model Trained From Scratch",
+    "summary": "Microsoft's MAI-Thinking-1 is a 35B active parameter Mixture-of-Experts reasoning model trained entirely from scratch on commercially licensed data with zero distillation from other models. Targeting cost-efficient enterprise workloads in coding, math, and knowledge tasks, it scores 97.0% on AIME 2025 and 94.5% on AIME 2026, and matches Claude Opus 4.6 on SWE-Bench Pro despite a significantly smaller active parameter footprint. Available in Microsoft Foundry model catalog in public preview as of August 12.",
+    "foryou": "A legitimately strong cost-efficient reasoning option — worth benchmarking against Claude Opus 4.6 on your specific agentic tasks given the no-distillation claim and 128K context.",
+    "specs": [
+      {"label": "Active parameters", "value": "35B (MoE)"},
+      {"label": "Context window", "value": "128K tokens"},
+      {"label": "AIME 2025", "value": "97.0%"},
+      {"label": "AIME 2026", "value": "94.5%"},
+      {"label": "SWE-Bench Pro", "value": "Matches Claude Opus 4.6"},
+      {"label": "Training", "value": "Scratch, no distillation"},
+      {"label": "Availability", "value": "Microsoft Foundry (public preview)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://microsoft.ai/news/introducing-mai-thinking-1/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft MAI-Image-2.6 Debuts at #2 on Arena Text-to-Image Leaderboard",
+    "summary": "Microsoft launched MAI-Image-2.6, which immediately placed second on the Arena text-to-image leaderboard with 1336 Elo points, behind only OpenAI's GPT-Image-2 and ahead of models from Google, Meta, and xAI. The model improves +79 Elo over MAI-Image-2.5 overall, with text rendering alone up +91 Elo. It excels at product imagery, branding, and cinematic content. API access via MAI Playground is expected shortly after launch.",
+    "foryou": "Once the API goes live, this is the strongest publicly accessible text-to-image model after GPT-Image-2 — worth routing image generation tasks through for quality-sensitive use cases.",
+    "specs": [
+      {"label": "Arena ELO", "value": "1336 (#2 overall)"},
+      {"label": "Improvement vs. 2.5", "value": "+79 ELO overall"},
+      {"label": "Text rendering gain", "value": "+91 ELO"},
+      {"label": "Availability", "value": "API coming soon (MAI Playground)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://microsoft.ai/news/mai-image-2-6-launches-at-no-2-on-arena-ahead-of-google-meta-and-xai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Claude in Chrome Side Panel Now Runs Full Cowork Sessions Across All Devices",
+    "summary": "Anthropic upgraded its Chrome extension so the side panel runs a complete Claude Cowork session rather than a standalone chat. Conversations are saved to your Claude account and resume seamlessly across desktop, web, and mobile. Existing skills and connectors work in the browser without additional setup. Available now for Max and Team plan users, rolling out to Pro over coming weeks; Enterprise admins can enable and domain-restrict the feature.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://claude.com/blog/cowork-chrome-side-panel"
+  },
+  {
+    "section": "industry",
+    "headline": "Lovable Raises $400M at $13.3B Valuation as ARR Approaches $600M",
+    "summary": "Swedish AI app-building startup Lovable closed a $400M Series C at a $13.3 billion valuation, more than doubling its December 2025 valuation of $6.6B. The round was co-led by Menlo Ventures and EQT's Scaleup Europe Fund, with new investors including Tencent, Balderton Capital, and Carmignac. The company is on track for ~$600M ARR by end of August 2026, with 60 million projects created on the platform and 900 million monthly visitors to apps built with Lovable.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI: Frontier Enterprise Firms Now Generate 8.3× More AI Output Per User",
+    "summary": "OpenAI published two studies documenting the shift from AI-assisted work to fully delegated agentic execution. Top-10% enterprise AI users now generate 8.3× more output tokens per active user than typical firms and adopt connected agentic tools at much higher rates. By May 2026, over 80% of sampled users made at least one Codex request estimated at 30+ minutes of equivalent human work, and non-developer Codex users multiplied 137× since August 2025.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://openai.com/index/how-enterprises-put-ai-to-work/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Is Building a 'Synthetic Hyperscaler' by Locking AI Infrastructure to Its Ecosystem",
+    "summary": "An in-depth analysis argues Nvidia is replicating the hyperscaler model — pooling compute, abstracting hardware through proprietary software, and using financing products to smooth utilization across distributed fleets. This creates an Nvidia-native infrastructure layer that's costly to escape. The piece reframes the common worry that Nvidia keeps capital away from competing ASICs as actually a moat: capital tied to Nvidia software and financing makes switching prohibitively expensive.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://taekim.substack.com/p/nvidia-is-speedrunning-the-creation"
+  },
+  {
+    "section": "industry",
+    "headline": "Hinton, Li, and Ng Jointly Call for Keeping AI Open Amid Mounting Safety Concerns",
+    "summary": "Three AI pioneers — Geoffrey Hinton, Fei-Fei Li, and Andrew Ng — publicly argued against allowing a small number of frontier labs to monopolize AI development. The piece comes as safety concerns are intensifying across industry and government, with the group contending that openness is essential for broad societal benefit and for enabling the kind of independent safety research that cannot happen inside closed labs.",
+    "source": "Web",
+    "date": "2026-08-14",
+    "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/"
+  },
+  {
+    "section": "industry",
+    "headline": "Colorado Becomes First U.S. State to Regulate AI Chatbots to Protect Minors",
+    "summary": "Colorado's HB 26-1263 (Chatbot Safety Act) is now law, making Colorado the first U.S. state to regulate AI chatbots specifically for minor protection. Operators must disclose AI identity, estimate user age, implement crisis-response protocols for users signaling self-harm, and bar manipulative emotional-dependency tactics and sexually explicit content for users under 18. The law takes effect January 1, 2027.",
+    "source": "Web",
+    "date": "2026-08-14",
+    "url": "https://leg.colorado.gov/bills/HB26-1263"
+  },
+  {
+    "section": "tips",
+    "headline": "How to Build Safe MCP Servers: From Flexible SQL to Typed Query Tools",
+    "summary": "A technical post examines patterns for exposing PostgreSQL through MCP, ranging from flexible agent-generated SQL (maximum autonomy, maximum blast radius) to tightly constrained typed query tools (limited to explicitly permitted operations). The core tradeoff is agent flexibility vs. data access control. The author recommends typed, purpose-built query tools in production MCP servers to limit what a compromised or misbehaving agent can do to the database.",
+    "foryou": "If you're wiring MCP to any database in your pipelines, this is the most concrete guide available for limiting exposure without crippling agent capability — read before you ship.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://blog.pamelafox.org/2026/08/building-safe-mcp-servers-for-your.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Why Agent Verification — Not Capability — Will Constrain Enterprise AI Adoption",
+    "summary": "An essay argues enterprise agent adoption will be limited less by what models can do than by organizations' ability to verify quality over time. The missing infrastructure: systems to define task quality, run ongoing evals, manage feedback ownership and permissions, handle liability, and create self-improving loops. Tacit organizational standards that exist only in people's heads are the hardest problem — they resist encoding into prompts.",
+    "foryou": "Before scaling agentic workloads, audit whether you have task quality definitions, live eval runs, and a clear feedback ownership model — most teams building pipelines don't.",
+    "source": "TLDR AI",
+    "date": "2026-08-14"
+  },
+  {
+    "section": "tips",
+    "headline": "Grok 4.6 Field Guide: Short Instructions + Explicit Acceptance Criteria + Self-Verification",
+    "summary": "A practical guide finds Grok 4.6's biggest differentiators are speed, communication density, and consistent execution across coding and knowledge tasks — not a single benchmark breakthrough. The highest-leverage prompting pattern: short direct instructions paired with explicit acceptance criteria, followed by a required self-verification pass. The model handles dense, high-information exchanges especially well, making it effective for complex agentic tasks where context compounding matters.",
+    "foryou": "The acceptance criteria + self-verification loop is a transferable pattern for any frontier model — worth baking into your standard system prompt template regardless of which model you're running.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://www.theneurondaily.com/p/grok-4-6-is-gpt-5-6-level-and-built-for-agents-that-don-t-quit"
+  },
+  {
+    "section": "tips",
+    "headline": "How a Three-Person Team Ships Hundreds of PRs Weekly with Agentic Engineering",
+    "summary": "Wes McKinney describes Kenn Software's workflow where three developers merge hundreds of pull requests per week with a low production bug rate. Key elements: well-defined acceptance criteria per task, agents that generate and run their own tests before handoff, and a human-in-the-loop review layer that approves rather than authors. The pattern scales engineering output at near-logarithmic cost relative to team size.",
+    "foryou": "The reproducible core is acceptance criteria + agent self-testing before handoff — this maps directly to how you should structure Claude Code tasks on your pipeline for maximum throughput.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://wesmckinney.com/blog/agentic-engineering-aug-2026/"
+  },
+  {
+    "section": "tips",
+    "headline": "Specula Automates TLA+ Spec Generation and Concurrency Bug Finding in System Code",
+    "summary": "Specula is an agentic system that auto-derives TLA+ specifications from production code, validates code-spec conformance via trace checking, model-checks specs for concurrency bugs, and reproduces bugs at the code layer through integration tests with precise timing. It delivers real value for per-module concurrency checking but cannot yet compose module-level guarantees into system-level proofs — the deeper composition problem remains open.",
+    "foryou": "If your agentic infrastructure has concurrent components, Specula is a practical tool for automating concurrency bug hunting — strong fit for pipeline orchestrators that mix async tasks.",
+    "source": "TLDR AI",
+    "date": "2026-08-14",
+    "url": "https://muratbuffalo.blogspot.com/2026/08/specula-scaling-formal-specifications.html"
+  }
+]
