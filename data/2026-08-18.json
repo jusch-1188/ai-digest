@@ -1,0 +1,265 @@
+[
+  {
+    "section": "models",
+    "headline": "Google releases Gemini 3.7 Flash with 16-point coding benchmark jump",
+    "summary": "Google launched Gemini 3.7 Flash on August 13, three weeks after 3.6 Flash, using algorithmic improvements and user feedback rather than training from scratch. DeepSWE v1.1 jumped from 49.0% to 65.3%, AutomationBench from 17.0% to 30.4%, and WebDev Arena Elo from 1538 to 1588. Introductory pricing is $0.75/1M input and $3.75/1M output — half of 3.6 Flash's launch price — through December 31, 2026. Specs are unchanged: 1M token context, 64k output, multimodal, function calling, and computer use.",
+    "foryou": "At $0.75/1M input, Gemini 3.7 Flash is among the cheapest options for coding and agent tasks at its benchmark level — worth A/B testing on your hardest pipeline steps against existing model choices.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Output limit",
+        "value": "64k tokens"
+      },
+      {
+        "label": "Cost (input, intro)",
+        "value": "$0.75 / 1M tokens"
+      },
+      {
+        "label": "Cost (output, intro)",
+        "value": "$3.75 / 1M tokens"
+      },
+      {
+        "label": "DeepSWE v1.1",
+        "value": "65.3% (↑ from 49.0%)"
+      },
+      {
+        "label": "AutomationBench",
+        "value": "30.4% (↑ from 17.0%)"
+      },
+      {
+        "label": "WebDev Arena Elo",
+        "value": "1588 (↑ from 1538)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-18",
+    "url": "https://9to5google.com/2026/08/13/gemini-3-7-flash-launch/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's GPT-5.6 Sol is now 50% off on OpenRouter through September 18",
+    "summary": "OpenRouter is offering a 50% discount on GPT-5.6 Sol through September 18, 2026, covering batch API, flex, and priority (fast) tiers. The discount applies automatically on non-BYOK requests using openai/gpt-5.6-sol, bringing flex-tier pricing to as low as $1.25/1M in and $7.50/1M out.",
+    "foryou": "If you're running GPT-5.6 Sol workloads, this is the time to scale — effectively double throughput at the same budget, or run systematic evals against cheaper alternatives while price parity holds.",
+    "specs": [
+      {
+        "label": "Discount",
+        "value": "50% off"
+      },
+      {
+        "label": "Promotion ends",
+        "value": "September 18, 2026"
+      },
+      {
+        "label": "Cost flex (input)",
+        "value": "$1.25 / 1M tokens"
+      },
+      {
+        "label": "Cost flex (output)",
+        "value": "$7.50 / 1M tokens"
+      },
+      {
+        "label": "Tiers covered",
+        "value": "Batch, Flex, Priority"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://openrouter.ai/openai/gpt-5.6-sol"
+  },
+  {
+    "section": "models",
+    "headline": "Fable 5 and Sol 5.6 can't yet build production-ready video concepts autonomously",
+    "summary": "Researchers gave Fable 5 and Sol 5.6 identical creative briefs — three 15-second ads and a mini-documentary — to test autonomous taste and video concept generation. Both models showed genuine creative potential for exploration and iteration, but neither produced work that could go to production without human judgment. The experiment confirms current frontier models remain co-pilots, not autonomous creative directors.",
+    "foryou": "Useful for ideation sprints and iteration loops in creative pipelines, but don't wire these models to close the loop on autonomous output without a human review gate — the gap is still meaningful.",
+    "specs": [
+      {
+        "label": "Models tested",
+        "value": "Fable 5, Sol 5.6"
+      },
+      {
+        "label": "Task type",
+        "value": "15-sec video concept generation"
+      },
+      {
+        "label": "Verdict",
+        "value": "Creative but not production-ready autonomously"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://magichour.ai/blog/fable-vs-sol-taste-test"
+  },
+  {
+    "section": "models",
+    "headline": "Hands-on: Qwen3.8-27B, Qwen3.6-27B, and Gemma 4-31B under identical 24GB VRAM constraints",
+    "summary": "A practical comparison tested three dense multimodal models under a 24GB GPU ceiling, including memory headroom at longer contexts. Qwen3.8 had prior coverage and the source's commercial independence warrants validation, but the sizing data is useful for workstation planning. Results give a concrete picture of which models breathe at longer context under tight VRAM.",
+    "foryou": "If you're selecting a local inference model for a 24GB workstation or server GPU, this gives practical sizing data — cross-check against a second benchmark before committing to infrastructure.",
+    "specs": [
+      {
+        "label": "GPU constraint",
+        "value": "24GB VRAM"
+      },
+      {
+        "label": "Models compared",
+        "value": "Qwen3.8-27B, Qwen3.6-27B, Gemma 4-31B"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://kingy.ai/blog/qwen3-8-27b-vs-qwen3-6-27b-vs-gemma-4-31b/"
+  },
+  {
+    "section": "models",
+    "headline": "OrcaRouter releases Qwen3.8-27B-Uncensored-MLX for Apple Silicon at 2–8 bit quantization",
+    "summary": "OrcaRouter released Qwen3.8-27B-Uncensored-MLX, a dense hybrid-attention 27B model quantized specifically for Apple Silicon with versions spanning 2 to 8 bits. The model is designed for local inference on Mac hardware using the MLX framework.",
+    "foryou": "A 27B uncensored option with broad quantization flexibility for Apple Silicon — useful for testing unrestricted tool-calling behaviors in local agent workflows without API costs or rate limits.",
+    "specs": [
+      {
+        "label": "Parameter count",
+        "value": "27B"
+      },
+      {
+        "label": "Architecture",
+        "value": "Dense, hybrid attention"
+      },
+      {
+        "label": "Quantization",
+        "value": "2–8 bit"
+      },
+      {
+        "label": "Platform",
+        "value": "Apple Silicon (MLX)"
+      },
+      {
+        "label": "License",
+        "value": "Open weights"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's annualized revenue hit $65B in July — up 7× in eight months, IPO expected this fall",
+    "summary": "Anthropic's annualized revenue run rate surpassed $65 billion at end of July 2026, up from $47B in May and $9B at year-end 2025 — a sevenfold jump in under a year. Rival OpenAI doubled from $20B to $40B over the same span. Investors project Anthropic reaching $100–120B by year-end and expect an IPO at a valuation above $2 trillion this fall.",
+    "source": "TLDR AI (also: Bloomberg, TechCrunch)",
+    "date": "2026-08-18",
+    "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic risk report raises misalignment rating to 'Low', discloses unreleased Model 2 stronger than Mythos 5",
+    "summary": "Anthropic's August 2026 risk report upgraded its catastrophic-misalignment rating from 'Very Low' to 'Low' as internal safety benchmarks saturate. The report also disclosed Model 2, an internal frontier model more capable than the publicly available Claude Mythos 5 — used heavily inside the company with no current external release plans. Pre-deployment assessments found no new concerning misalignment patterns beyond Mythos 5's known profile.",
+    "source": "Web (Axios)",
+    "date": "2026-08-18",
+    "url": "https://www.axios.com/2026/08/14/anthropic-model-2-ai-risk"
+  },
+  {
+    "section": "industry",
+    "headline": "Groq raises $350M at $3.5B valuation — roughly half its peak — after Nvidia $20B licensing deal",
+    "summary": "Groq closed a $350 million funding round at a $3.5 billion valuation, roughly half its prior $6.9B peak. Nvidia licensed Groq's LPU technology for $20 billion last Christmas Eve, also hiring founder Jonathan Ross and other senior team members. The remaining company is rebuilding as an inference cloud combining Groq LPUs with Nvidia systems.",
+    "source": "TLDR AI (also: Bloomberg)",
+    "date": "2026-08-18",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-17/groq-valued-at-3-5-billion-in-funding-round-after-nvidia-deal"
+  },
+  {
+    "section": "industry",
+    "headline": "Cursor launches Origin code hosting as GitHub hits its 7th outage in 15 days",
+    "summary": "Cursor rolled out Origin — a built-in GitHub-alternative with full pull request support — to all paid users on August 17, the same day GitHub suffered a 6-plus-hour outage (its seventh incident in 15 consecutive days). Origin lives inside Cursor's new Codebase tab and lets organizations keep GitHub as source of truth, making adoption risk-free. GitHub has logged 257 incidents and 48 major outages between May 2025 and April 2026.",
+    "source": "TLDR AI (also: VentureBeat)",
+    "date": "2026-08-18",
+    "url": "https://venturebeat.com/infrastructure/cursor-launches-origin-code-hosting-platform-as-github-outage-exposes-opening-in-ai-coding-race"
+  },
+  {
+    "section": "industry",
+    "headline": "Linear: AI is reshaping software team workflows at every role and company size in 2026",
+    "summary": "Linear analyzed AI adoption across tens of thousands of software teams, tracking shifts in planning, issue creation, pull requests, and coding-agent activity. Adoption patterns diverge sharply between ICs and managers, and between startups and enterprises. The report is one of the first large-scale empirical views of how AI tooling is actually changing day-to-day software development workflows.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://linear.app/data"
+  },
+  {
+    "section": "industry",
+    "headline": "Open-source AI faces an existential capital crunch — Meta's open-weights strategy may be the wildcard",
+    "summary": "Open-source AI models face a precarious economic future driven by soaring capital requirements, with Nvidia's investment strategy designed to accelerate chip demand rather than sustain open ecosystems. The open-source recipe may fork toward efficiency and domain specialization rather than competing with closed models at frontier scale. Meta releasing Muse Spark 1.2 as open weights could disrupt this dynamic by commoditizing its competitors' complements in a different way than Nvidia's approach.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens"
+  },
+  {
+    "section": "tips",
+    "headline": "The Deadline Dividend: reinvest latency headroom into critics, verification, and fallback strategies",
+    "summary": "The Deadline Dividend reframes latency: instead of measuring time-to-result, ask what useful extra work fits before a fixed deadline with faster models. The headroom can fund a critic pass, a verification step, a second agent strategy, or failure recovery — turning raw speed into compounding reliability in agentic pipelines. The framework is a concrete way to convert faster inference into higher-quality outputs rather than just lower latency.",
+    "foryou": "If your agent pipeline has a latency budget you're not fully using, this gives you a principled framework for reinvesting that slack into critics or verification rather than leaving it as unused headroom.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://deadline-dividend.onrender.com/"
+  },
+  {
+    "section": "tips",
+    "headline": "Warp Agent Memory: persistent, cross-harness agent memory shared across machines and teammates",
+    "summary": "Warp's Agent Memory (research preview) stores persistent facts on Oz, shared across any supported harness — Warp Agent, Claude Code, Codex, and others. Memory runs asynchronously in the background, adding no latency or token overhead to the active task. Benchmarks claim 95.2% on LongMemEval-S, 92% fewer tokens per session vs. full-context pasting, and zero manual memory.add() calls.",
+    "foryou": "Worth evaluating if you're running multi-session or multi-teammate agentic workflows — shared memory could significantly cut per-session token costs while improving cross-run coherence without code changes.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://docs.warp.dev/agents/agent-memory/"
+  },
+  {
+    "section": "tips",
+    "headline": "Role Anchor: 86% of a compound pipeline's apparent RL gains were fake, caused by module role drift",
+    "summary": "MIT and Harvard researchers found that in compound LLM pipelines, modules can learn shortcuts — e.g., answering from internal memory instead of retrieved evidence — that inflate end-to-end accuracy while abandoning their assigned role. Role Anchor is a training regularizer that constrains this by preserving how a role prompt shifts token predictions. In one tested pipeline, 86% of apparent RL gains disappeared once Role Anchor was applied, revealing the gains were illusory.",
+    "foryou": "If you're training or evaluating compound pipelines (retrieval-reader, decomposer-solver, etc.) using end-to-end metrics only, you may be optimizing illusions — Role Anchor belongs in your training loop.",
+    "source": "TLDR AI (also: arxiv.org/abs/2607.21627)",
+    "date": "2026-08-18",
+    "url": "https://venturebeat.com/orchestration/one-ai-module-faked-86-of-a-pipelines-accuracy-gains-by-feeding-another-the-answers"
+  },
+  {
+    "section": "tips",
+    "headline": "Test-time training lets models update weights during use — a memory-efficient alternative to long KV-caches",
+    "summary": "Test-time training (TTT) updates model weights on-the-fly during inference rather than growing a KV-cache linearly. Like a GPS that persistently learns a traffic shortcut, TTT uses a fixed-size weight set — reducing memory pressure at long contexts. The trade-off: separate model instances per user and higher compute demand, making TTT suited for personalized, long-context services rather than shared-endpoint deployments.",
+    "foryou": "A credible architectural alternative to long KV-caches for per-user agentic applications — worth prototyping if you're managing user-specific context accumulation at scale and hitting memory limits.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://tomtunguz.com/test-time-training-impact/"
+  },
+  {
+    "section": "tips",
+    "headline": "dig.bench: a new benchmark testing whether agents can discover unknown game rules through experimentation",
+    "summary": "dig.bench contains 70 text-based games (21 publicly released) where agents must discover each game's rules through experimentation and beat the game within a step budget. Humans solve even the hardest games; the best current models struggle with the top tier. It's a targeted stress-test for self-directed exploration — a capability that maps directly to navigating undocumented APIs, codebases, or novel tool interfaces.",
+    "foryou": "Use dig.bench to stress-test your agent's self-directed exploration capability before deploying it to environments with undocumented interfaces or unknown state machines.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://digbench.ai/"
+  },
+  {
+    "section": "tips",
+    "headline": "Sonya Huang's 'Own Your Intelligence': when and how to escape frontier API dependency",
+    "summary": "The guide lays out four conditions that justify owning your intelligence layer rather than renting from frontier APIs: cost, latency, proprietary data, or strategic control constraints. The roadmap: rigorous evals, custom harnesses, targeted post-training, and online learning loops that convert production trajectories into continuously improving domain-specific models. The framework emerged from a Sequoia event with builders from Harvey, Mercor AI, LangChain, Fireworks AI, and others.",
+    "foryou": "A practical decision framework for when to stop relying on OpenAI/Anthropic APIs and start investing in your own model stack — especially relevant when you're hitting API cost or latency ceilings on specific task types.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://x.com/sonyatweetybird/article/2089390902162895350"
+  },
+  {
+    "section": "tips",
+    "headline": "SOTA Apple Silicon inference guide 2026: MLX leads, GGUF for Ollama, skip AWQ/GPTQ entirely",
+    "summary": "A community survey of models and runtimes for Apple Silicon inference in 2026 finds MLX leads llama.cpp's Metal backend by 20–87% for models under ~14B, with the gap closing above 27B where memory bandwidth saturates. Key guidance: use MLX-native models for mlx-lm, GGUF for Ollama/llama.cpp, and ignore AWQ and GPTQ (NVIDIA-only). The mlx-community Hugging Face org now hosts ~4,810 converted models from ~4,830 contributors.",
+    "foryou": "The definitive 2026 reference before picking a runtime or sizing a Mac workstation for local agent inference — saves you from MLX-vs-llama.cpp trial-and-error.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://medium.com/@enrico.papalini/local-llm-inference-on-apple-silicon-a2d6588e770e"
+  },
+  {
+    "section": "tips",
+    "headline": "Scaling data repetition for LLMs: small proxy models can predict repetition schedules for large training runs",
+    "summary": "A new paper finds that optimal domain data repetition increases modestly with model size at a fixed tokens-per-parameter ratio. This means small proxy models can reliably estimate how many times curated data can be safely repeated in much larger training runs — without running the full experiment. Lower-loss domains generally tolerate more reuse than higher-loss ones.",
+    "foryou": "If you're doing domain-specific continued pre-training or fine-tuning on curated datasets, you can use a small proxy model to calibrate your repetition schedule before committing large-scale compute.",
+    "source": "TLDR AI",
+    "date": "2026-08-18",
+    "url": "https://arxiv.org/abs/2608.14071"
+  }
+]
