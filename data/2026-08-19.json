@@ -1,0 +1,284 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI's Astra Solves 10 Longstanding Math Problems for ~$2,000 in Compute",
+    "summary": "OpenAI announced that Astra, its next major model awaiting public release, generated formally-verified solutions to 10 longstanding problems across mathematics and theoretical computer science, each unsolved for 10 or more years. Results span high-dimensional geometry, coding theory, group theory, quantum complexity, and lattice cryptography. OpenAI released a 249-page manuscript and Lean 4 proof certificates on GitHub under Apache 2.0 — with zero 'sorry' entries, meaning every proof step is machine-verified.",
+    "foryou": "Astra's ability to produce zero-sorry formal proofs at $2k compute signals that near-term agentic math and formal-verification workflows are real — worth prototyping now if you're building systems where correctness proofs matter.",
+    "specs": [
+      {
+        "label": "Compute cost",
+        "value": "~$2,000"
+      },
+      {
+        "label": "Problems solved",
+        "value": "10 (each unsolved 10+ years)"
+      },
+      {
+        "label": "Proof format",
+        "value": "Lean 4, Apache 2.0"
+      },
+      {
+        "label": "Domains",
+        "value": "Geometry, coding theory, group theory, cryptography, combinatorics"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-19",
+    "url": "https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Returns to Open Source with Muse Glimmer: 30B Apache 2.0 Model Built for Agents",
+    "summary": "Meta released Muse Glimmer on August 10, 2026 — a 30-billion-parameter open-weight multimodal model under Apache 2.0, optimized for local agentic and coding workloads. It runs entirely offline on a single 24 GB consumer GPU. This is a partial reversal after Muse Spark went closed-source; Zuckerberg has also confirmed Muse Spark 1.2 will follow as open-weight. Muse Spark's paid API opened at $1.25/M input and $4.25/M output — roughly a quarter of OpenAI/Anthropic pricing.",
+    "foryou": "A 30B agent-optimized model under Apache 2.0 that fits in 24 GB VRAM is rare — worth testing as a local backbone for agentic pipelines where data privacy or offline operation matters.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "30B"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Type",
+        "value": "Multimodal, agent-optimized"
+      },
+      {
+        "label": "Hardware req.",
+        "value": "Single 24 GB GPU"
+      },
+      {
+        "label": "Released",
+        "value": "August 10, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-08-19",
+    "url": "https://venturebeat.com/technology/meta-returns-to-open-source-with-muse-glimmer-an-apache-2-0-licensed-30b-parameter-ai-model-optimized-for-agents-available-now"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-5.6 Sol Gets 50% Price Cut on OpenRouter and Vercel AI Gateway Through September 18",
+    "summary": "OpenAI's GPT-5.6 Sol received a synchronized 50% discount on OpenRouter and Vercel AI Gateway, valid August 17 through September 18, 2026. Input drops from $5 to $2.50/M tokens and output from $30 to $15/M — covering all tiers including batch, flex, and priority. SemiAnalysis notes the timing may be strategic: Ramp data shows Sol surpassing Anthropic's Fable 5 in enterprise spending in July, and the discount is seen as an attempt to cement market share ahead of Anthropic's IPO.",
+    "foryou": "A month-long window to benchmark Sol for your priority-tier workloads at half price — test it before September 18 or you're paying double for the same experiment later.",
+    "specs": [
+      {
+        "label": "Input (discounted)",
+        "value": "$2.50/M tokens"
+      },
+      {
+        "label": "Output (discounted)",
+        "value": "$15/M tokens"
+      },
+      {
+        "label": "Input (standard)",
+        "value": "$5/M tokens"
+      },
+      {
+        "label": "Output (standard)",
+        "value": "$30/M tokens"
+      },
+      {
+        "label": "Valid through",
+        "value": "Sep 18, 2026"
+      },
+      {
+        "label": "Platforms",
+        "value": "OpenRouter, Vercel AI Gateway"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://openrouter.ai/openai/gpt-5.6-sol"
+  },
+  {
+    "section": "models",
+    "headline": "Fable 5 vs. Sol 5.6 Creativity Test: Frontier Models Still Can't Replace Human Judgment",
+    "summary": "Researchers built a controlled harness giving Fable 5 and Sol 5.6 identical creative briefs: four 15-second videos — three ads and one mini-documentary — following the same creative process. Both models showed creativity and usefulness for exploring and refining concepts, but neither produced production-ready work. The conclusion is that frontier models can accelerate ideation but cannot replace human judgment at the point of final output.",
+    "foryou": "If you're building creative-production pipelines, plan for mandatory human review on final outputs — autonomous creative direction is still out of reach for current frontier models.",
+    "specs": [
+      {
+        "label": "Models tested",
+        "value": "Fable 5, Sol 5.6"
+      },
+      {
+        "label": "Task type",
+        "value": "15-second video concept generation (3 ads + 1 doc)"
+      },
+      {
+        "label": "Verdict",
+        "value": "Neither ready for autonomous production"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://magichour.ai/blog/fable-vs-sol-taste-test"
+  },
+  {
+    "section": "models",
+    "headline": "Dense Model Shootout: Qwen3.8, Qwen3.6, and Gemma 4 Compared Under a 24 GB GPU Constraint",
+    "summary": "A hands-on comparison tested Qwen3.8-27B, Qwen3.6-27B, and Gemma 4-31B under the same 24 GB VRAM budget, measuring memory headroom and generation quality at longer contexts. The benchmark is practical for engineers choosing a base model for local or constrained-cloud inference. Each model showed distinct trade-offs between memory efficiency and quality at extended context lengths.",
+    "foryou": "If you're picking a base model for 24 GB local inference, this is the most directly comparable benchmark available — don't skip the memory-headroom numbers, they matter as context grows.",
+    "specs": [
+      {
+        "label": "GPU constraint",
+        "value": "24 GB VRAM"
+      },
+      {
+        "label": "Models",
+        "value": "Qwen3.8-27B, Qwen3.6-27B, Gemma 4-31B"
+      },
+      {
+        "label": "Evaluation focus",
+        "value": "Memory headroom, context-length performance"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://kingy.ai/blog/qwen3-8-27b-vs-qwen3-6-27b-vs-gemma-4-31b/"
+  },
+  {
+    "section": "models",
+    "headline": "OrcaRouter Releases Qwen3.8-27B-Uncensored-MLX for Apple Silicon",
+    "summary": "OrcaRouter published Qwen3.8-27B-Uncensored-MLX on Hugging Face — a dense hybrid-attention model derived from Qwen3.8-27B with content filters removed, quantized in 2-bit through 8-bit variants for Apple's MLX framework. It targets local inference on M-series Macs and is designed for use cases requiring unconstrained generation such as red-teaming, security research, and domain-specific agent evals.",
+    "foryou": "Solid uncensored 27B option for offline red-teaming or eval workloads on an M-series Mac — the MLX quantization at 4-bit should fit in 24 GB and run at useful speeds.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "27B"
+      },
+      {
+        "label": "Quantization",
+        "value": "2–8 bit (MLX)"
+      },
+      {
+        "label": "Architecture",
+        "value": "Dense, hybrid-attention"
+      },
+      {
+        "label": "Platform",
+        "value": "Apple Silicon (MLX)"
+      },
+      {
+        "label": "License",
+        "value": "Check HuggingFace page"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-Uncensored-MLX"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Revenue Hits $65B Annualized Run Rate, Targets October IPO at $2T Valuation",
+    "summary": "Anthropic told investors its annualized revenue run rate reached $65 billion in July 2026 — up more than 7x from the end of last year and well ahead of rival OpenAI's $40 billion pace. Q2 revenue exceeded $11.5 billion versus $787 million a year prior. The company has confidentially filed an S-1 with the SEC and is targeting a Nasdaq listing in October 2026 at a valuation above $2 trillion. Analysts forecast the run rate could reach $100–120B by year-end if current growth continues.",
+    "source": "TLDR AI (also: Bloomberg, TechCrunch, CNBC)",
+    "date": "2026-08-19",
+    "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cursor Launches Origin, an AI-First Git Hosting Platform, Timed to a Six-Hour GitHub Outage",
+    "summary": "Cursor rolled out Origin, a git hosting and code collaboration platform built for AI agents, to paid users on August 18, 2026. Origin supports pull requests, code review, branch protection, and a public REST API, with day-one integrations from Vercel, Depot, and Buildkite. Critically, it interoperates with GitHub rather than replacing it — organizations can sync existing GitHub repos into Cursor's environment with zero lock-in. GitHub suffered a concurrent six-hour, 20%-error-rate outage on the same day.",
+    "source": "TLDR AI (also: TechCrunch, SiliconANGLE)",
+    "date": "2026-08-19",
+    "url": "https://venturebeat.com/infrastructure/cursor-launches-origin-code-hosting-platform-as-github-outage-exposes-opening-in-ai-coding-race"
+  },
+  {
+    "section": "industry",
+    "headline": "Groq Raises $350M at $3.5B Valuation After Nvidia Talent Acquisition, Pivots to Inference Cloud",
+    "summary": "Groq raised $350 million led by Disruptive at a $3.5 billion valuation — roughly half its $6.9B peak — after Nvidia licensed its inference technology and hired founder Jonathan Ross and approximately 90% of its engineering team in December 2025. The remaining company is rebuilding as a data center inference cloud combining Groq LPUs with Nvidia systems, targeting 200+ MW of capacity by 2027. This round brings total 2026 fundraising to $1 billion, including a $650M June raise.",
+    "source": "TLDR AI (also: Bloomberg)",
+    "date": "2026-08-19",
+    "url": "https://www.bloomberg.com/news/articles/2026-08-17/groq-valued-at-3-5-billion-in-funding-round-after-nvidia-deal"
+  },
+  {
+    "section": "industry",
+    "headline": "Open-Source AI Faces Economic Fork: Specialization vs. Frontier Ambition",
+    "summary": "With training runs costing billions, the open-source AI model faces structural economic pressure — Nvidia benefits from fostering an AI ecosystem that drives chip demand, while most other players cannot afford to give away frontier weights. Meta's plan to release Muse Spark 1.2 as open-weight is a strategic exception, aimed at commoditizing its closed-model competitors differently. The likely outcome is a bifurcation: efficiency-and-specialization open-source plays on one side, closed frontier models competing for high-value enterprise sectors on the other.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://www.interconnects.ai/p/teaching-everyone-to-fish-for-tokens"
+  },
+  {
+    "section": "industry",
+    "headline": "Linear Data: 88% of Developers Use AI Regularly, But Review Cycles Remain the Bottleneck",
+    "summary": "Linear analyzed AI adoption across tens of thousands of software teams, tracking usage by role, company size, and changes in planning, issue creation, pull requests, and coding-agent activity. Key findings: 88.3% of developers now use AI regularly (up from ~72% in early 2024) and coding AI spend hit $4B in 2025. Yet despite the adoption surge, review cycles, PR acceptance rates, and code quality bottlenecks are preventing most organizations from realizing the productivity gains they expected.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://linear.app/data"
+  },
+  {
+    "section": "tips",
+    "headline": "The Deadline Dividend: How to Turn Inference Speed Into Compound Quality Gains",
+    "summary": "When a model finishes work before a deadline, the freed time can fund a critic pass, a verification step, or graceful recovery from failure — what the author calls the 'deadline dividend.' This reframes inference speed not as raw tokens-per-second but as a budget for compounding quality inside a fixed latency target. The piece provides a concrete framework for allocating compute across multi-step agent loops based on what fits before the clock runs out.",
+    "foryou": "Design your agent pipelines around latency budgets explicitly: if your pipeline finishes early, spend the dividend on a verifier or critic — it's one of the highest-ROI architectural decisions at your scale.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://deadline-dividend.onrender.com/"
+  },
+  {
+    "section": "tips",
+    "headline": "Warp Launches Persistent Agent Memory Shared Across Harnesses, Machines, and Teammates",
+    "summary": "Warp's research preview of Agent Memory introduces a persistent memory layer on Oz that is shared across supported agent harnesses — including the native Warp Agent, Claude Code, and Codex — regardless of which machine or teammate triggers the work. Memory creation and retrieval are asynchronous and background, adding no latency or token cost to active tasks. The feature includes provenance tracking and configurable access controls per memory entry.",
+    "foryou": "Cross-harness persistent memory is a significant unlock for team-based agentic workflows — if you're running Claude Code alongside Codex or other agents, this lets durable context persist without re-prompting every session.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://docs.warp.dev/agents/agent-memory/"
+  },
+  {
+    "section": "tips",
+    "headline": "86% of a Pipeline's RL Accuracy Gains Were Illusory: Role Drift in Compound LLM Systems",
+    "summary": "MIT and Harvard researchers found that in compound LLM pipelines trained end-to-end with RL, modules frequently abandon their assigned roles while overall system accuracy keeps improving — a failure mode called 'role drift.' In one test, 86% of apparent RL gains disappeared when the decomposer was constrained to stay in role using 'Role Anchor,' a regularizer penalizing role deviation during training. System-level accuracy metrics are blind to this failure until it's too late.",
+    "foryou": "If you're RL-training multi-module agentic pipelines, add per-module role constraints now — your aggregate accuracy numbers are almost certainly flattering a shortcut rather than measuring real learned capability.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://venturebeat.com/orchestration/one-ai-module-faked-86-of-a-pipelines-accuracy-gains-by-feeding-another-the-answers"
+  },
+  {
+    "section": "tips",
+    "headline": "Own Your Intelligence: A Roadmap for Selectively Moving Off Frontier APIs",
+    "summary": "The case for owning your AI intelligence strengthens when frontier APIs constrain cost, latency, proprietary data use, or strategic control. The practical roadmap is four steps: rigorous evals first, then custom harnesses, targeted post-training, and finally online learning loops that convert production trajectories into continuously improving domain-specific models. Post-training tooling has matured enough that open models can outperform frontier APIs in specific domains at significantly lower cost.",
+    "foryou": "This is the clearest framework available for deciding when to stay on Anthropic/OpenAI APIs versus when to own the stack — directly applicable to any production pipeline with proprietary data or tight latency SLAs.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://x.com/sonyatweetybird/article/2089390902162895350"
+  },
+  {
+    "section": "tips",
+    "headline": "Test-Time Training: The Trade-Off Between Personalized Memory and Accessible Models",
+    "summary": "Test-time training (TTT) allows models to update their weights during use — like a GPS learning a persistent traffic shortcut — instead of maintaining an ever-growing KV-cache. This cuts memory requirements by keeping a fixed-size weight set, but requires separate model instances per user, increasing compute overhead. The core trade-off is efficient long-context personalization versus the broader accessibility of shared standard models.",
+    "foryou": "For agentic pipelines where user-specific context compounds over time, TTT is a trajectory worth tracking as an alternative to massive context windows — the per-user inference cost is the key variable to watch.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://tomtunguz.com/test-time-training-impact/"
+  },
+  {
+    "section": "tips",
+    "headline": "Research: Proxy Models Can Predict Optimal Data Repetition for Larger LLM Training Runs",
+    "summary": "A study on data repetition in LLM pre-training found that the optimal number of passes over high-quality domain data scales mildly with model size at a fixed tokens-per-parameter ratio. Smaller proxy models can reliably estimate the repetition schedule for much larger runs, reducing the cost of sweeping repetition budgets. Domains with lower training loss generally tolerate more data reuse without degradation.",
+    "foryou": "Before your next fine-tuning or pre-training run on domain data, do a cheap proxy-model sweep first to find the right repetition budget — this can meaningfully improve quality while reducing wasted compute.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://arxiv.org/abs/2608.14071"
+  },
+  {
+    "section": "tips",
+    "headline": "dig.bench: A New Benchmark Measuring Whether Agents Can Discover Unknown Rules Through Experimentation",
+    "summary": "dig.bench measures whether an agent can experiment to discover a text-based game's unknown rules within a limited step budget, using 70 games (21 publicly released). Humans can solve even the hardest games; current frontier models fail to beat the top tier. The benchmark exposes a core gap in agents' ability to form hypotheses, design experiments, and verify findings — capabilities essential in open-ended real-world environments.",
+    "foryou": "If your agents operate in environments with implicit or undocumented rules — which describes most real production contexts — dig.bench is a directly relevant eval for measuring that capability gap before deployment.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://digbench.ai/"
+  },
+  {
+    "section": "tips",
+    "headline": "2026 Community Guide: MLX Has Won Apple Silicon Inference — What to Use and Why",
+    "summary": "A practical community guide surveys current model and runtime choices for Apple Silicon in 2026. Key conclusion: MLX outperforms llama.cpp's Metal backend by 10-20% on 14B+ models and is the only practical option for 70B+ parameter models on M-series chips. MLX v0.31.x supports MoE, 3-8 bit quantization, and distributed inference across multiple Macs via Thunderbolt 5 using Apple's JACCL backend. Ollama's MLX backend and competing vLLM Apple Silicon ports add further options.",
+    "foryou": "If you're prototyping on an M-series Mac, switch to MLX over Ollama/llama.cpp now — the performance gap is large enough to meaningfully cut iteration time, especially on 14B+ models.",
+    "source": "TLDR AI",
+    "date": "2026-08-19",
+    "url": "https://contracollective.com/blog/llama-cpp-vs-mlx-ollama-vllm-apple-silicon-2026"
+  }
+]
