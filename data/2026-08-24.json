@@ -1,0 +1,178 @@
+[
+  {
+    "section": "models",
+    "headline": "DeepSeek V4-Flash-Vision-Exp Adds Multimodal Input, Rivals Opus 4.8 on Agent Benchmarks",
+    "summary": "DeepSeek released V4-Flash-Vision-Exp, an experimental multimodal model adding image understanding to the V4-Flash line. It supports screenshots, charts, and document images with a 1M-token context window and 384K output ceiling. On Terminal Bench 2.1 it scores 83.9 vs Opus 4.8's 85.0, with a wider gap on NL2Repo (57.7 vs 69.7). It launched August 21 at V4-Flash reference pricing.",
+    "foryou": "Vision + 1M context at $0.14/M input means you can pipe multimodal inputs into agentic pipelines for near-zero cost — a strong eval candidate before committing to pricier options.",
+    "specs": [
+      { "label": "Architecture", "value": "MoE, 13B active / 284B total" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Max output", "value": "384K tokens" },
+      { "label": "Cost (input)", "value": "$0.14 / 1M tokens" },
+      { "label": "Cost (output)", "value": "$0.28 / 1M tokens" },
+      { "label": "Terminal Bench 2.1", "value": "83.9 (vs Opus 4.8: 85.0)" },
+      { "label": "NL2Repo", "value": "57.7 (vs Opus 4.8: 69.7)" },
+      { "label": "API compat.", "value": "OpenAI Chat/Responses + Anthropic Messages" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://the-decoder.com/deepseek-releases-experimental-flash-vision-model-that-rivals-opus-4-8-on-agent-benchmarks/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Deploys Claude Mythos 5 for Defensive Code Scanning in Claude Security",
+    "summary": "Anthropic has made Claude Mythos 5 available for code scanning through its Claude Security product, integrating it into partner defensive tools. The model surfaces suggested patches and vulnerability alerts without allowing users to prompt it directly for exploit generation. Anthropic is widening access while maintaining a firewall between the model's offensive capabilities and end users.",
+    "foryou": "Mythos 5's scan results are now accessible through partner tooling, letting you layer world-class exploit detection into CI/CD pipelines without managing model access yourself.",
+    "specs": [],
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://thenextweb.com/news/anthropic-mythos-5-defenders-open-source-fund"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Cuts GPT-5.6 Sol API Pricing 20–33% Through November 21",
+    "summary": "OpenAI has reduced GPT-5.6 Sol API rates by more than 20% as a three-month promotional cut running through November 21. Short-context input drops from $5 to $4 per million tokens; output drops from $30 to $20. The discount applies to API developers only — Pro, Plus, and Business subscription quotas are unchanged. This is the third price reduction on the GPT-5.6 family within a month.",
+    "foryou": "Three months to A/B route Sol against Opus 5 at reduced cost — run the benchmarks now before rates reset and lock in your routing logic.",
+    "specs": [
+      { "label": "Input price", "value": "$4 / 1M tokens (was $5)" },
+      { "label": "Output price", "value": "$20 / 1M tokens (was $30)" },
+      { "label": "Promotional period", "value": "Aug 21 – Nov 21, 2026" },
+      { "label": "Applies to", "value": "API (pay-as-you-go) only" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://winbuzzer.com/2026/08/23/openai-cuts-gpt-5-6-sol-api-prices-by-up-to-33-percent-through-november-21-xcxwbn/"
+  },
+  {
+    "section": "models",
+    "headline": "Grok Bot Expands to SuperGrok Plus, Cursor Pro+, and All Cursor Teams Plans",
+    "summary": "SpaceXAI's Grok Bot multi-agent product is now included with SuperGrok Plus ($100/mo), Cursor Pro+ ($60/mo), and Cursor Teams Standard ($40/seat). Previously limited to SuperGrok Heavy and Cursor Ultra, the expansion follows an iPhone and Mac app launch on August 21. Users can manage multiple bots with roles like Sales Prospector, Website Builder, and Inbox Manager operating across apps with weekly usage allowances.",
+    "foryou": "If you're on Cursor Pro+, you now have bundled multi-agent Grok Bot access — worth a trial run to see if it displaces any manual orchestration you're doing today.",
+    "specs": [
+      { "label": "Plans included", "value": "SuperGrok Plus, Cursor Pro+, Cursor Teams Standard+" },
+      { "label": "SuperGrok Plus price", "value": "$100/month" },
+      { "label": "Cursor Pro+ price", "value": "$60/month" },
+      { "label": "Cursor Teams price", "value": "$40/seat/month" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://x.ai/news/grok-bot-more-plans"
+  },
+  {
+    "section": "models",
+    "headline": "Inherent's Faraday 27B Agent Outperforms Claude Opus 4.8 and GPT-5.5 on Research Replication",
+    "summary": "London-based Inherent, founded by DeepMind alumni, released Faraday — a 27B-parameter AI scientist agent trained with long-horizon RL. On its Replica benchmark (310 tasks from 100 ML and AI-for-science papers), Faraday produced more faithful replications than Claude Opus 4.8 and GPT-5.5 across every category, winning 73% of in-distribution tasks. The advantage is sharpest in meta-learning, structural biology, and materials science.",
+    "foryou": "A 27B domain-specialist beating frontier labs at scientific tasks via long-horizon RL signals that task-specific fine-tuned agents should be in your evaluation stack — especially for research or data-intensive pipelines.",
+    "specs": [
+      { "label": "Parameters", "value": "27B" },
+      { "label": "Training method", "value": "Long-horizon RL with rubric-based judge" },
+      { "label": "Replica win rate vs Opus 4.8", "value": "73% of tasks" },
+      { "label": "Benchmark", "value": "Replica (310 tasks, 100 papers)" },
+      { "label": "Funding", "value": "$50M seed (Index Ventures, Radical Ventures)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://techcrunch.com/2026/08/22/inherent-founded-by-deepmind-alumni-says-its-ai-teammate-just-outperformed-anthropic-and-openai-at-replicating-research/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Could File Public IPO Paperwork Before August Ends",
+    "summary": "Anthropic is preparing to publicly file S-1 IPO paperwork as soon as the end of August, following a confidential SEC submission in June. Investors are targeting an October 2026 listing at a $2 trillion valuation, led by Morgan Stanley, Goldman Sachs, and JPMorgan. The deal could rival or exceed the $75B SpaceX raised in June — the current record for a technology flotation.",
+    "source": "Web",
+    "date": "2026-08-24",
+    "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Hugging Face Gauging Buyer Interest at $13B+ Valuation",
+    "summary": "Hugging Face has worked with a bank to explore a potential sale at $13 billion or more — nearly triple its 2023 Series D valuation of $4.5B. No buyer has been identified and no deal has been reached. The platform's model hub, developer ecosystem, and AI infrastructure are seen as the core value drivers. News broke August 23, 2026.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Opus 5 Overtakes Fable 5 in Corporate Spending Within a Month of Launch",
+    "summary": "Opus 5 displaced Fable 5 as the top model by corporate spend within a month of its launch. At half of Fable's rates, businesses are routing routine tasks to Opus 5 while reserving Fable for long autonomous projects requiring sustained coherence. Low switching costs mean companies readily shift between models based on price-to-capability ratios, though cost-per-successful-task for cheaper models can close the gap when extra attempts or longer prompts are needed.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://www.implicator.ai/anthropic-opus-5-overtakes-fable-5-corporate-spending/"
+  },
+  {
+    "section": "industry",
+    "headline": "Open Source Jumps from 28% to 62% Token Share at Vercel in Two Months",
+    "summary": "Open-weight models have gone from 28% to 62% token share at Vercel over the past two months, a signal that this summer is a tipping point for open-source AI adoption in production. Pricing pressure from capable open models is eroding the share held by Anthropic and OpenAI commercial APIs. Efficient serving of open-source models is emerging as a major competitive advantage.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://martinalderson.com/posts/the-summer-of-open-weights/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Plans 15%+ AI Server Price Increases Next Year as HBM Memory Costs Rise",
+    "summary": "Nvidia plans to pass rising HBM memory costs onto customers, with AI server prices set to increase by over 15% for systems shipping in FY27. Nvidia's pricing strategy treats HBM as a smaller fraction of the accelerator price to protect gross-profit dollars. The bigger challenge arrives in FY28, when new memory generations and increased content could limit Nvidia's ability to maintain margin percentages.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://streetsignal.substack.com/p/who-eats-memory-costs-2a1"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Hires OpenAI Veteran Luke Metz",
+    "summary": "Meta has hired Luke Metz, an AI researcher who left OpenAI in 2024 to join Thinking Machines, then returned to OpenAI earlier this year. Metz is known for his work on optimization and meta-learning. The hire continues a pattern of talent circulation among the top AI labs.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://www.axios.com/2026/08/24/meta-hires-openai-luke-metz"
+  },
+  {
+    "section": "industry",
+    "headline": "Outer Biosciences Trains AI Models on Living Human Skin Tissue",
+    "summary": "Outer Biosciences keeps donated human skin tissue alive, exposes it to compounds, measures biological responses, and trains AI models on the resulting data. Founded by Michael Polansky, the startup aims to generate unique biological training data that can't be scraped from the internet. The approach is intended to create AI systems with genuine understanding of how compounds interact with human biology.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://techcrunch.com/2026/08/21/michael-polansky-is-training-an-ai-model-on-skin-thats-still-alive/"
+  },
+  {
+    "section": "tips",
+    "headline": "The Evolution of the Agent Harness: When Models Absorb the Scaffold",
+    "summary": "AI models significantly improved when model capabilities and agent harnesses advanced in tandem. Initially, models like ChatGPT relied solely on next-token prediction; newer harness systems let them interact with digital environments. As models absorb more harness capabilities directly into weights, the focus shifts toward optimizing human attention — creating interfaces that aid decision-making without the model being overly dependent on external scaffolding.",
+    "foryou": "If your agentic pipelines are heavy on harness — complex orchestration, tool routing logic, retry scaffolding — evaluate how much of that is now redundant given what modern models can do natively.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://www.latent.space/p/attention-interface"
+  },
+  {
+    "section": "tips",
+    "headline": "Building a 24/7 Multi-Agent System: The SpaceXAI/Grok Bot Playbook",
+    "summary": "A 100-minute architectural document outlines how to turn Grok Bot from a set of independent assistants into a persistent multi-agent system. Key patterns: explicit ownership assignment, reusable Skills, event-driven Routines, typed handoffs between agents, verification rules, and approval boundaries. The document maps the full path from a single Bot to an always-on team that can execute, verify, and deliver recurring work with minimal human routing.",
+    "foryou": "The ownership, typed handoff, and approval boundary patterns are framework-agnostic — they apply directly to any production multi-agent system you're building and are worth extracting as design primitives.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://drive.google.com/file/d/1ek73IrUN6wIwGkx70FuewOTEIVFPw3l4/view"
+  },
+  {
+    "section": "tips",
+    "headline": "The AI-Native SDLC Playbook: Rethinking Dev Processes Around AI-Generated Code",
+    "summary": "Anthropic published a 47-minute playbook arguing that AI accelerates code writing but outdated SDLC processes cancel most of the productivity gains. The guide covers how to redesign review, testing, and deployment workflows to match the pace and volume of AI-generated code, rather than applying human-era processes to AI output.",
+    "foryou": "If AI is writing your code but your review and deploy pipeline is unchanged, you're leaving the bulk of the productivity gain on the table — this playbook is the blueprint for fixing that.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://claude.com/blog/the-ai-native-sdlc-playbook"
+  },
+  {
+    "section": "tips",
+    "headline": "Detecting 'Benchmaxxing' in Speech Recognition — and What It Means for Your Evals",
+    "summary": "New research introduced three tests to detect benchmark optimization (\"benchmaxxing\") in speech recognition models — where models optimize for benchmark patterns rather than actual task improvements. Tests found notable instances where models reproduced benchmark errors verbatim from VoxPopuli and LibriSpeech. Mitigations include using fully held-out evaluation sets and tracking temporal and speaker metadata during testing.",
+    "foryou": "The benchmaxxing patterns here generalize: any model you're evaluating for production may be optimizing for your eval distribution — use held-out sets and diversity in your test data to get honest performance signals.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://huggingface.co/blog/asr-benchmark-optimization"
+  },
+  {
+    "section": "tips",
+    "headline": "Verifiable Domains Will Eat the World: Why LLM Optimization Needs Measurable Targets",
+    "summary": "A 15-minute essay argues that 'best next word' is fundamentally unverifiable — there's no universal objective measure an LLM training run can optimize for, because 'best' depends on the author's intention. The implication is that AI capabilities will compound fastest in domains where success is verifiable (code execution, math, game outcomes), while soft output quality stagnates. This creates a structural advantage for builders who instrument verifiable success metrics into their pipelines.",
+    "foryou": "If you're building agentic systems, the domains where you can define and measure a correct answer are where you'll see the sharpest capability gains — focus your bets there.",
+    "source": "TLDR AI",
+    "date": "2026-08-24",
+    "url": "https://links.tldrnewsletter.com/WunxH9"
+  }
+]
