@@ -1,0 +1,293 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI's Jalapeño Chip Beats Nvidia Blackwell on Inference Throughput",
+    "summary": "OpenAI published benchmarks for Jalapeño, its in-house inference accelerator developed with Broadcom. Against Nvidia Blackwell systems, Jalapeño delivered 1.5–1.9× more throughput per watt, 1.7–3.6× lower latency, and 2.1–4.1× faster performance on highly interactive workloads. OpenAI used its own AI models to speed the chip design and kernel programming phases, and plans small deployments by end of 2026 with larger volumes in 2027.",
+    "foryou": "If Jalapeño rolls into ChatGPT's infrastructure by year-end, expect meaningfully lower latency and cheaper inference for the agentic API workloads you're building on.",
+    "specs": [
+      {
+        "label": "Throughput/watt vs Blackwell",
+        "value": "1.5–1.9×"
+      },
+      {
+        "label": "Latency reduction vs Blackwell",
+        "value": "1.7–3.6×"
+      },
+      {
+        "label": "Interactive workload speed",
+        "value": "2.1–4.1×"
+      },
+      {
+        "label": "Deployment timeline",
+        "value": "Small: end-2026; larger: 2027"
+      },
+      {
+        "label": "Fabricated by",
+        "value": "Broadcom + TSMC"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/"
+  },
+  {
+    "section": "models",
+    "headline": "Perplexity Launches Portable Computer: Fully Local AI Agent with Zero Token Costs",
+    "summary": "Perplexity partnered with NVIDIA to launch Portable Computer, a version of its agentic platform that runs entirely on-device with no billing credits. The model, user data, and all work stay local by default; the system asks permission before sending any individual step to the cloud. Available now on Linux for Pro, Max, Enterprise Pro, and Enterprise Max subscribers. Windows support arrives in September. Requires an RTX GPU with at least 24GB VRAM.",
+    "foryou": "A zero-cost local agent runtime means you can run continuous agentic loops without API budget pressure — worth benchmarking against your current cloud-based pipeline costs.",
+    "specs": [
+      {
+        "label": "Platform",
+        "value": "Linux now; Windows Sept 2026"
+      },
+      {
+        "label": "VRAM required",
+        "value": "24GB+ RTX GPU"
+      },
+      {
+        "label": "Token cost",
+        "value": "$0 (fully local)"
+      },
+      {
+        "label": "Cloud escalation",
+        "value": "Permission-gated per step"
+      },
+      {
+        "label": "Availability",
+        "value": "Pro, Max, Enterprise plans"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://venturebeat.com/infrastructure/perplexity-partners-with-nvidia-to-launch-portable-computer-a-fully-local-ai-agent-with-zero-token-costs"
+  },
+  {
+    "section": "models",
+    "headline": "Apple Launches M6 (2nm) and M5 Ultra for Local AI Compute",
+    "summary": "Apple announced new Mac mini with M6 and Mac Studio with M5 Ultra on August 25. M6 is Apple's first 2nm processor, delivering 40% faster CPU performance and 4× faster AI performance versus M4. The M5 Ultra Mac Studio packs a 36-core CPU, 80-core GPU with Neural Accelerators in every core, and up to 512GB unified memory at 1.2TB/s — 50% higher bandwidth than the M3 Ultra. Mac mini starts at $899; Mac Studio M5 Ultra at $5,499, with availability from September 22.",
+    "foryou": "The M5 Ultra's 512GB unified memory at 1.2TB/s is a serious bump for on-device inference of multi-10B-parameter models — keep this on your radar for local embedding or fine-tuning workloads.",
+    "specs": [
+      {
+        "label": "M6 process node",
+        "value": "2nm (first Apple 2nm chip)"
+      },
+      {
+        "label": "M6 AI performance vs M4",
+        "value": "4× faster"
+      },
+      {
+        "label": "M5 Ultra CPU/GPU",
+        "value": "36-core CPU, 80-core GPU"
+      },
+      {
+        "label": "M5 Ultra unified memory",
+        "value": "Up to 512GB"
+      },
+      {
+        "label": "M5 Ultra memory bandwidth",
+        "value": "1.2 TB/s"
+      },
+      {
+        "label": "Mac mini starting price",
+        "value": "$899"
+      },
+      {
+        "label": "Mac Studio M5 Ultra price",
+        "value": "$5,499"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/"
+  },
+  {
+    "section": "models",
+    "headline": "IBM Releases Granite 4.2: Open Reasoning LLMs with Agentic RL and 512K Context",
+    "summary": "IBM released Granite 4.2, a family of dense decoder-only reasoning LLMs in 3B, 8B, and 30B sizes under Apache 2.0. Pre-trained on 15 trillion tokens with a five-phase strategy, they support a switchable THINKING/NON-THINKING mode. The 8B and 30B models were trained with multi-stage RL inside real sandboxed environments for agentic tasks including code editing and web search. IBM also released two 470M-parameter Granite Speech 5.0 Turbo CTC models alongside.",
+    "foryou": "Open-weights 8B and 30B models trained on real-environment agentic RL are strong candidates for self-hosted tool-use pipelines — Apache 2.0 removes the commercial licensing friction.",
+    "specs": [
+      {
+        "label": "Sizes",
+        "value": "3B, 8B, 30B"
+      },
+      {
+        "label": "Context window",
+        "value": "512K tokens"
+      },
+      {
+        "label": "Training data",
+        "value": "15T tokens, five-phase"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0"
+      },
+      {
+        "label": "Thinking mode",
+        "value": "Switchable THINKING/NON-THINKING"
+      },
+      {
+        "label": "Agentic RL",
+        "value": "8B + 30B, real sandboxed environments"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://huggingface.co/blog/ibm-granite/granite-4-2"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic Merges Claude Chat and Cowork Memory — On by Default",
+    "summary": "Anthropic has unified the memory systems of Claude and Claude Cowork, so both platforms now draw from and write to the same memory pool. The feature is enabled by default. Claude now adds topics to memory actively during conversations rather than only after sessions end. All remembered content is stored as individual files under a 'Topics' section in memory settings, which users can read, edit, or delete one by one.",
+    "foryou": "Shared memory across Claude and Cowork means context from your coding sessions can bleed into chat responses and vice versa — audit your memory settings now to avoid unintended cross-contamination.",
+    "specs": [
+      {
+        "label": "Default state",
+        "value": "Enabled"
+      },
+      {
+        "label": "Memory timing",
+        "value": "Active during conversation"
+      },
+      {
+        "label": "Storage format",
+        "value": "Individual topic files"
+      },
+      {
+        "label": "User control",
+        "value": "Read, edit, delete per topic"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://thenextweb.com/news/anthropic-claude-cowork-shared-memory-default"
+  },
+  {
+    "section": "models",
+    "headline": "EchoWM: Open Omnimodal World Model Jointly Generates 720p Video, Audio, and Speech",
+    "summary": "EchoWM (JoyAI-Echo) is an open omnimodal world model that follows continuous 6-DoF camera trajectories while jointly generating 720p video, environmental sound, music, and speech in sync. It supports both first- and third-person interaction modes and uses a progressive-plus-autoregressive training strategy for coherent long-horizon generation. Weights are available on GitHub.",
+    "foryou": "Open-weights video + audio world model generation opens up new synthetic data pipelines for training embodied or multimodal agents — worth experimenting with for simulation augmentation.",
+    "specs": [
+      {
+        "label": "Output modalities",
+        "value": "720p video, env. audio, music, speech"
+      },
+      {
+        "label": "Camera control",
+        "value": "Continuous 6-DoF trajectories"
+      },
+      {
+        "label": "Interaction modes",
+        "value": "First-person and third-person"
+      },
+      {
+        "label": "Training",
+        "value": "Progressive + autoregressive"
+      },
+      {
+        "label": "License",
+        "value": "Open (GitHub)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://github.com/jd-opensource/JoyAI-Echo"
+  },
+  {
+    "section": "industry",
+    "headline": "Bill Gates: AI Is a 'Net Jobs Destroyer' — Calls for Token Tax and Reserved Human Jobs",
+    "summary": "In a Semafor interview, Bill Gates broke from his moderate tone on AI, calling it a 'net jobs destroyer' and warning that dangerous capability thresholds in biology, cybersecurity, and human relationships are being crossed without adequate societal response. He proposed taxing AI tokens as if they were labor and reserving certain jobs for humans. Gates was clear he is not advocating a pause to AI development, but stressed that 'the goal of humanity is not economic optimization.'",
+    "source": "Semafor",
+    "date": "2026-08-27",
+    "url": "https://semafor.com/s/tr6heq4a3x"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic and OpenAI Both Confidentially Filed for IPOs — Race to List by Late 2026",
+    "summary": "Both Anthropic and OpenAI confidentially filed for IPOs in June 2026. Anthropic targets an October 2026 debut at a $965B valuation, projecting positive cash flow by 2027–2028, while OpenAI is weighing a possible delay to 2027 after SpaceX's rocky public market debut, despite its $850B private valuation. OpenAI forecasts ~$14B in losses for 2026 with profitability not expected until 2029–2030. Their prospective IPO windfalls could generate up to $100B/year in philanthropic capital, much of it directed toward Africa.",
+    "source": "Web",
+    "date": "2026-08-27",
+    "url": "https://vucense.com/ai-intelligence/industry-business/openai-anthropic-ipo-race-2026/"
+  },
+  {
+    "section": "industry",
+    "headline": "Stanford Study Warns AI Agents Have a Hidden Payola Problem",
+    "summary": "A new Stanford research paper warns that as AI agents take over search and e-commerce, it is increasingly unclear whether their recommendations are driven by genuine information or advertising dollars. Without disclosure requirements, an adtech-like industry could form around agentic commerce — a problem Semafor argues is especially dangerous in healthcare and financial services. Government regulation may be too opaque to police effectively once the incentive structures solidify.",
+    "source": "Semafor",
+    "date": "2026-08-27",
+    "url": "https://semafor.com/s/uxddmxlwvs"
+  },
+  {
+    "section": "industry",
+    "headline": "Accel-Backed Keenable Raises $26M to Build Web Search Index for AI Agents",
+    "summary": "Keenable emerged from stealth with a $26M seed round backed by Accel, Brightwing Capital, and Conviction Partners, with Google and Amazon executive angels. Founded by former Yandex executives, the startup has indexed more than 100 billion documents and is building machine-optimized retrieval infrastructure offering lower latency and cost than traditional search APIs. An unnamed AI lab is already a customer, and the company plans to double its 15-person team by year-end.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/"
+  },
+  {
+    "section": "industry",
+    "headline": "Dylan Patel: OpenAI and Anthropic Could Control Most Usable AI Compute by 2028",
+    "summary": "Analyst Dylan Patel argues that OpenAI and Anthropic's ability to monetize FLOPs gives them a structural flywheel to outbid all competitors for compute capacity, potentially controlling the majority of usable AI compute by 2028. The conversation also covered rising AI capex, potential sovereign debt risks as nations fund AI infrastructure, and the economic forces centralizing the industry around a handful of frontier labs.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://www.dwarkesh.com/p/dylan-patel-3"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's Head of Product on ChatGPT Work: Bringing Codex-Style Agent Growth to White-Collar AI",
+    "summary": "Thibault Sottiaux, OpenAI's Head of Product, described plans to bring ChatGPT Work — an agent platform for white-collar workers — the same growth mechanics as Codex, where hitting usage milestones unlocks token limits. He discussed winning over AI skeptics, 'discovery' as a core product design philosophy, and the tension between democratizing AI and managing the cost of intelligence.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://techcrunch.com/2026/08/25/the-world-seems-to-be-ready-an-interview-with-openai-head-of-product-thibault-sottiaux/"
+  },
+  {
+    "section": "industry",
+    "headline": "WSJ Defends AI-Written Druckenmiller Op-Ed, Signaling Shift in the AI Writing Taboo",
+    "summary": "The Wall Street Journal not only acknowledged that billionaire investor Stanley Druckenmiller used AI to write a newsmaking op-ed, but defended the practice — with the opinion editor stating 'AI is a fact of modern life.' Semafor described it as a 'precedent-setting moment' as the AI writing stigma fades. Critics argue major publications should still disclose substantive AI use, noting that LinkedIn's new 'Seems like AI slop' button has been clicked more than a million times.",
+    "source": "Semafor",
+    "date": "2026-08-27",
+    "url": "https://semafor.com/s/2wb5nvdkvd"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's Head of Data Centers Chris Malone Departs the Company",
+    "summary": "Chris Malone, the executive overseeing OpenAI's data-center build-out, left the company last week. The departure comes as OpenAI is deep into a multi-billion-dollar infrastructure expansion to support growing inference demand for ChatGPT and API customers — raising questions about continuity in one of the company's most capital-intensive initiatives.",
+    "source": "TLDR AI",
+    "date": "2026-08-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Applied Compute Launches AC2: Full Model Lifecycle Cloud for AI Teams",
+    "summary": "Applied Compute has launched AC2, a platform enabling AI teams to train, serve, and improve custom models in one managed environment. The offering targets teams that want the full model lifecycle — training, inference, and iteration — without running their own GPU clusters.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://www.appliedcompute.com/platform/introducing-ac2"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel Connect GA: Replace Static API Keys with Short-Lived, Task-Scoped Agent Credentials",
+    "summary": "Vercel Connect is now generally available, replacing long-lived API tokens with runtime-issued OIDC-backed credentials scoped to individual agent tasks that expire automatically. Every Vercel deployment gets an OIDC identity; the SDK presents it to Connect, which verifies the project and environment before returning a short-lived provider credential. Over 100 connectors support Slack, GitHub, Snowflake, Salesforce, and more. The @vercel/connect/ai-sdk and @vercel/connect/mcp packages integrate into AI SDK tools and MCP clients directly.",
+    "foryou": "If your agentic pipelines use static API keys today, adopting Vercel Connect's runtime OIDC token model is a practical step toward production-grade, least-privilege agent security.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://vercel.com/blog/the-end-of-credential-sprawl-for-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude's Tokenizer Has Only ~15,000 Vocab Entries — Far Fewer Than Expected, and Why It Matters",
+    "summary": "An analysis found Claude's tokenizer has roughly 15,000 vocabulary entries — surprisingly small given the industry trend toward larger vocabularies. The working theory is that Anthropic is working around a softmax layer bottleneck at the output head. The article explores how this constraint shapes tokenization efficiency and what it implies for prompt design, especially for complex or technical inputs that benefit from granular token splits.",
+    "foryou": "Understanding that Claude uses a smaller vocabulary means technical jargon and uncommon terms may tokenize less efficiently — something to factor into context-window budgeting for long agentic prompts.",
+    "source": "TLDR AI",
+    "date": "2026-08-27",
+    "url": "https://ianbarber.blog/2026/08/24/vocab-break/"
+  },
+  {
+    "section": "tips",
+    "headline": "Moats in the Age of Floods: Where Application-Layer Value Survives Commoditized AI",
+    "summary": "As frontier AI becomes abundant, application-layer moats shift away from model access toward coordination, proprietary workflow data, customer transformation, narrative control, higher-level abstractions, outcome-based economics, and structural necessity. The analysis argues that durable winners will be companies that translate models into real outcomes — not those with the best model access. When intelligence is cheap, execution and integration become the scarce resources.",
+    "foryou": "The framework maps directly to agentic pipeline design: the coordination layer and accumulated workflow data are where your real defensible value sits, not the model calls themselves.",
+    "source": "TLDR AI",
+    "date": "2026-08-27"
+  }
+]
