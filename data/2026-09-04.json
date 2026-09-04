@@ -1,0 +1,324 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic releases Claude Fable 5.1 and Mythos 5.1",
+    "summary": "Anthropic launched Claude Fable 5.1 and Claude Mythos 5.1 on September 1, 2026. Fable 5.1 more than doubles its predecessor's score on Terminal-Bench-Science 0.1 (24.7% → 52.6%), tops the Code Arena WebDev leaderboard at 1,765 points, and cuts cache read costs 75% (from $1.00 to $0.25 per million tokens). Mythos 5.1 is the same model with lighter guardrails, restricted to vetted cybersecurity and life-sciences researchers.",
+    "foryou": "The 75% cache-read price cut directly lowers costs on long agentic runs by up to 45%, making Fable 5.1 a more practical choice for complex multi-step pipelines where prompt caching is already baked in.",
+    "specs": [
+      {
+        "label": "Input cost",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Output cost",
+        "value": "$50 / 1M tokens"
+      },
+      {
+        "label": "Cache read cost",
+        "value": "$0.25 / 1M tokens (75% cut)"
+      },
+      {
+        "label": "Terminal-Bench-Science 0.1",
+        "value": "52.6% (was 24.7%)"
+      },
+      {
+        "label": "OSWorld 2.0",
+        "value": "77.9%"
+      },
+      {
+        "label": "AutomationBench",
+        "value": "31.4% (was 17.1%)"
+      },
+      {
+        "label": "Availability",
+        "value": "claude.ai, API, AWS, GCP, Azure"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-04",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI launches GPT-6 Astra — first model to cross 'Critical' cybersecurity threshold",
+    "summary": "OpenAI released GPT-6 Astra on September 3, 2026, describing it as a 'generational leap.' The model is the first to cross OpenAI's 'Critical' cybersecurity capability threshold: it can find previously unknown vulnerabilities and exploit them without step-by-step human guidance. It scored a perfect result on ExploitBench and discovered two zero-day vulnerabilities in an internal OpenAI evaluation. Advanced cyber features launch first to a restricted defender program.",
+    "foryou": "Astra's looped-transformer architecture (layers reused for greater capacity without adding parameters) is worth understanding for latency-sensitive agentic pipelines, as it trades lower storage cost for higher per-token inference cost.",
+    "specs": [
+      {
+        "label": "ExploitBench",
+        "value": "Perfect score"
+      },
+      {
+        "label": "Architecture",
+        "value": "Looped transformer"
+      },
+      {
+        "label": "Cyber tier",
+        "value": "Critical (OpenAI classification)"
+      },
+      {
+        "label": "Availability",
+        "value": "ChatGPT + Codex; restricted cyber program"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/"
+  },
+  {
+    "section": "models",
+    "headline": "Google releases Gemini 3.8 Flash with Opus 5-level coding at fraction of price",
+    "summary": "Gemini 3.8 Flash, Google's third Flash release in six weeks, scores 73% on DeepSWE, matching Claude Opus 5 and beating GPT-5.6 Sol, at roughly 7x lower cost than Opus 5. It runs extra reasoning steps on hard problems, which may increase token usage. A separate Flash Cyber variant for vulnerability detection and automated patching is available through a restricted defender program.",
+    "foryou": "At $0.75/$3.75 per million tokens with Opus 5-level coding performance, Gemini 3.8 Flash is now the obvious high-throughput workhorse for agentic coding tasks — cheaper than alternatives at the same benchmark tier.",
+    "specs": [
+      {
+        "label": "Input cost",
+        "value": "$0.75 / 1M tokens"
+      },
+      {
+        "label": "Output cost",
+        "value": "$3.75 / 1M tokens"
+      },
+      {
+        "label": "DeepSWE benchmark",
+        "value": "73% (matches Claude Opus 5)"
+      },
+      {
+        "label": "Variants",
+        "value": "Gemini 3.8 Flash, Flash Cyber"
+      },
+      {
+        "label": "Availability",
+        "value": "Gemini app, AI Studio, Antigravity, Android Studio"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Muse Spark 1.3 improves coding and agentic performance",
+    "summary": "Meta released Muse Spark 1.3 with improved coding and agentic performance, described as reaching GPT-5.6 Sol level at low cost. The update makes the model easier to use in production and is rolling out through Muse Code and the Meta Model API. The highest reasoning mode is awaiting additional safety testing before release.",
+    "foryou": "If Muse Spark 1.3 genuinely matches GPT-5.6 Sol at lower cost, it's worth a benchmark run in your existing pipeline before the top reasoning mode ships.",
+    "specs": [
+      {
+        "label": "Performance tier",
+        "value": "~GPT-5.6 Sol level at low cost"
+      },
+      {
+        "label": "Availability",
+        "value": "Muse Code, Meta Model API (rollout)"
+      },
+      {
+        "label": "Top reasoning mode",
+        "value": "Pending safety review"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://research.meta.ai/blog/introducing-muse-spark-1-3"
+  },
+  {
+    "section": "models",
+    "headline": "World Labs launches Atlas: one model builds 3D worlds from photos",
+    "summary": "World Labs released Atlas, a foundation model for spatial intelligence that generates full 3D worlds and up to one minute of 1440p video with exact camera control from as few as one input photo. Atlas treats camera position as direct geometric inputs, not text descriptions. With two or three photos it out-performs specialized 3D reconstruction models. The model is in early access with select partners.",
+    "foryou": "Atlas's unified architecture — treating photos, video frames, and 3D points as the same data type — signals that the next generation of simulation environments for robotics and vision-language agents may be created from smartphone footage rather than specialized rigs.",
+    "specs": [
+      {
+        "label": "Output resolution",
+        "value": "Up to 1440p"
+      },
+      {
+        "label": "Max video length",
+        "value": "1 minute"
+      },
+      {
+        "label": "Min input",
+        "value": "1 photo"
+      },
+      {
+        "label": "Availability",
+        "value": "Early access, select partners"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-04",
+    "url": "https://www.worldlabs.ai/blog/atlas"
+  },
+  {
+    "section": "models",
+    "headline": "Meta's Muse superapp launches waitlist; desktop app adds computer-use model",
+    "summary": "Meta is moving closer to launching its agent super app under the name Muse. A waitlist is now open for the iOS app. The company has added a computer-use setting in its desktop app and appears to be testing an Ava model variant that supports full computer control, positioning Meta's consumer AI surface as a direct competitor to agentic products from OpenAI and Anthropic.",
+    "foryou": "Meta adding computer use to a consumer superapp with hundreds of millions of users means the distribution moat for agentic desktop products is narrowing fast.",
+    "specs": [
+      {
+        "label": "Capability",
+        "value": "Computer use (desktop app)"
+      },
+      {
+        "label": "Status",
+        "value": "iOS waitlist open; desktop setting live"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://www.testingcatalog.com/muse-superapp-from-meta-and-ava-model-with-computer-use/"
+  },
+  {
+    "section": "models",
+    "headline": "Google upgrades Gemini with agentic video understanding",
+    "summary": "Google released an agentic video update to Gemini that makes the model smarter at watching, reasoning over, and acting on video content. The update extends Gemini's multi-step reasoning capabilities to video inputs, enabling more complex agentic workflows that involve real-world visual data.",
+    "foryou": "Agentic video understanding in a production API opens the door to automated pipelines that inspect surveillance feeds, screen recordings, or tutorial videos without manual frame extraction.",
+    "specs": [
+      {
+        "label": "Capability",
+        "value": "Agentic video reasoning"
+      },
+      {
+        "label": "Availability",
+        "value": "Gemini app, API"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-04",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/"
+  },
+  {
+    "section": "models",
+    "headline": "Google releases Gemini 3.5 Transcribe for speech-to-text in 85+ languages",
+    "summary": "Google launched Gemini 3.5 Transcribe, a speech-to-text model supporting over 85 languages. The model is positioned as a high-accuracy transcription solution for developers building multilingual voice pipelines and assistants.",
+    "foryou": "Gemini 3.5 Transcribe gives you a drop-in speech-to-text endpoint with broad language coverage — worth benchmarking against Whisper for accuracy and latency in your voice-input workflows.",
+    "specs": [
+      {
+        "label": "Languages supported",
+        "value": "85+"
+      },
+      {
+        "label": "Task",
+        "value": "Speech-to-text / transcription"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-04",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI and Broadcom unveil Jalapeño inference chip — 1.9x throughput/watt over Nvidia GB300",
+    "summary": "OpenAI and Broadcom revealed Jalapeño, OpenAI's first custom AI inference ASIC, developed in nine months — what OpenAI claims is the fastest ASIC development cycle ever for high-performance semiconductors. The chip consumes 700W versus 1,400W for Nvidia's GB300 and delivers 1.5–1.9x more throughput per kilowatt and up to 3.6x lower latency. Deployment at Microsoft and partner data centers begins in 2026.",
+    "source": "Web",
+    "date": "2026-09-04",
+    "url": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic pauses high-risk RL work, invites METR for independent safety audit",
+    "summary": "Anthropic is bringing METR inside for an independent review of recent security incidents involving AI agents, and has paused its highest-risk reinforcement learning efforts. The company has also published research describing an intentionally reward-seeking version of Claude. The post-mortem points to structural tension between commercial pressure and the company's safety commitments, with a signal that Anthropic will devote substantially more resources to near-term prosaic alignment.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://thezvi.substack.com/p/anthropic-has-some-alignment-problems"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia and CrowdStrike launch SafeMind agentic cybersecurity AI models",
+    "summary": "Nvidia and CrowdStrike jointly introduced SafeMind, a family of agentic AI models designed to autonomously find and close attack paths for enterprise customers. The models combine Nvidia's AI infrastructure with CrowdStrike's threat-intelligence data, targeting automated vulnerability detection and remediation.",
+    "source": "TLDR AI",
+    "date": "2026-09-04"
+  },
+  {
+    "section": "industry",
+    "headline": "Unit 42 documents AI-assisted ransomware attack breaching enterprise at unprecedented speed",
+    "summary": "Palo Alto Networks' Unit 42 published details of an investigated ransomware attack in which a human attacker used frontier AI to breach an enterprise network significantly faster than conventional methods. The case illustrates that AI is lowering the skill floor and time-to-breach for human threat actors, even before fully autonomous attacks become common.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://unit42.paloaltonetworks.com/ai-assisted-cyber-attack-inside-a-unit-42-investigation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Former OpenAI Stargate exec Shamez Hemani joins Anthropic after brief Meta compute stint",
+    "summary": "Shamez Hemani, a senior OpenAI data center employee who departed in April to join Meta's dedicated compute team, has joined Anthropic's technical staff. The move continues a pattern of high-profile infrastructure talent circulating between the three frontier AI labs.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://www.datacenterdynamics.com/en/news/former-openai-stargate-exec-shamez-hemani-joins-anthropic-after-brief-meta-compute-stint/"
+  },
+  {
+    "section": "industry",
+    "headline": "World models tipped as next major AI paradigm by LeCun, Hassabis, and Li",
+    "summary": "Growing convergence among AI leaders — Yann LeCun, Demis Hassabis, and Fei-Fei Li — points to world models as the next dominant AI paradigm. World models represent environments, predict outcomes, simulate possibilities, and plan action sequences, going beyond pure generation. The narrative is building momentum as spatial and simulation-focused models (like World Labs Atlas) begin to ship.",
+    "source": "TLDR AI",
+    "date": "2026-09-04"
+  },
+  {
+    "section": "tips",
+    "headline": "How to build a reliable agent harness: architecture playbook",
+    "summary": "A detailed architecture guide for production-grade agent harnesses, covering state management, runtimes, control planes, inference layers, tools, interfaces, and language choices. The central thesis: unavoidable complexity should be absorbed by core abstractions rather than pushed onto extensions or users. At 48 minutes, it is one of the most comprehensive public write-ups on agentic infrastructure design.",
+    "foryou": "If you're building or scaling an agentic pipeline, this is the blueprint to audit your current harness against — especially the control plane and state management sections.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://stencil.so/blog/harness-playbook"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor cloud agents can now run on self-managed private infrastructure",
+    "summary": "Cursor's cloud agents can now execute on dynamically scheduled pools of machines inside private networks. Teams manage their own infrastructure while agents are still orchestrated from Cursor. This enables agents to work alongside internal services, use custom hardware or OSes, and access source control that cannot be exposed to external cloud agent pools.",
+    "foryou": "If your org has data that can't leave the perimeter, self-hosted Cursor agents let you get agentic coding without routing proprietary code through external infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://cursor.com/blog/self-hosted-machines"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Astra's looped-transformer architecture explained",
+    "summary": "A technical breakdown of the looped-transformer design behind OpenAI Astra: layers are reused in the transformer block to increase model capacity without adding parameters, reducing storage and RAM requirements. The tradeoff is higher inference cost as embedded text runs through more layers. The post argues the architecture is a modest tweak, not the primary reason Astra performs well.",
+    "foryou": "Understanding looped transformers helps you anticipate per-token latency and cost characteristics when Astra becomes available through the API — especially relevant if you're optimizing for throughput in agentic loops.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://sebastianraschka.com/blog/2026/openai-astra-looped-transformers.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Test-time training: a new scaling axis with unsolved continuous-learning problem",
+    "summary": "Test-time training (TTT) allows a model to update its weights on a per-task basis at inference time, constituting a new scaling axis. New research has produced promising techniques, but the continual learning problem — preventing the model from forgetting prior knowledge as it adapts — remains unsolved. The post reviews what current TTT methods can and cannot do.",
+    "foryou": "TTT is worth tracking as a potential replacement for in-context learning on long, domain-specific tasks — but don't bet your pipeline on it yet given the forgetting problem.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://ianbarber.blog/2026/09/02/test-time-training/"
+  },
+  {
+    "section": "tips",
+    "headline": "Intelligence vs. cost LLM plots are misleading — what the charts hide",
+    "summary": "ArtificialAnalysis's intelligence vs. cost plots use logarithmic cost axes, making price differences between cheap and expensive models appear trivial. Open models are listed at datacenter pricing, which is far higher than local hardware costs. The analysis argues that most use cases don't require frontier intelligence and that Chinese open-source models are underrated when total cost of ownership is calculated properly.",
+    "foryou": "Before paying frontier API prices for a task, run the numbers on a self-hosted Chinese open-source model — the benchmark gap may not justify the cost difference at your actual inference volume.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://openteams.com/intelligence-vs-cost/"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta builds 'organizational second brain' AI that codifies expert knowledge",
+    "summary": "Meta has developed an AI agent architecture that captures and preserves expert knowledge inside organizations. It uses a two-layer design: a structured, auditable knowledge store separating knowledge from reasoning, and a self-improvement loop that incorporates expert feedback without retraining the base model. The system lets domain experts focus on complex judgments while the agent handles repeatable assessments at scale.",
+    "foryou": "The separation of knowledge architecture from reasoning process is a reusable pattern for any enterprise agentic system where auditability and expert oversight matter.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://engineering.fb.com/2026/09/02/ml-applications/organizational-second-brain-ai-learns-from-experts/"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic releases tool to detect Claude's text watermark in files",
+    "summary": "Anthropic launched a public tool at claude.com/check-files that identifies the text watermark Claude embeds when generating files. The tool is useful for provenance verification, content moderation pipelines, and compliance workflows where distinguishing AI-generated from human-written content is required.",
+    "foryou": "If you're building document processing or content moderation pipelines, this endpoint gives you a quick programmatic way to flag Claude-generated inputs for downstream handling.",
+    "source": "TLDR AI",
+    "date": "2026-09-04",
+    "url": "https://claude.com/check-files"
+  },
+  {
+    "section": "tips",
+    "headline": "Gemini for Legal launches as AI workspace for contract review and legal research",
+    "summary": "Google launched Gemini Enterprise for Legal, a dedicated AI workspace targeting contract review, legal research, and document analysis. The product is built on Google Cloud and integrates with existing enterprise legal workflows, positioning Gemini as a horizontal platform tool for professional services verticals.",
+    "foryou": "If you're building AI-powered legal or compliance tooling, Google's enterprise packaging signals that the contract-review use case is now mature enough for a Big Tech wrapper — which also means you have a reference architecture to work from or compete against.",
+    "source": "The Summary AI",
+    "date": "2026-09-04",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/introducing-gemini-enterprise-for-legal"
+  }
+]
