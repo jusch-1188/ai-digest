@@ -1,0 +1,412 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI launches GPT-6 Astra — first model rated Critical risk",
+    "summary": "GPT-6 Astra is OpenAI's most capable broadly deployed model and the first to reach the Critical cybersecurity level under its Preparedness Framework. Benchmarks are contradictory: Artificial Analysis scores it tied with GPT-5.6 Sol, while Epoch AI ranks it #1 and ARC-AGI-3 shows 62.7%. API prices rose 2.5× but OpenAI claims real task cost drops because the model solves problems in fewer steps. Early testers report it feels substantially stronger for coding and long multi-step agentic work.",
+    "foryou": "Upgrade your agentic pipelines to Astra for complex multi-step jobs, but verify on your evals first — benchmark divergence means real-world gains aren't guaranteed.",
+    "specs": [
+      {
+        "label": "ARC-AGI-3 score",
+        "value": "62.7% (vs 30.2% Claude Opus 5)"
+      },
+      {
+        "label": "Cybersecurity level",
+        "value": "Critical (Preparedness Framework)"
+      },
+      {
+        "label": "API price change",
+        "value": "+2.5× list; fewer steps per task"
+      },
+      {
+        "label": "Availability",
+        "value": "ChatGPT Plus, Pro, Business, Enterprise"
+      }
+    ],
+    "source": "TLDR AI (also: The Summary AI, Semafor)",
+    "date": "2026-09-07",
+    "url": "https://openai.com/index/gpt-6-astra/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic ships Claude Fable 5.1 and Mythos 5.1 with 75% cache-cost cut",
+    "summary": "Anthropic released Fable 5.1 and its trusted-access twin Mythos 5.1 on September 1–2. Fable 5.1 outperforms Fable 5, Opus 5, and GPT-5.6 Sol across coding, knowledge work, and problem-solving benchmarks, and cache-read pricing drops 75% to $0.25 per million tokens — roughly 25% cheaper overall than Fable 5. Mythos 5.1 is available only through trusted-access programs, with safeguards tuned for cybersecurity and life-sciences research.",
+    "foryou": "Cache-read cost dropping 75% is a direct win for agentic pipelines with long shared contexts — reprice your cost models and consider Fable 5.1 as default for coding agents.",
+    "specs": [
+      {
+        "label": "Cache read (input)",
+        "value": "$0.25 / 1M tokens (−75%)"
+      },
+      {
+        "label": "Overall cost vs Fable 5",
+        "value": "~25% cheaper"
+      },
+      {
+        "label": "Mythos 5.1 access",
+        "value": "Trusted-access only (cyber + life sci)"
+      },
+      {
+        "label": "Availability",
+        "value": "Claude, Claude Code, Claude Platform, Cursor"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-07",
+    "url": "https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Muse Spark 1.3 reduces tool calls 20%, scores top on agentic tasks",
+    "summary": "Meta released Muse Spark 1.3 on September 2, cutting tool calls by roughly 20% versus version 1.2 and scoring 1,754 on GDPval-AA v2 Elo — ahead of Gemini 3.8 Flash's 1,545 and matching GPT-5.6 Sol. Two pricing tiers: Standard at $1.25/$4.25 per million tokens with no training on your data; Contributor at $0.10/$0.20 with opt-in training. It led the Sierra Research banking agent test 52.4% to Gemini's 44.9%.",
+    "foryou": "The 20% tool-call reduction matters directly for agentic pipeline cost — test Muse Spark 1.3 as a drop-in replacement for tool-heavy orchestration layers.",
+    "specs": [
+      {
+        "label": "Tool calls vs 1.2",
+        "value": "~20% fewer"
+      },
+      {
+        "label": "GDPval-AA v2 Elo",
+        "value": "1,754 (Standard mode)"
+      },
+      {
+        "label": "Cost (Standard)",
+        "value": "$1.25 input / $4.25 output per 1M tokens"
+      },
+      {
+        "label": "Cost (Contributor)",
+        "value": "$0.10 input / $0.20 output per 1M tokens"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-07",
+    "url": "https://www.axios.com/2026/09/02/meta-debuts-muse-spark-13-as-personal-agent-work-continues"
+  },
+  {
+    "section": "models",
+    "headline": "Google releases Gemini 3.8 Flash with Cyber variant for vulnerability research",
+    "summary": "Google shipped Gemini 3.8 Flash on September 2 — its third Flash update in six weeks — alongside Gemini 3.8 Flash Cyber, a defenders-only variant scoring 86.2% on the CyberGym vulnerability benchmark. The base model costs $0.75/$3.75 per million tokens and scores 1,545 on GDPval-AA v2 Elo. Independent testing shows Google leads on factual recall and terminal coding, while Muse Spark 1.3 leads on agentic knowledge work and scientific reasoning.",
+    "foryou": "The gated Cyber variant's 86.2% CyberGym score makes it the best available option for automated security research pipelines if you can get access.",
+    "specs": [
+      {
+        "label": "Cost (input / output)",
+        "value": "$0.75 / $3.75 per 1M tokens"
+      },
+      {
+        "label": "GDPval-AA v2 Elo",
+        "value": "1,545"
+      },
+      {
+        "label": "Cyber variant CyberGym",
+        "value": "86.2%"
+      },
+      {
+        "label": "Cyber access",
+        "value": "Gated / defenders-only"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-07",
+    "url": "https://www.gncrypto.news/news/google-gemini-3-8-flash-meta-muse-spark-1-3/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft MAI-Transcribe-2 undercuts OpenAI and Google on speech recognition",
+    "summary": "Microsoft's MAI-Transcribe-2 is a speech-recognition model with diarization, configurable transcription styles, and word-level timestamps that outperforms Gemini 3.5 Transcribe, GPT-Transcribe, and Whisper V3-Large on accuracy and speed. Priced at $0.10 per hour of audio across 60 languages, it positions Microsoft to swap OpenAI's technology out of its own products one modality at a time.",
+    "foryou": "At $0.10/hour, MAI-Transcribe-2 is the cheapest accurate transcription available — drop it into any audio-processing pipeline where you're currently paying more.",
+    "specs": [
+      {
+        "label": "Price",
+        "value": "$0.10 / hour of audio"
+      },
+      {
+        "label": "Languages",
+        "value": "60"
+      },
+      {
+        "label": "Features",
+        "value": "Diarization, word-level timestamps, configurable styles"
+      },
+      {
+        "label": "vs competitors",
+        "value": "Faster, cheaper than Gemini Transcribe, GPT-Transcribe, Whisper V3-Large"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://venturebeat.com/infrastructure/microsoft-ais-mai-transcribe-2-undercuts-openai-google-and-elevenlabs-on-price-and-speed"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Muse Voice Transcribe targets enterprise speech at $0.18/hour",
+    "summary": "Meta released Muse Voice Transcribe, an enterprise speech-to-text model priced at $0.18 per hour, entering direct competition with Microsoft and OpenAI in the transcription market. The model targets enterprise use cases and builds on Meta's Muse AI platform.",
+    "foryou": "Two competitive transcription options dropped this week — compare MAI-Transcribe-2 ($0.10/hr) vs Muse Voice Transcribe ($0.18/hr) against your accuracy and latency needs.",
+    "specs": [
+      {
+        "label": "Price",
+        "value": "$0.18 / hour of audio"
+      },
+      {
+        "label": "Target",
+        "value": "Enterprise speech-to-text"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-07",
+    "url": "https://research.meta.ai/blog/introducing-muse-voice-transcribe"
+  },
+  {
+    "section": "models",
+    "headline": "Runway Solaris generates live software UIs frame by frame",
+    "summary": "Runway's Solaris is an AI model that generates a software interface in real time as you use it — clicks, drags, text, and image inputs feed an LLM that decides what should happen, while a world model renders the result live. A click can change the meaning of future clicks (select a texture and it propagates to other objects), making the mouse context-dependent rather than fixed. Current limitations include unstable text rendering, long-session consistency, and lack of screen-reader support.",
+    "foryou": "Solaris is the clearest demonstration yet that UI and logic might collapse into a single generative layer — worth prototyping any throwaway tool interface with it before building a coded frontend.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "LLM (intent) + world model (rendering)"
+      },
+      {
+        "label": "Input types",
+        "value": "Clicks, drags, text, images"
+      },
+      {
+        "label": "Based on",
+        "value": "Runway Gen-4.5 video model"
+      },
+      {
+        "label": "Status",
+        "value": "Research preview"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-07",
+    "url": "https://runway.com/news/research/introducing-solaris"
+  },
+  {
+    "section": "models",
+    "headline": "Runway GWM Worlds 2 generates interactive environments at 720p with audio",
+    "summary": "Runway's GWM Worlds 2 is a world model that generates interactive environments in real time at 720p, 24 fps, with 48 kHz audio. Users steer the world with text actions and camera motion, with no preset session length. It extends Runway's world modeling research from visual generation toward persistent interactive environments.",
+    "foryou": "GWM Worlds 2 opens a path to generating synthetic training environments on demand — relevant if you're building agents that need diverse interactive contexts to learn in.",
+    "specs": [
+      {
+        "label": "Resolution",
+        "value": "720p, 24 fps"
+      },
+      {
+        "label": "Audio",
+        "value": "48 kHz"
+      },
+      {
+        "label": "Control",
+        "value": "Text actions + camera motion"
+      },
+      {
+        "label": "Session length",
+        "value": "Unbounded"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://runway.com/research/introducing-gwm-worlds-2"
+  },
+  {
+    "section": "models",
+    "headline": "Google WeatherNext 3 feeds live satellite data into hourly global forecasts",
+    "summary": "Google DeepMind's WeatherNext 3 ingests geostationary satellite mosaics and weather-station observations to produce global forecasts every hour at 5 km resolution — five times finer than previous models. Precipitation scores improved up to 60% against NASA IMERG data. The model is being embedded directly into Search, Gemini, Maps, Cloud, and developer APIs, while also adding clean-energy variables for electricity market forecasting.",
+    "foryou": "If your pipelines consume weather data or renewable-energy signals, WeatherNext 3 in the Google Cloud APIs will now be the most accurate real-time source available.",
+    "specs": [
+      {
+        "label": "Resolution (temp/moisture)",
+        "value": "5 km grid"
+      },
+      {
+        "label": "Forecast refresh",
+        "value": "Hourly"
+      },
+      {
+        "label": "Precip score improvement",
+        "value": "Up to 60% vs NASA IMERG"
+      },
+      {
+        "label": "Distributed via",
+        "value": "Search, Gemini, Maps, Cloud APIs"
+      }
+    ],
+    "source": "TLDR AI (also: The Summary AI)",
+    "date": "2026-09-07",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-weathernext-3/"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen 3.8 27B hits 1,500 tokens per second on Cerebras",
+    "summary": "Qwen 3.8 27B is now available on Cerebras' public endpoints and runs at 1,500 tokens per second, making it the fastest inference option currently available for a model in that parameter class. The speed opens up real-time multi-agent loops that would be latency-blocked at typical GPU inference speeds.",
+    "foryou": "1,500 tokens/sec on a 27B model unlocks interactive agentic loops that were previously too slow — use it as the fast reasoning backbone for latency-sensitive pipelines.",
+    "specs": [
+      {
+        "label": "Inference speed",
+        "value": "1,500 tokens / second"
+      },
+      {
+        "label": "Parameters",
+        "value": "27B"
+      },
+      {
+        "label": "Provider",
+        "value": "Cerebras public endpoints"
+      }
+    ],
+    "source": "The Summary AI",
+    "date": "2026-09-07",
+    "url": "https://inference-docs.cerebras.ai/models/qwen-3.8-27b"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia confirms $12.93B acquisition of Hugging Face",
+    "summary": "Nvidia confirmed it has acquired Hugging Face, which hosts three million models and serves over 18 million developers, for $12.93 billion. CEO Jensen Huang said the platform will remain open and that Nvidia compute will not be required to build or deploy on it. The deal gives Nvidia direct control of the largest public model hub just as inference hardware competition intensifies.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI Grok Bot now available for enterprise teams",
+    "summary": "Grok Bot is now available for enterprise customers, with Grok and Cursor Enterprise customers receiving free usage for the first two weeks. Each user's work runs in a secure, isolated environment with no cross-user access, and organizations can onboard their entire team — including members without existing seats. Bots have no account access by default and connect only to what administrators authorize.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://links.tldrnewsletter.com/JUpB1c"
+  },
+  {
+    "section": "industry",
+    "headline": "Accel in talks to lead $1B round for Thinking Machines at $40B valuation",
+    "summary": "Accel is reportedly in talks to lead a $1 billion round for Thinking Machines, valuing the company at $40 billion — notably below the $50 billion valuation it sought to secure late last year. The down-round from its target reflects the increasingly competitive frontier model market despite the firm's strong technical reputation.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Saudi HUMAIN building VC war chest larger than initial $10B target",
+    "summary": "Saudi Arabia's sovereign-wealth-fund AI company HUMAIN will unveil a new VC fund later this year that is expected to significantly exceed the $10 billion size initially planned, CEO Tareq Amin told Semafor. HUMAIN's ambitions are backed by a $3 billion xAI investment that it calls 'a home run,' and it is taking stakes in startups including Luma AI while requiring investees to use Saudi data centers or bring staff to the kingdom. The company is also building its own laptop and operating system.",
+    "source": "Semafor",
+    "date": "2026-09-07",
+    "url": "https://semafor.com/s/c7yvcg2dtf"
+  },
+  {
+    "section": "industry",
+    "headline": "California creates Independent Verification Organizations to test frontier AI",
+    "summary": "California passed a law creating a framework for 'Independent Verification Organizations' that can test frontier AI models before release. The legislation arrives as the METR investigation into the OpenAI-Hugging Face hack required the equivalent of $400,000 in AI tokens just to analyze one incident — raising questions about whether oversight is becoming too expensive to scale. Critics argue that laws like this become outdated almost immediately given the pace of model development.",
+    "source": "Semafor",
+    "date": "2026-09-07",
+    "url": "https://semafor.com/s/akc4qqc0bk"
+  },
+  {
+    "section": "industry",
+    "headline": "GPT-6 Astra's reduced chain-of-thought visibility alarms AI safety researchers",
+    "summary": "GPT-6 Astra appears to do less thinking out loud than previous models, giving researchers limited insight into whether it might be hiding reasoning or planning disallowed actions. AI safety researcher Ryan Greenblatt noted it can solve hard competition math problems 'entirely in its head,' calling this 'extremely concerning.' OpenAI chief scientist Jakub Pachocki denied the company deliberately limited visibility and said he would write more on the subject — but acknowledged the monitoring challenge.",
+    "source": "Semafor",
+    "date": "2026-09-07",
+    "url": "https://semafor.com/s/b4xh7bi1k7"
+  },
+  {
+    "section": "industry",
+    "headline": "Planned Anthropic and OpenAI IPOs could release $370B in AI safety philanthropy",
+    "summary": "Coefficient Giving CEO Alexander Berger told Semafor that one estimate puts the philanthropic capital flowing from planned Anthropic and OpenAI IPOs at $370 billion, and that AI safety is a strong destination for those funds. Redwood Research — a Coefficient grantee — was one of two organizations OpenAI called in to analyze the Hugging Face hack, demonstrating philanthropy's role in frontier AI oversight. Berger argues philanthropy can move faster than government, making it a seed-bed for future regulatory bodies.",
+    "source": "Semafor",
+    "date": "2026-09-07",
+    "url": "https://semafor.com/s/rl0s85p3ot"
+  },
+  {
+    "section": "industry",
+    "headline": "Hollywood secretly using AI on productions while publicly opposing it",
+    "summary": "Filmmakers and studios are quietly deploying AI to cut costs on productions while maintaining public opposition to the technology, according to Semafor reporting around the Reply AI Film Festival. Netflix used AI in roughly 300 titles this year, and Steven Soderbergh has said he'll use 'a lot of AI' for an upcoming film. Industry insiders describe widespread use among Academy-nominated directors — but few are willing to disclose it publicly for fear of backlash.",
+    "source": "Semafor",
+    "date": "2026-09-07",
+    "url": "https://semafor.com/s/dhye39hu5w"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's mystery 'Dime' headset surfaces through leaks and codenames",
+    "summary": "A mysterious silver headset connected to OpenAI through leaked photos, sightings, job postings, and internal codenames remains officially denied by the company. The device — codenamed Dime — points to OpenAI's ambitions in consumer hardware, following its partnership with Jony Ive. The company has consistently declined to comment.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://links.tldrnewsletter.com/P5mu0B"
+  },
+  {
+    "section": "industry",
+    "headline": "AI model wave triggers 'model fatigue' across engineering teams",
+    "summary": "September 2026 opened with the densest 72 hours of frontier model releases this year — Fable 5.1, Muse Spark 1.3, Gemini 3.8 Flash, and GPT-6 Astra all within days of each other. CNBC reports that engineering teams are experiencing 'model fatigue' as pricing becomes a quarterly moving target and evaluation bandwidth is stretched thin. Three of the four major launches ship with gated cybersecurity tiers, and capability gains are increasingly coming from post-training environment scaling rather than new base architectures.",
+    "source": "Web",
+    "date": "2026-09-07",
+    "url": "https://www.cnbc.com/2026/09/06/meta-google-openai-anthropic-ai-model-fatigue.html"
+  },
+  {
+    "section": "tips",
+    "headline": "funes: give your coding agents durable cross-session memory you own",
+    "summary": "Hugging Face released funes, an open-source durable memory layer for coding agents that indexes session histories locally (Lance dataset) and optionally syncs to a private Hugging Face Hub dataset. Agents like Claude Code, Codex, pi, and Hermes can start a task on one machine and recall prior decisions, rationale, and findings on another — with full provenance including agent, timestamp, session, and turn. Credentials are redacted before any data reaches the Hub.",
+    "foryou": "If you run multi-session or multi-agent coding workflows, funes is the missing infrastructure piece — install it once and your agents stop re-deriving context they already discovered.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://huggingface.co/blog/funes"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic's Model Hardware Standard lets AI agents control lab and factory equipment",
+    "summary": "Anthropic opened a research preview of the Model Hardware Standard (MHS), a model-agnostic shared specification for AI agents to safely operate physical devices — microscopes, liquid handlers, robotic arms, quantum hardware. MHS cuts hardware integration from weeks to hours by making devices auto-discoverable and providing a shared safety interface. In early testing, agents ran drug-discovery experiments at Genentech and compressed an imaging study from weeks to a day at HHMI Janelia. Anthropic plans to open-source the standard.",
+    "foryou": "If you're building agents that interact with physical workflows — lab automation, manufacturing, robotics — MHS is the integration layer you'd otherwise have to build yourself; apply for the research preview now.",
+    "source": "The Summary AI (also: Web)",
+    "date": "2026-09-07",
+    "url": "https://www.anthropic.com/news/model-hardware-standard-research-preview"
+  },
+  {
+    "section": "tips",
+    "headline": "Universal jailbreak template breaks 84–100% of 9 most vulnerable frontier models",
+    "summary": "A MATS researcher found that a synthetic transcript generation prompt — originally developed for safety research — could be repurposed as a universal jailbreak template with 84–100% attack success on the nine most vulnerable of 23 models tested. Only recent Anthropic models and Meta Muse Spark 1.1 were never fully broken. The finding suggests that safety research artifacts themselves can become attack vectors if not carefully controlled.",
+    "foryou": "If you're deploying agents that process or generate synthetic transcripts, audit your prompts — this research shows the attack surface is broader than most teams assume.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://www.lesswrong.com/posts/hHk5CpiqZTBBiHmYt/from-safety-research-prompt-to-cross-model-universal"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA PAIR routes local AI inference across DGX Spark, RTX, and macOS from one endpoint",
+    "summary": "NVIDIA Personal AI Router (PAIR) provides a single local endpoint that routes inference requests across NVIDIA DGX Spark, Windows systems with RTX GPUs, and macOS devices. It lets AI apps and agent workflows target a unified address without hardcoding which hardware is available, making local multi-device inference practical for development environments.",
+    "foryou": "PAIR eliminates the per-device routing logic you'd otherwise maintain in every local agent stack — set it up once and your pipelines transparently pick the fastest available hardware.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://www.nvidia.com/en-us/ai-on-rtx/personal-ai-router/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Workspace Voice: talk to Gmail and Docs to retrieve information",
+    "summary": "Google added voice interaction to Gmail and Docs, letting users ask spoken questions to retrieve and surface information from their email and documents. The feature is part of a broader push to make Workspace accessible through natural language rather than UI navigation — reducing the friction of context-switching when you need quick lookups mid-task.",
+    "foryou": "Workspace Voice can replace manual search for brief information retrieval within Google docs — test it as a low-friction way to pull context into your workflow without breaking focus.",
+    "source": "The Summary AI",
+    "date": "2026-09-07",
+    "url": "https://blog.google/products-and-platforms/products/workspace/voice-features-gmail-docs-keep/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Pics: AI-first design tool built into Google Workspace",
+    "summary": "Google launched Pics, an AI-first design and image creation tool built natively into Google Workspace, positioning it as a direct competitor to Canva. Pics integrates with existing Workspace documents and leverages Google's image generation models, giving teams a design layer without leaving the productivity suite. It lowers the barrier for generating polished visuals inside collaborative workflows.",
+    "foryou": "If your team is paying for Canva primarily to create quick visual assets for docs and decks, Pics may consolidate that into your existing Workspace bill — worth testing for internal tooling visuals.",
+    "source": "The Summary AI",
+    "date": "2026-09-07",
+    "url": "https://blog.google/products-and-platforms/products/workspace/google-pics/"
+  },
+  {
+    "section": "tips",
+    "headline": "Incumbents win agent-era by owning cross-system context — not just data",
+    "summary": "A strategic analysis argues that incumbent systems of record (CRMs, ERPs, dev platforms) gain disproportionate value as AI agents act through their workflows, because agents need persistent cross-system context to be effective. Vertical AI still wins by owning the broader job, but durable advantage comes from four things: cross-system context, expert feedback loops, rigorous evals, and learning that compounds over time.",
+    "foryou": "When scoping an agentic product, map which systems of record the agent touches — whoever owns the cross-system context layer will compound fastest; build toward that position.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://links.tldrnewsletter.com/fxRfb4"
+  },
+  {
+    "section": "tips",
+    "headline": "AI is removing the economic pressure that kept software complexity in check",
+    "summary": "A widely-shared essay argues that AI's ability to generate code and governance structures cheaply removes the traditional cost constraints that limited over-engineering. When it's free to build more, teams build more — but maintenance costs remain human-scale. The author's observation from Steve Yegge's Wheelhouse: agents outpaced their productive goals and layered complexity without adding value, because AI removed the friction that used to signal 'stop building.'",
+    "foryou": "The real discipline for AI-assisted development is now deciding what NOT to build — add explicit 'is this worth maintaining?' gates before letting your agents scaffold new components.",
+    "source": "TLDR AI",
+    "date": "2026-09-07",
+    "url": "https://sjg.io/writing/ai-is-making-us-build-too-much/"
+  }
+]
