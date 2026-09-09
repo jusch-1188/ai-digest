@@ -1,0 +1,285 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Fable 5.1 & Mythos 5.1: 75% cache-read price cut, 1M context",
+    "summary": "Anthropic shipped Claude Fable 5.1 on September 1 as a point release on top of Fable 5. Cache-read pricing drops 75% to $0.25/M tokens — Anthropic estimates this lowers typical Fable spend by ~25% and highly agentic spend by up to 45%. Mythos 5.1 is the same model but with reduced safeguards for trusted-access cybersecurity and life-sciences work.",
+    "foryou": "The cache-read cut is a direct win for your agentic pipelines — large system prompts and tool schemas that get cached now cost a fraction of before.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Input price",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Output price",
+        "value": "$50 / 1M tokens"
+      },
+      {
+        "label": "Cache read",
+        "value": "$0.25 / 1M tokens (75% cut)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-09",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-1"
+  },
+  {
+    "section": "models",
+    "headline": "GPT-6 Astra launches: 1.05M context, 99.9% ARC-AGI-3, long-context surcharge",
+    "summary": "OpenAI released GPT-6 Astra on September 3 with a 1.05M token context window and five reasoning-effort settings. Pricing is $10/$50 per million for short context, but prompts exceeding 272K tokens are rebilled at 2× input and 1.5× output for the entire request. Benchmarks include 99.9% on ARC-AGI-3, 97.6% on FrontierMath Tier 4, and 72.6% on OSWorld 2.0.",
+    "foryou": "The 272K token long-context surcharge is a nasty trap for agentic pipelines that grow large mid-run — worth capping context aggressively or chunking to stay below it.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1.05M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens"
+      },
+      {
+        "label": "Input (≤272K)",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Input (>272K)",
+        "value": "$20 / 1M tokens (whole request)"
+      },
+      {
+        "label": "Output (≤272K)",
+        "value": "$50 / 1M tokens"
+      },
+      {
+        "label": "Output (>272K)",
+        "value": "$75 / 1M tokens"
+      },
+      {
+        "label": "Cache read",
+        "value": "$1 / 1M tokens"
+      },
+      {
+        "label": "ARC-AGI-3",
+        "value": "99.9%"
+      },
+      {
+        "label": "OSWorld 2.0",
+        "value": "72.6%"
+      },
+      {
+        "label": "FrontierMath Tier 4",
+        "value": "97.6%"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-09",
+    "url": "https://llm-stats.com/models/gpt-6-astra"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.8 Flash: same price as 3.7, better benchmarks — beats Claude Opus 5 on three",
+    "summary": "Google released Gemini 3.8 Flash on September 2 at the same price as its predecessor ($0.75/$3.75 per 1M tokens through December 2026, then doubling). The model handles text, image, audio, video, and PDF with a 1M context and 64K output. It outperforms 3.7 Flash on every benchmark Google published and beats Claude Opus 5 on three of them.",
+    "foryou": "Price-for-performance best-in-class for multimodal pipelines right now — the doubling price on Jan 1 means lock in any long-running workloads this quarter.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "64K tokens"
+      },
+      {
+        "label": "Input price (until Dec 31)",
+        "value": "$0.75 / 1M tokens"
+      },
+      {
+        "label": "Output price (until Dec 31)",
+        "value": "$3.75 / 1M tokens"
+      },
+      {
+        "label": "Input price (from Jan 1)",
+        "value": "$1.50 / 1M tokens"
+      },
+      {
+        "label": "Output price (from Jan 1)",
+        "value": "$7.50 / 1M tokens"
+      },
+      {
+        "label": "Modalities",
+        "value": "text, image, audio, video, PDF"
+      },
+      {
+        "label": "Thinking",
+        "value": "tunable (low / medium / high)"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-09-09",
+    "url": "https://llm-stats.com/models/gemini-3.8-flash"
+  },
+  {
+    "section": "models",
+    "headline": "ByteDance building real-time spatial video world model, launch as early as October",
+    "summary": "ByteDance founder Zhang Yiming is personally overseeing a new AI model for real-time spatial video generation, targeting a launch as early as October 2026. Built on Seedance, it generates interactive 3D virtual worlds with ~50ms latency and 20fps — rendering happens server-side, cutting headset hardware requirements. The model targets Pico XR users and competes with Google Genie.",
+    "foryou": "Server-side world-model rendering is a compelling architectural pattern for spatial AI agents — worth watching if you're building anything in XR or embodied agent spaces.",
+    "specs": [
+      {
+        "label": "Latency",
+        "value": "~50ms"
+      },
+      {
+        "label": "Frame rate",
+        "value": "20 fps"
+      },
+      {
+        "label": "Base model",
+        "value": "Seedance (ByteDance video gen)"
+      },
+      {
+        "label": "Expected launch",
+        "value": "October 2026 (unconfirmed)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://thenextweb.com/news/bytedance-spatial-video-world-model-zhang-yiming"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen-Drive 1.0: vision-language foundation model for autonomous driving",
+    "summary": "Alibaba's Qwen team released Qwen-Drive 1.0, a Vision-Language Model designed for autonomous driving. A staged training strategy integrates perception, language understanding, and planning objectives, enabling specialized driving competence while retaining broad visual and instruction-following capabilities. Requires a GPU with 24GB+ VRAM.",
+    "foryou": "Interesting architecture for multi-objective agentic training — the staged perception→language→planning approach is transferable to non-driving agentic domains.",
+    "specs": [
+      {
+        "label": "Modalities",
+        "value": "Vision + Language"
+      },
+      {
+        "label": "Training stages",
+        "value": "Perception → Language → Planning"
+      },
+      {
+        "label": "Min VRAM",
+        "value": "24GB+"
+      },
+      {
+        "label": "License",
+        "value": "Open (GitHub)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://github.com/QwenLM/Qwen-Drive-1.0"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic signed $517B in compute agreements in 11 months (14.8GW)",
+    "summary": "Anthropic has secured $517 billion in compute capacity leases over the past 11 months, totaling 14.8GW of capacity, primarily with Google and AWS. Major deals include a $45B agreement with Nscale, plus capacity from Akamai and Fluidstack. The company filed confidentially for an IPO with the SEC in June.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic IPO roadshow targets September/October listing at ~$965B valuation",
+    "summary": "Anthropic is conducting pre-IPO investor meetings targeting a public listing in September or early October 2026. The May 2026 Series H established a ~$965B post-money valuation after raising $65B; some investors expect the IPO to target a $2T valuation — which would make it the most valuable public AI company in the world. Annualized revenue exceeds $65B with positive adjusted operating income. Morgan Stanley, Goldman Sachs, and JPMorgan are leading the book.",
+    "source": "Web",
+    "date": "2026-09-09",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-sets-fall-ipo-eyeing-185032639.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI to unveil Managed Agents at DevDay 2026 (September 29, San Francisco)",
+    "summary": "OpenAI is preparing Managed Agents as the headline announcement for DevDay 2026 on September 29 in San Francisco. The platform lets developers and enterprises create and deploy AI agents through a unified system with customizable environments, skills, and plugins — mirroring Anthropic's managed agent offerings. OpenAI also plans to use the agents to power interactive advertising, potentially challenging Meta and Google.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://www.testingcatalog.com/openai-prepares-managed-agents-for-devday-2026/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google TPU Ironwood opens for external inference workloads: $12/chip-hour, 50% better than B200",
+    "summary": "Google's TPUv7 Ironwood is the first TPU generation where Google actively competes for external inference workloads — chips can be purchased outright or rented through Google Cloud. Ironwood delivers ~50% better performance per dollar compared to Nvidia's B200/B300 at $12/chip-hour in Iowa ($0.181/M tokens at 100 tokens/s). Software tooling is maturing rapidly given Google's decades of internal usage.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://inferencex.semianalysis.com/blog/tpu-inferencex-full-steam"
+  },
+  {
+    "section": "tips",
+    "headline": "Prompt injection through tool output: the precedent-gap detection signal",
+    "summary": "Prompt injections hidden in tool results evade conventional safeguards because input and output safety screens inspect separate moments of the agent loop. A proposed detection heuristic — the 'precedent gap' — flags when an agent suddenly makes a tool call or uses arguments that have no precedent in its execution history. The paper covers both detection and mitigation patterns.",
+    "foryou": "This is a direct vulnerability in every agentic pipeline you run — auditing your tool-output trust boundaries against the precedent-gap heuristic is worth an afternoon.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://www.armosec.io/blog/untrusted-tool-output-prompt-injection/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Accelerator Agents: Gemini-powered PyTorch → JAX migration and TPU kernel optimization",
+    "summary": "Google released Accelerator Agents, a toolkit using Gemini to help developers migrate PyTorch workloads to JAX and optimize custom kernels for Google Cloud TPUs. MaxCode handles model conversion; MaxKernel handles writing, porting, profiling, and debugging Pallas kernels. Open-sourced on GitHub.",
+    "foryou": "If you're considering moving any inference workload to Ironwood TPUs, MaxCode+MaxKernel dramatically lowers the PyTorch→JAX porting barrier.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://github.com/AI-Hypercomputer/accelerator-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "hip-agent: 200-line Python agent harness — config is env vars, actions are shell commands",
+    "summary": "hip-agent is a minimal agent harness designed for simplicity: configuration is environment variables, actions are shell commands, and subagents are child processes. The core loop is ~200 lines of Python with a Codex API module. Existing protocols and formats handle the rest — no custom abstractions.",
+    "foryou": "Useful reference architecture if you want an agentic harness you can fully audit and own — stripping away framework magic clarifies exactly what an agent loop needs to do.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://jonathanc.net/blog/hip-agent"
+  },
+  {
+    "section": "tips",
+    "headline": "The two MMLU scores: same benchmark name, different measurement procedures",
+    "summary": "Two models evaluated on 'MMLU' with identical provider, model family, metric, and benchmark name can produce materially different scores depending on runners, graders, and dataset splits. The MMLU label identifies a dataset family, not a full measurement procedure. The post walks through concrete examples of where the gap appears and how to interpret scores properly.",
+    "foryou": "Any time you're comparing model benchmark scores to make routing or selection decisions, demand the full measurement procedure — not just the benchmark name.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://zatona.dev/blog/the-two-mmlu-scores"
+  },
+  {
+    "section": "tips",
+    "headline": "The chasm: AI-generated codebases look polished but hide structural failures",
+    "summary": "AI codebases exhibit a pattern the author calls 'the chasm': code appears complete and passes demo tests, but hides deep structural issues that only surface outside controlled conditions — unlike human-authored code where gaps appear predictably. The result is frequent rewrites rather than incremental fixes. Understanding this shape in advance changes how you review and accept AI-generated code.",
+    "foryou": "Plan for a rewrite budget upfront on any AI-generated codebase — treating AI code like human code and patching incrementally consistently leads to worse outcomes.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://jimmyhmiller.com/shape-of-unfinished-ai-codebases"
+  },
+  {
+    "section": "tips",
+    "headline": "Deckard: Chrome extension that auto-detects AI-generated text locally, no server",
+    "summary": "A developer built Deckard, a Chrome extension that runs a locally-executed model in the background to scan and mark AI-generated text on websites automatically. Unlike tools like Pangram that confirm suspicion on demand, Deckard surfaces AI content proactively as you browse. All inference runs on-device — no data sent to a server.",
+    "foryou": "Useful for calibrating your own intuitions about what AI text looks like in the wild — and the local inference architecture is a useful model for privacy-preserving browser tools.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://www.seangoedecke.com/deckard/"
+  },
+  {
+    "section": "tips",
+    "headline": "Lovable Drafts: parallel app versions with isolated chat and preview, no live-app risk",
+    "summary": "Lovable launched Drafts, letting teams create isolated copies of an app with their own chat and live preview. Multiple versions can be explored simultaneously; changes only go live when you explicitly accept a draft and publish. Previously, all edits landed directly in the live project, requiring reverts or remixing to explore alternatives.",
+    "foryou": "A useful mental model for any AI-assisted development workflow: branched, sandboxed experimentation with an explicit merge step is far safer than in-place editing.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://lovable.dev/blog/introducing-drafts"
+  },
+  {
+    "section": "tips",
+    "headline": "Cosine similarity is not a safety property: no notion of truth, authority, or provenance",
+    "summary": "A concise technical argument that cosine similarity — commonly used in RAG retrieval and content moderation — has no built-in concept of truth, authority, or provenance. Using it as a safety or relevance guard is structurally inadequate: two vectors can be similar in embedding space while being semantically or factually opposite.",
+    "foryou": "If any of your safety gates or retrieval-relevance filters rely on cosine similarity alone, they're probably leakier than you think — worth auditing for assumptions.",
+    "source": "TLDR AI",
+    "date": "2026-09-09",
+    "url": "https://aminrj.com/posts/cosine-similarity-is-not-a-safety-property/"
+  }
+]
