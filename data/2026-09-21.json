@@ -1,0 +1,216 @@
+[
+  {
+    "section": "models",
+    "headline": "Claude Code Projects v2: Parallel Tasks, Shared Memory, Cloud Sessions",
+    "summary": "Claude Code Projects let users manage builds by automating task delegation, coordination, and result assembly across cloud sessions. Projects use threads for parallel operations, adapt based on progress, and draw on shared memory for efficient task execution. Now in beta for select subscribers, with wider access coming soon.",
+    "foryou": "If you run complex multi-step agentic workflows, Projects v2 gives you a native orchestration layer — spawn, track, and coordinate parallel cloud sessions without building that scaffolding yourself.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://claude.com/blog/projects-redesigned"
+  },
+  {
+    "section": "models",
+    "headline": "Bonsai 2 27B: Ternary Weights, 5.9 GB Footprint, 262K Context, Multimodal",
+    "summary": "Prism ML's Bonsai 2 27B uses ternary {−1, 0, +1} weights with FP16 group-wise scaling, delivering 1.76 effective bits per weight in a 5.9 GB model footprint. It supports a 262K-token context window and multimodal text-and-image input with stronger reasoning, coding, vision, and agentic capabilities than its predecessor. Runs on Nvidia GPUs via CUDA and Apple devices via MLX through custom low-bit kernels.",
+    "foryou": "A 5.9 GB capable coding and reasoning model that fits on commodity hardware opens real options for on-device agent tasks and edge deployments where spinning up a GPU cloud instance isn't viable.",
+    "specs": [
+      { "label": "Parameters", "value": "27B" },
+      { "label": "Effective bits/weight", "value": "1.76" },
+      { "label": "Footprint", "value": "5.9 GB" },
+      { "label": "Context", "value": "262K tokens" },
+      { "label": "Modalities", "value": "Text + Image" },
+      { "label": "Hardware", "value": "Nvidia CUDA / Apple MLX" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://prismml.com/news/bonsai-2-27b"
+  },
+  {
+    "section": "models",
+    "headline": "Qwen3.8-Omni-Flash: 1M-Token Context with Text, Image, Audio, and Video",
+    "summary": "Qwen3.8-Omni-Flash is a native omnimodal model supporting a 1M-token context window with text, image, audio, and video inputs. Its audio-visual performance is close to Gemini 3.8 Flash while overall audio performance surpasses it. Now available on the Qianwen AI Platform.",
+    "foryou": "A 1M-context multimodal model that beats Gemini Flash on audio is a compelling option for any agentic pipeline that needs to process long mixed-media contexts without paying frontier model prices.",
+    "specs": [
+      { "label": "Context", "value": "1M tokens" },
+      { "label": "Modalities", "value": "Text / Image / Audio / Video" },
+      { "label": "Audio vs Gemini 3.8 Flash", "value": "Exceeds overall" },
+      { "label": "Audio-visual vs Gemini 3.8 Flash", "value": "Close" },
+      { "label": "Availability", "value": "Qianwen AI Platform" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://qwen.ai/blog?id=qwen3.8-omni-flash"
+  },
+  {
+    "section": "models",
+    "headline": "Figure Helix 2.5: 56% Zero-Shot Success Across 30 Unseen Bay Area Homes",
+    "summary": "Figure introduced Helix 2.5, a humanoid control model pretrained on its Index dataset and tested zero-shot across 30 Bay Area homes with no data collected in any of them. The model achieved 56% overall zero-shot task success — up from 9% for models trained from scratch — across bed making (67%), towel folding (62%), and tidying (40%). Helix 2.5 matched its predecessor's success rate using half the task-specific data across 30x more environments.",
+    "foryou": "Helix 2.5 is the clearest evidence yet that large-scale pretraining on embodied human behavior transfers to genuinely novel environments — the architecture decisions here will inform how long-horizon robot agent pipelines are built.",
+    "specs": [
+      { "label": "Zero-shot success rate", "value": "56% (vs 9% baseline)" },
+      { "label": "Bed making", "value": "67% (94/140)" },
+      { "label": "Towel folding", "value": "62% (87/140)" },
+      { "label": "Tidying", "value": "40% (56/140)" },
+      { "label": "Environments tested", "value": "30 Bay Area homes" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.figure.ai/news/helix-2-5-zero-shot-30-home-generalization"
+  },
+  {
+    "section": "models",
+    "headline": "Z.ai's GLM Agent Built GLM-5.3-Flash's Own Production Stack, Tripling Throughput",
+    "summary": "Z.ai used a GLM-5.3-powered Infra Agent to help build GLM-5.3-Flash's production serving stack on 100,000+ Chinese accelerators in under two weeks. Dense feedback loops, kernel fixes, and system-level optimization tripled throughput while keeping humans responsible for objectives and risk. It is one of the most concrete examples of recursive self-improvement applied to real infrastructure at scale.",
+    "foryou": "This is what AI-driven infrastructure engineering looks like in production — a model improving its own serving stack. Study the human oversight structure here if you're designing agentic pipelines for infra tasks.",
+    "specs": [
+      { "label": "Throughput improvement", "value": "3x" },
+      { "label": "Accelerators", "value": "100,000+ Chinese GPUs" },
+      { "label": "Build time", "value": "Under 2 weeks" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://z.ai/blog/glm-built-its-inference-infrastructure"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Achieves 4x Speedup in Biomolecular Modeling, Open-Sources Results",
+    "summary": "Anthropic used Claude to optimize over 30 biomolecular models, achieving a 4x speed increase and creating a low-memory mode for predicting larger protein systems on a single NVIDIA GPU. The improvements are now open-sourced. A protein design competition co-sponsored with Adaptyv Bio offers up to $1 million in Claude credits.",
+    "foryou": "Open-sourcing these biomolecular optimizations means the underlying efficiency techniques — kernel fusion, memory reduction — are available as reference implementations for scientific computing tasks in your own agentic pipelines.",
+    "specs": [
+      { "label": "Models optimized", "value": "30+" },
+      { "label": "Speed improvement", "value": "4x" },
+      { "label": "Hardware", "value": "Single NVIDIA GPU" },
+      { "label": "License", "value": "Open-source" },
+      { "label": "Competition prize", "value": "Up to $1M in Claude credits" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.anthropic.com/research/claude-uplifts-biomolecular-modeling"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic: Claude Now Leads 26% of Its Own AI Research, Oversees Tens of Thousands of Agents",
+    "summary": "Anthropic announced that Claude leads 26% of its AI research work and oversees tens of thousands of active internal agents. The company released new measurements to track how much AI is helping build the next generation of models, the oversight humans maintain over those agents, and the computing resources driving the work. It is one of the most candid public disclosures of AI-driven AI research at scale.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI, Anthropic Staff Blindsided by AI Slowdown Deal; Antitrust Lawsuit Filed",
+    "summary": "Some inside OpenAI and Anthropic were blindsided by an apparent agreement — sparked by Dario Amodei's 'pace the frontier' essay on September 12 — to slow the pace of AI research, with leaders leaving staff confused about strategy. A lawsuit now claims Anthropic, OpenAI, SpaceXAI, and Google made an illegal antitrust-violating agreement to coordinate development slowdowns. Sam Altman subsequently pushed OpenAI's IPO to next year.",
+    "source": "Semafor (also: Web)",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/3fqpaavthe"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI, Anthropic, and Google in Talks to Build Self-Regulatory AI Standards Body",
+    "summary": "Representatives from Google, Anthropic, and OpenAI have been meeting since July about establishing an AI industry standards body, originally proposed by Google DeepMind CEO Demis Hassabis and modeled on the FINRA self-regulatory framework. Discussions cover third-party evaluations before model releases, formal safety checks, and unified risk protocols for cyber, bioweapons, and deceptive behavior. The initiative lacks a formal charter so far; Sam Altman supports an auditing body but says labs will have to build it without government backing.",
+    "source": "Web",
+    "date": "2026-09-21",
+    "url": "https://techxplore.com/news/2026-09-openai-anthropic-google-ai-standards.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Altman, Huang, Cook Among AI Leaders Expected at US-China AI Safety Summit in DC",
+    "summary": "Sam Altman, Jensen Huang, and Tim Cook are expected to attend Xi Jinping's Washington visit next week, where AI safety concerns loom large. There is talk of an adjacent White House AI CEO meeting. The summit could mark a turning point for US-China cooperation on AI, though both sides — and AI leaders like Zuckerberg and Huang — have expressed skepticism about regulation. Chinese officials had called Amodei's 'pace the frontier' essay 'fearmongering.'",
+    "source": "Semafor",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/aqu9qev28o"
+  },
+  {
+    "section": "industry",
+    "headline": "Plugin4Shell: Zero-Click RCE Hits Claude Code, Codex, Copilot, and Gemini CLI — Update Now",
+    "summary": "AIR researchers disclosed Plugin4Shell, a high-severity zero-click remote code execution vulnerability allowing malicious plugin updates to execute attacker-controlled code by breaking SHA pinning checks. The flaw affected Claude Code, OpenAI Codex, GitHub Copilot, and Google Gemini CLI, with plugins inheriting developer-level permissions including access to cloud credentials, SSH keys, and source code. Anthropic patched Claude Code in v2.1.179; OpenAI patched Codex in v0.146.0. Microsoft has not patched Copilot; Google deprecated Gemini CLI without patching.",
+    "source": "Web",
+    "date": "2026-09-21",
+    "url": "https://www.air.security/blog-posts/plugin4shell"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia VP: 'Harness Engineering' Is the Real AI Safety Lever, Not Research Slowdowns",
+    "summary": "Nvidia VP of Agentic AI Adel El Hallak told Semafor that the scaffolding built around an AI model is as important — if not more — for safety than the model itself. Rather than slowing model development, El Hallak argues for investing in harness engineering: the instruction and code layer governing how agents operate in practice. 'If you're training a capable agent, it is important that you don't put a lion in and expect to be able to control it in a horse's pen,' he said.",
+    "source": "Semafor",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/biz4jmmxvr"
+  },
+  {
+    "section": "industry",
+    "headline": "White House Launches Pro-AI Meme Campaign, Casts Effective Altruism as the Enemy",
+    "summary": "The Trump administration is doubling down on its regulatory light touch for AI with a government-wide meme campaign. The Pentagon posted fist-pumping Trump images with 'Americanism, Not Effective Altruism!' and the FCC posted a Western-style graphic reading 'Choose the Frontier — Never Doom.' Amid international reckoning over AI capabilities and dangers, the administration is framing AI safety advocates as the opposition.",
+    "source": "Semafor",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/019bltyc73"
+  },
+  {
+    "section": "industry",
+    "headline": "Kai-Fu Lee: AI Will Create Workplace Panopticons — and America Isn't Built for It",
+    "summary": "In a Semafor interview, Kai-Fu Lee described a future in which employees are near-constantly recorded and AI monitors every task they let slide. Lee, whose 2018 book 'AI Superpowers' was prescient about today's AI landscape, argues China's work culture may be a better fit for such AI-managed accountability than America's individualism. He suggests the US needs to incentivize AI-powered entrepreneurship rather than AI-powered micromanagement.",
+    "source": "Semafor",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/qsjnl6idl6"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Expands Family Agent to Coordinate Household Emails, Files, and Calendars for 6 People",
+    "summary": "Google's family agent runs on its own dedicated cloud computer and Google account, turning the emails, files, and calendars a household shares into daily briefings and updated plans. It can fill out forms and coordinate activities for up to six people, asking permission before acting outside the group. The US experiment is running on a waitlist.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/cc-expanding-to-groups"
+  },
+  {
+    "section": "tips",
+    "headline": "LLM Classification is Feature Engineering: A Framework for Reliable Classifier Pipelines",
+    "summary": "A practical deep-dive arguing that getting LLMs to reliably serve as classifiers is fundamentally a feature engineering problem. As more production pipelines rely on LLM-based classification, the post demonstrates systematic approaches to improving quality and reliability through careful feature construction and prompt design rather than prompt tweaking alone.",
+    "foryou": "If any of your agentic pipelines use LLM-based routing or classification steps, this framework maps directly to how you should instrument and tune those components — treat it as a reliability engineering exercise.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://minimallysufficient.com/posts/llm-classification-is-feature-extraction/"
+  },
+  {
+    "section": "tips",
+    "headline": "Agora: Use Git DAG as Append-Only Shared Memory for Multi-Agent Research",
+    "summary": "Agora is an open-source framework letting autonomous research agents share findings through an append-only Git DAG, where hypotheses, results, verifications, and reports become reproducible commits. This makes multi-agent AI research workflows auditable and reproducible by leveraging version control as the core coordination primitive.",
+    "foryou": "If you're building multi-agent research or synthesis pipelines, Agora's Git-as-memory pattern gives you persistence, auditability, and branching for agent state without needing a custom database or coordination service.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://github.com/yifanzhang-pro/Agora"
+  },
+  {
+    "section": "tips",
+    "headline": "Notion Skills API: Edit Agent Instructions Collaboratively, Deploy via GitHub or Vercel",
+    "summary": "Notion's Skills API lets teams edit agent instructions together and distribute them to other agents through GitHub sync or Vercel's skills installer. This creates a shared, version-controlled library of agent capabilities that teams can collectively maintain and update across their agent deployments.",
+    "foryou": "The Skills API is effectively a human-readable config layer for multi-agent systems — if you're building team-facing agentic tools, evaluate it as a governance mechanism for prompt and instruction management across your agent fleet.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.notion.com/blog/a-skills-library-for-every-agent"
+  },
+  {
+    "section": "tips",
+    "headline": "Goodfire: Models Signal Reward Hacking Internally — Catchable at Scale with Activation Monitors",
+    "summary": "Goodfire research reveals there is a clear internal signal in models that accompanies reward hacking behavior, and that signal can be detected at scale using activation monitors. This has significant implications for automated oversight of agentic systems that use RL-trained components or reward-based evaluation loops.",
+    "foryou": "If you deploy RL-trained agents or use reward-based evaluation in your pipelines, Goodfire's activation monitoring approach gives you a practical early-warning system for misaligned behavior before it compounds across agent turns.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.goodfire.com/research/reward-hacking-activation-monitors"
+  },
+  {
+    "section": "tips",
+    "headline": "Noam Brown (OpenAI) on Agent Swarms, Verifying Alignment Before Recursive Self-Improvement",
+    "summary": "A 72-minute interview with Noam Brown, foundational contributor to OpenAI's reasoning models. Brown covers multi-agent coordination, the explosion in mathematical AI progress, automating AI research itself, and — most importantly — how we will know whether models are actually aligned before recursive self-improvement kicks off. A video version is also available.",
+    "foryou": "Brown's framing of what alignment verification must look like before recursive self-improvement is the most operationally useful take on the alignment problem for engineers building autonomous systems today.",
+    "source": "TLDR AI",
+    "date": "2026-09-21",
+    "url": "https://www.dwarkesh.com/p/noam-brown"
+  },
+  {
+    "section": "tips",
+    "headline": "Pika Reduces AI Video Generation to a Shot-by-Shot List — Less Prompting, More Control",
+    "summary": "Pika launched a streamlined AI video generation workflow that replaces long, detailed prompt paragraphs with a simpler process: input basic details, receive an editable shot-by-shot list. The company positions it as giving creators genuine editorial control while removing the tedious prompting overhead that makes many creatives reject AI video tools.",
+    "foryou": "If you're integrating AI video generation into any content pipeline, Pika's structured shot-list approach is worth evaluating as an intermediate planning step between a human brief and the video model — it's a prompt-to-plan layer that reduces iteration cycles.",
+    "source": "Semafor",
+    "date": "2026-09-21",
+    "url": "https://semafor.com/s/t66an2cnts"
+  }
+]
