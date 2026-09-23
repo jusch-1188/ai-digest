@@ -1,0 +1,198 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Releases Claude Opus 5.5: Beats Fable 5.1 at 60% Lower API Cost",
+    "summary": "Anthropic shipped Claude Opus 5.5 (model ID: claude-opus-5-5) on September 22, outperforming the previous frontier Fable 5.1 across every major agentic coding benchmark while cutting API costs by 40% in typical workloads. The model is priced at $4/$20 per million input/output tokens with a 1M-token context window and batch output up to 300K tokens. Early testers completed a 680,000-line code migration in under a day; a 200,000-line codebase audit that took Opus 5 more than 20 hours finished in under three hours. Adaptive thinking is now always on (depth controlled via the effort parameter), and the older computer_20251124 tool is rejected—review tool-router code before migrating.",
+    "foryou": "Drop-in upgrade for your agentic pipelines: superior benchmark scores, 60% cheaper than Fable 5.1, 1M context—update to claude-opus-5-5 and audit breaking changes around forced tool use before deploying to prod.",
+    "specs": [
+      { "label": "Price (input)", "value": "$4 / 1M tokens" },
+      { "label": "Price (output)", "value": "$20 / 1M tokens" },
+      { "label": "Cache writes", "value": "$5 / 1M tokens" },
+      { "label": "Cache reads", "value": "$0.20 / 1M tokens" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Sync max output", "value": "128K tokens" },
+      { "label": "Batch max output", "value": "300K tokens (beta)" },
+      { "label": "Terminal-Bench 4.0", "value": "66.4%" },
+      { "label": "CursorBench 4.0", "value": "57.8%" },
+      { "label": "FrontierCode v1.1", "value": "54.4%" },
+      { "label": "vs. Fable 5.1", "value": "+10.6 pp Terminal-Bench, 60% cheaper" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-09-23",
+    "url": "https://venturebeat.com/technology/anthropic-releases-claude-opus-5-5-beating-fable-5-1-on-key-agentic-benchmarks-at-60-cheaper-api-price"
+  },
+  {
+    "section": "models",
+    "headline": "xAI Launches Grok 4.7 with Extended RL, New Safeguard Stack",
+    "summary": "Grok 4.7 is xAI's new coding and knowledge-work flagship, built on a larger base model with extended reinforcement learning on multi-hour complex tasks. It is priced competitively at $2/$6 per million input/output tokens with a faster variant at 2x price and 2x speed. Benchmark highlights include a 71.0% DeepSWE v1.1 score and 46.3% on CursorBench 4.0. xAI also shipped an entirely new safeguard stack achieving 3.3% risk allowance on HackerBench v0.3, claiming leading jailbreak resistance. Available via Cursor, Grok Build, the Grok API, and select third-party platforms.",
+    "foryou": "At $2/$6/M with a 71% DeepSWE score and strong safety defaults, Grok 4.7 is worth benchmarking as a cost-effective alternative for agentic coding pipelines where Opus 5.5 pricing is a constraint.",
+    "specs": [
+      { "label": "Price (input)", "value": "$2 / 1M tokens" },
+      { "label": "Price (output)", "value": "$6 / 1M tokens" },
+      { "label": "DeepSWE v1.1", "value": "71.0%" },
+      { "label": "CursorBench 4.0", "value": "46.3%" },
+      { "label": "EEBench", "value": "64.0%" },
+      { "label": "HealthBench Professional", "value": "56.7%" },
+      { "label": "HackerBench v0.3 risk", "value": "3.3%" },
+      { "label": "Safety", "value": "New safeguard stack, #1 jailbreak resistance" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://x.ai/news/grok-4-7"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's Internal Model Solves Navier–Stokes Millennium Prize Problem",
+    "summary": "OpenAI announced that an internal model—trained from August 28—has solved the Navier–Stokes Millennium Prize problem and resolved more than 100 long-standing open mathematical challenges, surprising OpenAI's own mathematicians. To govern responsible dissemination, OpenAI established an independent Advisory Group on Mathematics and AI hosted at the Institute for Advanced Study, with nine prominent mathematicians including Timothy Gowers, Edward Witten, and Martin Hairer. The group is unpaid and free to comment publicly on OpenAI's math work.",
+    "foryou": "The pace of capability jumps is accelerating into fundamental science—worth tracking what this means for future model reasoning quality, particularly for verification and formal proof tasks in agentic coding.",
+    "specs": [
+      { "label": "Achievements", "value": "Navier-Stokes Millennium Prize + 100+ open math problems" },
+      { "label": "Advisory body", "value": "9 mathematicians, hosted at IAS" },
+      { "label": "Training started", "value": "August 28, 2026" },
+      { "label": "Model status", "value": "Internal only, not publicly released" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-09-23",
+    "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai/"
+  },
+  {
+    "section": "models",
+    "headline": "Xiaomi Open-Sources MiMo-V2.6 Pro and Flash: Omnimodal Agents for 3D, Code & Media",
+    "summary": "Xiaomi open-sourced MiMo-V2.6 Pro and Flash, omnimodal models trained with scaled reinforcement learning that can coordinate agents to construct and visually test interactive 3D scenes. The models support Blender asset creation, robotic arm control from camera feeds, frontend and presentation generation, video assembly, and music composition as scores and MIDI. Available via AI Studio, MiMo Code, MiMo Desktop, Xiaomi's API Platform, and OpenRouter. Xiaomi published the technical report, training environments, and RL code alongside the weights.",
+    "foryou": "Open-weight omnimodal agents that natively handle GUI interaction, 3D tooling, and multimodal output pipelines—relevant if you're building agentic workflows that touch visual or media tasks beyond pure code.",
+    "specs": [
+      { "label": "Modalities", "value": "Text, vision, audio, 3D/Blender, MIDI" },
+      { "label": "Agent coordination", "value": "Multi-agent 3D scene construction + testing" },
+      { "label": "License", "value": "Open-source (weights + training code)" },
+      { "label": "Training", "value": "Scaled RL with frozen MoE router, anti-reward-hacking defense" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://www.testingcatalog.com/xiaomi-open-sources-mimo-v2-6-pro-and-flash-models/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Muse AI Agent Surpasses ChatGPT on iOS Downloads, Shopify Partners for Agentic Checkout",
+    "summary": "Meta's Muse AI app hit 730,000+ downloads on the US iOS App Store within days of launch, outpacing ChatGPT, Grok, and Claude. Powered by Meta's Muse Spark AI models, the app runs personal digital assistants for tasks like form-filling and email organization. Shopify has partnered with Meta to integrate agentic checkout directly into Muse. Amazon blocked the app over security risks, and broader privacy concerns persist around the data access model requires.",
+    "foryou": "Muse's adoption curve and Shopify integration signal that consumer-grade agentic apps are entering mainstream distribution—worth understanding the Muse Spark model architecture if consumer-facing agent products are in your roadmap.",
+    "specs": [
+      { "label": "Downloads (6 days)", "value": "730,000+ (US iOS)" },
+      { "label": "Underlying model", "value": "Muse Spark AI" },
+      { "label": "Key integration", "value": "Shopify agentic checkout" },
+      { "label": "Notable block", "value": "Amazon blocked over security risks" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-09-23",
+    "url": "https://www.cnbc.com/2026/09/21/meta-muse-personal-ai-agent-downloads.html"
+  },
+  {
+    "section": "models",
+    "headline": "StepFun Launches Step 5 Preview: 600B-Parameter MoE with 1M Context for Agentic Work",
+    "summary": "StepFun's Step 5 Preview is a sparse Mixture-of-Experts model with 600B total and 27B active parameters per token, featuring a 1M-token context window and vision input designed for long-horizon agent workflows. On DeepSWE v1.1 it scores 67.7, competitive with Kimi K3 Max (67.5), though below GPT-6 Astra Max and Claude Opus 5 Max (both 74+). In one demonstration the model ran a Pokémon Red agent for more than 3,000 turns, accumulating 6M interaction tokens. Pricing details have not been published; available as a hosted preview. TLDR notes the model matches Kimi K3 at ~2.8x lower cost per task.",
+    "foryou": "High-capacity open-preview MoE at potentially 2.8x better cost-per-task than Kimi K3—worth testing as a backbone for long-horizon agentic loops given the 1M context and SWE benchmark placement.",
+    "specs": [
+      { "label": "Total parameters", "value": "600B" },
+      { "label": "Active parameters", "value": "27B per token" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Architecture", "value": "Sparse MoE" },
+      { "label": "DeepSWE v1.1", "value": "67.7" },
+      { "label": "StepCodeBench avg@4", "value": "49.0%" },
+      { "label": "Cost vs Kimi K3", "value": "~2.8x lower per task" },
+      { "label": "Availability", "value": "Hosted preview, no pricing published" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://www.marktechpost.com/2026/09/20/stepfun-launches-step-5-preview/"
+  },
+  {
+    "section": "models",
+    "headline": "Jev2 and SemIf: Specialized Decision Models Cut If-Then Costs by 99%",
+    "summary": "New specialized models—Jev2 and SemIf—rethink the if-then statement as an AI primitive, replacing heavyweight frontier model calls for conditional logic with tiny, purpose-built decision models. In testing they improved accuracy from 47% to over 80% while cutting costs by 99%. The trend points toward 'intelligence compilers' that route specific cognitive primitives to the cheapest capable model rather than defaulting to frontier models for everything.",
+    "foryou": "Direct impact on your pipeline cost model: any conditional-routing, classification, or yes/no gate in an agentic workflow is a candidate to swap to a Jev2/SemIf-class model for 99% cost reduction with higher accuracy.",
+    "specs": [
+      { "label": "Accuracy improvement", "value": "47% → 80%+" },
+      { "label": "Cost reduction", "value": "99% vs frontier models for if-then tasks" },
+      { "label": "Use cases", "value": "Conditional routing, classification, binary decisions" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://tomtunguz.com/ai-comes-for-the-if-statement"
+  },
+  {
+    "section": "industry",
+    "headline": "Alibaba Unveils Zhenwu V900 AI Chip, Targets 20GW of Cloud Data Centers by 2032",
+    "summary": "Alibaba's semiconductor arm T-Head unveiled the Zhenwu V900 AI accelerator, claiming triple the performance of its predecessor, as the company sets an ambitious target of 20+ gigawatts of data center capacity by 2032. The announcement signals Alibaba's push to build a vertically integrated AI infrastructure stack independent of NVIDIA. Shares jumped on the news.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-09-23",
+    "url": "https://technode.com/2026/09/22/alibaba-unveils-zhenwu-v900-ai-chip-as-it-targets-20gw-of-cloud-data-centers-by-2032/"
+  },
+  {
+    "section": "industry",
+    "headline": "Open Model Ecosystem Hits Inflection Point: Chinese Labs Now Lead Open-Weight AI",
+    "summary": "A 17-minute analysis by interconnects.ai documents how the gap between open and closed frontier models has narrowed dramatically over three years. Open-weight models have crossed an economic viability threshold and usage is surging in high-value industries. Chinese labs—particularly Alibaba, Xiaomi, DeepSeek, and Zhipu—are cited as the clear leaders in the open-weight ecosystem, with Western labs increasingly focused on closed API products.",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://www.interconnects.ai/p/the-current-balance-of-power-in-open"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Labs Face Margin Squeeze as Open-Source Closes Gap and Costs Rise",
+    "summary": "An analysis in Strange Loop Canon examines the economics of frontier AI labs: OpenAI and Anthropic hold a 'small model advantage' that is eroding as open-source closes the performance gap and compute costs rise. Labs are diversifying into ads, robotics, and recursive self-improvement (RSI) to sustain margins. The piece argues that even enormous capital and talent investments may only sustain a temporary edge, as regulatory and economic pressures compound.",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://www.strangeloopcanon.com/p/the-business-of-building-god"
+  },
+  {
+    "section": "tips",
+    "headline": "AWS Open-Sources Strands Harness: BYOM Agent Runtime at 26% Lower Token Cost",
+    "summary": "AWS released Strands Harness, an open-source agent framework that comes pre-loaded with web search, file read/write, shell execution, long-term memory, and sub-task delegation—no custom tool-building required. It works with any model (Anthropic, OpenAI, Bedrock, Ollama local models) and any cloud. AWS benchmarks show 26% more token efficiency than comparable frameworks and 77% cost reduction versus Claude Code on certain tasks. Install via pip or npm; runs locally or on any cloud runtime.",
+    "foryou": "This is a drop-in runtime for model-agnostic agentic apps with built-in memory and sub-agent delegation—worth evaluating as a backbone before building custom tool harnesses from scratch.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-09-23",
+    "url": "https://siliconangle.com/2026/09/21/aws-debuts-strands-harness-an-open-source-ai-agent-that-can-be-deployed-in-any-environment/"
+  },
+  {
+    "section": "tips",
+    "headline": "Devin Cloud Now Accessible from Your Terminal with /handoff and SSH VM Access",
+    "summary": "Cognition updated Devin Cloud to support full terminal integration: use `/handoff` to transfer any local task to Devin's cloud VM while monitoring progress from your CLI. Sessions persist across terminal, browser, and desktop with resume via URL. Full SSH access to the Devin VM lets you edit source directly, forward ports, and transfer files via scp. Cognition is offering free SWE-2 sessions until October 8. Install: `curl -fsSL https://cli.devin.ai/install.sh | bash`.",
+    "foryou": "The /handoff command lets you kick off long-running agentic coding tasks from the CLI and hand them back when ready—useful for integrating Devin into local dev workflows without context-switching to the browser.",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://devin.ai/blog/devin-cloud-in-your-terminal"
+  },
+  {
+    "section": "tips",
+    "headline": "Swarm Scaling Research: Parallel Agents Trade Raw Performance for Speed",
+    "summary": "A 13-minute analysis by Toby Ord quantifies the swarm-scaling tradeoff: increasing agent count 10x yields meaningfully less performance gain than giving a single agent 10x more tokens, and the shortfall compounds at larger scales. However, swarms can complete the same task in a fraction of the wall-clock time through parallelism—making them worthwhile specifically when speed carries a large premium over raw quality. The piece suggests swarms are an architectural choice, not a default scaling strategy.",
+    "foryou": "If you're designing multi-agent pipelines, this gives you a principled framework for when to fan out agents (latency-critical tasks) versus when to invest in deeper single-agent reasoning (quality-critical tasks).",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://www.tobyord.com/writing/swarm-scaling"
+  },
+  {
+    "section": "tips",
+    "headline": "The Great Unbundling: Agent Economics Are Pushing Toward Capability-Level Routing",
+    "summary": "As agentic applications mature, there is a structural shift away from routing every task to the most capable (and expensive) frontier model. Instead, judgment, ranking, search, and verification are increasingly handled by cheaper specialized systems. Frontier models may handle fewer but harder tasks, while AI applications become 'intelligence compilers' that recombine capability tiers efficiently. This mirrors historical software unbundling patterns where OS monopolies gave way to specialized services.",
+    "foryou": "This framing directly informs how you architect multi-model pipelines: identify which cognitive steps in your agent truly need frontier reasoning and route the rest—verification, retrieval, decision gates—to specialized or cheaper models.",
+    "source": "TLDR AI",
+    "date": "2026-09-23"
+  },
+  {
+    "section": "tips",
+    "headline": "Qwen's RecreationWorld: Five-Platform Framework for Training GUI-Use Agents",
+    "summary": "Alibaba's Qwen team open-sourced RecreationWorld, a framework for training hybrid computer-use agents across five platforms. The system trains agents to explore GUIs, implement software with coding tools, and visually verify their own work—pushing toward agents that close the loop between writing code and confirming it works in a visual environment. The repo includes environments, training scripts, and evaluation tooling.",
+    "foryou": "Relevant if you're building or fine-tuning computer-use agents: RecreationWorld provides structured training environments that go beyond text-only SWE benchmarks to include visual verification loops.",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://github.com/QwenLM/RecreationWorld"
+  },
+  {
+    "section": "tips",
+    "headline": "Kev: Open-Source Local Decision Models for Calibrated Probability Outputs",
+    "summary": "Kev is a new open-source family of small Jev-like decision models that run locally and return calibrated probabilities for yes/no, multiple-choice, and rating questions. Built for production inference on-device, Kev is designed to replace expensive frontier model calls for structured decision tasks at dramatically lower cost and latency. The repo includes model weights, inference code, and calibration tooling.",
+    "foryou": "Direct replacement for frontier-model calls on structured classification and routing tasks in your pipelines—small, local, calibrated, and open-source means zero API cost for decision gates.",
+    "source": "TLDR AI",
+    "date": "2026-09-23",
+    "url": "https://github.com/jaredpalmer/kev"
+  }
+]
