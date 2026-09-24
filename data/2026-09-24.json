@@ -1,0 +1,243 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI releases GPT-6 Sol and Luna: 50%+ cheaper than Astra",
+    "summary": "OpenAI launched GPT-6 Sol and Luna as affordable counterparts to GPT-6 Astra. Sol targets complex developer work (coding, debugging, analysis) at $2/$10 per 1M tokens, while Luna handles summarization and extraction at $0.10/$0.50. Sol scores 68.8% on DeepSWE 1.1 and 33.2% on AutomationBench 1.0.6 at $0.27/task, with roughly half the factual error rate of its predecessor GPT-5.6 Sol.",
+    "foryou": "Sol at $2/$10 per 1M tokens + 90% cache discount makes it the obvious workhorse for agentic pipelines that need Astra-class reasoning without Astra-class bills — swap it in for any non-interactive coding or analysis agent.",
+    "specs": [
+      {
+        "label": "GPT-6 Sol input",
+        "value": "$2 / 1M tokens"
+      },
+      {
+        "label": "GPT-6 Sol output",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "GPT-6 Luna input",
+        "value": "$0.10 / 1M tokens"
+      },
+      {
+        "label": "GPT-6 Luna output",
+        "value": "$0.50 / 1M tokens"
+      },
+      {
+        "label": "DeepSWE 1.1 (Sol)",
+        "value": "68.8%"
+      },
+      {
+        "label": "AutomationBench (Sol)",
+        "value": "33.2% @ $0.27/task"
+      },
+      {
+        "label": "Cache discount",
+        "value": "90% off cached input tokens"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic releases Claude Opus 5.5: Fable 5.1 performance at 60% lower cost",
+    "summary": "Anthropic released Claude Opus 5.5, which outperforms Claude Fable 5.1 on key agentic coding benchmarks (Terminal-Bench 4.0: 66.4% vs 55.8%; CursorBench: 57.8% vs 51.8%) while costing 60% less than its predecessor Opus 5. Pricing is $4/$20 per 1M tokens with a 1M-token context window. The model also passed Anthropic's most rigorous automated behavioral audit to date.",
+    "foryou": "Opus 5.5 at $4/$20 per 1M tokens with 1M context is the new default for long-horizon agentic tasks — the cache-read pricing drop (60% reduction) makes multi-turn agent loops substantially cheaper to run in production.",
+    "specs": [
+      {
+        "label": "Input",
+        "value": "$4 / 1M tokens"
+      },
+      {
+        "label": "Output",
+        "value": "$20 / 1M tokens"
+      },
+      {
+        "label": "Fast mode",
+        "value": "$8/$40 per 1M tokens"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "128K tokens (sync), 300K (batch)"
+      },
+      {
+        "label": "Terminal-Bench 4.0",
+        "value": "66.4% (Fable 5.1: 55.8%)"
+      },
+      {
+        "label": "CursorBench 4.0",
+        "value": "57.8% (Fable 5.1: 51.8%)"
+      },
+      {
+        "label": "FrontierCode v1.1",
+        "value": "54.4% (Fable 5.1: 50.3%)"
+      },
+      {
+        "label": "GDPval-AA v2.1 Elo",
+        "value": "1846 (Fable 5.1: 1735)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://www.anthropic.com/claude-opus-5-5"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI upgrades GPT-6 prompt caching: 90% discount on cached tokens, new monitoring tools",
+    "summary": "OpenAI improved prompt caching for GPT-6 with higher default cache-hit rates, a 90% discount on cached input-token reads, and discounts for shared prefixes reused within 30 minutes. New developer tools let you monitor and diagnose cache performance. GitHub Copilot reported a 50%+ reduction in fresh token processing as a result.",
+    "foryou": "For agents with large, stable system prompts or long tool-call histories, this is a free latency and cost win — wire in cache monitoring to track hit rates and tune prefix structure to maximise the 30-minute shared-prefix window.",
+    "specs": [
+      {
+        "label": "Cache discount",
+        "value": "90% off cached input tokens"
+      },
+      {
+        "label": "Shared prefix window",
+        "value": "30 minutes"
+      },
+      {
+        "label": "New tools",
+        "value": "Cache monitoring & diagnostics"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://openai.com/index/better-prompt-caching-for-gpt-6/"
+  },
+  {
+    "section": "models",
+    "headline": "SWE-Bench Pro v2 raises the bar: top models score only ~23%",
+    "summary": "Scale AI released SWE-Bench Pro v2 with 642 tasks from 11 repositories, correcting errors in prior tasks and optimising evaluation processes. Performance drops sharply: OpenAI GPT-5 and Claude Opus 4.1 score only around 23% on the public set. Top models show consistent cross-language performance, while smaller models struggle with complex multi-file scenarios.",
+    "foryou": "A 23% ceiling on SWE-Bench Pro v2 is a useful sobering signal — your agentic code pipeline should plan for human review on complex multi-file tasks; don't over-rely on headline SWE-Bench Verified numbers when evaluating real-world code agents.",
+    "specs": [
+      {
+        "label": "Tasks",
+        "value": "642 across 11 repos"
+      },
+      {
+        "label": "Top model score",
+        "value": "~23% (GPT-5 / Claude Opus 4.1)"
+      },
+      {
+        "label": "Improvement over SWE-Bench Verified",
+        "value": "Harder, more realistic"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://labs.scale.com/leaderboard/swe_bench_pro_public_v2"
+  },
+  {
+    "section": "industry",
+    "headline": "Altman and Amodei address UN Security Council on AI safety",
+    "summary": "OpenAI CEO Sam Altman and Anthropic CEO Dario Amodei briefed the UN Security Council on AI safety and regulation, with Altman calling for 'internationalising' AI standards. The appearance came as Trump publicly rejected international AI oversight as a 'globalist scheme.' OpenAI's head of national security policy said she was 'cautiously optimistic' about a US-China AI safety notification mechanism.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-09-24",
+    "url": "https://fortune.com/2026/09/23/trump-un-ai-globalist-scheme-altman-amodei-security-council/"
+  },
+  {
+    "section": "industry",
+    "headline": "UN agencies move to hedge reliance on US tech after Anthropic model cutoff 'wake-up call'",
+    "summary": "UN agencies are prioritising diversification of their cloud and AI vendors away from sole dependence on American providers, the ITU's CIO told Semafor. The 2025 US sanctions on the ICC and Anthropic's Mythos model cutoff earlier this year were cited as a 'wake-up call.' Some UN groups are exploring shared computing infrastructure to retain control of sensitive data. The concern: Washington has shown willingness to restrict chip and model access as foreign policy leverage.",
+    "source": "Semafor",
+    "date": "2026-09-24",
+    "url": "https://semafor.com/s/j9x3vwxyqr"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump-Xi UNGA talks on AI: US proposes crisis hotline, little breakthrough expected",
+    "summary": "Chinese President Xi Jinping visited Washington for high-level talks including AI policy, with the US proposing an AI crisis hotline and regular tech dialogues. Treasury Secretary Bessent discussed a US-China 'notification mechanism' for AI incidents with Chinese Vice Premier He Lifeng. Analysts were cautious: the two countries view AI risks very differently, with China focused on social stability and the US on runaway frontier risks.",
+    "source": "Semafor",
+    "date": "2026-09-24",
+    "url": "https://semafor.com/s/l0xo46b1am"
+  },
+  {
+    "section": "industry",
+    "headline": "Scott Bessent emerges as frontrunner for Trump's US AI czar role",
+    "summary": "Treasury Secretary Scott Bessent is the leading candidate to become Trump's new AI policy czar, Semafor scooped. Bessent has been central to AI policy in the Trump administration and has already held early US-China AI dialogues. The role would be concurrent with his Cabinet position — a precedent set by Interior Secretary Burgum's dual 'energy czar' role. Trump's decision is not final and he may still pick a dark-horse candidate.",
+    "source": "Semafor",
+    "date": "2026-09-24",
+    "url": "https://semafor.com/s/jdnfsd5w7g"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon bans Meta's Muse AI agent; Shopify welcomes it — battle lines form in e-commerce",
+    "summary": "Amazon blocked Meta's Muse AI shopping assistant while Shopify integrated it, revealing a split between platforms that monetise eyeballs (Amazon) and those that earn from merchants (Shopify). Airlines and loyalty-heavy retailers remain an open question. The dynamic foreshadows a broader war over which platforms will let AI agents transact on users' behalf.",
+    "source": "Semafor",
+    "date": "2026-09-24",
+    "url": "https://semafor.com/s/wexww2ozoq"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta admits Muse's resemblance to open-source OpenClaw is not a coincidence",
+    "summary": "Meta acknowledged that its Muse AI assistant drew heavy inspiration from the open-source project OpenClaw, despite being built from scratch. The admission raises questions about the line between inspiration and derivation in AI product development, especially for open-source community relations.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/"
+  },
+  {
+    "section": "industry",
+    "headline": "China's CXMT says its DRAM process now matches Samsung and Micron",
+    "summary": "ChangXin Memory Technologies, China's largest DRAM maker, announced its fifth-generation DRAM platform has entered mass production and claims process parity with the industry's most advanced nodes. The platform yields 50% more dies per wafer, with two products already shipping: 24-gigabit LPDDR5X chips holding 50% more data than CXMT's prior generation. The claim, if accurate, marks a significant milestone in China's chip self-sufficiency push.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://thenextweb.com/news/cxmt-dram-fifth-generation-mass-production-memory-shortage"
+  },
+  {
+    "section": "industry",
+    "headline": "Biological Computing Co partners with AWS to commercialise neuron-derived AI video model",
+    "summary": "The Biological Computing Co., a startup that uses living neurons to improve AI models, has partnered with AWS to offer its neuron-derived video model to paying customers. The neurons stay in the lab and are used only during training discovery; the optimised model then runs as a standard software layer on GPUs. No biological hardware or special infrastructure is required from customers.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://thenextweb.com/news/biological-computing-co-aws-neuron-derived-ai-video-model"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity trains Computer model by learning from both successes and user-corrected failures",
+    "summary": "Perplexity published its training approach for the Computer model, combining rejection sampling fine-tuning with hint-guided self-distillation. The key insight: the model learns not only from successful sessions but also from user-corrected failures, turning every correction into a training signal. This yields a model that improves continuously from real-world tool use rather than only from synthetic tasks.",
+    "foryou": "If you're training or fine-tuning an agentic model, the hint-guided self-distillation pattern is directly applicable — capture user corrections in production logs and use them as negative-to-positive training pairs rather than discarding failed sessions.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://www.perplexity.ai/hub/blog/learning-from-real-world-experience"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's RRSI prevents self-improving AI agents from gaming their own benchmarks",
+    "summary": "Google published RRSI (Regularized Recursive Self-Improvement), a method that adds regularization when AI agent harnesses recursively improve themselves. Without it, agents overfit the benchmarks they optimise against and degrade on new tasks. Across eight benchmarks, RRSI improved out-of-distribution performance while using fewer policy tokens. The paper is the most principled treatment yet of the self-improvement overfitting problem.",
+    "foryou": "If you're running any self-optimising agentic harness — prompt evolution, automatic tool-selection tuning, or any loop where an agent improves its own scaffolding — RRSI's regularization approach is worth implementing to prevent silent benchmark overfitting.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.24972"
+  },
+  {
+    "section": "tips",
+    "headline": "vLLM introduces hardware-agnostic model layers: 96.6% native GPU efficiency across accelerators",
+    "summary": "vLLM now supports hardware-agnostic model layer definitions, achieving up to 96.6% of native NVIDIA H100 efficiency while remaining torch-compilable and extensible to older or niche accelerators. The change means you can write a model definition once and run it across diverse hardware without per-accelerator rewrites, reducing ops complexity as GPU generations shift.",
+    "foryou": "For teams serving open models on mixed or evolving GPU fleets, upgrading to this vLLM version removes a recurring migration tax — define model layers once, redeploy without code changes when you switch accelerators.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://pytorch.org/blog/hardware-agnostic-models-in-vllm/"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic breaks down what a task actually costs on Opus 5.5",
+    "summary": "Anthropic published a detailed cost breakdown for running agentic tasks on Opus 5.5, covering the impact of session length, number of turns, cache utilisation, and model selection on total cost per task. The analysis shows cache reads are the dominant lever: extended use of cached prefixes can drop per-task costs dramatically, especially for long-running multi-turn pipelines. Batch API pricing (300K output tokens) provides another tier of savings for non-interactive workloads.",
+    "foryou": "Read this before pricing your agentic product — the per-task cost breakdown will reshape how you structure context windows, session boundaries, and batch vs real-time routing decisions.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://claude.com/blog/what-a-task-costs-on-opus-5-5"
+  },
+  {
+    "section": "tips",
+    "headline": "New scheduling techniques keep large MoE model training within fixed GPU memory",
+    "summary": "A new paper (arXiv 2609.14306) presents scheduling techniques that bound four key memory bottlenecks in large-scale Mixture-of-Experts training: expert dispatch, vocabulary projection, checkpointing, and optimizer state. The methods keep training within a fixed GPU memory budget without approximating or degrading the computation, enabling larger MoE models on existing hardware.",
+    "foryou": "If you're training or fine-tuning large MoE models (DeepSeek, Switch Transformer variants, etc.), these scheduling techniques could let you push to larger scales without buying more GPUs — worth reading before your next training run.",
+    "source": "TLDR AI",
+    "date": "2026-09-24",
+    "url": "https://arxiv.org/abs/2609.14306"
+  }
+]
