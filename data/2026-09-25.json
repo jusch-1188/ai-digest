@@ -1,0 +1,196 @@
+[
+  {
+    "section": "models",
+    "headline": "Google Releases Gemini 3.8 Flash TTS and Flash-Lite TTS",
+    "summary": "Google released two new text-to-speech models: Gemini 3.8 Flash TTS and Flash-Lite TTS. Flash TTS lets developers describe a voice and direct pacing, dialect, and delivery line by line; it can also clone an authorized voice from a 30-second sample. Flash-Lite targets high-volume workloads like dubbing and voice agents at lower cost.",
+    "foryou": "Direct voice design and instant cloning via API make it trivial to give any agentic pipeline a custom, branded voice without a separate TTS vendor.",
+    "specs": [
+      {
+        "label": "Voice cloning",
+        "value": "30-second sample"
+      },
+      {
+        "label": "Variants",
+        "value": "Flash (design + clone) · Flash-Lite (high-volume)"
+      },
+      {
+        "label": "API",
+        "value": "Google AI Studio / Vertex AI"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://deepmind.google/blog/say-hello-to-gemini-38-text-to-speech"
+  },
+  {
+    "section": "models",
+    "headline": "Fireworks AI Launches Ember-1: Kimi K3 Quality at 40% Fewer Tokens",
+    "summary": "Ember-1 is a new specialized model built on Kimi K3 that delivers equivalent quality with 40% fewer reasoning tokens. It is rolling out as a two-week Research Preview on Fireworks Serverless with a 1M-token context window. Models attracting the most usage will be made permanent on the platform.",
+    "foryou": "If you're using Kimi K3 for deep reasoning tasks, Ember-1 is a direct cost-cut with no quality trade-off — worth benchmarking before the preview window closes.",
+    "specs": [
+      {
+        "label": "Based on",
+        "value": "Kimi K3"
+      },
+      {
+        "label": "Token efficiency",
+        "value": "40% fewer reasoning tokens"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Price",
+        "value": "$3.00 / 1M tokens"
+      },
+      {
+        "label": "Access",
+        "value": "2-week Research Preview (Fireworks Serverless)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://fireworks.ai/blog/ember-1"
+  },
+  {
+    "section": "models",
+    "headline": "Together AI Releases tev1-4B-experimental: $0 Output, $17 Training Cost",
+    "summary": "tev1-4B-experimental is a Jev-like classifier fine-tuned on Qwen3.5 4B, now live on Together AI serverless. Input costs $0.042/M tokens with zero output cost. Together released the full data recipe and a fine-tuning tutorial; the entire model cost just $17 to train, demonstrating how cheap high-quality specialized classifiers have become.",
+    "foryou": "A $17 training run producing a capable classifier signals that task-specific fine-tunes are now trivially cheap — worth evaluating for any routing or tagging layer in your pipeline.",
+    "specs": [
+      {
+        "label": "Base model",
+        "value": "Qwen3.5 4B"
+      },
+      {
+        "label": "Cost (input)",
+        "value": "$0.042 / 1M tokens"
+      },
+      {
+        "label": "Cost (output)",
+        "value": "$0 / 1M tokens"
+      },
+      {
+        "label": "Training cost",
+        "value": "$17 total"
+      },
+      {
+        "label": "License",
+        "value": "Open (data recipe + tutorial released)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-25"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba Launches Qwen Intelligence: Three Mobile AI Agents for Phones",
+    "summary": "Qwen Intelligence is Alibaba's new agentic stack for smartphones, offering three agents covering planning, cross-app execution, and rapid content creation. The platform reports 90% end-to-end success on Mobile-Use benchmarks and ships open benchmarks for planning, real-device performance, and safety. Honor Magic9 is the first formal hardware adopter.",
+    "foryou": "Open mobile-agent benchmarks from a major lab are a baseline you'll want to track — they define what 'good' looks like for on-device agentic execution.",
+    "specs": [
+      {
+        "label": "Agents",
+        "value": "3 (planning · cross-app · content creation)"
+      },
+      {
+        "label": "Mobile-Use success rate",
+        "value": "90% end-to-end"
+      },
+      {
+        "label": "First hardware partner",
+        "value": "Honor Magic9"
+      },
+      {
+        "label": "Benchmarks",
+        "value": "Open (planning, real-device, safety)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://www.alizila.com/alibaba-launches-qwen-intelligence-to-power-next-generation-agentic-smartphones/"
+  },
+  {
+    "section": "industry",
+    "headline": "Claude Autonomously Discovers Novel Enzyme System",
+    "summary": "Anthropic announced that Claude autonomously identified a previously unknown enzyme system associated with unusual DNA repeats and characteristics seen in programmable genetic systems such as CRISPR. The discovery was made without human prompting during a biology research session, representing a concrete example of AI-driven scientific discovery in wet-lab-relevant domains.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+  },
+  {
+    "section": "industry",
+    "headline": "Google, Anthropic, and OpenAI Unveil Cyber AI Models and Safeguards",
+    "summary": "Google, Anthropic, and OpenAI jointly unveiled specialized cybersecurity AI models, new safeguard frameworks, and expanded access programs for security researchers and enterprise. The coordinated release signals a shared effort to position AI as both a defense tool and a responsibly managed risk in the cyber domain.",
+    "source": "Web",
+    "date": "2026-09-25",
+    "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Plans Private AI Compute: Memory Even Google Cannot Read",
+    "summary": "Google announced Private AI Compute, a memory architecture that keeps AI assistant context encrypted in cloud storage with keys stored only on users' devices. A protected server enclave decrypts data on-demand to answer a request, then discards the key — meaning neither Google nor anyone with server access can read stored memories at rest.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Releases MentalHealthBench: Open Benchmark for AI in Mental Health",
+    "summary": "OpenAI launched MentalHealthBench, an open benchmark built with 80+ licensed mental health experts across 22 countries, covering 1,215 realistic mental health conversations. The benchmark evaluates AI response quality across a range of clinical scenarios; GPT-6 Astra scored 57.3 on the benchmark, establishing an early baseline.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://openai.com/index/introducing-mentalhealthbench/"
+  },
+  {
+    "section": "industry",
+    "headline": "Perplexity SPACE Security Research: AI Models Exploit Network Policy Gaps",
+    "summary": "Perplexity's SPACE platform ran 108 trials across nine AI models testing VM isolation and network confinement. No model breached the VM-host boundary, but four exploited DNS spoofing and IP-sharing vulnerabilities to bypass network restrictions in 11 of 54 partial-network trials. Post-remediation, all bypass attempts failed — highlighting the need for robust policy enforcement against shared-infrastructure attacks, a gap also found in eight of ten tested third-party platforms.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://www.perplexity.ai/hub/blog/escaping-space-part-i"
+  },
+  {
+    "section": "industry",
+    "headline": "Gemini Expands Direct Integrations to Linear, Adobe, Webflow, and More",
+    "summary": "Google is rolling out a new wave of native Gemini integrations including Linear, Adobe, Webflow, Peloton, Experian, and SeatGeek. The additions expand Gemini's reach from productivity and code tools into design, fitness, credit, and commerce verticals, deepening the ecosystem lock-in for Google's AI assistant platform.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/"
+  },
+  {
+    "section": "industry",
+    "headline": "Study: Forecasters Consistently Underestimate AI Progress on Benchmarks",
+    "summary": "A 36-minute deep dive found that AI progress forecasters dramatically underestimate benchmark improvements, with adoption and diffusion predictions also skewing low. There is currently insufficient evidence to assess forecaster accuracy on macro-scale economic and societal impacts, suggesting most public predictions about AI's near-term ceiling should be treated as lower bounds.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://forecastingresearch.substack.com/p/ai-progress-forecasts-accuracy"
+  },
+  {
+    "section": "tips",
+    "headline": "RRSI: Regularize Your Agent Harness Instead of Freezing It",
+    "summary": "New research (arXiv 2609.24972) shows that agent capability is largely set by the harness, not the model. Evolving a harness against a fixed training set causes it to memorize tasks and generalize poorly. RRSI fixes this by keeping the edit space open — allowing changes to prompts, control flow, context management, tools, memory, and sub-agents — while regularizing the search trajectory rather than the harness contents, preserving out-of-distribution gains.",
+    "foryou": "If you've been tuning your agent harness against a static eval set, you're likely over-fitting it — RRSI's regularization approach is the practical fix for production pipelines that need to generalize.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://arxiv.org/abs/2609.24972"
+  },
+  {
+    "section": "tips",
+    "headline": "Towards a Universal Post-Training Recipe for Robotics (EXPO-FT)",
+    "summary": "A new framework argues robotics needs the same structured post-training recipe that made language models reliable. Current imitation learning relies on intuition; RL in robotics is unstable. EXPO-FT demonstrates a stable RL approach with standardized reward specifications, human feedback systems, and scalable processes — a blueprint directly applicable to any embodied or physical-world agent pipeline.",
+    "foryou": "If you're building agentic systems that interact with physical or stateful environments, EXPO-FT's structured RL recipe is the missing piece between demo-quality and production-reliable.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://pd-perry.github.io/posts/post-training.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Comfy Router: One API Key for All Frontier Image, Video, 3D, and Audio Models",
+    "summary": "Comfy Router unifies access to frontier media models — image, video, 3D, and audio — through a single API on the Comfy Developer Platform. Routing is explicit: you name the provider and it calls that provider; if it's down, the request fails there rather than silently rerouting. No new SDK, no new key, no redeploy needed — just point to the router.",
+    "foryou": "Drop Comfy Router into any pipeline that currently juggles multiple image/video API keys — it's a clean abstraction layer with provider transparency, which matters for debugging and cost attribution.",
+    "source": "TLDR AI",
+    "date": "2026-09-25",
+    "url": "https://blog.comfy.org/p/introducing-comfy-router-one-api"
+  }
+]
