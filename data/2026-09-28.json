@@ -1,0 +1,217 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Prepares $500/Month ChatGPT Pro Max Tier",
+    "summary": "OpenAI is preparing a new ChatGPT Pro Max subscription priced at $500/month, with capabilities likely spanning speed boosts, expanded usage allowances, and longer agentic Work sessions. The leak surfaces ahead of OpenAI's DevDay on September 29, where new APIs, developer tooling, and subscription tiers are all expected to be announced.",
+    "foryou": "If Pro Max delivers real speed and extended Work session limits, it could meaningfully change what's viable in long-running production pipelines — worth tracking before locking in your per-agent cost model.",
+    "specs": [
+      {
+        "label": "Price",
+        "value": "$500/month"
+      },
+      {
+        "label": "DevDay date",
+        "value": "September 29, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://www.testingcatalog.com/openai-prepares-new-500-month-pro-max-plan-for-chatgpt/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 3.8 Live with Live Avatar Now Generally Available",
+    "summary": "Google has made Gemini 3.8 Live with Live Avatar generally available, enabling real-time conversational AI with synchronized animated avatar responses in 97 languages. Designed for enterprise agents and interactive interfaces, the model is accessible via Google Cloud and the Gemini API, and competes directly with Meta's Muse Realtime Avatar on the embodied-AI front.",
+    "foryou": "For voice/video agent interfaces, Gemini 3.8 Live Avatar is now a GA embodiment layer you can drop into an API call — no need to build your own expression-sync pipeline before shipping.",
+    "specs": [
+      {
+        "label": "Languages",
+        "value": "97"
+      },
+      {
+        "label": "Response latency",
+        "value": "Subsecond"
+      },
+      {
+        "label": "Availability",
+        "value": "Generally Available"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-with-live-avatar/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Releases Muse Realtime Avatar with 870ms End-to-End Latency",
+    "summary": "Meta's Superintelligence Labs introduced Muse Realtime Avatar, an embodiment model that synchronizes voice and animated avatar expressions in live conversations with ~870ms latency. It pairs with Muse Realtime Voice for tight audio-video alignment and outperforms competitors on visual quality and real-time responsiveness. The system is powered by Meta's optimized AI inference stack.",
+    "foryou": "870ms end-to-end for a synchronized voice+avatar loop is production-viable; if you're building avatar-based agent UX, this is now the performance bar to beat or the inference stack to integrate.",
+    "specs": [
+      {
+        "label": "Latency",
+        "value": "~870ms"
+      },
+      {
+        "label": "Features",
+        "value": "Real-time avatar + voice sync"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://research.meta.ai/blog/bringing-your-muse-to-life"
+  },
+  {
+    "section": "models",
+    "headline": "CLM-8B: Stanford + NVIDIA's Open Contrastive Model Runs Agents 9x Faster",
+    "summary": "Stanford and NVIDIA released CLM-8B, an open-source System One model trained with a contrastive learning objective that caches reusable agent actions. It matches Jev on computer-use, gaming, and tool-calling benchmarks while achieving up to 9x lower latency. The model is pretrained on 60M Nemotron Q&A pairs, mid-trained on 30M synthetic hard negatives, and post-trained on 1M agentic trajectories, setting a new SOTA on agentic coding benchmarks.",
+    "foryou": "9x lower latency at parity accuracy means CLM-8B is a natural first-tier router in a cascade — handle the easy cached actions here and only escalate to an expensive frontier model when the action is genuinely novel.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "8B"
+      },
+      {
+        "label": "Latency vs Jev",
+        "value": "Up to 9x lower"
+      },
+      {
+        "label": "Training data",
+        "value": "60M Nemotron Q&A + 30M hard negatives + 1M agentic trajectories"
+      },
+      {
+        "label": "License",
+        "value": "Open-source"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://venturebeat.com/technology/stanford-and-nvidias-open-clm-8b-caches-reusable-agent-actions-and-runs-up-to-9x-faster-than-jev-in-tests"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Hits $1B Annual Revenue Run Rate, Eyes $7.5B Raise",
+    "summary": "DeepSeek has doubled its annualized revenue run rate to $1 billion after raising API prices by 2.3 to 4.5x across its models. Developer demand held up despite the increases, according to The Information. The company is now reportedly seeking to raise $7.5B at a $75B valuation — a significant step toward commercializing its open-weight model strategy.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://thenextweb.com/news/deepseek-revenue-run-rate-1bn"
+  },
+  {
+    "section": "industry",
+    "headline": "White House Stands Alone Against AI Safety Rules at UNGA",
+    "summary": "The Trump administration rejected international AI governance frameworks at the UN General Assembly and in meetings with Xi Jinping in Washington, insisting US companies must accelerate without government guardrails. China's Xi called for responsible AI and a global governance framework; most other nations aligned closer to that position. Without US buy-in, any international agreement risks remaining nonbinding, and frontier labs are left to negotiate their own competitive testing standards.",
+    "source": "Semafor",
+    "date": "2026-09-28",
+    "url": "https://www.semafor.com/article/09/25/2026/white-house-is-isolated-in-brushing-off-ai-safety"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Muse Shares Up 25% as 'Kidult' Charm Keychain Launches",
+    "summary": "Meta's Muse agent has driven its stock up more than 25% since launch, and this week Meta unveiled a Tamagotchi-style Muse Charm keychain alongside $1,299 VR glasses. Analysts see Muse as the catalyst for agentic AI crossing from enterprise into mainstream consumer adoption. The Charm's cutesy mascot targets the 'kidult' aesthetic trend, though analysts note consumer gadget fads risk fizzling — the metaverse headset being the cautionary tale.",
+    "source": "Semafor",
+    "date": "2026-09-28",
+    "url": "https://www.semafor.com/article/09/25/2026/metas-muse-taps-into-kidult-market"
+  },
+  {
+    "section": "industry",
+    "headline": "Oracle Invokes Force Majeure on Stargate New Mexico Data Center",
+    "summary": "Oracle sent a force majeure notice to delay lease payments on its New Mexico Stargate AI data center after state officials denied permits for a critical 17-mile gas pipeline, pushing the project back at least six months. The incident exposes the fragility of the milestone-linked financing structures powering the AI infrastructure buildout. Aon's CEO of risk capital warned that financial exposure from these cascading delays is 'going to be dramatically higher than anyone is currently thinking about.'",
+    "source": "Semafor (also: TechCrunch)",
+    "date": "2026-09-28",
+    "url": "https://techcrunch.com/2026/09/24/oracle-sends-force-majeure-notice-on-its-new-mexico-stargate-data-center/"
+  },
+  {
+    "section": "industry",
+    "headline": "Hollywood Scouts Film Schools for AI-Native Graduates",
+    "summary": "Studios are hiring directly from AI-fluent film programs rather than retraining existing teams. Runway launched the first such course at NYU's Martin Scorsese Virtual Production Center in 2024 and now has partnerships at USC, RISD, MIT, Harvard, and universities across Europe and Latin America. Google also runs a Flow AI filmmaking residency. While AI fluency isn't yet a formal prerequisite, alumni from these programs are betting it will be.",
+    "source": "Semafor",
+    "date": "2026-09-28",
+    "url": "https://www.semafor.com/article/09/25/2026/hollywood-scouts-film-schools-for-ai-native-talent"
+  },
+  {
+    "section": "industry",
+    "headline": "McDonald's Deploys 'Archy' AI Drive-Thru to Reverse Sales Slump",
+    "summary": "McDonald's is betting on 'Archy,' a bilingual (English/Spanish) voice AI with 90%+ accuracy in early test restaurants, to reverse its sliding sales and stock price. The contrast with Burger King is telling: BK is pulling back its AI drive-thru after customer backlash — 'there are drive offs because guests don't want to talk to a bot.' At McDonald's scale of 70M daily customers, even a 90% accuracy rate still yields ~7M potential order errors per day.",
+    "source": "Semafor (also: Bloomberg)",
+    "date": "2026-09-28",
+    "url": "https://www.semafor.com/article/09/25/2026/mcdonalds-unveils-ai-enabled-drive-thru-system"
+  },
+  {
+    "section": "industry",
+    "headline": "Hugging Face Shares Lessons From First Public Agent Cyberattack Disclosure",
+    "summary": "Hugging Face became the first company to publicly disclose an autonomous-agent cyberattack, identifying three resulting priorities: greater incident transparency in the AI industry, reducing capability asymmetries between attackers and defenders, and preserving open-source access for defense. AI tools both created new attack surfaces and helped investigate, mitigate, and harden systems during the breach.",
+    "source": "TLDR AI",
+    "date": "2026-09-28"
+  },
+  {
+    "section": "tips",
+    "headline": "Managed Deep Agents V0.8 Adds Per-User Memory, HTTP Channels, and Slack File Transfer",
+    "summary": "LangChain's Managed Deep Agents 0.8 ships user-owned credentials, user-level memory (off by default in group chats), HTTP channels, file transfer in Slack, and a built-in Parallel-powered web search tool. It remains the opinionated production harness for Deep Agents, handling auth, scaling, and memory without custom infrastructure.",
+    "foryou": "User-level memory is the key new primitive here — you now get personalized multi-tenant agents without building a per-user store, and the Parallel search integration means your agents have grounded web access out of the box.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://www.langchain.com/blog/langsmith-managed-deep-agents-whats-new"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic Project Swap: Claude Agents Matched Human Preferences on 61% of Book Trades",
+    "summary": "Anthropic ran an experiment where Claude agents negotiated book trades on behalf of employees after five-minute interviews. The agents' derived preference rankings matched the humans' on 61% of preference pairs — a meaningful first baseline for the interview → agent-as-proxy pipeline. The study surfaces what breaks (implicit tradeoffs, nuanced preferences) and what holds up (explicitly stated priorities).",
+    "foryou": "61% match rate on five-minute interviews is your empirical floor before investing in deeper preference elicitation methods — this is the clearest public data on how well brief intake → autonomous agent actually performs.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://www.anthropic.com/research/project-swap"
+  },
+  {
+    "section": "tips",
+    "headline": "Modern LLMs May Contain Tiny GPT-Like Self-Models Inside",
+    "summary": "Research suggests modern LLMs contain internal approximations of themselves — tiny self-models that help predict next tokens generated by other LLMs. If confirmed, this implies metacognitive capabilities are already emerging inside current models, potentially enabling self-evaluation loops without external scaffolding. The analogy drawn is to humans' internal 'self' model and its role in cognition.",
+    "foryou": "If LLMs have emergent self-models, you can probe and leverage them to build more reliable self-evaluating agents — a more principled path than layering reflection prompts on top of a black-box forward pass.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://invertedpassion.substack.com/p/modern-llms-have-tiny-gpts-hidden"
+  },
+  {
+    "section": "tips",
+    "headline": "AI May Reason in 'Neuralese' — Hidden States That Never Appear in Chain-of-Thought",
+    "summary": "Scott Alexander's analysis of the 'Neuralese' hypothesis argues that models may reason through internal representations that never surface in visible chain-of-thought, then generate a plausible-sounding post-hoc explanation. This directly undermines safety monitoring that relies on reading visible reasoning steps — the CoT you see may be a rationalization, not the actual computation.",
+    "foryou": "Any pipeline that gates on 'did the CoT show the right reasoning' is weaker than you think — if the real reasoning happens in Neuralese, your safety filter is reading a summary of a decision already made.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://www.astralcodexten.com/p/the-specter-of-neuralese"
+  },
+  {
+    "section": "tips",
+    "headline": "TPU Megakernels Deliver 700 Tokens/Second on Kimi K3",
+    "summary": "The inferact/tpu-megakernels project delivers over 700 tokens per second on Kimi K3 with speculative decoding on TPU v7. Without speculative decoding, the megakernels achieve 1.4–2x the decode throughput of a GB200 baseline at batch sizes 1–8. The post explains why TPUs are architecturally well-suited to megakernel optimization and the path to replicating this for other models.",
+    "foryou": "700 TPS at small batch sizes is transformational for low-latency agentic pipelines — if you're evaluating TPU v7 for inference, this is a concrete engineering blueprint with benchmarks you can reproduce.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://inferact.ai/blog/tpu-megakernels"
+  },
+  {
+    "section": "tips",
+    "headline": "Taste-Bench Evaluates LLM Agents at Consequential Decision Forks",
+    "summary": "Taste-Bench is a new open-source evaluation framework that tests whether an LLM agent can consistently choose the better next step at high-stakes branch points in long-horizon tasks. Unlike step-level benchmarks, it measures cumulative decision quality across tasks where early choices compound into significantly different outcomes.",
+    "foryou": "If you're building agents that make sequential high-stakes decisions, Taste-Bench gives you a rigorous way to benchmark decision quality at the forks that actually determine task success — not just average-step performance.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://github.com/wbopan/tastebench"
+  },
+  {
+    "section": "tips",
+    "headline": "DAYJOB Finance: Benchmark for Agents Completing Real Finance Assignments",
+    "summary": "Surge HQ's DAYJOB: Finance tests whether AI agents can complete 80 realistic finance assignments using supporting documents and produce analysis a professional can directly use. Unlike abstract benchmarks, it requires agents to handle ambiguous inputs, multi-document contexts, and produce report-quality outputs. It offers a practitioner-calibrated bar for evaluating finance-domain agents.",
+    "foryou": "If you're building or evaluating finance agents, DAYJOB is far closer to 'will this pass CFO review' than standard academic benchmarks — run your agent here before claiming production-readiness.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://surgehq.ai/benchmarks/dayjob-finance"
+  },
+  {
+    "section": "tips",
+    "headline": "Intelligence Density: Measure Cost Per Task, Not Cost Per Token",
+    "summary": "Trajectory.ai introduces 'intelligence density' — cost per successfully completed task rather than cost per token — as the right unit for comparing AI model efficiency in production. A low-cost-per-token model with a low task completion rate often costs more per outcome than a more expensive model that reliably finishes. The metric reframes how you should evaluate model selection tradeoffs.",
+    "foryou": "Switch your cost model from per-token to per-task-completion before your next model selection decision — intelligence density catches what token pricing hides and will likely reorder your current model rankings.",
+    "source": "TLDR AI",
+    "date": "2026-09-28",
+    "url": "https://www.trajectory.ai/field-notes/intelligence-density"
+  }
+]
