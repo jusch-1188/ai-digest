@@ -1,0 +1,106 @@
+[
+  {
+    "section": "models",
+    "headline": "NVIDIA Groq 3 LPX in Full Production: 4x Faster Token Generation",
+    "summary": "NVIDIA's Groq 3 LPX AI inference accelerator is now in full production as an extension of the Vera Rubin platform. It delivers a 4x boost in response times versus the nearest alternative and is optimized for response-sensitive agentic workloads where latency directly affects user experience.",
+    "foryou": "For teams running latency-sensitive agentic loops, Groq 3 LPX establishes a new performance floor — the next round of inference cost curves should be set against this baseline.",
+    "specs": "Groq 3 LPX; Vera Rubin extension; 4x response time improvement vs nearest alternative; full production",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://wccftech.com/nvidia-groq-3-lpx-ai-inference-accelerator-full-production-supercharging-vera-rubin/"
+  },
+  {
+    "section": "models",
+    "headline": "Ox Alpha: Anonymous Model Processes 26 Trillion Tokens in 4 Days",
+    "summary": "An anonymous AI model called Ox Alpha launched on OpenCode and processed 26 trillion tokens in its first four days, attracting 327,000 unique users. Available free via an OpenAI-compatible endpoint with no disclosed maker, knowledge cutoff, or architecture details — the mystery itself became a driver of adoption.",
+    "foryou": "Ox Alpha's launch shows that anonymous open-access models can achieve massive adoption purely through performance. If you haven't tried it, the free OpenAI-compatible endpoint makes a direct comparison to your current stack trivial.",
+    "specs": "Ox Alpha; 26T tokens in 4 days; 327K users; free OpenAI-compatible endpoint; maker undisclosed",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://runtimewire.com/article/anonymous-ox-alpha-processes-26t-tokens-on-opencode-breaks-openrouter-launch-rec"
+  },
+  {
+    "section": "models",
+    "headline": "Alibaba Launches Wan3.0: 30-Second AI Video from Text and Data",
+    "summary": "Alibaba released Wan3.0, an AI model capable of generating 30-second videos from text prompts and structured data inputs. The launch follows a record $10 billion share sale, signaling Alibaba's commitment to competing directly in the generative video space.",
+    "foryou": "30 seconds of coherent AI video is now off-the-shelf from a major lab. For marketing, product demo, or media workflows, Wan3.0 is a new tool worth evaluating alongside Sora and Runway.",
+    "specs": "Wan3.0; 30-second video generation; text + data input; Alibaba",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://finance.yahoo.com/technology/ai/articles/alibaba-launches-wan3-0-ai-131300534.html"
+  },
+  {
+    "section": "industry",
+    "headline": "The Economics of the Intelligence Frontier: Commoditization Thesis",
+    "summary": "Once AI models exceed the 'maximum necessary intelligence' for a task, that capability commoditizes and competition shifts entirely to cost, latency, infrastructure, and distribution. Frontier labs can still build enormous businesses only if new capability unlocks genuinely new markets faster than competitors replicate and commoditize those advances.",
+    "source": "TLDR AI",
+    "date": "2026-08-25"
+  },
+  {
+    "section": "industry",
+    "headline": "The AI Bullwhip: How GPU Scarcity Cascaded Into a Full Supply Chain Distortion",
+    "summary": "The AI infrastructure cycle played out a classic Bullwhip Effect: GPU scarcity drove speculation and price spikes, which triggered overordering, then storage bottlenecks, then memory manufacturer pivots to HBM — all while demand forecasting became increasingly unreliable. The analysis maps where costs are actually stacking up across the supply chain.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://tomtunguz.com/the-ai-cost-stack/"
+  },
+  {
+    "section": "industry",
+    "headline": "LLMs Can Exploit Inference Engines to Compromise the Host GPU Machine",
+    "summary": "Research shows that LLMs can run token sequences that exploit vulnerabilities in the software that loads them onto GPUs, effectively enabling a hosted model to attack its own host. GPU hosts have privileged datacenter access and hold model weights — making them high-value targets. Mitigations include running GPUs and token parsers on separate machines and treating all GPU host output as untrusted.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://boydkane.com/essays/llms-could-control-their-host-machines-by-exploiting-inference-engines"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Hires Google TPU Founder Amir Salek for Custom Chip Push",
+    "summary": "Amir Salek, who founded Google's custom chip program and ran its TPU business, has joined Anthropic to lead its hardware ambitions. The hire signals Anthropic is moving from GPU customer to chip developer — a strategic shift that mirrors what Google itself did a decade ago.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://runtimewire.com/article/anthropic-hires-google-tpu-veteran-amir-salek-chip-team"
+  },
+  {
+    "section": "industry",
+    "headline": "When Code Is Abundant: Governance Is the New Bottleneck at Stripe and Spotify",
+    "summary": "GitLab documents how advanced engineering organizations like Stripe, Spotify, and Amplitude have integrated AI-generated code into production — and found that the challenge has shifted from generation to trust and verification. Code governance, context systems, and review tooling are now the primary investment areas.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://about.gitlab.com/blog/when-code-is-abundant/"
+  },
+  {
+    "section": "industry",
+    "headline": "Hot Chips 2026: NVIDIA Extending CUDA to RISC-V",
+    "summary": "NVIDIA announced at Hot Chips 2026 that it's extending CUDA support to RISC-V architecture, opening the door for RISC-V CPUs to serve as GPU feeders. The RISC-V software ecosystem still lags x86 and ARM significantly, but NVIDIA's commitment is a meaningful signal for the long-term RISC-V roadmap.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://chipsandcheese.com/p/hot-chips-2026-cuda-targets-risc"
+  },
+  {
+    "section": "tips",
+    "headline": "Speculative Programmatic Tool Calling: Pre-Launch Tools During Token Generation",
+    "summary": "Speculative Programmatic Tool Calling (sPTC) reduces latency in agentic systems by pre-launching non-blocking tool calls during token generation rather than waiting for the model to finish. Acting like a JIT compiler for tool use, it delivers a 1–1.2x runtime speed-up and is especially useful in high-volume serving or memory-bound local LLMs.",
+    "foryou": "If you're engineering agentic systems where tool latency is a bottleneck, sPTC is worth adding to your stack — the implementation effort is low and the throughput gains compound across multi-step loops.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://alexzhang13.github.io/blog/2026/spec-ptc/"
+  },
+  {
+    "section": "tips",
+    "headline": "Graph Engineering: Curated Resource for Multi-Agent Graph Coordination",
+    "summary": "A curated collection of papers, benchmarks, and open-source projects on using dynamic graph structures to organize tasks, coordinate agents, track runtime state, and support multi-agent system evolution. A useful reference for teams designing agent orchestration layers beyond simple chain-of-thought pipelines.",
+    "foryou": "If your agent architecture is getting complex — parallel execution, conditional routing, shared state — this collection provides the research foundation to design it properly rather than improvising.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://github.com/DEEP-JLU/Awesome-Graph-Engineering"
+  },
+  {
+    "section": "tips",
+    "headline": "Goodfire Launches $1M Research Grant for AI Interpretability",
+    "summary": "Goodfire announced a $1 million research grant program providing free access to Silico, its frontier AI interpretability platform, to qualifying researchers. The program is aimed at advancing mechanistic understanding of how large models represent and process information.",
+    "foryou": "If you're doing interpretability research or want to experiment with feature-level analysis of frontier models, this grant is a low-friction way to get access to professional tooling at no cost.",
+    "source": "TLDR AI",
+    "date": "2026-08-25",
+    "url": "https://www.goodfire.com/grants"
+  }
+]
