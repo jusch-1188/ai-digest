@@ -1,0 +1,116 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemma 4 QAT Brings Full-Power Models to Edge Devices",
+    "summary": "Google released Gemma 4 checkpoints optimized with Quantization-Aware Training (QAT), minimizing accuracy loss during compression so the models run on mobile phones and laptops. The update includes a specialized mobile quantization format that significantly cuts memory requirements while keeping quality high.",
+    "foryou": "If you're deploying models on-device or at the edge, Gemma 4 QAT is now the benchmark to test against — on-device inference just got meaningfully more capable.",
+    "specs": "Gemma 4 family, QAT mobile quantization format, reduced memory footprint for everyday hardware",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/quantization-aware-training-gemma-4/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Adds Lockdown Mode to Block Prompt Injection",
+    "summary": "OpenAI introduced Lockdown Mode for ChatGPT to reduce exposure to prompt injection attacks from external web content. When enabled, it disables live browsing, deep research, web image retrieval, and agent mode while keeping cached content and image generation available.",
+    "foryou": "If you're deploying ChatGPT in contexts where it reads external content — documents, emails, web pages — Lockdown Mode is now the go-to switch for tightening the attack surface.",
+    "specs": "Disables: live browsing, web image retrieval, deep research, agent mode. Keeps: cached content, image generation",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Opus 4.7 Matches Expert Chemistry Software on NMR Prediction",
+    "summary": "Anthropic's Claude Opus 4.7 accurately predicts hydrogen and carbon NMR shifts, matching and sometimes surpassing tools like ChemDraw and MestReNova. The model also proposes chemical structures from spectral data — a reverse-engineering task that typically requires specialized pipelines.",
+    "foryou": "For anyone building science-adjacent AI workflows, this signals that frontier models are beginning to close the gap on domain-specific analytical tools without fine-tuning.",
+    "specs": "Claude Opus 4.7; tasks: NMR spectra prediction, H/C shift prediction, structure proposal from spectral data",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.anthropic.com/research/making-claude-a-chemist"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump Administration Eyes Donated Equity Stake in OpenAI",
+    "summary": "OpenAI and the Trump administration discussed a possible government ownership stake acquired through donated equity rather than purchase. The concept was tied to a broader 'Public Wealth Fund' that would let American citizens benefit from AI-driven economic gains.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.cnbc.com/2026/06/05/trump-open-ai-altman-stake.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Paying SpaceX $920M/Month for 110K NVIDIA GPUs",
+    "summary": "Google signed a cloud compute agreement with SpaceX, paying roughly $920 million per month for access to capacity tied to approximately 110,000 NVIDIA GPUs. The deal provides bridge capacity for rising Gemini Enterprise demand while Google expands its own data center infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://winbuzzer.com/2026/06/06/google-taps-spacex-for-920m-monthly-ai-compute-deal-xcxwbn/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft Scout: Always-On AI Agent for Microsoft 365",
+    "summary": "Microsoft launched Scout, a persistent agent for Frontier program users that automates multi-step routines inside the Microsoft 365 stack. It integrates with local files and supports both OpenAI and Anthropic models, positioning Microsoft against competitors in the persistent-agent market.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.testingcatalog.com/early-look-microsoft-rolls-out-scout-ai-agent-to-frontier-users/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Embeds Engineers Inside the NSA for Offensive Cyber",
+    "summary": "Anthropic placed approximately six engineers inside the US National Security Agency to help deploy its Mythos model for offensive cyber operations, including potential network infiltration targeting China and Iran. The move is notable given Anthropic is also suing the Pentagon over how its models are used in conflict.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.implicator.ai/anthropic-embeds-engineers-in-the-nsa-to-deploy-mythos-for-offensive-cyber/"
+  },
+  {
+    "section": "industry",
+    "headline": "Labs May Spend $1,000 for Every $100 You Pay Them on Coding",
+    "summary": "A detailed analysis argues LLM-assisted coding subscriptions are deeply subsidized, with frontier labs potentially spending an order of magnitude more than they charge. Multi-step agentic loops using Thinking models via API are already very expensive, and developers need to plan for cost increases rather than assuming the current economics hold.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://ea.rna.nl/2026/06/07/anthropic-openai-may-be-spending-more-than-1000-for-every-100-you-pay-them/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Plans Major ChatGPT Overhaul Targeting Enterprise",
+    "summary": "OpenAI is reportedly preparing a significant ChatGPT redesign aimed at enterprise users, centered on agents capable of performing multiple tasks rather than just answering questions. The push is part of a broader strategy to grow enterprise revenue as competition from Anthropic and Google intensifies.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.engadget.com/2189038/openai-reportedly-has-a-major-chatgpt-overhaul-in-store/"
+  },
+  {
+    "section": "tips",
+    "headline": "What Will Remain Scarce After AGI? An Economics Deep Dive",
+    "summary": "An interview with Google DeepMind's AGI Economics director and a Stanford economist covers how to optimally tax and distribute AI-generated wealth, how countries outside the AI supply chain still benefit, and whether post-AGI inequality is structurally avoidable. A rare empirical frame on questions usually left to speculation.",
+    "foryou": "If you're making long-horizon bets on AI's economic impact — for business planning, investments, or policy — this conversation is one of the more grounded anchors available.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.dwarkesh.com/p/alex-imas-phil-trammell"
+  },
+  {
+    "section": "tips",
+    "headline": "Give Your AI Agent Its Own Secure Computer with LangSmith Sandboxes",
+    "summary": "LangChain's LangSmith now offers Sandboxes — hardware-virtualized microVMs that give agents their own isolated compute environment. Agents can execute dynamic tasks, maintain persistent state, and run complex workflows without touching production infrastructure.",
+    "foryou": "If you're building agents that execute untrusted or user-supplied code, LangSmith Sandboxes offer a clean solution that doesn't require you to build your own isolation layer.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.langchain.com/blog/give-your-ai-agent-its-own-computer"
+  },
+  {
+    "section": "tips",
+    "headline": "Amazon Bedrock Gets a Unified Console for Anthropic and OpenAI APIs",
+    "summary": "Amazon Bedrock launched a new console experience optimized for Anthropic- and OpenAI-compatible APIs, with a comprehensive model catalog, project-based workflows, and live documentation with auto-generated code snippets. Available across multiple AWS regions, it simplifies the path from model evaluation to production.",
+    "foryou": "If your team is prototyping across multiple providers inside AWS, the new Bedrock console cuts setup friction significantly — it's now a single place to compare and switch models.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://aws.amazon.com/blogs/aws/try-the-new-console-experience-in-amazon-bedrock-optimized-for-anthropic-and-openai-compatible-apis/"
+  },
+  {
+    "section": "tips",
+    "headline": "How LLMs Actually Work: A Practical Primer",
+    "summary": "Modern large language models are built by stacking transformer blocks, with differences arising from training data, scale, configuration, and post-training choices. This 26-minute explainer demystifies the architecture without drowning in math, making it useful for practitioners who want a clear mental model.",
+    "foryou": "Worth reading once if you prompt, fine-tune, or deploy LLMs but haven't dug into the underlying architecture — a more accurate mental model leads to better intuitions about failure modes.",
+    "source": "TLDR AI",
+    "date": "2026-06-08",
+    "url": "https://www.0xkato.xyz/how-llms-actually-work/"
+  }
+]
