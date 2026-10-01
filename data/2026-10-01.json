@@ -4,7 +4,13 @@
     "headline": "OpenAI Introduces Dots — Always-On Agents Powered by GPT-6 Astra",
     "summary": "OpenAI's Dots are persistent AI agents that handle complex tasks autonomously using their own cloud computer, integrating with 4,000+ apps including ChatGPT, Slack, and Teams. Users assign goals and Dots proactively manage tasks in the background, adapting to feedback and user preferences.",
     "foryou": "Dots can automate multi-step workflows across your tools — from scheduling to research to drafting. Unlike reactive assistants, they run continuously without prompting, making them closer to a delegated digital employee than a chatbot.",
-    "specs": "Powered by GPT-6 Astra; integrates with 4,000+ apps; available across ChatGPT tiers and API; built-in safety controls and user override mechanisms",
+    "specs": [
+      {"label": "Powered by", "value": "GPT-6 Astra"},
+      {"label": "App integrations", "value": "4,000+"},
+      {"label": "Platforms", "value": "ChatGPT, Slack, Teams"},
+      {"label": "Task execution", "value": "Cloud computer (autonomous)"},
+      {"label": "Safety controls", "value": "Built-in user override & proactive review"}
+    ],
     "source": "OpenAI",
     "date": "2026-10-01",
     "url": "https://openai.com/index/introducing-dots/"
@@ -14,7 +20,13 @@
     "headline": "OpenAI Releases GPT-6.1 Sol — Near-Astra Intelligence at a Fifth of the Cost",
     "summary": "GPT-6.1 Sol delivers performance close to GPT-6 Astra for professional coding, PDF analysis, and business workflow automation at roughly 20% of the cost. It matches Astra on complex document queries and improves factual accuracy, with enhanced safety and transparency built in.",
     "foryou": "The 5x cost reduction puts near-frontier performance within reach for high-volume production workloads. If you've been using smaller models to manage budget and accepting quality trade-offs, Sol is the clearest signal yet to reassess that calculus.",
-    "specs": "~1/5 cost of GPT-6 Astra; matches Astra on complex PDF queries; top-tier coding benchmark scores; multi-tier API access; improved factual accuracy and safety layer",
+    "specs": [
+      {"label": "Cost vs GPT-6 Astra", "value": "~20% (5× cheaper)"},
+      {"label": "PDF query performance", "value": "Matches Astra"},
+      {"label": "Coding benchmarks", "value": "Top tier"},
+      {"label": "API access", "value": "Multi-tier (API + user tiers)"},
+      {"label": "Release date", "value": "2026-09-29"}
+    ],
     "source": "OpenAI",
     "date": "2026-10-01",
     "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
@@ -24,7 +36,11 @@
     "headline": "Cohere Releases Embed 5 with Major Gains on PDFs, Code, and Multilingual Retrieval",
     "summary": "Cohere's Embed 5 substantially outperforms Embed 4 on visually rich documents — financial filings, parsed PDFs, code bases, and multilingual content. The model addresses a persistent weakness in embedding models: dense, structured enterprise documents that prior models handled poorly.",
     "foryou": "If your RAG pipeline handles enterprise documents — financial reports, legal contracts, technical documentation — Embed 5 is worth benchmarking before your next retrieval infrastructure update. Drop-in replacement with meaningful quality uplift.",
-    "specs": "Major gains over Embed 4 on: visually rich documents, financial filings, parsed PDFs, code, multilingual content; optimized for enterprise document retrieval",
+    "specs": [
+      {"label": "Gains over Embed 4", "value": "PDFs, financial filings, code, multilingual"},
+      {"label": "Strength", "value": "Visually rich document retrieval"},
+      {"label": "Use case", "value": "Enterprise RAG pipelines"}
+    ],
     "source": "Cohere",
     "date": "2026-10-01",
     "url": "https://docs.cohere.com/changelog/embed-v5"
@@ -40,7 +56,7 @@
   {
     "section": "industry",
     "headline": "Anthropic and OpenAI Both Near $100B Revenue as Segmentation Strategy Pays Off",
-    "summary": "Anthropic launched enterprise metered billing while OpenAI cut Luna's price by 80%, pushing its revenue run rate near $70B. Both companies are targeting $100B revenue by year end, using strategic pricing tiers to expand market coverage without cannibalizing premium products.",
+    "summary": "Anthropic launched enterprise metered billing while OpenAI cut Luna's price by 80%, pushing its revenue run rate near $70B. Both companies are targeting $100B revenue by year end, using strategic pricing tiers to expand market coverage without cannibalising premium products.",
     "source": "Tom Tunguz",
     "date": "2026-10-01",
     "url": "https://tomtunguz.com/anthropic-repriced-the-enterprise/"
@@ -48,7 +64,7 @@
   {
     "section": "industry",
     "headline": "Sign In With ChatGPT: OpenAI Becomes an Identity Provider for the Web",
-    "summary": "OpenAI launched 'Sign in with ChatGPT,' an OAuth-style authentication system that lets users access third-party apps with their ChatGPT identity. Launch partners include Airtable, GitLab, HubSpot, Notion, Supabase, and Vercel — a calculated move to embed OpenAI into developer infrastructure at the account layer.",
+    "summary": "OpenAI launched 'Sign in with ChatGPT,' an OAuth-style authentication system letting users access third-party apps with their ChatGPT identity. Launch partners include Airtable, GitLab, HubSpot, Notion, Supabase, and Vercel — a calculated move to embed OpenAI into developer infrastructure at the account layer.",
     "source": "OpenAI",
     "date": "2026-10-01",
     "url": "https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt"
@@ -64,7 +80,7 @@
   {
     "section": "industry",
     "headline": "Frontier AI Labs Called Out as the World's Best Gradual Disempowerment Mechanism",
-    "summary": "A detailed LessWrong analysis argues that while we now have broadly superhuman AI across many domains, technical alignment progress remains thin and regulation inconsistent. AI labs plan to use AI systems to solve alignment — a strategy the author calls structurally dangerous, as the volume of unchecked work is growing faster than human oversight capacity.",
+    "summary": "A detailed LessWrong analysis argues that while we now have broadly superhuman AI across many domains, technical alignment progress remains thin and regulation inconsistent. Labs plan to use AI systems to solve alignment — a strategy the author calls structurally dangerous as unchecked work grows faster than human oversight capacity.",
     "source": "LessWrong",
     "date": "2026-10-01",
     "url": "https://www.lesswrong.com/posts/jbttuCF4wFZmXakcj/the-world-s-best-gradual-disempowerment-model-organism"
