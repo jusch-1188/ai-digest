@@ -1,0 +1,308 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Launches Dots: Always-On AI Agents Powered by GPT-6 Astra",
+    "summary": "OpenAI's Dots are AI-driven always-on agents built on GPT-6 Astra, designed to handle tasks autonomously using their own cloud computers. They integrate with 4,000+ apps including Slack, Teams, and ChatGPT, enabling proactive task management with built-in safety controls. Users can set goals and Dots adapt to feedback over time. Announced at OpenAI DevDay 2026.",
+    "foryou": "Dots' architecture — cloud computer + 4,000 integrations + safety guardrails — is the reference design for always-on agentic systems; study how they handle state, auth, and task interruption before your next pipeline design.",
+    "specs": [
+      {
+        "label": "Powered by",
+        "value": "GPT-6 Astra"
+      },
+      {
+        "label": "App integrations",
+        "value": "4,000+"
+      },
+      {
+        "label": "Availability",
+        "value": "ChatGPT paid tiers"
+      }
+    ],
+    "source": "TLDR AI (also: Semafor, Web)",
+    "date": "2026-10-01",
+    "url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Releases GPT-6.1 Sol at a Fifth of GPT-6 Astra's Price",
+    "summary": "GPT-6.1 Sol delivers near-Astra intelligence at one-fifth of the token cost, with significant improvements in coding benchmarks, complex PDF queries, and business workflow automation. It features a 1.05M token context window and enhanced factual accuracy. Available via the OpenAI API and multiple user subscription tiers.",
+    "foryou": "At $2/$10 per million tokens input/output with a 1.05M context window, Sol is the new cost-optimal default for agentic workflows previously requiring Astra-level quality — swap it in before your next billing cycle.",
+    "specs": [
+      {
+        "label": "Input cost",
+        "value": "$2 / 1M tokens"
+      },
+      {
+        "label": "Output cost",
+        "value": "$10 / 1M tokens"
+      },
+      {
+        "label": "Context window",
+        "value": "1.05M tokens"
+      },
+      {
+        "label": "Positioning",
+        "value": "~1/5 cost of GPT-6 Astra"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://thenextweb.com/news/openai-gpt-6-1-sol-price-astra-devday"
+  },
+  {
+    "section": "models",
+    "headline": "Google Announces Gemini 4 Argon, Outperforming GPT-6 Astra on Most Benchmarks",
+    "summary": "Google has announced Gemini 4 Argon, its new flagship AI model, after months of delays. Early benchmarks show it outperforming GPT-6 Astra on most standard evaluations. The release comes as Google races to maintain competitive position against OpenAI's DevDay announcements and positions Gemini 4 Argon as its premier frontier offering.",
+    "foryou": "A frontier model that beats Astra on benchmarks means you have a credible alternative for your most demanding pipeline tasks — run your task-specific evals now rather than waiting for consensus reviews.",
+    "specs": [
+      {
+        "label": "Family",
+        "value": "Gemini 4"
+      },
+      {
+        "label": "Benchmark position",
+        "value": "Outperforms GPT-6 Astra on most evals"
+      },
+      {
+        "label": "Status",
+        "value": "Announced Oct 1, 2026"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-10-01",
+    "url": "https://basic-tutorials.com/news/gemini-4-argon-googles-new-ai-model-outperforms-gpt-6-astra-in-most-benchmarks/"
+  },
+  {
+    "section": "models",
+    "headline": "Meta Launches Muse for Small Business, AI Agent for Entrepreneurs",
+    "summary": "Meta introduced Muse for Small Business, an AI agent that automates operations for entrepreneurs using Facebook and Instagram analytics, ad accounts, and integrations with tools like Canva for brand management. Available in free and subscription tiers, Muse aims to save time and boost productivity for SMBs. Meta's Muse platform now accounts for roughly 70% of agentic browser traffic.",
+    "foryou": "Meta Muse driving 70% of agentic browser traffic is an early signal that consumer AI agents will hit your API endpoints at scale — design your rate limiting and abuse detection for agent traffic patterns now, not after it's a problem.",
+    "specs": [
+      {
+        "label": "Distribution",
+        "value": "Facebook, Instagram, WhatsApp"
+      },
+      {
+        "label": "Integrations",
+        "value": "Canva, ad accounts, analytics"
+      },
+      {
+        "label": "Pricing",
+        "value": "Free + subscription tiers"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://about.fb.com/news/2026/09/introducing-muse-small-business/"
+  },
+  {
+    "section": "models",
+    "headline": "Cohere Releases Embed 5 with Major Retrieval Gains on PDFs, Code, and Multilingual Content",
+    "summary": "Cohere's Embed 5 delivers major improvements over Embed 4 on visually rich documents, financial filings, parsed PDFs, code retrieval, and multilingual content. The model is positioned as a significant upgrade for RAG and semantic search pipelines dealing with complex enterprise document formats.",
+    "foryou": "Embed 5's gains on parsed PDFs and code make it worth a direct benchmark run against Embed 4 in your current RAG setup before committing to your next chunking strategy revision.",
+    "specs": [
+      {
+        "label": "Improvements over v4",
+        "value": "Visually rich docs, financial filings, PDFs, code, multilingual"
+      },
+      {
+        "label": "Changelog",
+        "value": "docs.cohere.com/changelog/embed-v5"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://docs.cohere.com/changelog/embed-v5"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI Releases d1: A Decision Model with Zero Output Tokens That Tops Hugging Face Decision Index",
+    "summary": "Liquid AI's d1 is a new decision model purpose-built for fast, structured decision-making in software environments — classification, categorization, routing, scoring, and content moderation. Uniquely, it returns calibrated probabilities without generating any output tokens, making it radically more efficient for binary or multi-class decisions. It outperforms Jev on Hugging Face's Decision Index and is available on the Liquid API, with OpenRouter support coming soon.",
+    "foryou": "d1's zero-output-token architecture and calibrated probabilities are a direct answer to the routing bottleneck in multi-agent pipelines — test it as a fast gate before expensive frontier model calls.",
+    "specs": [
+      {
+        "label": "Output",
+        "value": "Zero tokens (calibrated probabilities only)"
+      },
+      {
+        "label": "Benchmark",
+        "value": "#1 on HF Decision Index (beats Jev)"
+      },
+      {
+        "label": "Availability",
+        "value": "Liquid API; OpenRouter soon"
+      },
+      {
+        "label": "Best fit",
+        "value": "Classification, routing, scoring, moderation"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://www.marktechpost.com/2026/09/29/liquid-ai-releases-d1-a-decision-model-that-returns-calibrated-probabilities-with-zero-output-tokens/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Launches Decisions API: Constrained GPT-6 Luna Router for Sub-Second Classification",
+    "summary": "OpenAI's new Decisions API, powered by GPT-6 Luna, lets developers define a question plus a bounded set of possible answers — the model then classifies content, routes requests, or picks an agent's next action in a single call. Supports text and images as context. Currently in limited preview with broad release planned within days.",
+    "foryou": "The Decisions API's bounded-output design is exactly what multi-agent graphs need for fast, auditable branching decisions — apply for limited preview access now, before broad release brings congestion.",
+    "specs": [
+      {
+        "label": "Model",
+        "value": "GPT-6 Luna"
+      },
+      {
+        "label": "Inputs",
+        "value": "Text + images"
+      },
+      {
+        "label": "Output",
+        "value": "Constrained to developer-defined answer set"
+      },
+      {
+        "label": "Status",
+        "value": "Limited preview; broad release imminent"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://alphasignal.ai/news/openai-s-decisions-api-gives-developers-a-constrained-gpt-6-luna-router"
+  },
+  {
+    "section": "models",
+    "headline": "Devin Is Now 30-40% More Cost-Efficient Across All Modes",
+    "summary": "Cognition has cut Devin's pricing significantly across all operating modes: 30-40% cheaper in Fusion and Normal mode, 15-20% cheaper in Ultra mode, and up to 70% cheaper in Devin Review. The improvements come from infrastructure optimizations and more efficient inference routing.",
+    "foryou": "If you're using Devin Review at scale, the up-to-70% cost drop is a straightforward budget reallocation opportunity — run the numbers on your current usage and redeploy those savings into coverage.",
+    "specs": [
+      {
+        "label": "Fusion/Normal",
+        "value": "30-40% cheaper"
+      },
+      {
+        "label": "Ultra",
+        "value": "15-20% cheaper"
+      },
+      {
+        "label": "Devin Review",
+        "value": "Up to 70% cheaper"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://devin.ai/blog/more-efficient-devin"
+  },
+  {
+    "section": "industry",
+    "headline": "Trump Signs 'Super Intelligence' Accord with Top AI CEOs",
+    "summary": "President Trump announced an 'Accord on Super Intelligence' following a White House meeting with AI executives including Zuckerberg (Meta), Huang (Nvidia), Musk (xAI), Brockman (OpenAI), and Pichai (Google). The voluntary agreement outlines internal controls for AI security and alignment, and a commitment to independent auditing. The accord contains no enforcement mechanism and stops short of regulation, though it explicitly notes that codification into law 'may make sense over time.'",
+    "source": "Semafor (also: Web)",
+    "date": "2026-10-01",
+    "url": "https://www.cnbc.com/2026/09/30/after-trump-meeting-with-tech-leaders-ai-safety-in-more-chaotic-state.html"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI In Talks to Raise $30B at $1.4 Trillion Valuation in Bridge Round",
+    "summary": "OpenAI is in discussions to raise at least $30 billion at a roughly $1.4 trillion valuation — a bridge round ahead of a delayed IPO. The company previously raised $122 billion in March 2026, which was positioned as the last private raise before going public. OpenAI has since ruled out a 2026 IPO due to AI safety concerns, making this new round necessary to sustain operations and R&D.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's New $500/Month Tier Reveals AI's Compute Bottleneck",
+    "summary": "At DevDay, OpenAI halved the token allowance for its $200/month plan and launched a new $500/month tier, underscoring the severe compute costs of running always-on agentic assistants like Dots. Semafor's analysis notes this pricing pressure is a signal that AI agents often overpromise due to token scarcity — Meta's Muse is already running into CAPTCHA hurdles and paywalls in the wild. OpenAI recently spent ~$10M over a weekend solving part of the Navier-Stokes equations.",
+    "source": "Semafor",
+    "date": "2026-10-01",
+    "url": "https://www.semafor.com/article/09/30/2026/openais-new-pricing-tiers-highlight-compute-bottleneck"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic and OpenAI Near $100B Revenue Target via Strategic Segmentation",
+    "summary": "Both Anthropic and OpenAI have boosted revenue through deliberate customer segmentation: Anthropic introduced enterprise metered billing, while OpenAI slashed the price of its Luna model by 80% to capture volume at scale. OpenAI's revenue run rate is now approaching $70 billion, with both companies targeting $100 billion by year-end. Major enterprise clients including Amazon and Google have still not committed to long-term contracts.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://tomtunguz.com/anthropic-repriced-the-enterprise/"
+  },
+  {
+    "section": "industry",
+    "headline": "US Remains Top Magnet for AI Talent Despite China Producing 57% of Global Researchers",
+    "summary": "China now produces 57% of the global AI talent pool (up from 46% in 2023), but the US remains the strongest destination for those researchers, according to a Carnegie China study. However, more Chinese researchers are staying home as China's domestic AI industry booms and US visa restrictions tighten. Beijing has also expanded overseas travel restrictions to include family members of AI and chip executives, further chilling mobility in the sector.",
+    "source": "Semafor",
+    "date": "2026-10-01"
+  },
+  {
+    "section": "industry",
+    "headline": "Beijing Considers Allowing Chinese Companies to Buy Nvidia's Advanced Chips",
+    "summary": "China is reportedly weighing whether to let select domestic companies purchase cutting-edge Nvidia chips, reversing an earlier policy of largely barring such purchases. Chinese firms are rolling out AI products faster than their domestic chip supply can handle, and while Chinese chip manufacturers have made technical progress, they cannot yet mass-produce advanced chips without lithography tools that US trade controls restrict. The potential opening represents a significant shift in the US-China chip standoff.",
+    "source": "Semafor",
+    "date": "2026-10-01"
+  },
+  {
+    "section": "industry",
+    "headline": "Psyonic Wants to Pay Prosthetic Users in India and Pakistan to Train Robots",
+    "summary": "San Diego startup Psyonic plans to deploy thousands of bionic hands in developing nations — initially targeting Pakistan and India — and pay amputee wearers to go about their daily lives while collecting grip and force data. The data feeds a robotics model aimed at solving the longstanding challenge of dexterous robot hands. Each hand syncs to a wearable camera so models learn both the visual appearance of tasks and the force required, addressing what Psyonic CEO calls robotics' 'data problem.'",
+    "source": "Semafor",
+    "date": "2026-10-01",
+    "url": "https://www.semafor.com/article/09/30/2026/solving-for-the-hand-startup-wants-to-pay-prosthetic-users-to-teach-robots"
+  },
+  {
+    "section": "industry",
+    "headline": "Oura Delays IPO, Blaming OpenAI and Anthropic's Imminent IPOs for Capital Vortex",
+    "summary": "Oura has postponed its planned $2 billion IPO after indications that shares would price at the low end of the $40-$44 range. The company cited market 'uncertainty' — a term normally reserved for macro shocks — though the Nasdaq is near record highs. Analysts note that the upcoming AI IPOs from OpenAI and Anthropic are creating an attention and capital vortex, making it harder for non-AI tech companies to attract investor attention.",
+    "source": "Semafor",
+    "date": "2026-10-01"
+  },
+  {
+    "section": "industry",
+    "headline": "Baseten Partners with OpenAI to Serve Open Models via Codex and Responses API",
+    "summary": "Baseten announced a partnership with OpenAI to natively serve open-weight models through OpenAI's Codex and Responses API. The integration lets developers access Baseten's model serving infrastructure — known for low-latency inference at scale — directly through OpenAI's standard API interfaces, without switching SDKs.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://www.baseten.co/blog/baseten-openai-partnership/"
+  },
+  {
+    "section": "tips",
+    "headline": "MCP Events: ChatGPT Can Now Subscribe to Real-Time Updates from MCP Servers",
+    "summary": "OpenAI's new MCP Events spec lets ChatGPT subscribe to updates from an MCP server rather than polling. Users define what to monitor and what action ChatGPT should take on updates. The implementation uses webhook delivery and callback verification from the draft MCP Events spec. Polling, streaming, and certain control notifications from the draft spec are not yet supported.",
+    "foryou": "MCP Events turns passive polling into event-driven pipelines — if your agents currently poll MCP servers for state changes, migrating to webhook subscriptions will cut latency and token burn substantially.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://developers.openai.com/plugins/build/mcp-events"
+  },
+  {
+    "section": "tips",
+    "headline": "Sign in with ChatGPT: OAuth-Style Auth Now Available on Airtable, GitLab, Notion, Supabase, Vercel",
+    "summary": "OpenAI launched 'Sign in with ChatGPT,' letting users authenticate to external applications using their ChatGPT identity. Available globally to authenticated ChatGPT users, the feature currently works on Airtable, GitLab, HubSpot, Notion, Supabase, and Vercel as initial partners. Developers can implement it via the ChatGPT plugin directory for app connections.",
+    "foryou": "If your agentic app integrates with any of the six launch partners, Sign in with ChatGPT is a low-friction auth layer worth evaluating — it removes a signup step for your ChatGPT-native users.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://help.openai.com/en/articles/20001410-sign-in-with-chatgpt"
+  },
+  {
+    "section": "tips",
+    "headline": "Software Factories: The Engineering Model Where Humans Supervise Rather Than Code",
+    "summary": "Warp's blog post on 'software factories' describes a shift where engineers move from writing code locally toward supervising cloud agents and optimizing the systems that produce software. The model focuses on measuring human touches per PR, tracking AI billing costs, and iterating on factory processes rather than individual features. Engineers own product quality through supervision, tooling improvement, and automation — not individual contribution.",
+    "foryou": "The 'measure AI cost per PR, reduce human touches per PR' loop Warp describes is a concrete operational framework for running agentic development at scale — worth adopting as a team metric now rather than after it becomes a retention issue.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://techcrunch.com/2026/08/18/warps-new-system-is-an-out-of-the-box-software-factory-for-ai-development/"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity Shares Patterns for Engineering Safer Agentic Systems",
+    "summary": "Perplexity published a detailed writeup on security risks in AI agents, focusing on how agents inadvertently cross security boundaries while pursuing legitimate goals. The post covers containment strategies, permission scoping, and how to architect multi-step pipelines so an agent's blast radius stays bounded even when its behavior is unexpected.",
+    "foryou": "Perplexity's cross-boundary containment patterns are directly applicable if your agents have broad tool access — the permission-scoping techniques are worth reviewing before your next production deployment.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://www.perplexity.ai/hub/blog/how-we-engineer-safer-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Study Finds No Clear Performance Leader Among Frontier Models on Agentic Tasks — High Variance by Task",
+    "summary": "Fig.inc's benchmark covering web browsing to robotics tasks found no single frontier model consistently outperforming others across all agentic workloads. GPT-6 Astra, Claude Opus 5.5, and comparable models all show 'jagged performance' — strong on some task types, weak on others — with high variance in model-task fit. The study underscores that headline leaderboard rankings don't translate to real-world agent performance.",
+    "foryou": "No universal leader means your model selection should be task-specific: run your own harness on representative tasks before committing to a new model, rather than trusting composite benchmark rankings.",
+    "source": "TLDR AI",
+    "date": "2026-10-01",
+    "url": "https://www.fig.inc/blog/astra-opus-5-5-and-other-frontier-models-demonstrate-jagged-performance-across-sota-agentic-tasks-from-web-browsing-to-robotics/"
+  }
+]
