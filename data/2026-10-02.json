@@ -1,0 +1,155 @@
+[
+  {
+    "section": "models",
+    "headline": "Google Launches Gemini 4 Argon: Frontier Model for Software Engineering, Cybersecurity, and Knowledge Work",
+    "summary": "Google released Gemini 4 Argon, a frontier model purpose-built for sustained, multi-step reasoning across software engineering, enterprise knowledge work, and cybersecurity. Initial access is restricted to trusted cyber defenders while broader availability awaits phased safety evaluations — a deliberate rollout strategy reflecting the model's high-risk domain focus.",
+    "foryou": "The cybersecurity-first access pattern signals Google is targeting high-value enterprise accounts before a general rollout — standard for frontier models with elevated risk profiles. Worth tracking which benchmark data emerges from the cyber-defender cohort before the wider release.",
+    "specs": [
+      {
+        "label": "Primary domains",
+        "value": "Software engineering, enterprise knowledge work, cybersecurity"
+      },
+      {
+        "label": "Initial access",
+        "value": "Restricted to trusted cyber defenders"
+      },
+      {
+        "label": "Broader availability",
+        "value": "After phased safety testing"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+  },
+  {
+    "section": "models",
+    "headline": "Runway Launches Praxis-1: Open-Weight World Action Model for Physical Robot Control",
+    "summary": "Runway released Praxis-1, an open-weight world action model that translates its video pretraining into physical robot control. The model converts world-model representations into actionable motor commands and is currently being tested with early hardware partners, with a full public release planned in coming months.",
+    "foryou": "An open-weight robot foundation model from a major video-AI lab changes the cost calculus for embodied AI research — it removes the need to build your own world model from scratch. The open-weight release is notable; Runway is betting that an ecosystem forms around Praxis-1 rather than proprietary alternatives.",
+    "specs": [
+      {
+        "label": "Model type",
+        "value": "Open-weight world action model"
+      },
+      {
+        "label": "Training basis",
+        "value": "Runway video pretraining"
+      },
+      {
+        "label": "Status",
+        "value": "Early partners testing; public release TBA"
+      },
+      {
+        "label": "Hardware",
+        "value": "Partner-owned, on-device"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://runway.com/research/introducing-praxis-1"
+  },
+  {
+    "section": "models",
+    "headline": "Ideogram 4.5: Surgical Image Editing That Preserves Untouched Regions with High Fidelity",
+    "summary": "Ideogram launched version 4.5, its most precise image editing model to date. The model makes targeted modifications — changing specific elements, textures, or regions — while keeping untouched areas intact, a capability that has historically been the weakest link in diffusion-based editing pipelines.",
+    "foryou": "High-precision inpainting with strong preservation fidelity simplifies post-production in design and ad-creative workflows where unintended changes to background or secondary elements have been a persistent pain point.",
+    "specs": [
+      {
+        "label": "Key capability",
+        "value": "Surgical edits with full preservation of unchanged regions"
+      },
+      {
+        "label": "Model version",
+        "value": "Ideogram 4.5"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://ideogram.ai/models/4.5"
+  },
+  {
+    "section": "industry",
+    "headline": "Claude for Government Now Generally Available with FedRAMP High Authorization",
+    "summary": "Anthropic's Claude for Government platform has reached general availability, delivering FedRAMP High authorized AI to US federal and state agencies. The offering includes coding tools, agentic capabilities, governance controls, and customized administrative options — with early access also open for Claude Code CLI and Claude for Microsoft 365 in government environments.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://claude.com/blog/claude-for-government-is-now-generally-available"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceXAI Considers Unified Grok + X Subscription with Four Tiers Up to $100/Month",
+    "summary": "SpaceXAI is planning a pricing overhaul that consolidates Grok and X into a unified subscription with four tiers: a free plan with usage limits, an $8/month lite plan (Grok + verified checkmark + fewer ads), a mid-tier option, and a $100/month Ultra plan including the Grok Bot AI agent. The restructuring signals a more aggressive push to monetize AI under the combined X/xAI umbrella.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://links.tldrnewsletter.com/VezRJB"
+  },
+  {
+    "section": "industry",
+    "headline": "Inside OpenAI's Jalapeño Inference Chip: 216 GiB HBM4, Custom Compute Die and I/O Chiplet",
+    "summary": "A detailed technical breakdown of OpenAI's Jalapeño inference accelerator covers its full architecture: 216 GiB of HBM4 memory, a custom compute die, and a separate I/O chiplet, along with power characteristics and early silicon benchmarks. The chip is designed to handle OpenAI's inference workloads at scale and reduce dependence on third-party accelerator providers.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://morethanmoore.substack.com/p/interview-with-richard-ho-openai"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepSeek Builds Cross-Platform Abstraction Layer to Run Models on Huawei Ascend or Nvidia GPUs",
+    "summary": "DeepSeek is developing a software abstraction layer that decouples AI model training from the underlying GPU hardware, enabling workloads to run on either Nvidia GPUs or Huawei Ascend chips. The initiative mirrors what CUDA did for Nvidia — standardizing developer tooling for frontier training — and could substantially lower the cost and complexity of migrating to Chinese silicon under US export restrictions.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://www.geopolitechs.org/p/deepseek-builds-for-huawei-ascend"
+  },
+  {
+    "section": "industry",
+    "headline": "Factory CEO Alleges VC Board Adviser Leaked Confidential Data to Rival Cognition",
+    "summary": "Factory fired board adviser Chris Degnan after alleging he shared confidential information with Cognition — Factory's direct competitor — before joining Cognition as chief revenue officer two hours after the termination announcement. Degnan disputes being fired, saying he resigned. The incident spotlights the conflict-of-interest risks that arise when VC advisers sit on boards of competing AI startups.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://techcrunch.com/2026/09/30/factory-ceo-just-accused-his-vc-board-advisor-of-spying-for-cognition/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic: Robots Can Perform 74% of US Physical Job Tasks, but Only 0.3% Are Cost-Effective Today",
+    "summary": "Anthropic published research mapping current robot capabilities against US physical job tasks, finding robots are technically capable of handling 74% of tasks but economically viable for only 0.3% due to hardware and deployment costs. The gap between technical capability and economic viability — not the AI — is the binding constraint on physical-world automation timelines.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://www.anthropic.com/research/what-work-can-robots-do"
+  },
+  {
+    "section": "tips",
+    "headline": "How OpenAI Detected and Disrupted a Coordinated Model-Distillation Attack",
+    "summary": "OpenAI published a post-mortem of its investigation into a coordinated adversarial-distillation campaign where attackers manipulated model interactions at scale to extract protected reasoning capabilities. The writeup covers detection signals, forensic indicators, and how the operation was disrupted — offering practical guidance for teams operating inference APIs with proprietary fine-tuned models.",
+    "foryou": "If you run inference APIs on proprietary models, this is essential reading: the attack patterns described are broadly applicable, and the detection signals are largely achievable with standard API logging and anomaly monitoring infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://links.tldrnewsletter.com/VFHse4"
+  },
+  {
+    "section": "tips",
+    "headline": "LIFT: A Transformer That Passes Its Hidden State to the Next Token — Beats Baselines at 135M–1B",
+    "summary": "Researchers built LIFT, a transformer variant that feeds its internal hidden state back into the next generation step rather than recomputing from scratch each token. Training stays parallel because states are precomputed from an existing model; at inference, the model recycles its own state. LIFT models from 135M to 1B parameters consistently outperform token-matched standard transformers on language modeling, reasoning, and procedural tasks.",
+    "foryou": "The recurrent-state approach gives LIFT properties between a standard transformer and an SSM — if efficiency gains hold at frontier scale, it could represent a meaningful improvement for long-horizon inference tasks where recomputation costs dominate.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://arxiv.org/abs/2609.38149"
+  },
+  {
+    "section": "tips",
+    "headline": "MODE-HOPPING: LLMs Can Abruptly Switch Reasoning Strategy Mid-Training Without Warning",
+    "summary": "Researchers identified MODE-HOPPING — a phenomenon where LLMs abruptly switch between distinct response strategies during pre-training. Observed in OLMo3-32B on arithmetic tasks, the model suddenly flips from shallow pattern-matching to correct task inference at unpredictable training steps. The finding suggests competing shallow and generalizable circuits inside models trade dominance during training, and that longer training doesn't reliably guarantee better generalization.",
+    "foryou": "Your evaluation loss curve can mask sudden capability discontinuities: if you're evaluating models mid-training on perplexity alone, you may miss strategy switches entirely. Checkpoint evals on capability benchmarks are essential to catch MODE-HOPPING transitions.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://www.alphaxiv.org/abs/2609.33150"
+  },
+  {
+    "section": "tips",
+    "headline": "SynthID Bio: DeepMind's Watermarking System for AI-Generated Proteins",
+    "summary": "DeepMind introduced SynthID Bio, a watermarking tool for AI-generated proteins that embeds an imperceptible signature into the biological sequence while preserving full protein function. The tool extends the SynthID watermarking family to synthetic biology, enabling provenance tracking and detection of AI-generated biological sequences in research and regulatory contexts.",
+    "foryou": "With AI-generated protein sequences entering research pipelines at scale, provenance tracking is becoming a regulatory and reproducibility necessity — SynthID Bio is the first practical tool that handles this at the sequence level without compromising function.",
+    "source": "TLDR AI",
+    "date": "2026-10-02",
+    "url": "https://deepmind.google/blog/introducing-synthid-bio/"
+  }
+]
