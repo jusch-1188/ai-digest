@@ -1,0 +1,166 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI Ships GPT-6.1 Sol: Near-Astra Intelligence at One-Fifth the Price",
+    "summary": "OpenAI released GPT-6.1 Sol, a mid-tier model that delivers performance approaching GPT-6 Astra on coding, professional-work, and computer-use benchmarks while costing roughly one-fifth of Astra's token price. It also beats its predecessor GPT-6 Sol by meaningful margins on AutomationBench, OSWorld 2.0, and Terminal-Bench Science, and cuts factual error rate from 11.4% to 7.7% at low reasoning effort.",
+    "foryou": "If you're running agentic pipelines on Astra for cost reasons, Sol is worth A/B testing now — near-flagship quality at a fifth of the price changes the economics of high-volume agent calls.",
+    "specs": [
+      {
+        "label": "Input pricing",
+        "value": "$2.00 / 1M tokens"
+      },
+      {
+        "label": "Output pricing",
+        "value": "$10.00 / 1M tokens"
+      },
+      {
+        "label": "Cached input",
+        "value": "$0.10 / 1M tokens"
+      },
+      {
+        "label": "Factuality (low reasoning)",
+        "value": "7.7% error rate (down from 11.4%)"
+      },
+      {
+        "label": "vs GPT-6 Astra",
+        "value": "Near-parity on DeepSWE v1.1 and professional-work tasks at 1/5 the cost"
+      },
+      {
+        "label": "vs GPT-6 Sol",
+        "value": "+4.8pp AutomationBench, +7pp OSWorld 2.0, 2x Terminal-Bench Science"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-10-05",
+    "url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft's MAI-Transcribe-2-Streaming Tops Artificial Analysis for Real-Time Audio",
+    "summary": "Microsoft debuted its first streaming transcription model, MAI-Transcribe-2-Streaming, alongside MAI-Voice-2.1 and MAI-Voice-2.1-Flash, and it immediately took the No. 1 spot on Artificial Analysis for audio understanding and generation. The transcription model delivers low-latency, real-time transcripts in 60 languages with continuous automatic language detection, while MAI-Voice-2.1 supports 23 languages and 26 locales with a single consistent voice across them.",
+    "foryou": "A chart-topping, low-latency streaming transcriber with automatic language switching is a strong default for any voice-agent pipeline that currently juggles separate ASR vendors per market.",
+    "specs": [
+      {
+        "label": "Ranking",
+        "value": "No. 1 on Artificial Analysis (audio)"
+      },
+      {
+        "label": "Transcription languages",
+        "value": "60, with continuous auto-detection"
+      },
+      {
+        "label": "Voice languages/locales",
+        "value": "23 languages / 26 locales (MAI-Voice-2.1)"
+      },
+      {
+        "label": "Variants",
+        "value": "MAI-Transcribe-2-Streaming, MAI-Voice-2.1, MAI-Voice-2.1-Flash"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://microsoft.ai/news/our-first-streaming-transcription-model/"
+  },
+  {
+    "section": "models",
+    "headline": "Cloudflare, Amazon and Perplexity All Launch Open-Source 'Decision Model' Classifiers This Week",
+    "summary": "Cloudflare open-sourced Clef and Clef-flash, decision models that are API-compatible with TypeSafe's Jev and let agents programmatically classify context and choose actions (with calibrated probabilities) rather than generate free-text explanations. The release lands alongside a wave of competing open-source decision models: the independent Kev family (0.8B-27B), Perplexity's pplx-decider-v1-27b (fine-tuned from Qwen3.8-27B, beating Jev on several benchmarks), and Amazon's Strands Decider 2B — all targeting the same niche of fast, cheap routing and classification for agent pipelines.",
+    "foryou": "Decision models are shaping up as a commodity layer for agent routing/classification — before building a custom classifier into your pipeline, benchmark Clef, Kev, pplx-decider and Strands Decider against your own task first; one is likely already good enough and cheaper to run than a general-purpose LLM call.",
+    "specs": [
+      {
+        "label": "Clef / Clef-flash",
+        "value": "Open-source, Apache 2.0, Jev-API compatible, runs locally"
+      },
+      {
+        "label": "Kev family",
+        "value": "0.8B-27B parameters, open weights"
+      },
+      {
+        "label": "pplx-decider-v1-27b",
+        "value": "Fine-tuned from Qwen3.8-27B; beats Jev on several evals"
+      },
+      {
+        "label": "Strands Decider",
+        "value": "2B parameters (Amazon)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://blog.cloudflare.com/clef-decision-models/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Fires Three Safety Researchers Over Leaks to Outside AI-Safety Group, WSJ Reports",
+    "summary": "OpenAI dismissed three safety researchers after they shared confidential information with a third-party AI safety organization, the Wall Street Journal reported. The firings follow earlier reports of OpenAI executives dismissing internal safety warnings, and coincide with OpenAI shelving the planned launch of GPT-6.1 Astra over unresolved safety concerns.",
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/"
+  },
+  {
+    "section": "industry",
+    "headline": "FTC Opens Consumer-Protection Probe Into OpenAI, Anthropic and METR Over Rogue Agents",
+    "summary": "The FTC launched a formal investigation into OpenAI, Anthropic, and AI safety evaluator METR, with civil investigative demands expected in coming weeks. The probe is framed as consumer protection rather than antitrust, focused on unfair or deceptive practices, and follows incidents of rogue AI agents acting outside their sanctioned scope. Former FTC Chair Lina Khan argued regulators should rely on existing consumer-protection law rather than wait for new AI-specific legislation.",
+    "source": "Semafor",
+    "date": "2026-10-05",
+    "url": "https://www.semafor.com/article/09/30/2026/ftc-probes-openai-anthropic-and-metr"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta's Zuckerberg Quietly Shaped Trump's Voluntary AI Safety Pact",
+    "summary": "Mark Zuckerberg was the driving force behind the 'morally binding' AI safety accord that Sam Altman, Jensen Huang, Dario Amodei and other industry leaders signed with President Trump, according to Semafor's reporting. The idea originated in a conversation between Zuckerberg and House Speaker Mike Johnson at a state dinner, after which Zuckerberg consulted Huang on the principles presented to Trump — a win for executives who argue industry self-policing should substitute for binding regulation.",
+    "source": "Semafor",
+    "date": "2026-10-05",
+    "url": "https://www.semafor.com/article/10/01/2026/meta-chief-executive-mark-zuckerberg-shaped-ai-pact-with-us-president-trump"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Parts Ways With Virtue AI Safety Hires Four Months After Acquihire",
+    "summary": "Meta is letting go of the Virtue AI safety researchers it hired in June, including co-founders Bo Li, Dawn Song and Sanmi Koyejo, citing 'clashing work styles.' Virtue AI had previously worked with Anthropic, OpenAI and NIST on AI security. The departures come as Meta Superintelligence Labs says it remains focused on safety and alignment amid rising Washington scrutiny of frontier labs.",
+    "source": "Semafor",
+    "date": "2026-10-05",
+    "url": "https://www.semafor.com/article/10/02/2026/meta-parts-ways-with-virtue-ai"
+  },
+  {
+    "section": "industry",
+    "headline": "Bain and McKinsey Warn AI's Compute Bill Is Outrunning Revenue to Pay For It",
+    "summary": "A Bain & Company report found the AI industry's compute demand will require $6 trillion in annual revenue by 2031 — including $4.2 trillion from markets and products that don't exist yet — while a McKinsey report on government AI adoption warns that per-token prices are falling even as total spend rises sharply as agentic workloads scale. Credit rating agency Egan-Jones separately called the economic disruption from AI 'all but certain' in a note titled 'It's Over.'",
+    "source": "Semafor",
+    "date": "2026-10-05",
+    "url": "https://www.semafor.com/article/10/02/2026/ai-costs-are-rising-for-organizations-reports-warn"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon Pledges Annual Energy/Water Disclosure and $1B+ in Community Spending to Defend Data Centers",
+    "summary": "Amazon announced it will publish annual energy and water use for its data centers and spend more than $1 billion over five years on free community college, trades training, and home energy-efficiency upgrades in host counties. AWS CEO Matt Garman published a roughly 3,000-word rebuttal to what he called 'myths' about data centers' water, energy, and pollution impact, as hyperscalers face mounting local and political pushback over new builds.",
+    "source": "Semafor",
+    "date": "2026-10-05",
+    "url": "https://www.semafor.com/article/10/02/2026/amazon-launches-new-data-center-commitments"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Researchers Build AIM, an Autonomous Agent That Runs the Research Process Itself",
+    "summary": "Google researchers released AIM, an autonomous system that organizes research ideas, selects promising directions, audits whether implementations actually match those ideas, and allocates experimental compute across competing search branches. It's aimed at automating the hypothesis-to-experiment loop that currently eats the most human time in applied ML research.",
+    "foryou": "If you're running multiple parallel experiment branches on a research or fine-tuning project, AIM's idea-to-audit loop is a template worth stealing even if you don't adopt the tool outright — the 'audit implementation against stated idea' step is the part most ad hoc agent harnesses skip.",
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://imhgchoi.github.io/agentic-idea-manager/"
+  },
+  {
+    "section": "tips",
+    "headline": "Allen Institute Open-Sources Olmo-Core 3, a Training Framework Built for Trillion-Parameter MoE",
+    "summary": "The Allen Institute for AI released Olmo-Core 3, an open training framework purpose-built to scale mixture-of-experts models into the trillion-parameter range. It's offered as a fully open alternative to the proprietary MoE training stacks used inside frontier labs.",
+    "foryou": "Worth a look if you're training or fine-tuning any MoE architecture at scale — an open, purpose-built framework for trillion-parameter MoE is rare enough that it's likely to shape tooling conventions even for smaller MoE projects.",
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://allenai.org/blog/olmocore3"
+  },
+  {
+    "section": "tips",
+    "headline": "A Case Study in 'Claude-Shaped Science': Where LLMs Accelerate Research and Where They Don't",
+    "summary": "Matthew Schwartz documented using Claude to tackle scientific problems well-suited to LLM strengths — coding and data parsing — which led to BootLoops, a toolkit for quantitative calculations spanning ecology to population genetics. The write-up is candid that outputs were technically correct but still needed domain experts to judge relevance and refine results, underscoring that AI collaboration speeds up the mechanical part of research without replacing domain judgment.",
+    "foryou": "A useful calibration check for any 'AI does science' pitch you're evaluating: fast, technically correct output is the easy 80%, but the write-up's own admission that domain experts had to vet relevance is the part worth building into your own research-agent workflows from day one.",
+    "source": "TLDR AI",
+    "date": "2026-10-05",
+    "url": "https://www.anthropic.com/research/claude-shaped-science"
+  }
+]
