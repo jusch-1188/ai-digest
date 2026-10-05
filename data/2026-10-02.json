@@ -5,18 +5,9 @@
     "summary": "Google released Gemini 4 Argon, a frontier model purpose-built for sustained, multi-step reasoning across software engineering, enterprise knowledge work, and cybersecurity. Initial access is restricted to trusted cyber defenders while broader availability awaits phased safety evaluations — a deliberate rollout strategy reflecting the model's high-risk domain focus.",
     "foryou": "The cybersecurity-first access pattern signals Google is targeting high-value enterprise accounts before a general rollout — standard for frontier models with elevated risk profiles. Worth tracking which benchmark data emerges from the cyber-defender cohort before the wider release.",
     "specs": [
-      {
-        "label": "Primary domains",
-        "value": "Software engineering, enterprise knowledge work, cybersecurity"
-      },
-      {
-        "label": "Initial access",
-        "value": "Restricted to trusted cyber defenders"
-      },
-      {
-        "label": "Broader availability",
-        "value": "After phased safety testing"
-      }
+      { "label": "Primary domains", "value": "Software engineering, enterprise knowledge work, cybersecurity" },
+      { "label": "Initial access", "value": "Restricted to trusted cyber defenders" },
+      { "label": "Broader availability", "value": "After phased safety testing" }
     ],
     "source": "TLDR AI",
     "date": "2026-10-02",
@@ -28,22 +19,10 @@
     "summary": "Runway released Praxis-1, an open-weight world action model that translates its video pretraining into physical robot control. The model converts world-model representations into actionable motor commands and is currently being tested with early hardware partners, with a full public release planned in coming months.",
     "foryou": "An open-weight robot foundation model from a major video-AI lab changes the cost calculus for embodied AI research — it removes the need to build your own world model from scratch. The open-weight release is notable; Runway is betting that an ecosystem forms around Praxis-1 rather than proprietary alternatives.",
     "specs": [
-      {
-        "label": "Model type",
-        "value": "Open-weight world action model"
-      },
-      {
-        "label": "Training basis",
-        "value": "Runway video pretraining"
-      },
-      {
-        "label": "Status",
-        "value": "Early partners testing; public release TBA"
-      },
-      {
-        "label": "Hardware",
-        "value": "Partner-owned, on-device"
-      }
+      { "label": "Model type", "value": "Open-weight world action model" },
+      { "label": "Training basis", "value": "Runway video pretraining" },
+      { "label": "Status", "value": "Early partners testing; public release TBA" },
+      { "label": "Hardware", "value": "Partner-owned, on-device" }
     ],
     "source": "TLDR AI",
     "date": "2026-10-02",
@@ -55,14 +34,8 @@
     "summary": "Ideogram launched version 4.5, its most precise image editing model to date. The model makes targeted modifications — changing specific elements, textures, or regions — while keeping untouched areas intact, a capability that has historically been the weakest link in diffusion-based editing pipelines.",
     "foryou": "High-precision inpainting with strong preservation fidelity simplifies post-production in design and ad-creative workflows where unintended changes to background or secondary elements have been a persistent pain point.",
     "specs": [
-      {
-        "label": "Key capability",
-        "value": "Surgical edits with full preservation of unchanged regions"
-      },
-      {
-        "label": "Model version",
-        "value": "Ideogram 4.5"
-      }
+      { "label": "Key capability", "value": "Surgical edits with full preservation of unchanged regions" },
+      { "label": "Model version", "value": "Ideogram 4.5" }
     ],
     "source": "TLDR AI",
     "date": "2026-10-02",
