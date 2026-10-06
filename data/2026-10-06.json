@@ -1,0 +1,179 @@
+[
+  {
+    "section": "models",
+    "headline": "Reflection AI Launches Beam, a 501B-Parameter Open-Weight Model to Rival Chinese Labs",
+    "summary": "Reflection AI released Beam, an open-weight, text-only mixture-of-experts model with 501B total parameters and 23B active per token, positioned as a lower-cost Western alternative to Chinese open models like GLM-5.2 and Kimi K3. Trained on 23.8 trillion tokens in under four weeks using 6,144 Nvidia GB300 GPUs, Beam trails newer Chinese releases on benchmarks like Terminal-Bench v2.1 and SWE-Bench Pro but claims 3-4x lower inference compute than GLM-5.2 at comparable reasoning quality. Weights are due under an Apache 2.0 license later in October, with early access currently limited to a waitlist.",
+    "foryou": "A 501B Apache-2.0 model with GB300-scale training numbers but no independent benchmark verification yet — worth waitlisting to test, but don't swap it into production inference until Artificial Analysis publishes numbers you don't have to take Reflection's word for.",
+    "specs": [
+      {
+        "label": "Total / active params",
+        "value": "501B total / 23B active per token (MoE)"
+      },
+      {
+        "label": "Training",
+        "value": "23.8T tokens in <4 weeks on 6,144 Nvidia GB300 GPUs"
+      },
+      {
+        "label": "Terminal-Bench v2.1",
+        "value": "80.1 (GLM-5.2: 81.0, DeepSeek V4.1: 90.6)"
+      },
+      {
+        "label": "Compute efficiency claim",
+        "value": "3-4x less inference compute than GLM-5.2 (vendor estimate)"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0; weights due later in Oct 2026"
+      }
+    ],
+    "source": "Semafor",
+    "date": "2026-10-06",
+    "url": "https://www.semafor.com/article/10/05/2026/reflection-ai-unveils-an-open-source-answer-to-chinese-labs"
+  },
+  {
+    "section": "models",
+    "headline": "Aleph Alpha Releases Open-Weight Kolibri: 78B-Parameter Bilingual MoE With 1M-Token Context",
+    "summary": "Aleph Alpha released Kolibri, an open-weight English-German mixture-of-experts model with 78.1B total parameters (3.46B active across 384 experts, six active per token) and a context window extending to 1 million tokens. It supports tool calling, four reasoning modes, and scores 96.9 on AIME 2025 and 85.9 on LiveCodeBench v6, positioned for sovereign, on-premises deployment in government and regulated industries.",
+    "foryou": "A compliant, on-prem-deployable model with genuine 1M-token context and tool calling is worth evaluating if any of your agentic pipelines need EU data-sovereignty guarantees that closed-API models can't offer.",
+    "specs": [
+      {
+        "label": "Total / active params",
+        "value": "78.1B total / 3.46B active (384 experts, 6 active)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens (trained to 256K)"
+      },
+      {
+        "label": "AIME 2025",
+        "value": "96.9"
+      },
+      {
+        "label": "LiveCodeBench v6",
+        "value": "85.9"
+      },
+      {
+        "label": "License",
+        "value": "Apache 2.0, Hugging Face"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://www.testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context/"
+  },
+  {
+    "section": "models",
+    "headline": "Whistle: A 16.9MB Open Speech-to-Text Model That Runs on a Microcontroller",
+    "summary": "An open speech recognition model, Whistle, transcribes seven languages (English, German, French, Spanish, Italian, Dutch, Polish) with automatic language detection in a single 16.9MB file with no external dependencies. On an Apple M4 Pro CPU it hits time-to-first-token of 11.1ms and decodes at 1,319 tokens/second, with prebuilt binaries for 17 targets including mobile, wearables, and RISC-V/WASI.",
+    "foryou": "If any part of your pipeline needs on-device ASR — wearables, robots, offline voice agents — a dependency-free 16.9MB model with sub-12ms latency on CPU removes the usual excuse to route audio to a cloud API.",
+    "specs": [
+      {
+        "label": "Model size",
+        "value": "16.9 MB, single file, CPU-only"
+      },
+      {
+        "label": "Languages",
+        "value": "7 (EN, DE, FR, ES, IT, NL, PL) with auto-detect"
+      },
+      {
+        "label": "Latency",
+        "value": "11.1ms time-to-first-token (M4 Pro, 10s audio)"
+      },
+      {
+        "label": "Decode speed",
+        "value": "1,319 tokens/sec"
+      },
+      {
+        "label": "Targets",
+        "value": "17 platforms incl. mobile, wearables, RISC-V, WASI"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://cactuscompute.com/blog/whistle"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Commits $100M to Train 10,000 AI Engineers by 2027",
+    "summary": "Anthropic is investing $100 million in the Claude Frontier Academy, a program aimed at training 10,000 AI engineers by 2027 in partnership with firms including Accenture and Morgan Stanley. The initiative targets rising enterprise demand for AI fluency and deeper Claude integration into existing corporate workflows.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://www.cnbc.com/2026/10/02/anthropic-to-invest-100-million-to-train-ai-engineer-talent.html"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Executives Testify Under Oath at NYC Council Hearing on Existential Risk",
+    "summary": "Senior leaders from Anthropic, OpenAI, Google, and Meta testified under oath before the NYC Council after it threatened subpoenas; xAI refused to comply, prompting the council to pursue legal action. Anthropic whistleblower Jacob Coxon warned that 'on the current path... it is more likely than not that humanity loses control,' while Council Speaker Julie Menin criticized both industry self-regulation and the Trump administration's voluntary AI safety pact for failing to quantify catastrophic risk.",
+    "source": "Web",
+    "date": "2026-10-06",
+    "url": "https://qz.com/anthropic-openai-google-meta-nyc-council-ai-hearing-100526"
+  },
+  {
+    "section": "industry",
+    "headline": "A Pattern Emerges: Why Safety Researchers Keep Leaving OpenAI, Anthropic, and DeepMind",
+    "summary": "A new analysis traces a recurring pattern behind recent departures of safety-focused researchers from frontier labs — including Anthropic's Jacob Coxon and former Google DeepMind researcher Alex Turner — who cite leadership that 'listened to concerns and expressed agreement without changing course,' alarm that autonomous AI research will outpace government coordination, and objections to military applications like Pentagon contracts.",
+    "source": "Web",
+    "date": "2026-10-06",
+    "url": "https://winbuzzer.com/2026/10/05/why-ai-researchers-left-openai-anthropic-and-google-deepmind-xcxwbn"
+  },
+  {
+    "section": "industry",
+    "headline": "Epoch AI: Chips Shipping Through 2027 Could Run Agents Equal to 140-720M Full-Time Workers",
+    "summary": "A new Epoch AI analysis estimates that AI chips shipped through 2027 could run tens to hundreds of millions of concurrent frontier-model agents, supplying as many working hours as roughly 140-720 million full-time employees. Using just 20% of that estimated capacity would require $2.6-5.3 trillion a year in API-equivalent spending — a demand level far beyond current enterprise AI budgets.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://epoch.ai/publications/estimating-the-agent-population"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon Negotiates $8B Sale-Leaseback for Nvidia Chips as AWS Capex Hits $220B",
+    "summary": "Amazon is in talks to move roughly $8 billion of Nvidia Grace Blackwell chips into a special-purpose vehicle and lease them back, shifting part of the financial burden of AI infrastructure onto outside investors. The deal comes as Amazon budgets roughly $220 billion in 2026 capex for AWS and AI chips, part of a broader hyperscaler shift from buying hardware outright to asset-backed financing — with technological obsolescence as the main risk for investors holding the paper.",
+    "source": "Web",
+    "date": "2026-10-06",
+    "url": "https://www.techrepublic.com/article/news-amazon-8-billion-nvidia-chip-sale-leaseback"
+  },
+  {
+    "section": "industry",
+    "headline": "SoftBank's Son Warns Superintelligence Could Be 'Super Dangerous,' Urges Global Cooperation",
+    "summary": "SoftBank CEO Masayoshi Son said superintelligent AI in the wrong hands could become 'super dangerous,' calling for global cooperation on AI safety even as SoftBank continues aggressively backing AI infrastructure and OpenAI. The comments add a prominent industry voice to a week of escalating public statements on existential AI risk, alongside testimony at the NYC Council hearing.",
+    "source": "Web",
+    "date": "2026-10-06",
+    "url": "https://thenextweb.com/news/son-ai-safety-kyoto-vision-europe"
+  },
+  {
+    "section": "tips",
+    "headline": "Prime Intellect Launches Prime Inference: Production Serving for Open-Source LLMs",
+    "summary": "Prime Intellect launched Prime Inference, a serverless-plus-reserved-capacity serving platform for open-source models running on Nvidia Blackwell hardware across multiple datacenters. Its GLM-5.3 endpoint claims 100% uptime since launch, near-zero tool-call error rates, ~100 tokens/sec per user, and KV-cache handling of 140K+ token conversation histories — aimed squarely at long-running agentic workloads.",
+    "foryou": "If you're self-hosting or routing through OpenRouter for agent workloads and fighting flaky tool-calling or context truncation, Prime Inference's structured-grammar tool calling and long-context KV-cache management are worth a side-by-side latency/reliability test against your current provider.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://www.primeintellect.ai/blog/prime-inference"
+  },
+  {
+    "section": "tips",
+    "headline": "AI21 Eliminated Manual GPU Negotiation Across a 10,000-GPU Fleet Using Kueue",
+    "summary": "AI21 replaced ad hoc, Slack-based GPU allocation across its 10,000-GPU shared cluster with Kueue's Admission Fair Sharing and Topology Aware Scheduling, cutting weekly manual interventions from 20 to zero, reducing GPU fragmentation from 15% to 8%, and shrinking 'hero job' starvation time from 72 hours to 12. The write-up details how workload-level gang scheduling and a dedicated preemptible lane were necessary to stop multi-pod training jobs from stalling on partial allocations.",
+    "foryou": "If your team is still negotiating GPU access over Slack, AI21's AFS + TAS pattern is close to a drop-in fix — the topology-awareness point specifically (an 8-GPU job can't land on 1+1+4+2 fragmented capacity even with 'enough' total GPUs) is the failure mode most homegrown schedulers miss.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://www.ai21.com/blog/how-ai21-manages-its-gpu-fleet-with-kueue"
+  },
+  {
+    "section": "tips",
+    "headline": "UniEvo-VL Lets a Single Multimodal Model Critique and Improve Its Own Outputs at Test Time",
+    "summary": "Researchers introduced UniEvo-VL, a multimodal model that plays both teacher and student roles, using self-generated critiques as privileged information to improve its own outputs during test-time self-improvement rather than requiring a separate, larger judge model.",
+    "foryou": "A self-critique loop that skips the separate judge model is directly applicable if you're building multimodal agent pipelines with a self-verification step — worth benchmarking against your current critique-model setup for cost savings.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://arxiv.org/abs/2609.38721"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Publishes Externally Verifiable Privacy Guarantees for Federated Learning",
+    "summary": "Google Research detailed a federated learning system that provides externally verifiable privacy guarantees while shifting more computation to the server, improving training speed, accuracy, and device coverage compared to prior federated-learning approaches.",
+    "foryou": "If you're training on sensitive or regulated user data at the edge, externally verifiable privacy guarantees (rather than just 'trust us') are the kind of audit trail that makes federated learning viable for compliance-heavy deployments.",
+    "source": "TLDR AI",
+    "date": "2026-10-06",
+    "url": "https://research.google/blog/toward-provably-private-learning-from-federated-data/"
+  }
+]
