@@ -1,0 +1,127 @@
+[
+  {
+    "section": "models",
+    "headline": "Reflection AI unveils Beam, a 501B-parameter open-weight coding model",
+    "summary": "Reflection introduced Beam, a sparse Mixture-of-Experts model with 501 billion total parameters and 23 billion active, purpose-built for coding, reasoning, and agentic workloads. It was pretrained on 23.8T tokens and trained with over 100M reinforcement-learning rollouts across roughly 1.3 billion sandboxed environments, using 10,500 NVIDIA GB300 GPUs over four weeks. Weights ship under an Apache 2.0 license later in October 2026, alongside full documentation and model cards.",
+    "foryou": "An Apache-2.0, 1M-token-context MoE that scores 77.2 on SWE-Bench Pro v2-Hard while running at 3-4x less inference compute than its parameter count suggests makes it a serious self-hosted option for agentic coding pipelines once weights land.",
+    "specs": [
+      { "label": "Parameters", "value": "501B total / 23B active (MoE)" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Pretraining tokens", "value": "23.8T" },
+      { "label": "RL rollouts", "value": "100M+ across ~1.3B sandboxes" },
+      { "label": "SWE-Bench Pro v2-Hard", "value": "77.2" },
+      { "label": "Terminal-Bench v2.1", "value": "80.1" },
+      { "label": "License", "value": "Apache 2.0 (weights due later in Oct 2026)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://reflection.ai/blog/introducing-beam"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI adds vision to its token-free decision model d1",
+    "summary": "Liquid AI's d1 - a decision model that outputs yes/no, choice, or score answers in a single forward pass without generating tokens - now accepts images alongside or instead of text. In visual-inspection benchmarks across industrial parts (circuit boards, candles, cashews, chewing gum) it hit 85-97% accuracy, and adding vision lifted its Tetris-playing score from 70 to 81 cleared lines. Liquid says d1 runs 19x to 200x cheaper than GPT-6.1 Sol and Claude Opus 5.5 and answers in 200-300ms.",
+    "foryou": "If your pipelines are burning a full LLM call just to get a yes/no or a routing decision, d1's sub-$0.05/M-token, sub-300ms forward pass is the obvious swap-in for that specific job - and it now takes image input too.",
+    "specs": [
+      { "label": "Latency", "value": "200-300ms per text decision" },
+      { "label": "Cost (input)", "value": "$0.04 / 1M tokens, no output charge" },
+      { "label": "Cost vs. frontier models", "value": "19x-200x cheaper than GPT-6.1 Sol / Claude Opus 5.5" },
+      { "label": "Image tokenization", "value": "1.5 tokens per 32x32px patch (1024x1024 img = 1,536 tokens)" },
+      { "label": "Visual inspection accuracy", "value": "85-97%" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://www.liquid.ai/blog/d1-decision-model"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI will watermark ChatGPT and Codex text output in the EU",
+    "summary": "OpenAI is rolling out 'textGrain,' a method that embeds an invisible statistical signal into a model's word choices so generated text can later be detected. It becomes mandatory for ChatGPT and Codex in the EU to satisfy AI Act transparency rules, while staying optional elsewhere, including as an opt-in for API customers globally. Detection is far from bulletproof: short 200-token passages are only caught about 80% of the time versus 95% for 400-token ones, and swapping just 10% of words for synonyms drops detection from roughly 92% to 66%.",
+    "foryou": "If you're building anything that post-processes or paraphrases OpenAI output for EU users, a light rewrite pass already cuts watermark detection by roughly a third - treat this as a compliance signal, not a robust provenance guarantee.",
+    "specs": [
+      { "label": "Method", "value": "textGrain - invisible signal in word selection" },
+      { "label": "Detection @200 tokens", "value": "~80%" },
+      { "label": "Detection @400 tokens", "value": "~95%" },
+      { "label": "Detection after 10% synonym swap", "value": "drops from ~92% to ~66%" },
+      { "label": "Scope", "value": "Mandatory in EU (ChatGPT/Codex); opt-in elsewhere incl. API" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://openai.com/index/eu-text-provenance/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI in talks for $30B round with UAE funds, BlackRock at $1.4T valuation",
+    "summary": "OpenAI is negotiating a new financing round of at least $30 billion, per Bloomberg, at a valuation around $1.4 trillion. A syndicate of UAE investment funds, including Abu Dhabi's MGX, has discussed contributing as much as $10 billion, with BlackRock, the University of California's endowment, Thrive Capital, and Andreessen Horowitz also in talks to participate. The company is reportedly delaying an IPO until at least 2027.",
+    "source": "TLDR AI (also: Reuters)",
+    "date": "2026-10-07",
+    "url": "https://www.tradingview.com/news/reuters.com,2026-10-06:newsml_Zaw9MDWp6:0-openai-in-30bln-round-talks-with-uae-funds-blackrock-report/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's new B2B marketplace positions it as AI's hyperscaler",
+    "summary": "OpenAI's B2B marketplace launched September 29 with 32 partners, aiming to make OpenAI the platform the wider AI app ecosystem distributes through and depends on. Analysts expect it to echo the cloud-marketplace model: labs and apps co-selling, apps paying a listing fee, and buyers getting one consolidated invoice - simplifying budgeting for customers while deepening lock-in to OpenAI's platform.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://www.akashbajwa.co/p/openais-b2b-marketplace-the-hyperscaler"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia's $20B Groq deal hit with stockholder lawsuit",
+    "summary": "A lawsuit alleges Nvidia's roughly $20 billion deal to acquire Groq was made without the stockholder vote Delaware law requires, and without a process designed to test or maximize the value of what Nvidia bought - meaning Groq's stockholders may have been shortchanged on price.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://www.cnbc.com/2026/10/05/nvidia-groq-deal-stockholder-lawsuit.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Etched reportedly fielding funding offers at $40B+ valuation",
+    "summary": "AI chip startup Etched - which raised $700 million at a $21 billion valuation just a couple of months ago - is said to be fielding offers for a new round at a valuation above $40 billion. The fast follow-on underscores how capital-intensive and highly valued the 'full AI hardware system with proprietary chips' segment of the market has become.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://techcrunch.com/2026/10/05/etched-fields-funding-offers-at-40b-valuation-sources-say/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI expands ChatGPT ads with new visual format and measurement tools",
+    "summary": "OpenAI introduced a new visual ad format inside ChatGPT along with expanded measurement tools, ad partnerships, and brand-suitability controls. The company frames advertising as a way to subsidize broader ChatGPT access while giving advertisers a channel to reach users during product discovery and decision-making - formalizing monetization beyond subscriptions and API revenue.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://openai.com/index/new-chatgpt-ads-format-and-measurement/"
+  },
+  {
+    "section": "industry",
+    "headline": "Cohere launches North 2, an enterprise agentic AI platform",
+    "summary": "Cohere introduced North 2, pitched as removing the usual trade-offs enterprises face between security, intelligence, cost, and control when adopting agentic AI. It targets regulated enterprises that have held back on agent deployment over data-governance and reliability concerns.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://cohere.com/blog/introducing-north-2"
+  },
+  {
+    "section": "tips",
+    "headline": "How Devin's 'Memory' and 'Dreaming' systems work",
+    "summary": "Devin's Memory system carries preferences, corrections, and project-specific learnings across sessions, while a background 'Dreaming' process periodically reorganizes that store - deduplicating memories, linking them to past sessions and artifacts, and deriving new knowledge from accumulated work.",
+    "foryou": "A concrete architecture pattern - write-time memory plus an async consolidation pass - worth stealing directly if you're building long-running agents that need to stop re-learning the same project facts every session.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://devin.ai/blog/memory-and-dreaming"
+  },
+  {
+    "section": "tips",
+    "headline": "What an AI-native software factory needs once agents scale past individual developers",
+    "summary": "Using Uber's internal 'software factory' as the case study, this piece lays out the infrastructure coding-agent teams need at scale: cloud execution environments, model gateways, agent identity and permissions, automated testing, large-scale migrations, code review pipelines, and measuring economics like cost per merged pull request.",
+    "foryou": "Cost-per-merged-PR is the metric worth adopting now, before your agentic pipeline's token spend becomes a line item nobody can explain.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://www.theaithinker.com/p/how-to-build-an-ai-native-software"
+  },
+  {
+    "section": "tips",
+    "headline": "Framefields brings Photoshop/After Effects-style compositing to coding agents",
+    "summary": "Framefields is an open-source npm package that lets coding agents script Photoshop-style compositing and VFX, After Effects-style motion and keyframing, and Blender-style 3D scenes and cameras by writing a TypeScript composition. It checks frames and renders directly to GPU hardware in Node.js or WebGPU-capable browsers, outputting an MP4.",
+    "foryou": "A scriptable, agent-writable rendering pipeline is the missing piece for any workflow where an LLM needs to produce video/motion output without a human opening a timeline editor.",
+    "source": "TLDR AI",
+    "date": "2026-10-07",
+    "url": "https://github.com/gatewai-dev/framefields"
+  }
+]
