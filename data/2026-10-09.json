@@ -1,0 +1,138 @@
+[
+  {
+    "section": "models",
+    "headline": "GPT-6 Brings \"Intelligent UI\" to 1.2B ChatGPT Users",
+    "summary": "OpenAI's GPT-6 update introduces Intelligent UI, letting ChatGPT respond with interactive visual elements — charts, maps, tappable buttons, on-demand mini-apps — instead of plain text. GPT-6 Sol powers paid tiers (Plus/Pro/Business/Enterprise) while GPT-6 Luna powers Free/Go; the update only touches the Chat experience, not Work or Codex. OpenAI also claims 44% faster web-search response starts and stronger multi-turn jailbreak resistance.",
+    "foryou": "If you're building consumer-facing chat products, Intelligent UI's render-as-you-generate component streaming is worth studying even off OpenAI's stack — it's the clearest signal yet that chat UIs are becoming generative-app UIs.",
+    "specs": [
+      {"label": "Models", "value": "GPT-6 Sol (paid tiers), GPT-6 Luna (Free/Go)"},
+      {"label": "Web search speed", "value": "44% faster first response vs GPT-5.6 Instant"},
+      {"label": "Scope", "value": "ChatGPT Chat tab only; Work/Codex unchanged"},
+      {"label": "Rollout", "value": "1.2B weekly ChatGPT users"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://openai.com/index/gpt-6-for-everyone/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude Haiku 5.5 Launches: Up to 90% Cheaper, Adjustable Effort Dial",
+    "summary": "Anthropic's Haiku 5.5 is its fastest model yet, priced up to 90% lower than Haiku 4.5 for prompts under 100K tokens ($0.10/$0.50 per M input/output vs $1/$5). It's the first Haiku with an adjustable effort setting (Low to Max) and posts large benchmark jumps — 72.4% on OSWorld 2.1 versus 15.7% for Haiku 4.5. Anthropic positions it for high-volume work like summarization, classification, subagents, and browser use, steering complex agentic coding to Sonnet or Opus 5.5 instead.",
+    "foryou": "This is the model to swap into your subagent, classification, and routing layers — at $0.10/M input tokens with Box reporting roughly half the latency of Haiku 4.5, it changes the cost math for high-volume pipeline steps you were previously routing to Sonnet just for reliability.",
+    "specs": [
+      {"label": "Input price (≤100K prompt)", "value": "$0.10 / 1M (Haiku 4.5: $1.00)"},
+      {"label": "Output price (≤100K prompt)", "value": "$0.50 / 1M (Haiku 4.5: $5.00)"},
+      {"label": "OSWorld 2.1 (offline)", "value": "72.4% (Haiku 4.5: 15.7%)"},
+      {"label": "Effort levels", "value": "Low / Med / High / Xhigh / Max"},
+      {"label": "Availability", "value": "Claude Platform, AWS, Google Cloud, Azure"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://www.anthropic.com/claude-haiku-5-5"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI Open-Sources Sub-10ms \"Decision\" Models for Edge AI",
+    "summary": "Liquid AI released d1-3B and d1-omni-600M, open-weight models that skip token generation entirely and output a decision in a single forward pass. d1-3B (text+image) runs in 8ms on an RTX 4090 and 16-50ms on Jetson edge hardware; d1-omni-600M adds audio support in a 600M-parameter footprint. Both beat similarly sized generative models on Liquid's Decision Index benchmark and ship with day-one llama.cpp support.",
+    "foryou": "If a step in your agentic pipeline is really just a classification or routing decision (call this tool? is this frame relevant?) dressed up as a generation call, swapping it for a d1 model could cut that step's latency from hundreds of milliseconds to single digits.",
+    "specs": [
+      {"label": "d1-3B size", "value": "~3B params (from LFM2.5-VL-3B)"},
+      {"label": "d1-omni-600M size", "value": "~600M params (from LFM2.5-Encoder-350M)"},
+      {"label": "Latency, d1-3B on RTX 4090", "value": "8ms end-to-end"},
+      {"label": "Latency, d1-3B on Jetson Orin Nano", "value": "50ms end-to-end"},
+      {"label": "License", "value": "Open-weight, unrestricted use/fine-tune/deploy"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://www.liquid.ai/blog/d1-open"
+  },
+  {
+    "section": "models",
+    "headline": "Perplexity Ships Multi-Vector Embeddings That Search PDFs Without OCR",
+    "summary": "Perplexity's PPLX-EMBED-V2-LATE family (0.6B and 9B) uses ColBERT-style late interaction instead of single-vector embeddings, keeping token-level vectors for richer retrieval. The 9B model tops domain-specific text retrieval at 81.3% among all evaluated models and can index rendered PDF pages directly — no OCR or text parsing required. A shared embedding space lets a cheap 0.6B query model search a 9B-built index.",
+    "foryou": "Multi-vector retrieval is the fix for \"my RAG works on clean text but falls apart on scanned PDFs and tables\" — worth benchmarking against your current dense-embedding stack if document-heavy retrieval has been a weak spot.",
+    "specs": [
+      {"label": "Sizes", "value": "0.6B (594M total) and 9B parameters"},
+      {"label": "Architecture", "value": "Multi-vector, late-interaction (ColBERT-style), 128-dim/token"},
+      {"label": "ViDoRe v3 (visual)", "value": "65.2% (9B), 62.3% (0.6B)"},
+      {"label": "Domain text retrieval avg.", "value": "81.3% (9B) — highest of all models evaluated"},
+      {"label": "Modalities", "value": "Text + image; searches rendered PDF pages directly"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://www.perplexity.ai/hub/blog/multimodal-embeddings-beyond-a-single-vector"
+  },
+  {
+    "section": "industry",
+    "headline": "Musk's Grok Bot Will Route Tasks to Claude Opus 5.5, Midjourney, and Suno",
+    "summary": "Elon Musk says SpaceXAI's Grok Bot agent will call out to rival models — including Anthropic's Claude Opus 5.5, Midjourney, and Suno — whenever they outperform Grok's own models, calling it \"whatever is most likely to give you the best outcome.\" The move follows reports of access issues on Grok's mobile and web apps. Grok Bot competes with Meta's Muse, reportedly past 3 million weekly users, and some early adopters have cited privacy concerns about connecting personal agents to email and other accounts.",
+    "source": "TLDR AI (also: TheNextWeb)",
+    "date": "2026-10-09",
+    "url": "https://thenextweb.com/news/grok-bot-claude-opus-midjourney-suno-musk"
+  },
+  {
+    "section": "industry",
+    "headline": "Oracle, Broadcom and SpaceX All Chasing Mega Debt Deals for AI Chips",
+    "summary": "Broadcom is lining up more than $50 billion in financing, with Apollo and Blackstone among the lenders, to fund custom AI chips for OpenAI. Oracle is separately in talks with Apollo and Goldman Sachs for a large chip purchase, and SpaceX is pursuing roughly $40 billion in financing for Nvidia chips. Together, the three deals signal that AI infrastructure buildouts are increasingly funded with private credit rather than cash or equity.",
+    "source": "TLDR AI",
+    "date": "2026-10-09"
+  },
+  {
+    "section": "industry",
+    "headline": "Fired OpenAI Researchers Ask Company to Preserve Chain-of-Thought Visibility",
+    "summary": "A group of researchers let go by OpenAI are asking the company to keep monitoring access to models' chain-of-thought reasoning, warning that commercial pressure could push labs toward reasoning that's optimized for results but opaque to human oversight. Their concern echoes a broader industry worry that as models get more capable, the ability to audit how they reach answers could quietly disappear.",
+    "source": "TLDR AI",
+    "date": "2026-10-09"
+  },
+  {
+    "section": "industry",
+    "headline": "What's Actually Known About Anthropic's Corporate Structure",
+    "summary": "A deep dive examines what's publicly documented about who controls and governs Anthropic, arguing transparency matters given how capable its models are becoming. The piece focuses specifically on control and governance mechanisms rather than equity or economic upside, separating what's confirmed from what's merely inferred from public filings and statements.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://www.lesswrong.com/posts/Hb5aCFtLuHc5uvAgX/anthropic-s-corporate-structure"
+  },
+  {
+    "section": "industry",
+    "headline": "Tony Fadell: The First Wave of AI Gadgets Failed Because They Ignored Trust",
+    "summary": "Former iPod creator Tony Fadell argues devices like the Rabbit R1 flopped because they didn't solve a real problem and never earned user trust. He points to Meta's Muse running into security issues as evidence that securing personal AI assistants is genuinely hard, and argues the winning approach is on-device processing for privacy — a position he thinks favors Apple on hardware and trust despite it lacking its own frontier model.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/"
+  },
+  {
+    "section": "industry",
+    "headline": "Texas Hits Pause on New AI Data Center Permits",
+    "summary": "Texas has stopped issuing new data center permits after its power grid became overwhelmed by a backlog of speculative projects. Regulators want assurance that approved projects can fund their own grid upgrades and address local concerns over water use and noise before more capacity is approved. One option under consideration is requiring data centers to bring their own on-site power generation rather than drawing straight from the grid.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://a16z.com/why-texas-is-making-data-centers-wait/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenDocRouter: One API for Every Document-Parsing Model",
+    "summary": "LlamaIndex's OpenDocRouter lets you call Claude Opus 5.5, Gemini 3 Flash, GPT-6 Luna, and open-source OCR models like MinerU2.5-Pro through a single document-to-markdown API, with per-model cost and quality benchmarks published up front. It supports sync calls for quick jobs and async polling for large batches, and a shared layout schema means no per-model parsing logic downstream.",
+    "foryou": "If you've hand-rolled a PDF-to-markdown step for a RAG pipeline, this is worth swapping in: published costs range from about $0.80 per 1,000 pages (GPT-6 Luna) to $48.82 (Opus 5.5), so you can actually price out accuracy-vs-cost tradeoffs instead of guessing.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://www.llamaindex.ai/blog/introducing-opendocrouter"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA and Microsoft Bring Local AI Agents to Windows via RTX Spark",
+    "summary": "NVIDIA and Microsoft are integrating AI agents directly into Windows PCs using RTX Spark hardware acceleration and a new Microsoft \"Execution Containers\" sandbox for running agents securely on-device. The push targets local, always-available agents that don't depend on cloud round-trips, positioning Windows as a platform for persistent desktop AI assistants.",
+    "foryou": "Execution Containers is the piece to watch if you're building desktop agents that need filesystem or app access — sandboxed local execution addresses a safety gap that cloud-only agent frameworks can't.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://blogs.nvidia.com/blog/local-ai-rtx-spark-microsoft-windows-event/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Takes SynthID Detector Global for Checking AI-Generated Media",
+    "summary": "Google has expanded SynthID Detector worldwide, letting anyone upload an image, video, or audio file to check for invisible watermarks from Google and partner models including OpenAI and NVIDIA. It's a free, standalone verification tool rather than a model feature.",
+    "foryou": "A cheap sanity-check layer if your pipeline ingests user-submitted media — use it as a first-pass signal on whether something was AI-generated before routing to a heavier moderation or provenance step.",
+    "source": "TLDR AI",
+    "date": "2026-10-09",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/"
+  }
+]
