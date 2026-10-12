@@ -1,0 +1,163 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI rolls out \"Ultrafast\" mode for GPT-6.1 Sol",
+    "summary": "OpenAI is rolling out an Ultrafast mode for GPT-6.1 Sol across the API, Codex, and ChatGPT Work. The mode delivers near-Astra-level intelligence at up to 8x the speed of Sol Standard, aimed at work where both speed and quality matter.",
+    "foryou": "If you're running latency-sensitive agent loops, benchmark Ultrafast against your current calls — near-frontier quality at 8x speed could cut wall-clock time significantly, as long as the per-token price fits your margins.",
+    "specs": [
+      {
+        "label": "Speed",
+        "value": "8x faster than Sol Standard"
+      },
+      {
+        "label": "Intelligence",
+        "value": "Near-Astra-level"
+      },
+      {
+        "label": "Price (input)",
+        "value": "$12 / 1M tokens"
+      },
+      {
+        "label": "Price (output)",
+        "value": "$60 / 1M tokens"
+      },
+      {
+        "label": "Availability",
+        "value": "API, Codex, ChatGPT Work"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://threadreaderapp.com/thread/2108262812489531498.html"
+  },
+  {
+    "section": "models",
+    "headline": "Google launches a universal Gemini agent for enterprise work",
+    "summary": "Google introduced a universal Gemini agent that can autonomously handle knowledge work, media creation, coding, and multi-step workflows across Workspace and third-party enterprise tools. The release adds persistent context, multi-agent orchestration, model routing, governance, and cost controls.",
+    "foryou": "Google is targeting the orchestration layer you'd otherwise build yourself — persistent context plus built-in governance and cost controls means less custom plumbing if you're willing to go all-in on the Workspace ecosystem.",
+    "specs": [
+      {
+        "label": "Scope",
+        "value": "Knowledge work, media creation, coding, multi-step workflows"
+      },
+      {
+        "label": "New capabilities",
+        "value": "Persistent context, multi-agent orchestration, model routing"
+      },
+      {
+        "label": "Also added",
+        "value": "Governance and cost controls"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/welcome-to-gemini-at-work-2026"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic halves Claude Sonnet 5.5 cache-read pricing",
+    "summary": "Anthropic cut Claude Sonnet 5.5's cache-read price in half, bringing it in line with OpenAI's $0.10-per-million-token rate. The change makes most agentic workloads on Sonnet 5.5 roughly 20% cheaper to run overall.",
+    "foryou": "If your pipeline leans on long system prompts or repeated tool schemas, re-run your cost model now — cache-heavy agentic work on Sonnet 5.5 just got meaningfully cheaper, which may change your build-vs-buy math on using Haiku purely for cost reasons.",
+    "specs": [
+      {
+        "label": "Cache-read price cut",
+        "value": "50%"
+      },
+      {
+        "label": "Net effect on agentic work",
+        "value": "~20% cheaper"
+      },
+      {
+        "label": "New cache-read rate",
+        "value": "$0.10 / 1M tokens (matches OpenAI)"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-12",
+    "url": "https://www.remio.ai/post/anthropic-cuts-claude-sonnet-5-5-cache-pricing-matching-openai-at-0-10"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI fires three employees amid safety dispute",
+    "summary": "Three OpenAI employees were fired this week after raising safety concerns, though the company says the terminations were over mishandling sensitive information and that the staff may have been caught up in an unrelated leak investigation. The fired researchers wrote an open letter urging OpenAI to preserve independent evaluator access and protect chain-of-thought monitorability. Reactions split sharply along the AI-safety-vs-acceleration divide, and more controversies like this are expected as labs scale.",
+    "source": "Semafor (also: TLDR AI)",
+    "date": "2026-10-12",
+    "url": "https://www.aljazeera.com/economy/2026/10/9/ex-openai-staff-say-they-were-fired-for-raising-safety-concerns"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's revenue reportedly $20B below earlier projection",
+    "summary": "OpenAI told investors its annualized revenue is approaching $50 billion — about $20 billion below a figure reported roughly a week earlier that was framed as a direct comparison with Anthropic. The gap traces to accounting differences: Anthropic counts cloud partners' cut of revenue from running its models as its own, while OpenAI counts only its ~20% take. AI-linked stocks dipped briefly on the news before recovering.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-10-12",
+    "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/"
+  },
+  {
+    "section": "industry",
+    "headline": "FTC nears formal demands to frontier AI labs",
+    "summary": "The FTC is close to sending investigative demands — which carry subpoena-like force — to frontier AI companies including OpenAI and Anthropic, a senior agency official told Semafor. The inquiry, triggered by public health and safety concerns, became public in an unusual pre-demand disclosure, raising questions over whether it's a serious probe or a show of action ahead of the midterms.",
+    "source": "Semafor",
+    "date": "2026-10-12",
+    "url": "https://www.semafor.com/article/10/08/2026/ftc-advancing-on-its-ai-safety-probe"
+  },
+  {
+    "section": "industry",
+    "headline": "Hone raises $60M to build AI agents as long-running business \"staffers\"",
+    "summary": "Hone, a five-month-old startup founded by former Cognition and Ramp staffers, raised a $60 million seed round to build AI agents that act as professional staffers for businesses, handling tasks that stretch over weeks or months. It joins a growing wave of startups selling autonomous business-agent software, reportedly valuing the company at $285 million.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://runtimewire.com/article/hone-60m-seed-ai-business-agents-moritz-stephan"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic launches a Cyber Defense Initiative",
+    "summary": "Anthropic launched a \"Cyber Mission\" that commits frontier models, engineering support, and funding to critical-infrastructure and open-source security projects. The move addresses one of the clearer near-term risks of frontier AI: that it turns mediocre hackers into capable ones.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://www.anthropic.com/news/anthropic-cyber-mission"
+  },
+  {
+    "section": "industry",
+    "headline": "Marissa Mayer's Dazzle launches a photo-based AI assistant",
+    "summary": "Former Yahoo CEO Marissa Mayer's startup Dazzle launched an AI assistant that skips text and email entirely, instead mining a user's phone camera roll to learn who they are and generate a personalized to-do list. Mayer says she's deliberately targeting consumers rather than the crowded enterprise AI-assistant market, pointing to Apple, Amazon, and Nvidia as proof consumer plays can still win big.",
+    "source": "Semafor (also: Web)",
+    "date": "2026-10-12",
+    "url": "https://aichief.com/news/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/"
+  },
+  {
+    "section": "tips",
+    "headline": "Quicksand: an async Python sandbox for AI agents",
+    "summary": "Quicksand is an async Python API for launching, controlling, and snapshotting QEMU virtual machines, built specifically for sandboxing AI agents. It ships pre-built Ubuntu and Alpine Linux VMs, runs on x86_64 and ARM64 across macOS, Linux, and Windows, and needs neither root privileges nor Docker.",
+    "foryou": "If your agents execute arbitrary code, this is a lighter-weight sandbox than standing up your own Docker or Firecracker setup — worth evaluating before you build that infrastructure yourself.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://github.com/microsoft/quicksand"
+  },
+  {
+    "section": "tips",
+    "headline": "Devin's \"Security Swarm\" scans large codebases with agentic MapReduce",
+    "summary": "Devin's Security Swarm scans codebases for vulnerabilities like RCE, SQL injection, and SSRF using an agentic MapReduce pattern: it splits a large codebase into chunks a swarm of agents can analyze in parallel, then merges the results.",
+    "foryou": "The MapReduce-over-agents pattern here generalizes well beyond security scanning — it's a solid template for any analysis task where a single-context-window agent would choke on your repo size.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://docs.devin.ai/work-with-devin/security-swarm"
+  },
+  {
+    "section": "tips",
+    "headline": "Why speculative decoding actually speeds up inference",
+    "summary": "A technical deep dive explains why speculative decoding — where a small draft model proposes tokens that a larger model verifies in parallel — speeds up inference: it spends otherwise-idle compute when batch size is below the optimal token count. At high throughput, though, the same technique can waste compute that would be better spent on memory movement.",
+    "foryou": "Know this crossover point before enabling speculative decoding on your own serving stack — it helps at low-to-moderate batch sizes and can actively hurt you once you're throughput-bound.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://jbarrow.ai/2026-10-08-why-is-speculative-decoding-fast/"
+  },
+  {
+    "section": "tips",
+    "headline": "ATLAS benchmark exposes gaps in search agents",
+    "summary": "ATLAS is a new benchmark for evaluating search agents on real-world, search-intensive tasks, designed to avoid memorized answers and require multi-domain web search. It found that even high-effort agents miss a significant share of \"golden answers,\" and offers a cheaper grading process than prior alternatives.",
+    "foryou": "If you're building or evaluating a retrieval-heavy agent, this is a useful gut check — \"good enough\" on your internal tests may not survive ATLAS-style non-memorized queries.",
+    "source": "TLDR AI",
+    "date": "2026-10-12",
+    "url": "https://exa.ai/blog/atlas-benchmark"
+  }
+]
