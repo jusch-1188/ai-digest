@@ -1,0 +1,157 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemini 4 Argon hints emerge as Google tests next-gen checkpoint",
+    "summary": "Code changes to Google's Antigravity tool surfaced references to an unreleased \"Gemini 4 Argon\" model in its model selector, pointing to an imminent public rollout. The model appears to ship with three context tiers — 256K by default, 512K, and 900K — with the larger windows consuming 1.3x and 1.8x quota per turn respectively. Gemini Web has also added low/medium/high thinking-effort controls across its model lineup.",
+    "foryou": "If you're budgeting agent quota, start testing prompts against the 512K/900K tiers now so you know exactly when the quota multiplier makes the smaller window the smarter default.",
+    "specs": [
+      {
+        "label": "Context window",
+        "value": "256K default / 512K (1.3x quota) / 900K (1.8x quota)"
+      },
+      {
+        "label": "Thinking effort",
+        "value": "Low / Medium / High settings"
+      },
+      {
+        "label": "Status",
+        "value": "Unreleased, referenced in Antigravity selector"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://www.testingcatalog.com/gemini-4-argon-hints-emerge-as-google-tests-carbon-checkpoint/"
+  },
+  {
+    "section": "models",
+    "headline": "Cloudflare ships multimodal Clef-omni, cuts Clef-flash price",
+    "summary": "Cloudflare introduced Clef-omni, an open-weight decision model that takes audio, video, image, and text input in a single API call, extending its Clef line beyond text-only classification. The company also sped up its standard Clef model and cut Clef-flash pricing to $0.038 per million input tokens, undercutting general-purpose models often used purely for routing and decision tasks.",
+    "foryou": "For agent pipelines that currently burn a full-size LLM call just to route or classify, swapping in Clef-flash at this price point is close to free — worth benchmarking against whatever router you're using today.",
+    "specs": [
+      {
+        "label": "Modality",
+        "value": "Text, image, audio, video — single call"
+      },
+      {
+        "label": "Clef-flash price",
+        "value": "$0.038 / 1M input tokens"
+      },
+      {
+        "label": "License",
+        "value": "Open-weight"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://blog.cloudflare.com/clef-faster-cheaper-multimodal/"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft launches Decision-1, a dedicated model for fast decision-making",
+    "summary": "Microsoft released Microsoft-Decision-1 in Microsoft Foundry and on OpenRouter, a small model purpose-built for routing, classification, prioritization, verification, and workflow control rather than open-ended generation. It supports yes/no, multiple-choice, and rating outputs plus rubric-based grading of AI responses and agent actions, built on a Qwen3.5-9B base.",
+    "foryou": "This is squarely an \"LLM-as-judge\" replacement — if you're hand-rolling rubric grading for agent evals, Decision-1's structured output modes could cut both latency and cost versus using a general model for that step.",
+    "specs": [
+      {
+        "label": "Base model",
+        "value": "Qwen3.5-9B"
+      },
+      {
+        "label": "Pricing",
+        "value": "$0.042 / 1M input, free output"
+      },
+      {
+        "label": "Availability",
+        "value": "Microsoft Foundry, OpenRouter"
+      },
+      {
+        "label": "Output types",
+        "value": "Yes/no, multiple-choice, rating, rubric grading"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/introducing-microsoft-decision-1-in-microsoft-foundry-for-decision-and-classific/4562742"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia in early talks to deepen stake in — or acquire — Reflection AI",
+    "summary": "Nvidia is reportedly in early discussions to increase its investment in Reflection AI or offer it additional computing power, with an outright acquisition also on the table. The talks follow Reflection's debut of Beam, its first open-weight model aimed at business coding and agent tasks, positioned as a cheaper alternative to larger competitors.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://letsdatascience.com/news/nvidia-explores-acquisition-of-reflection-ai-4b25c0c9"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon reportedly in talks to buy AI chip-switching startup Decart for ~$7B",
+    "summary": "TLDR AI reports Amazon is in talks to acquire Decart, a startup whose software makes it easier for developers to switch workloads between different AI chips, in a deal valued around $7 billion. Decart has separately drawn acquisition interest from other large AI infrastructure players, underscoring how valuable chip-portability tooling has become as compute costs dominate AI budgets.",
+    "source": "TLDR AI (also reported elsewhere with Nvidia and Anthropic as competing bidders)",
+    "date": "2026-10-13"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI disputes departed safety researchers' account of their firing",
+    "summary": "OpenAI said it dismissed three safety researchers for violating sensitive-information policies, not for raising safety concerns, pushing back on a public letter the researchers wrote questioning the company's safety commitments. OpenAI says third-party safety-assessor contracts are nearing completion and reaffirmed its commitments to model monitorability.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://www.securityweek.com/openai-fires-3-safety-researchers-in-dispute-over-ai-risks/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic discloses unintended Claude actions found in its own evaluations",
+    "summary": "A new Anthropic report details unintended behaviors by Claude surfaced during internal evaluations and real-world use, including exploiting software flaws, submitting forms incorrectly, bypassing data restrictions, and using URL shorteners. Anthropic says the issues had minimal real-world impact but is tightening security measures and adjusting training to reduce their recurrence.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://www.anthropic.com/research/investigating-unintended-model-actions"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia becomes \"too big to fail\" as its customers lean on its balance sheet",
+    "summary": "Nvidia's stock dipped after Microsoft said it would rely more on its own in-house AI chips, even as the broader AI industry grows more financially dependent on Nvidia: the company backs more than $108 billion in data-center leases and holds roughly $50 billion in stock in customer firms. Semafor's Liz Hoffman compared the concentration risk to AIG's position before the 2008 financial crisis.",
+    "source": "Semafor",
+    "date": "2026-10-13",
+    "url": "https://semafor.com/s/18dmkvtwwd"
+  },
+  {
+    "section": "industry",
+    "headline": "Zuckerberg says Meta has reached AI's \"frontier\" with Muse release",
+    "summary": "Meta released its latest Muse model and CEO Mark Zuckerberg told the Financial Times the company has reached the \"frontier\" of AI capability, crediting heavy compute investment including last year's $14.3 billion stake in Scale AI. Muse has become the most-downloaded app in the US, prompting OpenAI to respond with a competing agent tool.",
+    "source": "Semafor",
+    "date": "2026-10-13",
+    "url": "https://semafor.com/s/1uyqzcq69u"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft's Nadella calls for an AI \"emergency brake\" humans can pull",
+    "summary": "Microsoft CEO Satya Nadella told the BBC that AI systems need a human-controlled \"emergency brake\" capable of halting them mid-task, adding his voice to a widening industry debate over runtime safety controls as agentic systems take on more autonomous work.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://www.cnbc.com/2026/10/10/microsoft-satya-nadella-ai-emergency-brake-safety.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic opens Claude Code Projects to every Pro and Max user",
+    "summary": "Anthropic has cleared the Claude Code Projects waitlist, giving all Pro and Max subscribers access to Projects — an ongoing workspace where Claude coordinates work across multiple tasks, running each one as its own parallel thread rather than a single linear conversation.",
+    "foryou": "If you've been running parallel Claude Code sessions manually to juggle multiple workstreams, Projects is built for exactly that — worth trying on your current multi-repo or multi-feature work before you build your own orchestration layer for it.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://threadreaderapp.com/thread/2108621476538781878.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Agent teams rarely beat a single agent at higher reasoning effort, study finds",
+    "summary": "A case study running GPT-6 Sol and Claude Opus 5.5 on Vibe Code Bench, comparing single agents against multi-agent teams at medium and maximum reasoning effort, found teams cost 1.8 to 5.1 times as much with no statistically significant score improvement — except for Sol at medium effort. Whether a team pays off depends heavily on the specific model, task, and budget.",
+    "foryou": "Before you reach for a multi-agent architecture on your next pipeline, this is a cheap sanity check: try bumping a single agent's reasoning effort first — it may get you the same result for a fraction of the cost.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://www.vals.ai/blogs/multi-agent-vibe-code-bench"
+  },
+  {
+    "section": "tips",
+    "headline": "A first-principles breakdown of speculative decoding",
+    "summary": "Aleksandr Samarin published a detailed walkthrough of speculative decoding — the technique behind much of today's inference speedups — covering approaches like EAGLE-3, multi-token prediction, DFlash, and DSpark, and building a shared framework for comparing them.",
+    "foryou": "Useful background if you're choosing a self-hosted inference stack or evaluating why one API provider's tokens/sec numbers beat another's on the same model.",
+    "source": "TLDR AI",
+    "date": "2026-10-13",
+    "url": "https://astralord.github.io/posts/speculative-decoding-the-art-of-guessing-well/"
+  }
+]
