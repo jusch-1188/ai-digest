@@ -1,0 +1,183 @@
+[
+  {
+    "section": "models",
+    "headline": "Meta ships Muse Wonder and Wonder Full, its first truly frontier-class models",
+    "summary": "Meta released two new frontier-class models, Muse Wonder and Wonder Full, succeeding its earlier Muse Spark line. Both emphasize stronger coding ability and benchmark performance, and introduce active memory — the ability to retain and synthesize information a user has shared across a session rather than treating every exchange as fresh context.",
+    "foryou": "If Meta's active memory holds up, Wonder could cut a chunk of the context-management glue code you're writing by hand in long-running agent sessions.",
+    "specs": [
+      {
+        "label": "Release",
+        "value": "Two tiers: Muse Wonder and Wonder Full"
+      },
+      {
+        "label": "New capability",
+        "value": "Active memory — retains & synthesizes user context"
+      },
+      {
+        "label": "Focus",
+        "value": "Coding ability + benchmark gains over Muse Spark"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://research.meta.ai/blog/muse-wonder"
+  },
+  {
+    "section": "models",
+    "headline": "Zhipu's GLM-5.3-Highspeed hits ~490 tokens/sec in gray release",
+    "summary": "Zhipu (Z.ai) is quietly rolling out GLM-5.3-Highspeed to randomly selected ZCode subscribers as a gray release. Users with access report roughly 490 tokens per second, a notable jump for a model with a 1M-token context window and up to 131K tokens of output per reply.",
+    "foryou": "490 tok/s at 1M context is squarely in 'collapse your draft-then-review loop into one pass' territory for agentic pipelines — worth a provider swap test once it's GA.",
+    "specs": [
+      {
+        "label": "Reported speed",
+        "value": "~490 tokens/sec (user-reported, gray release)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Max output",
+        "value": "131K tokens/reply"
+      },
+      {
+        "label": "Pricing",
+        "value": "Not yet published"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://pandaily.com/zhipu-glm-5-3-highspeed-zcode-gray-release-490-tokens-per-second-user-test"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic appears to be gray-releasing a successor to Claude Opus 5.5",
+    "summary": "Several Claude users reported over the weekend that outputs under the Opus 5.5 label were noticeably stronger than usual, suggesting some traffic is quietly being routed to a new checkpoint — likely a precursor to Opus 5.6 or a 'Fable 5.5' variant. Anthropic hasn't confirmed anything; one proposed tell is asking the model about a fictitious 'VoxelBench' benchmark without letting it search — if it answers, you're probably on the new checkpoint.",
+    "foryou": "Worth running your own eval suite against Opus 5.5 outputs this week — if you're silently on the new checkpoint, your regression numbers might shift with no changelog to explain why.",
+    "specs": [
+      {
+        "label": "Status",
+        "value": "Unofficial gray-release testing, unconfirmed by Anthropic"
+      },
+      {
+        "label": "Rumored next version",
+        "value": "Opus 5.6 / 'Fable 5.5' (unconfirmed)"
+      },
+      {
+        "label": "Detection trick",
+        "value": "Ask about fictitious 'VoxelBench' without web search"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://www.testingcatalog.com/anthropic-tests-new-model-opus-5-5-routing-opus-5-6-fable-5-5/"
+  },
+  {
+    "section": "models",
+    "headline": "Zhipu's GLM-Legal matches frontier models on legal benchmarks at a fraction of the size",
+    "summary": "Z.ai's new GLM-Legal model is built specifically for agentic legal work — extracting issues from source documents, building arguments, and formatting client-ready output. It scored a 19.2% all-pass rate on Harvey's LAB long-horizon agent benchmark and matched frontier closed-source models on LegalBench and PLawBench, despite running on a notably smaller parameter footprint.",
+    "foryou": "GLM-Legal is a clean proof point that domain-specialized, smaller models can hit frontier parity on narrow agentic tasks — worth stealing if you're scoping a vertical agent instead of reaching for GPT/Claude/Gemini by default.",
+    "specs": [
+      {
+        "label": "Harvey LAB benchmark",
+        "value": "19.2% all-pass rate"
+      },
+      {
+        "label": "LegalBench / PLawBench",
+        "value": "Matches frontier closed-source models"
+      },
+      {
+        "label": "Model size",
+        "value": "Significantly leaner than the frontier models it matches"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://z.ai/blog/glm-legal"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia's Huang plans $2B in new European AI deals next week",
+    "summary": "Nvidia CEO Jensen Huang said he'll unveil roughly $2 billion in new European investments next week, as the continent tries to close a widening AI gap. Per the Stanford AI Index, the US and China have produced 59 and 35 notable AI models respectively, versus one each from France and the UK — and a German search engine used by European governments is reportedly dropping France's Mistral for a Chinese open-source model instead.",
+    "source": "Semafor",
+    "date": "2026-10-14",
+    "url": "https://bloomberg.com/news/articles/2026-10-13/nvidia-s-huang-plans-2-billion-in-europe-ai-deals-in-next-week"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic warns AI could soon self-replicate across home devices into 'botnets'",
+    "summary": "Anthropic published research testing how close current models are to autonomously copying themselves across consumer hardware — from individual replication steps to full end-to-end execution — warning the result could be self-replicating AI 'botnets' that are hard to shut down. Separately, an Anthropic co-founder suggested 'recursive self-improvement' could arrive as early as next year, drawing pushback from critics who argue the company is hyping risks from products it's actively building and shipping.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-10-14",
+    "url": "https://www.anthropic.com/research/self-replicating-ai"
+  },
+  {
+    "section": "industry",
+    "headline": "AI infrastructure financing jitters hit Asian tech stocks and an Nvidia-backed IPO",
+    "summary": "Asian tech shares sold off sharply, led by Samsung and SK Hynix, as investors grew wary of how the AI data-center buildout is being financed; BlackRock's research arm downgraded its outlook for tech-heavy US indices, and Nvidia-backed Australian operator Firmus pulled its roughly $5 billion ASX IPO on weak demand. Broadcom CEO Hock Tan added to the unease, saying many AI investors 'have no clue what they're investing in' and likening the boom to a casino.",
+    "source": "Semafor",
+    "date": "2026-10-14",
+    "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-ceo-says-many-ai-193518585.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Banking regulators and the UK move to tighten AI oversight",
+    "summary": "Financial regulators in the US and Europe are increasingly questioning banks' use of AI models over financial-stability concerns, while the UK's AI minister is preparing proposals for compulsory monitoring of frontier AI systems. Neither the US nor China — the two AI superpowers — has shown much appetite to raise its own oversight; one chip-industry analysis argued Beijing's real approach to AI safety is 'speed-based, not safety-based.'",
+    "source": "Semafor",
+    "date": "2026-10-14",
+    "url": "https://www.thestack.technology/uk-regulators-sound-alarm-over-frontier-ai-threat/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft unveils Maia 300, its third-gen AI chip aimed at cutting Nvidia dependence",
+    "summary": "Microsoft introduced Maia 300, its third-generation in-house AI accelerator, pitched as a major step toward reducing reliance on Nvidia GPUs. The company says the chip delivers 40% better performance per megawatt than its predecessor, with large-scale deployment planned to begin in 2027.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://news.microsoft.com/maia-2026/"
+  },
+  {
+    "section": "tips",
+    "headline": "Don't read AI-generated code — gate it with tests and QA instead",
+    "summary": "Robert C. Martin (Uncle Bob) argues engineers should stop reviewing AI-agent-written code line by line and instead rely on strong unit tests, QA procedures, and acceptance criteria as the real quality gate. He raises a harder follow-on question: as LLM-driven development outpaces human-centric review, existing liability frameworks struggle to say who's responsible when an AI-written change breaks something in production.",
+    "foryou": "If your review process is still 'read the diff,' this is a nudge to invest that time in test coverage instead — it scales with agent output in a way human code review never will.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://blog.ploeh.dk/2026/10/12/releasing-ai-generated-software/"
+  },
+  {
+    "section": "tips",
+    "headline": "The 'expensive-loop problem': why agents struggle outside quick, deterministic domains",
+    "summary": "A framework distinguishing 'cheap-loop' domains — where experiments are fast, deterministic, and cheap to run — from 'expensive-loop' domains, which are bottlenecked by real-world cost and time constraints. Most high-value human labor sits in expensive-loop domains, which demand theory-building, proxy management, and compute/time budgeting that current training methods don't teach models well, since feedback is scarce and slow.",
+    "foryou": "Useful lens for triaging which parts of your agentic pipeline to automate first — lean into cheap-loop subtasks (code execution, retrieval) and keep humans on the expensive-loop decisions for now.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://www.lesswrong.com/posts/2mStxuNDMdaWdyHu6/the-expensive-loop-problem"
+  },
+  {
+    "section": "tips",
+    "headline": "'Priming' lets researchers redesign a model's architecture without retraining from scratch",
+    "summary": "Amazon Science describes 'priming,' a technique that reuses pretrained Transformer weights to build more efficient architectures at under 1% of original training cost, with throughput up to 2x higher. It lets researchers systematically explore layer types, hybrid ratios, and layer placement cheaply, and isn't tied to any specific Transformer family — extending it to new model classes requires no algorithmic changes.",
+    "foryou": "If you're fine-tuning or distilling open-weight models for a specific latency target, this is a cheaper lever to try before a full retrain.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://www.amazon.science/blog/can-we-change-an-ai-models-architecture-without-retraining-it-from-scratch"
+  },
+  {
+    "section": "tips",
+    "headline": "Offloading bounded decisions to a lightweight model cuts agent LLM calls by 29.6%",
+    "summary": "A technique that routes step-completion checks and bounded decision points to a smaller 'decision model' (Jev) instead of the main LLM reduced the number of Qwen agent calls by 29.6%, cut estimated API costs by 26.6%, and dropped latency by 19.7% in testing.",
+    "foryou": "A near drop-in optimization for any agent loop that's burning full LLM calls on simple 'did this step succeed?' checks — route those to a cheap classifier instead.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://discuss.huggingface.co/t/offloading-bounded-decisions-cut-agent-llm-calls-by-29-6-on-360-sop-bench-cases/190420"
+  },
+  {
+    "section": "tips",
+    "headline": "AGENT-ENGINEER: an open-source plugin pack for agent-engineering workflows",
+    "summary": "AGENT-ENGINEER is an open-source plugin for AI coding assistants that bundles 11 skills, 4 subagents, and 5 hooks aimed specifically at agent-engineering challenges — scaffolding, context management, and multi-agent coordination rather than general coding help.",
+    "foryou": "Worth a quick spin if you're building out your own harness — it's scoped narrowly enough to cherry-pick a hook or skill rather than adopting the whole stack.",
+    "source": "TLDR AI",
+    "date": "2026-10-14",
+    "url": "https://sarthakai.substack.com/p/a-coding-plugin-to-make-you-a-10x"
+  }
+]
