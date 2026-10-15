@@ -1,0 +1,193 @@
+[
+  {
+    "section": "models",
+    "headline": "Meta Releases Muse Wonder, Its First Frontier-Class Model",
+    "summary": "Meta's Superintelligence Lab shipped Muse Wonder and Muse Wonder Full, the company's first frontier-tier models, built to compete with GPT-6 Astra and Fable 5.1 on complex tasks like coding. The models emphasize \"active memory\" — retaining and synthesizing what they learn about a user over time — and were trained at Meta's new Prometheus data center in Ohio. Wonder Full is reserved for Muse Code subscribers; both power the Muse agent.",
+    "foryou": "If your agent pipelines need a model that keeps project context across long sessions rather than just a bigger context window, Wonder's active-memory framing is worth a head-to-head test against whatever you're running now.",
+    "specs": [
+      {
+        "label": "Benchmarks",
+        "value": "Comparable to Fable 5.1 and GPT-6 Astra; leads on MemoryBench"
+      },
+      {
+        "label": "Pricing (API)",
+        "value": "$4 / 1M input · $20 / 1M output"
+      },
+      {
+        "label": "Availability",
+        "value": "Muse Wonder via API; Wonder Full exclusive to Muse Code subscribers"
+      }
+    ],
+    "source": "Semafor (also: Web)",
+    "date": "2026-10-15",
+    "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 4 Argon Lands on Google Cloud With a 1M-Token Output Ceiling",
+    "summary": "Google made Gemini 4 Argon available on Google Cloud as a frontier model for long, multi-step enterprise work — software development, finance, legal, and cybersecurity. Its output ceiling jumps from 64K to 1M tokens, and Google claims strong early scores on coding and agent benchmarks. Access currently runs through the Fairwind early-tester program plus paid API and Google AI Ultra customers.",
+    "foryou": "A 1M-token output ceiling, not just a bigger input window, changes what's feasible for agents that need to emit an entire codebase or long structured report in one pass — worth a cost/latency comparison before you migrate a workload onto it.",
+    "specs": [
+      {
+        "label": "Output window",
+        "value": "Up to 1M tokens (up from 64K)"
+      },
+      {
+        "label": "Pricing (intro)",
+        "value": "$2 / 1M input · $10 / 1M output · $0.10 / 1M cached input"
+      },
+      {
+        "label": "Pricing (standard)",
+        "value": "$4 / 1M input · $20 / 1M output"
+      },
+      {
+        "label": "Benchmarks",
+        "value": "DeepSWE v1.1 77.9% · AutomationBench 51.3% · LVBench 91.7% · CWE-bench v1 68%"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-15",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-4-argon-available-on-google-cloud"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI Ships LFM2.5-24B-A2B for Fast, Private On-Device Agents",
+    "summary": "Liquid AI released LFM2.5-24B-A2B, a 24B-parameter reasoning model with only 2B active parameters, aimed at fast, private on-device agents. It matches or beats larger models like Qwen3.6-35B-A3B on five of eight benchmarks while running up to 1.7x faster, and is available now on Hugging Face with broad inference-framework support.",
+    "foryou": "A 2B-active-parameter model that beats larger dense models on over half its benchmarks is the kind of efficiency trade worth testing if you're running agents on constrained hardware or trying to cut inference cost without a quality cliff.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "24B total / 2B active (MoE)"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 1.7x faster than comparable dense models"
+      },
+      {
+        "label": "Benchmarks",
+        "value": "Beats/matches Qwen3.6-35B-A3B on 5 of 8 benchmarks"
+      },
+      {
+        "label": "Availability",
+        "value": "Hugging Face, broad inference-framework support"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Bumps GPT-6.1 Sol's Default Context Window to 500K Tokens",
+    "summary": "Two weeks after Sol's DevDay debut, OpenAI raised its default context window from 272K to 500K tokens across ChatGPT, Codex, and the API, with a 1.05M-token max (922K input / 128K output) available on request. Long-context surcharges for subscription users were removed; API pricing is unchanged.",
+    "foryou": "Fewer context compactions mean fewer silent truncations mid-agent-run — if you're on Sol for coding or computer-use agents, this alone may cut retry/compaction overhead without touching a single prompt.",
+    "specs": [
+      {
+        "label": "New default context",
+        "value": "500K tokens (up from 272K)"
+      },
+      {
+        "label": "Max context",
+        "value": "1.05M tokens (922K in / 128K out)"
+      },
+      {
+        "label": "Pricing",
+        "value": "$2 / 1M input · $10 / 1M output (unchanged)"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-15",
+    "url": "https://cryptobriefing.com/openai-gpt-6-1-sol-500k-context/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Employee Arrested After Allegedly Bugging an Executive Conference Room",
+    "summary": "OpenAI said it identified, fired, and reported to the FBI an employee — Saudi national Abdulrahman Alfozan — after finding a hidden recording device in an executive conference room; he was arrested and charged with illegally recording company communications, with chatbot logs on how to install the device among the evidence. OpenAI says it found no evidence model weights, source code, or customer data were accessed. The case surfaced days before the White House AI task force's first meeting, whose chair cited it as proof the group is needed.",
+    "source": "Semafor (also: TLDR AI)",
+    "date": "2026-10-15",
+    "url": "https://semafor.com/s/em0kpwpkrg"
+  },
+  {
+    "section": "industry",
+    "headline": "NVIDIA Open-Sources Run:ai as Part of Its DSX AI Factory Platform",
+    "summary": "NVIDIA made its full Run:ai platform — including KAI Scheduler, GPU Fractioning Operator, KAI Resource Management, and Workload Map — available as open-source software under the DSX AI Factory Platform. DSX ecosystem partners and AI clouds can adopt it wholesale, build on top of individual components, or integrate pieces into their own GPU-sharing infrastructure to boost utilization on shared AI compute.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform"
+  },
+  {
+    "section": "industry",
+    "headline": "Character.AI Files for Chapter 11 Bankruptcy",
+    "summary": "Character.ai began a voluntary Chapter 11 process to pursue a court-supervised sale after mounting legal, regulatory, and operational pressure. The company says the platform can continue under a successful bid but may be wound down if no viable buyer emerges.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://blog.character.ai/an-update-on-character-ai/"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceXSI Bundles X Premium, Grok, and Cursor Into One Subscription",
+    "summary": "SpaceXSI launched \"The X Subscription,\" combining X Premium, Grok access, and Cursor's AI coding tools under a single plan — a bet that bundling consumer AI chat, social, and developer tooling together drives retention better than any one product alone.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/"
+  },
+  {
+    "section": "industry",
+    "headline": "Moondream's Founders Join Prime Intellect",
+    "summary": "The founders of vision-language model startup Moondream are joining Prime Intellect to lead and scale its inference business and accelerate work on multimodal models — another small, efficient-model team folding into a larger open AI infrastructure player rather than raising on its own.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://www.primeintellect.ai/blog/moondream"
+  },
+  {
+    "section": "industry",
+    "headline": "A Quarter of US Financial Firms Now Tie Pay to AI Proficiency",
+    "summary": "A Selby Jennings survey of 500 companies found applicants' AI skills now weigh nearly four times as heavily in financial-sector hiring as where they went to college, and a quarter of firms have tied raises, promotions, or bonuses to AI proficiency — most commonly at fintech startups and smaller firms rather than brand-name banks. Nearly a third have created new roles or teams specifically to track AI usage and value, not just token spend.",
+    "source": "Semafor",
+    "date": "2026-10-15",
+    "url": "https://semafor.com/s/ad9fkgmch8"
+  },
+  {
+    "section": "industry",
+    "headline": "Xbox Launches Xbox Labs to Embrace AI Game ‘Mashups’",
+    "summary": "After AI coding models let players reverse-engineer and recombine game code into mashups — like Minecraft characters playing inside Elden Ring — Microsoft's Xbox division announced Xbox Labs to work with players, developers, and engineers on AI-generated games and experiences, calling the viral mashups evidence that \"gamers have become creators.\"",
+    "source": "Semafor",
+    "date": "2026-10-15",
+    "url": "https://semafor.com/s/j1cqhszgpg"
+  },
+  {
+    "section": "tips",
+    "headline": "How Anthropic's Dynamic Workflows Coordinate Claude Agents",
+    "summary": "Splitting a task among several AI agents creates another job: deciding who does what, passing information between them, and checking results. Anthropic's dynamic workflows let Claude write the program that manages those steps itself. An October 12 demo assigned stock tickers to separate agents, then reviewed their findings before producing a report — finding more detail but costing noticeably more than a single-agent run. Developers can set a session spending limit to bound that cost.",
+    "foryou": "This is the same orchestration pattern worth prototyping for your own agentic pipelines before you hand-roll a coordinator — set a spending cap from day one, since the demo itself flags that multi-agent fan-out burns tokens faster than it feels like it should.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://www.latent.space/p/claude-dynamic-workflows"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenCode 2.0 Ships Single-Process Server and SDK Mode",
+    "summary": "OpenCode 2.0 bundles a round of new features, performance improvements, and bug fixes. The server now runs as a single background process, and programmatic clients auto-discover the local service rather than needing manual wiring. OpenCode can now also be used as a library via its new SDK package.",
+    "foryou": "If you've been shelling out to OpenCode as a CLI from your own scripts, the SDK package is the upgrade path to embed it directly into a pipeline instead of parsing subprocess output.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://anoma.ly/notes/opencode-2-0/"
+  },
+  {
+    "section": "tips",
+    "headline": "Ramp Launches Glass, an AI Workspace for Shared Company Knowledge",
+    "summary": "Ramp has launched Glass, an AI workspace that shares company knowledge, reusable skills, and collaborative sessions across teams. Employees have made over 6,500 knowledge edits internally, while model routing cut AI costs by 30% and automated workflows dramatically expanded feature-request tracking.",
+    "foryou": "The model-routing detail is the actionable bit — a 30% cost cut by routing requests to the right model rather than defaulting to the biggest one is a lever most agentic pipelines leave untouched.",
+    "source": "TLDR AI",
+    "date": "2026-10-15"
+  },
+  {
+    "section": "tips",
+    "headline": "CopilotKit Introduces CLiF for Continual Learning From Agent Trajectories",
+    "summary": "CopilotKit released CLiF (Continual Learning from Full-Stack Trajectories), a tool that captures both agent traces and user actions using the AG-UI protocol, aimed at letting agents improve from how they were actually used rather than from static eval sets.",
+    "foryou": "If your eval loop is still hand-curated test cases, CLiF's approach — learning from real trajectories instead — is worth a look before you invest more in writing synthetic evals by hand.",
+    "source": "TLDR AI",
+    "date": "2026-10-15",
+    "url": "https://www.copilotkit.ai/blog/introducing-clif"
+  }
+]
