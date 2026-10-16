@@ -1,0 +1,202 @@
+[
+  {
+    "section": "models",
+    "headline": "Meta releases Muse Spark Open, its biggest open-weight model yet",
+    "summary": "Meta released weights for Muse Spark Open, calling it the most capable US open-weight model to date — a natively multimodal 816B-parameter model (42B active) built for coding and long-horizon agentic work, with a 1M-token context window. It's the first model in its class that can run locally across two Apple M5 Ultra Mac Studios via Apple's MLX framework, acting as one machine with roughly a terabyte of unified memory. It's available through hosted APIs (Baseten, Fireworks, Groq, Modal, Nebius, OpenRouter, Together AI) and weight downloads (Hugging Face, Amazon SageMaker, Google Cloud, Microsoft Foundry) under Meta's Muse Model License.",
+    "foryou": "If you can get your hands on two M5 Ultra Mac Studios, you now have a frontier-class coding/agentic model running entirely on your desk with no API bill and no data leaving your network.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "816B total / 42B active"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Local hardware",
+        "value": "Runs on 2x Apple M5 Ultra Mac Studios (~1TB unified memory via MLX)"
+      },
+      {
+        "label": "License",
+        "value": "Muse Model License (limited commercial terms)"
+      },
+      {
+        "label": "Inference support",
+        "value": "SGLang, vLLM, TensorRT-LLM, HF Transformers, Apple MLX, llama.cpp, Unsloth"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-10-16",
+    "url": "https://research.meta.ai/blog/muse-spark-open"
+  },
+  {
+    "section": "models",
+    "headline": "xAI ships Grok Voice 3.0, tops the speech-to-speech leaderboard",
+    "summary": "xAI shipped Grok Voice 3.0, which it calls the world's most intelligent speech-to-speech model — it tops Artificial Analysis's Speech-to-Speech Index at 86.9 (versus 83.2 for GPT-Live-1 and 82.6 for Gemini 3.8 Live), with sub-second latency and a 94.8% task success rate. It ships in the Voice Agent API at the same $0.08/min price as Voice 2.0, and it's already live in Tesla vehicles and handling roughly 20,000 calls a day at Starlink support centers.",
+    "foryou": "At $0.08/min with sub-second latency and a documented 94.8% task success rate, this is the clearest signal yet that voice agents for support and ops work are production-ready, not a demo.",
+    "specs": [
+      {
+        "label": "Speech-to-Speech Index",
+        "value": "86.9 (vs 83.2 GPT-Live-1, 82.6 Gemini 3.8 Live)"
+      },
+      {
+        "label": "Latency",
+        "value": "Under 1 second (~40% lower than GPT-Live-1)"
+      },
+      {
+        "label": "Pricing",
+        "value": "$0.08/min ($4.80/hr), unchanged from v2.0"
+      },
+      {
+        "label": "Task success rate",
+        "value": "94.8%"
+      },
+      {
+        "label": "Cost per task (Big Bench Audio)",
+        "value": "$0.025 vs $0.030 (GPT-Live-1) / $0.055 (GPT-Realtime-2.1)"
+      }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-16",
+    "url": "https://x.ai/news/grok-voice-3"
+  },
+  {
+    "section": "models",
+    "headline": "TypeSafe previews Jev 1.14.0 with a new bounding-box output type",
+    "summary": "TypeSafe shipped Jev 1.14.0, a preview release with broad incremental improvements (the biggest gains in multilingual support) plus experimental \"danger zone\" features: image input, a new `box` type that returns a single bounding box, and longer context — all gated behind special headers because TypeSafe says they aren't yet reliable enough for production. Multimodal support was also quietly turned on for 1.13.0. The company's own (not independently verified) benchmarks show all current models, Jev included, perform worse on images than on text.",
+    "foryou": "The bounding-box output type is worth testing now if you're doing visual grounding work — it's exactly the kind of structured-output primitive that makes agent tool-use more reliable than free-text coordinates.",
+    "specs": [
+      {
+        "label": "Danger-zone features",
+        "value": "Images, 'box' bounding-box type, longer context (header-gated)"
+      },
+      {
+        "label": "Multimodal",
+        "value": "Enabled on both 1.14.0 and 1.13.0"
+      },
+      {
+        "label": "Rollout",
+        "value": "jev-latest moves to 1.14.0 in ~1 week; 1.13.0 gets a 60-day deprecation notice"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://typesafe.ai/blog/jev-1-14"
+  },
+  {
+    "section": "models",
+    "headline": "Inclusion AI releases Ling-3.1-flash, a 560B hybrid-reasoning MoE",
+    "summary": "Inclusion AI released Ling-3.1-flash, a native hybrid-reasoning model with 560 billion total parameters but only 25 billion active per token, paired with a 1-million-token context window — aimed at complex, real-world agentic tasks without the inference cost of a dense model that size.",
+    "foryou": "A 560B/25B-active MoE with 1M context is worth a look if you're hitting cost or latency walls running dense frontier models on long-context agent tasks.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "560B total / 25B active (MoE)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Architecture",
+        "value": "Native hybrid reasoning"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://huggingface.co/inclusionAI/Ling-3.1-flash"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta and Apple patch up their AI rivalry",
+    "summary": "Meta and Apple are mending a public rift over AI, with Meta crediting Daniel Gross — a former Apple executive now at Meta — with helping broker the reconciliation. The détente is already producing concrete collaboration: Apple worked with Meta so Muse Spark Open can run locally across two M5 Ultra Mac Studios via Apple's MLX framework.",
+    "source": "Web",
+    "date": "2026-10-16",
+    "url": "https://www.axios.com/2026/10/15/apple-and-meta-bury-the-hatchet-for-ai"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon relaunches its Bee AI wearables with a $12/month tier",
+    "summary": "Amazon released two new always-listening AI wearables under its Bee brand — the Bee Frontier wristband and the Bee Eclipse phone-attachment recorder — alongside a new $12/month Bee Pro subscription for expanded features.",
+    "source": "Web",
+    "date": "2026-10-16",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-15/amazon-debuts-revamped-bee-ai-wearables-12-a-month-subscription-plan"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's IPO valuation may land well below earlier $2T talk",
+    "summary": "Investors are reportedly discussing an Anthropic IPO valuation closer to $1.5 trillion, down from the roughly $2 trillion figure floated earlier, after disclosures showed the company's Q3 revenue growth slowing.",
+    "source": "Web",
+    "date": "2026-10-16",
+    "url": "https://www.reuters.com/business/finance/investors-temper-anthropic-ipo-valuation-expectations-over-revenue-growth-2026-10-15/"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta's new business terms may let it scrape linked websites with no opt-out",
+    "summary": "Legal experts say Meta's new commercial terms, taking effect October 30, let it scrape content from websites linked to business accounts and use that content to train its products — with no mechanism for site owners to opt out.",
+    "source": "Web",
+    "date": "2026-10-16",
+    "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/"
+  },
+  {
+    "section": "industry",
+    "headline": "Gavin Baker: open-weight specialists and frontier models will coexist behind routers",
+    "summary": "Investor Gavin Baker argues the AI market is heading toward open-weight specialist models and frontier systems coexisting side by side behind routers, which will compress model-level margins even as overall compute demand keeps rising. He says existing infrastructure commitments remain financeable, and the bigger risk is excessive concentration or overbuilding rather than a lack of demand.",
+    "source": "TLDR AI",
+    "date": "2026-10-16"
+  },
+  {
+    "section": "industry",
+    "headline": "The case for watching H100 rental prices as an AGI indicator",
+    "summary": "A widely discussed essay argues GPU rental prices are one of the cleanest signals to track for AGI: if agents ever out-earn humans at valuable work, H100 demand would spike enough to push hourly prices roughly 10x higher, to around $30/hour, since compute supply is hard-capped by what's physically available.",
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://corbt.com/posts/it-aint-agi-until-h100s-go-for-30-an-hour"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity open-sources its AI agent containment sandbox",
+    "summary": "Perplexity released SPACE, the sandbox it built to keep AI agents from misbehaving, as open source. The company says none of nine frontier models escaped its sandbox across 118 attempts, and CoreWeave, Akamai, and Crusoe have agreed to offer it to their customers.",
+    "foryou": "If you're running agents with any filesystem or network access, SPACE is worth evaluating now — free, battle-tested containment beats rolling your own sandbox.",
+    "source": "Semafor",
+    "date": "2026-10-16",
+    "url": "https://www.semafor.com/article/10/15/2026/perplexity-to-give-away-its-ai-security-software"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude's agent platform now exports standard OpenTelemetry traces",
+    "summary": "Anthropic added OpenTelemetry tracing across Claude Managed Agents, the Messages API, and Claude SDKs, following OpenTelemetry's GenAI semantic conventions. Traces can be sent to any OTel-compatible tool over a standard OTLP endpoint, so Claude agent data drops into the same dashboards as traces from other providers.",
+    "foryou": "Wire this into whatever observability stack you already run for your agentic pipelines — it's a drop-in way to see exactly which step an agent failed on in production instead of guessing from logs.",
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://claude.com/resources/articles/agent-observability-on-the-claude-platform"
+  },
+  {
+    "section": "tips",
+    "headline": "Google ships Deep Review, an agentic system for vetting technical documents",
+    "summary": "Google released Deep Review, an agent AI system built to give rigorous feedback and technical verification on complex documents. It started as a tool for reviewing computer-science papers, but Google says its scope has expanded across domains; it currently supports PDF and plain-text input, with multi-file support coming soon.",
+    "foryou": "Point this at your own design docs or RFCs before a human review — catching gaps in a spec before it reaches reviewers is a cheap way to speed up your team's review cycle.",
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://research.google/blog/analyzing-technical-documents-with-deep-review/"
+  },
+  {
+    "section": "tips",
+    "headline": "Why routers are emerging as a new primitive in the AI stack",
+    "summary": "An independent comparison argues that routers — which pick the right model for a given request — have become a distinct layer of the AI stack, letting companies benefit from new models without re-evaluating model choice across every application. The piece compares how today's leading routers differ in routing logic and how they stack up against single-model setups on quality and cost.",
+    "foryou": "If you're hardcoding a single model per task, a router is the next lever to pull for both cost and quality — this comparison is a good starting point for picking one.",
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://www.vals.ai/blogs/routers-new-ai-primitive"
+  },
+  {
+    "section": "tips",
+    "headline": "More coding agents won't fix a software team's coordination problems",
+    "summary": "Writer Tamas Mezei argues that cheap AI-generated code has moved the real bottleneck in software delivery to deciding what to build, verifying it, and coordinating the work — and that Fred Brooks's 1975 warning about adding people to a late project applies just as well to adding agents. His conclusion: agents amplify whatever coordination an organization already has, good or bad.",
+    "foryou": "Before adding more coding agents to your pipeline, audit whether your actual bottleneck is generation speed or decision/verification throughput — this piece is a useful gut check.",
+    "source": "TLDR AI",
+    "date": "2026-10-16",
+    "url": "https://www.brokenrobot.xyz/blog/more-agents-same-mythical-month/"
+  }
+]
