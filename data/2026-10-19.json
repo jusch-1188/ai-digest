@@ -1,0 +1,130 @@
+[
+  {
+    "section": "models",
+    "headline": "Meta ships Muse Spark Open, an 816B open-weight model built to run on two Mac Studios",
+    "summary": "Meta released Muse Spark Open, an 816-billion-parameter multimodal open-weight model with 42B active parameters (MoE) and a 1M-token context window, built for coding and long-horizon agentic tasks. It's the first frontier-scale open-weight model designed to run locally on consumer-class hardware — two Apple Mac Studios with M5 Ultra chips via MLX — and ships with demos of the model driving a coding agent and controlling DaVinci Resolve. Meta and Apple also announced a partnership to bring the model to Mac hardware, a notable thaw after years of friction between the two companies.",
+    "foryou": "If you're experimenting with local or private agentic inference, this is the first time a frontier-class open-weight model is realistically runnable on prosumer (if expensive) hardware instead of a GPU cluster.",
+    "specs": [
+      { "label": "Parameters", "value": "816B total / 42B active (MoE)" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Hardware", "value": "2x Apple Mac Studio (M5 Ultra, MLX)" },
+      { "label": "JobBench", "value": "61.8 (vs. 31.1 for Inkling)" },
+      { "label": "MCP-Atlas (tool use)", "value": "89.2" }
+    ],
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-10-19",
+    "url": "https://research.meta.ai/blog/muse-spark-open"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft details MAI-Base-2, a 2.8T-parameter model it claims beats every open-weight rival",
+    "summary": "Microsoft published a deep technical dive on MAI-Base-2, a 2.8-trillion-parameter mixture-of-experts model (about 80B active) trained on 16,000 GB200 GPUs over 38 days. Microsoft says its held-out evaluation scores beat every open-weight model tested, and estimates matching DeepSeek-V4-Pro-Base would take 4-12x the compute by its own scaling-law fits. The model is still in post-training with no public release yet; Microsoft plans to license weights to select partners through its Foundry platform rather than open-sourcing it.",
+    "foryou": "Worth watching less for the model itself (not yet available) than for the signal that Microsoft wants to compete on proprietary frontier training rather than just reselling OpenAI, which could reshape your Azure/Foundry model options next year.",
+    "specs": [
+      { "label": "Parameters", "value": "2.8T total / ~80B active (MoE)" },
+      { "label": "Training", "value": "16,000 GB200 GPUs, 38 days" },
+      { "label": "Efficiency claim", "value": "4-12x less compute than DeepSeek-V4-Pro-Base (Microsoft estimate)" },
+      { "label": "Status", "value": "Post-training complete; no public release yet" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://microsoft.ai/news/frontier-pre-training-at-microsoft-ai/"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI launches d1-ultra, a model built to decide rather than generate text",
+    "summary": "Liquid AI released d1-ultra, which it calls a \"decision model\" — it skips free-form text generation and returns calibrated probabilities directly for tasks like detecting defects on circuit boards. It processes both text and images, and Liquid says it's more accurate and better-calibrated than its own prior model, Jev 1.14. It's live on the Liquid API now, with Vercel and OpenRouter access coming soon.",
+    "foryou": "A genuinely different product category from chat-style LLMs — if any part of your pipeline needs a calibrated yes/no or classification decision rather than a generated explanation, this is worth comparing directly against a fine-tuned classifier.",
+    "specs": [
+      { "label": "Modality", "value": "Text + image input" },
+      { "label": "Output", "value": "Raw calibrated probabilities (no text generation)" },
+      { "label": "Pricing", "value": "$0.042 / 1M input tokens" },
+      { "label": "Availability", "value": "Liquid API now; Vercel & OpenRouter soon" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://www.liquid.ai/blog/d1-ultra"
+  },
+  {
+    "section": "models",
+    "headline": "Nvidia's Nemotron 3.5 Super VL roughly doubles its predecessor's intelligence score using 60% fewer tokens",
+    "summary": "Nvidia released Nemotron 3.5 Super VL, a 120B (12B active) multimodal reasoning model scoring 26.5 on Artificial Analysis's Intelligence Index — about double Nemotron 3 Super's score of 13 — while using roughly 60% fewer output tokens per task. Nvidia also shipped a smaller Nemotron 3.5 Bolt (74B-A9B) and near-lossless NVFP4-quantized weights for cheaper inference.",
+    "foryou": "The token-efficiency jump matters more than the benchmark bump for agentic use — fewer output tokens per reasoning step directly cuts your inference bill if you swap it in for multimodal reasoning tasks.",
+    "specs": [
+      { "label": "Intelligence Index", "value": "26.5 (vs. 13 for Nemotron 3 Super)" },
+      { "label": "Parameters", "value": "120B total / 12B active" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Token efficiency", "value": "~46k output tokens/task (-60% vs predecessor)" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://developer.nvidia.com/blog/nvidia-nemotron-3-5-super-vl-powers-specialized-agents-with-multimodal-reasoning/"
+  },
+  {
+    "section": "industry",
+    "headline": "White House AI task force adopts charter, starts 120-day clock on risk recommendations",
+    "summary": "The White House's AI task force, led by Jay Clayton, formally adopted its charter and now has 120 days to recommend how the government should handle AI development. It will commission a PCAST report on cybersecurity, biosecurity, and model-control risk, stand up a working group to implement this month's AI CEO accord, and create a law-enforcement/consumer-protection coordination committee with the DOJ and FTC. Enforcement mechanics remain unclear, though a White House official floated export controls as one lever against noncompliant AI companies.",
+    "source": "Semafor",
+    "date": "2026-10-19",
+    "url": "https://semafor.com/article/10/15/2026/white-houses-ai-task-force-gets-to-work"
+  },
+  {
+    "section": "industry",
+    "headline": "Investors pile into AI model routing as OpenRouter's $7.5B Stripe sale reshapes the category",
+    "summary": "TrustedRouter, a six-week-old startup letting companies switch between AI models without lock-in, closed a $6M seed round led by Sierra Ventures — its second raise in two months as routing becomes a hot subsector. The category's biggest player, OpenRouter, has agreed to sell to Stripe for $7.5B; TrustedRouter is positioning itself around end-to-end encryption and confidential computing so neither it nor the host data center can read customer prompts.",
+    "source": "Semafor",
+    "date": "2026-10-19",
+    "url": "https://semafor.com/article/10/16/2026/openrouter-challenger-closes-seed-round"
+  },
+  {
+    "section": "industry",
+    "headline": "E-commerce braces for AI shopping agents this holiday season",
+    "summary": "Cheq, which verifies AI shopping agents for retailers, recorded a 100x surge in agentic shopping traffic over 45 days following releases like Instinct and Meta's Muse. Amazon and eBay have moved to block agents outright to protect their ad and checkout businesses, and Morning Consult finds shoppers now trust an agent's recommendation about as much as an influencer's — but remain wary of letting AI actually complete a purchase. This holiday season is shaping up as the first real stress test of brand-vs-agent dynamics.",
+    "source": "Semafor",
+    "date": "2026-10-19",
+    "url": "https://www.semafor.com/article/10/16/2026/ecommerce-confronts-ai-shopping-agents-ahead-of-holiday-season"
+  },
+  {
+    "section": "industry",
+    "headline": "Open-weight models now handle 71.5% of AI Gateway tokens and a quarter of spend",
+    "summary": "Vercel's October AI Gateway Production Index shows open-weight models processing more than seven in ten gateway tokens and pulling in nearly 23% of spend — more than 4x their share since June. Nearly a third of teams switched their primary model lab in September alone, an index record, while Jev was the fastest-adopted model in the gateway's history yet captured only about 0.27% of spend.",
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://vercel.com/blog/ai-gateway-production-index-october-2026"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic gives outside evaluator METR employee-level access to probe its models",
+    "summary": "Anthropic began granting METR, an independent AI safety evaluator, staff-like access to its models, training data, and internal safeguards so it can assess frontier-model risk and publish its own conclusions without Anthropic sign-off. It's among the first moves by a major lab to let an outside group audit its systems with this level of access, as pressure builds for independent oversight of frontier AI.",
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://www.anthropic.com/news/an-update-on-independent-evaluators"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity open-sources SPACE, the sandbox that's contained every agent escape attempt so far",
+    "summary": "Perplexity open-sourced SPACE, the agent-sandboxing infrastructure behind its Comet/Computer agent, after reportedly surviving 118 attempted escapes with zero breakouts. The tool is meant to contain rogue or misbehaving agents from reaching the open web, and Perplexity has lined up CoreWeave, Akamai, and Crusoe as distribution partners.",
+    "foryou": "If you're running agents with any tool-use or browsing capability, this is a drop-in way to add a battle-tested containment layer instead of rolling your own sandbox from scratch.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-10-19",
+    "url": "https://www.perplexity.ai/hub/blog/open-sourcing-space"
+  },
+  {
+    "section": "tips",
+    "headline": "Handwired turns ordinary JavaScript into a neural network that reproduces its exact outputs",
+    "summary": "Handwired is a new tool that converts regular JavaScript code directly into neural network weights that reproduce the program's exact outputs, with no training run or GPU required — the \"network\" is constructed analytically from the code's logic rather than learned.",
+    "foryou": "A neat trick for turning deterministic business logic into a differentiable component you can splice into a larger learned pipeline, without the usual training-data problem.",
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://alphasignal.ai/news/cheng-lou-s-handwired-compiles-javascript-directly-into-neural-networks-without"
+  },
+  {
+    "section": "tips",
+    "headline": "Agentic RL training is simple in theory — multi-turn agents break the assumptions in practice",
+    "summary": "A new write-up argues reinforcement learning for single-turn tasks is conceptually simple (spin up a VM, run the model, score the result, update weights), but agentic post-training breaks down once agents spawn subagents, make parallel tool calls, or compact long sessions — all of which quietly push training off-policy even when the harness itself stays consistent.",
+    "foryou": "If your pipelines use subagents or session compaction and you're ever tempted to fine-tune on their trajectories, this is the list of ways that data can be subtly off-policy without you noticing.",
+    "source": "TLDR AI",
+    "date": "2026-10-19",
+    "url": "https://ianbarber.blog/2026/10/15/mo-turns-mo-problems/"
+  }
+]
