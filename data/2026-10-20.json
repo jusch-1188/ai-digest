@@ -1,0 +1,109 @@
+[
+  {
+    "section": "models",
+    "headline": "DeepSeek-V4.1-Flash-1017 cuts KV cache 8x, leaps on coding benchmarks",
+    "summary": "DeepSeek released V4.1-Flash-1017, pairing cross-layer KV cache reuse in Compressed Sparse Attention 2 with FP4 KV caching to shrink its global KV-cache footprint to 890 bytes per token — roughly 1/8 of V4-Flash's. It posts double-digit gains over the prior Flash on agentic benchmarks (Terminal-Bench 4.0 +11.1, ProgramBench +8.8) while cutting task execution time and output length. Weights are MIT-licensed on Hugging Face, and the model ships alongside new Search and Fetch APIs built for agent and RAG use.",
+    "foryou": "If you're running agentic pipelines on a budget, this is a genuine Pareto-frontier move — cheaper and MIT-licensed, worth benchmarking against whatever Flash-class model you're using now.",
+    "specs": [
+      {"label": "Context window", "value": "1M tokens (1,048,576)"},
+      {"label": "KV cache footprint", "value": "890 bytes/token (~1/8 of V4-Flash)"},
+      {"label": "Pricing (input, cache miss)", "value": "$0.15 / 1M tokens (off-peak)"},
+      {"label": "Pricing (output)", "value": "$0.60 / 1M tokens (off-peak)"},
+      {"label": "License", "value": "MIT"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's 'Aurora' image models briefly leak in its API and on Arena",
+    "summary": "Three codenames — aurora-red-alpha, aurora-green-alpha, aurora-blue-alpha — briefly appeared in OpenAI's API and were generating images in blind Arena tests within hours before being pulled. Red ran faster but produced lower-quality output; green was slower but looked better; blue hadn't been tested yet. Lumina Bench and other observers guess these are GPT-Image-3, though OpenAI has confirmed nothing and no documentation or pricing exists.",
+    "foryou": "Nothing's official yet, but if image generation is in your product roadmap, start watching Arena leaderboards now — a GPT-Image tier upgrade could shift your cost/quality tradeoffs fast.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://www.testingcatalog.com/openai-possibly-testing-gpt-image-3/"
+  },
+  {
+    "section": "models",
+    "headline": "Google says Gemini 4 is in post-training, could ship well before year-end",
+    "summary": "In his first public remarks since taking over Google DeepMind, Koray Kavukcuoglu said Google wants to release an \"early post-training output\" of Gemini 4 as soon as possible rather than waiting until year-end, citing good internal results; the model is being tested inside Google's Antigravity coding tool. No specs, benchmarks, or release date were given. The news follows reports that the next Gemini Pro had slipped behind internal coding targets and that the cheaper Flash model had pulled two versions ahead of the flagship.",
+    "foryou": "If your roadmap assumes Gemini stays a step behind Claude and GPT through Q4, build in a contingency — DeepMind's new leadership is clearly racing to compress that gap on short notice.",
+    "source": "Web",
+    "date": "2026-10-20",
+    "url": "https://thenextweb.com/news/gemini-4-release-kavukcuoglu-post-training"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic commits 5% of equity to a new Public Benefit Fund",
+    "summary": "Anthropic announced it will allocate an initial 5% of its equity to a newly created Public Benefit Fund, with additional contributions tied to future valuation growth. The fund is intended to support initiatives addressing AI's economic and labor impacts.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://www.anthropic.com/news/public-benefit-fund"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's junior technical hiring collapses as agents absorb more work",
+    "summary": "Entry-level workers fell from 27% to 9% of Anthropic's technical hires since early 2025, the company reported, even as employees cite productivity gains from using Claude internally. Rising AI output is shifting human work toward supervising agents, making human attention — not raw output — the growing bottleneck.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://www.anthropic.com/research/employment-at-anthropic"
+  },
+  {
+    "section": "industry",
+    "headline": "Replit drops Anthropic as default AI provider in favor of OpenAI",
+    "summary": "Replit CEO Amjad Masad said at TechCrunch Disrupt that OpenAI is now Replit Agent's default model provider, citing cost, performance, and the companies' August partnership — \"I think ChatGPT is better now\" at building vibe-coded apps from scratch, he said. Customers can still manually choose Claude models. Anthropic had reportedly been one of Replit's top five customers, and insiders dispute how final the switch is, noting Replit's own marketing still promoted Anthropic products as recently as late September.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-10-20",
+    "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+  },
+  {
+    "section": "industry",
+    "headline": "Mercor's 'Benchmark Map' finds 90% of US work hours have no AI benchmark coverage",
+    "summary": "Mercor's Benchmark Map project aims to continuously track AI capability against the actual tasks that make up the US economy. Its initial findings suggest 90% of American working hours are spent on tasks with little or no coverage from existing AI benchmarks, making it hard to know how capable today's models really are at the work people actually do.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://www.mercor.com/research/labor-index/benchmark-map/"
+  },
+  {
+    "section": "industry",
+    "headline": "Stack Overflow for Agents triples signups after shipping a ChatGPT plugin",
+    "summary": "Stack Overflow's agent-focused product saw signups roughly triple overnight after adding a ChatGPT plugin integration, a sign that distribution inside existing chat assistants is becoming a major growth channel for developer tools built for AI agents rather than humans.",
+    "source": "TLDR AI",
+    "date": "2026-10-20"
+  },
+  {
+    "section": "industry",
+    "headline": "Qualcomm: AI labs want 100B-parameter models running natively on phones by 2028",
+    "summary": "Qualcomm CEO Cristiano Amon said AI companies are pushing for phones that can run 100-billion-plus-parameter models continuously by 2028, with some labs reportedly exploring building their own phones to guarantee that on-device capability.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://thenextweb.com/news/qualcomm-cristiano-amon-ai-companies-phones-2028"
+  },
+  {
+    "section": "tips",
+    "headline": "Reliable coding agents come from architecture and verification, not more prompting",
+    "summary": "Getting coding agents you can actually trust requires better code architecture, strong invariants, and automated verification layers — not longer prompts or more human review. The recommended approach: mine past agent mistakes and code reviews to redesign systems that prevent the same failure classes by default, rather than catching them after the fact.",
+    "foryou": "Audit your own agent harness for recurring failure classes this week — the fix is almost always a structural invariant, not a better prompt.",
+    "source": "TLDR AI",
+    "date": "2026-10-20"
+  },
+  {
+    "section": "tips",
+    "headline": "DeepSeek ships Search and Fetch APIs for agents and RAG",
+    "summary": "DeepSeek's new Search API finds web pages matching a query and returns structured results; its Fetch API retrieves a single page and returns it as clean Markdown. Both are raw JSON endpoints using the same bearer auth as the main DeepSeek API, built specifically for agent and RAG pipelines that need live web access.",
+    "foryou": "If you're hand-rolling web retrieval for an agent, swapping in DeepSeek's Fetch API for Markdown-clean page content could cut a chunk of your scraping/parsing code.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://api-docs.deepseek.com/guides/search/"
+  },
+  {
+    "section": "tips",
+    "headline": "How the Claude Code team scaled code review with automation",
+    "summary": "Anthropic's Claude Code team restructured code review to handle rising volume by automating most stages: continuous review, automated verification checks, multiple layers of checks before any human looks at a PR, and a tiered-risk system that decides which changes need human sign-off at all.",
+    "foryou": "Their tiered-risk model is a good blueprint if your own PR queue is drowning in AI-generated changes — not every diff needs the same scrutiny.",
+    "source": "TLDR AI",
+    "date": "2026-10-20",
+    "url": "https://claude.dev/blog/solving-code-review-at-anthropic/"
+  }
+]
