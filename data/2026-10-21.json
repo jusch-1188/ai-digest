@@ -1,0 +1,185 @@
+[
+  {
+    "section": "models",
+    "headline": "MiniMax M3.1 Flash cuts agent inference costs 70%",
+    "summary": "MiniMax released M3.1 Flash, a faster, cheaper version of its flagship model built for agentic tasks, coding, Computer Use, and cybersecurity work. The company says online inference is now nearly 3x faster, with usage costs down 70%. It's live now via the MiniMax API, M Plan, and MiniMax Code; open weights are planned for a later release.",
+    "foryou": "If you're running agentic pipelines at volume, M3.1 Flash is worth a cost-per-task benchmark against whatever you're using now — a 70% cost cut changes the math on how many agent loops you can afford to run.",
+    "specs": [
+      {
+        "label": "Speed",
+        "value": "~3x faster online inference"
+      },
+      {
+        "label": "Cost",
+        "value": "-70% usage cost vs prior MiniMax model"
+      },
+      {
+        "label": "Availability",
+        "value": "MiniMax API, M Plan, MiniMax Code (weights coming later)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://www.minimax.io/blog/minimax-m31f"
+  },
+  {
+    "section": "models",
+    "headline": "Inception Labs' Mercury 3 diffusion model tops 1,000 tokens/sec",
+    "summary": "Mercury 3 is Inception Labs' latest diffusion-based language model — a fundamentally different architecture from the autoregressive transformers behind GPT and Claude. The company reports it outperforming GPT-6 Luna and Claude Haiku 5.5 on multiple benchmarks while generating over 1,000 tokens per second.",
+    "foryou": "Diffusion LMs trade some quality for raw throughput — if a pipeline stage is latency-bound rather than reasoning-bound (drafting, autocomplete, bulk generation), Mercury 3's speed could let you swap in a cheaper, faster model there.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Diffusion-based language model"
+      },
+      {
+        "label": "Speed",
+        "value": ">1,000 tokens/sec"
+      },
+      {
+        "label": "Benchmark claim",
+        "value": "Outperforms GPT-6 Luna and Claude Haiku 5.5 on multiple benchmarks"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
+  },
+  {
+    "section": "models",
+    "headline": "Cloudflare launches Clairic, a non-generative 'extraction model'",
+    "summary": "Clairic is Cloudflare's new 'System One' class of model: instead of generating tokens, it extracts, computes, estimates, and forecasts values directly from unstructured input. Because it never generates free-form text, Cloudflare says it can't produce a mistyped or hallucinated answer the way an LLM can — though it can still be wrong, and every output ships with a confidence score.",
+    "foryou": "For structured-extraction steps (pulling fields from invoices, forms, logs) where you've been over-engineering prompts just to stop an LLM from hallucinating, Clairic's confidence-scored outputs could replace that whole guardrail layer.",
+    "specs": [
+      {
+        "label": "Model class",
+        "value": "System One extraction model (non-generative)"
+      },
+      {
+        "label": "Output",
+        "value": "Extracted/computed/forecasted values with confidence scores"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://blog.cloudflare.com/clairic-extraction-model"
+  },
+  {
+    "section": "models",
+    "headline": "Nvidia opens up Nemotron 3.5 for enterprise and on-device agents",
+    "summary": "Nvidia released two open-weight Nemotron 3.5 model families: Super VL, a 120B enterprise model it claims completes agentic work (document intelligence, claims processing, scientific experimentation) faster than comparable Anthropic and OpenAI models at a smaller parameter count; and Bolt, a 74B local-agent model (plus a smaller E4B variant arriving later this month) built to run on RTX Spark and DGX Spark PCs from partners like Microsoft and Dell. Early enterprise customers cited include EY, Ramp, CrowdStrike, Perplexity, and Salesforce.",
+    "foryou": "Open weights at a small-enough parameter count to self-host means you can post-train Super VL on your own data and run it in your own infrastructure instead of depending on a closed frontier API — worth a look if data residency or per-call cost is a constraint on your agent stack.",
+    "specs": [
+      {
+        "label": "Super VL size",
+        "value": "120B parameters"
+      },
+      {
+        "label": "Bolt size",
+        "value": "74B (74B-A9B 24GB variant); smaller E4B later this month"
+      },
+      {
+        "label": "Target hardware",
+        "value": "RTX Spark / DGX Spark PCs (Microsoft, Dell partners)"
+      },
+      {
+        "label": "License",
+        "value": "Open-weight"
+      }
+    ],
+    "source": "Web",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic reportedly in talks for a second $45B Nscale compute deal",
+    "summary": "Just over a month after signing a $45 billion compute deal with Nscale, Anthropic is reportedly negotiating another agreement of the same size with the same provider. Both companies are pursuing IPOs, and Nscale is said to be facing investor pushback over its roughly $30 billion proposed valuation.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI acquires biotech startup Orchestra Bio for Rosalind",
+    "summary": "OpenAI bought Orchestra Bio, a four-year-old startup whose AI agents handle drug-discovery operations like financial tracking and clinical-trial scheduling. The team and technology are being folded into Rosalind, OpenAI's life-sciences model, and Rosalind Workbench, its experiment-planning tool. Terms weren't disclosed; Orchestra had raised about $20M from a16z, Atria, and 8VC. Rosalind already counts Moderna and Novo Nordisk as pharma customers.",
+    "source": "Web (TechCrunch)",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio%e2%81%a0-to-beef-up-its-biotech-business/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google and Amazon both ship PyTorch backends to loosen Nvidia's grip",
+    "summary": "Within a day of each other, Amazon released TorchNeuron and Google released TorchTPU — native PyTorch backends that let existing PyTorch apps run on Trainium chips or TPUs via a config change instead of a rewrite. Amazon is also contributing hardware-neutral code upstream into PyTorch itself. PyTorch reportedly runs about 85% of AI apps, which is exactly why both cloud providers are targeting it as the easiest lever to pull developers away from Nvidia.",
+    "source": "Web (TechCrunch); also TLDR AI, AWS",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/"
+  },
+  {
+    "section": "industry",
+    "headline": "US orders federal agencies to purge DeepSeek AI from their systems",
+    "summary": "The Department of Homeland Security ordered federal civilian agencies to stop buying DeepSeek products and remove the Chinese lab's technology — including third-party tools built on it — from government systems, with exceptions available on request. A December 2025 law had already restricted DeepSeek in intelligence and national-security systems; this extends the ban to civilian agencies over concerns that Chinese law could give authorities access to US government data. China's Foreign Ministry called the move an overreach.",
+    "source": "Web (TechCrunch)",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI lab HUMXN pays for home repairs to train robots in the field",
+    "summary": "HUMXN is subsidizing plumbing, electrical, HVAC, air-duct, and carpet-cleaning jobs in Minneapolis, Chicago, and Miami, with workers wearing cameras to capture real-world repair footage that feeds training for the company's home-service robots. Residents in the three cities can check eligibility on HUMXN's website.",
+    "source": "TLDR AI (also: Tom's Hardware)",
+    "date": "2026-10-21",
+    "url": "https://www.digitalcitizen.life/ai-lab-offers-free-home-repairs-in-exchange-for-real-world-robotics-training-data/"
+  },
+  {
+    "section": "industry",
+    "headline": "Eka Robotics hits $1.45B valuation on a vision-force-action gripper model",
+    "summary": "Eka Robotics, founded by MIT's Pulkit Agrawal and ex-DeepMind researcher Tuomas Haarnoja, closed a $150M Series A led by a16z and F-Prime at a $1.45B post-money valuation. Its 'vision-force-action' model links force, vision, and action rather than language, trained largely via reinforcement learning in physics simulation. The company claims its gripper picks roughly 1,500 objects per hour at over 95% reliability, versus about 600 for a human, and is running industrial pilots on pick-and-place and wire-handling tasks.",
+    "source": "Web (TechCrunch)",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
+  },
+  {
+    "section": "industry",
+    "headline": "Tenstorrent raises $1.5B at $6.2B valuation to challenge Nvidia on inference",
+    "summary": "Chip startup Tenstorrent raised $1.5 billion at a $6.2 billion valuation — more than double its late-2024 mark — led by Trace Capital and Innovation X, with Cadence Ventures, Eclipse, Fidelity, SanDisk, and T. Rowe Price also participating. CEO Jim Keller said the company chose to stay independent after reports that Intel and Qualcomm had explored acquiring it at valuations up to $5B; new funds go toward inference chips for open-weight models and video generation, building on its Galaxy servers' success running DeepSeek models.",
+    "source": "Web (TechCrunch)",
+    "date": "2026-10-21",
+    "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta's 'thin orchestrator' pattern makes multi-agent systems more reliable",
+    "summary": "Meta's engineering team found that giving their AI agent router less to do — routing workflows to specialized agents without performing any domain work itself — made the overall system more reliable than a 'smart' orchestrator that tries to reason about the task.",
+    "foryou": "If your multi-agent setup has a router that also tries to do substantive work, this is a concrete argument for stripping it down to pure dispatch logic and pushing all reasoning into the specialist agents.",
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
+  },
+  {
+    "section": "tips",
+    "headline": "vLLM adds push-based KV transfer to cut latency in disaggregated inference",
+    "summary": "AWS detailed a push-based key-value cache transfer mechanism for vLLM that reduces time-to-first-token (TTFT) and time-per-output-token (TPOT) in disaggregated inference setups, where prefill and decode run on separate instances.",
+    "foryou": "If you're self-hosting vLLM with a disaggregated prefill/decode setup, this is a direct latency win worth testing against your current pull-based KV transfer config.",
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://aws.amazon.com/blogs/machine-learning/push-based-kv-transfer-to-improve-ttft-and-tpot-for-disaggregated-inference-in-vllm/"
+  },
+  {
+    "section": "tips",
+    "headline": "Exa 3.0 launches with a $4-per-1,000-request 'Lite' search tier",
+    "summary": "Exa released version 3.0 of its AI search API, which it says leads evaluations spanning coding, finance, deep research, and company intelligence. The release adds Exa Lite, a cheaper search type at $4 per 1,000 requests, built on Exa's own crawler and index of over 2 trillion URLs — including 1.27B ecommerce listings and 211M+ local businesses with real-time pricing, availability, and ratings data.",
+    "foryou": "If you're building retrieval-augmented agents and currently paying for a general web-search API, Exa Lite's pricing and structured ecommerce/business data make it worth a side-by-side cost and recall test.",
+    "source": "TLDR AI",
+    "date": "2026-10-21",
+    "url": "https://exa.ai/blog/exa-3"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI reports major gains on AI coding in legacy languages",
+    "summary": "OpenAI says it has made significant improvements in AI-assisted coding and software migration for older programming languages, including COBOL, Fortran, and Visual Basic — a notoriously hard target for LLMs because of scarce training data and brittle, undocumented business logic.",
+    "foryou": "If you've been stuck doing legacy-system migrations by hand because AI tools choked on COBOL or Fortran, it's worth re-testing your migration pipeline against OpenAI's latest coding models now.",
+    "source": "TLDR AI",
+    "date": "2026-10-21"
+  }
+]
