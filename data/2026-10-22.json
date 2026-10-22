@@ -1,0 +1,202 @@
+[
+  {
+    "section": "models",
+    "headline": "DeepSeek open-sources DeepInfer, the framework behind its record-scale inference",
+    "summary": "DeepSeek released an offline-inference version of DeepInfer, the framework powering its large-scale production services, able to run DeepSeek-V4.1-Flash on NVIDIA SM100 GPUs or Huawei Ascend 950 NPUs. The open-sourced slice omits the pieces needed for a complete serving stack (KV cache, prefill/decode disaggregation, load balancing). DeepSeek says the full framework processes 155 trillion tokens/day per cluster at $38 revenue per GPU-hour.",
+    "foryou": "If you run inference at any real scale, DeepInfer's prefill/decode disaggregation and mixed NVIDIA/Huawei hardware support are worth studying even if you don't adopt it directly — it's a blueprint for squeezing more tokens per dollar out of a mixed fleet.",
+    "specs": [
+      {
+        "label": "Hardware support",
+        "value": "NVIDIA SM100 GPUs, Huawei Ascend 950 NPUs"
+      },
+      {
+        "label": "Throughput",
+        "value": "155 trillion tokens/day per cluster"
+      },
+      {
+        "label": "Economics",
+        "value": "$38 revenue per GPU-hour"
+      },
+      {
+        "label": "License",
+        "value": "Open-source (offline-inference subset)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://github.com/deepseek-ai/DeepInfer"
+  },
+  {
+    "section": "models",
+    "headline": "Mistral ships Voxtral 3 voice agent SDK with speech models in 50+ languages",
+    "summary": "Voxtral 3 pairs two new speech models — Small Transcribe 3 for multilingual transcription and Mini TTS 3 for natural, emotionally expressive speech — with a voice agent SDK combining real-time listening, reasoning, and speaking. It's built for phone- and web-based voice agents that carry out tasks end-to-end, not just transcribe and respond.",
+    "foryou": "A real-time SDK that bundles listen+reason+speak removes a lot of glue code you'd otherwise write for a voice pipeline — worth a quick prototype if you're building anything call-center- or phone-agent-adjacent.",
+    "specs": [
+      {
+        "label": "Languages",
+        "value": "50+"
+      },
+      {
+        "label": "Transcription model",
+        "value": "Small Transcribe 3"
+      },
+      {
+        "label": "TTS model",
+        "value": "Mini TTS 3"
+      },
+      {
+        "label": "SDK capability",
+        "value": "Real-time listen + reason + speak"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://mistral.ai/news/voxtral-3/"
+  },
+  {
+    "section": "models",
+    "headline": "SparkLLM's Spark-X2.6-4B targets stronger on-device AI agents",
+    "summary": "SparkLLM released Spark-X2.6-4B, a 4B-parameter open-source model with post-training gains in coding, reasoning, long-context handling, and agentic task execution, aimed at running on-device.",
+    "foryou": "A 4B model pitched for agentic on-device use is worth benchmarking against whatever you're currently running locally if latency or privacy keeps parts of your pipeline off hosted APIs.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "4B"
+      },
+      {
+        "label": "Focus",
+        "value": "Coding, reasoning, long-context, agentic tasks"
+      },
+      {
+        "label": "Deployment",
+        "value": "On-device"
+      },
+      {
+        "label": "License",
+        "value": "Open-source"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://huggingface.co/XHToken/Spark-X2.6-4B"
+  },
+  {
+    "section": "models",
+    "headline": "AI model predicts cancer patients' mortality risk from a single face photo",
+    "summary": "A Mass General Brigham-led validation study (Lancet Digital Health, Oct 19) tested FAHR-Face, a foundation model that uses \"attention mapping\" on face photographs to estimate biological age and 90-day mortality risk in cancer patients; smokers and heavy drinkers showed more pronounced aging signals. The model isn't ready for deployment — it hasn't yet been trained on a sufficiently diverse set of faces.",
+    "foryou": "A reminder that \"foundation model\" is expanding well past text and code — the attention-mapping technique used here to turn a single image into a risk score is a pattern worth knowing even outside oncology.",
+    "specs": [
+      {
+        "label": "Technique",
+        "value": "Attention mapping on face photographs"
+      },
+      {
+        "label": "Predicts",
+        "value": "Biological age, 90-day mortality risk"
+      },
+      {
+        "label": "Publication",
+        "value": "Lancet Digital Health, Oct 19, 2026"
+      },
+      {
+        "label": "Status",
+        "value": "Pre-deployment; limited face diversity in training data"
+      }
+    ],
+    "source": "Semafor",
+    "date": "2026-10-22",
+    "url": "https://news.massgeneralbrigham.org/en/ai-face-photos-tool-estimate-age-predict-cancer-outcomes"
+  },
+  {
+    "section": "industry",
+    "headline": "Nadella: Microsoft is done chasing 'the shiny object and FOMO'",
+    "summary": "In an interview, Satya Nadella described Microsoft's shift from the Google-chasing posture of 2023 to a steadier focus on making AI \"work predictably and reliably.\" He contrasted Microsoft's 51-year track record with what he called the frontier labs' \"magical businesses,\" arguing past AI success guarantees nothing about durability. Microsoft's stock is up 27% over six months and the company is valued near $4 trillion.",
+    "source": "Semafor",
+    "date": "2026-10-22",
+    "url": "https://semafor.com/s/x5awhxv7uc"
+  },
+  {
+    "section": "industry",
+    "headline": "Musk explores merging Tesla and SpaceX into a $3.5 trillion giant",
+    "summary": "Elon Musk has begun exploring a merger of Tesla and SpaceX, which Semafor frames as the logical endpoint of AI, robotics, and space converging into one industry — Grok is already integrated into Tesla's vehicles, and planned satellite connectivity and shared robotics development point toward a combined infrastructure push spanning orbit, the moon, and the road.",
+    "source": "Semafor",
+    "date": "2026-10-22",
+    "url": "https://semafor.com/s/oqu7mroptl"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta again tops Big Tech AI lobbying spend as OpenAI, Anthropic ramp up",
+    "summary": "Meta spent $5.9 million lobbying Washington in Q3, the most of any Big Tech company, as AI competition intensified and high-profile hacks pushed policymakers toward AI safety rules. OpenAI and Anthropic are catching up fast, roughly doubling and tripling their respective lobbying spend over the first half of the year; both lobbied on antitrust exemptions that would let AI companies coordinate information-sharing, an issue that surfaced after reports that AI leaders discussed a coordinated development \"slowdown.\"",
+    "source": "Semafor",
+    "date": "2026-10-22",
+    "url": "https://semafor.com/s/qiq7fppzqb"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI acquires Orchestra Bio to push further into drug development",
+    "summary": "OpenAI acquired Orchestra Bio, folding its AI-powered drug-development coordination platform into Rosalind, OpenAI's existing suite of life-sciences AI tools — another step in OpenAI's build-out beyond general-purpose models into vertical, science-focused AI products.",
+    "source": "TLDR AI",
+    "date": "2026-10-22"
+  },
+  {
+    "section": "industry",
+    "headline": "METR: Anthropic's 'low misalignment risk' claim rests on limited capability, not safeguards",
+    "summary": "METR's review of the misalignment section of Anthropic's Risk Report largely agrees current models pose low misalignment risk — but says that's because today's models lack the capability to cause harm, not because Anthropic's safeguards would catch a more capable model that tried. METR also flagged that benchmarks don't test whether models can deceive Anthropic's own monitoring systems, and pointed to recent undetected real-world misalignment incidents as evidence that risk assessments and monitoring need more rigor, recommending more comprehensive red-teaming and broader risk frameworks.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://metr.org/blog/2026-10-20-misalignment-risk-report-august-2026-review/"
+  },
+  {
+    "section": "industry",
+    "headline": "A former Anthropic researcher's public warning becomes a flashpoint in the AI safety debate",
+    "summary": "Jacob Coxon, a 27-year-old machine learning researcher who resigned from Anthropic, published a warning that AI companies are racing toward self-improving superintelligence without acting responsibly, arguing the industry is gambling with lives. The essay — dubbed \"Coxon Day\" by commentators — has become a touchstone in the argument over whether labs like Anthropic, despite stated good intentions, have an adequate plan to solve alignment before building more capable systems.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://www.thenewcritic.com/p/coxon-day"
+  },
+  {
+    "section": "tips",
+    "headline": "Google and Meta open-source TorchTPU, bringing native PyTorch to TPUs",
+    "summary": "TorchTPU is a new open-source PyTorch backend from Google and Meta that lets you train and run models on Google's TPUs without the usual porting pain, via optimized eager execution, torch.compile integration, and native hardware acceleration.",
+    "foryou": "If TPU pricing or availability has ever made you consider a move off CUDA, this closes a big chunk of the tooling gap — worth a spike to see what breaks in your current PyTorch stack.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://pytorch.org/blog/introducing-torchtpu/"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel's durable-harness makes agent sessions survive crashes mid-turn",
+    "summary": "Vercel open-sourced durable-harness, which lets agent harnesses — including Pi, OpenCode, Codex, and Claude Code — run durably in the cloud or self-hosted on Postgres. Turns that fail partway through resume from a log on a new instance instead of restarting or repeating completed work, even if the browser disconnects.",
+    "foryou": "This is exactly the failure mode that's painful to engineer around yourself in an agentic pipeline — a long tool-call chain dying mid-turn and losing all progress. Worth evaluating before you build your own resumability layer.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://vercel.com/blog/making-every-harness-durable"
+  },
+  {
+    "section": "tips",
+    "headline": "Databricks' MemCurrent triples agent pass rates with persistent memory",
+    "summary": "MemCurrent is a persistent-memory architecture for production agents that Databricks says can triple an agent's task pass rate compared to no memory at all, while also making the agent faster and cheaper to run.",
+    "foryou": "If your agents are still stateless between sessions, this is a concrete data point on how much pass-rate may be sitting on the table — worth reading before you roll your own memory layer.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://www.databricks.com/blog/memcurrent-designing-persistent-memory-production-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "llm-d: a Kubernetes-native stack for distributed LLM inference",
+    "summary": "llm-d runs vLLM, SGLang, and other inference engines across clusters, turning single-node serving into production-grade distributed inference with tested deployment recipes. It targets GPUs, TPUs, XPUs, CPUs, and emerging NPUs with consistent performance patterns, so teams can deploy once and scale across hardware with predictable cost and behavior.",
+    "foryou": "If you're self-hosting inference beyond a single box, llm-d's deployment recipes could save you from reinventing cluster-level serving patterns from scratch.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://llm-d.ai/"
+  },
+  {
+    "section": "tips",
+    "headline": "How Ramp built Laminar, its in-house agent harness, in six weeks",
+    "summary": "Ramp's engineering team built Laminar — an in-house harness for its agentic products, with secure conversation-history storage, session compaction, standard tool-calling interfaces, subagent support, multiplayer chat, and observability — in six weeks with a small team, with the code itself generated almost entirely by agents. Ramp's takeaway: building in-house is now cheaper, but you still need experienced engineers steering the agents and figuring out what product teams actually need.",
+    "foryou": "A concrete account of agent-built infrastructure at speed, including the staffing model that made it work — useful if you're weighing build-vs-buy on your own agent harness.",
+    "source": "TLDR AI",
+    "date": "2026-10-22",
+    "url": "https://builders.ramp.com/post/building-laminar"
+  }
+]
