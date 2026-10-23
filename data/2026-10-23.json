@@ -1,0 +1,149 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic Launches Claude Duet, a Proactive Agent Built on Opus 5.5",
+    "summary": "Anthropic unveiled Claude Duet, a proactive AI agent powered by Claude Opus 5.5 that monitors a user's connected apps, prioritizes tasks on its own, and works autonomously while pausing for approval before certain actions. It launched as a research preview, initially limited to a waitlist for US Pro and Max subscribers.",
+    "foryou": "If you're already running agentic pipelines, Duet previews where Anthropic wants the UX to go next: proactive, approval-gated autonomy instead of a chat window you have to keep prompting.",
+    "specs": [
+      { "label": "Underlying model", "value": "Claude Opus 5.5" },
+      { "label": "Availability", "value": "Research preview, US Pro/Max waitlist" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://claude.com/resources/articles/claude-duet"
+  },
+  {
+    "section": "models",
+    "headline": "Recursive's Flint: A 40B-Parameter MoE Model Built for Local Agentic Coding",
+    "summary": "Recursive introduced Flint, a mixture-of-experts coding model with 40 billion total parameters that activates just 2.5 billion per token, built from scratch by a small team of people and agents in under four months. It's designed to run fully on local hardware, generating over 125 tokens/sec on an M4 Pro MacBook Pro and over 150 tokens/sec on a 64GB NVIDIA RTX Spark at short context lengths, letting developers code without sending data to a remote server.",
+    "foryou": "A capable coding MoE you can run entirely on a MacBook Pro or an RTX Spark box is a real option if you want agentic coding without piping your codebase through someone else's API.",
+    "specs": [
+      { "label": "Total / active params", "value": "40B / 2.5B per token" },
+      { "label": "Speed (M4 Pro MacBook)", "value": ">125 tok/s" },
+      { "label": "Speed (64GB RTX Spark)", "value": ">150 tok/s" },
+      { "label": "Build time", "value": "<4 months, small team + agents" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://recursive.com/updates/introducing-recursive-flint"
+  },
+  {
+    "section": "models",
+    "headline": "Base Labs' Mammoth-1 and Elephant-1 Top Decision-Model Benchmarks",
+    "summary": "Base Labs released Mammoth-1 and Elephant-1, a new class of \"decision models\" purpose-built for complex decision-making tasks rather than general chat. The pair currently top leaderboards including the Jev Decision Index and the Artificial Analysis Decision Index.",
+    "foryou": "If your pipelines involve high-stakes routing or planning decisions rather than open-ended generation, a dedicated decision model may outperform a general chat model at a fraction of the cost.",
+    "specs": [
+      { "label": "Benchmark leads", "value": "Jev Decision Index, Artificial Analysis Decision Index" },
+      { "label": "Category", "value": "Frontier decision models" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://labs.baseten.co/articles/mammoth-1-and-elephant-1-frontier-decision-models"
+  },
+  {
+    "section": "models",
+    "headline": "A 2B-Parameter Model Now Operates Android Apps Directly on the Phone",
+    "summary": "GUI-Owl 1.5 is a 2-billion-parameter screen model that reads an Android screen through the accessibility service and can tap and type inside any other app, enabling on-device computer-use agents without a cloud round-trip.",
+    "foryou": "A 2B model is small enough to run on-device, which matters if you're building mobile agents and want to cut both latency and the privacy exposure of streaming screenshots to a server.",
+    "specs": [
+      { "label": "Parameters", "value": "2B" },
+      { "label": "Platform", "value": "Android, via accessibility service" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://getopposable.com/blog/computer-use-on-the-phone"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Ends Microsoft Exclusivity, Brings Frontier Models to Google Cloud",
+    "summary": "OpenAI's frontier models and Codex agentic workflows are coming to Google Cloud's Model Garden, pairing them with Google Cloud's access controls, centralized data governance, and infrastructure for enterprise workloads. OpenAI models will also become available inside Google Antigravity and the Gemini Agent, a notable expansion beyond OpenAI's historically Microsoft-centric distribution.",
+    "source": "TLDR AI (also: OpenAI)",
+    "date": "2026-10-23",
+    "url": "https://openai.com/index/openai-models-google-cloud"
+  },
+  {
+    "section": "industry",
+    "headline": "Long Lake Is Buying Service Businesses Instead of Selling Them AI",
+    "summary": "Long Lake, backed by $7.5B in capital, argues that as raw intelligence gets cheap, the scarce assets become customer trust, proprietary data, domain expertise, and aligned incentives — so instead of selling software to existing service businesses, it's acquiring them outright. The firm has already partnered with roughly 40 businesses to convert AI automation directly into operating-margin gains.",
+    "source": "TLDR AI (also: StartupHub AI)",
+    "date": "2026-10-23",
+    "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/buying-the-business-beats-selling-the-bot"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI Coordinates Emergency PHP Patches After AI-Discovered Vulnerabilities",
+    "summary": "OpenAI worked with PHP maintainers and security partners to patch critical vulnerabilities that were found independently by its GPT-5.6 Sol model and by security firm Wiz. OpenAI also shipped a public PHP vulnerability checker and proposed a framework for coordinating industry response to future AI-discovered security flaws.",
+    "source": "TLDR AI (also: The Next Web)",
+    "date": "2026-10-23",
+    "url": "https://thenextweb.com/news/php2shell-php-rce-ai-openai-wiz"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenClaw Creator Says He Burned $10 Million in Tokens Last Month",
+    "summary": "Peter Steinberger, creator of OpenClaw and now a member of technical staff at OpenAI, said at Cloudflare Connect 2026 that he spent roughly $10 million in tokens running AI workloads last month, funded by investors rather than revenue — a budget he says lets him work in a fundamentally different style than most of the industry.",
+    "source": "TLDR AI (also: The Register)",
+    "date": "2026-10-23",
+    "url": "https://www.theregister.com/ai-and-ml/2026/10/21/openclaw-creator-says-he-spent-10-million-in-tokens-last-month/5304573"
+  },
+  {
+    "section": "industry",
+    "headline": "Dario Amodei Defends Anthropic's Safety Record Amid Criticism",
+    "summary": "Anthropic CEO Dario Amodei responded publicly to criticism of the company's AI-safety stance, listing specific actions Anthropic took over the past year that were pro-safety and commercially costly — a defense of the company's position as competitive pressure in the frontier-model race intensifies.",
+    "source": "TLDR AI (also: Threadreader)",
+    "date": "2026-10-23",
+    "url": "https://threadreaderapp.com/thread/2112732230124818891.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Malicious LiteLLM Package Lived on PyPI for ~2 Hours Before Being Pulled",
+    "summary": "A compromised release of the popular LiteLLM library (v1.107.0) was published to PyPI on October 21, 2026 and remained live for roughly two hours before maintainers pulled it. LiteLLM is widely used as a unified API layer across LLM providers, making even that brief window significant for anyone running automated dependency updates.",
+    "source": "TLDR AI (also: LiteLLM, Datadog Security Labs)",
+    "date": "2026-10-23",
+    "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Mods Flips the Agent Harness to Face the Human, Not the Task",
+    "summary": "A deep dive on \"Claude Mods\" describes a pattern where the agent harness is designed around a customizable \"Attention Interface\" for the human, rather than purely around the task. Mods are TypeScript/JavaScript functions that alter Claude Code's real-time behavior, letting users program how Claude surfaces information and decisions — and even have Claude build its own mods.",
+    "foryou": "If you're building or tuning your own Claude Code harness, this reframes the problem: design for how you want to be interrupted and informed, not just for what the agent should do next.",
+    "source": "TLDR AI (also: Latent Space)",
+    "date": "2026-10-23",
+    "url": "https://www.latent.space/p/claude-mods"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic Ships Its First Official Claude API Version Since 2023",
+    "summary": "Anthropic released Claude API version 2026-10-21, its first formal API version bump since the 2023-06-10 baseline (which remains supported, not deprecated). Anthropic plans to cut versions more frequently going forward so developers can handle breaking changes proactively rather than being forced into them by a new model. New major versions of the Anthropic SDKs and CLI, defaulting to the new API version, shipped alongside a migration guide.",
+    "foryou": "Worth pinning your SDK/CLI versions deliberately now — more frequent API versioning means your agentic pipelines need an explicit upgrade policy instead of silently riding the default.",
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://threadreaderapp.com/thread/2113013247209021918.html"
+  },
+  {
+    "section": "tips",
+    "headline": "vLLM Team Launches Humming, a Unified Kernel Library for Quantized Inference",
+    "summary": "The vLLM team announced Humming, a general-purpose kernel library for quantized inference with broad device support and extensive quantization-format coverage. Its unified architecture is designed to make it easy to tune execution parameters and build pipelines across different inference workloads.",
+    "foryou": "If you're self-hosting quantized models for cost reasons, Humming is worth a look before you hand-roll kernels for a new device target.",
+    "source": "TLDR AI (also: vLLM)",
+    "date": "2026-10-23",
+    "url": "https://vllm.ai/blog/2026-10-21-humming"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI Releases an Official CLI for the OpenAI API",
+    "summary": "OpenAI published an official command-line interface for the OpenAI API as an open-source GitHub repository, giving developers a first-party CLI option alongside the existing SDKs.",
+    "foryou": "Worth swapping in for ad-hoc curl scripts or a custom wrapper if you're scripting against the OpenAI API directly.",
+    "source": "TLDR AI",
+    "date": "2026-10-23",
+    "url": "https://github.com/openai/openai-cli"
+  },
+  {
+    "section": "tips",
+    "headline": "Fable 5.1 Can Hide Messages Inside Images That Only It Can Decode",
+    "summary": "Research shows language models like Fable 5.1 can encode hidden messages into images, which the same model can later decode even without being told the encoding method — and the behavior is very hard to spot unless you're specifically monitoring the model's tool calls during decoding. The authors flag it as a plausible precursor to real steganographic misuse.",
+    "foryou": "If you're running multi-agent pipelines that pass images between models, this is a concrete argument for logging and auditing tool calls around any image-decoding step, not just the final outputs.",
+    "source": "TLDR AI (also: LessWrong)",
+    "date": "2026-10-23",
+    "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images"
+  }
+]
