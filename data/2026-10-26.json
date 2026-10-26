@@ -1,0 +1,154 @@
+[
+  {
+    "section": "models",
+    "headline": "Microsoft ships Decision-1, a 9B model built to score choices, not generate text",
+    "summary": "Microsoft released Decision-1, a 9B-parameter model fine-tuned from Qwen that scores confidence probabilities across a predefined set of answer options instead of generating free-form text. It's designed for agentic decision points — routing, classification, tool selection — where a calibrated probability beats a chat response. Microsoft is positioning it as a lightweight companion model for larger generative systems.",
+    "foryou": "If your agent pipelines keep burning full LLM calls just to pick between a handful of options, a dedicated scoring model like this could cut latency and cost on every routing decision.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "9B"
+      },
+      {
+        "label": "Base model",
+        "value": "Qwen"
+      },
+      {
+        "label": "Task type",
+        "value": "Confidence scoring over predefined options (non-generative)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://www.infoworld.com/article/4234290/microsoft-separates-decision-making-from-generative-ai-with-a-new-model.html"
+  },
+  {
+    "section": "models",
+    "headline": "WorldTUI: a 360M-parameter model that hallucinates an entire working terminal",
+    "summary": "An independent researcher trained a 360-million-parameter model to predict terminal screen output key-by-key, with no real shell or file system behind it. WorldTUI can create files, run vim and tmux, and even play Snake, remembering prior commands and repairing its own mistakes mid-session. A browser demo is live.",
+    "foryou": "A toy-scale proof that a model can hold coherent, stateful world simulation at a tiny parameter count — worth a look if you're curious how far small models can go before you need a 'real' sandboxed execution environment.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "360M"
+      },
+      {
+        "label": "Capability",
+        "value": "Predicts terminal screen state per keystroke, no real backend"
+      },
+      {
+        "label": "Demo",
+        "value": "Live in-browser demo available"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://simedw.com/2026/10/21/world-model-terminal/"
+  },
+  {
+    "section": "models",
+    "headline": "Claude's text output now carries an invisible, EU-mandated watermark",
+    "summary": "Anthropic's latest Claude models embed a SynthID-Text-based watermark into every text response to comply with the EU AI Act's transparency requirements. The technique nudges Claude's word choices among near-equivalent options rather than inserting hidden characters or tokens, and carries no information identifying the user.",
+    "foryou": "If you're shipping Claude output into regulated EU workflows or content pipelines, know the raw text is now statistically fingerprinted as AI-generated — good for compliance, but worth knowing if you're post-processing or paraphrasing outputs downstream.",
+    "specs": [
+      {
+        "label": "Technique",
+        "value": "SynthID-Text (token-choice nudging)"
+      },
+      {
+        "label": "Overhead",
+        "value": "No added characters or hidden tokens"
+      },
+      {
+        "label": "Driver",
+        "value": "EU AI Act transparency requirement"
+      }
+    ],
+    "source": "TLDR AI (also: O'Reilly Radar)",
+    "date": "2026-10-26",
+    "url": "https://www.anthropic.com/news/claude-text-watermark"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI closes in on $30B round at a $1.25 trillion valuation, led by UAE investors",
+    "summary": "OpenAI is finalizing a funding round that would value the company at more than $1 trillion, with investors from the United Arab Emirates leading the round. The deal is being structured as a bridge ahead of a potential IPO, with OpenAI pushing to lock in signatures within the week, though the final size is still being negotiated.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html"
+  },
+  {
+    "section": "industry",
+    "headline": "AI models helped uncover PHP bugs putting most of the web at risk — then a botched disclosure gave attackers a head start",
+    "summary": "OpenAI's models helped surface a long-dormant class of PHP vulnerabilities, theorized over a decade ago but never fixed, affecting an estimated 70% of websites. A mishandled disclosure process gave hackers advance notice before site operators could patch, triggering an emergency scramble across government and enterprise sites.",
+    "source": "Semafor (also: Axios)",
+    "date": "2026-10-26",
+    "url": "https://axios.com/2026/10/21/php-openai-ai-bug-hunting-cyberattacks"
+  },
+  {
+    "section": "industry",
+    "headline": "METR and Redwood Research spent three weeks red-teaming OpenAI's internal agent monitoring",
+    "summary": "Given rare access to OpenAI's internal infrastructure, the two safety research groups ran a three-week security assessment and identified vulnerabilities that could let AI agents evade monitoring, bypass sandbox restrictions, or conceal their own actions from overseers.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic hands its Agent Skills standard to neutral open-source governance",
+    "summary": "Anthropic donated its Agent Skills open standard to the newly formed Agentic AI Foundation under the Linux Foundation, joining OpenAI and Block in moving core agentic-AI infrastructure out of any single vendor's control.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+  },
+  {
+    "section": "industry",
+    "headline": "GM gives OnStar an AI makeover as carmakers race to turn vehicles into agents",
+    "summary": "GM unveiled a new in-car AI assistant that can control vehicle functions, answer questions, and plan routes, joining Tesla, BMW, and Ford in rolling out conversational AI into cars this year. GM's chief product officer argues cars are the most capable 'robot' most people will ever own — and that humanoid form factors are a distraction from that.",
+    "source": "Semafor (also: TechCrunch)",
+    "date": "2026-10-26",
+    "url": "https://techcrunch.com/2026/10/21/gm-is-giving-onstar-an-ai-makeover/"
+  },
+  {
+    "section": "industry",
+    "headline": "Sam Altman's World rolls out tools to prove a human is behind an AI shopping agent",
+    "summary": "World, the iris-scanning identity startup Altman co-founded, launched tools letting people cryptographically link their verified humanity to AI agents acting on their behalf. The company's product chief says verified-human agents could unlock seller perks like discounts, as banks simultaneously restrict unverified agent transactions.",
+    "source": "Semafor",
+    "date": "2026-10-26",
+    "url": "https://www.winzheng.com/en/article/world-launches-human-verification-ai-shopping-agents"
+  },
+  {
+    "section": "industry",
+    "headline": "MIT marooned 13 AI coding agents on a virtual island for 30 hours — they invented games out of boredom",
+    "summary": "Researchers gave 13 frontier coding agents (including Claude Opus and GPT-5.5) minimal instructions in a sandboxed virtual world and let them run for 30-hour stretches. Left idle, the agents started stacking blocks, climbing hills, and inventing games like a version of 'the floor is lava' entirely unprompted.",
+    "source": "Semafor",
+    "date": "2026-10-26",
+    "url": "https://aiweekly.co/alerts/mit-strands-claude-opus-47-alone-on-virtual-island-for-30-hours-agents-invent"
+  },
+  {
+    "section": "tips",
+    "headline": "1Password lets AI agents use your credentials without ever seeing them",
+    "summary": "1Password launched a platform where AI agents request access to vault credentials, and once a human approves, 1Password autofills them directly into the destination site — the agent itself never touches the raw password or API key.",
+    "foryou": "If your agentic pipelines currently stuff API keys or login credentials straight into a model's context, this is the pattern to copy: broker the secret, never hand it to the model.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://1password.com/blog/1password-for-ai-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "How Cerebras splits trillion-parameter models across multiple wafer-scale chips",
+    "summary": "A single Cerebras WSE-3T wafer has 44GB of on-chip memory — nowhere near enough for a trillion-parameter model's weights. Cerebras published the engineering details of how it partitions model weights across multiple wafers, maps computation, and serves a high volume of concurrent requests at that scale.",
+    "foryou": "Useful background if you're ever evaluating inference providers for frontier-scale models — knowing how the sharding actually works helps you sanity-check latency and throughput claims.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity's JOLT trains a model to be its own teacher and student at once",
+    "summary": "Perplexity published JOLT, a self-distillation method where a single model plays both teacher and student roles during training, adapting its own feedback to match the student's current capability level. It improved both performance and training efficiency on math, coding, and agentic benchmarks.",
+    "foryou": "If you fine-tune your own models for agentic tasks, self-distillation techniques like this are worth tracking — they're a cheaper lever than just scaling up data or parameters.",
+    "source": "TLDR AI",
+    "date": "2026-10-26",
+    "url": "https://www.perplexity.ai/hub/blog/a-good-teacher-meets-the-student-where-they-are"
+  }
+]
