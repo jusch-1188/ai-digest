@@ -1,0 +1,178 @@
+[
+  {
+    "section": "models",
+    "headline": "Moonshot Ships Kimi K3.1 Pro, Open Weights Coming Nov. 4",
+    "summary": "Moonshot AI released Kimi K3.1 Pro through its API, scoring 55 on the Artificial Analysis Intelligence Index — good for 4th of 221 models and nearly double the median of 28. The model is a reasoning system reported at roughly 2.8 trillion parameters that takes text and image input, and Moonshot has committed to publishing open weights by November 4.",
+    "foryou": "A frontier-tier model landing on your API bill at $2/$10 per million tokens is worth benchmarking against Claude for cost-sensitive agentic workloads once the open weights drop.",
+    "specs": [
+      {
+        "label": "Intelligence Index",
+        "value": "55 (rank 4/221)"
+      },
+      {
+        "label": "Context window",
+        "value": "1M tokens"
+      },
+      {
+        "label": "Pricing",
+        "value": "$2.00 in / $10.00 out per 1M tokens"
+      },
+      {
+        "label": "Speed",
+        "value": "46.3 tok/s output, 2.98s to first token"
+      },
+      {
+        "label": "Parameters",
+        "value": "~2.8T (reported)"
+      },
+      {
+        "label": "Open weights",
+        "value": "Promised Nov 4, 2026"
+      }
+    ],
+    "source": "TLDR AI",
+    "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "models",
+    "headline": "Apple's 20B On-Device Model Keeps Most Weights in Flash, Not RAM",
+    "summary": "A deep dive into Apple's on-device foundation model shows it storing all 20 billion parameters in flash storage and loading only the 1–4 billion parameters a given prompt needs into memory, via what Apple calls Instruction-Following Pruning. Testing on an M3 Max Mac showed about 2GB of memory usage and notably lower energy draw than comparable open models, though math performance lagged behind larger cloud models.",
+    "foryou": "If you're deploying agents to edge or on-device contexts, this route-once-per-prompt MoE pattern is a blueprint for shrinking memory footprint without gutting capability.",
+    "specs": [
+      {
+        "label": "Total parameters",
+        "value": "20B"
+      },
+      {
+        "label": "Active parameters",
+        "value": "1B–4B per prompt"
+      },
+      {
+        "label": "Memory usage",
+        "value": "~2GB (M3 Max test)"
+      },
+      {
+        "label": "Weak spot",
+        "value": "Math performance"
+      }
+    ],
+    "source": "TLDR AI",
+    "url": "https://www.airealist.ai/p/exploring-apple-on-device-model",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 4 Carbon Early Tests Show 3D Gains, Still Slow and UI-Weak",
+    "summary": "Early testers running Google's Gemini 4 Carbon checkpoint report a clear step up in 3D generation quality over the prior Argon checkpoint, but frontend/UI output remains weak and the model runs roughly two to four times slower on some tasks. Carbon is in early access with select partners and on LMArena, with a public release described as imminent.",
+    "foryou": "If your pipeline leans on Gemini for 3D asset generation or spatial reasoning, budget for a latency hit when Carbon lands — it trades speed for quality in ways that may not suit latency-sensitive agent loops.",
+    "specs": [
+      {
+        "label": "vs. Argon",
+        "value": "Notably better 3D, weaker/slower UI"
+      },
+      {
+        "label": "Speed",
+        "value": "~2–4x slower on some tasks"
+      },
+      {
+        "label": "Access",
+        "value": "Early access + LMArena testing"
+      }
+    ],
+    "source": "TLDR AI",
+    "url": "https://www.testingcatalog.com/gemini-4-carbon-early-test-results/",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "models",
+    "headline": "Block's Dessa Is a Conversational Model Trained Only on Speech",
+    "summary": "Block unveiled Dessa, a conversational AI trained from scratch on raw audio with no text data at all. The model learned to hold real-time, full-duplex conversations — including laughing on cue and finishing sentences — purely from listening to human speech, and reportedly carries a surprising amount of world knowledge despite never seeing a word of text.",
+    "foryou": "Worth a listen if you're exploring voice-native agents: a text-free training path could sidestep the latency and awkwardness of today's ASR-to-LLM-to-TTS pipelines.",
+    "source": "TLDR AI",
+    "url": "https://cryptobriefing.com/block-unveils-dessa-ai-voice-model/",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic Files S-1, Plans to List on Nasdaq as 'ANT'",
+    "summary": "Anthropic filed a registration statement with the SEC for its IPO, planning to list Class A common stock on the Nasdaq Global Select Market under the ticker ANT, with Goldman Sachs and Morgan Stanley leading the offering. Reports accompanying the filing put first-half 2026 revenue at $16.3 billion against an $80.7 billion net loss, with Wall Street discussing a listing valuation in the $1.5–2 trillion range, up from its $965 billion private mark in May. The filing also discloses up to $120.5 billion in compute commitments with SpaceX through 2029 and flags that AI models could pose a 'catastrophic or existential risk to humanity' as a business risk factor.",
+    "source": "TLDR AI (also: Web)",
+    "url": "https://www.anthropic.com/news/s1-sec",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Broadcom Arranges $63B Financing Vehicle for Anthropic's Chip Supply",
+    "summary": "Bank of America, Citigroup, Morgan Stanley, and Blackstone are structuring a special-purpose vehicle that will buy Broadcom AI accelerators and lease them to Anthropic, with deliveries starting in 2027. The deal landed the same day Anthropic filed its S-1, underscoring how much of the AI buildout is being financed through off-balance-sheet debt structures rather than direct capex.",
+    "source": "Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-26/broadcom-arranges-63-billion-deal-to-finance-anthropic-s-chips",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Plans $95B Stock Offering to Fund AI Buildout",
+    "summary": "Meta will raise $35 billion through underwritten public offerings and another $60 billion through an at-the-market program, while also lifting the low end of its 2026 capex guidance to $135–145 billion. Shares fell 7% on the announcement as investors weighed the scale of AI infrastructure spending against near-term returns.",
+    "source": "Web",
+    "url": "https://www.irishtimes.com/business/2026/10/26/meta-plans-95bn-stock-offering-to-bankroll-ai-expansion/",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "SpaceX Closes $40B Debt Deal to Buy Nvidia AI Chips",
+    "summary": "SpaceX closed $40 billion in debt financing, primarily capitalizable debt, to fund a large Nvidia GPU order expected to arrive in the first half of 2027. The financing runs through a special-purpose vehicle designed to keep the debt off SpaceX's balance sheet and protect its investment-grade credit rating.",
+    "source": "TLDR AI",
+    "url": "https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "DOJ Appeals Ruling That Lifted Ban on Federal Use of Anthropic AI",
+    "summary": "The Department of Justice filed a notice of appeal with the Ninth Circuit, challenging Judge Rita Lin's August ruling that found the government hadn't justified barring federal agencies from using Anthropic's AI tools. The appeal keeps the legal fight over agency AI procurement — and the precedent it sets for other vendors — open.",
+    "source": "Web",
+    "url": "https://www.bloomberg.com/news/articles/2026-10-26/doj-appeals-court-ruling-lifting-ban-on-agency-anthropic-use",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia Weighs $2,000-Per-GPU Annual Fee for Running AI Agents",
+    "summary": "Nvidia is reportedly discussing a new software fee — roughly $2,000 per GPU per year — for agent workloads run on its AI infrastructure, stacked on top of its AI Enterprise platform that already charges more than $4,000 per GPU annually. The move would push more of Nvidia's revenue toward recurring software rather than one-time hardware sales.",
+    "source": "Web",
+    "url": "https://www.tomshardware.com/pc-components/gpus/nvidia-discusses-usd2-000-per-gpu-annual-software-fee-for-running-agents-on-ai-infrastructure-firm-already-charges-more-than-twice-that-amount-for-its-ai-enterprise-software-platform",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "industry",
+    "headline": "Claude Cowork and Chat Merge Into One Enterprise Experience",
+    "summary": "Anthropic made its unified Claude Chat and Cowork experience generally available for Claude Enterprise plans, bringing the two interfaces — conversational chat and the file/task-oriented Cowork mode — together into a single product with shared context.",
+    "source": "TLDR AI",
+    "url": "https://claude.com/resources/articles/unified-claude-enterprise",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor's Coding Agent Can Now Click Through Desktop Apps",
+    "summary": "Cursor added a Computer Use tool to its desktop IDE, letting the local coding agent click, type, and capture screens in any native app — not just the editor. The flagship demo has the agent build an iOS feature, launch the Simulator, tap through the UI, verify the result, and revise code in one continuous loop. It's one of three new desktop targets alongside cloud agents and self-hosted workers.",
+    "foryou": "If your agentic pipeline touches anything outside a terminal or browser — native apps, installers, design tools — this closes the gap that used to force manual steps or a bespoke MCP server; isolate it on a test account or dedicated machine given the blast radius of desktop-level access.",
+    "source": "TLDR AI",
+    "url": "https://alphasignal.ai/news/cursor-s-computer-use-lets-its-coding-agent-click-through-desktop-apps",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "tips",
+    "headline": "A Framework for Mapping Agent Identity and Permissions Across Protocols",
+    "summary": "An analysis piece maps the fast-multiplying agent protocol landscape across four layers — entry, identity, tools, and intent — arguing that banks and merchants need to connect verified identities, scoped permissions, and audit trails before they'll authorize autonomous agent actions on their behalf. It warns that the access agreements emerging to solve this could introduce new fees and slow adoption of agentic commerce.",
+    "foryou": "If you're building agents that touch payments, bookings, or any third-party system requiring authorization, this four-layer lens (entry/identity/tools/intent) is a useful checklist for what your agent's permission model is still missing.",
+    "source": "TLDR AI",
+    "date": "2026-10-27"
+  },
+  {
+    "section": "tips",
+    "headline": "Why RL Training Environments Need to Encode Unwritten Rules",
+    "summary": "A technical essay argues that reinforcement-learning environments for agents need to bake a domain's unwritten rules into the reward signal itself, not just the explicit task spec — otherwise agents can get the 'right' answer without actually knowing why. It proposes building one underlying world exposed through multiple surfaces, so the same task can be posed at different difficulties and scored consistently regardless of which surface the agent used to reach an authorized result.",
+    "foryou": "If you're building training or eval environments for your own agents, the core lesson — reward what the environment actually enforces, not what the task description implies — is a direct way to catch agents gaming your evals.",
+    "source": "TLDR AI",
+    "url": "https://algoroxyolo.github.io/blog/2026/knowing-how-is-not-knowing-what/",
+    "date": "2026-10-27"
+  }
+]
