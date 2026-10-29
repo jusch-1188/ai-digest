@@ -1,0 +1,140 @@
+[
+  {
+    "section": "models",
+    "headline": "Google DeepMind launches Genie 4, a world model with 2-minute persistent sims",
+    "summary": "Genie 4 generates photorealistic, interactive environments with synchronized audio and real-time prompt-based editing. It maintains consistent simulations for up to two minutes, doubling Genie 3's duration, while improving physics and character realism.",
+    "foryou": "World models like this are the fastest path to cheap, infinite synthetic training environments for robotics and agent RL — worth tracking if you're building anything that needs simulated environments rather than real-world data.",
+    "specs": [
+      { "label": "Simulation duration", "value": "Up to 2 minutes (2x Genie 3)" },
+      { "label": "Output", "value": "Photorealistic video + synchronized audio" },
+      { "label": "Editing", "value": "Real-time, prompt-based" },
+      { "label": "Maker", "value": "Google DeepMind" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI ships LFM3, an open-weight on-device model family with 256K context",
+    "summary": "LFM3 is a family of open-weight text, vision, audio, omni, and decision models on a shared tri-hybrid backbone starting at 2B parameters. The 1.7B text model beats its 2.6B predecessor with 35% fewer parameters, fits in ~1GB at 4-bit, and supports a 256K context window for on-device agents.",
+    "foryou": "A 1GB, 256K-context model that fine-tunes on a single GPU is the kind of building block that makes on-device or edge agentic pipelines actually viable — worth benchmarking against your current small-model stack.",
+    "specs": [
+      { "label": "Text model size", "value": "1.7B params (~1GB at 4-bit)" },
+      { "label": "Context window", "value": "256K tokens" },
+      { "label": "Fine-tuning", "value": "Single GPU" },
+      { "label": "Vision variant", "value": "LFM3-VL-2B matches Gemma 4 12B across 62 vision benchmarks" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://www.liquid.ai/blog/lfm3"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic says an internal Claude model refuted the Exponential Time Hypothesis",
+    "summary": "A research Claude model, with no human input, reportedly found a deterministic algorithm counting 3-SAT satisfying assignments in subexponential time, which would refute ETH if it holds up. Anthropic published a Lean 4 formalization that type-checks in about 8 minutes, though it notes no machine has verified the Lean statement matches the paper. It landed hours after OpenAI published its own independent ETH refutation.",
+    "foryou": "Two labs' models independently cracked a 20-year-old open complexity conjecture in the same week — a strong, concrete data point that frontier models are starting to do genuine novel research math, not just competition-style proofs; worth watching whether the result survives peer scrutiny.",
+    "specs": [
+      { "label": "Claimed complexity", "value": "2^O(n·log log n/√log n) for 3-SAT (subexponential)" },
+      { "label": "Verification", "value": "Lean 4 proof, builds in ~8 minutes" },
+      { "label": "Human input", "value": "None reported" },
+      { "label": "Caveat", "value": "No machine check that Lean statement matches the paper" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-29",
+    "url": "https://github.com/anthropics/formal-math/tree/main/eth"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's IPO filing reveals an 85% gross margin on its core model business",
+    "summary": "Investors parsing Anthropic's IPO filing zeroed in on its 85% gross profit margin on running existing models — seen as a reality check for skeptics who doubted pay-as-you-go pricing could be profitable. That figure excludes training costs, and Anthropic is still posting an overall net loss, but it puts Anthropic's core product margin above analysts' estimates for Google Search ads (75-80%) and in the range of Meta's ad business (81-82%).",
+    "source": "Semafor",
+    "date": "2026-10-29",
+    "url": "https://www.semafor.com/article/10/28/2026/anthropics-key-number-is-its-85-gross-margin"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia to invest $3 billion in Meta's equity offering, deepening AI infrastructure ties",
+    "summary": "Nvidia will take a $3 billion stake in Meta's stock offering as part of an expanded AI partnership, with the companies also reportedly exploring collaboration on agent-behavior monitoring. The deal follows a broader pattern of chipmakers (AMD and Broadcom are also eyeing stakes) tying their balance sheets directly to hyperscaler AI capex.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-29",
+    "url": "https://www.cnbc.com/2026/10/27/nvidia-invest-meta.html"
+  },
+  {
+    "section": "industry",
+    "headline": "UK pledges roughly $160 million to its frontier AI testing lab, dwarfing the US equivalent",
+    "summary": "Chancellor John Healey previewed a budget package that would pour about $160 million into the UK's government lab for testing powerful AI models, more than 10x the annual budget of its US counterpart. The move is a direct response to rising concern about frontier AI capabilities, and some in Washington are now pushing for the US Commerce Department's equivalent effort to get comparable funding.",
+    "source": "Semafor",
+    "date": "2026-10-29",
+    "url": "https://semafor.com/s/ptsm07flfd"
+  },
+  {
+    "section": "industry",
+    "headline": "PsiQuantum's quantum research yields a data-center networking breakthrough",
+    "summary": "While building toward a large-scale quantum computer, PsiQuantum says it has produced an optical circuit switch that could let racks of GPUs connect via optics instead of copper, cutting the energy currently lost to inter-GPU networking. If it can be mass-produced and fits existing data-center architecture, it could meaningfully speed up data-center operation without a full infrastructure overhaul.",
+    "source": "Semafor",
+    "date": "2026-10-29",
+    "url": "https://semafor.com/s/z127q0mjmp"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic acquires one-person biotech Mithril Medicine, expands Claude drug-discovery push",
+    "summary": "Anthropic acquired Mithril Medicine, a drug-discovery startup run solo by Cody Tranbarger, who used Claude to coordinate contracts, logistics, and experiments across 11 external labs. The deal lands alongside Anthropic's announcement that it partnered with six pharma and biotech firms and launched internal drug-discovery programs targeting rare childhood diseases, with Claude handling substantial scientific and operational work.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-10-29",
+    "url": "https://thenextweb.com/news/anthropic-mithril-acquisition-claude-drug-development"
+  },
+  {
+    "section": "industry",
+    "headline": "\"Anthropic Versus Anthropic\": scrutiny grows over the gap between safety rhetoric and business moves",
+    "summary": "A widely circulated analysis argues Anthropic is struggling to reconcile its safety-first branding with increasingly conventional, growth-driven business decisions ahead of its IPO. The piece catalogs tension between CEO Dario Amodei's defense of costly safety-oriented strategies and internal signals that look like standard Silicon Valley operating behavior, fueling debate over whether Anthropic's governance structure will hold under commercial pressure.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://thezvi.wordpress.com/2026/10/27/anthropic-versus-anthropic/"
+  },
+  {
+    "section": "tips",
+    "headline": "Axiom Math's agent swarm formalized the 15,000-page Enormous Theorem in 24 days",
+    "summary": "Axiom Math directed swarms of dozens of AI agents over 24 days to produce a complete, computer-checked Lean 4 proof of the Classification of Finite Simple Groups — a theorem whose original human proof ran roughly 15,000 pages across 500+ articles by about 100 mathematicians. The agents generated approximately 43.1 million lines of Lean code in the process.",
+    "foryou": "This is a concrete reference point for how far multi-agent orchestration can scale on a single hard, long-horizon task — worth studying their coordination approach if you're designing agent fleets for anything beyond a few hours of autonomous work.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://axiommath.ai/research/the-enormous-theorem-formalized/"
+  },
+  {
+    "section": "tips",
+    "headline": "Glasser lets AI agents pay-per-call for premium data from 2,000+ API endpoints",
+    "summary": "Glasser is a new marketplace that lets AI agents buy premium data on a per-API-call basis, aggregating access to over 2,000 endpoints from more than 80 providers without requiring separate contracts for each one.",
+    "foryou": "If your agents need occasional access to paid data sources, a pay-per-call aggregator beats negotiating and maintaining dozens of individual API contracts — worth a trial run against whatever data gaps your pipelines currently hit.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://www.testingcatalog.com/glasser-now-lets-ai-agents-buy-premium-data-per-api-call/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's \"sleep framework\" lets LLMs consolidate new knowledge without catastrophic forgetting",
+    "summary": "Researchers propose a continuous periodic lifecycle for LLMs that alternates between active interaction and offline memory consolidation, letting models continually absorb new facts into stable long-term parameters while retaining long-context knowledge up to 10M tokens and improving complex reasoning, without the static-knowledge-cutoff problem.",
+    "foryou": "This is the clearest blueprint yet for giving a long-running agent a real memory system instead of just stuffing more context into the window — worth reading closely if your agentic pipelines need to retain facts across sessions.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta open-sources InteractiveWorld, a simulator for training wearable AI assistants",
+    "summary": "InteractiveWorld is an open-source simulation framework for training and evaluating wearable AI assistants, modeling scenarios where an assistant observes through a user's eyes, communicates with them, and receives updated first-person views as context changes.",
+    "foryou": "If you're prototyping anything involving egocentric/wearable agents, this gives you a ready-made simulation harness instead of building scenario testing from scratch.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://github.com/facebookresearch/InteractiveWorld"
+  },
+  {
+    "section": "tips",
+    "headline": "Visual Studio's October update adds bulk commit comparison and a revamped Copilot Chat",
+    "summary": "The October update for Visual Studio introduces a direct commit-comparison feature for reviewing and resolving conflicts in bulk, a new Copilot Chat experience aimed at improved agent workflows, and a Hot Exit option that preserves unsaved work across restarts.",
+    "foryou": "If you live in VS and use Copilot Chat for agentic coding workflows, the bulk-conflict tooling and the updated chat experience are worth a quick test before your next big merge.",
+    "source": "TLDR AI",
+    "date": "2026-10-29",
+    "url": "https://devblogs.microsoft.com/visualstudio/visual-studio-october-update-compare-commits-to-your-code-resolve-conflicts-in-bulk-keep-coding/"
+  }
+]
