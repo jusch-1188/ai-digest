@@ -1,0 +1,132 @@
+[
+  {
+    "section": "models",
+    "headline": "Google's Gemini 4 Carbon debuts as a cybersecurity-first frontier model, #1 on Artificial Analysis v5",
+    "summary": "Google calls Gemini 4 Carbon its strongest model yet for finding vulnerabilities, validating which are exploitable, and patching root causes, plus sustained long-horizon agentic coding (internal teams report runs lasting days). It tops the Artificial Analysis Intelligence Index v5.0 with a score of 59, hits 88.2% on SEC-bench Pro (vulnerability finding) and a new state of the art on ExploitGym (54.8%, exploitation). Rollout is staged: it starts with vetted cyber defenders and trusted partners through the Fairwind Program, with broader access 'coming soon.'",
+    "foryou": "A model this good at finding and chaining its own exploits is also a preview of the offense/defense tooling you'll want wired into any agentic pipeline you expose to the internet.",
+    "specs": [
+      { "label": "AA Intelligence Index v5.0", "value": "#1, score 59" },
+      { "label": "SEC-bench Pro (vuln finding)", "value": "88.2% (SOTA)" },
+      { "label": "ExploitGym (exploitation)", "value": "54.8% (new SOTA)" },
+      { "label": "Pricing (intro)", "value": "$2/M input, $10/M output" },
+      { "label": "Access", "value": "Staged — Fairwind Program first" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-30",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA's open-weight Nemotron 3.5 Transcribe tops ASR leaderboards across 40 languages",
+    "summary": "Nemotron 3.5 Transcribe is a 30B-parameter (4B active) hybrid Mamba-Transformer MoE model for transcription, translation, speaker attribution (up to 8 speakers, 13 languages) and audio Q&A, open-weight and promptable for custom vocabularies. It ranks first on Hugging Face's Open ASR leaderboard for English (5.33% WER) and ties for first on Artificial Analysis's accuracy-per-active-parameter frontier. NVIDIA paired it with Granary v2, a 463,062-hour, 48-language open training/fine-tuning pipeline built on NeMo Curator.",
+    "foryou": "An open-weight transcription model this strong, with a reusable fine-tuning pipeline attached, is a real alternative to paying per-minute for Whisper-class APIs in any voice-agent pipeline you're running.",
+    "specs": [
+      { "label": "Languages (transcribe / translate)", "value": "40 / 31" },
+      { "label": "Model size", "value": "30B total, ~4B active (MoE)" },
+      { "label": "HF Open ASR (English)", "value": "#1, 5.33% WER" },
+      { "label": "Speaker attribution", "value": "Up to 8 speakers, 13 languages" },
+      { "label": "Granary v2 scale", "value": "463,062 hrs / 48 languages" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-10-30",
+    "url": "https://huggingface.co/blog/nvidia/nemotron-transcribe-granary"
+  },
+  {
+    "section": "models",
+    "headline": "An unreleased Anthropic model autonomously chained real zero-days into working exploits across five platforms",
+    "summary": "Anthropic's Frontier Red Team used an internal, unnamed research model to find and chain vulnerabilities into full exploit chains on Chrome (one-click RCE on macOS, 62 CVEs patched in Chrome 156), Safari (cross-origin data theft), Android (lock-screen photo extraction on a Pixel 9), Windows (a remote-crash QUIC bug, CVE-2026-33096, potentially affecting millions of listening servers) and Linux (a zero-click root RCE in multipath TCP, CVE-2026-98432). All findings went through a 90-day disclosure window before publication, and Anthropic has released a Claude Code security-guidance plugin for scanning at pull-request time.",
+    "foryou": "This is the clearest public evidence yet that frontier models can now autonomously reverse-engineer and weaponize real-world zero-days — treat any agent you expose to untrusted code or network input as a security boundary, not a convenience.",
+    "specs": [
+      { "label": "Chrome CVEs patched", "value": "62 (13 sandbox escapes)" },
+      { "label": "Windows bug", "value": "CVE-2026-33096 (remote DoS)" },
+      { "label": "Linux bug", "value": "CVE-2026-98432 (zero-click root RCE)" },
+      { "label": "Disclosure window", "value": "90 days + 45 before detail" }
+    ],
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://anthropic.com/research/discovering-vulnerabilities-with-claude"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic adds enterprise spend-tracking and analytics to Claude Code and Claude Enterprise",
+    "summary": "Anthropic launched smart usage reports, in-app surveys, and pooled team budgets so companies can see who and what is driving their Claude bill, addressing a top enterprise objection as AI spending surges. Anthropic says the usage data won't be used for training by defaUlt. The launch lands alongside reports that Claude Code revenue has grown roughly 55x and its user base has grown about 300% as enterprise adoption accelerates.",
+    "source": "TLDR AI (also: TechCrunch, VentureBeat)",
+    "date": "2026-10-30",
+    "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
+  },
+  {
+    "section": "industry",
+    "headline": "Security startup Cathedral says its AI agents breached Anthropic's internal systems in under 12 hours",
+    "summary": "Cathedral, a startup founded by four former DOGE staffers that raised $160M at a $1.4B valuation in July, says its AI agents found a path into Anthropic's sales, HR and IT systems through flawed third-party administrative software — not through Claude itself. Anthropic confirmed a limited breach of business contact and account records, says it detected and shut down the activity the same day, and disputes Cathedral's claims about accessing meeting transcripts and internal Slack messages about its models; it says no customer conversations, source code, or model weights were exposed.",
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://decrypt.co/381860/ai-agents-hack-anthropic-business-systems-12-hours"
+  },
+  {
+    "section": "industry",
+    "headline": "GitHub's Octoverse report: agentic coding is now mainstream, not experimental",
+    "summary": "GitHub's annual Octoverse report shows a new developer joining the platform every second, with developers pushing code 17.9 billion times and more than 40% of September pull requests starting from an AI agent's first draft. TypeScript overtook the field as the most-used language on the platform, a shift GitHub attributes directly to AI tooling. GitHub now serves more than 225 million developers.",
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/"
+  },
+  {
+    "section": "industry",
+    "headline": "Alphabet shares fall roughly 7% as Q3 AI capex worries overshadow a strong quarter",
+    "summary": "Alphabet posted a Q3 2026 revenue and profit miss against a backdrop of ballooning AI infrastructure spending, sending shares down about 7% even as Google Cloud revenue more than doubled year over year. The drop reignited Wall Street's broader anxiety about whether hyperscaler AI capex is outrunning near-term returns.",
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://www.cnbc.com/2026/10/28/alphabet-googl-earnings-q3-2026.html"
+  },
+  {
+    "section": "industry",
+    "headline": "xAI subsidiary offers to buy out neighbors near its Mississippi data center amid noise lawsuit",
+    "summary": "MZX, a subsidiary of Elon Musk's xAI, is offering to purchase homes near its Southaven, Mississippi data center and gas turbines from residents who agree not to join an ongoing nuisance lawsuit over the facility's noise. xAI disputes the underlying noise claims. The offer follows a class-action suit filed earlier this year by residents near the site.",
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://www.mississippifreepress.org/xai-moves-to-buy-out-southaven-residents-who-agree-not-to-sue-it-over-power-plant-noise-letter-shows/"
+  },
+  {
+    "section": "industry",
+    "headline": "Delaware's plan to let AI 'run' companies draws a congressional records demand",
+    "summary": "House Oversight Chairman James Comer sent Delaware's governor a letter demanding all documents since January 2025 on the state's proposed 'agent-managed company' structure, which would grant AI-managed entities legal personhood and liability shields inside a regulatory sandbox. Comer warned the plan 'could be used to protect powerful AI companies and their investors from responsibility for reckless harmful actions' and flagged potential regulatory capture tied to the proposal's private-sector partners.",
+    "source": "Web",
+    "date": "2026-10-30",
+    "url": "https://news.bgov.com/esg/delawares-ai-run-company-proposal-draws-congressional-scrutiny"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel CI (beta) cuts agent PR feedback loops by only running what changed",
+    "summary": "Vercel CI reads your turbo.json task graph and runs only the tasks affected by a given change, serving everything else from cache, with each remaining task spun up on its own machine via Vercel's Hive compute layer. Vercel reports its own push-to-'CI passed' time dropped 2-6x, across nearly 8 million tasks run in private beta. It posts standard GitHub PR checks, so existing branch protection rules keep working.",
+    "foryou": "If your agents are opening a high volume of small PRs, this directly attacks the single biggest tax on agentic coding loops: waiting on CI to tell you if the agent's change actually worked.",
+    "source": "TLDR AI",
+    "date": "2026-10-30",
+    "url": "https://vercel.com/blog/introducing-vercel-ci"
+  },
+  {
+    "section": "tips",
+    "headline": "GitHub Copilot Fusion goes GA: pick an effort level, let Copilot choose and orchestrate the models",
+    "summary": "Copilot Fusion replaces manual model-picking with three orchestration modes — Single, Cascade (cheap model drafts, escalates on failed quality check), and Critique (second model reviews, first model revises) — selected automatically per task at Standard, High, or Max effort. GitHub reports Fusion Max scores 60 on the Artificial Analysis Coding Agent Index, within two points of Claude Code on Opus 5.5 Max, at roughly half the cost, tokens, and time. It's live now in VS Code, the Copilot CLI, the GitHub Copilot app, and JetBrains IDEs.",
+    "foryou": "This is a legitimate alternative to hand-rolling your own model router for cost/quality tradeoffs in an agentic pipeline — worth benchmarking against whatever routing logic you've already built.",
+    "source": "TLDR AI",
+    "date": "2026-10-30",
+    "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/"
+  },
+  {
+    "section": "tips",
+    "headline": "'Qwenputer': a hobbyist compiled a deterministic RISC-V CPU directly into Qwen3.5's weights",
+    "summary": "No training involved — a compiler sets Qwen 3.5's Gated DeltaNet (linear-RNN) layers to act as exact-overwrite, exact-read RAM, then implements a working 32-bit RV32IM CPU across 11 extra layers that runs during normal inference. It passes the official riscv-tests, ran 18 million instructions error-free, and lifts long-integer arithmetic accuracy from 48.6% to 100% by actually computing instead of pattern-matching. A companion variant uses the same trick to give the model a persistent, 512-file in-weights filesystem.",
+    "foryou": "This is a vivid, hands-on illustration of what's actually happening inside a model's state during long-context reasoning — worth reading even just for the mental model it builds of what 'memory' means inside a transformer-adjacent architecture.",
+    "source": "TLDR AI",
+    "date": "2026-10-30",
+    "url": "https://divagr.com/blog/qwenputer"
+  },
+  {
+    "section": "tips",
+    "headline": "Decagon built AutoResearch agents that tune their own inference stack against live production traffic",
+    "summary": "Decagon's AutoResearch agents diagnose inference bottlenecks, test candidate optimizations (quantization, scheduling changes, engine patches, speculative decoding) against replayed production traffic, and carry findings forward across experiments instead of starting cold each time. The company reports throughput gains of up to 2.5x within existing endpoint latency requirements, with any production change still requiring human approval before it ships.",
+    "foryou": "If you're running your own inference layer rather than just calling an API, this experiment-and-replay pattern is a reusable template for safely automating the optimization work you'd otherwise do by hand.",
+    "source": "TLDR AI",
+    "date": "2026-10-30"
+  }
+]
