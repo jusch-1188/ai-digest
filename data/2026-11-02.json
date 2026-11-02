@@ -1,0 +1,156 @@
+[
+  {
+    "section": "models",
+    "headline": "Mistral releases open weights for its 1-trillion-parameter Large 4",
+    "summary": "Mistral has released open weights for Large 4, a roughly 1-trillion-parameter MoE model (about 52B active) built for self-hosted deployment, coding agents, and cybersecurity work like vulnerability triage and patching. It ties GLM-5.3 on the Artificial Analysis Coding Agent Index while using about 47% fewer tokens, and in Surge Code's blind human-preference tests it ranked second only to Claude Opus 5.5. The weights ship under a modified MIT license (the Mistral Ecosystem Open-Weight license) that allows free self-hosting and fine-tuning, with a separate commercial license required to resell it as a hosted service.",
+    "foryou": "If you're running agentic coding workloads and want to self-host rather than pay per-token, this is now a credible, cheaper-to-run alternative to the closed frontier labs.",
+    "specs": [
+      {
+        "label": "Parameters",
+        "value": "~1T total (MoE), ~52B active"
+      },
+      {
+        "label": "Coding Agent Index (AA)",
+        "value": "48%, tied w/ GLM-5.3, -47% tokens"
+      },
+      {
+        "label": "Pricing (API)",
+        "value": "$0.70/M in - $0.07/M cached - $2.10/M out"
+      },
+      {
+        "label": "License",
+        "value": "Mistral Ecosystem Open-Weight (modified MIT)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://mistral.ai/news/mistral-large-4-oss/"
+  },
+  {
+    "section": "models",
+    "headline": "Pika's H3 Flex ships open weights for a 12-reference, synced-audio video model",
+    "summary": "Pika H3 Flex is a post-trained, distilled version of MiniMax H3 that generates video with five separate synchronized audio stems (dialogue, score, SFX, foley, ambience) from up to 12 reference images, clips, or audio files in one generation. It natively renders at 480p/768p, with Pika's hosted upsampler taking finished clips up to 4K, and a 15-second 768p clip needs as little as seven seconds of transformer compute. Open weights and code are live on Hugging Face and GitHub for the core text-to-video and reference-to-video pipeline; upscaling, stem separation, and the fast serving stack stay Pika-hosted, and it ranked #1 among open-weight models on DesignArena's text-to-video leaderboard at launch.",
+    "foryou": "Twelve-reference, multi-stem audio-video in one open-weight pass is a real building block if you're assembling agentic content pipelines rather than gluing together separate video and audio APIs.",
+    "specs": [
+      {
+        "label": "References per generation",
+        "value": "Up to 12 (image/video/audio)"
+      },
+      {
+        "label": "Audio stems",
+        "value": "5 (dialogue, score, SFX, foley, ambience)"
+      },
+      {
+        "label": "Native resolution",
+        "value": "480p/768p (hosted upscale to 4K)"
+      },
+      {
+        "label": "DesignArena rank",
+        "value": "#1 open-weight, #7 overall (launch)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://pika.art/blog/pika-h3-flex"
+  },
+  {
+    "section": "models",
+    "headline": "Figma details how it post-trained a Figma-fluent model to match frontier editing quality",
+    "summary": "Figma published how it post-trained a specialized model to handle Figma-native editing tasks, arguing a focused, narrower model can match frontier general-purpose models on the specific task it's tuned for. The approach starts from a base model and post-trains it specifically on Figma's editing operations and file format, rather than relying on prompting a general frontier model to manipulate Figma files indirectly.",
+    "foryou": "This is a clean illustration that 'post-train a mid-size model on your own narrow task' can beat 'prompt a frontier model and hope' for domain-specific agentic tooling -- worth testing against whatever general model you're currently routing that work to.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://www.figma.com/blog/training-a-figma-fluent-editing-model/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI rewrites its Model Spec around five values, drops detailed style rules",
+    "summary": "OpenAI reorganized its Model Spec, the document defining how its models should behave, around five values: faithfulness to human intent, harm minimization, honesty and transparency, human agency, and care. The update retires most of the old detailed style guidance in favor of following user tone preferences, adds new guidance on reading context and supporting human agency, and refers to the model as \"GPT\" rather than \"the assistant.\" OpenAI dedicated the spec to the public domain under CC0 and says its current models don't yet fully match it.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://openai.com/index/sharing-the-latest-model-spec/"
+  },
+  {
+    "section": "industry",
+    "headline": "Research shows GLM-5.3 can turn published security patches into exploits before updates ship",
+    "summary": "Epoch AI research cited by TLDR shows GLM-5.3 can identify and weaponize vulnerabilities in recent Firefox versions using security fixes that have already been published but not yet rolled out to users, compressing the window between a patch landing and a working exploit existing. The researchers warn that widely available open-weight models can now do most or all of this work autonomously, and that open-source projects are especially exposed because their code and patch history are public. The threat is expected to worsen as open-weight cyber capability keeps improving.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
+  },
+  {
+    "section": "industry",
+    "headline": "NYT report ties Nvidia's Jensen Huang to a suspected Chinese intelligence operation",
+    "summary": "The New York Times reported that Nvidia CEO Jensen Huang had a close relationship with an executive at Singaporean chip reseller Megaspeed, which the report says was funneling AI chips to China in violation of export controls and passing intelligence to Beijing; Nvidia calls the allegations already \"thoroughly investigated and debunked.\" The story lands as the fight over US chip export controls to China remains unresolved, and Semafor notes next week's midterms could reshape how aggressively Nvidia and other Trump-aligned tech giants get scrutinized afterward.",
+    "source": "Semafor (also: Fox Business)",
+    "date": "2026-11-02",
+    "url": "https://www.foxbusiness.com/business-leaders/suspected-chinese-intelligence-asset-gained-access-nvidia-ceo-jensen-huang-report"
+  },
+  {
+    "section": "industry",
+    "headline": "Hyperscalers are hiring six-figure 'community liaisons' to defend data centers in person",
+    "summary": "A Semafor analysis of job postings finds Microsoft, Google, Anthropic, and other major AI players advertising six-figure roles built to woo local communities opposing data-center projects. Microsoft wants \"proactive storytelling\" skills, Google's negotiators must \"deploy on short notice\" to contested town halls, and Anthropic is offering a $265,000 salary floor for staff willing to spend half their time on the road. Postings for these roles have risen as companies try to regain control of the narrative around data-center pushback.",
+    "source": "Semafor",
+    "date": "2026-11-02",
+    "url": "https://semafor.com/s/f5mpstmgzj"
+  },
+  {
+    "section": "industry",
+    "headline": "Google's 1 billion Gemini users are the quiet counterweight to its AI-capex jitters",
+    "summary": "Lost in the market's reaction to Google's recent share drop was Gemini crossing 1 billion users; CEO Sundar Pichai called it the fastest-growing product in the company's history, about a month after ChatGPT hit the same mark. Investors remain uneasy that revenue hasn't kept pace with Google's AI infrastructure spend, including a second straight quarter of negative free cash flow, but Google Cloud CEO Thomas Kurian said on this week's earnings call that Gemini is starting to generate revenue directly and is also driving growth across Google's other products.",
+    "source": "Semafor",
+    "date": "2026-11-02"
+  },
+  {
+    "section": "industry",
+    "headline": "AI-driven supply shortages are turning personal computers into a luxury good",
+    "summary": "PC sales are falling as prices climb on AI-driven supply-chain bottlenecks, with Apple's newest laptops running as high as $15,000 and Intel shares plunging 30% on Thursday after it warned of memory shortages and supply snags tied to the AI boom; Intel expects a 10% drop in next year's PC sales after a 12% drop this year. The squeeze pushes more computing onto the cloud, which benefits hyperscalers, but it also cuts off the home-tinkerer pipeline that has historically seeded new companies -- today's version being hobbyist \"vibe coders\" experimenting with AI tools on their own machines.",
+    "source": "Semafor",
+    "date": "2026-11-02",
+    "url": "https://semafor.com/s/v1nqbx441a"
+  },
+  {
+    "section": "industry",
+    "headline": "Sam Altman says he'd rather have a trillion modestly superhuman AIs than one superintelligence",
+    "summary": "In a wide-ranging interview, OpenAI's Sam Altman argued he'd prefer a trillion AIs of slightly superhuman intelligence spread through society over a single AI with vastly greater intelligence, comparing agent swarms to a resilient society that keeps itself in check through internal competition. He argues AI research shouldn't converge on a centralized push toward one dominant system, because agents working against each other create a more stable equilibrium than a single actor would.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://cheekypint.substack.com/p/why-sam-altman-is-against-a-single"
+  },
+  {
+    "section": "tips",
+    "headline": "Study: an agent's 'leadership' in a swarm depends more on model choice and prompt order than skill",
+    "summary": "Researchers ran eight agents across four different models together to resolve simulated outages with no designated leader, to see how leadership emerges in agent swarms. They found two factors drove which agent took charge: which underlying model it was running, and simply the order its name appeared in the prompt, not demonstrated competence. The finding suggests that small, seemingly arbitrary configuration choices can meaningfully skew how a multi-agent system coordinates itself.",
+    "foryou": "If you're running multi-agent setups, this is a concrete reason to audit whether your 'best' agent is actually leading for a good reason, or just because of model choice or list order -- a bias worth testing for directly.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://www.raindrop.ai/blog/agent-swarm-leadership/"
+  },
+  {
+    "section": "tips",
+    "headline": "Factory argues cross-model agent harnesses generalize better than ones tuned to one LLM",
+    "summary": "Factory's writeup on Droid 1.0, its agent harness, makes the case that building a harness optimized to run well across many different models, rather than one tuned tightly to a single frontier model, produces improvements that actually hold up beyond whichever model inspired them. Droid lets agents run hundreds of tool calls within a single model request, and Factory frames single-model tuning as a trap: it's hard to tell real harness progress from quirk-chasing when you only test against one model's behavior.",
+    "foryou": "If you're building or maintaining your own agent harness, this is a direct argument for testing it against multiple models early, rather than optimizing it around whichever model you happen to be using today.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://factory.com/news/frontier-harness"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta details how it scaled LLM-generated tests into production bug-catching infrastructure",
+    "summary": "Meta published how its Just-in-Time Testing system, which uses LLMs to generate tests that catch bugs before code ships, grew from a research prototype into production infrastructure running at scale. The writeup covers how AI-generated tests catch regressions before changes land, how the system holds up operationally, and what Meta learned about cutting false positives and testing overhead as adoption scaled.",
+    "foryou": "The false-positive and overhead lessons here are directly transferable if you're building any AI-generated-test or AI-code-review gate into your own CI pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel's fx adapter now runs agent harnesses on the host, separating it from the sandbox",
+    "summary": "Vercel's fx adapter now runs the agent harness itself on the host machine rather than inside the sandbox, using libfx to cleanly separate host and sandbox operations. The change is aimed at agentic workloads that need to run many tool calls through a harness without that harness logic competing for resources inside the isolated execution environment it's supervising.",
+    "foryou": "If you're running agent harnesses inside sandboxed execution yourself, this host/sandbox split is worth copying even if you're not on Vercel's infrastructure -- it's a clean pattern for keeping the harness and the agent's actual work from contending for the same resources.",
+    "source": "TLDR AI",
+    "date": "2026-11-02",
+    "url": "https://vercel.com/changelog/fx-harness-adapter-now-separates-host-and-sandbox"
+  }
+]
