@@ -1,0 +1,150 @@
+[
+  {
+    "section": "models",
+    "headline": "Siri AI Opens to All Developers in iOS 27.3 Beta",
+    "summary": "Apple's iOS 27.3 beta lets any developer integrate Siri AI's natural language processing and personal context understanding into their apps, marking the broadest opening yet of Apple's assistant stack. The feature is unavailable in the EU and for users under 13, and supports multiple languages with more on the way.",
+    "foryou": "If you're building consumer-facing agents on iOS, this is the first real chance to tap Siri's personal-context layer directly instead of reverse-engineering it.",
+    "specs": [
+      {"label": "Platform", "value": "iOS 27.3 beta"},
+      {"label": "Availability", "value": "Unavailable in EU and for under-13 users"},
+      {"label": "Languages", "value": "Multiple, more planned"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://developer.apple.com/news/?id=gdk2umrf"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI Turns GPT-6 Astra Loose on Mechanical Engineering",
+    "summary": "OpenAI is pushing GPT-6 Astra into physical-world engineering tasks: device design, CAD model generation, and performance simulation, working with partners like Mazda on vehicle aerodynamics. The push aims to compress design-to-production cycles across mechanical and electrical engineering workflows.",
+    "foryou": "Worth watching if you touch any CAD or simulation pipeline: Astra-generated parts are already drawing warnings from engineers that 'vibecoded' designs aren't vetted for safety, so treat outputs as drafts, not specs.",
+    "specs": [
+      {"label": "Model", "value": "GPT-6 Astra"},
+      {"label": "Domains", "value": "CAD generation, device design, performance simulation"},
+      {"label": "Partner", "value": "Mazda (vehicle aerodynamics)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://openai.com/blog/gpt-6-astra"
+  },
+  {
+    "section": "models",
+    "headline": "DeepSeek to Pretrain V5 on Huawei Ascend Chips",
+    "summary": "DeepSeek plans to train its next-generation model, V5, on Huawei's Ascend AI accelerators rather than Nvidia hardware, a first real test of whether Chinese silicon can carry a full frontier pretraining run rather than just inference. A successful run would be a major proof point for China's push toward Nvidia independence.",
+    "foryou": "If this works, expect price and availability shifts across the open-weight ecosystem you draw on; a credible non-Nvidia training stack changes the competitive math for every inference provider you use.",
+    "specs": [
+      {"label": "Model", "value": "DeepSeek V5"},
+      {"label": "Hardware", "value": "Huawei Ascend AI chips (training, not just inference)"}
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-11-05",
+    "url": "https://www.geopolitechs.org/p/deepseek-plans-to-train-its-next"
+  },
+  {
+    "section": "models",
+    "headline": "Two-Person Lab Trains a Text-to-Image Model for $21K",
+    "summary": "Research lab Linum built Pyramid-JiT (P-JiT), a pixel-space architecture that achieves aggressive token reduction via a custom noise schedule, and used it to train a generative image model from scratch for about $21,000. The team frames it as a step toward democratizing access to video and animation model training, typically the domain of labs with far larger budgets.",
+    "foryou": "A concrete data point for your own build-vs-buy math on training small specialized models: if a two-person team can get a working model for $21K, the barrier to a custom model for a narrow task is lower than you think.",
+    "specs": [
+      {"label": "Training cost", "value": "~$21,000"},
+      {"label": "Architecture", "value": "Pyramid-JiT (P-JiT), pixel-space"},
+      {"label": "Team size", "value": "2 people"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://www.linum.ai/field-notes/pjit-21k"
+  },
+  {
+    "section": "industry",
+    "headline": "AI Becomes a Defining Issue in the 2026 Midterms",
+    "summary": "AI was both subject and driver of the 2026 US midterms, funding hundreds of millions in campaign ads, reshaping how voters researched candidates, and fueling super PAC spending. It fed into broader voter anger over corruption, jobs, and the sense that Washington caters to billionaires, setting up a newly Democratic Congress to push AI-CEO testimony and safety bills against resistance from Trump and Republicans.",
+    "source": "Semafor",
+    "date": "2026-11-05",
+    "url": "https://semafor.com/s/8ca4zvc8zq"
+  },
+  {
+    "section": "industry",
+    "headline": "Voters Reject Data Centers Almost Everywhere They Were on the Ballot",
+    "summary": "More than 30 localities across nine states voted for moratoriums, bans, or other restrictions on data centers this week, with only one of the tracked races turning out pro-data-center. Banks and asset managers financing the AI buildout are now treating local opposition as a credit risk, while hyperscalers rush to hire community liaisons and rebrand facilities as \"compute campuses.\"",
+    "source": "Semafor",
+    "date": "2026-11-05",
+    "url": "https://semafor.com/s/jv9n45xf89"
+  },
+  {
+    "section": "industry",
+    "headline": "Marissa Mayer Bets Consumer AI Will Dwarf Enterprise by 2030",
+    "summary": "Former Yahoo CEO Marissa Mayer, now running AI assistant startup Dazzle, predicts consumer AI will be roughly twice the size of enterprise AI by 2030, a reversal of where investment has flowed during this boom. Dazzle differentiates itself by building its understanding of the user almost entirely from their photo library rather than email or calendar access.",
+    "source": "Semafor",
+    "date": "2026-11-05",
+    "url": "https://semafor.com/s/w3ncjotse3"
+  },
+  {
+    "section": "industry",
+    "headline": "'ByteDance Time' Claim Draws Regulatory Scrutiny in China",
+    "summary": "A viral claim that ByteDance apps, including Douyin and Hongguo, ate up 41% of time spent on China's top apps in July has become a liability rather than a brag, after Beijing signaled it wants digital platforms boosting industry and science rather than \"perfecting the monetization of leisure.\" It follows a related claim that 55% of China's AI compute is going toward AI-generated video and shorts rather than productivity uses.",
+    "source": "Semafor",
+    "date": "2026-11-05",
+    "url": "https://semafor.com/s/g9mlmxmq4l"
+  },
+  {
+    "section": "industry",
+    "headline": "ChatGPT Search Hits 20% of Google's Volume as Chat and Work Merge",
+    "summary": "ChatGPT's search volume has reached about 20% of Google's, with OpenAI now counting 1.2 billion weekly active users and 250 million weekly voice-mode users. OpenAI is moving to merge its Chat and Work modes into a single interface, part of a broader push to make conversational AI the default way people interact with their tools.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-11-05",
+    "url": "https://www.bigtechnology.com/p/openai-chatgpt-search-is-about-20"
+  },
+  {
+    "section": "industry",
+    "headline": "NAPA Deploys AI and VR to Retrain a Shrinking Mechanic Workforce",
+    "summary": "Facing a shortage driven by veteran mechanics retiring and a two-year training pipeline for new ones, NAPA Auto Parts built an AI- and XR-powered platform called XcceleratoR that accelerates technician training, with smart glasses offering voice-activated, hands-free guidance during repairs.",
+    "source": "Semafor",
+    "date": "2026-11-05",
+    "url": "https://semafor.com/s/h5ce66akjg"
+  },
+  {
+    "section": "tips",
+    "headline": "Baseten Ships Grid, Sandboxes, and Serverless Fine-Tuning Loops",
+    "summary": "Baseten announced Grid for model routing and governance, resumable VM-isolated Sandboxes for agent execution, and general availability of Loops for serverless supervised fine-tuning and RL, connecting training, inference, and execution in one stack while customers keep ownership of trained weights.",
+    "foryou": "Sandboxes plus Loops is worth a look if you're running agentic pipelines that need resumable, isolated execution without standing up your own infra, especially since you keep the weights.",
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://www.baseten.co/blog/the-building-blocks-of-the-open-frontier"
+  },
+  {
+    "section": "tips",
+    "headline": "Fireworks Rolls Out 1,500 Tokens/Sec Inference and a Multi-Model Router",
+    "summary": "Fireworks AI unveiled new infrastructure at its Forge event, including ultra-fast inference up to 1,500 tokens per second, cheaper background processing, and Nexus, a router for accessing multiple models across the tools you already use (Claude Code, Codex, Cursor). Nexus Auto also tops the independent Vals AI Router Index, beating Claude Opus 5.5 on their benchmark at 17% lower cost.",
+    "foryou": "If routing cost and speed across model providers is a pain point in your pipeline, Nexus is now the top-ranked router on an independent benchmark, worth a bake-off against whatever you're routing with today.",
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://fireworks.ai/blog/fireworks-unveils-new-products-at-forge-to-help-companies-build-specialized-intelligence"
+  },
+  {
+    "section": "tips",
+    "headline": "Google Opens a REST API for Gemini Notebook",
+    "summary": "The new Gemini Notebook API lets developers programmatically create and manage notebooks and sources, turning web pages, YouTube videos, plain text, and Markdown into persistent, queryable notebooks. It's in early-access Public Preview and currently supports only personal Google accounts, not Workspace.",
+    "foryou": "A cheap way to bolt structured, source-grounded research retrieval onto an agent without building your own RAG-over-documents layer; worth prototyping now while it's free in preview.",
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://developers.google.com/notebook/docs"
+  },
+  {
+    "section": "tips",
+    "headline": "What Prime Intellect Learned Auditing Public LLM Benchmarks",
+    "summary": "Prime Intellect details flaws it found while auditing public evaluations like AutomationBench and OfficeQA Pro V2, replacing ambiguous prose task descriptions with JSON schemas and introducing new grading systems to cut down on gameable, imprecise scoring. They recommend multi-layered monitoring to catch manipulation and keep capability measurements honest.",
+    "foryou": "If you lean on public leaderboards to pick models for your pipeline, this is a good reminder to treat those numbers skeptically and build your own narrow eval harness for the tasks you actually care about.",
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://www.primeintellect.ai/blog/auditing-public-evaluations"
+  },
+  {
+    "section": "tips",
+    "headline": "Lower Reasoning Effort Cuts Cost Far More Than It Cuts Quality",
+    "summary": "Vals AI's testing shows that dropping a model's reasoning-effort setting reduces cost much more steeply than it reduces output quality, and low-effort runs can match high-effort results on many tasks. The size of the effect is task-dependent, so it's worth testing per use case rather than assuming high effort is always worth the spend.",
+    "foryou": "Audit your own pipeline's reasoning-effort settings this week; you may be paying a high-effort premium on tasks where a low-effort pass gets you the same answer.",
+    "source": "TLDR AI",
+    "date": "2026-11-05",
+    "url": "https://www.vals.ai/blogs/reasoning-effort"
+  }
+]
