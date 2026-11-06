@@ -1,0 +1,159 @@
+[
+  {
+    "section": "models",
+    "headline": "Ripple-65B Preview Hits Open-Weight SOTA on Agentic Coding for $32M",
+    "summary": "Ricursive Intelligence's Ripple-65B Preview, a 65B-parameter dense Transformer, tops TerminalBench 2.1 at 80.52, beating open-weight models 8-15x its size including Reflection Beam (501B, 80.1) and Meta's Muse Spark Open (816B, 76.4). It trained on 12T tokens with a 1M-token context window and needed only 1.4M RL rollouts -- about 70x fewer than Reflection Beam -- for roughly $32M in total R&D, about a tenth of the prior SOTA's cost. It's live on Hugging Face, Together AI, GMI Cloud, OpenRouter, and Fireworks, and runs locally on hardware like NVIDIA DGX Spark.",
+    "foryou": "If the TerminalBench numbers hold up under independent testing, you can likely get frontier agentic-coding performance into your own pipelines without paying for (or hosting) a 500B+ parameter model.",
+    "specs": [
+      { "label": "TerminalBench 2.1", "value": "80.52" },
+      { "label": "Training cost", "value": "~$32M (~1/10 of prior open-weight SOTA)" },
+      { "label": "Context window", "value": "1M tokens" },
+      { "label": "Pretraining", "value": "12T tokens" },
+      { "label": "Availability", "value": "Hugging Face, Together AI, GMI Cloud, OpenRouter, Fireworks" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-06",
+    "url": "https://www.ricursive.com/ripple"
+  },
+  {
+    "section": "models",
+    "headline": "Moonshot's Kimi K3.1 Pro Ships a 2.8T-Parameter MoE With 1M Context",
+    "summary": "Moonshot AI's Kimi K3.1 Pro is a 2.8T-parameter mixture-of-experts model (104B active per token, 896 experts) with a 1,048,576-token context window and a 401M-parameter vision encoder for image input. Moonshot reports gains in coding (Terminal-Bench 4.0: 65.7, DeepSWE v1.1: 75.5), CAD-style 3D tasks (BenchCAD w/ tools: 92.7), and factual accuracy versus prior Kimi models. It's released under a custom open-weight license and served via platform.kimi.ai.",
+    "foryou": "The 1M-token context plus strong CAD/coding scores make this worth benchmarking against your current agentic stack if you do long-document or design-heavy work -- just note the benchmarks are all self-reported by Moonshot.",
+    "specs": [
+      { "label": "Parameters", "value": "2.8T total / 104B active (MoE)" },
+      { "label": "Context window", "value": "1,048,576 tokens" },
+      { "label": "Terminal-Bench 4.0", "value": "65.7" },
+      { "label": "License", "value": "Custom open-weight (Kimi K3.1 Pro License)" }
+    ],
+    "source": "TLDR AI (also: Hugging Face)",
+    "date": "2026-11-06",
+    "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+  },
+  {
+    "section": "models",
+    "headline": "Tencent's Hy4 Adds Visual Understanding and Computer Use to Its Open Model Line",
+    "summary": "Tencent's Hy4 brings visual understanding (image processing, chart analysis, visual math) and computer use -- operating both command-line and GUI interfaces -- to its open-source Hunyuan line for the first time, alongside specialized Blender/CAD training. Tencent says hallucination rate fell from 12.95% to 7.2% versus the Hy4 Preview, and the model topped a financial blind evaluation against DeepSeek-V4.1-Flash and Kimi K3.1 Pro. Weights and system cards are due in the coming days; API pricing is about $0.90 per million input tokens and $2.70 per million output tokens.",
+    "foryou": "The computer-use and CAD/Blender training make this one to watch if you're building agents that need to drive desktop GUIs or do design work, not just chat or code -- but weights aren't out yet, so you can't self-host it today.",
+    "specs": [
+      { "label": "Hallucination rate", "value": "7.2% (down from 12.95% in Hy4 Preview)" },
+      { "label": "Pricing", "value": "$0.90/1M input, $2.70/1M output tokens" },
+      { "label": "New capabilities", "value": "Visual understanding, computer use, CAD/Blender training" },
+      { "label": "Weights", "value": "Due 'in coming days' (not yet released)" }
+    ],
+    "source": "TLDR AI (also: Tencent)",
+    "date": "2026-11-06",
+    "url": "https://www.tencent.com/tencent-launches-hy4-joining-the-ranks-of-the-worlds-leading-open-source-ai-models/"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI's Images 2.6 Adds GIF Creation and 50% Faster Generation",
+    "summary": "OpenAI is rolling out Images 2.6 (GPT-Image-2.6) globally in ChatGPT and Codex, generating images 50% faster than before and adding GIF creation -- turning characters, products, or sketches into short animated loops with per-frame editing. Two new API models ship alongside it: Flare, tuned for speed (as fast as 6 seconds at low quality), and Sunburst, tuned for detail and consistent edits. The update also adds reusable reference images, SVG export, and an image-markup complexity parameter.",
+    "foryou": "The reference-image persistence and SVG export are the practical wins here -- if you're building apps that need consistent characters or assets across repeated generations, that's less prompt-engineering glue code for you to write.",
+    "specs": [
+      { "label": "Speed", "value": "50% faster than prior version; Flare as fast as 6s" },
+      { "label": "New API models", "value": "Flare (speed), Sunburst (detail)" },
+      { "label": "New feature", "value": "GIF creation with per-frame editing" },
+      { "label": "Availability", "value": "ChatGPT, Codex, and API, all tiers" }
+    ],
+    "source": "TLDR AI (also: TestingCatalog)",
+    "date": "2026-11-06",
+    "url": "https://www.testingcatalog.com/openai-launches-images-2-6-with-gifs-and-image-reference/"
+  },
+  {
+    "section": "models",
+    "headline": "Cognition's SWE-2 Flash Cuts Coding-Model Price 5x, Speed Gains 3x",
+    "summary": "Cognition's SWE-2 Flash is built on Thinking Machines' Inkling-Small (276B total / 12B active parameters) with a new mid-training stage added before reinforcement learning. It runs about 3x faster than its larger sibling SWE-2 (roughly 200 tokens/s vs. 60) at one-fifth the price, while trading some accuracy -- Terminal-Bench 2.1 dropped from 92.8 to 89.2, DeepSWE 1.1 from 73.0 to 60.1. Cognition says it beats comparably-sized American open-weight models on leading coding evals; it's free through November 30 via Devin Desktop and Devin CLI, though weights aren't public due to misuse concerns.",
+    "foryou": "If your agentic coding costs are adding up, this is a concrete lower-cost tier to A/B against SWE-2 on your actual tasks before you commit -- just budget for the accuracy trade-off on harder benchmarks like DeepSWE.",
+    "specs": [
+      { "label": "Base model", "value": "Inkling-Small (276B total / 12B active)" },
+      { "label": "Price", "value": "1/5th of SWE-2" },
+      { "label": "Speed", "value": "~3x SWE-2 (~200 tok/s vs ~60 tok/s)" },
+      { "label": "Terminal-Bench 2.1", "value": "89.2 (vs. 92.8 for SWE-2)" }
+    ],
+    "source": "TLDR AI (also: Cognition)",
+    "date": "2026-11-06",
+    "url": "https://cognition.com/blog/swe-2-flash"
+  },
+  {
+    "section": "models",
+    "headline": "Cartesia's H-Nets Learn Straight From Raw Bytes, Cutting Training Tokens ~10x",
+    "summary": "Cartesia's byte-level H-Net architecture skips tokenization entirely, learning directly from raw bytes via dynamic chunking, and reportedly matches SmolLM3's six-task average using roughly one-tenth the training tokens. The approach builds on H-Net dynamic-chunking research for hierarchical sequence modeling, aiming to cut the compute and data overhead that standard tokenizer-based training requires.",
+    "foryou": "Tokenizer-free training is still early, but if it keeps scaling, it could eventually sidestep tokenizer-related bugs (multilingual splitting, code whitespace, etc.) that quietly degrade your fine-tunes today.",
+    "specs": [
+      { "label": "Training efficiency", "value": "~10x fewer tokens vs. SmolLM3 for comparable score" },
+      { "label": "Architecture", "value": "Byte-level, dynamic chunking (no tokenizer)" },
+      { "label": "Research basis", "value": "H-Net dynamic chunking (hierarchical sequence modeling)" }
+    ],
+    "source": "TLDR AI (also: arXiv)",
+    "date": "2026-11-06",
+    "url": "https://arxiv.org/html/2507.07955v2"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta Acquires AI Coding Startup Conductor, Will Sunset Its Cloud Product",
+    "summary": "Meta has acquired Conductor, a Mac app for running multiple AI coding agents (including Claude and Codex models) in parallel local and cloud workspaces. Conductor Cloud goes read-only on November 13 and shuts down November 20, 2026, while the local app keeps getting new models and critical bug fixes into early 2027. Users can transfer cloud workspaces to local storage or export their data before the shutdown.",
+    "source": "TLDR AI (also: Conductor)",
+    "date": "2026-11-06",
+    "url": "https://www.conductor.build/changelog/0.93.0-conductor-is-joining-meta"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI to Acquire Pierre Computer Company to Strengthen Codex Tooling",
+    "summary": "OpenAI is acquiring Pierre Computer Company, Inc. to enhance developer tooling around Codex, including its Code Storage system and other open-source projects. The deal follows a string of recent OpenAI acquisitions aimed at building out Codex's surrounding developer infrastructure rather than the core model itself.",
+    "source": "TLDR AI",
+    "date": "2026-11-06"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's Autonomous Pipeline Patches 948 Linux Vulnerabilities in One Run",
+    "summary": "OpenAI built an autonomous pipeline that discovers, exploits, and patches security vulnerabilities, and in a single run its cybersecurity model validated and generated patches for 948 Linux local-privilege-escalation bugs. The result is part of OpenAI's broader push to automate vulnerability patching at a scale human security teams can't match alone.",
+    "source": "TLDR AI",
+    "date": "2026-11-06"
+  },
+  {
+    "section": "tips",
+    "headline": "Together Compiler Keeps Re-Optimizing Your Inference Stack as Traffic Shifts",
+    "summary": "Together AI's Together Compiler runs agents that continually propose and test inference-engine optimizations against your actual traffic shape, model, and hardware, hot-reloading changes into a persistent engine instead of restarting it (startup drops from roughly 467s to 9.0s). It reports up to 2.6x higher throughput across models like Kimi K3, GLM 5.3, and DeepSeek v4.1-Flash within 24 hours, and 252x higher experiment throughput than baseline agentic optimization systems.",
+    "foryou": "If you're running your own inference infrastructure rather than just calling hosted APIs, this is the kind of 'set it and let agents keep tuning it' tool that could meaningfully cut your serving costs without a dedicated perf-engineering team.",
+    "source": "TLDR AI (also: Together AI)",
+    "date": "2026-11-06",
+    "url": "https://www.together.ai/blog/together-compiler-continual-compilation-for-ai-inference"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity's Decisions API Can Now Search the Web Before It Answers",
+    "summary": "Adding a web-grounding mode to a Decisions API request runs a parallel Perplexity Fast Search per question and appends the results as evidence before the model answers, instead of relying only on the state you send plus training data. On Perplexity's internal 328-claim test, accuracy rose from 56.4% to 97.3% while median latency only increased from 139ms to 366ms; each search costs $0.001 plus input tokens.",
+    "foryou": "This is a cheap drop-in fix for the classic 'agent confidently states stale facts' problem -- worth adding anywhere your agent is deciding something time-sensitive, like checking if a dependency has a new release or an event is still scheduled.",
+    "source": "TLDR AI (also: Perplexity)",
+    "date": "2026-11-06",
+    "url": "https://www.perplexity.ai/hub/blog/web-grounding-for-the-decisions-api"
+  },
+  {
+    "section": "tips",
+    "headline": "New Research Argues Frequent Context Compaction Beats Long Context Windows",
+    "summary": "A new paper argues frontier models lose little or no accuracy on long-horizon tasks when given short contexts via frequent compaction, even when limited to one action per context -- which matters because later tokens can cost up to 7x more to generate than earlier ones on frontier open-weight models. The authors propose semantic state space models (SSSMs) as an alternative and question whether long-context language models are necessary at all.",
+    "foryou": "If you're paying for huge context windows by default, this is a prompt to test whether aggressive compaction in your agent loop gets you the same task accuracy for a fraction of the token cost.",
+    "source": "TLDR AI (also: arXiv)",
+    "date": "2026-11-06",
+    "url": "https://arxiv.org/abs/2611.05306"
+  },
+  {
+    "section": "tips",
+    "headline": "Google DeepMind Open-Sources a Minimal AlphaEvolve Implementation",
+    "summary": "DeepMind has released a GitHub repo with a minimal implementation of AlphaEvolve, its Gemini-powered coding agent that pairs creative algorithm design with automated evaluators that verify solutions. The repo includes code and data behind AlphaEvolve's real-world contributions, including efficiency gains in Google's data centers, chip design, and AI training processes.",
+    "foryou": "This is a legitimate reference implementation for the evolve-and-verify pattern -- worth a read if you want to build your own agent loop that proposes code changes and automatically checks them against a fitness function, rather than just accepting single-shot LLM output.",
+    "source": "TLDR AI (also: GitHub)",
+    "date": "2026-11-06",
+    "url": "https://github.com/google-deepmind/alphaevolve"
+  },
+  {
+    "section": "tips",
+    "headline": "Pangram Image 1.0 Localizes Exactly Which Pixels Are AI-Generated",
+    "summary": "Pangram's new image detection model doesn't just flag an image as AI-generated -- it outputs a heatmap showing which regions were AI-generated, and claims 99.96% accuracy on a 1,200-image internal test spanning 12 generators. A companion video model, Pangram Image Flash 1.0, scored 98.7% on the DF26 deepfake benchmark, about 29 points ahead of the next-best detector. Both are available via a Chrome/Firefox extension and an API.",
+    "foryou": "Worth wiring into any pipeline where you're ingesting user-submitted images or video at scale -- the heatmap localization is a meaningfully better signal than a single AI/not-AI verdict when you need to decide what to do with borderline content.",
+    "source": "TLDR AI (also: Pangram)",
+    "date": "2026-11-06",
+    "url": "https://www.pangram.com/blog/introducing-pangram-image-1-0"
+  }
+]
