@@ -1,0 +1,140 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI launches GPT-6 Cyber, a cybersecurity-specialist model",
+    "summary": "OpenAI released GPT-6 Cyber, a model trained specifically to find and help fix software vulnerabilities while staying within defined research boundaries. In real-world testing, researchers used it to find 81 previously unknown vulnerabilities in Firefox (several already patched by Mozilla) and developed 948 exploits for Linux kernel bugs, more than 5x what prior models produced. OpenAI rates it \"critical\" risk under its own framework and is gating access to approved partners like Cisco and CodeRabbit while building misuse guardrails for sensitive infrastructure.",
+    "foryou": "If you run any agentic pipeline that touches your own code or infra, GPT-6 Cyber-class models mean automated vuln-hunting agents are about to become a standard (and adversarial) part of your threat model — both as a defense tool and as something attackers will eventually get access to.",
+    "specs": [
+      { "label": "ExploitGym score", "value": "48.5% (up from 32.1% in GPT-5.6 Cyber)" },
+      { "label": "Web pentest recall", "value": "40.3% vs 32.0% for GPT-6 Astra" },
+      { "label": "Real-world finds", "value": "81 new Firefox vulns, 948 Linux kernel exploits" },
+      { "label": "Risk rating", "value": "Critical (OpenAI's own framework)" },
+      { "label": "Access", "value": "API, approved partners only (Cisco, CodeRabbit)" }
+    ],
+    "source": "TLDR AI (also: ITDaily)",
+    "date": "2026-11-09",
+    "url": "https://itdaily.com/news/security/openai-gpt-6-cyber/"
+  },
+  {
+    "section": "models",
+    "headline": "Thinking Machines ships Inkling 2 Small, a 594B-parameter vision MoE",
+    "summary": "Thinking Machines Lab released Inkling 2 Small, a Mixture-of-Experts model with 594B total / 17B active parameters that takes image inputs and can iteratively refine websites, games, and 3D designs using visual feedback. It's live now on Tinker with closed weights; full weights land next week under an Apache 2.0 license once external safety red-teaming wraps.",
+    "foryou": "An Apache-2.0, vision-capable MoE at 17B active params is squarely in self-hostable-agent territory — worth testing against your current agent stack once the open weights land next week, especially for anything involving visual design-and-critique loops.",
+    "specs": [
+      { "label": "Parameters", "value": "594B total / 17B active (MoE)" },
+      { "label": "SWEBench Pro v2 (Hard)", "value": "86.3%" },
+      { "label": "MMMU Pro (Standard-10)", "value": "81.6%" },
+      { "label": "License / availability", "value": "Tinker now (closed weights); Apache 2.0 full weights next week" },
+      { "label": "Training", "value": "8.4T tokens pretrain, native NVFP4" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-09",
+    "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+  },
+  {
+    "section": "models",
+    "headline": "Google cuts Gemini Omni 1.2 Flash video pricing 30%, extends clips to 15 seconds",
+    "summary": "Google's video-generation model Gemini Omni 1.2 Flash now generates and edits clips up to 15 seconds (up from 10), supports draft-then-upscale workflows from 360p/720p to 1080p/4K, and costs 30% less than its predecessor at $0.07 per second for 720p video. It's generally available via the Gemini API, Google Cloud, Vids, Flow, and Ads, and is rolling out to Gemini app Ultra subscribers.",
+    "foryou": "The draft-at-low-res-then-upscale pattern plus a 30% price cut makes short-form video generation cheap enough to bolt onto an agentic content pipeline for iteration-heavy use cases — think automated creative A/B testing rather than one-shot final renders.",
+    "specs": [
+      { "label": "Pricing", "value": "$0.07/sec for 720p (30% cheaper than Omni 1.1)" },
+      { "label": "Max clip length", "value": "15 seconds (up from 10s)" },
+      { "label": "Resolution path", "value": "Draft at 360p/720p, upscale to 1080p/4K" },
+      { "label": "Availability", "value": "Gemini API, Google Cloud, Vids, Flow, Ads; Ultra subs in-app" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-09",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI-stock correction wipes $2.5T off the Nasdaq 100 as buildout durability is questioned",
+    "summary": "US tech stocks saw steep losses Thursday (Nasdaq 100 down $2.5 trillion, entering correction territory) before a narrow Friday recovery, as investors fretted over the durability of the AI infrastructure buildout following Democratic midterm gains. JPMorgan analysts say the broader AI boom stays on track but will get \"costlier, slower and more consolidated,\" while OpenAI called for rules requiring developers to cover the grid costs they create.",
+    "source": "Semafor",
+    "date": "2026-11-09",
+    "url": "https://semafor.com/s/5ixoqgjox2"
+  },
+  {
+    "section": "industry",
+    "headline": "METR: Anthropic's AI R&D is accelerating about 2x, largely because of AI itself",
+    "summary": "An independent assessment by METR, running Aug 12 to Oct 29 with high access inside Anthropic, estimates the company's internal benchmark-measured research capability has accelerated roughly 1.9x (range 1.1x-2.9x depending on methodology) since October 2025 -- about two years of normal progress compressed into one. METR attributes roughly 80% of the current acceleration to AI itself rather than compute growth, based on internal self-reported uplift surveys reaching as high as 12x for Anthropic's most capable internal model, though it calls that self-reported evidence \"very loose.\"",
+    "source": "TLDR AI (also: METR)",
+    "date": "2026-11-09",
+    "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+  },
+  {
+    "section": "industry",
+    "headline": "Agility Robotics goes public via SPAC, valued at $2.5B in bet on humanoid factory robots",
+    "summary": "Agility became the first pure-play US humanoid robotics company to go public, merging via SPAC in a deal valuing it at about $2.5 billion with $300 million in orders for its newest robot, Digit 5, from a single undisclosed customer. The company is racing China's Unitree (whose share price has fallen since its August Shanghai listing) while working toward third-party safety certification that would let Digit 5 operate near humans without physical barriers.",
+    "source": "Semafor",
+    "date": "2026-11-09",
+    "url": "https://semafor.com/s/7j96d88kd8"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-Intel CEO Gelsinger warns chipmakers aren't \"paranoid\" enough as physics limits loom",
+    "summary": "Speaking to semiconductor industry leaders at SEMI's International Trade Partners Conference, former Intel CEO Pat Gelsinger said the chip industry has grown complacent even as AI demand pushes lithography, chip interconnects, and cooling toward physical limits. His presentation argued the industry needs breakthroughs \"10,000X better,\" not incrementally better chips, and pointed to emerging optics, power, and cooling startups -- several from Playground Global, the VC firm he now works for -- as the path forward.",
+    "source": "Semafor",
+    "date": "2026-11-09",
+    "url": "https://semafor.com/s/pr4ua5xd6f"
+  },
+  {
+    "section": "industry",
+    "headline": "Twitter's former CEO bets AI agents, not humans, will finally pay for the open web",
+    "summary": "Parag Agrawal, Twitter's last CEO before Elon Musk, is building Parallel, a search engine designed for AI agents rather than people that pays the publishers whose content those agents read. He argues blocking agents is \"a value-destructive move\" publishers get forced into, as AI agents already account for a large share of internet traffic and sites like Amazon (blocking Meta's Muse shopping assistant) and Shopify (welcoming it) split on how to respond.",
+    "source": "Semafor",
+    "date": "2026-11-09",
+    "url": "https://semafor.com/s/8ycwclz0eu"
+  },
+  {
+    "section": "industry",
+    "headline": "Shanghai lab's AutoDNA system lets AI agents run science experiments without human scientists",
+    "summary": "A Shanghai research lab says its AutoDNA system can now orchestrate complex experiments end-to-end -- a single human prompt directs a fleet of lab robots to design and run its own experiments, relegating human scientists to leadership and hardware-maintenance roles. Nature reports it as a step beyond the automation already common in science labs, raising questions about how far autonomous research pipelines can go without human oversight.",
+    "source": "Semafor",
+    "date": "2026-11-09",
+    "url": "https://semafor.com/s/c1wqfsx4zb"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic launches Personal Finance in Claude, letting users connect bank and card accounts",
+    "summary": "Anthropic introduced Personal Finance in Claude, a feature that lets users securely connect bank and credit card accounts so they can ask Claude questions about balances, transactions, and spending directly in the chat interface.",
+    "source": "TLDR AI",
+    "date": "2026-11-09",
+    "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+  },
+  {
+    "section": "tips",
+    "headline": "Cloudflare ships a trust framework for verifying AI agents acting on users' behalf",
+    "summary": "Cloudflare outlined a framework addressing the growing problem of websites being unable to verify the identity, trustworthiness, or accountability of AI agents acting for users -- a problem compounding as agents take on more purchasing and browsing tasks autonomously.",
+    "foryou": "If any of your agents browse or transact on third-party sites, expect agent-identity verification (closer to OAuth-for-bots than CAPTCHAs) to become a hard requirement soon -- worth reading now rather than after a site starts blocking your agent traffic.",
+    "source": "TLDR AI",
+    "date": "2026-11-09",
+    "url": "https://blog.cloudflare.com/trusted-agent-delegation"
+  },
+  {
+    "section": "tips",
+    "headline": "How GPU compute markets actually price reservations, on-demand, and spot capacity",
+    "summary": "A breakdown of how AI compute gets priced: reservations lock in financing via predictable revenue for providers, on-demand rentals trade flexibility for higher rates, and spot/interruptible contracts monetize otherwise-idle GPU capacity. Index providers like Ornn track executed on-demand transactions specifically, excluding the other two categories, which explains why headline GPU \"price\" numbers can diverge so much between sources.",
+    "foryou": "Next time you're deciding between locking in reserved GPU capacity versus riding the spot market for a training run, this is the mental model to use -- and a reminder to check which pricing tier any \"GPU prices are falling/rising\" headline is actually citing.",
+    "source": "TLDR AI",
+    "date": "2026-11-09"
+  },
+  {
+    "section": "tips",
+    "headline": "Hugging Face publishes \"The Ultimate MoE Training Handbook\"",
+    "summary": "Hugging Face released a comprehensive, free guide to training Mixture-of-Experts models, covering the practical and architectural considerations involved in MoE training end to end.",
+    "foryou": "If you're even considering fine-tuning or training your own MoE (rather than just calling one via API), this is the reference to bookmark before you start burning GPU hours on trial and error.",
+    "source": "TLDR AI",
+    "date": "2026-11-09",
+    "url": "https://huggingface.co/spaces/huggingface/moe-blogpost"
+  },
+  {
+    "section": "tips",
+    "headline": "Cursor can now build, host, and share full live apps from a single prompt",
+    "summary": "Cursor's new \"build live apps\" feature lets users describe the tool they want and have Cursor build it, provision a database, run deterministic and agentic security checks, and deploy it to a shareable link -- no separate hosting or deployment step required.",
+    "foryou": "This collapses prototype-to-shareable-demo into one step; worth trying for internal tools or quick agent-pipeline dashboards you'd otherwise spend an afternoon deploying yourself.",
+    "source": "TLDR AI (also: Cursor)",
+    "date": "2026-11-09",
+    "url": "https://cursor.com/changelog/build-live-apps"
+  }
+]
