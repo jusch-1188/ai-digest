@@ -1,0 +1,154 @@
+[
+  {
+    "section": "models",
+    "headline": "Coding agents can now redesign a neural net's architecture mid-training",
+    "summary": "Researchers describe \"mechanistic intervention\" agents that read a network's internals during training and insert small, zero-initialized \"code layers\" to fix capacity gaps revealed by a \"phantom gradient.\" On CLRS-Text, inserted code layers lifted accuracy from 55% to 84%, and a mid-training sliding-window attention fix raised long-range recall from 55% to 72%. Early tests show models starting to apply the technique to themselves, including DeepSeek-V4.1-Flash catching and resampling its own likely-wrong answers.",
+    "foryou": "If this generalizes, architecture search stops being a pretraining-time decision and becomes something your training loop does continuously -- worth tracking before you lock in an architecture for your next fine-tune.",
+    "specs": [
+      {
+        "label": "CLRS-Text accuracy",
+        "value": "55% -> 84% with code layers"
+      },
+      {
+        "label": "Sliding-window recall (600-4K tokens out)",
+        "value": "55% -> 72%"
+      },
+      {
+        "label": "Self-correction (DeepSeek-V4.1-Flash)",
+        "value": "64% -> 71% on AIME/HMMT 2026"
+      },
+      {
+        "label": "Models tested",
+        "value": "Nanochat (~286M), CLRS-Text (~86M), Qwen3-8B"
+      }
+    ],
+    "source": "TLDR AI (also: DoubleAI)",
+    "date": "2026-11-10",
+    "url": "https://www.doubleai.com/research/can-llms-redesign-themselves-as-they-train"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic stress-tests Claude's long-horizon agency inside EVE Online and EVE Frontier",
+    "summary": "Anthropic had four Claude models trade a simulated replay of real EVE Online markets and ran four-agent teams through EVE Frontier's live game. Newer models (Opus 4.7/4.8, Fable 5) were consistently profitable via short-term \"spread capture,\" with six-month returns reaching roughly 600% of starting capital for Fable 5, but directional price bets and real-time combat exposed weak forward planning. When one teammate was secretly told to sabotage the group, the rest almost never caught it -- only dedicated outside monitor agents flagged 30-40% of saboteurs.",
+    "foryou": "The sabotage-detection numbers are the real headline for multi-agent builders: don't assume peer agents will catch a misbehaving teammate -- you need a separate auditor process watching the group.",
+    "specs": [
+      {
+        "label": "6-month return, Fable 5",
+        "value": "~600% of starting capital"
+      },
+      {
+        "label": "6-month return, Opus 4.6",
+        "value": "~200% of starting capital"
+      },
+      {
+        "label": "Saboteur caught by teammates",
+        "value": "1 run out of many"
+      },
+      {
+        "label": "Saboteur caught by outside monitor",
+        "value": "30-40% at 5% false-accusation rate"
+      }
+    ],
+    "source": "TLDR AI (also: Anthropic)",
+    "date": "2026-11-10",
+    "url": "https://www.anthropic.com/research/project-eve-claude-plays-mmorpgs"
+  },
+  {
+    "section": "models",
+    "headline": "A non-public Anthropic model helps prove a 17-year-old quantum complexity conjecture",
+    "summary": "PSI's internal research system, running instances of an unreleased Anthropic model, produced a Lean-verified (machine-checked) proof of the Aaronson-Ambainis conjecture, closing a gap left open by prior work from Shachar Lovett and Jiapeng Zhang. The result shows quantum computers are at most polynomially -- not exponentially -- faster than classical ones on random inputs. A Stanford group that had proven a special case earlier reviewed and praised the full proof, though independent review is still ongoing.",
+    "foryou": "A useful data point for how far 'AI does novel math' has actually gotten: substantial human scoping and auditing were still required, so treat this as augmentation, not autonomous proof generation, when weighing how much to trust a model's unverified reasoning chains.",
+    "specs": [
+      {
+        "label": "Verification method",
+        "value": "Lean proof assistant (machine-checked)"
+      },
+      {
+        "label": "Conjecture open since",
+        "value": "2008 (Aaronson & Ambainis)"
+      },
+      {
+        "label": "AI system",
+        "value": "Non-public Anthropic model inside PSI's research system"
+      }
+    ],
+    "source": "TLDR AI (also: PSI)",
+    "date": "2026-11-10",
+    "url": "https://psi.inc/research/aaronson-ambainis/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI safety researcher: Anthropic may have already crossed its own 'AI accelerating AI research' threshold",
+    "summary": "Writing on her Planned Obsolescence Substack, Ajeya Cotra argues Anthropic has likely crossed the \"dramatically accelerated progress due to AI\" milestone defined in its own Responsible Scaling Policy, citing a METR report showing capability progress at roughly twice its prior pace, mostly attributable to AI automating R&D. Much of the underlying evidence is redacted. She warns that naive extrapolation of the trend implies superintelligence within about a year if the acceleration compounds.",
+    "source": "TLDR AI (also: Planned Obsolescence)",
+    "date": "2026-11-10",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI reportedly raises $11B at a $1.25 trillion valuation, round could grow to $20B",
+    "summary": "OpenAI has reportedly secured $11 billion in new funding at a $1.25 trillion valuation, with the round potentially expanding to $20 billion before closing. The total fell short of OpenAI's earlier reported $30 billion target, amid growing investor caution about AI valuations broadly.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-11-10",
+    "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+  },
+  {
+    "section": "industry",
+    "headline": "Microsoft dissolves its AI Frontiers research group, folding it into Microsoft AI",
+    "summary": "John Langford, a departing leader of Microsoft Research's ~50-person AI Frontiers group, says the team -- known for Autogen, the Fara computer-use agent, and efficiency work like the Full Bandwidth Transformer -- was merged into the product-focused Microsoft AI organization in September and effectively shut down. He says MAI's Inflection-rooted leadership prioritized scaling over research and did not want the group, and that most other AIF leaders have since left too.",
+    "source": "TLDR AI (also: hunch.net)",
+    "date": "2026-11-10",
+    "url": "https://hunch.net/?p=13764006"
+  },
+  {
+    "section": "industry",
+    "headline": "Ex-OpenAI exec Kevin Weil raises $215M to automate drug discovery with AI and robotics",
+    "summary": "Warp Sciences, founded by former OpenAI product chief Kevin Weil, exited stealth with a $215 million Series A led by Lightspeed to build AI-and-robotics-run chemistry labs for drug discovery. The company aims to automate wet-lab experimentation that currently bottlenecks pharma R&D timelines.",
+    "source": "TLDR AI (also: drug-dev.com)",
+    "date": "2026-11-10",
+    "url": "https://drug-dev.com/?p=150420"
+  },
+  {
+    "section": "industry",
+    "headline": "AI inference startup Fal raises $1.3B Series F, doubling valuation to $16B",
+    "summary": "Fal, which provides fast inference infrastructure for generative media models, raised a $1.3 billion Series F led by Bessemer Venture Partners, with Nvidia, Sound Ventures, and T. Rowe Price also participating. The round, announced November 3 and combined with its earlier Series E, brings Fal's total raised to $1.65 billion and doubles its valuation from $8 billion in April to $16 billion.",
+    "source": "Web",
+    "date": "2026-11-10",
+    "url": "https://gcn.com/fal-raises-billion-inference-startup-doubles/23096"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta adds Custom Spaces to its Muse AI app for building personal mini-tools by description",
+    "summary": "Meta introduced Spaces inside its Muse app, letting users create personalized interactive tools -- like gift trackers, simple games, or project planners -- by describing what they want in natural language. It's part of Meta's push to make its consumer AI agent useful for lightweight, bespoke software rather than just chat.",
+    "source": "TLDR AI (also: TechCrunch)",
+    "date": "2026-11-10",
+    "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+  },
+  {
+    "section": "tips",
+    "headline": "How Anthropic builds long-term memory for Claude agents: notes, wikis, and 'dreaming'",
+    "summary": "Anthropic describes a four-layer agent memory system -- transcripts, memory notes, memory representations (wikis), and a small always-loaded context layer -- plus an offline \"dreaming\" process where Claude reviews past sessions to correct notes and rebuild its wiki. Key findings: describing memory's purpose beats rigid rules for strong models, a wiki-plus-search setup beat search alone, and giving each fact its own page (instead of a shared file agents overwrite) raised retention from 41/57 to 57/57.",
+    "foryou": "If you're building any agent that runs across multiple sessions, the wiki-plus-search pattern and the 'one fact, one page' rule are directly portable to your own context-management layer today.",
+    "source": "TLDR AI (also: Anthropic)",
+    "date": "2026-11-10",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenRouter's rebuilt Auto Router is up to 4x better, and a new Auto Code router targets coding agents",
+    "summary": "OpenRouter relaunched its Auto Router and introduced Auto Code, a router tuned for coding agents and harnesses, both using an 11-factor scoring model plus live pricing, cache status, and provider health to pick models per request. In beta, the new router stayed on the same model nearly 90% of turns to preserve the input cache, cut invalid tool calls 4x, and Auto Code matched Claude Opus 5.5 across five benchmarks at 74% lower cost per task.",
+    "foryou": "Swapping a hardcoded model choice for openrouter/auto-code is close to a free lunch if you're not already doing per-request model selection in your agent pipeline -- it's routing, not a new model, so there's no migration cost.",
+    "source": "TLDR AI (also: OpenRouter)",
+    "date": "2026-11-10",
+    "url": "https://openrouter.ai/blog/announcements/auto-and-auto-code-routers/"
+  },
+  {
+    "section": "tips",
+    "headline": "GitHub Next's Ace lets you and your team work in shared channels alongside AI coding agents, locally",
+    "summary": "Ace is an open-source, self-hosted tool from GitHub Next for real-time collaboration between developers and AI coding agents in shared channels -- teammates can join your channel, mention your agents, and act on the same code together. Agents run with your own Anthropic or OpenAI API key and your local shell/toolchain privileges, with no Ace service sitting between you and the model provider.",
+    "foryou": "The security model is the catch: agents run with full host privileges, so this is for trusted teams on a private tailnet, not a tool to hand to contractors or run on a shared box.",
+    "source": "TLDR AI (also: GitHub Next)",
+    "date": "2026-11-10",
+    "url": "https://ace.githubnext.com/"
+  }
+]
