@@ -1,0 +1,149 @@
+[
+  {
+    "section": "models",
+    "headline": "Anthropic ships Claude Fable 5.2 and Mythos 5.2 with faster, cheaper coding and reasoning",
+    "summary": "Anthropic released Claude Fable 5.2 and Mythos 5.2, its latest model pair sharing the same underlying architecture, with gains in coding, reasoning, and vision. Both models generate output up to 30% faster than their predecessors and ship at lower prices.",
+    "foryou": "If you're running agentic pipelines on Claude, the ~30% speed bump and lower pricing on Fable/Mythos 5.2 cuts per-task latency and cost without touching your prompts or architecture.",
+    "specs": [
+      {
+        "label": "Speed",
+        "value": "Up to 30% faster output generation"
+      },
+      {
+        "label": "Pricing",
+        "value": "Lower than prior generation"
+      },
+      {
+        "label": "Improvements",
+        "value": "Coding, reasoning, vision"
+      },
+      {
+        "label": "Architecture",
+        "value": "Shared underlying architecture across both models"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+  },
+  {
+    "section": "models",
+    "headline": "Meta's new Muse Ember model matches Claude Haiku 5.5 at a third of the cost",
+    "summary": "Meta introduced Muse Ember, a small reasoning model built for agentic tasks like tool calling, coding, and document parsing. The company claims it matches Claude Haiku 5.5's top reasoning score at roughly one-third the cost and beats GPT-6 Luna across reasoning benchmarks.",
+    "foryou": "A reasoning model this cheap but competitive with Haiku 5.5 is worth benchmarking as a low-cost tool-calling/document-parsing tier in your own agent stack.",
+    "specs": [
+      {
+        "label": "Benchmark",
+        "value": "Matches Claude Haiku 5.5's top reasoning score"
+      },
+      {
+        "label": "Cost",
+        "value": "Roughly 1/3 the cost of Haiku 5.5"
+      },
+      {
+        "label": "Comparison",
+        "value": "Outperforms GPT-6 Luna on reasoning settings"
+      },
+      {
+        "label": "Focus",
+        "value": "Tool calling, coding, document parsing"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://research.meta.ai/blog/muse-ember"
+  },
+  {
+    "section": "models",
+    "headline": "NVIDIA's GR00T 2 jointly predicts future video and robot actions",
+    "summary": "NVIDIA released GR00T 2, a new generation of world-action foundation models that predict future video frames and robot actions together rather than as separate tasks. It's positioned as a general-purpose foundation layer for embodied and robotics agents.",
+    "foryou": "If you're exploring embodied or robotics agents, GR00T 2's joint video+action prediction is a foundation model worth prototyping against rather than building your own perception-to-action pipeline from scratch.",
+    "specs": [
+      {
+        "label": "Type",
+        "value": "World-action foundation model"
+      },
+      {
+        "label": "Capability",
+        "value": "Jointly predicts future video and robot actions"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://research.nvidia.com/labs/gear/gr00t-2/"
+  },
+  {
+    "section": "industry",
+    "headline": "Google launches TPU 8i Max and 8tx for bigger context windows and confidential inference",
+    "summary": "Google introduced two new TPU variants: the 8i Max, built for massive context windows and higher compute density, and the 8tx, aimed at secure and confidential inference workloads. The launch extends Google's custom silicon lineup as AI labs race to lock down compute capacity.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic buys $3.4B in Caterpillar gas generators to power its AI buildout",
+    "summary": "Anthropic reportedly secured 1.7 gigawatts of Caterpillar gas generators for $3.4 billion, taking over an equipment order from supplier OnePWR. The deal pushes the AI lab further into physical power infrastructure as grid-connection queues and power shortages constrain data center expansion.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's $1.4 trillion IPO hinges on closing a yawning compute-to-revenue gap",
+    "summary": "Anthropic is reportedly pushing ahead with an IPO as soon as next week at a valuation near $1.4 trillion, with Goldman Sachs projecting it could generate $685 billion in revenue by 2030. But independent analysis estimates Anthropic needs roughly $200 billion in annual revenue to cover its $895 billion in compute commitments at current spending ratios, leaving it exposed to demand shortfalls and margin compression if growth falls short.",
+    "source": "Semafor (also: TLDR AI)",
+    "date": "2026-11-11",
+    "url": "https://www.implicator.ai/anthropic-could-start-ipo-roadshow-week-of-nov-9-putting-debut-before-thanksgiving/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia's Jensen Huang spy scandal triggers fresh scrutiny of AI chip exports to China",
+    "summary": "The FBI is reportedly investigating Nvidia CEO Jensen Huang's affair with an alleged Chinese intelligence operative, and the fallout has energized US lawmakers pushing to tighten the chip export controls Huang has long lobbied against. The scandal has also drawn new scrutiny to legal loopholes that let Chinese firms access advanced Nvidia compute through Singapore-based cloud intermediaries.",
+    "source": "Semafor",
+    "date": "2026-11-11",
+    "url": "https://www.ajc.com/news/2026/11/nvidia-investigating-reports-that-ceo-jensen-huang-was-targeted-by-chinese-intelligence/"
+  },
+  {
+    "section": "industry",
+    "headline": "Apple starts selling $50 AI usage top-ups inside Logic Pro",
+    "summary": "Apple now sells $49.99 Intelligence Usage Packs inside Logic Pro, letting users buy extra cloud-based AI capacity once they hit their built-in limits. Unused capacity rolls over monthly but expires after 12 months, and the packs can't be shared via Family Sharing.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://www.theverge.com/tech/1030084/apple-intelligence-usage-packs-ai-features-creator-studio-logic-pro"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's new Control Room can halt a research model's output within 35 seconds",
+    "summary": "OpenAI built a 'Control Room' that centrally authorizes research inference requests and can cut off a workload's model output within 35 seconds of an intervention. The system gives OpenAI a faster kill-switch over internal research traffic amid growing scrutiny of frontier-model safety controls.",
+    "source": "TLDR AI",
+    "date": "2026-11-11"
+  },
+  {
+    "section": "tips",
+    "headline": "NVIDIA's AutoCompress shrinks Nemotron 3.5 Super from 120B to 74B parameters",
+    "summary": "NVIDIA's AutoCompress framework prunes LLMs for hardware-specific latency, throughput, and memory limits instead of optimizing for raw parameter count alone. Applied to Nemotron 3.5 Super, it cut the model from 120B to 74B parameters while retaining its performance.",
+    "foryou": "If you're paying for inference on your own fine-tunes, hardware-aware pruning like this is a more defensible way to cut model size than blunt parameter-count pruning — worth testing before you reach for a smaller base model.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://arxiv.org/abs/2611.08290"
+  },
+  {
+    "section": "tips",
+    "headline": "A new essay distinguishes two very different kinds of test-time scaling",
+    "summary": "The piece argues there are two kinds of test-time scaling: one trades compute for performance only up to the ceiling set during training, while the other can exceed what the model ever saw during training. The author argues the second kind, where achievable, will matter far more than test-time scaling as commonly discussed.",
+    "foryou": "Before you budget more inference-time compute for your agents, this is a useful check on which kind of test-time scaling you're actually buying — one has a hard ceiling, the other doesn't.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://www.forethought.org/research/two-kinds-of-test-time-scaling"
+  },
+  {
+    "section": "tips",
+    "headline": "Reasoning models are doing pathfinding in token space, not deduction",
+    "summary": "The essay frames reasoning as a search over many possible paths from problem to answer, where no single path is guaranteed to converge — only the aggregate distribution yields a high success rate. It argues RL training directly raises that success probability, and that gains credited to 'thinking longer' actually come from search paid for during training, not at inference.",
+    "foryou": "This reframes why 'just let it think longer' underdelivers on some tasks — if the model's RL training never built the right paths, more inference-time tokens won't manufacture them.",
+    "source": "TLDR AI",
+    "date": "2026-11-11",
+    "url": "https://alexwang.ai/posts/reasoning-as-pathfinding/"
+  }
+]
