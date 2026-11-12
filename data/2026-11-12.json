@@ -1,0 +1,139 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemini 4 Carbon rolls out to all paying developers and enterprises",
+    "summary": "Google's strongest model, Carbon, is now available via the API in AI Studio and Gemini for Business, with a broader rollout to AI Ultra subscribers across Antigravity, the Gemini app, and AI Mode in Search. Google says Carbon ranks #1 on CursorBench 4.0, Perplexity's WANDR, and Zapier's AutomationBench, at more than 2x lower cost per task than the next-best external model, while matching Gemini 4 Argon's per-token pricing. The release also adds frontier cybersecurity capabilities through the Fairwind Program and previews /swarm, a multi-agent mode in Antigravity.",
+    "foryou": "If you're benchmarking frontier models for agentic pipelines, Carbon's cost-per-task edge at Argon-level pricing makes it worth a head-to-head test against whatever you're running today.",
+    "specs": [
+      {"label": "Pricing", "value": "$2 / $10 per 1M tokens (input/output)"},
+      {"label": "Benchmarks", "value": "#1 on CursorBench 4.0, WANDR, AutomationBench"},
+      {"label": "Cost efficiency", "value": ">2x cheaper per task than next-best external model"},
+      {"label": "Availability", "value": "API (AI Studio, Gemini for Business); rolling out to AI Ultra in Antigravity, Gemini app, AI Mode"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-4-carbon-now-available/"
+  },
+  {
+    "section": "models",
+    "headline": "Anthropic adds Sheets, Whiteboards, Data artifacts and interactive connectors",
+    "summary": "Anthropic introduced Claude Sheets, Whiteboards, and Data, new artifact types that let teams build spreadsheets, organize ideas, and create dashboards inside Claude without switching apps. Interactive connectors now embed partner apps like Adobe and Atlassian directly in Claude, and new plugins from Salesforce, NetSuite, and Workday (in beta) ship with built-in skills for sales, finance, and HR work. Claude Meetings, which brings Claude into live calls to take notes and update documents, is coming soon.",
+    "foryou": "The Sheets/Whiteboards artifacts plus Salesforce/NetSuite/Workday plugins mean you can increasingly prototype internal tools directly inside Claude instead of wiring up separate SaaS integrations yourself.",
+    "specs": [
+      {"label": "New artifact types", "value": "Sheets, Whiteboards, Data"},
+      {"label": "New connectors", "value": "Adobe, Atlassian (embedded, interactive)"},
+      {"label": "New plugins (beta)", "value": "Salesforce, NetSuite, Workday"},
+      {"label": "Coming soon", "value": "Claude Meetings (live call notes + doc updates)"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://claude.com/resources/articles/more-ways-to-work-with-claude-sheets-whiteboards-and-interactive-connectors"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft's MAI-Transcribe-2 claims fastest, cheapest speech recognition",
+    "summary": "Microsoft AI released MAI-Transcribe-2, which it says is the fastest, most accurate, and cheapest speech recognition model available, adding diarization, configurable transcription styles, and word-level timestamps. The company says it outperforms Gemini 3.5 Transcribe, GPT-Transcribe, Whisper V3-Large, and ScribeV2 on a broader range of real-world audio. It costs $0.10 per hour of audio.",
+    "foryou": "At $0.10/hour with built-in diarization, this is the kind of commodity transcription primitive worth swapping into any pipeline doing meeting notes, call analytics, or voice-agent front-ends.",
+    "specs": [
+      {"label": "Cost", "value": "$0.10 per hour of audio"},
+      {"label": "Features", "value": "Diarization, configurable styles, word-level timestamps"},
+      {"label": "Claimed benchmark", "value": "Outperforms Gemini 3.5 Transcribe, GPT-Transcribe, Whisper V3-Large, ScribeV2"},
+      {"label": "Maker", "value": "Microsoft AI"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://microsoft.ai/news/mai-transcribe-2-is-the-fastest-most-accurate-and-cheapest-speech-recognition-model-in-the-world/"
+  },
+  {
+    "section": "industry",
+    "headline": "Nvidia's governance crisis deepens as Jensen Huang faces espionage-tied investigation",
+    "summary": "Nvidia's board is investigating CEO Jensen Huang after reports tied him to an alleged Chinese spy and raised questions about his increasingly China-friendly public rhetoric on export controls since 2025. Semafor's review found Nvidia's board has thin governance by comparison to peers: two directors have served since the company's 1993 founding, none are current or former CEOs, and there's no obvious successor despite more than 50 direct reports to Huang. A Democratic senator is now pressing the Trump administration on its handling of the related Megaspeed chip-smuggling probe, and the China hawks in Washington whom Huang had previously clashed with are using the moment to push back on his stance.",
+    "source": "Semafor (also: TechRepublic)",
+    "date": "2026-11-12",
+    "url": "https://semafor.com/s/z4ekqfyvs4"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI acquires Odessia, the AI travel agent from Sonder's founder",
+    "summary": "OpenAI has acquired Odessia, an AI travel-agent startup founded by Francis Davidson after his previous company, short-term rental brand Sonder, collapsed. The deal looks like an acqui-hire: OpenAI hasn't announced new travel-specific products, though it already counts several travel companies as customers and partners.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://techcrunch.com/2026/11/10/openai-acquires-odessia-travel-startup-created-by-sonder-founder/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic launches IPO roadshow, targets Nasdaq listing as 'ANT'",
+    "summary": "Anthropic kicked off the roadshow for its proposed IPO, planning to offer 825 million shares priced at $70 to $78 each. The company applied to list on Nasdaq under the ticker ANT, with most proceeds from newly issued shares going to Anthropic itself rather than existing shareholders.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://www.anthropic.com/news/roadshow-launch"
+  },
+  {
+    "section": "industry",
+    "headline": "Over 35,000 public Grok-built apps exposed sensitive data, including xAI/SpaceX's own",
+    "summary": "More than 35,000 apps built with Grok were left open to anyone with the link, including internal SpaceX/xAI staff tools and at least one exposed ICU patient's lab results. The incident underscores how easily AI-generated apps can ship with no access controls by default.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://blog.claroc.io/ghostshares-grok-build-apps"
+  },
+  {
+    "section": "industry",
+    "headline": "Google Cloud launches Gemini for Healthcare",
+    "summary": "Google Cloud announced a preview of Gemini for Healthcare, a purpose-built version of its Gemini agent with healthcare-specific skills, connectors to EHR and claims systems, and HIPAA-supporting governance controls aimed at providers and payers.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemini-for-healthcare"
+  },
+  {
+    "section": "industry",
+    "headline": "DeepMind's AlphaProof Code formally verifies Signal's security protocol",
+    "summary": "Google DeepMind introduced AlphaProof Code, a multi-agent AI framework that mathematically verified key security properties of Signal's cryptographic protocol at the implementation level, a notable real-world application of formal-verification AI to widely used infrastructure.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+  },
+  {
+    "section": "industry",
+    "headline": "Forecasters: a 'superhuman AI researcher' is still on track for 2027",
+    "summary": "AI Futures Project's updated timeline estimates a Superhuman AI Researcher (SAR) will arrive sometime in 2027 absent a deliberate slowdown, with AI capable of automating all white-collar work following before 2028. The analysis argues current labs aren't on track to align an SAR safely, and that China could plausibly steal training recipes, or even model weights, from whichever lab trains one first.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://blog.aifutures.org/p/q35-timelines-update-looks-like-the"
+  },
+  {
+    "section": "tips",
+    "headline": "Goodfire argues individual neurons are more interpretable than assumed",
+    "summary": "Goodfire's research suggests individual language-model neurons are more interpretable than commonly believed. Its 'Neuron Scientist' agents automatically generate and test descriptions of what specific neurons do, letting researchers study model computations directly rather than always relying on sparse autoencoders to extract interpretable features.",
+    "foryou": "If you're debugging opaque model behavior in production, this is a lighter-weight interpretability technique worth trying before reaching for a full sparse-autoencoder pipeline.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://www.goodfire.com/research/neurons-as-an-interpretable-basis"
+  },
+  {
+    "section": "tips",
+    "headline": "ExecuTorch brings PyTorch models to the browser GPU with no conversion step",
+    "summary": "ExecuTorch WebGPU lets PyTorch models run directly in a web browser on the GPU without converting to another framework's format first, removing a common friction point for shipping on-device or in-browser inference.",
+    "foryou": "Worth bookmarking if you're building anything with client-side or in-browser inference: skipping the conversion step shortens your path from trained model to running demo considerably.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://pytorch.org/blog/executorch-webgpu-pytorch-models-on-the-gpu-in-the-browser/"
+  },
+  {
+    "section": "tips",
+    "headline": "Meta FAIR releases e-means, a faster drop-in replacement for k-means",
+    "summary": "Meta FAIR open-sourced e-means, a drop-in alternative to k-means clustering that converges to lower losses with up to 10x fewer epochs, with faster runtimes on both CPUs and GPUs.",
+    "foryou": "A free win anywhere your pipeline does embedding clustering: it's a drop-in swap, so benchmark it against your current k-means step this week.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://github.com/facebookresearch/faiss/tree/main/contrib/e_means"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's /swarm lets you run a team of coordinated agents in Antigravity",
+    "summary": "The /swarm command in Google Antigravity spins up a team of named agents that split a task, work on pieces in parallel, and coordinate through a shared message board. It's aimed at work that divides cleanly across files or packages, or at pairing a second agent to review and test changes before a human sees them. It's available on Google AI Pro and Ultra plans, though every worker agent burns its own quota.",
+    "foryou": "If your agent tasks already split cleanly across files or subtasks, /swarm is a preview of where multi-agent orchestration is heading, worth comparing against whatever manual fan-out pattern you're using now.",
+    "source": "TLDR AI",
+    "date": "2026-11-12",
+    "url": "https://antigravity.google/docs/swarm/"
+  }
+]
