@@ -1,0 +1,143 @@
+[
+  {
+    "section": "models",
+    "headline": "xAI's Grok Bot 1.0 becomes a shared, cross-platform team assistant",
+    "summary": "Grok Bot 1.0 adds Team Bots that can be published and shared, native integration with Slack and Microsoft Teams, meeting support on Google Meet and Zoom, shared connectors, and reviewed learnings. It's now positioned as a persistent team assistant reachable from the app, chat tools, and video calls, with new admin controls for managing access.",
+    "foryou": "If you're wiring agents into team workflows, Grok Bot's shared-connector model is worth studying as a template for multi-surface agent deployment rather than one-off chat bots.",
+    "specs": [
+      {"label": "Version", "value": "1.0"},
+      {"label": "Integrations", "value": "Slack, Microsoft Teams, Google Meet, Zoom"},
+      {"label": "New feature", "value": "Publishable/shareable Team Bots"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://flaviocopes.com/grok-bot-1-0/"
+  },
+  {
+    "section": "models",
+    "headline": "Google ships Gemini Decisions API for fast multimodal decision-making",
+    "summary": "Google's new Gemini Decisions API analyzes multimodal inputs like images and text to make fast, calibrated decisions and recommend actions — for example, assessing spill severity and suggesting cleanup steps. It's aimed at operational and safety use cases where an agent needs to judge a scenario and act, not just answer a question.",
+    "foryou": "This is a building block for agentic pipelines that need to make a judgment call and act on it — worth testing if any of your agents currently fake this with brittle prompt-based scoring.",
+    "specs": [
+      {"label": "Input modalities", "value": "Images + text"},
+      {"label": "Output", "value": "Calibrated decision + recommended action"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+  },
+  {
+    "section": "models",
+    "headline": "Runway open-sources Praxis-1, a 27B-parameter robotics model",
+    "summary": "Runway released Praxis-1, an open-weight, 27-billion-parameter robotics model for action and video prediction, under the Apache 2.0 license. It tops Nvidia's RoboLab-120 leaderboard with a 46.2% success rate across 1,200 episodes, runs on Nvidia hardware, and supports full and LoRA fine-tuning across different robot embodiments.",
+    "foryou": "An open-weight, Apache-licensed robotics model with LoRA support is a rare combination — worth a look if you're exploring embodied-agent or robotics side projects.",
+    "specs": [
+      {"label": "Parameters", "value": "27B"},
+      {"label": "License", "value": "Apache 2.0"},
+      {"label": "Benchmark", "value": "46.2% success, RoboLab-120 (1,200 episodes)"},
+      {"label": "Fine-tuning", "value": "Full + LoRA"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+  },
+  {
+    "section": "models",
+    "headline": "DeepMind's AlphaGenome 2 doubles DNA variant prediction accuracy",
+    "summary": "DeepMind released AlphaGenome 2, which improves prediction of how DNA variants affect specific cell types, doubling variant identification versus its predecessor. It can adapt to new cell states without retraining and is available for non-commercial research use, aimed at pinpointing disease-relevant mutations in human cells.",
+    "foryou": "A good reminder that model progress isn't only chatbots — if you're building anything bio or health-adjacent, this is a meaningful jump in a non-commercial research tool worth evaluating.",
+    "specs": [
+      {"label": "Improvement", "value": "2x variant identification vs. predecessor"},
+      {"label": "Adaptability", "value": "New cell states without retraining"},
+      {"label": "License/access", "value": "Non-commercial research use"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+  },
+  {
+    "section": "industry",
+    "headline": "Jensen Huang resigns as Nvidia CEO amid espionage-tinged affair scandal",
+    "summary": "Nvidia's board announced Jensen Huang's immediate resignation as CEO and board member, ending his 33-year run, after he admitted to an extramarital affair with a woman U.S. intelligence officials believe was targeted for recruitment by Chinese intelligence. CFO Colette Kress becomes interim CEO while the board, now chaired for the first time by Harvey Jones, searches for a permanent successor. Nvidia shares fell more than 6% on the news, and analysts are already questioning how durable Nvidia's moat is without its founder running it.",
+    "source": "TLDR AI (also: Semafor, Web)",
+    "date": "2026-11-13",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+  },
+  {
+    "section": "industry",
+    "headline": "United Airlines moves to block AI agents from its booking systems",
+    "summary": "United Airlines is restricting AI-agent access across its platforms and agency channels, citing credential security and liability risks for tasks like check-in. The move contrasts with travel rivals Expedia and Booking, which are actively partnering with AI agents instead.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html"
+  },
+  {
+    "section": "industry",
+    "headline": "Airbnb's AI support assistant cuts cost per booking by 17%",
+    "summary": "Airbnb says its AI customer-support assistant has reduced support cost per booking by more than 17%, resolving roughly 40% of Q3 support issues without any human agent involvement — a concrete signal of AI's bottom-line impact at consumer scale.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://www.customerexperiencedive.com/news/airbnb-reduces-customer-support-cost-per-booking-17/874307"
+  },
+  {
+    "section": "industry",
+    "headline": "Shopify's generative discovery model lifts conversion 9.85%",
+    "summary": "Shopify rolled out a shared generative discovery model for search and recommendations, using semantic-ID tokens to improve personalization and relevance across its platform. The model drove a 9.85% lift in conversion rate alongside broad gains in search relevance in both online and offline testing.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://shopify.engineering/generative-discovery"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI engineers float letting agents share your identity with websites",
+    "summary": "Two OpenAI engineers proposed a mechanism that would let AI agents pass along user information to websites, so sites can recognize them as real visitors acting on a person's behalf rather than blocking them as bots. The proposal highlights growing friction between the open web and the rise of agentic browsing.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://joost.blog/agents-sharing-user-signals/"
+  },
+  {
+    "section": "tips",
+    "headline": "MCP servers can cost 40x more context tokens than CLI or skills",
+    "summary": "A token-cost comparison on Sonnet 5.5 found a simple task consumed 59,417 tokens through default MCP tool definitions, versus 1,421 tokens via CLI and 3,315 via a skill — showing how expensive tool-heavy MCP setups are relative to lighter-weight approaches. Implementing Tool Search, which defers tool definitions until needed, cut the upfront toolset cost to under 600 tokens.",
+    "foryou": "This is directly actionable for your harness-layer work: if your agentic pipelines default to loading every MCP tool's full schema upfront, deferred tool search is a near-free win on token cost and latency.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://openrouter.ai/blog/insights/mcp-vs-cli-vs-skills/"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity's agent sandbox held against 12 models, but network controls slipped",
+    "summary": "Perplexity tested 12 models against its SPACE agent sandbox and found none could escape VM-host isolation, but several models bypassed network controls through DNS spoofing and shared-IP exploitation before the flaws were patched. The team also found that capture-the-flag-style prompts distracted agents from the actual security boundary being tested.",
+    "foryou": "Worth benchmarking your own agent sandboxes against DNS-spoofing and shared-IP exploits specifically — that's the kind of boundary failure that's easy to miss if you're only testing for VM escape.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://www.perplexity.ai/hub/blog/escaping-space-part-ii"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI open-sources MCP Extensions for building ChatGPT-native plugins",
+    "summary": "OpenAI released TypeScript and Python SDKs that add ChatGPT-specific features to MCP servers and apps — sidebar entry points, custom file viewers, composer resource search, and thumbnail part pickers — along with a demo plugin and written spec.",
+    "foryou": "If you're already building MCP servers, this is a quick way to make the same server feel native inside ChatGPT without maintaining a separate integration.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://github.com/openai/mcp-extensions"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's A2UI 1.0 lets agents respond with interactive UIs, not just text",
+    "summary": "A2UI is a new open protocol for generative UI that lets agents reply with interactive screens instead of plain text, with open-source renderer SDKs for web, Android, and iOS, and agent SDKs for Python, TypeScript, and Dart. It aims to give the same low-latency, native-feeling UI whether a user reaches an agent through a company's own app or a third-party assistant hosting MCP apps.",
+    "foryou": "If your agent outputs are stuck as chat text or ad-hoc HTML, A2UI is worth evaluating as a standard way to render structured, interactive responses across surfaces.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://developers.googleblog.com/a2ui-10-build-delightful-fast-reliable-agentic-experiences/"
+  },
+  {
+    "section": "tips",
+    "headline": "Databricks Genie Agents now read unstructured documents, not just tables",
+    "summary": "Databricks expanded Genie Agents to analyze unstructured documents alongside structured database tables, connect to enterprise tools, and share insights externally under governance controls — widening the agent's reach beyond pure SQL-style querying.",
+    "foryou": "If you're building retrieval pipelines that mix structured and unstructured enterprise data, this is a useful pattern to benchmark against your own harness, governance controls included.",
+    "source": "TLDR AI",
+    "date": "2026-11-13",
+    "url": "https://www.databricks.com/blog/enterprise-context-action-genie-agents-now-analyze-more-data-sources-transform-your-work"
+  }
+]
