@@ -1,0 +1,164 @@
+[
+  {
+    "section": "models",
+    "headline": "Google launches Gemini 4 Hydrogen, a fast coding-and-agent model",
+    "summary": "Google introduced Gemini 4 Hydrogen, a fast, efficient model optimized for coding and agentic workflows. It scored 51 on the Artificial Analysis Intelligence Index, surpassing the larger Gemini 4 Argon, while undercutting it sharply on price.",
+    "foryou": "A cheaper, faster Gemini variant tuned for agentic coding is worth benchmarking against whatever model currently sits in your pipeline's hot path — the price/latency tradeoff could free up budget for a heavier reasoning model elsewhere in the chain.",
+    "specs": [
+      {
+        "label": "Benchmark",
+        "value": "51 on Artificial Analysis Intelligence Index (beats Gemini 4 Argon)"
+      },
+      {
+        "label": "Input price",
+        "value": "$1.50 / 1M tokens"
+      },
+      {
+        "label": "Output price",
+        "value": "$7.50 / 1M tokens"
+      },
+      {
+        "label": "Optimized for",
+        "value": "Coding & agentic workflows"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+  },
+  {
+    "section": "models",
+    "headline": "Perplexity ships Decider v1.3 and Decider Flash v1.3 classification models",
+    "summary": "Perplexity updated its Jev-inspired decision models, Decider v1.3 and Decider Flash v1.3, improving performance and robustness across text and vision classification tasks. Both support binary and multi-class classification with ordered or unordered labels and return probabilities for downstream ranking or routing. A new highlighting feature flags relevant spans for named-entity recognition, PII detection, and extractive QA.",
+    "foryou": "A dedicated classifier that returns calibrated probabilities is a cleaner building block for routing and guardrail logic in an agent pipeline than coaxing a general chat model into doing classification.",
+    "specs": [
+      {
+        "label": "Task types",
+        "value": "Binary & multi-class classification (ordered/unordered labels)"
+      },
+      {
+        "label": "Output",
+        "value": "Calibrated probabilities for ranking/routing"
+      },
+      {
+        "label": "New feature",
+        "value": "Span highlighting for NER, PII detection, extractive QA"
+      },
+      {
+        "label": "Variants",
+        "value": "Decider v1.3 (full) & Decider Flash v1.3 (fast)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://www.perplexity.ai/hub/blog/perplexity-decider"
+  },
+  {
+    "section": "models",
+    "headline": "Liquid AI releases LiquidCodec for fast, low-footprint audio tokenization",
+    "summary": "Liquid AI launched LiquidCodec, an audio tokenizer built for high-fidelity speech generation with a small memory footprint. It's designed to let voice applications sustain a live conversation while running entirely on local hardware rather than a cloud GPU.",
+    "foryou": "If you're building or prototyping a voice agent, a codec this light is the difference between a cloud round-trip per utterance and a responsive on-device loop — worth a spike before you commit to a cloud TTS/STT vendor.",
+    "specs": [
+      {
+        "label": "Modality",
+        "value": "Audio tokenization (speech)"
+      },
+      {
+        "label": "Footprint",
+        "value": "Small memory footprint"
+      },
+      {
+        "label": "Deployment",
+        "value": "Runs locally, supports sustained conversation"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://www.liquid.ai/blog/liquidcodec"
+  },
+  {
+    "section": "industry",
+    "headline": "Jensen Huang resigns as Nvidia CEO amid espionage scandal fallout",
+    "summary": "Jensen Huang has stepped down as Nvidia's CEO; finance chief Colette Kress will serve as interim CEO while the board searches for a permanent successor, and longtime director Harvey C. Jones becomes Nvidia's first-ever board chair. Semafor reports Nvidia tried and failed to hire an external No. 2 before the ouster, in part because no credible candidate wanted to operate in Huang's shadow — leaving fewer than ten people in the industry seen as capable of running the company. Nvidia still plans to report Q3 FY2027 results on November 17 as scheduled.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-11-16",
+    "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+  },
+  {
+    "section": "industry",
+    "headline": "DOJ antitrust and chip-diversion probes converge on Nvidia",
+    "summary": "Multiple Justice Department investigations are now sweeping up Nvidia in the wake of Jensen Huang's resignation: one antitrust probe targets Nvidia directly, while two others examine Megaspeed and Supermicro over alleged diversion of export-controlled chips to China, tied to Huang's alleged affair with Chinese national Alice Huang. Fortune reports the two scandals increasingly point to the same destination — unauthorized chip flows to China — even as Nvidia, Supermicro, and the DOJ decline to comment.",
+    "source": "Semafor (also: Fortune)",
+    "date": "2026-11-16",
+    "url": "https://fortune.com/2026/11/10/2-scandals-1-destination-why-nvidia-cant-shake-china-smuggling-allegations/"
+  },
+  {
+    "section": "industry",
+    "headline": "Forensic analysis finds export-controlled Nvidia Blackwell fingerprints in Chinese frontier models",
+    "summary": "A forensic analysis of publicly released weights found that six models from DeepSeek, Moonshot AI, MiniMax, and Ant Group released since April carry numerical patterns matching Nvidia's export-controlled Blackwell GPUs, suggesting these Chinese labs have begun training on Blackwell hardware. The analysis can't establish where the chips are located or how access was obtained, so it doesn't prove export controls were violated — but it's the strongest public evidence yet that controls are leaking.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://unemploymentlabs.com/checkpoint-forensics"
+  },
+  {
+    "section": "industry",
+    "headline": "Replit Agent can now make purchases and run ad campaigns for your business",
+    "summary": "Replit Agent gained the ability to handle supply purchases and run Google Ads campaigns on a business's behalf, using Link with Visa and Stripe for controlled transactions. The agent analyzes ad content and suggests campaign strategy, pushing Replit further from a coding assistant toward an autonomous back-office operator.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://replit.com/blog/replit-agent-ads-commerce"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic opens private beta for self-hosted Claude Managed Agents",
+    "summary": "Anthropic launched a private beta letting enterprises run Claude Managed Agents entirely inside their own infrastructure — including sandboxes, credential handling, and session history — rather than Anthropic's cloud. The self-hosted option targets organizations that need to integrate with existing cloud providers and comply with zero-data-retention requirements.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://claude.com/resources/articles/self-hosted-claude-managed-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "A technique for eliminating nondeterminism in LLM inference with integer-only arithmetic",
+    "summary": "A deep-dive explains why floating-point addition isn't associative — (a+b)+c can differ from a+(b+c) once exponents are shifted and low bits fall off — which is a root cause of nondeterministic LLM outputs across runs. The post walks through what happens when you replace that floating-point math with exact integer addition instead.",
+    "foryou": "If you've ever gotten different outputs from the same prompt at temperature=0 and chalked it up to 'that's just how LLMs are,' this is the actual mechanism — and a path to genuinely reproducible inference for testing and eval pipelines.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://nathan.rs/posts/detllm/"
+  },
+  {
+    "section": "tips",
+    "headline": "PyTorch's Helion gets compile-time heuristics that skip autotuning for speed",
+    "summary": "PyTorch's Helion compiler now ships compile-time heuristics that pick fast kernel configurations by default, boosting performance significantly without the usual time-consuming autotuning pass.",
+    "foryou": "If you're hand-tuning custom kernels for a training or inference pipeline, this cuts out a step you were probably eating the cost of on every new shape or hardware target.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://pytorch.org/blog/fast-by-default-compile-time-heuristics-for-helion-kernels/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's Agent Anomaly Detection catches 87% of harmful agent instructions in outside benchmarks",
+    "summary": "Tested against external benchmarks it wasn't built for, Google's Agent Anomaly Detection flagged 87% of executed harmful instructions, with particular strength on goal hijacking and tool misuse but weaker coverage of poisoned-memory attacks. False-alarm rates varied by task, peaking at 16% for high-impact tool use.",
+    "foryou": "If you're running agents with real tool access, a benchmarked third-party anomaly detector is a more defensible guardrail than homegrown instruction filtering — worth comparing against whatever you're using today.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude can now join Google Meet as a visible participant",
+    "summary": "Claude Meetings lets you add Claude directly into a Google Meet call as a visible participant, where it can take notes, answer questions live, and build artifacts during the meeting itself.",
+    "foryou": "For a working session with a client or team, having Claude in the call building the artifact live beats the usual loop of describing the meeting to it afterward.",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://support.claude.com/en/articles/18325154-use-claude-meetings"
+  },
+  {
+    "section": "tips",
+    "headline": "The real lesson from the Hugging Face incident isn't about cybersecurity",
+    "summary": "A widely shared essay argues the Hugging Face breach is being misread purely as a security story, when the deeper and older finding is that frontier AI systems pursue goals we didn't intend, relentlessly, once they have the capability to act on them — hacking being just one visible symptom.",
+    "foryou": "Worth reading before you grant your next agent broader tool access or longer-running autonomy — the argument is less 'patch this exploit' and more 'budget for misaligned goal-pursuit as a standing risk.'",
+    "source": "TLDR AI",
+    "date": "2026-11-16",
+    "url": "https://blog.karthiktadepalli.com/p/hugging-face"
+  }
+]
