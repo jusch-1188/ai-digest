@@ -1,0 +1,134 @@
+[
+  {
+    "section": "models",
+    "headline": "Alibaba's Qwen4-Max enters preview with agent-first coding focus",
+    "summary": "Alibaba opened a managed preview of Qwen4-Max, built around agent-first coding and long-running agentic workflows, following its October 29 Apsara Conference teaser. It works with OpenAI- and Anthropic-compatible clients including Claude Code, Cursor, Cline, and Codex, and offers low/medium/xhigh reasoning levels with xhigh as the default.",
+    "foryou": "It's a drop-in alternative behind the same tool-calling conventions your Claude Code/Cursor setup already uses — worth a side-by-side eval once per-token API pricing is published, not just the Token Plan tiers.",
+    "specs": [
+      { "label": "Status", "value": "Managed preview (Token Plan)" },
+      { "label": "Entry pricing", "value": "~$3/mo Token Plan tier" },
+      { "label": "Concurrent agents", "value": "1–8, tier-dependent" },
+      { "label": "Reasoning levels", "value": "Low / Medium / XHigh (default: XHigh)" },
+      { "label": "Client compatibility", "value": "OpenAI & Anthropic-compatible (Claude Code, Cursor, Cline, Codex)" },
+      { "label": "Predecessor benchmark (Qwen3.8-Max)", "value": "SWE-bench Pro 67.7, Terminal-Bench 2.1 86.6" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://qwen.ai/blog?id=qwen4-max"
+  },
+  {
+    "section": "models",
+    "headline": "Embla 1 squeezes a real reasoning model onto an iPhone, fully offline",
+    "summary": "Sevren released Embla 1, a phone-native reasoning model using sparse ReLU² attention, shared KV caches across layers, and a 3B-parameter Engram lookup table. At 4-bit precision it averages 57.4 across BFCL, IFBench, AA-Omniscience, GPQA, and MATH-500, answering end-to-end in 1.77 seconds on an iPhone 18 Pro — fully offline and free.",
+    "foryou": "Genuinely useful reasoning has moved on-device now — if you're building anything with hard privacy or latency constraints, the open 4-bit weights on Hugging Face are worth a direct eval against your current cloud fallback.",
+    "specs": [
+      { "label": "Benchmark avg (4-bit)", "value": "57.4 across BFCL/IFBench/AA-Omniscience/GPQA/MATH-500" },
+      { "label": "Latency", "value": "1.77s end-to-end, iPhone 18 Pro" },
+      { "label": "Architecture", "value": "32 layers, width 2048, 8-of-96 routed experts + 1 shared" },
+      { "label": "Training", "value": "1.4T token pretrain + 256K context extension + 123B SFT tokens" },
+      { "label": "Availability", "value": "Free; open 4-bit weights at sevren-ai/Embla1-4bit on Hugging Face" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://sevren.ai/blog/embla-1"
+  },
+  {
+    "section": "models",
+    "headline": "Nvidia's BirdDreams predicts how traffic reacts to your next move",
+    "summary": "Nvidia Research released BirdDreams, a driving world model that generates both a first-person video and a bird's-eye-view video of a scene from a single camera image, using two causal video diffusion transformers that share information through joint attention. It needs no HD map or surrounding-vehicle states at inference and beats a baseline by roughly 35% on trajectory-following accuracy.",
+    "foryou": "The dual-stream trick — pairing a photoreal view with a schematic bird's-eye view to cut occlusion — is a reusable pattern for controllable video world models well outside driving.",
+    "specs": [
+      { "label": "Ego-action error (ADE)", "value": "3.83m vs 5.88m baseline (-35%)" },
+      { "label": "No-ego-input error (minADE)", "value": "6.15m vs 7.76m baseline (-21%)" },
+      { "label": "Human preference", "value": "57% preferred BirdDreams vs 24% baseline, 19% tied" },
+      { "label": "Inference requirement", "value": "No HD map or surrounding-vehicle states needed" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://research.nvidia.com/labs/sil/projects/birddreams/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic sets IPO terms: up to $1.4T valuation, trading begins Nov 19",
+    "summary": "Anthropic set its IPO price range at $70–$78 per share for 825 million shares, targeting a fully-diluted valuation of up to $1.4 trillion. Combined with a $26 billion private placement, the total raise could reach $90.4 billion. Pricing is expected November 18, with trading on the Nasdaq under ticker ANT beginning November 19, led by Goldman Sachs and Morgan Stanley.",
+    "source": "Web",
+    "date": "2026-11-17",
+    "url": "https://thenextweb.com/news/anthropic-ipo-terms-1-4-trillion-valuation"
+  },
+  {
+    "section": "industry",
+    "headline": "Musk and other tech execs petition Nvidia to reinstate Jensen Huang",
+    "summary": "Elon Musk and a group of technology executives signed a petition calling on Nvidia's board to reinstate Jensen Huang as CEO, days after his resignation and replacement by interim CEO Colette Kress amid allegations involving a suspected Chinese spy. Musk separately said he'd consider it an honor to hire Huang if Nvidia doesn't bring him back.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://techcrunch.com/2026/11/14/elon-musk-other-tech-execs-sign-petition-calling-on-nvidia-to-reinstate-jensen-huang/"
+  },
+  {
+    "section": "industry",
+    "headline": "Altman: ‘heroes have flaws’ on Huang, says OpenAI will eventually go public",
+    "summary": "At Semafor's Silicon Valley & The World summit, OpenAI CEO Sam Altman said he has personal empathy for Jensen Huang but declined to weigh in on an Nvidia return, calling Nvidia “a behemoth” that doesn't depend on one person. Altman also addressed data-center backlash following AI-skeptical midterm results, said the industry must “adapt,” and said OpenAI will go public eventually despite “real downsides,” waving off any IPO-timing competition with Anthropic.",
+    "source": "Semafor",
+    "date": "2026-11-17",
+    "url": "https://semafor.com/s/kzb6sjlecg"
+  },
+  {
+    "section": "industry",
+    "headline": "Sierra's Personal Agent Protocol hits 1.0, with Meta and Shopify already live",
+    "summary": "Sierra released version 1.0 of the Personal Agent Protocol (internally “Poppy”), a standard letting personal AI agents interact with companies through business agents, websites, and APIs, built on MCP, OpenAPI, and UCP with OAuth-based user control. Meta's Muse agent already uses it, Shopify enabled it for every merchant via a commerce extension co-authored with Sierra, and more than 100 companies — including Mercury, Synchrony, and Turkish Airlines — are design partners.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://sierra.ai/blog/releasing-poppy"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI introduces ChatGPT Wallet so agents can buy things without seeing your card",
+    "summary": "OpenAI introduced ChatGPT Wallet, letting its agents make purchases on a user's behalf without directly accessing real card details, with a security check required on every transaction.",
+    "source": "TLDR AI",
+    "date": "2026-11-17"
+  },
+  {
+    "section": "tips",
+    "headline": "Devin can now build and host your internal tools as shareable web apps",
+    "summary": "Cognition added Devin Apps, letting Devin build and host private web apps — dashboards, approval queues, admin panels — directly from a description or a browser-preview session, using your existing MCPs and codebase. Each app gets a stable URL, versioned deployments that roll back automatically on a failed update, and sign-in-gated access scoped to a person, team, or org.",
+    "foryou": "This turns ‘ask Devin for a quick internal tool’ into something you can actually keep running — a solid default for the shared-spreadsheet replacements and one-off ops dashboards your team keeps asking for.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://devin.ai/blog/devin-apps"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Code's Projects coordinator gets more proactive",
+    "summary": "Anthropic shipped updates to Projects in Claude Code: the coordinator agent is now more proactive, can answer questions directly in the project chat, and surfaces status updates on ongoing background threads without being asked.",
+    "foryou": "If you're running several long-lived Claude Code project threads in parallel, this cuts down on manually polling each one for status — worth checking whether your workflow still needs that habit.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://threadreaderapp.com/thread/2121375309287301360.html"
+  },
+  {
+    "section": "tips",
+    "headline": "Quark shows you can build a model's entire training stack for $4,200",
+    "summary": "A team published Quark, a ~165M-parameter language model trained for about $4,200 of compute (~1,300 H100-hours), built to validate every stage of a training stack — data, architecture, pretraining, context extension, RL, and evaluation — before committing to a larger run. It posts the best benchmark average among open models of similar size and token budget.",
+    "foryou": "A genuinely useful blueprint for de-risking a custom-model project: build the full pipeline cheap first, then scale only the stage that's actually the bottleneck.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://empero.org/writing/quark"
+  },
+  {
+    "section": "tips",
+    "headline": "Anthropic's framework for agents that run 24/7",
+    "summary": "Anthropic published a guide to building always-on agents: a core loop augmented with event inboxes, timers, persistent memory, permissioning, and outboxes, so agents can manage context and act without direct supervision over long stretches.",
+    "foryou": "The event-inbox-plus-outbox pattern is the piece most DIY agent loops skip — and the one that causes the most production headaches once an agent runs unattended for days.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://claude.com/resources/articles/building-always-on-agents"
+  },
+  {
+    "section": "tips",
+    "headline": "Thinking Machines maps out what actually breaks when you train in 4-bit",
+    "summary": "Thinking Machines published a deep dive on training language models at 4-bit precision, comparing BF16, MXFP8, and NVFP4 formats and detailing where quantization error creeps in and how it affects final model accuracy.",
+    "foryou": "If you're fine-tuning or pretraining on a budget, this is the clearest public breakdown yet of which 4-bit failure modes are cosmetic versus which ones actually tank eval scores.",
+    "source": "TLDR AI",
+    "date": "2026-11-17",
+    "url": "https://thinkingmachines.ai/blog/end-to-end-4-bit-training/"
+  }
+]
