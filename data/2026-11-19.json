@@ -1,0 +1,125 @@
+[
+  {
+    "section": "models",
+    "headline": "OpenAI ships GPT-6.2 Astra and Sol, cuts frontier pricing 20%",
+    "summary": "OpenAI released GPT-6.2 Astra (its frontier model for the hardest projects, which it calls the best model in the world for scientists) and GPT-6.2 Sol (a cheaper everyday model), both live now in ChatGPT Work, Codex, and the API. OpenAI says Astra beat GPT-6 Astra by 5.2 points on Agents' Last Exam at under a third of the cost, and beat Claude Fable 5.2 by 5.5 points at 5% of the per-task cost — though Epoch AI found Astra only tied Fable 5.2 on its Capabilities Index while averaging 17 points lower on realistic tasks, and developer Theo Browne said a seven-day TypeScript compiler rewrite with Astra made the compiler 56% slower.",
+    "foryou": "The benchmark-vs-real-task gap here is the tell: run your own eval on a slice of your actual pipeline before swapping in Astra, rather than trusting Agents' Last Exam scores.",
+    "specs": [
+      { "label": "Astra pricing", "value": "$8/M input, $40/M output (20% less than GPT-6 Astra); cached input $0.40/M" },
+      { "label": "Sol pricing", "value": "$2/M input, $10/M output (unchanged from 6.1)" },
+      { "label": "Agents' Last Exam", "value": "+5.2 pts vs GPT-6 Astra; +5.5 pts vs Claude Fable 5.2 at 5% of its cost" },
+      { "label": "Epoch Capabilities Index", "value": "Roughly tied Fable 5.2, but 17 pts lower on realistic-task average (65%)" },
+      { "label": "Safety threshold", "value": "First OpenAI model to hit High on self-improvement in Preparedness Framework" }
+    ],
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-11-19",
+    "url": "https://thenextweb.com/news/gpt-6-2-astra-sol-openai-launch-price-epoch-testers"
+  },
+  {
+    "section": "models",
+    "headline": "Microsoft ships seven in-house models, claims 98% of GPT-6.1 Sol coding quality at 40% of the price",
+    "summary": "Microsoft AI released seven new models at Ignite 2026 built for strong performance at low prices: MAI Code 2 (coding), MAI Cyber 2 Flash (security), MAI Image 2.7 (image editing/generation), MAI Realtime 1 (speech-to-speech), Dragon Copilot Transcribe, and Decision 1.1 (model routing), alongside the Maia 200 accelerator chip. MAI Code 2 reaches 98% of GPT-6.1 Sol's coding performance at about 40% of the price, and 96% of Claude Opus 5.5's performance at about 5% of the price, across DeepSWE, Terminal Bench, SWE-Atlas, and FrontierCode benchmarks; it's already live in GitHub Copilot.",
+    "foryou": "If your agentic pipelines call a frontier model for routine coding tasks, MAI Code 2 is worth an A/B cost-quality test against your current default — a 60%+ cost cut for 98% of the quality changes the unit economics of high-volume agent loops.",
+    "specs": [
+      { "label": "MAI Code 2 vs GPT-6.1 Sol", "value": "98% of coding performance at ~40% of the price" },
+      { "label": "MAI Code 2 vs Claude Opus 5.5", "value": "96% of performance at ~5% of the price" },
+      { "label": "MAI Image 2.7", "value": "#1 on Artificial Analysis for image editing; Flash tier ~$10 per 1,000 images" },
+      { "label": "MAI Realtime 1", "value": "$0.01 per audio minute, speech-to-speech" },
+      { "label": "Maia 200 chip", "value": "1.7x more tokens per watt, now in production" }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+  },
+  {
+    "section": "models",
+    "headline": "Google's Gemini app can now call businesses, pay bills, and shop — powered by new Gemini 4 Hydrogen",
+    "summary": "Google rolled out a Tasks mode in the Gemini app, powered by the new Gemini 4 Hydrogen model, that can phone businesses to book appointments, analyze utility bills to explain a spike, shop and check out with Google Pay under a spending cap, and track insurance renewals. Tasks run in a hardware-isolated VM on Google Cloud's Agent Compute Engine, with prompt-injection filters and Safe Browsing as additional defenses, and the app pauses for confirmation before purchases.",
+    "foryou": "The hardware-isolated-VM-plus-confirmation-gate pattern here is a clean reference architecture if you're building any agent that touches payments or outside accounts on a user's behalf.",
+    "specs": [
+      { "label": "Model", "value": "Gemini 4 Hydrogen" },
+      { "label": "Sandbox", "value": "Hardware-isolated VM on Google Cloud Agent Compute Engine" },
+      { "label": "Payments", "value": "Agent Payments Protocol (AP2) tokens via Google Pay/Wallet; 60+ app integrations" },
+      { "label": "Availability", "value": "Free in US, Japan, Korea, Canada, Australia, India; calling blocked in 5 US states" }
+    ],
+    "source": "Web",
+    "date": "2026-11-19",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+  },
+  {
+    "section": "industry",
+    "headline": "Jensen Huang's ouster drama overshadows Nvidia's blowout Q3",
+    "summary": "Nvidia posted Q3 revenue of $57.01B (+62% YoY, beating consensus by over 4%) and guided Q4 to $65B, but the results were overshadowed by the fallout from Jensen Huang's November 12 resignation as CEO following reports that an executive close to him had alleged ties to Chinese intelligence and two reports of extramarital relationships, one with a direct report. CFO Colette Kress is interim CEO and Harvey C. Jones is the first-ever board chair; a 'Save Jensen' coalition of Silicon Valley leaders is pushing for his reinstatement, but Semafor reported the new board chair says that isn't being considered, while a faction of board members reportedly wants him back. Nvidia had already lost roughly $600B in value since the scandal broke.",
+    "source": "Semafor (also: Web)",
+    "date": "2026-11-19",
+    "url": "https://thenextweb.com/news/jensen-huang-resigns-as-nvidia-ceo-after-33-years-effective-immediately"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic prices $61B IPO this week at ~$1.2T valuation as Altman says he's 'not worried'",
+    "summary": "Anthropic is set to price and trade its IPO the week of November 16 on Nasdaq under ticker ANT, offering 825 million shares at $70-78 for roughly $61B ($1.2T fully diluted valuation), which would make it the second-largest IPO ever behind SpaceX. A concurrent $26B private placement includes AMD, Broadcom, Google, Micron, Microsoft, Nvidia, and TSMC as investors. At Semafor's Silicon Valley & The World conference, OpenAI's Sam Altman said he isn't worried about Anthropic 'sucking up all the oxygen' ahead of OpenAI's own eventual IPO, calling investor demand for AI equity still undersupplied, while acknowledging public markets bring 'real downsides' like volatility.",
+    "source": "Web (also: Semafor)",
+    "date": "2026-11-19",
+    "url": "https://www.renaissancecapital.com/IPO-Center/News/122657/anthropic-sets-terms-for-61-billion-ipo-targeting-a-1-2-trillion-market-cap"
+  },
+  {
+    "section": "industry",
+    "headline": "Europe admits it's in a lower AI league, looks to carve out a sovereign-AI niche",
+    "summary": "At Semafor's Silicon Valley & The World, UK AI minister Kanishka Narayan said the US and China are 'radically in a different league' on AI scale and capital, likening Europe to a tier below the Premier League. Germany's digital-ministry director-general Marco-Alexander Breit argued the EU AI Act, while mostly reasonable, raises the bar for European companies, and former UK PM Rishi Sunak agreed that regulating every use case was the wrong approach. Mistral CEO Arthur Mensch pointed to rising demand for cheaper, open-source, sovereign models that run on-premises without exposing data to US providers, with Germany leaning on industrial data from Siemens and Bosch and the UK targeting inference chips and drug-discovery AI.",
+    "source": "Semafor",
+    "date": "2026-11-19",
+    "url": "https://semafor.com/s/t1gel0n6k6"
+  },
+  {
+    "section": "industry",
+    "headline": "Tech leaders float a 'mild winter' as a healthy reset for the AI buildout",
+    "summary": "At Semafor's Silicon Valley & The World, several tech leaders suggested a slowdown in the AI data-center buildout — whether from public backlash or a financing pullback — could actually help the industry catch up on grid capacity, fiber, cybersecurity, and community relations. Mubadala CEO Khaldoon Al Mubarak said 'winter doesn't mean minus 30 degrees; it could be a nice pleasant winter,' while executives discussed better messaging around data centers' energy and water use. None suggested the buildout should stop altogether.",
+    "source": "Semafor",
+    "date": "2026-11-19",
+    "url": "https://semafor.com/s/82h9r2ub6a"
+  },
+  {
+    "section": "industry",
+    "headline": "A Claude-powered agent ran a real Hugging Face org for 7 weeks, hit 54,000+ downloads",
+    "summary": "Researchers gave an autonomous agent built on Opus 5.5 in Claude Code a blank Hugging Face account, a GitHub account, and about 500 GPU-hours a week, with the sole goal of earning real adoption. Over seven weeks and roughly 16 minutes of work a day, it created 38 narrow-task models (prompt-injection classifiers, PII redaction, punctuation restoration), mostly based on mmBERT, which drew more than 54,000 downloads, were used in 143 GitHub repos, and spawned two arXiv papers and a rival startup (Patronus Studio) improving its own model to match. The researchers judged most downloads organic after checking for self-inflation.",
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://horizon-labs.ai/"
+  },
+  {
+    "section": "tips",
+    "headline": "Replit Missions lets you hand a goal to a swarm of agents and walk away",
+    "summary": "Replit launched Missions, which coordinates parallel AI agent swarms toward a defined outcome — like winning enterprise customers or replacing legacy software — within a budget and approval rules you set. In an internal test, a 32-agent swarm hit 19x speedup on a NumPy optimization task versus a single agent's 4x, and a mission-built monitoring platform (DataCat) was built in 2 days for $3,000, caught a planted bug in 38 seconds, and outperformed an equivalent Claude Code build 5x on trace-intake throughput; DataCat has been open-sourced.",
+    "foryou": "The budget-and-approval-gate pattern (and the independent-judge-checks-output step) is directly reusable if you're building any multi-agent system that needs to run unsupervised for hours.",
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://replit.com/blog/introducing-replit-missions"
+  },
+  {
+    "section": "tips",
+    "headline": "Vercel's eve 1.0 is now a GA open-source harness for production agents",
+    "summary": "Vercel shipped eve 1.0, an open-source framework that runs the agent loop (model calls, tool execution, subagent delegation) with built-in durable execution, memory, approval gates, and OpenTelemetry-based tracing. It ships native channels for Slack, Teams, Discord, Telegram, GitHub, and web chat, supports multi-tenant deployments, and reports a 50-turn session's Workflow cost dropping from 5.4¢ to 1.3¢ in testing; Rillet says it tripled its shipping rate using eve-built software factories.",
+    "foryou": "If you're currently hand-rolling retry logic and approval gates for an agent harness, eve's durable-execution-plus-tracing stack is worth evaluating before you build more of that yourself.",
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://vercel.com/blog/eve-is-now-generally-available"
+  },
+  {
+    "section": "tips",
+    "headline": "New benchmark: your coding-agent harness matters less than the model, but still 1.8-5x on cost",
+    "summary": "Runta's FrontierHarness Eval v1.1 ran 22 coding-agent harnesses across 5 open models on 62 terminal tasks (27,280 runs, ~83B tokens) and found the best harness depends entirely on the model — rankings shifted up to 15 places when the model changed. With the model fixed, the costliest harness still ran 1.8-5x the cheapest for the same task, driven almost entirely by agent step count rather than prompt size; about 64.5% of total spend went to failed trials, and higher cost didn't correlate with higher pass rates.",
+    "foryou": "Before you lock in a harness for a coding-agent pipeline, re-benchmark it against your specific model — a harness that's cheapest with one model can rank near the bottom with another.",
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://runta.com/blog/introducing-frontierharness-eval-v1-1/"
+  },
+  {
+    "section": "tips",
+    "headline": "Cerebras splits inference in two, claims 5x more tokens per megawatt",
+    "summary": "Cerebras launched disaggregated inference, which offloads prompt processing (prefill) to GPUs while its wafer-scale CS-3 systems handle decode, the memory-bandwidth-bound step. In a production deployment on a shared GPT-OSS-120B endpoint, Cerebras measured 5x more tokens per megawatt than an all-CS-3 setup with no speed loss, and is offering both an end-to-end stack (routing, vLLM/SGLang prefill, KV-cache transfer over RDMA) and a decode-only SDK for partners who want to bring their own prefill engine. Early-access partners include AWS, Fireworks AI, Gimlet Labs, and General Compute.",
+    "foryou": "If you're running high-volume inference and bottlenecked on cost per token rather than raw speed, this prefill/decode split is worth watching as it expands past early access.",
+    "source": "TLDR AI",
+    "date": "2026-11-19",
+    "url": "https://www.cerebras.ai/blog/cerebras-launches-disaggregated-inference"
+  }
+]
