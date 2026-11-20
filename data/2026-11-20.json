@@ -1,0 +1,127 @@
+[
+  {
+    "section": "models",
+    "headline": "Google launches Gemini 4 Neon, a fast frontier model for coding and science",
+    "summary": "Google introduced Gemini 4 Neon, a fast, frontier-level model built for complex coding, knowledge work, and science tasks. It scored 61 on the Artificial Analysis Intelligence Index and is priced at $3 per million input tokens and $15 per million output tokens, positioning it as a cheaper, faster alternative to the top-tier Gemini 4 Carbon.",
+    "foryou": "A frontier-capable model at mid-tier pricing is worth benchmarking against whatever you're currently routing cheap-but-hard coding tasks to.",
+    "specs": [
+      {"label": "Artificial Analysis Intelligence Index", "value": "61"},
+      {"label": "Input price", "value": "$3 / 1M tokens"},
+      {"label": "Output price", "value": "$15 / 1M tokens"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+  },
+  {
+    "section": "models",
+    "headline": "Google opens Genie 4 world-generation model to AI Ultra subscribers",
+    "summary": "Google opened Genie 4, its model for generating interactive, explorable worlds, to eligible Google AI Ultra subscribers inside Project Genie. Users can edit a generated world in real time simply by typing prompts while exploring it, rather than regenerating from scratch.",
+    "foryou": "Worth a poke if you're prototyping simulation or synthetic-environment pipelines — real-time world editing via prompt is a different interaction model than static scene generation.",
+    "specs": [
+      {"label": "Access", "value": "Google AI Ultra subscribers, Project Genie"},
+      {"label": "Interaction", "value": "Real-time prompt editing while exploring the world"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/genie-4-now-available-project-genie/"
+  },
+  {
+    "section": "models",
+    "headline": "Gemini 4 Carbon takes 7x more steps than GPT-6 Astra on the same bug fixes",
+    "summary": "In a private benchmark, Gemini 4 Carbon spent close to an hour on bug fixes that Claude Opus 5.5 and GPT-6 Astra finished in minutes. Carbon took roughly seven times as many steps as Astra to reach the same result, and about half of those extra steps were judged unnecessary.",
+    "foryou": "If you're running agentic coding pipelines, step-count and wall-clock latency now matter as much as raw benchmark scores — worth re-testing your router's assumptions about Carbon before defaulting to it for autonomous coding tasks.",
+    "specs": [
+      {"label": "Relative step count vs GPT-6 Astra", "value": "~7x"},
+      {"label": "Unnecessary steps", "value": "~50%"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://kernel.dev/blog/why-is-gemini-4-carbon-taking-so-long/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic goes public on Nasdaq under ticker ANT in one of tech's largest-ever IPOs",
+    "summary": "Anthropic priced its IPO on November 18 and began trading on Nasdaq under the ticker ANT on November 19, valuing the company at roughly $1.3–1.4 trillion — one of the largest public listings in tech history. The debut lands as frontier AI labs increasingly turn to public markets to fund the capital intensity of model development, just as Anthropic's own compute spend is accelerating (see below).",
+    "source": "Web",
+    "date": "2026-11-20",
+    "url": "https://fourweekmba.com/ai-anthropics-ipo-day-by-day-pricing-18-nov-trading-19-nov/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI's models redesign production chips, cutting AMD GPU circuit area up to 14%",
+    "summary": "OpenAI says design changes proposed by its own models cut the circuit area of key parts of its Jalapeño inference chip by an estimated 10–13%. Applying the same approach to AMD's flagship GPU designs delivered up to 14% power-performance-area gains, with the AI-edited designs sent on to manufacturing.",
+    "source": "TLDR AI (also: Web)",
+    "date": "2026-11-20",
+    "url": "https://www.implicator.ai/openai-amd-circuit-changes/"
+  },
+  {
+    "section": "industry",
+    "headline": "Anthropic's compute spend is growing 4x a year, outpacing OpenAI's 3x",
+    "summary": "Anthropic spent nearly $10 billion on compute and infrastructure in Q3 2026, with its compute spend now growing roughly 4x year-over-year — faster than OpenAI's roughly 3x pace, according to Epoch AI data. The gap underscores how aggressively Anthropic's capital needs are scaling even as it moves into public markets.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://epoch.ai/data-insights/anthropic-openai-compute-spend-growth"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI says its research agents now finish nearly half of multi-hour tasks unsupervised",
+    "summary": "OpenAI reports its internal research agents now complete close to half of two-to-four-hour research tasks entirely on their own, with agent usage surging and the heaviest internal users pulling further ahead of everyone else. The company says humans remain central to the work, with growing human effort specifically directed at safety and alignment review of agent output.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://openai.com/index/research-acceleration-view-inside-openai/"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta uses AI agents to propagate ML gains across its ads-ranking models",
+    "summary": "Meta detailed how it uses AI agents internally to spread machine-learning technique improvements across its many different ads-ranking models, instead of engineers re-implementing each gain by hand model-by-model. The approach is aimed at cutting the engineering time needed to roll improvements out across Meta's ad infrastructure at scale.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://engineering.fb.com/2026/11/18/ml-applications/ai-agents-to-scale-ml-innovations-across-ads-ranking-models/"
+  },
+  {
+    "section": "tips",
+    "headline": "Switching models mid-conversation is a “ski-rental problem” for coding agents",
+    "summary": "Most LLM-routing work focuses on sending the right request to the right model upfront, but a harder, less-discussed problem is knowing when a running coding-agent session should switch models mid-task. A new analysis frames this as a classic “ski-rental problem” — weighing the cost of switching now against the risk of sticking with a model that's already struggling.",
+    "foryou": "If you're building a multi-model agent harness, this gives you an actual decision framework for when to swap models mid-session instead of guessing on gut feel.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://www.edgee.ai/blog/posts/switching-llms-mid-conversation-is-a-ski-rental-problem"
+  },
+  {
+    "section": "tips",
+    "headline": "Why Google Antigravity burns through weekly quota so fast",
+    "summary": "An engineer measured why Google Antigravity eats through weekly usage quota so quickly: it wipes a user's prompt cache after just a 5-minute pause, and refreshing the cache right before expiry only buys about 3 extra pings. Even a 5-word prompt starts with 13,800–16,800+ tokens of system instructions, MCP schemas, and skills before any real work begins.",
+    "foryou": "Disabling unused MCP servers and plugins is a direct, actionable fix if you're on Antigravity and burning quota faster than expected — worth auditing your own setup today.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://asubedi.com.np/blog/why-antigravity-eats-weekly-quota-fast/"
+  },
+  {
+    "section": "tips",
+    "headline": "Perplexity's Context API extracts clean, structured context from any webpage",
+    "summary": "Perplexity launched a Context API that extracts the full context of any webpage and returns clean Markdown, links, and relevant passages, handling up to 10 URLs per call. Agents can request a specific freshness window and validate each result's source, and every successful response includes metadata like title, author, and publish date.",
+    "foryou": "A clean alternative to rolling your own scraping/parsing layer for agent web-reading tasks — worth benchmarking against whatever you're using now for page-to-markdown extraction.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://www.perplexity.ai/hub/blog/context-api-extracts-full-context-from-any-web-page"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI details how the Codex sandbox limits what its coding agent can touch",
+    "summary": "OpenAI's documentation details how the Codex sandbox lets its coding agent run shell commands directly on a user's own machine, but only within file-system and network limits the user explicitly sets. The design aims to let Codex act autonomously on a local machine without full, unconstrained access to it.",
+    "foryou": "Worth reading closely if you're giving any coding agent command-line access on your own machine — this sandboxing model is a reasonable template to copy for your own agent harness.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://developers.openai.com/codex/concepts/sandboxing"
+  },
+  {
+    "section": "tips",
+    "headline": "Prime Intellect launches Model Factory, an end-to-end training loop for production models",
+    "summary": "Prime Intellect introduced Model Factory, a training loop that lets any company train, deploy, and continuously improve models in production by combining reinforcement learning, supervised fine-tuning, and pre-training into one control plane. It includes automated health checks, node replacement, and checkpoint recovery for long-running jobs, and is already running for teams in finance automation, computer use, and chip design.",
+    "foryou": "If you're maintaining your own fine-tuning/RL loop, this is worth a look as a potential replacement for the health-check and recovery plumbing you're probably hand-rolling.",
+    "source": "TLDR AI",
+    "date": "2026-11-20",
+    "url": "https://www.primeintellect.ai/blog/introducing-model-factory"
+  }
+]
