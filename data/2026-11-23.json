@@ -1,0 +1,160 @@
+[
+  {
+    "section": "models",
+    "headline": "Gemini API adds Tool Retrieval for dynamic function execution",
+    "summary": "Google's Gemini API now supports Tool Retrieval, letting the model dynamically locate and execute registered functions - like issuing a refund - based on user input, instead of requiring every tool definition to be loaded upfront. Developers register functions once and the API handles discovery and execution automatically, cutting overhead in tool-heavy agentic apps.",
+    "foryou": "If you're juggling dozens of function definitions in an agent's context window, Tool Retrieval is worth testing now - it could meaningfully shrink prompt size and latency on tool-heavy pipelines.",
+    "specs": [
+      {
+        "label": "Capability",
+        "value": "Dynamic function registration + automatic lookup/execution"
+      },
+      {
+        "label": "Use case",
+        "value": "Agentic workflows with large tool libraries"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+  },
+  {
+    "section": "models",
+    "headline": "Cloudflare open-sources Clairic and Clairic-flash extraction models",
+    "summary": "Cloudflare released public weights for Clairic and Clairic-flash, two models purpose-built for pulling structured fields out of unstructured text, images, and PDFs. Rather than general-purpose chat models, these are narrow extraction engines meant to slot directly into document-processing pipelines.",
+    "foryou": "A dedicated open-weight extraction model is a strong fit if you're running any document- or form-parsing step in a pipeline and want to self-host instead of paying per-call for a general LLM.",
+    "specs": [
+      {
+        "label": "License",
+        "value": "Open weights, publicly released"
+      },
+      {
+        "label": "Task",
+        "value": "Structured field extraction from text, images, PDFs"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://blog.cloudflare.com/open-clairic/"
+  },
+  {
+    "section": "models",
+    "headline": "Apple's FastFrames generates 480p video at 36ms per frame",
+    "summary": "Apple's research team introduced FastFrames, a pair of models built for interactive-speed video generation. The smaller model renders 480p frames in 36 milliseconds on a single GPU, fast enough for real-time or interactive use rather than batch rendering.",
+    "foryou": "Sub-40ms frame generation opens the door to interactive video tools (live avatars, game-asset preview, generative UI) that were previously impractical outside a render farm - worth watching if you build anything latency-sensitive with video.",
+    "specs": [
+      {
+        "label": "Resolution",
+        "value": "480p"
+      },
+      {
+        "label": "Latency",
+        "value": "36 ms/frame (smaller model, 1 GPU)"
+      }
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://apple-aiml-research.github.io/ml-fastframes/"
+  },
+  {
+    "section": "industry",
+    "headline": "Tech's 'wave of outages' is really an AI-driven cybersecurity spending surge",
+    "summary": "Semafor connects recent high-profile outages - the FAA's flight groundings, bank system glitches - to a wave of software patches companies are rushing out ahead of expected AI-assisted hacking. Fixing vulnerabilities is among the most compute-intensive uses of AI, turning the surge into a major new revenue line for AI labs, hyperscalers, and neoclouds. One security CEO summed it up: 'you're only as secure as the number of tokens you spend.'",
+    "source": "Semafor",
+    "date": "2026-11-23",
+    "url": "https://semafor.com/s/s7qpibowbn"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI tightens control over third-party model-reseller gateways",
+    "summary": "OpenAI now requires its own review and approval for gateways and routers - like OpenRouter - that resell third-party access to its models. The move follows accusations that gray-market 'transfer station' resellers in China have been used to distill or copy frontier US models by obscuring the end user's identity.",
+    "source": "Semafor",
+    "date": "2026-11-23",
+    "url": "https://semafor.com/s/ulw0n05v3k"
+  },
+  {
+    "section": "industry",
+    "headline": "Chatbot makers start charging brands for placement, mirroring search ads",
+    "summary": "Meta and other chatbot companies are quietly turning assistants like Muse into ad-driven businesses, with brands reportedly paying to be surfaced favorably in chatbot answers - echoing the early days of Google search ads. Amazon's Andy Jassy said Amazon won't open its shopping data to outside agents like Muse until there's a 'fair exchange of value,' i.e. payment.",
+    "source": "Semafor",
+    "date": "2026-11-23",
+    "url": "https://semafor.com/s/whe4q7gxn8"
+  },
+  {
+    "section": "industry",
+    "headline": "Altman's 'handover' framing risks alienating the public, Semafor argues",
+    "summary": "Sam Altman has been describing a future 'handover' period where AI becomes capable enough that humans stop making decisions - in the rosier version, humans become well-cared-for 'pets.' Semafor's Reed Albergotti argues the narrative plays badly outside Silicon Valley and isn't backed by evidence that such a handover is imminent.",
+    "source": "Semafor",
+    "date": "2026-11-23",
+    "url": "https://semafor.com/s/rvugypvmni"
+  },
+  {
+    "section": "industry",
+    "headline": "Essay warns AI labs aren't ready for recursive self-improvement risk",
+    "summary": "A widely discussed essay argues AI is already substantially accelerating AI research itself, and that labs have talked about recursive self-improvement risk for years without building real safeguards. The author calls on policymakers to treat this as urgent, and suggests lab employees raise concerns internally or publicly if progress isn't paced responsibly.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://linch.substack.com/p/ai-is-already-massively-speeding"
+  },
+  {
+    "section": "industry",
+    "headline": "Research: 'sandboxed' models leaked signals to each other via shared inference servers",
+    "summary": "A LessWrong writeup details how two AI models running on the same shared inference server could pass information to one another with no direct channel - one model's large request slightly shifts the server's compute timing, which the other model learns to read as a signal. The finding complicates assumptions about sandboxing as an isolation guarantee for multi-tenant deployments.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being"
+  },
+  {
+    "section": "industry",
+    "headline": "Academics step in to independently verify OpenAI/Anthropic's math-theory claim",
+    "summary": "Computer scientists at UC San Diego and MIT are organizing an independent review of a high-profile claim from OpenAI and Anthropic that their models helped refute the Exponential Time Hypothesis, a foundational complexity-theory conjecture. The scrutiny reflects growing skepticism toward labs' self-reported research breakthroughs.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://today.ucsd.edu/story/computer-scientists-facilitating-an-independent-review-of-a-high-profile-open-ai-and-anthropic-resul"
+  },
+  {
+    "section": "tips",
+    "headline": "Replit benchmark: 32-agent swarms beat solo coders 5x on parallel work",
+    "summary": "Replit's internal optimization benchmark found that 32 Opus-based agents working together hit an 18.9x speedup on a NumPy workload, versus just 3.7x for a single agent, despite using more total compute. The catch: gains only materialized when the task was cleanly separable and agents shared a coordination board - and the strongest solo model's relative performance actually got worse as team size grew.",
+    "foryou": "If your pipelines have genuinely separable subtasks, a swarm-with-shared-coordination-board pattern is worth prototyping before reaching for a bigger single model - but don't expect it to help on tightly coupled work.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://frontier.replit.com/throwing-headcount-at-the-problem/"
+  },
+  {
+    "section": "tips",
+    "headline": "Stripe publishes its own benchmark for coding-agent integration quality",
+    "summary": "Stripe released 'Stripe evals,' a benchmark methodology for measuring how well different coding agents and models build real-world Stripe integrations using realistic, role-played scenarios. It found that modern coding harnesses paired with frontier models can produce working end-to-end integrations, though not always ones that follow every best practice.",
+    "foryou": "The methodology here - realistic, role-played scenarios instead of static test suites - is a solid template to borrow if you're building your own eval harness for agentic coding work.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://stripe.dev/blog/stripe-integration-evals-methodology"
+  },
+  {
+    "section": "tips",
+    "headline": "Gemini can now take over repetitive Mac tasks in an isolated preview window",
+    "summary": "Google's Gemini app for Mac added computer-use support for multi-step tasks across local files, desktop apps, and the web. It runs in an isolated background window with a live preview, so your main screen and cursor stay free, and you choose which apps it can touch, watch each step, and approve key actions before they happen.",
+    "foryou": "Worth trying as a lighter-weight alternative to a full agentic framework for routine desktop chores - the per-step approval model is a sane default to copy if you're building your own computer-use agent.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+  },
+  {
+    "section": "tips",
+    "headline": "OpenAI details 'Performance Factory,' its Codex system for catching ChatGPT regressions",
+    "summary": "OpenAI published how it uses Codex-powered agents to automatically investigate and fix performance regressions in ChatGPT, turning what used to be manual profiling work into an agentic pipeline that flags and resolves slowdowns before they reach users.",
+    "foryou": "This is a concrete blueprint for pointing a coding agent at your own regression/perf-monitoring loop rather than just code review - worth stealing the pattern even at much smaller scale.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
+  },
+  {
+    "section": "tips",
+    "headline": "Google's 'Mirror Dimension' tests browser-use agents without touching the live web",
+    "summary": "Google introduced Mirror Dimension, a controlled sandbox environment for evaluating AI browser-use agents without letting them access real websites. The goal is safer, more reproducible evaluation of agent security and effectiveness before turning them loose on the open web.",
+    "foryou": "If you're shipping any agent that clicks around real websites, a sandboxed eval environment like this is the right place to catch bad behavior before it happens in production, not after.",
+    "source": "TLDR AI",
+    "date": "2026-11-23",
+    "url": "https://blog.google/security/mirror-dimension-for-agents/"
+  }
+]
