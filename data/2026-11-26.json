@@ -1,0 +1,131 @@
+[
+  {
+    "section": "models",
+    "headline": "Cognition's SWE-2.1 roughly doubles its coding benchmark score",
+    "summary": "Cognition released SWE-2.1, an upgraded coding and agent model trained with reinforcement learning on top of Kimi K3. It roughly doubles SWE-2's score on the Terminal-Bench 4.1 coding benchmark to 50.0 and adds stronger security skills.",
+    "foryou": "If you're evaluating coding agents for your pipelines, the benchmark jump plus the added security hardening make SWE-2.1 worth a side-by-side test against whatever agent you're currently running in production.",
+    "specs": [
+      {"label": "Terminal-Bench 4.1 score", "value": "50.0 (~2x SWE-2)"},
+      {"label": "Base model", "value": "Kimi K3 + RL fine-tuning"},
+      {"label": "Added capability", "value": "Stronger security skills"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://cognition.com/blog/swe-2-1"
+  },
+  {
+    "section": "models",
+    "headline": "Ternary's Bonsai 2.5 27B boosts on-device agentic coding",
+    "summary": "Ternary released Bonsai 2.5 27B with substantially stronger agentic coding, multi-turn tool use, and multi-step task execution than its predecessor, while keeping the same 5.9GB footprint. Ternary claims it's the strongest model of its memory footprint for agentic workloads.",
+    "foryou": "A 5.9GB model with real agentic chops is worth testing if you want tool-using agents that run entirely on-device, without sending private files or tool calls to a cloud API.",
+    "specs": [
+      {"label": "Parameters", "value": "27B"},
+      {"label": "Footprint", "value": "5.9 GB"},
+      {"label": "Focus", "value": "Agentic coding + private on-device knowledge work"}
+    ],
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://prismml.com/news/bonsai-2-5-27b"
+  },
+  {
+    "section": "models",
+    "headline": "OpenAI says GPT-6 models can design proteins without specialist tools",
+    "summary": "OpenAI reported that its GPT-6 models can design new proteins using reasoning and code alone, without calling out to dedicated biology models. A research partner confirmed some of the designs worked in lab tests, though specialist tools were still needed to screen candidates.",
+    "foryou": "Worth watching if you build in biotech-adjacent domains: reasoning-only protein design (rather than a bolted-on specialist model) suggests general-purpose models are starting to absorb capabilities that used to require a separate fine-tuned system.",
+    "source": "TLDR AI",
+    "date": "2026-11-26"
+  },
+  {
+    "section": "industry",
+    "headline": "Jensen Huang reinstated as Nvidia CEO, faces Capitol Hill hearing next week",
+    "summary": "President Trump pushed for Jensen Huang's reinstatement to Nvidia's top job over his support for US open-weight models, though his return may also spur Beijing to speed up its own push for homegrown chips. Nvidia has assembled a team of top Washington lawyers and lobbyists ahead of Huang's closed-door interview with three House committees, the same day he was originally slated to keynote Nvidia's DC developer conference.",
+    "source": "TLDR AI (also: Semafor)",
+    "date": "2026-11-26",
+    "url": "https://thezvi.substack.com/p/jensen-huang-reinstated-as-nvidia"
+  },
+  {
+    "section": "industry",
+    "headline": "Amazon says hackers' AI agents found and exploited a 0-day with little human input",
+    "summary": "Amazon said AI agents running on Cairn, an open-source penetration-testing framework, found and exploited a zero-day in a medical imaging AI app on a university server with no human oversight beyond a goal prompt. Palo Alto Networks separately tracked a Cairn campaign that ran 25 autonomous operations against at least 19 organizations in the semiconductor, defense, and civil-society sectors, breaching at least 10.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://arstechnica.com/security/2026/11/amazon-says-hackers-ai-agents-found-and-exploited-0-day-with-little-human-input/"
+  },
+  {
+    "section": "industry",
+    "headline": "AI labs privately worried their frontier models are becoming too unsafe to release",
+    "summary": "A new report described internal concern inside AI labs that their models have become too unsafe to release publicly — not because the models themselves are dangerous, but because labs are struggling to fully understand or control ever more capable systems. Microsoft CEO Satya Nadella has reportedly begun treating AI as an \"insider risk\" internally.",
+    "source": "Semafor",
+    "date": "2026-11-26",
+    "url": "https://semafor.com/s/1jww55mh8a"
+  },
+  {
+    "section": "industry",
+    "headline": "ASML CEO warns a total China chip cutoff would backfire",
+    "summary": "ASML CEO Christophe Fouquet argued export controls on advanced chipmaking technology should protect the most sensitive capability without \"completely frustrating\" China into doubling down on its own chip development. He noted ASML's shipments to China already run more than a decade behind the cutting edge, preserving a deliberate \"generation gap\" that keeps Beijing reliant on Western equipment.",
+    "source": "Semafor",
+    "date": "2026-11-26",
+    "url": "https://semafor.com/s/17gj1zytj4"
+  },
+  {
+    "section": "industry",
+    "headline": "Meta brings its Muse AI assistant directly into Instagram DMs",
+    "summary": "Meta is integrating its Muse AI assistant directly into Instagram DMs, letting users chat with Muse for context on posts, places, or products without leaving the conversation.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://techcrunch.com/2026/11/24/meta-brings-its-muse-ai-assistant-directly-into-instagram-dms/"
+  },
+  {
+    "section": "industry",
+    "headline": "OpenAI prepares dedicated email inboxes for ChatGPT Dots",
+    "summary": "OpenAI is developing dedicated email addresses for its ChatGPT \"Dots\" agents, which would let them send and receive emails independently rather than acting only through a user's own inbox.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://www.testingcatalog.com/openai-prepares-dedicated-email-inboxes-for-chatgpt-dots/"
+  },
+  {
+    "section": "tips",
+    "headline": "Research finds agent swarms don't yet beat single agents on efficiency",
+    "summary": "A new study found that swarm-based LLM configurations — coordinated groups of agents — deliver faster but less token-efficient results than single agents at equal budgets, with quality degrading as swarm size grows. Past \"swarm premiums\" largely reflected single agents going stale over time; with fresh context resets, single agents outperform swarms, suggesting current swarm strategies mostly trade compute for speed rather than adding real capability.",
+    "foryou": "Before reaching for a multi-agent swarm in your next pipeline, try a single agent with periodic context resets first — the research suggests that alone may close most of the gap you were trying to solve with swarms.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://www.paradigm3.org/research/swarms"
+  },
+  {
+    "section": "tips",
+    "headline": "vLLM-GR brings efficient inference to generative recommendation models",
+    "summary": "vLLM-GR is a new open-source extension to vLLM built to speed up inference for generative recommendation models, using efficient beam search to enable rapid candidate generation on both NVIDIA GPUs and Ascend NPUs by reusing user history and optimizing cache use.",
+    "foryou": "If you're serving recommendation or ranking models alongside your LLM stack, vLLM-GR is worth benchmarking against your current inference setup before you build a bespoke serving layer.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://vllm.ai/blog/2026-11-24-vllm-gr-announcement"
+  },
+  {
+    "section": "tips",
+    "headline": "Google adds live task checklists to Antigravity",
+    "summary": "Google's Antigravity coding app now shows live checklists for long-running tasks and lets users pick separate planner and executor models for a single job.",
+    "foryou": "Splitting planner and executor models is a pattern worth stealing even outside Antigravity: a cheaper, faster model can draft the plan while a stronger model only burns tokens on execution.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://www.testingcatalog.com/google-adds-task-checklists-to-antigravity-and-carbon-for-pro/"
+  },
+  {
+    "section": "tips",
+    "headline": "\"ML compiler eng, your job is NP-hard\" makes the case for heuristics over search",
+    "summary": "A detailed engineering write-up argues that tensor-layout search in ML compilers is computationally hard in theory, but in practice there are usually only a few viable places to insert a conversion in a given kernel — the hard part is picking the right one, which depends on an often-inaccurate cost model of the downstream software and hardware stack.",
+    "foryou": "The underlying lesson generalizes past compilers: when a search space is theoretically hard but practically narrow, investing in a better cost/heuristic model usually beats building a more exhaustive search.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://ianbarber.blog/2026/11/24/ml-compiler-eng-your-job-is-np-hard/"
+  },
+  {
+    "section": "tips",
+    "headline": "Claude Artifacts become installable Mac and Windows apps",
+    "summary": "Claude artifacts can now be installed as Mac and Windows apps, in beta on all plans. Each installed app gets its own icon and window, updates automatically when the artifact changes, and can be shared like any other artifact.",
+    "foryou": "If you build internal tools as Claude artifacts, packaging them as a desktop app removes the \"it's just a browser tab\" friction for non-technical teammates who need to actually use what you ship.",
+    "source": "TLDR AI",
+    "date": "2026-11-26",
+    "url": "https://claude.com/resources/articles/install-as-app"
+  }
+]
